@@ -1,0 +1,133 @@
+/* Ensure dropdown-menu styles are applied correctly */
+.navbar-nav .dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100vw;
+  min-width: 100%;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  border: 1px solid #dee2e6;
+  border-radius: 0;
+  background-color: #f8f9fa;
+  z-index: 1000;
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: opacity 0.3s ease-out, max-height 0.3s ease-out; /* Include max-height transition */
+  animation: none; /* Ensure no animation by default */
+}
+
+/* Keyframes for shutter animation */
+@keyframes shutterExpand {
+  0% {
+    max-height: 0;
+    opacity: 0;
+  }
+  100% {
+    max-height: 320px; /* Adjust based on the content height */
+    opacity: 1;
+  }
+}
+
+/* Apply animation when dropdown is shown */
+.dropdown-menu.show {
+  animation: shutterExpand 0.3s ease-out forwards;
+}
+
+/* Dropdown item styling */
+.dropdown-menu > .dropdown-item {
+  padding: 0.5rem 1rem;
+  color: #212529;
+  text-align: left;
+  white-space: nowrap;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+/* Underline effect */
+.dropdown-menu > .dropdown-item.active::after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: white;
+  transition: width 0.3s ease;
+}
+
+/* Hover effect */
+.dropdown-menu > .dropdown-item:hover {
+  background-color: #e9ecef;
+}
+
+/* Dropdown toggle styling */
+.nav-link.dropdown-toggle {
+  display: flex;
+  align-items: center;
+}
+
+/* Dropdown arrow */
+.dropdown-arrow {
+  margin-left: 0.5rem;
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-left: 0.3rem solid transparent;
+  border-right: 0.3rem solid transparent;
+  border-top: 0.3rem solid #fff; /* Arrow color */
+  transition: transform 0.3s ease;
+}
+
+/* Rotate the arrow when the dropdown is open */
+.dropdown-arrow.open {
+  transform: rotate(180deg);
+}
+.navbar-nav .nav-link {
+  display: flex;
+  align-items: center; /* Align items vertically center */
+}
+.dropdown-item.active {
+  background-color: #f8f9fa;
+  color: #007bff;
+}
+
+.dropdown-menu .row {
+  display: flex;
+}
+
+.dropdown-menu .col-lg-3 {
+  border-right: 1px solid #ddd;
+}
+
+.dropdown-menu .col-lg-4 {
+  padding-left: 15px;
+}
+/* Main navbar link styles */
+.navbar-nav .nav-link {
+  position: relative;
+  text-decoration: none;
+  color: #fff; /* Adjust color as needed */
+  text-decoration: none;
+}
+
+/* Underline effect on hover */
+.navbar-nav .nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px; /* Adjust thickness of underline */
+  width: 100%;
+  background-color: #fff; /* Adjust color as needed */
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  transition: transform 0.3s ease-out;
+}
+
+/* Display underline on hover */
+.navbar-nav .nav-link:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}

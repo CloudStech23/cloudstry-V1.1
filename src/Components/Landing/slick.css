@@ -1,0 +1,45 @@
+.car1 {
+  position: relative;
+  width: 100%;
+  height: 500px; /* Adjust the height as needed */
+  background-image: url('https://t3.ftcdn.net/jpg/00/67/26/08/360_F_67260822_stOYcYqHXyMX0FyZjbpOI2izqgvSaEkI.jpg');  
+  background-size: cover; /* Cover the entire container */
+  background-position: center; /* Center the background image */
+}
+.car2 {
+  position: relative;
+  width: 100%;
+  height: 500px; /* Adjust the height as needed */
+  background-image: url('https://t3.ftcdn.net/jpg/00/88/56/06/360_F_88560614_jLxW5ZnB48ygLeR5kc5YIz4UCyJLfdtE.jpg');  
+  background-size: cover; /* Cover the entire container */
+  background-position: center; /* Center the background image */
+   
+
+}
+
+.carousel-content {
+  margin-left: 5rem; /* Space on the left side */
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: #000; /* Change the arrow color if needed */
+  width: 40px; /* Adjust the size of the navigation arrows */
+  height: 40px;
+}
+
+.swiper-button-next {
+  right: 10px; /* Position the next button */
+  bottom: 10px; /* Position the next button */
+  position: absolute; /* Ensure it is positioned relative to the container */
+}
+
+.swiper-button-prev {
+  left: 10px; /* Position the prev button */
+  bottom: 10px; /* Position the prev button */
+  position: absolute; /* Ensure it is positioned relative to the container */
+}
+
+.swiper-pagination {
+  bottom: 10px; /* Adjust the position of pagination bullets */
+}
