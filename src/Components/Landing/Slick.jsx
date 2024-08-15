@@ -24,7 +24,7 @@ const SwiperCarousel = () => {
   };
 
   return (
-    <div className="container-fluid p-0 position-relative">
+    <div className="container-fluid p-0 position-relative" style={{background:'#1a232e'}}>
       <Swiper
         ref={swiperRef}
         modules={[Autoplay, Pagination, Navigation]}
@@ -43,7 +43,7 @@ const SwiperCarousel = () => {
         <SwiperSlide>
           <div className="row no-gutters h-100 align-items-center car1">
             <div className="col-md-6 d-flex align-items-center p-4">
-              <div className="carousel-content">
+              <div className="carousel-content mx-5">
                 <h2 className="display-4">Heading 1</h2>
                 <p className="lead">
                   This is a short description for the first slide.
@@ -63,12 +63,12 @@ const SwiperCarousel = () => {
         <SwiperSlide>
           <div className="row no-gutters h-100 align-items-center car2">
             <div className="col-md-6 d-flex align-items-center p-4">
-              <div className="carousel-content">
+              <div className="carousel-content mx-5">
                 <h2 className="display-4">Heading 2</h2>
-                <p className="lead">
+                <p className="lead ">
                   This is a short description for the second slide.
                 </p>
-                <button className="btn btn-primary">Learn More</button>
+                <button className="btn btn-primary ">Learn More</button>
               </div>
             </div>
             <div className="col-md-6 d-flex justify-content-center align-items-center p-4">
