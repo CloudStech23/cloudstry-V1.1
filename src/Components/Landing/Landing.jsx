@@ -106,7 +106,7 @@ function Landing() {
                   <h4 className="card-title mb-3">
                     Tell your local government to update its bylaws for biodiversity!
                   </h4>
-                  <span className="btn btn-link">Read More</span>
+                  <span className="btn btn-link" style={{background:'#2563eb'}}>Read More</span>
                 </div>
               </div>
             </a>
