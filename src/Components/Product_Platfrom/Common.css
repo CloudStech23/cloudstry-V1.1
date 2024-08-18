@@ -1,0 +1,23 @@
+.half-underline-container {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+  }
+  
+  .half-underline {
+    position: relative;
+    display: inline-block; /* Adjusts to the width of the content */
+    text-align: center; /* Centers the text inside the element */
+  }
+  
+  .half-underline::after {
+    content: '';
+    position: absolute;
+    bottom: -5px; /* Adjust this value to position the line below the text */
+    left: 0;
+    width: 50%; /* Adjust this percentage as needed */
+    height: 2px; /* Thickness of the underline */
+    background-color: #dc4c64; /* Primary color */
+    transform: translateX(50%); /* Center the underline under the text */
+    transition: width 0.3s ease;
+  }
+  
