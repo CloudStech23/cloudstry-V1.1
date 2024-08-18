@@ -5,25 +5,21 @@ function Petadhar() {
   return (
     <div>
      
-      <div className="container my-5 py-5">
-        <div className="row align-items-center bg-light p-4 rounded-3 position-relative">
+     <div className="container my-5 py-5">
+        <div className="row align-items-center justify-content-between bg-light p-4 rounded-3 position-relative">
           {/* Text Content */}
-          <div className="col-md-7">
-            <span className="badge bg-primary mb-3">
-              REACH Ad Hoc Orchestrator
+          <div className="col-md-5 mt-4 mb-2">
+            <span className="badge bg-primary rounded-pill px-2 py-2 mb-3">
+              Pashu Aadhar
             </span>
-            <h2 className="fw-bold text-primary">
-              Sequenced customer engagement
+            <h2
+              className=" display-5 text-primary "
+              style={{ fontWeight: 300 }}
+            >
+              Transforming Animal Identification in India
             </h2>
             <p className="text-muted mb-4">
-              Avoid spreadsheets and manual uploads by automating personalized
-              maintenance notifications with REACH Orchestration. Alleviate
-              customer stress and complaints by keeping them informed of
-              infrastructure upgrades, vegetation management, and periodic
-              refreshes. The platform associates work orders & infrastructure
-              with impacted customers and communication preferences, and
-              delivers messages across text, email, voice, mobile, and print in
-              accordance with your logic.
+            India's vast livestock industry faces significant challenges in the areas of animal identification, health monitoring, and data management. Traditional methods are often inconsistent and prone to errors, making effective disease control and breeding management difficult. The need for a reliable, unified solution is essential for the continued growth and modernization of the sector.
             </p>
             <a
               href="https://agent511.com/contact-us/"
@@ -34,9 +30,9 @@ function Petadhar() {
           </div>
 
           {/* Video Content */}
-          <div className="col-md-5 text-md-end mt-4 mt-md-0">
+          <div className="col-md-5 text-md-end mt-4 mt-md-0 mb-2">
             <img
-              src="https://via.placeholder.com/500x300.png?text=Dummy+Image"
+              src="https://via.placeholder.com/600x400.png?text=Dummy+Image"
               alt="Dummy"
               className="img-fluid rounded"
             />
@@ -45,8 +41,8 @@ function Petadhar() {
       </div>
       <section className="image-video-text-interactivity fadeInUp mb-5">
         <div className="container">
-        <h3 className="text-primary fw-bold text-center mb-4">Why pet adhar</h3>
-          <div className="row align-items-center">
+        {/* <h3 className="text-primary fw-bold text-center mb-4">Why pet adhar</h3> */}
+          <div className="row align-items-center"> 
             {/* Image Section */}
             <div className="col-md-6 mb-4 mb-md-0">
               <img
@@ -59,39 +55,63 @@ function Petadhar() {
             </div>
 
             {/* Text Section */}
-            <div className="col-md-6">
+            <div className="col-md-6 mb-5">
               <h3 className="text-primary fw-bold mb-3">
-                Avoid spreadsheets and door hangers
+              Rationale Behind Pashu Aadhaar
               </h3>
-              <p>
-                Automate real-time customer communications for immediate
-                maintenance updates:
+              <p className="">
+              Pashu Aadhaar is a pivotal advancement in livestock management throughout India. By assigning unique identification numbers to each animal, it optimizes tracking, health monitoring, and data management. This system addresses the limitations of traditional methods, offering a secure, scalable, and dependable solution that enhances efficiency and benefits all stakeholders in the livestock sector.
               </p>
               <ul className="list-unstyled mb-4">
-                <li className="mb-3">
+                <li className="mb-4">
+                  <i className="fa fa-check-circle text-primary "></i>
                   <i className="bi bi-check-circle-fill text-primary me-2"></i>
-                  REACH is synchronized with customers and assets to instantly
-                  correlate work orders with impacted customers
+                  {/* <span className="" style={{ fontWeight: 700 }}>
+                    Unified Credential Management:
+                  </span>{" "} */}
+                  <span className="d-inline">
+                  Enhances the accuracy and reliability of animal identification.
+                  </span>
                 </li>
-                <li className="mb-3">
+                <li className="mb-4">
+                  <i className="fa fa-check-circle text-primary "></i>
                   <i className="bi bi-check-circle-fill text-primary me-2"></i>
-                  Customized workflow to perform recurring notification
-                  reminders and updates for the duration of the event
+                  {/* <span className="" style={{ fontWeight: 700 }}>
+                    Unified Credential Management:
+                  </span>{" "} */}
+                  <span className="d-inline">
+                  Improves disease control and vaccination efforts through precise tracking.
+                  </span>
                 </li>
-                <li className="mb-3">
+                <li className="mb-4">
+                  <i className="fa fa-check-circle text-primary "></i>
                   <i className="bi bi-check-circle-fill text-primary me-2"></i>
-                  Multichannel digital and print template management and
-                  delivery
+                  {/* <span className="" style={{ fontWeight: 700 }}>
+                    Unified Credential Management:
+                  </span>{" "} */}
+                  <span className="d-inline">
+                  Facilitates better management of breeding and ownership records.
+                  </span>
                 </li>
-                <li className="mb-3">
+                <li className="mb-4">
+                  <i className="fa fa-check-circle text-primary "></i>
                   <i className="bi bi-check-circle-fill text-primary me-2"></i>
-                  Automatic channel selection based upon timeliness (from 3rd
-                  class letter to SMS)
+                  {/* <span className="" style={{ fontWeight: 700 }}>
+                    Unified Credential Management:
+                  </span>{" "} */}
+                  <span className="d-inline">
+                  Increases operational efficiency by centralizing data management.
+                  </span>
                 </li>
-                <li>
+                <li className="mb-4">
+                  <i className="fa fa-check-circle text-primary "></i>
                   <i className="bi bi-check-circle-fill text-primary me-2"></i>
-                  Once the event occurs, restoration alerts continue the
-                  customer engagement
+                  {/* <span className="" style={{ fontWeight: 700 }}>
+                    Unified Credential Management:
+                  </span>{" "} */}
+                  <span className="d-inline">
+                  Strengthens overall livestock productivity through informed decision-making.
+                  </span>
                 </li>
               </ul>
               <a

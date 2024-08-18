@@ -26,7 +26,7 @@ function Digitalcertificate() {
               manage, posing significant challenges for organizations and
               individuals alike. The demand for a solution that ensures the
               authenticity and accessibility of credentials is more pressing
-              than ever.
+              than ever. 
             </p>
             <a
               href="https://agent511.com/contact-us/"
