@@ -1,11 +1,11 @@
-import React from 'react'
+import React from "react";
 import { Carousel } from "react-bootstrap";
+import "./Common.css";
 
 function Petadhar() {
   return (
     <div>
-     
-     <div className="container my-5 py-5">
+      <div className="container my-5 py-5">
         <div className="row align-items-center justify-content-between bg-light p-4 rounded-3 position-relative">
           {/* Text Content */}
           <div className="col-md-5 mt-4 mb-2">
@@ -19,7 +19,13 @@ function Petadhar() {
               Transforming Animal Identification in India
             </h2>
             <p className="text-muted mb-4">
-            India's vast livestock industry faces significant challenges in the areas of animal identification, health monitoring, and data management. Traditional methods are often inconsistent and prone to errors, making effective disease control and breeding management difficult. The need for a reliable, unified solution is essential for the continued growth and modernization of the sector.
+              India's vast livestock industry faces significant challenges in
+              the areas of animal identification, health monitoring, and data
+              management. Traditional methods are often inconsistent and prone
+              to errors, making effective disease control and breeding
+              management difficult. The need for a reliable, unified solution is
+              essential for the continued growth and modernization of the
+              sector.
             </p>
             <a
               href="https://agent511.com/contact-us/"
@@ -41,15 +47,15 @@ function Petadhar() {
       </div>
       <section className="image-video-text-interactivity fadeInUp mb-5">
         <div className="container">
-        {/* <h3 className="text-primary fw-bold text-center mb-4">Why pet adhar</h3> */}
-          <div className="row align-items-center"> 
+          {/* <h3 className="text-primary fw-bold text-center mb-4">Why pet adhar</h3> */}
+          <div className="row align-items-center">
             {/* Image Section */}
             <div className="col-md-6 mb-4 mb-md-0">
               <img
                 className="img-fluid rounded"
                 height={365}
                 width={504}
-                src="https://agent511.com/app/uploads/2023/01/AGENT511-REACH-Orchestration.png"
+                src="https://via.placeholder.com/600x400.png?text=Dummy+Image"
                 alt="AGENT511 REACH Orchestration"
               />
             </div>
@@ -57,10 +63,16 @@ function Petadhar() {
             {/* Text Section */}
             <div className="col-md-6 mb-5">
               <h3 className="text-primary fw-bold mb-3">
-              Rationale Behind Pashu Aadhaar
+                Rationale Behind Pashu Aadhaar
               </h3>
               <p className="">
-              Pashu Aadhaar is a pivotal advancement in livestock management throughout India. By assigning unique identification numbers to each animal, it optimizes tracking, health monitoring, and data management. This system addresses the limitations of traditional methods, offering a secure, scalable, and dependable solution that enhances efficiency and benefits all stakeholders in the livestock sector.
+                Pashu Aadhaar is a pivotal advancement in livestock management
+                throughout India. By assigning unique identification numbers to
+                each animal, it optimizes tracking, health monitoring, and data
+                management. This system addresses the limitations of traditional
+                methods, offering a secure, scalable, and dependable solution
+                that enhances efficiency and benefits all stakeholders in the
+                livestock sector.
               </p>
               <ul className="list-unstyled mb-4">
                 <li className="mb-4">
@@ -70,7 +82,8 @@ function Petadhar() {
                     Unified Credential Management:
                   </span>{" "} */}
                   <span className="d-inline">
-                  Enhances the accuracy and reliability of animal identification.
+                    Enhances the accuracy and reliability of animal
+                    identification.
                   </span>
                 </li>
                 <li className="mb-4">
@@ -80,7 +93,8 @@ function Petadhar() {
                     Unified Credential Management:
                   </span>{" "} */}
                   <span className="d-inline">
-                  Improves disease control and vaccination efforts through precise tracking.
+                    Improves disease control and vaccination efforts through
+                    precise tracking.
                   </span>
                 </li>
                 <li className="mb-4">
@@ -90,7 +104,8 @@ function Petadhar() {
                     Unified Credential Management:
                   </span>{" "} */}
                   <span className="d-inline">
-                  Facilitates better management of breeding and ownership records.
+                    Facilitates better management of breeding and ownership
+                    records.
                   </span>
                 </li>
                 <li className="mb-4">
@@ -100,7 +115,8 @@ function Petadhar() {
                     Unified Credential Management:
                   </span>{" "} */}
                   <span className="d-inline">
-                  Increases operational efficiency by centralizing data management.
+                    Increases operational efficiency by centralizing data
+                    management.
                   </span>
                 </li>
                 <li className="mb-4">
@@ -110,7 +126,8 @@ function Petadhar() {
                     Unified Credential Management:
                   </span>{" "} */}
                   <span className="d-inline">
-                  Strengthens overall livestock productivity through informed decision-making.
+                    Strengthens overall livestock productivity through informed
+                    decision-making.
                   </span>
                 </li>
               </ul>
@@ -124,130 +141,110 @@ function Petadhar() {
           </div>
         </div>
       </section>
-      <section class="py-5 bg-light text-center">
+      <section class="py-5 bg-whitet text-center">
         <section className="pb-5">
           <div className="container">
+            <div className="half-underline-container">
+              <h3
+                className="text-primary text-danger text-center display-5   half-underline"
+                style={{ marginBottom: "4rem" }}
+              >
+                Case Studies
+              </h3>
+            </div>
             <div className="row">
               <div className="col-lg-10 col-xl-8 mx-auto">
-                <div className="p-5 bg-white shadow  rounded">
-                  <Carousel interval={2000} controls={false} indicators={false}>
+                <div
+                  className="p-5 bg-white shadow  rounded"
+                  style={{ width: "100%", height: "27rem" }}
+                >
+                  <Carousel interval={2000} controls={true} indicators={false}>
                     <Carousel.Item>
                       <div className="media feature-card">
-                         
-                          <div
-                            className=" mb-4 feature-title"
-                            style={{ fontWeight: 500 }}
-                          >
-                            Why Cloud Services ?
+                        <h3 className="text-primary fw-normal mb-3">
+                          Enhancing Animal Health Monitoring
+                        </h3>
+                        <div className="media-body ml-3">
+                          <div className="blockquote border-0 p-0">
+                            <p className="font-italic lead">
+                              Effective health management is essential for
+                              maintaining livestock well-being and preventing
+                              disease spread, yet traditional methods often lead
+                              to fragmented health records. Pashu Aadhaar
+                              addresses this challenge with a comprehensive
+                              system that assigns unique identification numbers
+                              to animals, enabling precise tracking of
+                              vaccinations, treatments, and health history. This
+                              system ensures accurate records and timely
+                              interventions. Early implementations of Pashu
+                              Aadhaar have demonstrated improved health outcomes
+                              and fewer disease outbreaks in pilot areas, with
+                              centralized data facilitating better health trend
+                              tracking and quicker responses to issues.
+                            </p>
                           </div>
-                          <div className="media-body ml-3">
-                            <div className="blockquote border-0 p-0">
-                              <p className="font-italic lead">
-                                Cloud services offer scalability, flexibility,
-                                and cost-efficiency by eliminating the need for
-                                physical infrastructure. They facilitate
-                                seamless collaboration, enhance security, and
-                                provide robust disaster recovery capabilities.
-                                Leveraging cloud services accelerates
-                                innovation, improves time-to-market, and ensures
-                                business agility in a dynamic digital
-                                environment.
-                              </p>
-                            </div>
-                          </div>
-                         
+                        </div>
                       </div>
                     </Carousel.Item>
 
                     <Carousel.Item>
                       <div className="media feature-card">
-                         
-                          <div
-                            className=" mb-4 feature-title"
-                            style={{ fontWeight: 500 }}
-                          >
-                            Cloud Collboration Market/Industries
+                        <h3 className="text-primary fw-normal mb-3">
+                          Government's Initiative for Pashu Aadhaar
+                        </h3>
+                        <div className="media-body ml-3">
+                          <div className="blockquote border-0 p-0">
+                            <p className="font-italic lead">
+                              The central government is developing a major
+                              database related to livestock information across
+                              the country. The aim is to enhance farmers' income
+                              through improved livestock management. According
+                              to the Department of Animal Husbandry, in the next
+                              18 months, over 500 million cattle will be
+                              assigned unique IDs on a digital platform (Animal
+                              UID - Pashu Aadhaar) to track their owners,
+                              breeds, and productivity. Each animal will be
+                              tagged with a 8-gram yellow tag in its ear, which
+                              will display a 12-digit identification number.
+                              When launching the e-Gopala app, Prime Minister
+                              Narendra Modi highlighted the significance of
+                              Pashu Aadhaar. He mentioned that once the app
+                              integrates Pashu Aadhaar, it will provide
+                              comprehensive information about animals, making
+                              buying and selling livestock easier.
+                            </p>
                           </div>
-                          <div className="media-body ml-3">
-                            <div className="blockquote border-0 p-0">
-                              <p className="font-italic lead">
-                                Collaborating cloud services with industry needs
-                                involves tailoring cloud solutions to address
-                                specific challenges and opportunities within
-                                different sectors. By understanding industry
-                                requirements, cloud providers can offer
-                                specialized services and tools designed to
-                                enhance efficiency, security, and compliance.
-                              </p>
-                            </div>
-                          </div>
-                        
+                        </div>
                       </div>
                     </Carousel.Item>
 
                     <Carousel.Item>
                       <div className="media feature-card">
-                      
-                          <div
-                            className=" mb-4 feature-title"
-                            style={{ fontWeight: 400 }}
-                          >
-                            Aligning Cloud Services with Cloudstry
+                        <h3 className="text-primary fw-normal mb-3">
+                          Expanding Livestock Insurance Coverage with Pashu Bima
+                        </h3>
+                        <div className="media-body ml-3">
+                          <div className="blockquote border-0 p-0">
+                            <p className="font lead">
+                              <br />
+                              The Bihar government's Directorate of Dairy
+                              Development has introduced the 'Pashu Bima Yojana'
+                              to offer insurance protection against livestock
+                              deaths and boost the rural economy. This scheme
+                              covers dairy cattle with a maximum insured value
+                              of ₹60,000. The insurance premium is ₹2,100, with
+                              the state government subsidizing 75% (₹1,575) and
+                              farmers contributing the remaining 25% (₹525). The
+                              scheme, managed by District Livestock Development
+                              Officers, aims to protect farmers from financial
+                              losses due to severe diseases, such as lumpy skin
+                              disease, ensuring stability and support for the
+                              rural sector.
+                            </p>
                           </div>
-                          <div className="media-body ml-3">
-                            <div className="blockquote border-0 p-0">
-                              <p className="font lead">
-                                <strong>
-                                  " Unveiling the Power of Our Cloud Services:
-                                  Your Path to Success "
-                                </strong>
-                                <br />
-                                Explore our tailored cloud solutions, designed
-                                to enhance your business with personalized
-                                strategies. Benefit from optimized operations,
-                                enhanced collaboration, and accelerated growth,
-                                tailored to your unique needs, to triumph in
-                                today's dynamic marketplace.
-                              </p>
-                            </div>
-                          </div>
-                        
+                        </div>
                       </div>
                     </Carousel.Item>
-
-                    {/* <Carousel.Item>
-                    <div className="media">
-                      <div className="h1 mb-4">Enhancing Operational Efficiency</div>
-                      <div className="media-body ml-3">
-                        <div className="blockquote border-0 p-0">
-                          <p className="font-italic lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                          
-                        </div>
-                      </div>
-                    </div>
-                  </Carousel.Item>
-                  <Carousel.Item>
-                    <div className="media">
-                      <div className="h1 mb-4">Enhancing Operational Efficiency</div>
-                      <div className="media-body ml-3">
-                        <div className="blockquote border-0 p-0">
-                          <p className="font-italic lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                          
-                        </div>
-                      </div>
-                    </div>
-                  </Carousel.Item>
-                  <Carousel.Item>
-                    <div className="media">
-                      <div className="h1 mb-4" style={{fontSize:'2rem'}}>Enhancing Operational Efficiency</div>
-                      <div className="media-body ml-3">
-                        <div className="blockquote border-0 p-0">
-                          <p className="font-italic lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                          
-                        </div>
-                      </div>
-                    </div>
-                  </Carousel.Item> */}
                   </Carousel>
                 </div>
               </div>
@@ -390,39 +387,131 @@ function Petadhar() {
       </div> */}
 
       {/* Content Sections */}
-      <section className="mb-5">
-         
+      <section className="mb-5" style={{marginTop:'5rem'}}>
         <div className="container">
           {/* First Row */}
-          <div className="row align-items-center mb-5">
-            <div className="col-md-6 mb-4 mb-md-0">
+          <div className="container mb-5">
+            <div className="row align-items-center mb-5">
+              {/* Image Section */}
+              <div className="col-md-6 mb-5 mb-md-0">
+                <img
+                  className="img-fluid rounded"
+                  height={365}
+                  width={504}
+                  src="https://via.placeholder.com/700x600.png?text=Dummy+Image"
+                  alt="AGENT511 REACH Orchestration"
+                />
+              </div>
+
+              {/* Text Section */}
+              <div className="col-md-6 mb-5">
+                <h3 className="text-primary fw-normal mb-3">
+                  MetroXone Tech: Delivering the Pashu Aadhaar Solution
+                </h3>
+                <p className="">
+                  The Pashu Aadhaar system offers a transformative approach to
+                  managing dairy livestock through its innovative identification
+                  and data management features
+                </p>
+                <ul className="list-unstyled mb-4">
+                  <li className="mb-4">
+                    <i className="fa fa-check-circle text-primary "></i>
+                    <i className="bi bi-check-circle-fill text-primary me-2"></i>
+                    {/* <span className="" style={{ fontWeight: 700 }}>
+                    Unified Credential Management:
+                  </span>{" "} */}
+                    <span className="d-inline">
+                      Unique identification numbers for each dairy animal to
+                      ensure accurate tracking.
+                    </span>
+                  </li>
+                  <li className="mb-4">
+                    <i className="fa fa-check-circle text-primary "></i>
+                    <i className="bi bi-check-circle-fill text-primary me-2"></i>
+                    {/* <span className="" style={{ fontWeight: 700 }}>
+                    Unified Credential Management:
+                  </span>{" "} */}
+                    <span className="d-inline">
+                      Comprehensive health and milk production records linked to
+                      the animal's ID.
+                    </span>
+                  </li>
+                  <li className="mb-4">
+                    <i className="fa fa-check-circle text-primary "></i>
+                    <i className="bi bi-check-circle-fill text-primary me-2"></i>
+                    {/* <span className="" style={{ fontWeight: 700 }}>
+                    Unified Credential Management:
+                  </span>{" "} */}
+                    <span className="d-inline">
+                      Integration with digital platforms for easy access and
+                      management of dairy data.
+                    </span>
+                  </li>
+                  <li className="mb-4">
+                    <i className="fa fa-check-circle text-primary "></i>
+                    <i className="bi bi-check-circle-fill text-primary me-2"></i>
+                    {/* <span className="" style={{ fontWeight: 700 }}>
+                    Unified Credential Management:
+                  </span>{" "} */}
+                    <span className="d-inline">
+                      Streamlined processes for breeding, ownership, and disease
+                      management in dairy farming.
+                    </span>
+                  </li>
+                </ul>
+                <a
+                  className="btn btn-danger"
+                  href="https://agent511.com/contact-us/"
+                >
+                  Talk to our Experts
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <section style={{ position: "relative", marginTop: "7rem" }}>
+            <div
+              style={{
+                position: "relative",
+                zIndex: 1,
+                width: "100%",
+              }}
+            >
               <img
                 className="img-fluid rounded"
-                src="https://agent511.com/app/uploads/2023/01/AGENT511-REACH-Orchestration-3.png"
+                src="https://images.thequint.com/thequint%2F2018-08%2Fcd1c7bac-00a3-40b5-a270-72f803a98e3a%2F9b378119_4474_4e7b_820f_68bda8a3a0f4.jpg?rect=0%2C0%2C848%2C477"
                 alt="Industry"
-                style={{ width: "100%", height: "auto" }}
+                style={{ width: "800px", height: "500px" }}
               />
             </div>
-            <div className="col-md-6">
-              <h3 className="text-primary font-weight-bold mb-4">
-                Customer Engagement for the Event Lifecycle
+            <div
+              style={{
+                position: "absolute",
+                top: "19%",
+                right: "30%",
+                transform: "translateX(50%)", // Adjust this to control horizontal overlap
+                background: "#efefef",
+                //   border: "1px solid black",
+                borderRadius: "8px",
+                padding: "2rem",
+                maxWidth: "80%", // Ensures the content doesn't overflow the viewport
+                zIndex: 2,
+              }}
+              className="col-lg-6"
+            >
+              <h3 className="text-primary  font-weight-bold mb-4">
+                Closing Thoughts on Pashu Aadhaar: MetroXone Technologies
               </h3>
-              <p>Inform customers from work order creation to completion:</p>
-              <ul className="list-unstyled">
-                <li className="mb-3">
-                  Trigger personalized template-based restoration alerts that
-                  include reasons and anticipated duration.
-                </li>
-                <li className="mb-3">
-                  Staged and on-demand templates offer flexibility to maximize
-                  relevance and personalization.
-                </li>
-                <li className="mb-3">
-                  Randomized branded surveys after restoration maximize
-                  engagement.
-                </li>
-                <li>Two-way reporting & status requests.</li>
-              </ul>
+              <p>
+                Pashu Aadhaar offers a promising solution for managing livestock
+                in India. By providing unique identification numbers, it aims to
+                improve tracking accuracy, enhance disease control, and
+                streamline record management. The system is designed to boost
+                operational efficiency and support better decision-making.
+                MetroXone Tech is actively working on solutions to facilitate
+                the implementation of this initiative
+              </p>
+
               <a
                 className="btn btn-danger text-white"
                 href="https://agent511.com/contact-us/"
@@ -430,74 +519,11 @@ function Petadhar() {
                 Talk to Our Experts
               </a>
             </div>
-          </div> 
-
-          <section style={{ position: "relative", marginTop: "5rem" }}>
-      <div
-        style={{
-          position: "relative",
-          zIndex: 1,
-          width: "100%",
-        }}
-      >
-        <img
-          className="img-fluid rounded"
-          src="https://agent511.com/app/uploads/2023/01/AGENT511-REACH-Orchestration-3.png"
-          alt="Industry"
-          style={{ width: "1000px", height: "700px" }}
-        />
-      </div>
-      <div
-        style={{
-          position: "absolute",
-          top: "20%",
-          right: "25%",
-          transform: "translateX(50%)", // Adjust this to control horizontal overlap
-          background: "gray",
-        //   border: "1px solid black",
-          borderRadius: "8px",
-          padding: "2rem",
-          maxWidth: "80%", // Ensures the content doesn't overflow the viewport
-          zIndex: 2,
-        }}
-      >
-        <h3 className="text-primary font-weight-bold mb-4">
-          Customer Engagement for the Event Lifecycle
-        </h3>
-        <p>Inform customers from work order creation to completion:</p>
-        <ul className="list-unstyled">
-          <li className="mb-3">
-            Trigger personalized template-based restoration alerts that
-            include reasons and anticipated duration.
-          </li>
-          <li className="mb-3">
-            Staged and on-demand templates offer flexibility to maximize
-            relevance and personalization.
-          </li>
-          <li className="mb-3">
-            Randomized branded surveys after restoration maximize
-            engagement.
-          </li>
-          <li>Two-way reporting & status requests.</li>
-        </ul>
-        <a
-          className="btn btn-danger text-white"
-          href="https://agent511.com/contact-us/"
-        >
-          Talk to Our Experts
-        </a>
-      </div>
-    </section>
-
-          
-           
-         
+          </section>
         </div>
-
       </section>
     </div>
-     
-  )
+  );
 }
 
 export default Petadhar;

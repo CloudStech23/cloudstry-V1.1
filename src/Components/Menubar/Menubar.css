@@ -1,4 +1,30 @@
-/* Ensure dropdown-menu styles are applied correctly */
+/* Navbar background and text color */
+
+:root {
+  --mdb-highlight-bg-color: transparent !important;
+}
+
+.navbar {
+  background: #3b82f6; /* Navbar background color */
+}
+
+.navbar-nav .nav-link {
+  color: white !important; /* Set text color to white */
+  position: relative; /* Ensure position for underline effect */
+  text-decoration: none; /* Remove underline from nav links */
+  font-weight: normal; /* Optional: Adjust font weight if needed */
+  transition: color 0.3s ease; /* Smooth color transition */
+}
+
+/* Underline effect on active menu items */
+ 
+
+/* Underline effect on hover */
+.navbar-nav .nav-link:hover {
+  color: #d1d5db; /* Slightly lighter color on hover for better visibility */
+}
+
+/* Dropdown menu styling */
 .navbar-nav .dropdown-menu {
   position: absolute;
   top: 100%;
@@ -8,7 +34,7 @@
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
   border: 1px solid #dee2e6;
   border-radius: 0;
-  background-color: #f8f9fa;
+  background-color: #3b82f6; /* Match dropdown background to navbar */
   z-index: 1000;
   opacity: 0;
   max-height: 0;
@@ -37,15 +63,27 @@
 /* Dropdown item styling */
 .dropdown-menu > .dropdown-item {
   padding: 0.5rem 1rem;
-  color: #212529;
+  color: white; /* Set dropdown item text color to white */
   text-align: left;
   white-space: nowrap;
   position: relative;
   transition: color 0.3s ease;
+  /* --mdb-dropdown-state-background-color: transparent; */
+  
 }
 
-/* Underline effect */
-.dropdown-menu > .dropdown-item.active::after {
+/* .dropdown-item.active, .dropdown-item:active {
+  color: #fff;  
+  background-color: #6e66664a;  
+}
+
+ 
+.dropdown-item {
+  color: #fff; 
+} */
+
+/* Underline effect on active dropdown item */
+/* .dropdown-menu > .dropdown-item.active::after {
   content: "";
   display: block;
   position: absolute;
@@ -55,11 +93,11 @@
   height: 2px;
   background-color: white;
   transition: width 0.3s ease;
-}
+} */
 
 /* Hover effect */
 .dropdown-menu > .dropdown-item:hover {
-  background-color: #e9ecef;
+  background-color: #2563eb; /* Slightly darker background on hover */
 }
 
 /* Dropdown toggle styling */
@@ -84,15 +122,8 @@
 .dropdown-arrow.open {
   transform: rotate(180deg);
 }
-.navbar-nav .nav-link {
-  display: flex;
-  align-items: center; /* Align items vertically center */
-}
-.dropdown-item.active {
-  background-color: #f8f9fa;
-  color: #007bff;
-}
 
+/* Dropdown submenu styling */
 .dropdown-menu .row {
   display: flex;
 }
@@ -104,15 +135,15 @@
 .dropdown-menu .col-lg-4 {
   padding-left: 15px;
 }
-/* Main navbar link styles */
-.navbar-nav .nav-link {
-  position: relative;
-  text-decoration: none;
-  color: #fff; /* Adjust color as needed */
-  text-decoration: none;
-}
+.dropdown-item.active, .dropdown-item:active {
+  
+  background-color: #1c191965;
+  transition: .3s ease;
 
-/* Underline effect on hover */
+}
+.dropdown-menu {
+  --mdb-dropdown-state-background-color: inherit !important;
+}
 .navbar-nav .nav-link::after {
   content: "";
   position: absolute;
@@ -151,5 +182,12 @@
   transform: translateX(-100%);
   opacity: 0;
   transition: transform 0.3s ease-in, opacity 0.3s ease-in;
+}
+/* .nav-link.active{
+  border-bottom: 1px solid white;
+} */
+.menulink{
+  font-size: 16px;
+  
 }
 
