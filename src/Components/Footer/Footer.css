@@ -1,0 +1,24 @@
+.nav-link {
+    color: white; /* Link text color */
+    position: relative; /* Required for the ::after pseudo-element */
+    text-decoration: none; /* Remove default underline */
+    display: inline-block; /* Ensure the text takes only the necessary width */
+  }
+  
+  .nav-link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -2px; /* Adjust this value based on your design */
+    height: 2px; /* Thickness of the underline */
+    background-color: white; /* Color of the underline */
+    transform: scaleX(0);
+    transform-origin: center; /* Start the underline from the center */
+    transition: transform 0.3s ease-in-out; /* Smooth transition for the underline */
+  }
+  
+  .nav-link:hover::after {
+    transform: scaleX(1); /* Expand the underline to match text width */
+  }
+  

@@ -1,0 +1,66 @@
+/* General styles for the hover effect */
+.blackblur {
+  position: relative;
+  overflow: hidden;
+}
+
+/* Initial state of the image */
+.blackblur img {
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: transform 0.1s ease, filter 0.3s ease;
+}
+
+/* Hover effect on the image */
+.blackblur:hover img {
+  filter: blur(4px);
+  transform: scale(1.1);
+  
+}
+
+/* Black overlay and hover text */
+.blackblur .hover-text {
+  position: absolute;
+  top: 10px; /* Position text at the top */
+  left: 10px; /* Position text at the left */
+  color: white;
+  font-size: 1.2rem;
+  text-align: left;
+  opacity: 0;
+  transition: opacity 0.1s ease;
+  z-index: 2; /* Ensure text appears above the image and overlay */
+
+}
+
+/* Display hover text when hovering on the .blackblur container */
+.blackblur:hover .hover-text {
+  opacity: 1;
+}
+
+/* Additional black overlay for the blur effect */
+.blackblur::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(16, 12, 67, 0.285); /* Black overlay */
+  opacity: 0;
+  transition: opacity 0.1s ease;
+  z-index: 1; /* Behind the hover text */
+}
+
+/* Display black overlay when hovering on the .blackblur container */
+.blackblur:hover::before {
+  opacity: 1;
+}
+/* .transparent {
+  transition: transform 0.1s ease-in-out;
+} */
+
+.transparent:hover {
+  transform: translateX(10px); /* Moves the span 10px to the right on hover */
+  transition: transform 0.3s ease-in-out; /* Smooth transition */
+}

@@ -1,8 +1,8 @@
 import React, { useState, useRef, useEffect } from "react";
 import "../Menubar/Menubar.css";
 import { Link, useLocation } from "react-router-dom";
-import { Drawer, Button, Nav } from "rsuite";
-import { CSSTransition } from "react-transition-group";
+ 
+import Menudrawer from "./Drawer";
 
 function Menubar() {
   const [openDropdown, setOpenDropdown] = useState(null);
@@ -12,7 +12,7 @@ function Menubar() {
   const [openSubmenu, setOpenSubmenu] = useState(null);
   const [openSubsubmenu, setOpenSubsubmenu] = useState(null);
   const location = useLocation();
-  const placement = "Right";
+ 
 
   // Function to handle submenu toggle
   const handleSubmenuToggle = (menu) => {
@@ -74,217 +74,7 @@ function Menubar() {
             <i className="fa fa-bars" aria-hidden="true"></i>
           </button>
 
-          <CSSTransition
-            in={open}
-            timeout={300}
-            classNames="drawer"
-            unmountOnExit
-          >
-            <Drawer
-              size="19.5rem"
-              placement={placement}
-              open={open}
-              onClose={() => setOpen(false)}
-              className="bg-dark"
-              // style={{ backgroundColor: "#3b82f6" }}
-            >
-              <Drawer.Header className="text-light">
-                <Drawer.Title className="text-light">
-                  MetroXone tech
-                </Drawer.Title>
-                {/* <Drawer.Actions>
-            <Button onClick={() => setOpen(false)}>Close</Button>
-          </Drawer.Actions> */}
-              </Drawer.Header>
-              <Drawer.Body>
-                <Nav vertical>
-                  <Nav.Item
-                    className="text-light"
-                    style={{
-                      display: "flex",
-                      alignItems: "center",
-                      padding: "0.5rem 1rem",
-                      cursor: "pointer",
-                    }}
-                  >
-                    Home
-                  </Nav.Item>
-
-                  <Nav.Item
-                    className="text-light"
-                    style={{
-                      display: "flex",
-                      alignItems: "center",
-                      padding: "0.5rem 1rem",
-                      cursor: "pointer",
-                    }}
-                    onClick={() => handleSubmenuToggle("daily-tasks")}
-                  >
-                    What We Do?
-                    <i
-                      className={`fa ${
-                        openSubmenu === "daily-tasks"
-                          ? "fa-chevron-up"
-                          : "fa-chevron-down"
-                      }`}
-                      style={{ marginLeft: "auto" }}
-                    ></i>
-                  </Nav.Item>
-                  {openSubmenu === "daily-tasks" && (
-                    <Nav
-                      className="ms-3"
-                      style={{ paddingLeft: "1rem", paddingTop: "0.5rem" }}
-                    >
-                      <Nav.Item
-                        href="#subtask1"
-                        className="text-light"
-                        style={{
-                          padding: ".5rem 1rem",
-                          display: "flex",
-                          alignItems: "center",
-                          cursor: "pointer",
-                        }}
-                        onClick={() => handleSubsubmenuToggle("subtask1")}
-                      >
-                        Product Platform
-                        <i
-                          className={`fa ${
-                            openSubsubmenu === "subtask1"
-                              ? "fa-chevron-up"
-                              : "fa-chevron-down"
-                          }`}
-                          style={{ marginLeft: ".5rem " }}
-                        ></i>
-                      </Nav.Item>
-                      {openSubsubmenu === "subtask1" && (
-                        <Nav
-                          className="ms-3"
-                          style={{ paddingLeft: "1rem", paddingTop: "0.5rem" }}
-                        >
-                          <Nav.Item
-                            href="#subtask1-1"
-                            className="text-light"
-                            style={{ padding: "0.5rem 1rem" }}
-                          >
-                            Digital Certificate
-                          </Nav.Item>{" "}
-                          <br />
-                          <Nav.Item
-                            href="#subtask1-2"
-                            className="text-light"
-                            style={{ padding: "0.5rem 1rem" }}
-                          >
-                            Pet Adhar
-                          </Nav.Item>{" "}
-                          <br />
-                          <Nav.Item
-                            href="#subtask1-2"
-                            className="text-light"
-                            style={{ padding: "0.5rem 1rem" }}
-                          >
-                            3PL Solution
-                          </Nav.Item>
-                        </Nav>
-                      )}
-                      <Nav.Item
-                        href="#subtask2"
-                        className="text-light"
-                        style={{ padding: "0.5rem 1rem" }}
-                      >
-                        It Strategy Consultancy
-                      </Nav.Item>{" "}
-                      <br />
-                      <Nav.Item
-                        href="#subtask2"
-                        className="text-light"
-                        style={{ padding: "0.5rem 1rem" }}
-                      >
-                        Software Services
-                      </Nav.Item>{" "}
-                      <br />
-                      <Nav.Item
-                        href="#subtask2"
-                        className="text-light"
-                        style={{ padding: "0.5rem 1rem" }}
-                      >
-                        Staffing Solution
-                      </Nav.Item>
-                    </Nav>
-                  )}
-                  <Nav.Item
-                    className="text-light"
-                    style={{
-                      display: "flex",
-                      alignItems: "center",
-                      padding: "0.5rem 1rem",
-                      cursor: "pointer",
-                    }}
-                    onClick={() => handleSubmenuToggle("todays-task")}
-                  >
-                    Industries We Serve
-                    <i
-                      className={`fa ${
-                        openSubmenu === "todays-task"
-                          ? "fa-chevron-up"
-                          : "fa-chevron-down"
-                      }`}
-                      style={{ marginLeft: ".5rem" }}
-                    ></i>
-                  </Nav.Item>
-                  {openSubmenu === "todays-task" && (
-                    <Nav
-                      className="ms-3"
-                      style={{ paddingLeft: "1rem", paddingTop: "0.5rem" }}
-                    >
-                      <Nav.Item
-                        href="#subtask3"
-                        className="text-light"
-                        style={{ padding: "0.5rem 1rem", color: "white" }}
-                      >
-                        Education
-                      </Nav.Item>{" "}
-                      <br />
-                      <Nav.Item
-                        href="#subtask4"
-                        className="text-light"
-                        style={{ padding: "0.5rem 1rem" }}
-                      >
-                        Government
-                      </Nav.Item>{" "}
-                      <br />
-                      <Nav.Item
-                        href="#subtask4"
-                        className="text-light"
-                        style={{ padding: "0.5rem 1rem" }}
-                      >
-                        Healthcare & Insurance
-                      </Nav.Item>{" "}
-                      <br />
-                      <Nav.Item
-                        href="#subtask4"
-                        className="text-light"
-                        style={{ padding: "0.5rem 1rem" }}
-                      >
-                        Logistic
-                      </Nav.Item>
-                    </Nav>
-                  )}
-
-                  <Nav.Item
-                    className="text-light"
-                    style={{
-                      display: "flex",
-                      alignItems: "center",
-                      padding: "0.5rem 1rem",
-                      cursor: "pointer",
-                    }}
-                  >
-                    Support
-                  </Nav.Item>
-                </Nav>
-              </Drawer.Body>
-            </Drawer>
-          </CSSTransition>
+           <Menudrawer onClick={handleOpen}/>
 
           <div
             className="collapse navbar-collapse"
@@ -351,7 +141,7 @@ function Menubar() {
                         </a>
                         <div
                           className="dropdown-divider"
-                          style={{ borderTop: "1px solid black" }}
+                          style={{ borderTop: "1px solid white" }}
                         ></div>
                         <a
                           className={`dropdown-item text-white d-flex h6 align-items-center justify-content-between ${
@@ -370,40 +160,40 @@ function Menubar() {
                         </a>
                         <div
                           className="dropdown-divider"
-                          style={{ borderTop: "1px solid black" }}
+                          style={{ borderTop: "1px solid white" }}
                         ></div>
                         <Link
                           className={`dropdown-item text-white h6 ${
                             hoveredItem === "ISC" ? "active" : ""
                           }`}
-                          to="/"
+                          to="/IT-Strategy-Consultancy"
                           onMouseEnter={() => handleHover("ISC")}
                         >
                           IT Strategy Consultancy
                         </Link>
                         <div
                           className="dropdown-divider"
-                          style={{ borderTop: "1px solid black" }}
+                          style={{ borderTop: "1px solid white" }}
                         ></div>
                         <Link
                           className={`dropdown-item text-white h6 ${
                             hoveredItem === "software" ? "active" : ""
                           }`}
                           onMouseEnter={() => handleHover("software")}
-                          href="#"
+                          to='/Software-Services'
                         >
                           Software Services
                         </Link>
                         <div
                           className="dropdown-divider"
-                          style={{ borderTop: "1px solid black" }}
+                          style={{ borderTop: "1px solid white" }}
                         ></div>
                         <Link
                           className={`dropdown-item text-white h6 ${
                             hoveredItem === "staffing" ? "active" : ""
                           }`}
                           onMouseEnter={() => handleHover("staffing")}
-                          href="#"
+                          to='/Staffing-Solution'
                         >
                           Staffing Solution
                         </Link>
@@ -468,7 +258,7 @@ function Menubar() {
                                   className="btn btn-danger mt-3 mb-2 rounded-pill px-4 py-2"
                                   href="https://www.tcs.com/what-we-do"
                                 >
-                                  Discover all solutions
+                                  Learn More
                                 </a>
                           </div>
                         </div>
@@ -496,7 +286,7 @@ function Menubar() {
                   ></span>
                 </a>
                 <div
-                  className={`dropdown-menu mt-0 w-100 shadow border-outline-success ${
+                  className={`dropdown-menu mt-0 w-100 shadow   ${
                     openDropdown === "dropdown3" ? "show" : ""
                   }`}
                   aria-labelledby="navbarDropdown3"
@@ -516,7 +306,7 @@ function Menubar() {
                         </a>
                         <div
                           className="dropdown-divider"
-                          style={{ borderTop: "1px solid black" }}
+                          style={{ borderTop: "1px solid white" }}
                         ></div>
                         <a
                           className={`dropdown-item text-white h6 ${
@@ -529,7 +319,7 @@ function Menubar() {
                         </a>
                         <div
                           className="dropdown-divider"
-                          style={{ borderTop: "1px solid black" }}
+                          sstyle={{ borderTop: "1px solid white" }}
                         ></div>
                         <a
                           className={`dropdown-item text-white h6 ${
@@ -542,7 +332,7 @@ function Menubar() {
                         </a>
                         <div
                           className="dropdown-divider"
-                          style={{ borderTop: "1px solid black" }}
+                          style={{ borderTop: "1px solid white" }}
                         ></div>
                         <Link
                           className={`dropdown-item text-white h6 ${
