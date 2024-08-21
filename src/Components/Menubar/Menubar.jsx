@@ -295,41 +295,41 @@ function Menubar() {
                   <div className="row mt-3">
                     <div className="col-lg-3" style={{ marginLeft: "5%" }}>
                       <div className="mt-3" style={{ marginLeft: "5%" }}>
-                        <a
+                        <Link
                           className={`dropdown-item text-white h6 ${
                             hoveredItem === "action3" ? "active" : ""
                           }`}
-                          href="#"
+                          to='/Education'
                           onMouseEnter={() => handleHover("action3")}
                         >
                           Education
-                        </a>
+                        </Link>
                         <div
                           className="dropdown-divider"
                           style={{ borderTop: "1px solid white" }}
                         ></div>
-                        <a
+                        <Link
                           className={`dropdown-item text-white h6 ${
                             hoveredItem === "another3" ? "active" : ""
                           }`}
-                          href="#"
+                          to='/Government'
                           onMouseEnter={() => handleHover("another3")}
                         >
                           Government
-                        </a>
+                        </Link>
                         <div
                           className="dropdown-divider"
                           sstyle={{ borderTop: "1px solid white" }}
                         ></div>
-                        <a
+                        <Link
                           className={`dropdown-item text-white h6 ${
                             hoveredItem === "something3" ? "active" : ""
                           }`}
-                          href="#"
+                          to='/Health&Insurance'
                           onMouseEnter={() => handleHover("something3")}
                         >
                           Healthcare and Insurance
-                        </a>
+                        </Link>
                         <div
                           className="dropdown-divider"
                           style={{ borderTop: "1px solid white" }}
@@ -338,7 +338,7 @@ function Menubar() {
                           className={`dropdown-item text-white h6 ${
                             hoveredItem === "something4" ? "active" : ""
                           }`}
-                          to="/uday"
+                          to="/Logistic"
                           onMouseEnter={() => handleHover("something4")}
                         >
                           Logistic
@@ -353,9 +353,9 @@ function Menubar() {
               {/* Similar structure to Menu 2 and Menu 3 */}
 
               <li className="nav-item mx-5   ms-auto">
-                <a className="nav-link" href="#">
+                <Link className="nav-link" to="/Support">
                   Contact us
-                </a>
+                </Link>
               </li>
             </ul>
           </div>

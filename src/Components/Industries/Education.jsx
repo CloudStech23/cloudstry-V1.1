@@ -1,7 +1,6 @@
-import React from "react";
-import "../Product_Platfrom/Common.css";
+import React from 'react'
 
-function Digitalcertificate() {
+function Education() {
   return (
     <div>
       <div className="container my-5 py-5">
@@ -138,6 +137,38 @@ function Digitalcertificate() {
         </div>
       </section>
 
+      <section class="py-5" id="features">
+                <div class="container px-5 my-5">
+                    <div class="row gx-5">
+                        <div class="col-lg-4 mb-5 mb-lg-0"><h2 class="fw-bolder mb-0">A better way to start building.</h2></div>
+                        <div class="col-lg-8">
+                            <div class="row gx-5 row-cols-1 row-cols-md-2">
+                                <div class="col mb-5 h-100">
+                                    <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-collection"></i></div>
+                                    <h2 class="h5">Featured title</h2>
+                                    <p class="mb-0">Paragraph of text beneath the heading to explain the heading. Here is just a bit more text.</p>
+                                </div>
+                                <div class="col mb-5 h-100">
+                                    <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-building"></i></div>
+                                    <h2 class="h5">Featured title</h2>
+                                    <p class="mb-0">Paragraph of text beneath the heading to explain the heading. Here is just a bit more text.</p>
+                                </div>
+                                <div class="col mb-5 mb-md-0 h-100">
+                                    <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-toggles2"></i></div>
+                                    <h2 class="h5">Featured title</h2>
+                                    <p class="mb-0">Paragraph of text beneath the heading to explain the heading. Here is just a bit more text.</p>
+                                </div>
+                                <div class="col h-100">
+                                    <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-toggles2"></i></div>
+                                    <h2 class="h5">Featured title</h2>
+                                    <p class="mb-0">Paragraph of text beneath the heading to explain the heading. Here is just a bit more text.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
       <section
         className="image-video-text-interactivity fadeInUp mb-5"
         style={{ marginTop: "5rem" }}
@@ -222,194 +253,7 @@ function Digitalcertificate() {
         </div>
       </section>
 
-      <div className="container" style={{ marginTop: "6rem" }}>
-        <div className="half-underline-container">
-          <h3
-            className="text-danger fw-normal display-6 text-center   half-underline"
-            style={{ marginBottom: "4rem" }}
-          >
-            How it Functions
-          </h3>
-        </div>
-        <div className="row gx-0">
-          <div
-            className="col-xl-6 col-lg-5 d-flex justify-content-left align-items-center"
-            style={{ marginBottom: "5rem" }}
-          >
-            <img
-              className="img-fluid"
-              src="https://via.placeholder.com/600x400.png?text=Dummy+Image"
-              alt="Macbook"
-            />
-          </div>
-          <div className="col-md-6 mb-5">
-            <h3
-              className="text-primary display-6 mb-3"
-              style={{ fontWeight: 300 }}
-            >
-              For Issuers
-            </h3>
-            <p
-              className="h5 mb-2 "
-              style={{ fontWeight: 400, color: "#353535" }}
-            >
-              Transition from paper certificates to digital solutions with ease.
-              MetroXone Tech’s digital certificates streamline the creation,
-              issuance, storage, and sharing of verified credentials. These
-              certificates validate achievements, skills, and experiences
-              efficiently and securely.
-            </p>
-            <p className="mt-2 h5">
-              Organizations across various industries use our platform daily. -
-            </p>
-            <ul className="list-unstyled mt-4">
-              <li className="mb-2 d-flex align-items-start">
-                <i
-                  className="fa fa-check text-primary me-2"
-                  style={{ marginTop: "6px" }}
-                ></i>
-                <span className="d-inline">
-                  Ensure complete authenticity and security with fully 
-                  verifiable credentials.
-                </span>
-              </li>
-              <li className="mb-2 d-flex align-items-start">
-                <i
-                  className="fa fa-check text-primary me-2"
-                  style={{ marginTop: "6px" }}
-                ></i>
-                <span className="d-inline">
-                  Control badge expiration and micro-credential pathways for
-                  skill development.
-                </span>
-              </li>
-              <li className="mb-2 d-flex align-items-start">
-                <i
-                  className="fa fa-check text-primary me-2"
-                  style={{ marginTop: "6px" }}
-                ></i>
-                <span className="d-inline">
-                  Record digital badges on a blockchain for added verification
-                  and security.
-                </span>
-              </li>
-              <li className="mb-2 d-flex align-items-start">
-                <i
-                  className="fa fa-check text-primary me-2"
-                  style={{ marginTop: "6px" }}
-                ></i>
-                <span className="d-inline">
-                  Access real-time data through a 24/7 analytics tool.
-                </span>
-              </li>
-              <li className="mb-2 d-flex align-items-start">
-                <i
-                  className="fa fa-check text-primary me-2"
-                  style={{ marginTop: "6px" }}
-                ></i>
-                <span className="d-inline">
-                  Integrate seamlessly with LMS and CRM via our API
-                </span>
-              </li>
-            </ul>
-            <a
-              className="btn btn-danger mt-2"
-              href="https://agent511.com/contact-us/"
-            >
-              Learn More
-            </a>
-          </div>
-        </div>
-
-        <div className="row gx-0 mt-5">
-          <div
-            className="col-xl-6 col-lg-5 d-flex justify-content-left align-items-center"
-            style={{ marginBottom: "5rem" }}
-          >
-            <img
-              className="img-fluid"
-              src="https://via.placeholder.com/600x400.png?text=Dummy+Image"
-              alt="Macbook"
-            />
-          </div>
-          <div className="col-md-6 mb-5">
-            <h3
-              className="text-primary display-6 mb-3"
-              style={{ fontWeight: 300 }}
-            >
-              For Earners
-            </h3>
-            <p
-              className="h5 mb-2 "
-              style={{ fontWeight: 400, color: "#353535" }}
-            >
-              Become part of a worldwide network of professionals enhancing
-              their learning and development with MetroXone Tech’s innovative
-              solutions.
-            </p>
-            <p className="mt-4 h3 fw-normal text-primary">
-              MetroxOne Tech: Elevate Your Digital Presence
-            </p>
-            <ul className="list-unstyled mt-0">
-              <li className="mb-2 d-flex align-items-start">
-                <i
-                  className="fa fa-check text-primary me-2"
-                  style={{ marginTop: "6px" }}
-                ></i>
-                <span className="d-inline">
-                  Maintain a detailed digital record of your achievements and
-                  professional activities.
-                </span>
-              </li>
-              <li className="mb-2 d-flex align-items-start">
-                <i
-                  className="fa fa-check text-primary me-2"
-                  style={{ marginTop: "6px" }}
-                ></i>
-                <span className="d-inline">
-                  Enjoy 24/7 access to your cloud-based portfolio.
-                </span>
-              </li>
-              <li className="mb-2 d-flex align-items-start">
-                <i
-                  className="fa fa-check text-primary me-2"
-                  style={{ marginTop: "6px" }}
-                ></i>
-                <span className="d-inline">
-                  Record digital badges on a blockchain for added verification
-                  and security.
-                </span>
-              </li>
-              <li className="mb-2 d-flex align-items-start">
-                <i
-                  className="fa fa-check text-primary me-2"
-                  style={{ marginTop: "6px" }}
-                ></i>
-                <span className="d-inline">
-                  Upload custom badge artwork to create unique, on-brand digital
-                  credentials.
-                </span>
-              </li>
-              <li className="mb-2 d-flex align-items-start">
-                <i
-                  className="fa fa-check text-primary me-2"
-                  style={{ marginTop: "6px" }}
-                ></i>
-                <span className="d-inline">
-                  Easily share credentials on social networks, career sites,
-                  employer databases, online resumes, and email signatures.
-                </span>
-              </li>
-            </ul>
-            <a
-              className="btn btn-danger mt-2"
-              href="https://agent511.com/contact-us/"
-            >
-              Learn More
-            </a>
-          </div>
-        </div>
-      </div>
+       
       <hr />
 
       {/* Content Sections */}
@@ -426,108 +270,8 @@ function Digitalcertificate() {
         </section>
         <div className="container">
           {/* First Row */}
-          <div className="row gx-0 mt-4">
-            <div
-              className="col-xl-6 col-lg-5 d-flex justify-content-left align-items-center"
-              style={{ marginBottom: "5rem" }}
-            >
-              <img
-                className="img-fluid"
-                src="https://via.placeholder.com/600x400.png?text=Dummy+Image"
-                alt="Macbook"
-              />
-            </div>
-            <div className="col-md-6 mb-5">
-              <h3
-                className="text-primary display-6 mb-3"
-                style={{ fontWeight: 300 }}
-              >
-                Universities
-              </h3>
-              <p
-                className="h5 mb-2 "
-                style={{ fontWeight: 400, color: "#353535" }}
-              >
-                At MetroxOne Tech, recognize student accomplishments, verified
-                skills, and involvement in certification programs.
-              </p>
-
-              <ul className="list-unstyled mt-4">
-                <li className="mb-2 d-flex align-items-start">
-                  <i
-                    className="fa fa-check text-primary me-2"
-                    style={{ marginTop: "6px" }}
-                  ></i>
-                  <span className="d-inline">Skills & Competencies</span>
-                </li>
-                <li className="mb-2 d-flex align-items-start">
-                  <i
-                    className="fa fa-check text-primary me-2"
-                    style={{ marginTop: "6px" }}
-                  ></i>
-                  <span className="d-inline">Non-degree certificates</span>
-                </li>
-                <li className="mb-2 d-flex align-items-start">
-                  <i
-                    className="fa fa-check text-primary me-2"
-                    style={{ marginTop: "6px" }}
-                  ></i>
-                  <span className="d-inline">Degree completion</span>
-                </li>
-              </ul>
-            </div>
-          </div>
-
-          {/* Second Row */}
-          <div className="row align-items-center mb-5 flex-row-reverse">
-            <div className="col-md-6 mb-4 mb-md-0">
-              <img
-                className="img-fluid rounded"
-                src="https://via.placeholder.com/600x400.png?text=Dummy+Image"
-                alt="Industry"
-                style={{ width: "100%", height: "auto" }}
-              />
-            </div>
-            <div className="col-md-6 mb-5">
-              <h3
-                className="text-primary display-6 mb-3"
-                style={{ fontWeight: 300 }}
-              >
-                Training Providers
-              </h3>
-              <p
-                className="h5 mb-2 "
-                style={{ fontWeight: 400, color: "#353535" }}
-              >
-                Enhance program visibility, craft tailored learning paths and
-                micro-credentials, and elevate student engagement.
-              </p>
-
-              <ul className="list-unstyled mt-4">
-                <li className="mb-2 d-flex align-items-start">
-                  <i
-                    className="fa fa-check text-primary me-2"
-                    style={{ marginTop: "6px" }}
-                  ></i>
-                  <span className="d-inline">Course completion</span>
-                </li>
-                <li className="mb-2 d-flex align-items-start">
-                  <i
-                    className="fa fa-check text-primary me-2"
-                    style={{ marginTop: "6px" }}
-                  ></i>
-                  <span className="d-inline">Certificates</span>
-                </li>
-                <li className="mb-2 d-flex align-items-start">
-                  <i
-                    className="fa fa-check text-primary me-2"
-                    style={{ marginTop: "6px" }}
-                  ></i>
-                  <span className="d-inline">Event attendance</span>
-                </li>
-              </ul>
-            </div>
-          </div>
+           
+           
           <div className="row gx-0 mt-4">
             <div
               className="col-xl-6 col-lg-5 d-flex justify-content-left align-items-center"
@@ -616,46 +360,11 @@ function Digitalcertificate() {
             </div>
           </div>
 
-          <aside
-            class="bg-primary bg-gradient rounded-3 p-4 p-sm-5  "
-            style={{ marginTop: "5rem" }}
-          >
-            <div class="d-flex align-items-center justify-content-between flex-column flex-xl-row text-center text-xl-start">
-              <div class="mb-4 mb-xl-0">
-                <div class="fs-3 fw-bold text-white">
-                  New Opportunities, delivered to you.
-                </div>
-                <div class="text-white-50">
-                  Sign up for our newsletter for the latest updates and opportunities.
-                </div>
-              </div>
-              <div class="ms-xl-4">
-                <div class="input-group mb-2">
-                  <input
-                    class="form-control"
-                    type="text"
-                    placeholder="Email address..."
-                    aria-label="Email address..."
-                    aria-describedby="button-newsletter"
-                  />
-                  <button
-                    class="btn btn-primary"
-                    id="button-newsletter"
-                    type="button"
-                  >
-                    Sign up
-                  </button>
-                </div>
-                <div class="small text-white-50">
-                  We care about privacy, and will never share your data.
-                </div>
-              </div>
-            </div>
-          </aside>
+           
         </div>
       </section>
     </div>
-  );
+  )
 }
 
-export default Digitalcertificate;
+export default Education
