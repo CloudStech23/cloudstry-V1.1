@@ -11,6 +11,7 @@ function Landing() {
           <span>
             <i className="fa fa-spinner spinning" aria-hidden="true"></i>
           </span>
+          
         </div>
       </div>
       <style jsx>{`
