@@ -14,20 +14,12 @@ function Softwareservices() {
       <div className="container py-5">
         <div className="row align-items-center justify-content-between bg-white mt-3 mb-3 shadow px-5 rounded-3 position-relative">
           {/* Text Content */}
-          <div className="col-md-5 mb-2">
+          <div className="col-md-6 mb-2">
             <h2 className="display-5 text-primary" style={{ fontWeight: 300 }}>
-              Securing Credentials Across Industries
+            Software Solutions for Industry-Specific Excellence
             </h2>
             <p className="text-muted mb-4">
-              In an increasingly digital world, the need for secure and
-              verifiable credentials is paramount across various sectors, from
-              education and professional certifications to corporate training
-              and skill-based achievements. Traditional paper certificates are
-              not only vulnerable to forgery but also difficult to verify and
-              manage, posing significant challenges for organizations and
-              individuals alike. The demand for a solution that ensures the
-              authenticity and accessibility of credentials is more pressing
-              than ever.
+            In the current landscape, software services have become indispensable, driving innovation and efficiency across industries. The shift towards <span className="fw-bold text-primary">integrated digital ecosystems</span>  is transforming traditional business models, allowing organizations to streamline operations, enhance customer experiences, and unlock new revenue streams. At the industry level, there is a growing demand for <span className="text-primary fw-bold">bespoke software solutions </span>  that cater to specific operational needs, ensuring that businesses not only stay competitive but also lead in their respective markets. As technology evolves, the emphasis on agility, scalability, and security has never been more critical, with companies seeking software services that offer robust, future-proof solutions to complex challenges.
             </p>
             <a
               href=" "
@@ -54,9 +46,10 @@ function Softwareservices() {
       {/* Card Section */}
       <section class="py-5">
         <div class="container px-5 my-3">
+          {/* <h3 className="text-danger fw-light display-5 text-center .customheading">Transformative Solutions</h3> */}
           <div class="row gx-5">
             <div className="col-lg-4 mb-5">
-              <div className="card h-80 shadow border-0">
+              <div className="card h-80 shadow border-0 service-card">
                 <div className="blackblur">
                   <img
                     className="card-img-top img-fluid"
@@ -64,51 +57,28 @@ function Softwareservices() {
                     alt="AI"
                     style={{ height: "14rem" }}
                   />
-                  <div className="hover-text">Your Text Here</div>{" "}
+                   
                 </div>
                 {/* Hover text */}
-                <div className="card-body p-4">
-                  <div className="badge bg-primary bg-gradient rounded-pill mb-2">
-                    News
+                <div className="card-body p-4 ">
+                  <div className="badge bg-primary bg-gradient rounded-pill  mb-2">
+                  Machine Intelligence
                   </div>
+                  <div className="h4  text-danger mt-2 fw-light">Artifical Intelligence</div>
                   <p className="card-text mb-0">
-                    Some quick example text to build on the card title and make
-                    up the bulk of the card's content.
+                  Cognitive computing is revolutionizing industries by enabling systems to process and analyze vast amounts of data, making intelligent decisions that mimic human cognition. Its role in automating complex tasks and enhancing decision-making is crucial in today’s data-driven world.
                   </p>
-                  <p class=" transparent ">
+                  <p class=" transparent mt-2 ">
                     <Link to="/" className="text-danger fw-bold">
                       Learn more 
                     </Link>
-                    <span className="trans">0</span>
+                    <i class="fa fa-arrow-right text-danger mt-1 mx-1  trans" aria-hidden="true"></i>
                   </p>
                 </div>
               </div>
             </div>
             <div className="col-lg-4 mb-5">
-              <div className="card h-80 shadow border-0">
-                <div className="blackblur">
-                  <img
-                    className="card-img-top img-fluid"
-                    src={web3}
-                    alt="AI"
-                    style={{ height: "14rem" }}
-                  />
-                  <div className="hover-text">Your Text Here</div>{" "}
-                </div>
-                {/* Hover text */}
-                <div className="card-body p-4">
-                  <div className="badge bg-primary bg-gradient rounded-pill mb-2">
-                    News
-                  </div>
-                  <p className="card-text mb-0">
-                    Some quick example text to build on the card title and make
-                    up the bulk of the card's content.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className="col-lg-4 mb-5">
-              <div className="card h-80 shadow border-0">
+              <div className="card h-80 shadow border-0 service-card">
                 <div className="blackblur">
                   <img
                     className="card-img-top img-fluid"
@@ -116,20 +86,57 @@ function Softwareservices() {
                     alt="AI"
                     style={{ height: "14rem" }}
                   />
-                  <div className="hover-text">Your Text Here</div>{" "}
+                   
                 </div>
                 {/* Hover text */}
-                <div className="card-body p-4">
+                <div className="card-body p-4 ">
                   <div className="badge bg-primary bg-gradient rounded-pill mb-2">
-                    News
+                  Virtual Infrastructure
                   </div>
+                  <div className="h4  text-danger fw-light mt-2">Cloud Services</div>
                   <p className="card-text mb-0">
-                    Some quick example text to build on the card title and make
-                    up the bulk of the card's content.
+                  Virtual infrastructure is the backbone of modern IT, offering scalable and flexible computing resources. It allows businesses to efficiently manage operations, reduce costs, and quickly adapt to changing market demands through seamless access to computing power and storage.
+                  </p>
+                  <p class=" transparent mt-2 ">
+                    <Link to="/" className="text-danger fw-bold">
+                      Learn more 
+                    </Link>
+                    <i class="fa fa-arrow-right text-danger mt-1 mx-1  trans" aria-hidden="true"></i>
                   </p>
                 </div>
               </div>
             </div>
+            <div className="col-lg-4 mb-5">
+              <div className="card h-80 shadow border-0 service-card">
+                <div className="blackblur">
+                  <img
+                    className="card-img-top img-fluid"
+                    src={web3}
+                    alt="AI"
+                    style={{ height: "14rem" }}
+                  />
+                   
+                </div>
+                {/* Hover text */}
+                <div className="card-body p-4 ">
+                  <div className="badge bg-primary bg-gradient rounded-pill mb-2">
+                  Decentralized Networks
+                  </div>
+                  <div className="h4  text-danger mt-2 fw-light">Blockchain (web3)</div>
+                  <p className="card-text mb-0">
+                  Distributed Ledger Technology (DLT) is transforming the way transactions are recorded and verified, ensuring transparency, security, and trust in digital operations. Its application spans across industries, from finance to supply chain, enabling decentralized and tamper-proof recordkeeping.
+                  </p>
+                  <p class=" transparent mt-2 ">
+                    <Link to="/" className="text-danger fw-bold">
+                      Learn more 
+                    </Link>
+                    <i class="fa fa-arrow-right text-danger mt-1 mx-1  trans" aria-hidden="true"></i>
+                  </p>
+                </div>
+              </div>
+            </div>
+             
+             
             <hr className="bg-danger" />
           </div>
         </div>
@@ -152,25 +159,19 @@ function Softwareservices() {
             className="text-primary display-6 mb-3"
             style={{ fontWeight: 300 }}
           >
-            For Issuers
+            Exceptional Value of Metroxone Tech Software Solutions
           </h3>
           <p className="h5 mb-2" style={{ fontWeight: 400, color: "#353535" }}>
-            Transition from paper certificates to digital solutions with ease.
-            MetroXone Tech’s digital certificates streamline the creation,
-            issuance, storage, and sharing of verified credentials. These
-            certificates validate achievements, skills, and experiences
-            efficiently and securely.
+          Metroxone Tech's software solutions are designed to empower businesses by providing cutting-edge tools that drive innovation and efficiency. Our approach combines deep industry knowledge with the latest technological advancements to deliver solutions that not only meet but exceed our clients' expectations
           </p>
-          <p className="mt-2 h5">
-            Organizations across various industries use our platform daily.
-          </p>
+           
           <ul className="list-unstyled mt-4">
             {[
-              "Ensure complete authenticity and security with fully verifiable credentials.",
-              "Control badge expiration and micro-credential pathways for skill development.",
-              "Record digital badges on a blockchain for added verification and security.",
-              "Access real-time data through a 24/7 analytics tool.",
-              "Integrate seamlessly with LMS and CRM via our API",
+              "Seamless Integration: We ensure that our software integrates effortlessly with your existing systems, minimizing disruption and maximizing efficiency.",
+              "Enhanced Security: With a focus on robust security measures, we protect your data and operations from potential threats, ensuring your peace of mind.",
+              "Tailored Innovation: Our solutions are customized to meet the specific needs of your business, ensuring that technology enhances your unique value proposition.",
+              "Continuous Support: Our dedicated support team is always on hand to ensure your software operates smoothly, with ongoing maintenance and updates",
+              "Cost Efficiency: We deliver high-quality software solutions that optimize costs without compromising on performance or functionality.",
             ].map((text, index) => (
               <li className="mb-2 d-flex align-items-start" key={index}>
                 <i
@@ -181,12 +182,7 @@ function Softwareservices() {
               </li>
             ))}
           </ul>
-          <a
-            className="btn btn-danger mt-2"
-            href=" "
-          >
-            Learn More
-          </a>
+           
         </div>
       </div>
 
@@ -210,29 +206,23 @@ function Softwareservices() {
           className="col-lg-6"
         >
           <h3 className="text-primary font-weight-bold mb-4">
-            Closing Thoughts on Pashu Aadhaar: MetroXone Technologies
+          A Commitment to Excellence You Can Trust
           </h3>
           <p>
-            Pashu Aadhaar offers a promising solution for managing livestock in
-            India. By providing unique identification numbers, it aims to
-            improve tracking accuracy, enhance disease control, and streamline
-            record management. The system is designed to boost operational
-            efficiency and support better decision-making. MetroXone Tech is
-            actively working on solutions to facilitate the implementation of
-            this initiative.
+          At Metroxone Tech, we stand by the quality and reliability of our solutions. Our commitment to innovation and customer satisfaction is at the core of everything we do. We believe in the power of technology to transform businesses, and we’re here to ensure that our clients succeed with confidence. Join us on this journey and experience the difference that true dedication and expertise can make. Your success is our promise.
           </p>
           <a
             className="btn btn-danger text-white"
             href=" "
           >
-            Talk to Our Experts
+            Connect with us
           </a>
         </div>
 
         <div style={{ position: "relative", zIndex: 1, width: "100%" }}>
           <img
             className="img-fluid rounded"
-            src="https://images.thequint.com/thequint%2F2018-08%2Fcd1c7bac-00a3-40b5-a270-72f803a98e3a%2F9b378119_4474_4e7b_820f_68bda8a3a0f4.jpg?rect=0%2C0%2C848%2C477"
+            src={ai}
             alt="Industry"
             style={{ width: "800px", height: "500px" }}
           />

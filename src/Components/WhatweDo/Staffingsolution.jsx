@@ -11,30 +11,29 @@ function Staffingsolution() {
             <div className="col-lg-6 order-lg-2">
               <div className="panel text-center">
                 <h1
-                  className="text-primary display-4"
+                  className="text-primary display-6"
                   style={{ fontWeight: 300 }}
                 >
-                  Your Partner in Business{" "}
+                  Transforming Workforce Management with{" "}
                   <span
                     className=" "
                     style={{
-                      backgroundImage:
-                        'url("https://unistudio.co/html/innovar/assets/images/common/line.svg")',
+                      // backgroundImage:
+                      //   'url("https://unistudio.co/html/innovar/assets/images/common/line.svg")',
                       objectFit: "contain",
                       backgroundRepeat: "no-repeat",
                       // backgroundRepeat: "no-repeat",
                       backgroundPosition: "0 100%", // Aligns the image at the bottom of the text
                       paddingBottom: ".6rem", // Adds space for the image below the text
                       backgroundSize: "contain",
+                      height:'1px'
                     }}
                   >
-                    Transformation
+                    Metroxone Tech
                   </span>
                 </h1>
                 <p className="desc fs-5 lg:fs-3 mt-3">
-                  Our business consulting services are rooted in a deep
-                  understanding of industry trends, best practices, and the
-                  latest technologies.
+                Effective workforce management is crucial for success, but many organizations struggle with complex staffing and resource challenges.
                 </p>
                 <a
                   className="btn btn-danger btn-md xl:btn-lg   sm:fs-4 xl:fs-3 mt-2"
@@ -66,9 +65,9 @@ function Staffingsolution() {
           </div>
         </div>
       </div>
-      {/* <hr /> */}
+      <hr />
 
-      <section class="py-5 bg-whitet text-center">
+      {/* <section class="py-5 bg-whitet text-center">
         <section className="pb-5">
           <div className="container">
             <div className="half-underline-container">
@@ -178,17 +177,12 @@ function Staffingsolution() {
             </div>
           </div>
         </section>
-      </section>
+      </section> */}
 
 
-      <div className="container mt-5" >
+      <div className="container " style={{marginTop:'5rem'}} >
       <div className="half-underline-container">
-          <h3
-            className="text-danger fw-normal display-6 text-center   half-underline"
-            style={{ marginBottom: "4rem" }}
-          >
-            How it Functions
-          </h3>
+           
         </div>
         <div className="row gx-0">
           <div
@@ -206,21 +200,15 @@ function Staffingsolution() {
               className="text-primary display-6 mb-3"
               style={{ fontWeight: 300 }}
             >
-              For Issuers
+              How Metroxone Addresses Staffing Challenges:
             </h3>
             <p
-              className="h5 mb-2 "
-              style={{ fontWeight: 400, color: "#353535" }}
+              className="h5 mb-2 text-muted "
+              style={{ fontWeight: 300}}
             >
-              Transition from paper certificates to digital solutions with ease.
-              MetroXone Tech’s digital certificates streamline the creation,
-              issuance, storage, and sharing of verified credentials. These
-              certificates validate achievements, skills, and experiences
-              efficiently and securely.
+              Metroxone delivers a unified staffing solution tailored to meet these challenges
             </p>
-            <p className="mt-2 h5">
-              Organizations across various industries use our platform daily. -
-            </p>
+            
             <ul className="list-unstyled mt-4">
               <li className="mb-2 d-flex align-items-start">
                 <i
@@ -228,8 +216,7 @@ function Staffingsolution() {
                   style={{ marginTop: "6px" }}
                 ></i>
                 <span className="d-inline">
-                  Ensure complete authenticity and security with fully 
-                  verifiable credentials.
+                Centralized Recruitment Management: Facilitate a streamlined approach to recruitment by consolidating multiple channels into a single, integrated platform.
                 </span>
               </li>
               <li className="mb-2 d-flex align-items-start">
@@ -238,8 +225,7 @@ function Staffingsolution() {
                   style={{ marginTop: "6px" }}
                 ></i>
                 <span className="d-inline">
-                  Control badge expiration and micro-credential pathways for
-                  skill development.
+                Optimized Onboarding: Automate and enhance the onboarding experience, ensuring a smooth transition for new hires and efficient assimilation into the organization.
                 </span>
               </li>
               <li className="mb-2 d-flex align-items-start">
@@ -248,8 +234,7 @@ function Staffingsolution() {
                   style={{ marginTop: "6px" }}
                 ></i>
                 <span className="d-inline">
-                  Record digital badges on a blockchain for added verification
-                  and security.
+                Dynamic Resource Allocation: Utilize real-time data and advanced analytics to manage and adjust staffing levels according to project demands and operational needs.
                 </span>
               </li>
               <li className="mb-2 d-flex align-items-start">
@@ -258,25 +243,12 @@ function Staffingsolution() {
                   style={{ marginTop: "6px" }}
                 ></i>
                 <span className="d-inline">
-                  Access real-time data through a 24/7 analytics tool.
+                Comprehensive Compliance Oversight: Manage regulatory requirements and documentation through an automated system that ensures adherence to industry standards.
                 </span>
               </li>
-              <li className="mb-2 d-flex align-items-start">
-                <i
-                  className="fa fa-check text-primary me-2"
-                  style={{ marginTop: "6px" }}
-                ></i>
-                <span className="d-inline">
-                  Integrate seamlessly with LMS and CRM via our API
-                </span>
-              </li>
+              
             </ul>
-            <a
-              className="btn btn-danger mt-2"
-              href=" "
-            >
-              Learn More
-            </a>
+             
           </div>
         </div>
 
@@ -296,19 +268,9 @@ function Staffingsolution() {
               className="text-primary display-6 mb-3"
               style={{ fontWeight: 300 }}
             >
-              For Earners
+              Key features with Us.
             </h3>
-            <p
-              className="h5 mb-2 "
-              style={{ fontWeight: 400, color: "#353535" }}
-            >
-              Become part of a worldwide network of professionals enhancing
-              their learning and development with MetroXone Tech’s innovative
-              solutions.
-            </p>
-            <p className="mt-4 h3 fw-normal text-primary">
-              MetroxOne Tech: Elevate Your Digital Presence
-            </p>
+             
             <ul className="list-unstyled mt-0">
               <li className="mb-2 d-flex align-items-start">
                 <i
@@ -316,8 +278,7 @@ function Staffingsolution() {
                   style={{ marginTop: "6px" }}
                 ></i>
                 <span className="d-inline">
-                  Maintain a detailed digital record of your achievements and
-                  professional activities.
+                Unified Platform: Centralize recruitment, onboarding, compliance, and resource management in one cohesive system.
                 </span>
               </li>
               <li className="mb-2 d-flex align-items-start">
@@ -326,7 +287,7 @@ function Staffingsolution() {
                   style={{ marginTop: "6px" }}
                 ></i>
                 <span className="d-inline">
-                  Enjoy 24/7 access to your cloud-based portfolio.
+                Automated Processes: Enhance efficiency by automating routine tasks and streamlining workflows.
                 </span>
               </li>
               <li className="mb-2 d-flex align-items-start">
@@ -335,8 +296,7 @@ function Staffingsolution() {
                   style={{ marginTop: "6px" }}
                 ></i>
                 <span className="d-inline">
-                  Record digital badges on a blockchain for added verification
-                  and security.
+                Real-Time Resource Management: Adjust staffing levels and manage resources dynamically based on current needs and data insights.
                 </span>
               </li>
               <li className="mb-2 d-flex align-items-start">
@@ -345,86 +305,69 @@ function Staffingsolution() {
                   style={{ marginTop: "6px" }}
                 ></i>
                 <span className="d-inline">
-                  Upload custom badge artwork to create unique, on-brand digital
-                  credentials.
+                Holistic Service Range: Address a broad spectrum of staffing needs including recruitment, onboarding, compliance, and more.
                 </span>
               </li>
-              <li className="mb-2 d-flex align-items-start">
-                <i
-                  className="fa fa-check text-primary me-2"
-                  style={{ marginTop: "6px" }}
-                ></i>
-                <span className="d-inline">
-                  Easily share credentials on social networks, career sites,
-                  employer databases, online resumes, and email signatures.
-                </span>
-              </li>
+               
             </ul>
-            <a
-              className="btn btn-danger mt-2"
-              href=" "
-            >
-              Learn More
-            </a>
+            
           </div>
         </div>
        </div>
 
-       <section class="py-5 bg-whitet text-center">
-        <section className="pb-5">
-          <div className="container">
-            <div className="half-underline-container">
-              <h3
-                className="text-primary text-danger text-center display-5   half-underline"
-                style={{ marginBottom: "4rem" }}
-              >
-                write something last
+       <section className="mb-5  " style={{ marginTop: "6rem" }}>
+        <div className="container">
+          <div className="row align-items-center">
+            
+            <div className="col-md-6">
+              <h3 className="text-primary fw-bold mb-3">
+              Optimizing Talent Management with Precision
               </h3>
+               
+              <ul className="list-unstyled">
+                <li className="mb-2 d-flex align-items-start">
+                  <i
+                    className="fa fa-check-circle text-primary me-2"
+                    style={{ marginTop: "6px" }}
+                  ></i>
+                  <span className="d-inline">
+                    <span className="fw-bold">Tailored Talent Acquisition: </span> We offer bespoke recruitment strategies to meet the unique needs of each organization, ensuring the right fit for every role.
+                  </span>
+                </li>
+                <li className="mb-2 d-flex align-items-start">
+                  <i
+                    className="fa fa-check-circle text-primary me-2"
+                    style={{ marginTop: "6px" }}
+                  ></i>
+                  <span className="d-inline">
+                    <span className="fw-bold"> Streamlined Onboarding: </span> Our solutions simplify the onboarding process, enhancing integration and accelerating productivity.
+
+                  </span>
+                </li>
+                <li className="mb-2 d-flex align-items-start">
+                  <i
+                    className="fa fa-check-circle text-primary me-2"
+                    style={{ marginTop: "6px" }}
+                  ></i>
+                  <span className="d-inline">
+                    <span className="fw-bold">Compliance and Risk Management: </span> Our services ensure adherence to legal and regulatory requirements, mitigating potential risks.
+                  </span>
+                </li>
+                 
+                 <p className="text-muted fw-bold">By choosing MetroXone Tech, you benefit from a strategic partner committed to enhancing your workforce efficiency and driving organizational success.</p>
+              </ul>
             </div>
-            <div className="row">
-              <div className="col-lg-10 col-xl-8 mx-auto">
-                <div
-                  className="p-5 bg-white shadow  rounded"
-                  style={{ width: "100%", height: "27rem" }}
-                >
-                   
-                  
-                      <div className="media feature-card">
-                        <h3 className="text-primary fw-normal mb-3">
-                          Enhancing Animal Health Monitoring
-                        </h3>
-                        <div className="media-body ml-3">
-                          <div className="blockquote border-0 p-0">
-                            <p className="font-italic lead">
-                              Effective health management is essential for
-                              maintaining livestock well-being and preventing
-                              disease spread, yet traditional methods often lead
-                              to fragmented health records. Pashu Aadhaar
-                              addresses this challenge with a comprehensive
-                              system that assigns unique identification numbers
-                              to animals, enabling precise tracking of
-                              vaccinations, treatments, and health history. This
-                              system ensures accurate records and timely
-                              interventions. Early implementations of Pashu
-                              Aadhaar have demonstrated improved health outcomes
-                              and fewer disease outbreaks in pilot areas, with
-                              centralized data facilitating better health trend
-                              tracking and quicker responses to issues.
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-           
-
-                    
-
-                    
-                </div>
-              </div>
+            <div className="col-md-6 mb-4">
+              <img
+                className="img-fluid rounded"
+                src="https://via.placeholder.com/600x400.png?text=Dummy+Image"
+                alt="Rationale Behind Pashu Aadhaar"
+              />
             </div>
           </div>
-        </section>
+        </div>
       </section>
+       
 
 
     </div>
