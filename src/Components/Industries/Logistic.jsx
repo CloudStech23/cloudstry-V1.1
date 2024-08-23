@@ -1,4 +1,5 @@
 import React from "react";
+import "./Common.css";
 
 function Logistic() {
   return (
@@ -8,30 +9,27 @@ function Logistic() {
           {/* Text Content */}
           <div className="col-md-5 mt-4 mb-2">
             <span className="badge bg-primary rounded-pill px-2 py-2 mb-3">
-              Digital Certificates
+              Logistic
             </span>
             <h2
               className=" display-5 text-primary "
               style={{ fontWeight: 300 }}
             >
-              Securing Credentials Across Industries
+              Strategic Engagement in Logistics
             </h2>
             <p className="text-muted mb-4">
-              In an increasingly digital world, the need for secure and
-              verifiable credentials is paramount across various sectors, from
-              education and professional certifications to corporate training
-              and skill-based achievements. Traditional paper certificates are
-              not only vulnerable to forgery but also difficult to verify and
-              manage, posing significant challenges for organizations and
-              individuals alike. The demand for a solution that ensures the
-              authenticity and accessibility of credentials is more pressing
-              than ever.
+              Logistics is the backbone of global trade, ensuring that goods are
+              efficiently transported from manufacturers to consumers. It
+              encompasses a wide range of activities, including transportation,
+              warehousing, inventory management, and order fulfillment. As
+              international trade becomes more complex, the logistics sector
+              must evolve to meet the growing demands of global supply chains.
+              This is particularly evident in the ambitious India-Middle East
+              Economic Corridor, where streamlined logistics are crucial for
+              enhancing trade and economic cooperation between these regions.
             </p>
-            <a
-              href=" "
-              className="btn btn-danger"
-            >
-              Talk to our Experts
+            <a href=" " className="btn btn-danger">
+              Learn More
             </a>
           </div>
 
@@ -54,117 +52,128 @@ function Logistic() {
               className=" display-6 text-primary "
               style={{ fontWeight: 300 }}
             >
-              Securing Credentials Across Industries
+              Comprehending the Logistics Process
             </h2>
             <p className="text-muted mb-4">
-              In an increasingly digital world, the need for secure and
-              verifiable credentials is paramount across various sectors, from
-              education and professional certifications to corporate training
-              and skill-based achievements. Traditional paper certificates are
-              not only vulnerable to forgery but also difficult to verify and
-              manage, posing significant challenges for organizations and
-              individuals alike. The demand for a solution that ensures the
-              authenticity and accessibility of credentials is more pressing
-              than ever.
+              The logistics flow encompasses the systematic movement of goods,
+              information, and resources throughout the supply chain. This
+              process includes various stages, from initial production or
+              sourcing to the final delivery to the customer. Key activities
+              within the logistics flow involve transportation, inventory
+              management, planning, and distribution of goods. Ensuring that
+              each stage is synchronized is essential for minimizing costs and
+              maximizing efficiency. Effective logistics flow is crucial for
+              meeting market demands, enhancing customer satisfaction, and
+              maintaining a competitive edge.
             </p>
-            <ul className="list-unstyled mb-4">
-              <li className="mb-4">
-                <i className="fa fa-check-circle text-primary "></i>
-                <i className="bi bi-check-circle-fill text-primary me-2"></i>
-                {/* <span className="" style={{ fontWeight: 700 }}>
-                    Unified Credential Management:
-                  </span>{" "} */}
+            <ul className="list-unstyled">
+              <li className="mb-2 d-flex align-items-start">
+                <i
+                  className="fa fa-check-circle text-primary me-2"
+                  style={{ marginTop: "6px" }}
+                ></i>
                 <span className="d-inline">
-                  Secured with advanced encryption and digital signatures,
-                  ensuring authenticity and protection against tampering.
+                  <span className="fw-bold">Transportation:</span> Goods are
+                  transported from manufacturers to distribution centers or
+                  markets using efficient modes such as road, rail, sea, or air.
                 </span>
               </li>
-              <li className="mb-4">
-                <i className="fa fa-check-circle text-primary "></i>
-                <i className="bi bi-check-circle-fill text-primary me-2"></i>
-                {/* <span className="" style={{ fontWeight: 700 }}>
-                    Unified Credential Management:
-                  </span>{" "} */}
+              <li className="mb-2 d-flex align-items-start">
+                <i
+                  className="fa fa-check-circle text-primary me-2"
+                  style={{ marginTop: "6px" }}
+                ></i>
                 <span className="d-inline">
-                  Credentials can be quickly verified online, reducing the time
-                  and effort needed for validation.
+                  <span className="fw-bold">Warehousing:</span> Products are
+                  stored in strategically located warehouses, ensuring
+                  availability for timely distribution and effective inventory
+                  management.
                 </span>
               </li>
-              <li className="mb-4">
-                <i className="fa fa-check-circle text-primary "></i>
-                <i className="bi bi-check-circle-fill text-primary me-2"></i>
-                {/* <span className="" style={{ fontWeight: 700 }}>
-                    Unified Credential Management:
-                  </span>{" "} */}
+              <li className="mb-2 d-flex align-items-start">
+                <i
+                  className="fa fa-check-circle text-primary me-2"
+                  style={{ marginTop: "6px" }}
+                ></i>
                 <span className="d-inline">
-                  Organizations can tailor certificates to reflect their
-                  branding, including logos and signatures.
+                  <span className="fw-bold">Order Fulfillment:</span> Orders are
+                  processed and packed at fulfillment centers, ensuring accurate
+                  picking, secure packaging, and timely delivery to customers.
                 </span>
               </li>
-              <li className="mb-4">
-                <i className="fa fa-check-circle text-primary "></i>
-                <i className="bi bi-check-circle-fill text-primary me-2"></i>
-                {/* <span className="" style={{ fontWeight: 700 }}>
-                    Unified Credential Management:
-                  </span>{" "} */}
+              <li className="mb-2 d-flex align-items-start">
+                <i
+                  className="fa fa-check-circle text-primary me-2"
+                  style={{ marginTop: "6px" }}
+                ></i>
                 <span className="d-inline">
-                  Allows credentials to be shared and accessed from anywhere,
-                  facilitating broader recognition and ease of use.
+                  <span className="fw-bold">Distribution:</span> The final step
+                  involves delivering goods to end customers, including the
+                  challenging and often costly last-mile delivery.
                 </span>
               </li>
             </ul>
-            <a
-              href=" "
-              className="btn btn-danger"
-            >
-              Talk to our Experts
-            </a>
           </div>
 
           {/* Right Column - 2x2 Grid of Images */}
           <div className="col-md-6">
-            <div className="row">
+            <div className="row mt-5">
               {/* First Row of Images */}
-              <div className="col-6 mb-3">
+              <div className="col-6 mb-3 position-relative">
                 <img
-                  src="https://via.placeholder.com/200"
+                  src="https://img.freepik.com/free-photo/logistics-transportation-container-cargo-ship-cargo-plane-with-working-crane-bridge-shipyard-sunrise-logistic-import-export-transport-industry-background-ai-generative_123827-24177.jpg?t=st=1724416744~exp=1724420344~hmac=7d91edf7ec1adb51ffb308cfd7593913e7d77ce246d7ae8fcee7e3111457a411&w=996"
                   alt="Placeholder"
                   className="img-fluid rounded"
                   style={{ width: "100%", height: "auto" }}
                 />
+                <div className="overlay">
+                  <p className="overlay-text">Transportation</p>
+                </div>
               </div>
-              <div className="col-6 mb-3">
+              <div className="col-6 mb-3 position-relative">
                 <img
-                  src="https://via.placeholder.com/200"
+                  src="https://img.freepik.com/free-photo/view-full-warehouse-with-forklift_181624-44643.jpg?t=st=1724416814~exp=1724420414~hmac=3506397e94e4536dd651753b9385ef4e845afb753ad328ee7c0719e5618d99eb&w=996"
                   alt="Placeholder"
                   className="img-fluid rounded"
                   style={{ width: "100%", height: "auto" }}
                 />
+                <div className="overlay">
+                  <p className="overlay-text">Warehousing</p>
+                </div>
               </div>
 
               {/* Second Row of Images */}
-              <div className="col-6 mb-3">
+              <div className="col-6 mb-3 position-relative">
                 <img
-                  src="https://via.placeholder.com/200"
+                  src="https://img.freepik.com/free-photo/handsome-young-man-working-with-papers_1150-7681.jpg?t=st=1724416851~exp=1724420451~hmac=038d0ac090d6542ed87f76c5669f1a01f336352f97d56ea427c68c78f14d3f36&w=996"
                   alt="Placeholder"
                   className="img-fluid rounded"
                   style={{ width: "100%", height: "auto" }}
                 />
+                <div className="overlay">
+                  <p className="overlay-text">Order Fulfillment</p>
+                </div>
               </div>
-              <div className="col-6 mb-3">
+              <div className="col-6 mb-3 position-relative">
                 <img
-                  src="https://via.placeholder.com/200"
+                  src="https://img.freepik.com/free-photo/happy-deliverer-carrying-packages-while-making-home-delivery-his-customer_637285-1282.jpg?t=st=1724416889~exp=1724420489~hmac=997273860f6d54fdbb739b730141b83dd24b37a6c5d552e96ac038bef33836b8&w=996"
                   alt="Placeholder"
                   className="img-fluid rounded"
                   style={{ width: "100%", height: "auto" }}
                 />
+                <div className="overlay">
+                  <p className="overlay-text">Distribution</p>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
 
-      <section className="image-video-text-interactivity fadeInUp mb-5">
+      <section
+        className="image-video-text-interactivity fadeInUp mb-5"
+        style={{ marginTop: "6rem" }}
+      >
         <div className="container mb-5">
           <div className="row align-items-center mb-5">
             {/* Image Section */}
@@ -179,25 +188,28 @@ function Logistic() {
             </div>
 
             {/* Text Section */}
-            <div className="col-md-6 mb-5">
+            <div className="col-md-6 ">
               <h3 className="text-primary fw-bold mb-3">
-                Navigating Complexities in Third-Party Logistics
+                Navigating Complexities in Logistics
               </h3>
               <p className="">
-                Third-party logistics (3PL) providers face a variety of
-                challenges that impact their ability to deliver effective
-                services. Key issues include:
+                The logistics sector faces numerous challenges as it navigates
+                the complexities of global supply chains, fluctuating demand,
+                and evolving customer expectations. Managing these challenges
+                requires careful planning, advanced technology, and strategic
+                partnerships. Key challenges include:
               </p>
-              <ul className="list-unstyled mt-4">
+              <ul className="list-unstyled">
                 <li className="mb-2 d-flex align-items-start">
                   <i
                     className="fa fa-check-circle text-primary me-2"
                     style={{ marginTop: "6px" }}
                   ></i>
                   <span className="d-inline">
-                    Cross-border shipping faces delays and increased costs due
-                    to additional checks and inspections at multiple points by
-                    intermediary countries.
+                    <span className="fw-bold">Supply Chain Disruptions:</span>
+                    Unforeseen events, such as natural disasters or geopolitical
+                    tensions, can cause significant delays and disruptions in
+                    the supply chain.
                   </span>
                 </li>
                 <li className="mb-2 d-flex align-items-start">
@@ -206,8 +218,10 @@ function Logistic() {
                     style={{ marginTop: "6px" }}
                   ></i>
                   <span className="d-inline">
-                    Real-time visibility and tracking can be difficult, leading
-                    to inefficiencies in inventory and shipment management.
+                    <span className="fw-bold">Rising Costs:</span>
+                    Increasing fuel prices, labor costs, and regulatory
+                    compliance expenses can drive up the overall cost of
+                    logistics operations.
                   </span>
                 </li>
                 <li className="mb-2 d-flex align-items-start">
@@ -216,9 +230,9 @@ function Logistic() {
                     style={{ marginTop: "6px" }}
                   ></i>
                   <span className="d-inline">
-                    Controlling logistics costs remains a significant challenge,
-                    necessitating ongoing optimization and strategic cost-saving
-                    measures.
+                    <span className="fw-bold">Technology Integration:</span>
+                    Implementing and integrating new technologies, such as IoT
+                    and AI, into existing systems can be complex and costly.
                   </span>
                 </li>
                 <li className="mb-2 d-flex align-items-start">
@@ -227,39 +241,13 @@ function Logistic() {
                     style={{ marginTop: "6px" }}
                   ></i>
                   <span className="d-inline">
-                    Risk management is crucial but challenging, involving
-                    strategies to handle disruptions, delays, or damage to
-                    goods.
-                  </span>
-                </li>
-                <li className="mb-2 d-flex align-items-start">
-                  <i
-                    className="fa fa-check-circle text-primary me-2"
-                    style={{ marginTop: "6px" }}
-                  ></i>
-                  <span className="d-inline">
-                    Ensuring high-quality customer service during peak periods
-                    or disruptions can strain resources and affect service
-                    consistency.
-                  </span>
-                </li>
-                <li className="mb-2 d-flex align-items-start">
-                  <i
-                    className="fa fa-check-circle text-primary me-2"
-                    style={{ marginTop: "6px" }}
-                  ></i>
-                  <span className="d-inline">
-                    Compliance with evolving regulations and industry standards
-                    demands dedicated attention and resources.
+                    <span className="fw-bold">Sustainability Pressure:</span>
+                    There is growing demand for environmentally friendly
+                    practices, which requires investment in green technologies
+                    and sustainable supply chain practices.
                   </span>
                 </li>
               </ul>
-              <a
-                className="btn btn-danger"
-                href=" "
-              >
-                Talk to our Experts
-              </a>
             </div>
           </div>
         </div>
@@ -274,24 +262,28 @@ function Logistic() {
             {/* Text Section */}
             <div className="col-md-6">
               <h3 className="text-primary fw-bold mb-3">
-                Advancing 3PL Solution: MetroXone Tech
+                Logistic Solutions with Metroxone
               </h3>
               <p>
-                MetroXone Tech is dedicated to addressing the complexities of
-                third-party logistics (3PL) by providing innovative solutions
-                designed to tackle existing challenges and enhance operational
-                efficiency
+                Metroxone Tech's logistics platform is engineered to optimize
+                the entire logistics process, ensuring efficiency, scalability,
+                seamless integration with existing systems, and real-time
+                tracking. Our strategic partnerships further solidify our
+                position as a leader in driving global trade and economic
+                growth.
               </p>
 
-              <ul className="list-unstyled mt-4">
+              <ul className="list-unstyled">
                 <li className="mb-2 d-flex align-items-start">
                   <i
                     className="fa fa-check-circle text-primary me-2"
                     style={{ marginTop: "6px" }}
                   ></i>
                   <span className="d-inline">
-                    Leverage extensive 3PL networks to facilitate expansion into
-                    new markets with ease and efficiency.
+                    <span className="fw-bold">Supply Chain Disruptions:</span>
+                    Unforeseen events, such as natural disasters or geopolitical
+                    tensions, can cause significant delays and disruptions in
+                    the supply chain.
                   </span>
                 </li>
                 <li className="mb-2 d-flex align-items-start">
@@ -300,9 +292,10 @@ function Logistic() {
                     style={{ marginTop: "6px" }}
                   ></i>
                   <span className="d-inline">
-                    Allow businesses to redirect focus to key areas such as
-                    product development and marketing by outsourcing logistics
-                    functions.
+                    <span className="fw-bold">Rising Costs:</span>
+                    Increasing fuel prices, labor costs, and regulatory
+                    compliance expenses can drive up the overall cost of
+                    logistics operations.
                   </span>
                 </li>
                 <li className="mb-2 d-flex align-items-start">
@@ -311,9 +304,9 @@ function Logistic() {
                     style={{ marginTop: "6px" }}
                   ></i>
                   <span className="d-inline">
-                    Gain access to sophisticated logistics technologies and
-                    industry best practices, ensuring continuous improvement in
-                    supply chain management.
+                    <span className="fw-bold">Technology Integration:</span>
+                    Implementing and integrating new technologies, such as IoT
+                    and AI, into existing systems can be complex and costly.
                   </span>
                 </li>
                 <li className="mb-2 d-flex align-items-start">
@@ -322,9 +315,10 @@ function Logistic() {
                     style={{ marginTop: "6px" }}
                   ></i>
                   <span className="d-inline">
-                    Adapt logistics services seamlessly to accommodate
-                    fluctuating demand, mitigating the burden of fixed
-                    operational costs.
+                    <span className="fw-bold">Sustainability Pressure:</span>
+                    There is growing demand for environmentally friendly
+                    practices, which requires investment in green technologies
+                    and sustainable supply chain practices.
                   </span>
                 </li>
                 <li className="mb-2 d-flex align-items-start">
@@ -333,19 +327,29 @@ function Logistic() {
                     style={{ marginTop: "6px" }}
                   ></i>
                   <span className="d-inline">
-                    Optimize logistics expenses by leveraging 3PL's ability to
-                    negotiate favorable rates with carriers, leading to
-                    considerable savings.
+                    <span className="fw-bold">Enhanced Efficiency:</span>
+                    Our platform is designed to optimize every step of the
+                    logistics process, from transportation to order fulfillment,
+                    ensuring that goods are delivered on time and at the lowest
+                    possible cost.
                   </span>
                 </li>
+                <li className="mb-2 d-flex align-items-start">
+                  <i
+                    className="fa fa-check-circle text-primary me-2"
+                    style={{ marginTop: "6px" }}
+                  ></i>
+                  <span className="d-inline">
+                    <span className="fw-bold">Scalability:</span>
+                    As trade volumes increase, particularly with the growth of
+                    the India-Middle East Economic Corridor, our platform can
+                    scale to meet the demands of both large and small logistics
+                    operations.
+                  </span>
+                </li>
+                 
+                 
               </ul>
-
-              <a
-                className="btn btn-danger"
-                href=" "
-              >
-                Talk to our Experts
-              </a>
             </div>
 
             {/* Image Section */}
@@ -360,54 +364,6 @@ function Logistic() {
             </div>
           </div>
         </div>
-      </section>
-      <section class="py-5 bg-whitet text-center">
-        <section className="pb-5">
-          <div className="container">
-            <div className="half-underline-container">
-              <h3
-                className="text-primary text-danger text-center display-5   half-underline"
-                style={{ marginBottom: "4rem" }}
-              >
-                write something last
-              </h3>
-            </div>
-            <div className="row">
-              <div className="col-lg-10 col-xl-8 mx-auto">
-                <div
-                  className="p-5 bg-white shadow  rounded"
-                  style={{ width: "100%", height: "27rem" }}
-                >
-                  <div className="media feature-card">
-                    <h3 className="text-primary fw-normal mb-3">
-                      Enhancing Animal Health Monitoring
-                    </h3>
-                    <div className="media-body ml-3">
-                      <div className="blockquote border-0 p-0">
-                        <p className="font-italic lead">
-                          Effective health management is essential for
-                          maintaining livestock well-being and preventing
-                          disease spread, yet traditional methods often lead to
-                          fragmented health records. Pashu Aadhaar addresses
-                          this challenge with a comprehensive system that
-                          assigns unique identification numbers to animals,
-                          enabling precise tracking of vaccinations, treatments,
-                          and health history. This system ensures accurate
-                          records and timely interventions. Early
-                          implementations of Pashu Aadhaar have demonstrated
-                          improved health outcomes and fewer disease outbreaks
-                          in pilot areas, with centralized data facilitating
-                          better health trend tracking and quicker responses to
-                          issues.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
       </section>
     </div>
   );

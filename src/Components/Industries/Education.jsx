@@ -59,60 +59,52 @@ function Education() {
                 Navigating the Complexities of Morden Education
               </h3>
 
-              <ul className="list-unstyled mb-4">
-                <li className="mb-3">
-                  <i className="fa fa-check-circle text-primary"></i>
-                  <i className="bi bi-check-circle-fill text-primary me-2"></i>
-                  <span className="" style={{ fontWeight: 700 }}>
-                    Unified Credential Management:
-                  </span>{" "}
-                  <span className="">
-                    Combines issuance, management, and verification of digital
-                    credentials into a single platform.
+              <ul className="list-unstyled">
+                <li className="mb-2 d-flex align-items-start">
+                  <i
+                    className="fa fa-check-circle text-primary me-2"
+                    style={{ marginTop: "6px" }}
+                  ></i>
+                  <span className="d-inline">
+                    <span className="fw-bold">Supply Chain Disruptions:</span>
+                    Unforeseen events, such as natural disasters or geopolitical
+                    tensions, can cause significant delays and disruptions in
+                    the supply chain.
                   </span>
                 </li>
-                <li className="mb-3">
-                  <i className="fa fa-check-circle text-primary"></i>
-                  <i className="bi bi-check-circle-fill text-primary me-2"></i>
-                  <span className="" style={{ fontWeight: 700 }}>
-                    Enhanced Security:
-                  </span>{" "}
-                  <span className="">
-                    Utilizes cryptographic techniques to ensure credentials are
-                    tamper-proof and verifiable.
+                <li className="mb-2 d-flex align-items-start">
+                  <i
+                    className="fa fa-check-circle text-primary me-2"
+                    style={{ marginTop: "6px" }}
+                  ></i>
+                  <span className="d-inline">
+                    <span className="fw-bold">Rising Costs:</span>
+                    Increasing fuel prices, labor costs, and regulatory
+                    compliance expenses can drive up the overall cost of
+                    logistics operations.
                   </span>
                 </li>
-                <li className="mb-3">
-                  <i className="fa fa-check-circle text-primary"></i>
-                  <i className="bi bi-check-circle-fill text-primary me-2"></i>
-                  <span className="" style={{ fontWeight: 700 }}>
-                    Scalable Solutions:
-                  </span>{" "}
-                  <span className="">
-                    Accommodates a range of credentials from degrees to
-                    professional certifications and badges.
+                <li className="mb-2 d-flex align-items-start">
+                  <i
+                    className="fa fa-check-circle text-primary me-2"
+                    style={{ marginTop: "6px" }}
+                  ></i>
+                  <span className="d-inline">
+                    <span className="fw-bold">Technology Integration:</span>
+                    Implementing and integrating new technologies, such as IoT
+                    and AI, into existing systems can be complex and costly.
                   </span>
                 </li>
-                <li className="mb-3">
-                  <i className="fa fa-check-circle text-primary"></i>
-                  <i className="bi bi-check-circle-fill text-primary me-2"></i>
-                  <span className="" style={{ fontWeight: 700 }}>
-                    Ease of Use:
-                  </span>{" "}
-                  <span className="">
-                    Provides intuitive tools for managing credentials with
-                    minimal technical expertise.
-                  </span>
-                </li>
-                <li className="mb-3">
-                  <i className="fa fa-check-circle text-primary"></i>
-                  <i className="bi bi-check-circle-fill text-primary me-2"></i>
-                  <span className="" style={{ fontWeight: 700 }}>
-                    Global Accessibility:
-                  </span>{" "}
-                  <span className="">
-                    Ensures credentials are easily shareable and accessible
-                    across various digital platforms.
+                <li className="mb-2 d-flex align-items-start">
+                  <i
+                    className="fa fa-check-circle text-primary me-2"
+                    style={{ marginTop: "6px" }}
+                  ></i>
+                  <span className="d-inline">
+                    <span className="fw-bold">Sustainability Pressure:</span>
+                    There is growing demand for environmentally friendly
+                    practices, which requires investment in green technologies
+                    and sustainable supply chain practices.
                   </span>
                 </li>
               </ul>
@@ -206,37 +198,45 @@ function Education() {
                 enhance the educational experience for institutions, students,
                 and employers.
               </p>
-              <ul className="list-unstyled mb-4">
-                <li className="mb-4">
-                  <i className="fa fa-check-circle text-primary "></i>
-                  <i className="bi bi-check-circle-fill text-primary me-2"></i>
+              <ul className="list-unstyled">
+                <li className="mb-2 d-flex align-items-start">
+                  <i
+                    className="fa fa-check-circle text-primary me-2"
+                    style={{ marginTop: "6px" }}
+                  ></i>
                   <span className="d-inline">
                     Advanced blockchain encryption ensures the security and
                     integrity of digital credentials, safeguarding them from
                     tampering and forgery.
                   </span>
                 </li>
-                <li className="mb-4">
-                  <i className="fa fa-check-circle text-primary "></i>
-                  <i className="bi bi-check-circle-fill text-primary me-2"></i>
+                <li className="mb-2 d-flex align-items-start">
+                  <i
+                    className="fa fa-check-circle text-primary me-2"
+                    style={{ marginTop: "6px" }}
+                  ></i>
                   <span className="d-inline">
                     Streamlined online verification process accelerates
                     credential validation, saving time and enhancing operational
                     efficiency.
                   </span>
                 </li>
-                <li className="mb-4">
-                  <i className="fa fa-check-circle text-primary "></i>
-                  <i className="bi bi-check-circle-fill text-primary me-2"></i>
+                <li className="mb-2 d-flex align-items-start">
+                  <i
+                    className="fa fa-check-circle text-primary me-2"
+                    style={{ marginTop: "6px" }}
+                  ></i>
                   <span className="d-inline">
                     Tailored certificate designs featuring institutional
                     branding, logos, and signatures, ensuring a professional
                     presentation.
                   </span>
                 </li>
-                <li className="mb-4">
-                  <i className="fa fa-check-circle text-primary "></i>
-                  <i className="bi bi-check-circle-fill text-primary me-2"></i>
+                <li className="mb-2 d-flex align-items-start">
+                  <i
+                    className="fa fa-check-circle text-primary me-2"
+                    style={{ marginTop: "6px" }}
+                  ></i>
                   <span className="d-inline">
                     Global accessibility of credentials facilitates broader
                     recognition and simplifies sharing across various platforms.
