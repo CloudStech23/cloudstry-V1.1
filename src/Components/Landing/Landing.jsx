@@ -1,6 +1,11 @@
 import React from "react";
 import Slick from "./Slick";
 import mapimage from "../Images/world-map-with-rag-dolls.png";
+// import '../Landing/Landing.css'
+import staffingimage from "../Images/staffing sol.jpg";
+import softwareimage from "../Images/software services.jpg";
+import strategyimage from "../Images/it strategy.jpg";
+import { Link } from "react-router-dom";
 
 function Landing() {
   return (
@@ -33,96 +38,80 @@ function Landing() {
       <section className="" style={{ marginTop: "-2.5rem" }}>
         <div className="container">
           <div className="row g-4">
-            <div className="col-12 col-md-4">
-              <a
-                className="card border-0 text-decoration-none text-primary"
-                href="https://davidsuzuki.org/action/bylaws-for-biodiversity/"
-                target="_self"
-              >
-                <div className="position-relative">
-                  <img
-                    src="https://davidsuzuki.org/wp-content/uploads/2024/07/bylaws-for-biodiversity-native-plant-garden-in-Toronto-570x510.jpg"
-                    alt="Native Plant Garden"
-                    className="card-img-top"
-                    style={{
-                      height: "200px",
-                      objectFit: "cover",
-                      width: "100%",
-                    }}
-                  />
+            <div className="col-12 col-md-4 service-card  ">
+              <div className="position-relative shadow">
+                <img
+                  src={staffingimage}
+                  alt="Native Plant Garden"
+                  className="card-img-top rounded-3"
+                  style={{
+                    height: "200px",
+                    objectFit: "cover",
+                    width: "100%",
+                  }}
+                />
 
-                  <div className="card-body bg-light p-4">
-                    <h4 className="card-title mb-3">
-                      Tell your local government to update its bylaws for
-                      biodiversity!
-                    </h4>
-                    <span className="btn btn-danger">Read More</span>
-                  </div>
+                <div className="card-body bg-light p-4">
+                  <h4 className="card-title text-primary mb-3">
+                    Expertly connect top talent with the right opportunities for
+                    your business needs.
+                  </h4>
+                  <span className="btn btn-danger">Read More</span>
                 </div>
-              </a>
+              </div>
             </div>
-            <div className="col-12 col-md-4">
-              <a
-                className="card border-0 text-decoration-none text-primary"
-                href="https://davidsuzuki.org/action/bylaws-for-biodiversity/"
-                target="_self"
-              >
-                <div className="position-relative">
-                  <img
-                    src="https://davidsuzuki.org/wp-content/uploads/2024/07/bylaws-for-biodiversity-native-plant-garden-in-Toronto-570x510.jpg"
-                    alt="Native Plant Garden"
-                    className="card-img-top"
-                    style={{
-                      height: "200px",
-                      objectFit: "cover",
-                      width: "100%",
-                    }}
-                  />
+            <div className="col-12 col-md-4 service-card">
+              <div className="position-relative shadow">
+                <img
+                  src={softwareimage}
+                  alt="Native Plant Garden"
+                  className="card-img-top rounded-3"
+                  style={{
+                    height: "200px",
+                    objectFit: "cover",
+                    width: "100%",
+                  }}
+                />
 
-                  <div className="card-body bg-light p-4">
-                    <h4 className="card-title mb-3">
-                      Tell your local government to update its bylaws for
-                      biodiversity!
-                    </h4>
-                    <span className="btn btn-danger">Read More</span>
-                  </div>
+                <div className="card-body bg-light p-4">
+                  <h4 className="card-title text-primary mb-3">
+                    Deliver tailored digital solutions to streamline and enhance
+                    your operational processes.
+                  </h4>
+                  <span className="btn btn-danger">Read More</span>
                 </div>
-              </a>
+              </div>
             </div>
-            <div className="col-12 col-md-4">
-              <a
-                className="card border-0 text-decoration-none text-primary"
-                href="https://davidsuzuki.org/action/bylaws-for-biodiversity/"
-                target="_self"
-              >
-                <div className="position-relative">
-                  <img
-                    src="https://davidsuzuki.org/wp-content/uploads/2024/07/bylaws-for-biodiversity-native-plant-garden-in-Toronto-570x510.jpg"
-                    alt="Native Plant Garden"
-                    className="card-img-top"
-                    style={{
-                      height: "200px",
-                      objectFit: "cover",
-                      width: "100%",
-                    }}
-                  />
+            <div className="col-12 col-md-4 service-card">
+              <div className="position-relative shadow">
+                <img
+                  src={strategyimage}
+                  alt="Native Plant Garden"
+                  className="card-img-top rounded-3"
+                  style={{
+                    height: "200px",
+                    objectFit: "cover",
+                    width: "100%",
+                  }}
+                />
 
-                  <div className="card-body bg-light p-4">
-                    <h4 className="card-title mb-3">
-                      Tell your local government to update its bylaws for
-                      biodiversity!
-                    </h4>
-                    <span className="btn btn-danger">Read More</span>
-                  </div>
+                <div className="card-body bg-light p-4">
+                  <h4 className="card-title text-primary mb-3">
+                    some short Guide your technology investments with strategic
+                    insights for business.
+                  </h4>
+                  <span className="btn btn-danger">Read More</span>
                 </div>
-              </a>
+              </div>
             </div>
           </div>
         </div>
-        
       </section>
 
-      <section className="image-video-text-interactivity is-reverse fadeInUp mb-5" style={{marginTop:'7rem'}}>
+      <section
+        className="image-video-text-interactivity is-reverse fadeInUp mb-5"
+        style={{ marginTop: "7rem" }}
+      >
         <div className="container px-3 px-md-5">
           <div className="row align-items-center">
             <div className="col-md-6 mb-4 mb-md-0 d-flex justify-content-center">
@@ -135,51 +124,71 @@ function Landing() {
               />
             </div>
             <div className="col-md-6">
-              <h3 className="fw-semibold fs-3 text-primary mb-4">
-                Efficient solutions for Municipal and Cooperative Utilities
+              <h3 className="fw-light fs-3 text-primary mb-2">
+                Empowering Communities with Metroxone Technologies
               </h3>
-              <p className="mb-4" style={{ lineHeight: 1.375 }}>
-                Need advanced communication solutions tailored to your utility’s
-                unique needs while maintaining a personal touch in customer
-                relationships? AGENT511 REACH offers tools to enhance customer
-                engagement and operational efficiency for{" "}
-                <a
-                  href="https://agent511.com/industries/munis-coops/"
-                  className="text-primary text-decoration-none"
-                >
-                  municipal and cooperative utilities
-                </a>
-                .
+              <p className="mb-4 text-muted" style={{ lineHeight: 1.375 }}>
+                Our focus is on delivering exceptional services and long-term
+                business support, ensuring that our solutions not only meet your
+                needs today but also drive success for the future.
               </p>
-              <ul className="list-unstyled mb-4">
-                <li className="ps-4 mb-3">
-                  Instantly send text messages, emails, and voice calls tailored
-                  to customer data, ensuring timely and relevant communication
+              <ul className="list-unstyled">
+                <li className="mb-2 d-flex align-items-start">
+                  <i
+                    className="fa fa-check-circle text-primary me-2"
+                    style={{ marginTop: "6px" }}
+                  ></i>
+                  <span className="d-inline">
+                    <span className="fw-bold">Community Engagement:</span>
+                    Building a collaborative network that connects our clients,
+                    partners, and team members.
+                  </span>
                 </li>
-                <li className="ps-4 mb-3">
-                  Seamless integration with spreadsheets, CIS, OMS, and GIS
-                  data, allowing easy automation and personalization
+                <li className="mb-2 d-flex align-items-start">
+                  <i
+                    className="fa fa-check-circle text-primary me-2"
+                    style={{ marginTop: "6px" }}
+                  ></i>
+                  <span className="d-inline ">
+                    <span className="fw-bold">Unparalleled Services:</span>
+                    Offering tailored solutions that address your unique
+                    challenges and opportunities.
+                  </span>
                 </li>
-                <li className="ps-4 mb-3">
-                  Use chatbots and live chat for enhanced customer interaction
-                  and support
+                <li className="mb-2 d-flex align-items-start">
+                  <i
+                    className="fa fa-check-circle text-primary me-2"
+                    style={{ marginTop: "6px" }}
+                  ></i>
+                  <span className="d-inline">
+                    <span className="fw-bold">Long-Term Support:</span>
+                    Providing ongoing assistance to help your business grow and
+                    thrive over time.
+                  </span>
                 </li>
-                <li className="ps-4 mb-3">
-                  Capable of handling high-volume messaging during emergencies,
-                  with robust security features
+                <li className="mb-2 d-flex align-items-start">
+                  <i
+                    className="fa fa-check-circle text-primary me-2"
+                    style={{ marginTop: "6px" }}
+                  ></i>
+                  <span className="d-inline">
+                    <span className="fw-bold">Innovative Solutions:</span>
+                    Leveraging the latest technologies to deliver better, more
+                    efficient outcomes.
+                  </span>
                 </li>
-                <li className="ps-4">
-                  Create multilingual, flexible templates for various
-                  communication needs, from outage notifications to billing
-                  updates
+                <li className="mb-2 d-flex align-items-start">
+                  <i
+                    className="fa fa-check-circle text-primary me-2"
+                    style={{ marginTop: "6px" }}
+                  ></i>
+                  <span className="d-inline">
+                    <span className="fw-bold">Strategic Partnerships:</span>
+                    Creating strong alliances to enhance the value and impact of
+                    our services.
+                  </span>
                 </li>
               </ul>
-              <a
-                className="btn btn-danger text-white rounded-pill"
-                href="https://agent511.com/contact-us/"
-              >
-                Talk to our Experts
-              </a>
             </div>
           </div>
         </div>
@@ -187,212 +196,219 @@ function Landing() {
 
       <div className="container py-5">
         <div className="text-center mb-5">
-          <h2
-            className="font-weight-bold text-uppercase mb-3"
-            style={{ fontFamily: "ATCArquette-Semibold", letterSpacing: "2px" }}
-          >
-            Our Highlight Reel
-          </h2>
           <p
-            className="display-4 text-primary mb-4"
+            className="display-5 text-primary mb-4 text-danger"
             style={{ letterSpacing: "0.6px" }}
           >
-            Don't Take Our Word for it. Take Our Clients'.
+            Discover Our Impact on Public Services and Education.
           </p>
         </div>
         <div className="d-flex flex-wrap mb-3">
-          <div className="col-lg-8 mb-4">
-            <div className="bg-light rounded p-4">
-              <h2
-                className="font-weight-bold mb-3"
-                style={{
-                  fontFamily: "ATCArquette-Regular",
-                  fontSize: "36px",
-                  color: "rgb(14, 50, 206)",
-                }}
-              >
-                Achieve 30-50% increase in customer program enrollments
-              </h2>
-              <p
-                className="font-weight-semibold"
-                style={{ fontFamily: "ATCArquette-Semibold" }}
-              >
-                A leading electric utility proactively engaged its customers to
-                increase interaction.
-              </p>
+          <div className="row">
+            <div className="col-lg-7 mb-4">
+              <div className="bg-light rounded p-4">
+                <h2
+                  className="font-weight-bold mb-3"
+                  style={{
+                    fontFamily: "ATCArquette-Regular",
+                    fontSize: "36px",
+                    color: "rgb(14, 50, 206)",
+                  }}
+                >
+                  We drive innovation in essential services and cutting-edge
+                  education.
+                </h2>
+                <p
+                  className="font-weight-semibold"
+                  style={{ fontFamily: "ATCArquette-Semibold" }}
+                >
+                  Our expertise spans critical public services and advanced
+                  learning environments, driving innovation and excellence
+                  across these vital areas.
+                </p>
+
+                <div className="col-lg-8 mb-4 mt-4">
+                  <a
+                    href="https://agent511.com/case-studies/agent511-deploys-text-to-911-software-houston-copy/"
+                    className="text-decoration-none text-primary"
+                  >
+                    <div className="position-relative rounded overflow-hidden mb-3">
+                      <img
+                        src="https://agent511.com/app/uploads/2020/06/DJ3COCT4LBGWVOYAXQIGPZ3WRE-1-360x203.jpg"
+                        alt="Case Study"
+                        className="img-fluid"
+                      />
+                      <ul className="list-unstyled position-absolute bottom-0 start-0 p-2">
+                        <li
+                          className="bg-transparent text-white fw-bold border rounded-pill py-1 px-2 me-2 mb-2"
+                          style={{
+                            fontSize: "14px",
+                            // fontFamily: "ATCArquette-Semibold",
+                          }}
+                        >
+                          Education
+                        </li>
+                      </ul>
+                    </div>
+                    <div className="ps-2">
+                      <h3
+                        className="font-weight-bold mb-2"
+                        style={{
+                          fontFamily: "ATCArquette-Medium",
+                          fontSize: "24px",
+                          color: "rgb(53, 53, 53)",
+                        }}
+                      >
+                        Empowering tomorrow’s leaders with transformative
+                        technology for enhanced learning experiences.
+                      </h3>
+                      <p
+                        class=" transparent mt-2 "
+                        style={{
+                          fontFamily: "ATCArquette-Medium",
+                          fontSize: "16px",
+                        }}
+                      >
+                        <Link to="/" className="text-danger ">
+                          Visit more
+                        </Link>
+                        <i
+                          class="fa fa-arrow-right text-danger mt-1 mx-1  trans"
+                          aria-hidden="true"
+                        ></i>
+                      </p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div className="col-lg-5 mb-4">
               <a
-                href="https://agent511.com/case-studies/"
-                className="btn btn-danger text-white rounded-pill py-2 px-4"
-                style={{ backgroundColor: "rgb(255, 111, 134)" }}
+                href="https://agent511.com/case-studies/agent511-chitext-citizen-engagement-two-way-text/"
+                className="text-decoration-none text-primary"
               >
-                View All Case Studies
+                <div className="position-relative rounded overflow-hidden mb-3">
+                  <img
+                    src="https://agent511.com/app/uploads/2020/05/marilia-castelli-tdEjTjdLyuE-unsplash-Copy-3-360x287.png"
+                    alt="Case Study"
+                    className="img-fluid"
+                    style={{ width: "100%" }}
+                  />
+                  <ul className="list-unstyled position-absolute bottom-0 start-0 p-2">
+                    <li
+                      className=" text-white fw-bold border rounded-pill py-1 px-2 me-2 mb-2"
+                      style={{
+                        fontSize: "14px",
+                        // fontFamily: "ATCArquette-Semibold",
+                        background: "transparent",
+                      }}
+                    >
+                      Government
+                    </li>
+                  </ul>
+                </div>
+                <div className="ps-2">
+                  <h3
+                    className="font-weight-bold mb-2"
+                    style={{
+                      fontFamily: "ATCArquette-Medium",
+                      fontSize: "24px",
+                      color: "rgb(53, 53, 53)",
+                    }}
+                  >
+                    Enhancing public services with cutting-edge solutions that
+                    drive efficiency and transparency.
+                  </h3>
+                  <p
+                    class=" transparent mt-2 "
+                    style={{
+                      fontFamily: "ATCArquette-Medium",
+                      fontSize: "16px",
+                    }}
+                  >
+                    <Link to="/" className="text-danger ">
+                      Visit more
+                    </Link>
+                    <i
+                      class="fa fa-arrow-right text-danger mt-1 mx-1  trans"
+                      aria-hidden="true"
+                    ></i>
+                  </p>
+                </div>
               </a>
             </div>
-          </div>
-          <div className="col-lg-4 mb-4">
-            <a
-              href="https://agent511.com/case-studies/agent511-chitext-citizen-engagement-two-way-text/"
-              className="text-decoration-none text-primary"
-            >
-              <div className="position-relative rounded overflow-hidden mb-3">
-                <img
-                  src="https://agent511.com/app/uploads/2020/05/marilia-castelli-tdEjTjdLyuE-unsplash-Copy-3-360x287.png"
-                  srcSet="https://agent511.com/app/uploads/2020/05/marilia-castelli-tdEjTjdLyuE-unsplash-Copy-3-360x287.png 360w, https://agent511.com/app/uploads/2020/05/marilia-castelli-tdEjTjdLyuE-unsplash-Copy-3-768x613.png 768w, https://agent511.com/app/uploads/2020/05/marilia-castelli-tdEjTjdLyuE-unsplash-Copy-3.png 880w"
-                  alt="Case Study"
-                  className="img-fluid"
-                />
-                <ul className="list-unstyled position-absolute bottom-0 start-0 p-2">
-                  <li
-                    className="bg-white text-dark border rounded-pill py-1 px-2 me-2 mb-2"
-                    style={{
-                      fontSize: "14px",
-                      fontFamily: "ATCArquette-Semibold",
-                    }}
-                  >
-                    Government
-                  </li>
-                </ul>
-              </div>
-              <div className="ps-2">
-                <h3
-                  className="font-weight-bold mb-2"
-                  style={{
-                    fontFamily: "ATCArquette-Medium",
-                    fontSize: "24px",
-                    color: "rgb(53, 53, 53)",
-                  }}
-                >
-                  Smart City: Chicago’s ChiTEXT provides universal access to
-                  services and court updates.
-                </h3>
-                <span
-                  className="text-danger"
-                  style={{ fontFamily: "ATCArquette-Medium", fontSize: "16px" }}
-                >
-                  Read More{" "}
-                  <i
-                    className="icon iconfont iconarrow-right-bold"
-                    style={{ fontSize: "12px", paddingLeft: "7px" }}
-                  />
-                </span>
-              </div>
-            </a>
-          </div>
-          <div className="col-lg-4 mb-4">
-            <a
-              href="https://agent511.com/case-studies/agent511-deploys-text-to-911-software-houston-copy/"
-              className="text-decoration-none text-primary"
-            >
-              <div className="position-relative rounded overflow-hidden mb-3">
-                <img
-                  src="https://agent511.com/app/uploads/2020/06/DJ3COCT4LBGWVOYAXQIGPZ3WRE-1-360x203.jpg"
-                  srcSet="https://agent511.com/app/uploads/2020/06/DJ3COCT4LBGWVOYAXQIGPZ3WRE-1-360x203.jpg 360w, https://agent511.com/app/uploads/2020/06/DJ3COCT4LBGWVOYAXQIGPZ3WRE-1-768x432.jpg 768w, https://agent511.com/app/uploads/2020/06/DJ3COCT4LBGWVOYAXQIGPZ3WRE-1-1024x576.jpg 1024w, https://agent511.com/app/uploads/2020/06/DJ3COCT4LBGWVOYAXQIGPZ3WRE-1-1536x864.jpg 1536w, https://agent511.com/app/uploads/2020/06/DJ3COCT4LBGWVOYAXQIGPZ3WRE-1.jpg 1660w"
-                  alt="Case Study"
-                  className="img-fluid"
-                />
-                <ul className="list-unstyled position-absolute bottom-0 start-0 p-2">
-                  <li
-                    className="bg-white text-dark border rounded-pill py-1 px-2 me-2 mb-2"
-                    style={{
-                      fontSize: "14px",
-                      fontFamily: "ATCArquette-Semibold",
-                    }}
-                  >
-                    Emergency
-                  </li>
-                </ul>
-              </div>
-              <div className="ps-2">
-                <h3
-                  className="font-weight-bold mb-2"
-                  style={{
-                    fontFamily: "ATCArquette-Medium",
-                    fontSize: "24px",
-                    color: "rgb(53, 53, 53)",
-                  }}
-                >
-                  Greater Harris County 9-1-1 Network creates seamless text
-                  experiences with premier features
-                </h3>
-                <span
-                  className="text-danger"
-                  style={{ fontFamily: "ATCArquette-Medium", fontSize: "16px" }}
-                >
-                  Read More{" "}
-                  <i
-                    className="icon iconfont iconarrow-right-bold"
-                    style={{ fontSize: "12px", paddingLeft: "7px" }}
-                  />
-                </span>
-              </div>
-            </a>
           </div>
         </div>
       </div>
+
       <section className="image-video-text-interactivity is-reverse fadeInUp mb-5">
-        <div className="container px-3 px-md-5">
-          <div className="row align-items-center">
-            <div className="col-md-6 mb-4 mb-md-0 d-flex justify-content-center">
+  <div className="container px-3 px-md-5">
+    <div className="row align-items-center">
+    <div className="col-md-6 mb-5 mb-md-0">
               <img
-                className="img-fluid rounded-3"
-                height={430}
-                width={644}
-                sizes="(max-width: 768px) 100vw, 768px"
-                src="https://agent511.com/app/uploads/2021/11/shutterstock_1868239996-768x512.jpg"
-                alt="Efficient Solutions"
-                style={{ marginTop: "-3px" }}
+                className="img-fluid rounded"
+                height={365}
+                width={532}
+                src={staffingimage}
+                alt="AGENT511 REACH Orchestration"
               />
             </div>
-            <div className="col-md-6">
-              <h3 className="fw-semibold fs-3 text-primary mb-4">
-                Efficient solutions for Municipal and Cooperative Utilities
-              </h3>
-              <p className="mb-4" style={{ lineHeight: 1.375 }}>
-                Need advanced communication solutions tailored to your utility’s
-                unique needs while maintaining a personal touch in customer
-                relationships? AGENT511 REACH offers tools to enhance customer
-                engagement and operational efficiency for{" "}
-                <a
-                  href="https://agent511.com/industries/munis-coops/"
-                  className="text-primary text-decoration-none"
-                >
-                  municipal and cooperative utilities
-                </a>
-                .
-              </p>
-              <ul className="list-unstyled mb-4">
-                <li className="ps-4 mb-3">
-                  Instantly send text messages, emails, and voice calls tailored
-                  to customer data, ensuring timely and relevant communication
-                </li>
-                <li className="ps-4 mb-3">
-                  Seamless integration with spreadsheets, CIS, OMS, and GIS
-                  data, allowing easy automation and personalization
-                </li>
-                <li className="ps-4 mb-3">
-                  Use chatbots and live chat for enhanced customer interaction
-                  and support
-                </li>
-                <li className="ps-4 mb-3">
-                  Capable of handling high-volume messaging during emergencies,
-                  with robust security features
-                </li>
-                <li className="ps-4">
-                  Create multilingual, flexible templates for various
-                  communication needs, from outage notifications to billing
-                  updates
-                </li>
-              </ul>
-              <a
-                className="btn btn-danger text-white rounded-pill"
-                href="https://agent511.com/contact-us/"
-              >
-                Talk to our Experts
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
+      <div className="col-md-6">
+        <h3 className="fw-semibold fs-3 text-primary mb-4">
+          Strategic Solutions for Business Growth
+        </h3>
+        <p className="mb-4" style={{ lineHeight: 1.375 }}>
+            At Metroxone Technologies, we understand the unique challenges your business faces and offer solutions designed to drive sustainable growth and operational excellence. Our advanced technologies are tailored to meet your specific needs, enabling you to enhance efficiency, improve customer engagement, and secure your place at the forefront of your industry.
+        </p>
+        <ul className="list-unstyled mb-4">
+          <li className="ps-4 mb-3">
+            <i
+              className="fa fa-check-circle text-primary me-2"
+              style={{ marginTop: "6px" }}
+            ></i>
+            Targeted Communication: Deliver precise, timely messages across multiple channels, ensuring your customers stay informed and engaged.
+          </li>
+          <li className="ps-4 mb-3">
+            <i
+              className="fa fa-check-circle text-primary me-2"
+              style={{ marginTop: "6px" }}
+            ></i>
+            Seamless Integration: Our solutions integrate effortlessly with your existing systems, maximizing efficiency and minimizing disruption.
+          </li>
+          <li className="ps-4 mb-3">
+            <i
+              className="fa fa-check-circle text-primary me-2"
+              style={{ marginTop: "6px" }}
+            ></i>
+            Advanced Automation: Streamline operations with intelligent automation, reducing manual effort and increasing accuracy.
+          </li>
+          <li className="ps-4 mb-3">
+            <i
+              className="fa fa-check-circle text-primary me-2"
+              style={{ marginTop: "6px" }}
+            ></i>
+            Robust Security: Protect sensitive data with our state-of-the-art security features, ensuring compliance and peace of mind.
+          </li>
+          <li className="ps-4">
+            <i
+              className="fa fa-check-circle text-primary me-2"
+              style={{ marginTop: "6px" }}
+            ></i>
+            Scalable Solutions: As your business grows, our solutions grow with you, adapting to your evolving needs without compromising performance.
+          </li>
+        </ul>
+        <a
+          className="btn btn-danger text-white rounded-pill"
+          href="https://agent511.com/contact-us/"
+        >
+          Connect with us
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
     </div>
   );
 }

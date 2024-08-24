@@ -27,7 +27,7 @@ const SwiperCarousel = () => {
       className="container-fluid p-0 position-relative"
       onMouseEnter={pauseAutoplay} // Pause on hover
       onMouseLeave={resumeAutoplay} // Resume on mouse leave
-      style={{background:'#276296a8'}}
+      style={{background:'#e1e3e4a8'}}
     >
       <Swiper
         ref={swiperRef}
@@ -51,7 +51,7 @@ const SwiperCarousel = () => {
                   <h2 className="display-5 text-primary" style={{ fontWeight: 300 }}>
                     {value.title}
                   </h2>
-                  <p className="text-black mb-4">
+                  <p className="text-muted mb-4">
                     {value.desc}
                   </p>
                   <a href={value.btnlink} className="btn btn-danger">
