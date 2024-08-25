@@ -1,6 +1,7 @@
 import React, { useState, useRef, useEffect } from "react";
 import "../Menubar/Menubar.css";
 import { Link, useLocation } from "react-router-dom";
+import pagelogo from "../Images/page logo.png";
 
 import Menudrawer from "./Drawer";
 
@@ -63,9 +64,14 @@ function Menubar() {
           className="navbar navbar-expand-lg navbar-dark justify-content-between text-white"
           style={{ background: "#3b82f6", height: "4.4rem" }}
         >
-          <a className="navbar-brand mx-3 h6  " href="#">
-            MetroXone tech
-          </a>
+          <Link className=" navbar-brand mx-3" to="/">
+            <img
+              src={pagelogo}
+              className="img-fluid logoimg"
+              style={{ height: "3.5rem" }}
+              alt="Logo"
+            />
+          </Link>
           <button
             className="mx-2 navbar-toggler"
             aria-expanded="false"

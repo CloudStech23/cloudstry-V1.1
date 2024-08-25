@@ -1,5 +1,5 @@
 import React from "react";
-import img1 from "../Images/Software services.png";
+import img1 from "../Images/software ai.png";
 import cloud from "../Images/cloud.jpg";
 import ai from "../Images/ai.jpg";
 import web3 from "../Images/blockchain.jpg";

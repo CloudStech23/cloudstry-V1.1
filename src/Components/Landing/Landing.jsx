@@ -3,9 +3,12 @@ import Slick from "./Slick";
 import mapimage from "../Images/world-map-with-rag-dolls.png";
 // import '../Landing/Landing.css'
 import staffingimage from "../Images/staffing sol.jpg";
-import softwareimage from "../Images/software services.jpg";
+import softwareimage from "../Images/software services (2).jpg";
 import strategyimage from "../Images/it strategy.jpg";
 import { Link } from "react-router-dom";
+import government from '../Images/government.jpeg'
+import education from '../Images/Education.jpg'
+import '../Landing/Landing.css'
 
 function Landing() {
   return (
@@ -234,9 +237,9 @@ function Landing() {
                   >
                     <div className="position-relative rounded overflow-hidden mb-3">
                       <img
-                        src="https://agent511.com/app/uploads/2020/06/DJ3COCT4LBGWVOYAXQIGPZ3WRE-1-360x203.jpg"
+                        src={education}
                         alt="Case Study"
-                        className="img-fluid"
+                        className="img-fluid img-hover"
                       />
                       <ul className="list-unstyled position-absolute bottom-0 start-0 p-2">
                         <li
@@ -290,9 +293,9 @@ function Landing() {
               >
                 <div className="position-relative rounded overflow-hidden mb-3">
                   <img
-                    src="https://agent511.com/app/uploads/2020/05/marilia-castelli-tdEjTjdLyuE-unsplash-Copy-3-360x287.png"
+                    src={government}
                     alt="Case Study"
-                    className="img-fluid"
+                    className="img-fluid img-hover"
                     style={{ width: "100%" }}
                   />
                   <ul className="list-unstyled position-absolute bottom-0 start-0 p-2">
