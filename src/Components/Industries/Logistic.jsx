@@ -1,5 +1,6 @@
 import React from "react";
 import "./Common.css";
+import { Link } from "react-router-dom";
 
 function Logistic() {
   return (
@@ -28,9 +29,9 @@ function Logistic() {
               Economic Corridor, where streamlined logistics are crucial for
               enhancing trade and economic cooperation between these regions.
             </p>
-            <a href=" " className="btn btn-danger">
+            <Link to='/3PL-Solution' className="btn btn-danger">
               Learn More
-            </a>
+            </Link>
           </div>
 
           {/* Video Content */}

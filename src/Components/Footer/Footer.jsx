@@ -50,22 +50,22 @@ export default function Footer() {
             <MDBCol md='2' lg='2' xl='2' className='mx-auto mb-4'>
               <h6 className='text-uppercase fw-bold mb-4'>Solutions</h6>
               <p>
-              <Link to='/' className='text-reset nav-link'>
+              <Link to='/Digital-Certificate' className='text-reset nav-link'>
                   Digital Certificate
                 </Link>
               </p>
               <p>
-              <Link to='/' className='text-reset nav-link'>
+              <Link to='/3PL-Solution' className='text-reset nav-link'>
                   3PL (3-Party Logistic)
                 </Link>
               </p>
               <p>
-              <Link to='/' className='text-reset nav-link'>
+              <Link to='/Pet-Aadhar' className='text-reset nav-link'>
                   Pet Adhar
                 </Link>
               </p>
               <p>
-                <Link to='/' className='text-reset nav-link'>
+                <Link to='/Government' className='text-reset nav-link'>
                   Government
                 </Link>
               </p>
@@ -74,27 +74,27 @@ export default function Footer() {
             <MDBCol md='3' lg='2' xl='2' className='mx-auto mb-4'>
               <h6 className='text-uppercase fw-bold mb-4'>Industries</h6>
               <p>
-                <Link to='/' className='text-reset nav-link'>
+                <Link to='/IT-Strategy-Consultancy' className='text-reset nav-link'>
                   It Strategy Consultancy
                 </Link>
               </p>
               <p>
-                <Link to='/' className='text-reset nav-link'>
+                <Link to='/Education' className='text-reset nav-link'>
                   Education
                 </Link>
               </p>
               <p>
-                <Link to='/' className='text-reset nav-link'>
+                <Link to='/Logistic' className='text-reset nav-link'>
                   Logistic
                 </Link>
               </p>
               <p>
-                <Link to='/' className='text-reset nav-link'>
+                <Link to='/Staffing-Solution' className='text-reset nav-link'>
                   Staffing Solution
                 </Link>
               </p>
               <p>
-                <Link to='/' className='text-reset nav-link'>
+                <Link to='/Support' className='text-reset nav-link'>
                   Contact Us
                 </Link>
               </p>
@@ -122,10 +122,10 @@ export default function Footer() {
       </section>
 
       <div className='text-center p-4' style={{ backgroundColor: 'rgba(0, 0, 0, 0.05)' }}>
-        © 2021 Copyright:
-        <a className='text-reset fw-bold' href='https://mdbootstrap.com/'>
-          MDBootstrap.com
-        </a>
+        Copyright © 2024 All Rights Reserved | 
+        <Link className='text-reset fw-bold' to='/'>
+          Metroxone technologies Pvt Ltd
+        </Link>
       </div>
     </MDBFooter>
   );

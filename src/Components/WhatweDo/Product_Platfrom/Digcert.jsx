@@ -1,5 +1,6 @@
 import React from "react";
 import "../Product_Platfrom/Common.css";
+import { Link } from "react-router-dom";
 
 function Digitalcertificate() {
   return (
@@ -28,12 +29,12 @@ function Digitalcertificate() {
               authenticity and accessibility of credentials is more pressing
               than ever. 
             </p>
-            <a
-              href=" "
+            <Link
+              to="/Support"
               className="btn btn-danger"
             >
               Talk to our Experts
-            </a>
+            </Link>
           </div>
 
           {/* Video Content */}
@@ -127,12 +128,7 @@ function Digitalcertificate() {
                   </span>
                 </li>
               </ul>
-              <a
-                className="btn btn-danger"
-                href=" "
-              >
-                Talk to our Experts
-              </a>
+               
             </div>
           </div>
         </div>
@@ -200,12 +196,7 @@ function Digitalcertificate() {
                   </span>
                 </li>
               </ul>
-              <a
-                className="btn btn-danger"
-                href=" "
-              >
-                Talk to our Experts
-              </a>
+              
             </div>
 
             {/* Image Section */}
@@ -312,12 +303,12 @@ function Digitalcertificate() {
                 </span>
               </li>
             </ul>
-            <a
+            <Link
               className="btn btn-danger mt-2"
-              href=" "
+              to='/'
             >
               Learn More
-            </a>
+            </Link>
           </div>
         </div>
 
@@ -401,12 +392,12 @@ function Digitalcertificate() {
                 </span>
               </li>
             </ul>
-            <a
+            <Link
               className="btn btn-danger mt-2"
-              href=" "
+              to='/'
             >
               Learn More
-            </a>
+            </Link>
           </div>
         </div>
       </div>

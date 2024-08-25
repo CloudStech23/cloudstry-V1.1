@@ -1,6 +1,7 @@
 import React from "react";
 import img1 from "../Images/ai.jpg";
 import { Carousel } from "react-bootstrap";
+import { Link } from "react-router-dom";
 
 function Staffingsolution() {
   return (
@@ -35,12 +36,12 @@ function Staffingsolution() {
                 <p className="desc fs-5 lg:fs-3 mt-3">
                 Effective workforce management is crucial for success, but many organizations struggle with complex staffing and resource challenges.
                 </p>
-                <a
+                <Link
                   className="btn btn-danger btn-md xl:btn-lg   sm:fs-4 xl:fs-3 mt-2"
-                  href=""
+                   to='/'
                 >
                   Get started
-                </a>
+                </Link>
               </div>
             </div>
             <div className="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">

@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function Consultancy() {
   return (
@@ -48,9 +49,9 @@ function Consultancy() {
               or adopting new technologies, Metroxone Tech guides your
               organization toward sustainable success.
             </p>
-            <a href=" " className="btn btn-danger">
+            <Link to='/Support' className="btn btn-danger">
               Learn more
-            </a>
+            </Link>
           </div>
           <div className="col-md-5">
             <img

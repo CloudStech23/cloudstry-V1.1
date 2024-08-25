@@ -1,6 +1,7 @@
 import React from "react";
 import { Carousel } from "react-bootstrap";
 import "./Common.css";
+import { Link } from "react-router-dom";
 
 function Petadhar() {
   return (
@@ -27,12 +28,12 @@ function Petadhar() {
               essential for the continued growth and modernization of the
               sector.
             </p>
-            <a
-              href=" "
+            <Link
+               to='/Support'
               className="btn btn-danger"
             >
               Talk to our Experts
-            </a>
+            </Link>
           </div>
 
           {/* Video Content */}
@@ -131,12 +132,7 @@ function Petadhar() {
                   </span>
                 </li>
               </ul>
-              <a
-                className="btn btn-danger"
-                href=" "
-              >
-                Talk to our Experts
-              </a>
+                
             </div>
           </div>
         </div>
@@ -459,12 +455,8 @@ function Petadhar() {
                     </span>
                   </li>
                 </ul>
-                <a
-                  className="btn btn-danger"
-                  href=" "
-                >
-                  Talk to our Experts
-                </a>
+                
+                  
               </div>
             </div>
           </div>
@@ -512,12 +504,7 @@ function Petadhar() {
                 the implementation of this initiative
               </p>
 
-              <a
-                className="btn btn-danger text-white"
-                href= ""
-              >
-                Talk to Our Experts
-              </a>
+               
             </div>
           </section>
         </div>

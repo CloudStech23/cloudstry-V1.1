@@ -56,7 +56,7 @@ function Landing() {
                     Expertly connect top talent with the right opportunities for
                     your business needs.
                   </h4>
-                  <span className="btn btn-danger">Read More</span>
+                  <Link to='/Staffing-Solution' className="btn btn-danger">Read More</Link>
                 </div>
               </div>
             </div>
@@ -78,7 +78,7 @@ function Landing() {
                     Deliver tailored digital solutions to streamline and enhance
                     your operational processes.
                   </h4>
-                  <span className="btn btn-danger">Read More</span>
+                  <Link to='/Software-Services' className="btn btn-danger">Read More</Link>
                 </div>
               </div>
             </div>
@@ -100,7 +100,7 @@ function Landing() {
                     some short Guide your technology investments with strategic
                     insights for business.
                   </h4>
-                  <span className="btn btn-danger">Read More</span>
+                  <Link to='/IT-Strategy-Consultancy' className="btn btn-danger">Read More</Link>
                 </div>
               </div>
             </div>
@@ -228,8 +228,8 @@ function Landing() {
                 </p>
 
                 <div className="col-lg-8 mb-4 mt-4">
-                  <a
-                    href="https://agent511.com/case-studies/agent511-deploys-text-to-911-software-houston-copy/"
+                  <Link
+                    to="/Education"
                     className="text-decoration-none text-primary"
                   >
                     <div className="position-relative rounded overflow-hidden mb-3">
@@ -269,7 +269,7 @@ function Landing() {
                           fontSize: "16px",
                         }}
                       >
-                        <Link to="/" className="text-danger ">
+                        <Link to="/Education" className="text-danger ">
                           Visit more
                         </Link>
                         <i
@@ -278,14 +278,14 @@ function Landing() {
                         ></i>
                       </p>
                     </div>
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
 
             <div className="col-lg-5 mb-4">
-              <a
-                href="https://agent511.com/case-studies/agent511-chitext-citizen-engagement-two-way-text/"
+              <Link
+                to="/Government"
                 className="text-decoration-none text-primary"
               >
                 <div className="position-relative rounded overflow-hidden mb-3">
@@ -327,7 +327,7 @@ function Landing() {
                       fontSize: "16px",
                     }}
                   >
-                    <Link to="/" className="text-danger ">
+                    <Link to="/Government" className="text-danger ">
                       Visit more
                     </Link>
                     <i
@@ -336,7 +336,7 @@ function Landing() {
                     ></i>
                   </p>
                 </div>
-              </a>
+              </Link>
             </div>
           </div>
         </div>
@@ -398,12 +398,12 @@ function Landing() {
             Scalable Solutions: As your business grows, our solutions grow with you, adapting to your evolving needs without compromising performance.
           </li>
         </ul>
-        <a
+        <Link
           className="btn btn-danger text-white rounded-pill"
-          href="https://agent511.com/contact-us/"
+          to='/Support'
         >
           Connect with us
-        </a>
+        </Link>
       </div>
     </div>
   </div>

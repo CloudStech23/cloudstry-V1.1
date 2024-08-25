@@ -1,5 +1,6 @@
 import React from "react";
 import "./Common.css";
+import { Link } from "react-router-dom";
 
 function Thirdpartylogistic() {
   return (
@@ -27,12 +28,12 @@ function Thirdpartylogistic() {
               operational efficiency, improves service quality, and provides
               scalable solutions to meet evolving market demands.
             </p>
-            <a
-              href=" "
+            <Link
+              to='/Support'
               className="btn btn-danger"
             >
               Talk to our Experts
-            </a>
+            </Link>
           </div>
 
           {/* Video Content */}
@@ -114,12 +115,7 @@ function Thirdpartylogistic() {
                 </li>
                  
               </ul>
-              <a
-                className="btn btn-danger"
-                href=" "
-              >
-                Talk to our Experts
-              </a>
+               
             </div>
           </div>
         </div>
@@ -181,12 +177,7 @@ function Thirdpartylogistic() {
                  
               </ul>
                
-              <a
-                className="btn btn-danger"
-                href=" "
-              >
-                Talk to our Experts
-              </a>
+               
             </div>
 
             {/* Image Section */}
@@ -267,12 +258,12 @@ function Thirdpartylogistic() {
                  
                 
               </ul>
-            <a
-              href=" "
+            <Link
+              to='/Government'
               className="btn btn-danger"
             >
               Talk to our Experts
-            </a>
+            </Link>
           </div>
 
           {/* Video Content */}

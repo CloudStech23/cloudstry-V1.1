@@ -21,12 +21,12 @@ function Softwareservices() {
             <p className="text-muted mb-4">
             In the current landscape, software services have become indispensable, driving innovation and efficiency across industries. The shift towards <span className="fw-bold text-primary">integrated digital ecosystems</span>  is transforming traditional business models, allowing organizations to streamline operations, enhance customer experiences, and unlock new revenue streams. At the industry level, there is a growing demand for <span className="text-primary fw-bold">bespoke software solutions </span>  that cater to specific operational needs, ensuring that businesses not only stay competitive but also lead in their respective markets. As technology evolves, the emphasis on agility, scalability, and security has never been more critical, with companies seeking software services that offer robust, future-proof solutions to complex challenges.
             </p>
-            <a
-              href=" "
+            <Link
+              to='/Support'
               className="btn btn-danger"
             >
-              Talk to our Experts
-            </a>
+              Connect with us
+            </Link>
           </div>
 
           {/* Video Content */}
@@ -211,12 +211,12 @@ function Softwareservices() {
           <p>
           At Metroxone Tech, we stand by the quality and reliability of our solutions. Our commitment to innovation and customer satisfaction is at the core of everything we do. We believe in the power of technology to transform businesses, and we’re here to ensure that our clients succeed with confidence. Join us on this journey and experience the difference that true dedication and expertise can make. Your success is our promise.
           </p>
-          <a
+          <Link
             className="btn btn-danger text-white"
-            href=" "
+            to='/Support'
           >
             Connect with us
-          </a>
+          </Link>
         </div>
 
         <div style={{ position: "relative", zIndex: 1, width: "100%" }}>

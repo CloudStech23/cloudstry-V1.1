@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function Government() {
   return (
@@ -28,9 +29,9 @@ function Government() {
               strengthen public trust and build sustainable, future-ready
               systems for citizens and stakeholders.
             </p>
-            <a href=" " className="btn btn-danger">
+            <Link to='/Support' className="btn btn-danger">
               Connect with Us
-            </a>
+            </Link>
           </div>
 
           {/* Video Content */}
@@ -64,14 +65,14 @@ function Government() {
                   alt="..."
                 />
                 <div class="card-body p-4">
-                  <a
+                  <Link
                     class="text-decoration-none link-dark stretched-link"
-                    href="#!"
+                    to="/Digital-Certificate"
                   >
                     <h5 class="card-title mb-3 text-primary fw-bold">
                       Digital Certificate
                     </h5>
-                  </a>
+                  </Link>
                   <p class="card-text mb-0">
                     In today's digital age, secure and verifiable credentials
                     are essential across various sectors. Traditional paper
@@ -81,9 +82,9 @@ function Government() {
                     credentials is more urgent than ever.
                   </p>
                   <div className="py-2  my-1">
-                    <a href=" " className="btn btn-danger">
+                    <Link to="/Digital-Certificate" className="btn btn-danger">
                       Leran More
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -96,14 +97,14 @@ function Government() {
                   alt="..."
                 />
                 <div class="card-body p-4">
-                  <a
+                  <Link
                     class="text-decoration-none link-dark stretched-link"
-                    href="#!"
+                    to="/Pet-Aadhar"
                   >
                     <h5 class="card-title text-primary fw-bold mb-3">
                       Animal Aadhar
                     </h5>
-                  </a>
+                  </Link>
                   <div className="py-2  my-1">
                     <p class="card-text mb-0">
                       India’s extensive livestock industry encounters major
@@ -113,9 +114,9 @@ function Government() {
                       disease control and breeding management. 
                     </p>
                   </div>
-                  <a href=" " className="btn btn-danger">
+                  <Link to="/Pet-Aadhar" className="btn btn-danger">
                     Learn more
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -127,12 +128,12 @@ function Government() {
                   alt="..."
                 />
                 <div class="card-body p-4">
-                  <a
+                  <Link
                     class="text-decoration-none link-dark stretched-link"
-                    href="#!"
+                    to='/3PL-Solution'
                   >
                     <h5 class="card-title mb-3 text-primary fw-bold">3PL</h5>
-                  </a>
+                  </Link>
                   <p class="card-text mb-0">
                     Third-Party Logistics (3PL) involves outsourcing logistics
                     and supply chain functions to specialized providers. These
@@ -143,9 +144,9 @@ function Government() {
                   </p>
 
                   <div className="py-2  my-1">
-                    <a href=" " className="btn btn-danger">
+                    <Link to='/3PL-Solution' className="btn btn-danger">
                       learn More
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </div>

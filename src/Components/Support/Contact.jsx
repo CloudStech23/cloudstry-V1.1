@@ -12,6 +12,7 @@ import {
   MDBTextArea,
 } from "mdb-react-ui-kit";
 import '../Support/common.css'
+import { Link } from "react-router-dom";
 
 function Contact() {
   return (
@@ -157,18 +158,18 @@ function Contact() {
                         {/* <a href='' className='me-4 text-reset'>
             <MDBIcon color='light' fab icon='facebook-f' />
           </a> */}
-                        <a href="" className="me-4 text-reset">
+                        <Link  to='/' className="me-4 text-reset">
                           <MDBIcon color="dark" fab icon="twitter" />
-                        </a>
-                        <a href="" className="me-4 text-reset">
+                        </Link>
+                        <Link  to='/' className="me-4 text-reset">
                           <MDBIcon color="dark" fab icon="google" />
-                        </a>
+                        </Link>
                         {/* <a href='' className='me-4 text-reset'>
             <MDBIcon color='light' fab icon='instagram' />
           </a> */}
-                        <a href="" className="me-4 text-reset">
+                        <Link to='/' className="me-4 text-reset">
                           <MDBIcon color="dark" fab icon="linkedin" />
-                        </a>
+                        </Link>
                         {/* <a href='' className='me-4 text-reset'>
             <MDBIcon color='light' fab icon='github' />
           </a> */}
