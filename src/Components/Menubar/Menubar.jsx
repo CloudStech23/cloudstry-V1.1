@@ -226,10 +226,11 @@ function Menubar() {
                               Platform.
                             </h3>
                             <p className="text-light mb-2 lh-lg">
-                              Lorem ipsum dolor sit amet consectetur adipisicing
-                              elit. Eveniet, nemo adipisci officia sed
-                              consequatur tenetur eos voluptatum possimus!
-                              Distinctio, animi?
+                              Discover our comprehensive product platform
+                              designed to streamline and enhance your business
+                              operations. From managing logistics to integrating
+                              with various services, our platform provides the
+                              tools you need for success.
                             </p>
                           </div>
 
@@ -273,35 +274,33 @@ function Menubar() {
                             gap: "4rem",
                           }}
                         >
-                          <div className="container-fluid position-relative pb-5 text-light">
-                            <div className="row">
-                              <div className="col-lg-10 col-md-10  d-flex flex-column justify-content-between position-relative">
-                                <h3
-                                  className="text-light fw-normal"
-                                  style={{
-                                    fontSize: "1.8rem",
-                                    whiteSpace: "normal",
-                                  }}
-                                >
-                                  Metroxone is dedicated to driving change
-                                  through innovative technology.
-                                </h3>
-                                <p className="text-light mb-2  lh-lg">
-                                  Lorem ipsum dolor sit amet consectetur
-                                  adipisicing elit. Eveniet, nemo adipisci
-                                  officia sed consequatur tenetur eos voluptatum
-                                  possimus! Distinctio, animi?
-                                </p>
-                              </div>
-                            </div>
-                            <a
+                          {/* <div className="container-fluid position-relative pb-5 text-light"> */}
+                          {/* <div className="row"> */}
+                          <div className="">
+                            <h3
+                              className="text-light fw-normal"
+                              style={{
+                                fontSize: "1.8rem",
+                                whiteSpace: "normal",
+                              }}
+                            >
+                              Metroxone drives change with innovative technology
+                            </h3>
+                            <p className="text-light mb-2  lh-lg">
+                              Our commitment lies in delivering solutions that
+                              are not only effective but also adaptable to the
+                              evolving landscape of technology.
+                            </p>
+                            <Link
                               className="btn btn-danger mt-3 mb-2 rounded-pill px-4 py-2"
-                              href=""
+                              to="/Support"
                             >
                               Learn More
-                            </a>
+                            </Link>
                           </div>
+                          {/* </div> */}
                         </div>
+                        // </div>
                       )}
                       {hoveredItem === "ISC" && (
                         <div
@@ -322,19 +321,21 @@ function Menubar() {
                                   Growth.
                                 </h3>
                                 <p className="text-light mb-2 lh-lg">
-                                  Lorem ipsum dolor sit amet consectetur
-                                  adipisicing elit. Eveniet, nemo adipisci
-                                  officia sed consequatur tenetur eos voluptatum
-                                  possimus! Distinctio, animi?
+                                  Our IT Strategy Consultancy helps you develop
+                                  effective strategies tailored to your
+                                  organization's goals. We guide you through
+                                  digital transformation, ensuring your IT
+                                  investments align with your business
+                                  objectives.
                                 </p>
                               </div>
                             </div>
-                            <a
+                            <Link
                               className="btn btn-danger mt-3 mb-2 rounded-pill px-4 py-2"
-                              href=""
+                              to="/IT-Strategy-Consultancy"
                             >
                               Learn More
-                            </a>
+                            </Link>
                           </div>
                         </div>
                       )}
@@ -357,19 +358,19 @@ function Menubar() {
                                   Needs.
                                 </h3>
                                 <p className="text-light mb-2 lh-lg">
-                                  Lorem ipsum dolor sit amet consectetur
-                                  adipisicing elit. Eveniet, nemo adipisci
-                                  officia sed consequatur tenetur eos voluptatum
-                                  possimus! Distinctio, animi?
+                                  Empowering businesses with cutting-edge
+                                  software solutions designed to streamline
+                                  operations, enhance productivity, and drive
+                                  innovation across industries.
                                 </p>
                               </div>
                             </div>
-                            <a
+                            <Link
                               className="btn btn-danger mt-3 mb-2 rounded-pill px-4 py-2"
-                              href=""
+                              to="/Software-Services"
                             >
                               Learn More
-                            </a>
+                            </Link>
                           </div>
                         </div>
                       )}
@@ -391,19 +392,19 @@ function Menubar() {
                                   Building Teams with Expert Staffing Solutions.
                                 </h3>
                                 <p className="text-light mb-2 lh-lg">
-                                  Lorem ipsum dolor sit amet consectetur
-                                  adipisicing elit. Eveniet, nemo adipisci
-                                  officia sed consequatur tenetur eos voluptatum
-                                  possimus! Distinctio, animi?
+                                  Connecting top talent with leading companies
+                                  through our comprehensive staffing solutions,
+                                  tailored to meet the dynamic needs of the
+                                  modern workforce
                                 </p>
                               </div>
                             </div>
-                            <a
+                            <Link
                               className="btn btn-danger mt-3 mb-2 rounded-pill px-4 py-2"
-                              href=""
+                              to="/Staffing-Solution"
                             >
                               Learn More
-                            </a>
+                            </Link>
                           </div>
                         </div>
                       )}
@@ -512,19 +513,19 @@ function Menubar() {
                                   Solutions.
                                 </h3>
                                 <p className="text-light mb-2 lh-lg">
-                                  Lorem ipsum dolor sit amet consectetur
-                                  adipisicing elit. Eveniet, nemo adipisci
-                                  officia sed consequatur tenetur eos voluptatum
-                                  possimus! Distinctio, animi?
+                                  Explore our range of solutions tailored to the
+                                  educational sector, designed to enhance
+                                  learning experiences and administrative
+                                  efficiency.
                                 </p>
                               </div>
                             </div>
-                            <a
+                            <Link
                               className="btn btn-danger mt-3 mb-2 rounded-pill px-4 py-2"
-                              href=""
+                              to="/Education"
                             >
                               Learn More
-                            </a>
+                            </Link>
                           </div>
                         </div>
                       )}
@@ -547,19 +548,19 @@ function Menubar() {
                                   Solutions.
                                 </h3>
                                 <p className="text-light mb-2 lh-lg">
-                                  Lorem ipsum dolor sit amet consectetur
-                                  adipisicing elit. Eveniet, nemo adipisci
-                                  officia sed consequatur tenetur eos voluptatum
-                                  possimus! Distinctio, animi?
+                                  Partnering with government agencies to deliver
+                                  robust, scalable solutions that address
+                                  critical public sector challenges and enhance
+                                  service delivery
                                 </p>
                               </div>
                             </div>
-                            <a
+                            <Link
                               className="btn btn-danger mt-3 mb-2 rounded-pill px-4 py-2"
-                              href=""
+                              to="/Government"
                             >
                               Learn More
-                            </a>
+                            </Link>
                           </div>
                         </div>
                       )}
@@ -582,19 +583,18 @@ function Menubar() {
                                   Insurance Solutions.
                                 </h3>
                                 <p className="text-light mb-2 lh-lg">
-                                  Lorem ipsum dolor sit amet consectetur
-                                  adipisicing elit. Eveniet, nemo adipisci
-                                  officia sed consequatur tenetur eos voluptatum
-                                  possimus! Distinctio, animi?
+                                  Discover our solutions aimed at improving
+                                  healthcare delivery, patient management, and
+                                  administrative processes in the health sector.
                                 </p>
                               </div>
                             </div>
-                            <a
+                            <Link
                               className="btn btn-danger mt-3 mb-2 rounded-pill px-4 py-2"
-                              href=""
+                              to="Health&Insurance"
                             >
                               Learn More
-                            </a>
+                            </Link>
                           </div>
                         </div>
                       )}
@@ -617,19 +617,19 @@ function Menubar() {
                                   Logistics Solutions.
                                 </h3>
                                 <p className="text-light mb-2 lh-lg">
-                                  Lorem ipsum dolor sit amet consectetur
-                                  adipisicing elit. Eveniet, nemo adipisci
-                                  officia sed consequatur tenetur eos voluptatum
-                                  possimus! Distinctio, animi?
+                                  Optimizing supply chain management and
+                                  logistics operations with innovative solutions
+                                  that ensure efficiency, reliability, and
+                                  seamless global connectivity
                                 </p>
                               </div>
                             </div>
-                            <a
+                            <Link
                               className="btn btn-danger mt-3 mb-2 rounded-pill px-4 py-2"
-                              href=""
+                              to="Logistic"
                             >
                               Learn More
-                            </a>
+                            </Link>
                           </div>
                         </div>
                       )}
@@ -647,6 +647,13 @@ function Menubar() {
                 </Link>
               </li>
             </ul>
+            <div class="d-flex justify-content-start">
+              <Link className="nav-link p-0" to="/">
+                <span className="me-2" style={{ color: "#e3dedecf" }}>
+                  FAQ's (?)
+                </span>
+              </Link>
+            </div>
           </div>
         </nav>
       </div>

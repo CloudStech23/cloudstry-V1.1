@@ -2,6 +2,7 @@ import React from 'react';
 import { MDBFooter, MDBContainer, MDBRow, MDBCol, MDBIcon } from 'mdb-react-ui-kit';
 import { Link } from 'react-router-dom';
 import '../Footer/Footer.css'
+import pagelogo from '../Images/page logo.png'
 
 export default function Footer() {
   return (
@@ -37,14 +38,15 @@ export default function Footer() {
         <MDBContainer className='text-center text-md-start mt-5'>
           <MDBRow className='mt-3'>
             <MDBCol md='3' lg='4' xl='3' className='mx-auto mb-4'>
-              <h6 className='text-uppercase fw-bold mb-4'>
-                <MDBIcon color='secondary' icon='gem' className='me-3' />
-                MetroXone Tech
-              </h6>
-              <p>
-                Here you can use rows and columns to organize your footer content. Lorem ipsum dolor sit
-                amet, consectetur adipisicing elit.
-              </p>
+            <Link className=" navbar-brand mx-3" to="/">
+            <img
+              src={pagelogo}
+              className="img-fluid logoimg"
+              style={{ height: "2.7rem" }}
+              alt="Logo"
+            />
+          </Link>
+               
             </MDBCol>
 
             <MDBCol md='2' lg='2' xl='2' className='mx-auto mb-4'>
