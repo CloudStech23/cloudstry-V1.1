@@ -13,14 +13,20 @@ function Healthinsurance() {
             <a href="#" className="">
               Industries We Serve /
             </a>{" "}
-            <a href="#">Health Insurance</a> 
+            <a href="#">Health Insurance</a>
           </span>
         </div>
 
         {/* Header Content */}
         <div className="container text-primary mt-5">
-          <h1 className="display-4">Your Title Here</h1>
-          <p className="lead">This is the page information or tagline.</p>
+          <h1 className="display-6">
+            Transforming Healthcare Insurance: Innovation for a Better Tomorrow
+          </h1>
+          <p className="lead">
+            Enhance efficiency and accuracy in healthcare insurance with our
+            state-of-the-art technology solutions. Discover how we streamline
+            processes, improve patient care, and drive industry progress
+          </p>
         </div>
       </header>
       <div className="container my-5 py-5">
@@ -28,7 +34,7 @@ function Healthinsurance() {
           {/* Text Content */}
           <div className="col-md-5 mt-4 mb-2">
             <span className="badge bg-primary rounded-pill px-2 py-2 mb-3">
-              Education
+              Health Insurance
             </span>
             <h2
               className=" display-5 text-primary "
@@ -70,8 +76,12 @@ function Healthinsurance() {
             {/* Text Section */}
             <div className="col-md-6">
               <h3 className="text-primary fw-bold mb-3">
-                Challanges of Veterinary Health and Insurance Systems
+                Major Challenges in the Healthcare Insurance Sector
               </h3>
+              <p>
+                The healthcare insurance industry faces several significant
+                challenges that impact its operations and service delivery:
+              </p>
 
               <ul className="list-unstyled">
                 <li className="mb-2 d-flex align-items-start">
@@ -80,8 +90,9 @@ function Healthinsurance() {
                     style={{ marginTop: "6px" }}
                   ></i>
                   <span className="d-inline">
-                    Fragmented health records create difficulties in tracking
-                    animal medical histories.
+                    <span className="fw-bold">Complex Claims Processing:</span>{" "}
+                    Managing and processing a high volume of claims accurately
+                    and efficiently remains a major challenge.
                   </span>
                 </li>
                 <li className="mb-2 d-flex align-items-start">
@@ -90,8 +101,9 @@ function Healthinsurance() {
                     style={{ marginTop: "6px" }}
                   ></i>
                   <span className="d-inline">
-                    Inefficient insurance claim management leads to delays in
-                    processing and verifying coverage.
+                    <span className="fw-bold">Fraud Prevention:</span> Detecting
+                    and preventing fraudulent activities while ensuring genuine
+                    claims are processed can be difficult.
                   </span>
                 </li>
                 <li className="mb-2 d-flex align-items-start">
@@ -100,8 +112,11 @@ function Healthinsurance() {
                     style={{ marginTop: "6px" }}
                   ></i>
                   <span className="d-inline">
-                    Inconsistent care delivery due to the lack of a standardized
-                    system for managing pet and livestock health.
+                    <span className="fw-bold">
+                      Data Management and Integration:
+                    </span>{" "}
+                    Handling vast amounts of patient data from various sources
+                    and ensuring its accuracy and integration can be cumbersome.
                   </span>
                 </li>
                 <li className="mb-2 d-flex align-items-start">
@@ -110,8 +125,11 @@ function Healthinsurance() {
                     style={{ marginTop: "6px" }}
                   ></i>
                   <span className="d-inline">
-                    Difficulty in population management for both pets and
-                    livestock without a unified tracking system.
+                    <span className="fw-bold">
+                      Compliance with Regulations:
+                    </span>{" "}
+                    Adhering to evolving regulatory requirements and maintaining
+                    compliance across different jurisdictions is complex.
                   </span>
                 </li>
                 <li className="mb-2 d-flex align-items-start">
@@ -120,8 +138,12 @@ function Healthinsurance() {
                     style={{ marginTop: "6px" }}
                   ></i>
                   <span className="d-inline">
-                    Gaps in communication between veterinary clinics, insurance
-                    providers, and pet owners hinder effective care.
+                    <span className="fw-bold">
+                      Customer Service and Engagement:
+                    </span>{" "}
+                    Providing timely and effective support to policyholders
+                    while managing their expectations and needs is a growing
+                    concern.
                   </span>
                 </li>
               </ul>
@@ -161,12 +183,12 @@ function Healthinsurance() {
             {/* Text Section */}
             <div className="col-md-6">
               <h3 className="text-primary fw-bold mb-3">
-                Integrated Solution for Health and Insurance
+                How Digitalization is Solving Healthcare Insurance Challenges
               </h3>
               <p>
-                Metroxone's healthcare solutions provide an integrated approach
-                to managing animal health records and insurance, streamlining
-                processes, and ensuring consistent care delivery.
+                Digital transformation is reshaping the insurance sector by
+                providing efficient, secure, and customer-centric solutions to
+                complex challenges:
               </p>
               <ul className="list-unstyled">
                 <li className="mb-2 d-flex align-items-start">
@@ -175,8 +197,12 @@ function Healthinsurance() {
                     style={{ marginTop: "6px" }}
                   ></i>
                   <span className="d-inline">
-                    Comprehensive health record management ensures accurate and
-                    accessible medical histories.
+                    <span className="fw-bold">
+                      Automated Claims Processing:
+                    </span>{" "}
+                    Implementing automated systems for claims management speeds
+                    up processing times, reduces errors, and enhances
+                    efficiency.
                   </span>
                 </li>
                 <li className="mb-2 d-flex align-items-start">
@@ -185,8 +211,10 @@ function Healthinsurance() {
                     style={{ marginTop: "6px" }}
                   ></i>
                   <span className="d-inline">
-                    Efficient insurance claim processing minimizes delays and
-                    improves coverage verification.
+                    <span className="fw-bold">Advanced Fraud Detection:</span>{" "}
+                    Utilizing machine learning and AI to detect patterns and
+                    anomalies helps prevent fraudulent claims and protects
+                    against financial losses.
                   </span>
                 </li>
                 <li className="mb-2 d-flex align-items-start">
@@ -195,8 +223,10 @@ function Healthinsurance() {
                     style={{ marginTop: "6px" }}
                   ></i>
                   <span className="d-inline">
-                    Standardized care delivery promotes consistent and reliable
-                    health management for pets and livestock.
+                    <span className="fw-bold">Integrated Data Platforms:</span>{" "}
+                    Digital solutions enable seamless integration and management
+                    of data from multiple sources, improving accuracy and
+                    accessibility.
                   </span>
                 </li>
                 <li className="mb-2 d-flex align-items-start">
@@ -205,8 +235,12 @@ function Healthinsurance() {
                     style={{ marginTop: "6px" }}
                   ></i>
                   <span className="d-inline">
-                    Unified tracking systems enhance population management and
-                    support proactive healthcare.
+                    <span className="fw-bold">
+                      Compliance Management Systems:
+                    </span>{" "}
+                    Automated compliance tools ensure adherence to regulatory
+                    requirements and facilitate real-time updates on changing
+                    regulations.
                   </span>
                 </li>
                 <li className="mb-2 d-flex align-items-start">
@@ -215,11 +249,108 @@ function Healthinsurance() {
                     style={{ marginTop: "6px" }}
                   ></i>
                   <span className="d-inline">
-                    Improved communication channels between clinics, insurers,
-                    and owners ensure coordinated care.
+                    <span className="fw-bold">
+                      Enhanced Customer Engagement:
+                    </span>{" "}
+                    Digital platforms offer personalized customer service and
+                    support, improving engagement and satisfaction through
+                    self-service options and streamlined communication.
                   </span>
                 </li>
               </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        className="image-video-text-interactivity fadeInUp mb-5"
+        style={{ marginTop: "5rem" }}
+      >
+        <div className="container mt-5">
+          <div className="row align-items-center">
+            {/* Text Section */}
+            <div className="col-md-6">
+              <h3 className="text-primary fw-bold mb-3">
+                How We Can Support the Healthcare Insurance Sector
+              </h3>
+              <p>
+                Our cutting-edge solutions address the complexities of managing
+                claims, ensuring compliance, and enhancing customer
+                interactions:
+              </p>
+
+              <ul className="list-unstyled">
+                <li className="mb-2 d-flex align-items-start">
+                  <i
+                    className="fa fa-check-circle text-primary me-2"
+                    style={{ marginTop: "6px" }}
+                  ></i>
+                  <span className="d-inline">
+                    <span className="fw-bold">Claims Management Systems:</span>{" "}
+                    Advanced systems that automate and streamline the claims
+                    process, reducing manual effort and improving accuracy.
+                  </span>
+                </li>
+                <li className="mb-2 d-flex align-items-start">
+                  <i
+                    className="fa fa-check-circle text-primary me-2"
+                    style={{ marginTop: "6px" }}
+                  ></i>
+                  <span className="d-inline">
+                    <span className="fw-bold">Fraud Detection Solutions:</span>{" "}
+                    AI-driven tools that analyze data and detect fraudulent
+                    activities, safeguarding your operations and reducing risk.
+                  </span>
+                </li>
+                <li className="mb-2 d-flex align-items-start">
+                  <i
+                    className="fa fa-check-circle text-primary me-2"
+                    style={{ marginTop: "6px" }}
+                  ></i>
+                  <span className="d-inline">
+                    <span className="fw-bold">
+                      Data Integration and Management:
+                    </span>{" "}
+                    Comprehensive platforms that unify and manage patient data,
+                    ensuring accuracy and enhancing decision-making.
+                  </span>
+                </li>
+                <li className="mb-2 d-flex align-items-start">
+                  <i
+                    className="fa fa-check-circle text-primary me-2"
+                    style={{ marginTop: "6px" }}
+                  ></i>
+                  <span className="d-inline">
+                    <span className="fw-bold">Compliance Tools:</span> Solutions
+                    that help you stay compliant with regulatory requirements,
+                    providing real-time updates and automated reporting.
+                  </span>
+                </li>
+                <li className="mb-2 d-flex align-items-start">
+                  <i
+                    className="fa fa-check-circle text-primary me-2"
+                    style={{ marginTop: "6px" }}
+                  ></i>
+                  <span className="d-inline">
+                    <span className="fw-bold">Customer Service Platforms:</span>{" "}
+                    Interactive platforms designed to enhance customer service,
+                    offering self-service options and efficient support
+                    channels.
+                  </span>
+                </li>
+              </ul>
+            </div>
+
+            {/* Image Section */}
+            <div className="col-md-6 text-md-end mt-4 mt-md-0">
+              <img
+                className="img-fluid rounded"
+                height={365}
+                width={504}
+                src="https://via.placeholder.com/600x400.png?text=Dummy+Image"
+                alt="AGENT511 REACH Orchestration"
+              />
             </div>
           </div>
         </div>
@@ -229,10 +360,10 @@ function Healthinsurance() {
         <div className="container">
           <div className="half-underline-container">
             <h3
-              className="text-primary text-danger text-center display-5  mt-5  half-underline"
+              className="text-primary text-danger text-center display-6  mt-5  half-underline"
               style={{ marginBottom: "2rem" }}
             >
-              Conclusion
+              Our Key Product for Healthcare Insurance
             </h3>
           </div>
           <div className="row">
@@ -243,23 +374,19 @@ function Healthinsurance() {
               >
                 <div className="media feature-card">
                   <h3 className="text-primary fw-normal mb-3">
-                    Advancing Animal Health Monitoring
+                    Digital Claims Management Platform
                   </h3>
                   <div className="media-body ml-3">
                     <div className="blockquote border-0 p-0">
                       <p className="font-italic lead">
-                        Maintaining livestock health and preventing disease
-                        spread are critical, yet traditional methods often
-                        result in fragmented health records. Pashu Aadhaar
-                        offers a comprehensive solution by assigning unique
-                        identification numbers to animals, enabling precise
-                        tracking of vaccinations, treatments, and health
-                        history. This system ensures accurate records and timely
-                        interventions. Early implementations of Pashu Aadhaar
-                        have shown improved health outcomes and reduced disease
-                        outbreaks in pilot areas, with centralized data
-                        facilitating better health trend tracking and quicker
-                        responses to issues.
+                        Our flagship product, the Digital Claims Management
+                        Platform, revolutionizes how insurance claims are
+                        processed. By automating workflows and integrating
+                        advanced analytics, this platform improves accuracy,
+                        accelerates processing times, and enhances overall
+                        efficiency. It helps insurers manage claims more
+                        effectively, detect fraud early, and provide better
+                        service to policyholders.
                       </p>
                     </div>
                   </div>

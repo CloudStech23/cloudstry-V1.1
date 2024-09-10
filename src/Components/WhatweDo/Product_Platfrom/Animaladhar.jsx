@@ -19,7 +19,7 @@ function Petadhar() {
 
         {/* Header Content */}
         <div className="container mt-5 text-primary">
-          <h1 className="display-4">Precise, Efficient Pet Identification.</h1>
+          <h1 className="display-6">Precise, Efficient Pet Identification.</h1>
           <p className="lead">
             Advanced technology driving precision, tracking, and management for
             pets. Experience the future of identification with Pet Aadhar

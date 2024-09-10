@@ -248,6 +248,7 @@ function Digitalcertificate() {
             <div className="col-xl-4 col-lg-4 col-md-6 col-sm-12 mb-3">
               <div className="card bg-light py-4 rounded">
                 <div className="card-body text-primary">
+
                   <h3 className="fs-1 fw-bold   mb-0">100+</h3>
                   <p className="fs-5">countries</p>
                 </div>
@@ -255,6 +256,7 @@ function Digitalcertificate() {
             </div>
             <div className="col-xl-4 col-lg-4 col-md-6 col-sm-12 mb-3">
               <div className="card bg-light py-4 rounded">
+                <i class="fa fa-id-card-o" aria-hidden="true"></i>
                 <div className="card-body text-primary">
                   <h3 className="fs-1 fw-bold  mb-0">1M+</h3>
                   <p className="fs-5">credentials</p>
@@ -648,6 +650,61 @@ function Digitalcertificate() {
                     style={{ marginTop: "6px" }}
                   ></i>
                   <span className="d-inline">Awards </span>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div className="row align-items-center mb-5 flex-row-reverse">
+            <div className="col-md-6 mb-4 mb-md-0">
+              <img
+                className="img-fluid rounded"
+                src="https://via.placeholder.com/600x400.png?text=Dummy+Image"
+                alt="Industry"
+                style={{ width: "100%", height: "auto" }}
+              />
+            </div>
+            <div className="col-md-6 mb-5">
+              <h3
+                className="text-primary display-6 mb-3"
+                style={{ fontWeight: 300 }}
+              >
+                Corporations
+              </h3>
+              <p
+                className="h5 mb-2 "
+                style={{ fontWeight: 400, color: "#353535" }}
+              >
+                Identify and celebrate skills and achievements, and explore your employee network for specific talents and qualifications.
+              </p>
+
+              <ul className="list-unstyled mt-4">
+                <li className="mb-2 d-flex align-items-start">
+                  <i
+                    className="fa fa-check text-primary me-2"
+                    style={{ marginTop: "6px" }}
+                  ></i>
+                  <span className="d-inline">Skills & Competencies</span>
+                </li>
+                <li className="mb-2 d-flex align-items-start">
+                  <i
+                    className="fa fa-check text-primary me-2"
+                    style={{ marginTop: "6px" }}
+                  ></i>
+                  <span className="d-inline">Awards</span>
+                </li>
+                <li className="mb-2 d-flex align-items-start">
+                  <i
+                    className="fa fa-check text-primary me-2"
+                    style={{ marginTop: "6px" }}
+                  ></i>
+                  <span className="d-inline">Milstones</span>
+                </li>
+                <li className="mb-2 d-flex align-items-start">
+                  <i
+                    className="fa fa-check text-primary me-2"
+                    style={{ marginTop: "6px" }}
+                  ></i>
+                  <span className="d-inline">Training</span>
                 </li>
               </ul>
             </div>

@@ -18,7 +18,7 @@ function Thirdpartylogistic() {
 
         {/* Header Content */}
         <div className="container mt-5 text-primary">
-          <h1 className="display-4">
+          <h1 className="display-6">
             Streamlined 3PL Solutions for Modern Supply Chains
           </h1>
           <p className="lead">

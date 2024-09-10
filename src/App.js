@@ -12,7 +12,8 @@ import Healthinsurance from "./Components/Industries/Health_insurance";
 import Government from "./Components/Industries/Government";
 import Logistic from "./Components/Industries/Logistic";
 import Education from "./Components/Industries/Education";
-import Contact from "./Components/Support/Contact";
+import Contact from "./Components/About/Contact";
+import Team from "./Components/About/Team";
 
 function App() {
   return (
@@ -33,6 +34,7 @@ function App() {
         <Route exact path="/Logistic" element={<Logistic/>} />
         <Route exact path="/Education" element={<Education/>} />
         <Route exact path="/Support" element={<Contact/>} />
+        <Route exact path="/Team-Cloudstry" element={<Team/>} />
       </Routes>
       <Footer />
     </Router>

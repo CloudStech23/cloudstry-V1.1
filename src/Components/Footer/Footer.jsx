@@ -2,7 +2,7 @@ import React from 'react';
 import { MDBFooter, MDBContainer, MDBRow, MDBCol, MDBIcon } from 'mdb-react-ui-kit';
 import { Link } from 'react-router-dom';
 import '../Footer/Footer.css'
-import pagelogo from '../Images/page logo.png'
+import pagelogo from '../Images/cloudslogo.png'
 
 export default function Footer() {
   return (

@@ -19,7 +19,7 @@ function Education() {
 
         {/* Header Content */}
         <div className="container text-primary mt-5">
-          <h1 className="display-4">
+          <h1 className="display-6">
             Educational Excellence: Synergy of Innovation and Engagement
           </h1>
           <p className="lead">
@@ -227,7 +227,7 @@ function Education() {
         </div>
       </section> */}
 
-<section
+      <section
         className="image-video-text-interactivity fadeInUp mb-5"
         style={{ marginTop: "5rem" }}
       >
@@ -239,7 +239,9 @@ function Education() {
                 Digitalization in Education: A Catalyst for Positive Change
               </h3>
               <p>
-                Digitalization is transforming the education sector by offering powerful tools to overcome these challenges. Here’s how technology is making a difference:
+                Digitalization is transforming the education sector by offering
+                powerful tools to overcome these challenges. Here’s how
+                technology is making a difference:
               </p>
               <ul className="list-unstyled">
                 <li className="mb-2 d-flex align-items-start">
@@ -248,7 +250,11 @@ function Education() {
                     style={{ marginTop: "6px" }}
                   ></i>
                   <span className="d-inline">
-                    <strong>Expanding Access to Education:</strong> Digital platforms enable remote learning, bringing quality education to students regardless of their geographic location. Online courses, virtual classrooms, and e-learning modules make education more inclusive.
+                    <strong>Expanding Access to Education:</strong> Digital
+                    platforms enable remote learning, bringing quality education
+                    to students regardless of their geographic location. Online
+                    courses, virtual classrooms, and e-learning modules make
+                    education more inclusive.
                   </span>
                 </li>
                 <li className="mb-2 d-flex align-items-start">
@@ -257,7 +263,11 @@ function Education() {
                     style={{ marginTop: "6px" }}
                   ></i>
                   <span className="d-inline">
-                    <strong>Streamlining Administrative Processes:</strong> Automation tools and management systems reduce the burden of administrative tasks, allowing institutions to operate more efficiently. This leads to better resource allocation and improved productivity.
+                    <strong>Streamlining Administrative Processes:</strong>{" "}
+                    Automation tools and management systems reduce the burden of
+                    administrative tasks, allowing institutions to operate more
+                    efficiently. This leads to better resource allocation and
+                    improved productivity.
                   </span>
                 </li>
                 <li className="mb-2 d-flex align-items-start">
@@ -266,7 +276,11 @@ function Education() {
                     style={{ marginTop: "6px" }}
                   ></i>
                   <span className="d-inline">
-                    <strong>Enhancing Student Engagement:</strong> Interactive digital tools, gamified learning experiences, and AI-driven personalized learning paths keep students engaged and motivated, helping to reduce dropout rates and improve outcomes.
+                    <strong>Enhancing Student Engagement:</strong> Interactive
+                    digital tools, gamified learning experiences, and AI-driven
+                    personalized learning paths keep students engaged and
+                    motivated, helping to reduce dropout rates and improve
+                    outcomes.
                   </span>
                 </li>
                 <li className="mb-2 d-flex align-items-start">
@@ -275,7 +289,11 @@ function Education() {
                     style={{ marginTop: "6px" }}
                   ></i>
                   <span className="d-inline">
-                    <strong>Improving Data Management and Security:</strong> Advanced data management systems ensure that student information is organized, easily accessible, and secure from cyber threats. This protects institutions from data breaches and ensures compliance with privacy regulations.
+                    <strong>Improving Data Management and Security:</strong>{" "}
+                    Advanced data management systems ensure that student
+                    information is organized, easily accessible, and secure from
+                    cyber threats. This protects institutions from data breaches
+                    and ensures compliance with privacy regulations.
                   </span>
                 </li>
                 <li className="mb-2 d-flex align-items-start">
@@ -284,7 +302,11 @@ function Education() {
                     style={{ marginTop: "6px" }}
                   ></i>
                   <span className="d-inline">
-                    <strong>Facilitating Technological Adaptation:</strong> Digitalization supports continuous learning and adaptation, enabling institutions to stay current with technological trends and integrate new tools seamlessly into their existing frameworks.
+                    <strong>Facilitating Technological Adaptation:</strong>{" "}
+                    Digitalization supports continuous learning and adaptation,
+                    enabling institutions to stay current with technological
+                    trends and integrate new tools seamlessly into their
+                    existing frameworks.
                   </span>
                 </li>
               </ul>
@@ -304,80 +326,90 @@ function Education() {
         </div>
       </section>
 
-
       <section className="image-video-text-interactivity fadeInUp mb-5">
-  <div className="container mb-5">
-    <div className="row align-items-center mb-5">
-      {/* Image Section */}
-      <div className="col-md-6 mb-5 mb-md-0">
-        <img
-          className="img-fluid rounded"
-          height={365}
-          width={504}
-          src="https://via.placeholder.com/600x500.png?text=Dummy+Image"
-          alt="MetroXone Tech Solutions"
-        />
-      </div>
+        <div className="container mb-5">
+          <div className="row align-items-center mb-5">
+            {/* Image Section */}
+            <div className="col-md-6 mb-5 mb-md-0">
+              <img
+                className="img-fluid rounded"
+                height={365}
+                width={504}
+                src="https://via.placeholder.com/600x500.png?text=Dummy+Image"
+                alt="MetroXone Tech Solutions"
+              />
+            </div>
 
-      {/* Text Section */}
-      <div className="col-md-6 mb-5">
-        <h3 className="text-primary fw-bold mb-3">
-          How MetroXone Tech Supports the Education Industry: Your Partner in Progress
-        </h3>
-        <p>
-          At MetroXone Tech, we are committed to empowering educational institutions to thrive in the digital age. Here’s how we can help:
-        </p>
-        <ul className="list-unstyled">
-          <li className="mb-2 d-flex align-items-start">
-            <i
-              className="fa fa-check-circle text-primary me-2"
-              style={{ marginTop: "6px" }}
-            ></i>
-            <span className="d-inline">
-              <strong>Custom IT Solutions:</strong> Tailored solutions for your institution's needs, from LMS implementation to IT infrastructure upgrades.
-            </span>
-          </li>
-          <li className="mb-2 d-flex align-items-start">
-            <i
-              className="fa fa-check-circle text-primary me-2"
-              style={{ marginTop: "6px" }}
-            ></i>
-            <span className="d-inline">
-              <strong>Digital Transformation Services:</strong> Expertise in integrating advanced technologies to support teaching and administrative functions.
-            </span>
-          </li>
-          <li className="mb-2 d-flex align-items-start">
-            <i
-              className="fa fa-check-circle text-primary me-2"
-              style={{ marginTop: "6px" }}
-            ></i>
-            <span className="d-inline">
-              <strong>Innovative Learning Tools:</strong> Development of AI-powered analytics, cloud-based platforms, and interactive tools to enhance engagement.
-            </span>
-          </li>
-          <li className="mb-2 d-flex align-items-start">
-            <i
-              className="fa fa-check-circle text-primary me-2"
-              style={{ marginTop: "6px" }}
-            ></i>
-            <span className="d-inline">
-              <strong>Consultation and Support:</strong> Ongoing support to adapt to tech changes, optimize processes, and stay competitive.
-            </span>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</section>
+            {/* Text Section */}
+            <div className="col-md-6 mb-5">
+              <h3 className="text-primary fw-bold mb-3">
+                How MetroXone Tech Supports the Education Industry: Your Partner
+                in Progress
+              </h3>
+              <p>
+                At MetroXone Tech, we are committed to empowering educational
+                institutions to thrive in the digital age. Here’s how we can
+                help:
+              </p>
+              <ul className="list-unstyled">
+                <li className="mb-2 d-flex align-items-start">
+                  <i
+                    className="fa fa-check-circle text-primary me-2"
+                    style={{ marginTop: "6px" }}
+                  ></i>
+                  <span className="d-inline">
+                    <strong>Custom IT Solutions:</strong> Tailored solutions for
+                    your institution's needs, from LMS implementation to IT
+                    infrastructure upgrades.
+                  </span>
+                </li>
+                <li className="mb-2 d-flex align-items-start">
+                  <i
+                    className="fa fa-check-circle text-primary me-2"
+                    style={{ marginTop: "6px" }}
+                  ></i>
+                  <span className="d-inline">
+                    <strong>Digital Transformation Services:</strong> Expertise
+                    in integrating advanced technologies to support teaching and
+                    administrative functions.
+                  </span>
+                </li>
+                <li className="mb-2 d-flex align-items-start">
+                  <i
+                    className="fa fa-check-circle text-primary me-2"
+                    style={{ marginTop: "6px" }}
+                  ></i>
+                  <span className="d-inline">
+                    <strong>Innovative Learning Tools:</strong> Development of
+                    AI-powered analytics, cloud-based platforms, and interactive
+                    tools to enhance engagement.
+                  </span>
+                </li>
+                <li className="mb-2 d-flex align-items-start">
+                  <i
+                    className="fa fa-check-circle text-primary me-2"
+                    style={{ marginTop: "6px" }}
+                  ></i>
+                  <span className="d-inline">
+                    <strong>Consultation and Support:</strong> Ongoing support
+                    to adapt to tech changes, optimize processes, and stay
+                    competitive.
+                  </span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
 
-<section className="pb-5 mt-5 mb-4">
+      <section className="pb-5 mt-5 mb-4">
         <div className="container">
           <div className="half-underline-container">
             <h3
-              className="text-primary text-danger text-center display-5  mt-5  half-underline"
+              className="text-primary text-danger text-center display-6  mt-5  half-underline"
               style={{ marginBottom: "2rem" }}
             >
-              Key Projects For Education Sector 
+              Key Projects For Education Sector
             </h3>
           </div>
           <div className="row">
@@ -393,8 +425,13 @@ function Education() {
                   <div className="media-body ml-3">
                     <div className="blockquote border-0 p-0">
                       <p className="font-italic lead">
-                      Our flagship project, BadgeCert, offers a revolutionary approach to credentialing by providing digital certificates that are secure, verifiable, and easily shareable. This solution helps institutions streamline certification processes, enhance the credibility of academic achievements, and offer students a modern way to showcase their skills and qualifications.
-
+                        Our flagship project, BadgeCert, offers a revolutionary
+                        approach to credentialing by providing digital
+                        certificates that are secure, verifiable, and easily
+                        shareable. This solution helps institutions streamline
+                        certification processes, enhance the credibility of
+                        academic achievements, and offer students a modern way
+                        to showcase their skills and qualifications.
                       </p>
                     </div>
                   </div>
@@ -404,10 +441,6 @@ function Education() {
           </div>
         </div>
       </section>
-
-
-
-       
     </div>
   );
 }

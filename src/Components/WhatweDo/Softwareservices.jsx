@@ -26,7 +26,7 @@ function Softwareservices() {
 
         {/* Header Content */}
         <div className="container text-primary mt-5">
-          <h1 className="display-4">Comprehensive Software Services</h1>
+          <h1 className="display-6">Comprehensive Software Services</h1>
           <p className="lead">
             Customized software solutions are essential for businesses
             navigating today's digital world. They can streamline operations,

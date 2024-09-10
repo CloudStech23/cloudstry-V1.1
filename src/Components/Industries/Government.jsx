@@ -20,8 +20,8 @@ function Government() {
 
         {/* Header Content */}
         <div className="container text-primary mt-5">
-          <h1 className="display-4">Your Title Here</h1>
-          <p className="lead">This is the page information or tagline.</p>
+          <h1 className="display-6">Transforming Governance: Innovation Meets Efficiency</h1>
+          <p className="lead">Empowering government agencies with cutting-edge technology to overcome challenges, enhance transparency, and deliver exceptional public services. Discover how our solutions drive progress and efficiency in the public sector</p>
         </div>
       </header>
       <div className="container my-5 py-5">

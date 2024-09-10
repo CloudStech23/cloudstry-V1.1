@@ -1,7 +1,7 @@
 import React, { useState, useRef, useEffect } from "react";
 import "../Menubar/Menubar.css";
 import { Link, useLocation } from "react-router-dom";
-import pagelogo from "../Images/page logo.png";
+import pagelogo from "../Images/cloudslogo.png";
 
 import Menudrawer from "./Drawer";
 
@@ -475,7 +475,7 @@ function Menubar() {
                           to="/Education"
                           onMouseEnter={() => handleHover("education")}
                         >
-                          Education
+                           Education
                         </Link>
                         <div
                           className="dropdown-divider"
@@ -678,7 +678,7 @@ function Menubar() {
                   role="button"
                   onClick={() => handleDropdownClick("dropdown4")}
                 >
-                  About Us
+                  About us
                   <span
                     className={`dropdown-arrow ${
                       openDropdown === "dropdown4" ? "open" : ""
@@ -695,11 +695,6 @@ function Menubar() {
                   <div className="row mt-3">
                     <div className="col-lg-3" style={{ marginLeft: "5%" }}>
                       <div className="mt-3" style={{ marginLeft: "5%" }}>
-                         
-                        
-
-                        
-                        
                         <Link
                           className={`dropdown-item text-white h6 ${
                             hoveredItem === "team" ? "active" : ""
@@ -715,9 +710,9 @@ function Menubar() {
                         ></div>
                         <Link
                           className={`dropdown-item text-white h6 ${
-                            hoveredItem === "contact" ? "active" : ""
+                            hoveredItem === "support" ? "active" : ""
                           }`}
-                          onMouseEnter={() => handleHover("Contact")}
+                          onMouseEnter={() => handleHover("support")}
                           to="/Support"
                         >
                           Contact Us
@@ -741,23 +736,56 @@ function Menubar() {
                               className="text-light fw-normal"
                               style={{ fontSize: "2rem" }}
                             >
-                              Empowering Your Business with a Robust Product
-                              Platform.
+                              Elevating Your Team with Effective Leadership
+                              Strategies.
                             </h3>
                             <p className="text-light mb-2 lh-lg">
-                              Discover our comprehensive product platform
-                              designed to streamline and enhance your business
-                              operations. From managing logistics to integrating
-                              with various services, our platform provides the
-                              tools you need for success.
+                              Explore our innovative leadership approaches
+                              designed to inspire, guide, and empower your team.
+                              Our strategies focus on enhancing collaboration,
+                              driving performance, and achieving exceptional
+                              results.
                             </p>
+                            <Link
+                              className="btn btn-danger mt-3 mb-2 rounded-pill px-4 py-2"
+                              to="/Education"
+                            >
+                              Learn More
+                            </Link>
                           </div>
-
-                           
                         </div>
                       )}
-
-                       
+                      {hoveredItem === "support" && (
+                        <div
+                          style={{
+                            display: "flex",
+                            flexDirection: "column",
+                            gap: "2rem",
+                          }}
+                        >
+                          <div>
+                            <h3
+                              className="text-light fw-normal"
+                              style={{ fontSize: "2rem" }}
+                            >
+                              Connect with Us for Tailored Solutions and
+                              Support.
+                            </h3>
+                            <p className="text-light mb-2 lh-lg">
+                              Reach out to our team for personalized assistance
+                              and expert guidance. We are here to address your
+                              needs, answer your questions, and provide the
+                              support required to achieve your goals.
+                            </p>
+                          <Link
+                              className="btn btn-danger mt-3 mb-2 rounded-pill px-4 py-2"
+                              to="/Education"
+                            >
+                              Learn More
+                            </Link>
+                          </div>
+                        </div>
+                      )}
                     </div>
                   </div>
                 </div>

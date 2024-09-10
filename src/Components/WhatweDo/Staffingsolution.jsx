@@ -16,13 +16,13 @@ function Staffingsolution() {
             <a href="/" className="">
               What we Do ? /
             </a>{" "}
-            <a href="#">IT Solutions</a> / Staffing Solution
+            Staffing Solution
           </span>
         </div>
 
         {/* Header Content */}
         <div className="container text-primary mt-5 ">
-          <h1 className="display-4">
+          <h1 className="display-6">
             {" "}
             Comprehensive Staffing Solutions for Global Captive Centers
           </h1>
