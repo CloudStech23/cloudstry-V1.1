@@ -7,24 +7,34 @@ function Staffingsolution() {
   return (
     <div>
       <header className="bg-white text-white text-center py-5 position-relative">
-  {/* Navigation Path */}
-  <div className="position-absolute top-0 start-0 ms-0 mt-0 p-4 fs-5 fw-bold" style={{ zIndex: 100 }}>
-    <span className="small text-primary">
-      <a href="/" className="">
-        What we Do ? /
-      </a>{" "}
-      <a href="#">IT Solutions</a> / Staffing Solution
-    </span>
-  </div>
+        {/* Navigation Path */}
+        <div
+          className="position-absolute top-0 start-0 ms-0 mt-0 p-4 fs-5 fw-bold"
+          style={{ zIndex: 100 }}
+        >
+          <span className="small text-primary">
+            <a href="/" className="">
+              What we Do ? /
+            </a>{" "}
+            <a href="#">IT Solutions</a> / Staffing Solution
+          </span>
+        </div>
 
-  {/* Header Content */}
-  <div className="container text-primary mt-5 ">
-    <h1 className="display-4">Your Title Here</h1>
-    <p className="lead">This is the page information or tagline.</p>
-  </div>
-</header>
-
-       
+        {/* Header Content */}
+        <div className="container text-primary mt-5 ">
+          <h1 className="display-4">
+            {" "}
+            Comprehensive Staffing Solutions for Global Captive Centers
+          </h1>
+          <p className="lead">
+            Global Captive Centers (GCCs) are operational units established by
+            multinational corporations in offshore locations to perform critical
+            business functions. These centers often handle back-office
+            processes, IT services, customer support, and other specialized
+            functions.
+          </p>
+        </div>
+      </header>
 
       {/* <section class="py-5 bg-whitet text-center">
         <section className="pb-5">
@@ -138,79 +148,8 @@ function Staffingsolution() {
         </section>
       </section> */}
 
-
-      <div className="container " style={{marginTop:'5rem'}} >
-      <div className="half-underline-container">
-           
-        </div>
-        <div className="row gx-0">
-          <div
-            className="col-xl-6 col-lg-5 d-flex justify-content-left align-items-center"
-            style={{ marginBottom: "5rem" }}
-          >
-            <img
-              className="img-fluid"
-              src="https://via.placeholder.com/600x400.png?text=Dummy+Image"
-              alt="Macbook"
-            />
-          </div>
-          <div className="col-md-6 mb-5">
-            <h3
-              className="text-primary display-6 mb-3"
-              style={{ fontWeight: 300 }}
-            >
-              How Metroxone Addresses Staffing Challenges:
-            </h3>
-            <p
-              className="h5 mb-2 text-muted "
-              style={{ fontWeight: 300}}
-            >
-              Metroxone delivers a unified staffing solution tailored to meet these challenges
-            </p>
-            
-            <ul className="list-unstyled mt-4">
-              <li className="mb-2 d-flex align-items-start">
-                <i
-                  className="fa fa-check text-primary me-2"
-                  style={{ marginTop: "6px" }}
-                ></i>
-                <span className="d-inline">
-                Centralized Recruitment Management: Facilitate a streamlined approach to recruitment by consolidating multiple channels into a single, integrated platform.
-                </span>
-              </li>
-              <li className="mb-2 d-flex align-items-start">
-                <i
-                  className="fa fa-check text-primary me-2"
-                  style={{ marginTop: "6px" }}
-                ></i>
-                <span className="d-inline">
-                Optimized Onboarding: Automate and enhance the onboarding experience, ensuring a smooth transition for new hires and efficient assimilation into the organization.
-                </span>
-              </li>
-              <li className="mb-2 d-flex align-items-start">
-                <i
-                  className="fa fa-check text-primary me-2"
-                  style={{ marginTop: "6px" }}
-                ></i>
-                <span className="d-inline">
-                Dynamic Resource Allocation: Utilize real-time data and advanced analytics to manage and adjust staffing levels according to project demands and operational needs.
-                </span>
-              </li>
-              <li className="mb-2 d-flex align-items-start">
-                <i
-                  className="fa fa-check text-primary me-2"
-                  style={{ marginTop: "6px" }}
-                ></i>
-                <span className="d-inline">
-                Comprehensive Compliance Oversight: Manage regulatory requirements and documentation through an automated system that ensures adherence to industry standards.
-                </span>
-              </li>
-              
-            </ul>
-             
-          </div>
-        </div>
-
+      <div className="container " style={{ marginTop: "5rem" }}>
+        <div className="half-underline-container"></div>
         <div className="row gx-0 mt-5">
           <div
             className="col-xl-6 col-lg-5 d-flex justify-content-left align-items-center"
@@ -219,7 +158,7 @@ function Staffingsolution() {
             <img
               className="img-fluid"
               src="https://via.placeholder.com/600x400.png?text=Dummy+Image"
-              alt="Macbook"
+              alt="Addressing GCC Challenges"
             />
           </div>
           <div className="col-md-6 mb-5">
@@ -227,17 +166,24 @@ function Staffingsolution() {
               className="text-primary display-6 mb-3"
               style={{ fontWeight: 300 }}
             >
-              Key features with Us.
+              How We Addresses GCC-Specific Challenges ?
             </h3>
-             
-            <ul className="list-unstyled mt-0">
+            <p className="h5 mb-2 text-muted" style={{ fontWeight: 300 }}>
+              Metroxone delivers targeted solutions to address the unique
+              challenges faced by Global Captive Centers (GCCs).
+            </p>
+
+            <ul className="list-unstyled mt-4">
               <li className="mb-2 d-flex align-items-start">
                 <i
                   className="fa fa-check text-primary me-2"
                   style={{ marginTop: "6px" }}
                 ></i>
                 <span className="d-inline">
-                Unified Platform: Centralize recruitment, onboarding, compliance, and resource management in one cohesive system.
+                  <strong>Scalability:</strong> Our solutions are designed to
+                  grow with your GCC, providing the flexibility to accommodate
+                  increasing staffing needs and operational demands as your
+                  center expands.
                 </span>
               </li>
               <li className="mb-2 d-flex align-items-start">
@@ -246,7 +192,9 @@ function Staffingsolution() {
                   style={{ marginTop: "6px" }}
                 ></i>
                 <span className="d-inline">
-                Automated Processes: Enhance efficiency by automating routine tasks and streamlining workflows.
+                  <strong>Skill Specialization:</strong> We employ targeted
+                  recruitment strategies to find and place candidates with
+                  specialized skills essential for GCC operations.
                 </span>
               </li>
               <li className="mb-2 d-flex align-items-start">
@@ -255,7 +203,10 @@ function Staffingsolution() {
                   style={{ marginTop: "6px" }}
                 ></i>
                 <span className="d-inline">
-                Real-Time Resource Management: Adjust staffing levels and manage resources dynamically based on current needs and data insights.
+                  <strong>Cultural Alignment:</strong> Our approach ensures
+                  candidates are a good cultural fit, aligning with your GCC’s
+                  corporate culture and operational style to enhance team
+                  cohesion and productivity.
                 </span>
               </li>
               <li className="mb-2 d-flex align-items-start">
@@ -264,25 +215,175 @@ function Staffingsolution() {
                   style={{ marginTop: "6px" }}
                 ></i>
                 <span className="d-inline">
-                Holistic Service Range: Address a broad spectrum of staffing needs including recruitment, onboarding, compliance, and more.
+                  <strong>Compliance and Regulations:</strong> We handle all
+                  aspects of compliance with local labor laws and international
+                  regulations.
                 </span>
               </li>
-               
+              <li className="mb-2 d-flex align-items-start">
+                <i
+                  className="fa fa-check text-primary me-2"
+                  style={{ marginTop: "6px" }}
+                ></i>
+                <span className="d-inline">
+                  <strong>Remote and Onsite Staffing:</strong> Our strategies
+                  effectively manage both remote and onsite staffing needs.
+                </span>
+              </li>
             </ul>
-            
           </div>
         </div>
-       </div>
 
-       <section className="mb-5  " style={{ marginTop: "6rem" }}>
+        <div className="row gx-5 mt-5">
+          <div className="col-md-6 mb-5">
+            <h3
+              className="text-primary display-6 mb-3"
+              style={{ fontWeight: 300 }}
+            >
+              Why Choose Us for Your GCC Staffing Needs?
+            </h3>
+            <p className="h5 mb-2 text-muted" style={{ fontWeight: 300 }}>
+              See how our expertise and custom solutions enhance GCC staffing.
+            </p>
+
+            <ul className="list-unstyled mt-4">
+              <li className="mb-3 d-flex align-items-start">
+                <i
+                  className="fa fa-check text-primary me-2"
+                  style={{ marginTop: "6px" }}
+                ></i>
+                <span className="d-inline">
+                  <strong>Expertise in GCC Staffing:</strong> Proven success in
+                  staffing GCCs with impactful results and a deep understanding
+                  of the unique demands and dynamics of Global Captive Centers.
+                </span>
+              </li>
+              <li className="mb-3 d-flex align-items-start">
+                <i
+                  className="fa fa-check text-primary me-2"
+                  style={{ marginTop: "6px" }}
+                ></i>
+                <span className="d-inline">
+                  <strong>Tailored Solutions:</strong> Custom staffing
+                  strategies designed to meet the specific needs and challenges
+                  of GCCs, ensuring a perfect fit for every role.
+                </span>
+              </li>
+              <li className="mb-3 d-flex align-items-start">
+                <i
+                  className="fa fa-check text-primary me-2"
+                  style={{ marginTop: "6px" }}
+                ></i>
+                <span className="d-inline">
+                  <strong>Technology and Tools:</strong> Utilization of advanced
+                  technology and tools to streamline recruitment processes and
+                  enhance workforce management, ensuring efficiency and
+                  accuracy.
+                </span>
+              </li>
+              <li className="mb-3 d-flex align-items-start">
+                <i
+                  className="fa fa-check text-primary me-2"
+                  style={{ marginTop: "6px" }}
+                ></i>
+                <span className="d-inline">
+                  <strong>Support and Consultation:</strong> Ongoing support and
+                  expert consultation to guarantee the success of your staffing
+                  solutions, from initial setup to long-term management.
+                </span>
+              </li>
+            </ul>
+          </div>
+
+          <div
+            className="col-xl-6 col-lg-5 d-flex justify-content-right align-items-center"
+            style={{ marginBottom: "5rem" ,  }}
+          >
+            <img
+              className="img-fluid"
+              src="https://via.placeholder.com/600x400.png?text=Dummy+Image"
+              alt="GCC Staffing"
+            />
+          </div>
+        </div>
+
+        <div className="row gx-0">
+          <div
+            className="col-xl-6 col-lg-5 d-flex justify-content-left align-items-center"
+            style={{ marginBottom: "5rem" }}
+          >
+            <img
+              className="img-fluid"
+              src="https://via.placeholder.com/600x400.png?text=Dummy+Image"
+              alt="Key Benefits"
+            />
+          </div>
+          <div className="col-md-6 mb-5 mt-5">
+            <h3
+              className="text-primary display-6 mb-3"
+              style={{ fontWeight: 300 }}
+            >
+              Key Benefits of Our Staffing Solutions
+            </h3>
+
+            <ul className="list-unstyled mt-4">
+              <li className="mb-3 d-flex align-items-start">
+                <i
+                  className="fa fa-check text-primary me-2"
+                  style={{ marginTop: "6px" }}
+                ></i>
+                <span className="d-inline">
+                  <strong>Enhanced Recruitment Efficiency:</strong> Streamlined
+                  recruitment processes that significantly reduce time-to-hire
+                  and enhance overall efficiency.
+                </span>
+              </li>
+              <li className="mb-3 d-flex align-items-start">
+                <i
+                  className="fa fa-check text-primary me-2"
+                  style={{ marginTop: "6px" }}
+                ></i>
+                <span className="d-inline">
+                  <strong>Improved Talent Quality:</strong> Ensuring that
+                  candidates are thoroughly vetted and meet the specific needs
+                  and expectations of GCCs.
+                </span>
+              </li>
+              <li className="mb-3 d-flex align-items-start">
+                <i
+                  className="fa fa-check text-primary me-2"
+                  style={{ marginTop: "6px" }}
+                ></i>
+                <span className="d-inline">
+                  <strong>Greater Flexibility:</strong> Adapting quickly to
+                  changing business and workforce requirements to maintain
+                  operational efficiency.
+                </span>
+              </li>
+              <li className="mb-3 d-flex align-items-start">
+                <i
+                  className="fa fa-check text-primary me-2"
+                  style={{ marginTop: "6px" }}
+                ></i>
+                <span className="d-inline">
+                  <strong>Cost-Effective Solutions:</strong> Offering
+                  competitive pricing that provides significant cost benefits
+                  compared to traditional recruitment methods.
+                </span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <section className="mb-5  " style={{ marginTop: "6rem" }}>
         <div className="container">
           <div className="row align-items-center">
-            
             <div className="col-md-6">
               <h3 className="text-primary fw-bold mb-3">
-              Optimizing Talent Management with Precision
+                Optimizing Talent Management with Precision
               </h3>
-               
+
               <ul className="list-unstyled">
                 <li className="mb-2 d-flex align-items-start">
                   <i
@@ -290,7 +391,12 @@ function Staffingsolution() {
                     style={{ marginTop: "6px" }}
                   ></i>
                   <span className="d-inline">
-                    <span className="fw-bold">Tailored Talent Acquisition: </span> We offer bespoke recruitment strategies to meet the unique needs of each organization, ensuring the right fit for every role.
+                    <span className="fw-bold">
+                      Tailored Talent Acquisition:{" "}
+                    </span>{" "}
+                    We offer bespoke recruitment strategies to meet the unique
+                    needs of each organization, ensuring the right fit for every
+                    role.
                   </span>
                 </li>
                 <li className="mb-2 d-flex align-items-start">
@@ -299,21 +405,30 @@ function Staffingsolution() {
                     style={{ marginTop: "6px" }}
                   ></i>
                   <span className="d-inline">
-                    <span className="fw-bold"> Streamlined Onboarding: </span> Our solutions simplify the onboarding process, enhancing integration and accelerating productivity.
+                    <span className="fw-bold"> Streamlined Onboarding: </span>{" "}
+                    Our solutions simplify the onboarding process, enhancing
+                    integration and accelerating productivity.
+                  </span>
+                </li>
+                <li className="mb-2 d-flex align-items-start">
+                  <i
+                    className="fa fa-check-circle text-primary me-2"
+                    style={{ marginTop: "6px" }}
+                  ></i>
+                  <span className="d-inline">
+                    <span className="fw-bold">
+                      Compliance and Risk Management:{" "}
+                    </span>{" "}
+                    Our services ensure adherence to legal and regulatory
+                    requirements, mitigating potential risks.
+                  </span>
+                </li>
 
-                  </span>
-                </li>
-                <li className="mb-2 d-flex align-items-start">
-                  <i
-                    className="fa fa-check-circle text-primary me-2"
-                    style={{ marginTop: "6px" }}
-                  ></i>
-                  <span className="d-inline">
-                    <span className="fw-bold">Compliance and Risk Management: </span> Our services ensure adherence to legal and regulatory requirements, mitigating potential risks.
-                  </span>
-                </li>
-                 
-                 <p className="text-muted fw-bold">By choosing MetroXone Tech, you benefit from a strategic partner committed to enhancing your workforce efficiency and driving organizational success.</p>
+                <p className="text-muted fw-bold">
+                  By choosing MetroXone Tech, you benefit from a strategic
+                  partner committed to enhancing your workforce efficiency and
+                  driving organizational success.
+                </p>
               </ul>
             </div>
             <div className="col-md-6 mb-4">
@@ -326,9 +441,6 @@ function Staffingsolution() {
           </div>
         </div>
       </section>
-       
-
-
     </div>
   );
 }

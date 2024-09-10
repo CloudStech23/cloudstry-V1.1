@@ -12,18 +12,23 @@ function Thirdpartylogistic() {
             <a href="#" className="">
               What we Do ?
             </a>{" "}
-           / Product Platform / 3PL Solutions
+            / Product Platform / 3PL Solutions
           </span>
         </div>
 
         {/* Header Content */}
         <div className="container mt-5 text-primary">
-          <h1 className="display-4">Your Title Here</h1>
-          <p className="lead">This is the page information or tagline.</p>
+          <h1 className="display-4">
+            Streamlined 3PL Solutions for Modern Supply Chains
+          </h1>
+          <p className="lead">
+            3PL solutions are transforming supply chain management. By
+            outsourcing logistics to third-party providers, businesses can
+            streamline operations, cut costs, and deliver better service
+          </p>
         </div>
 
         {/* Curved Bottom Effect */}
-        
       </header>
       <div className="container my-5 py-5">
         <div className="row align-items-center justify-content-between bg-light p-4 rounded-3 position-relative">
@@ -36,7 +41,7 @@ function Thirdpartylogistic() {
               className=" display-5 text-primary "
               style={{ fontWeight: 300 }}
             >
-              3PL: The Backbone of Modern Supply Chains
+              3PL: Foundation of Contemporary Supply Chains
             </h2>
             <p className="text-muted mb-4">
               Third-Party Logistics (3PL) involves outsourcing logistics and
@@ -48,10 +53,7 @@ function Thirdpartylogistic() {
               operational efficiency, improves service quality, and provides
               scalable solutions to meet evolving market demands.
             </p>
-            <Link
-              to='/Support'
-              className="btn btn-danger"
-            >
+            <Link to="/Support" className="btn btn-danger">
               Talk to our Experts
             </Link>
           </div>
@@ -83,7 +85,7 @@ function Thirdpartylogistic() {
             {/* Text Section */}
             <div className="col-md-6 mb-5">
               <h3 className="text-primary fw-bold mb-3">
-                Navigating Complexities in Third-Party Logistics
+                Navigating Core 3PL Challenges
               </h3>
               <p className="">
                 Third-party logistics (3PL) providers face a variety of
@@ -96,46 +98,66 @@ function Thirdpartylogistic() {
                     className="fa fa-check-circle text-primary me-2"
                     style={{ marginTop: "6px" }}
                   ></i>
-                  <span className="d-inline">Cross-border shipping faces delays and increased costs due to additional checks and inspections at multiple points by intermediary countries.</span>
+                  <span className="d-inline">
+                    Cross-border shipping faces delays and increased costs due
+                    to additional checks and inspections at multiple points by
+                    intermediary countries.
+                  </span>
                 </li>
                 <li className="mb-2 d-flex align-items-start">
                   <i
                     className="fa fa-check-circle text-primary me-2"
                     style={{ marginTop: "6px" }}
                   ></i>
-                  <span className="d-inline">Real-time visibility and tracking can be difficult, leading to inefficiencies in inventory and shipment management.</span>
+                  <span className="d-inline">
+                    Real-time visibility and tracking can be difficult, leading
+                    to inefficiencies in inventory and shipment management.
+                  </span>
                 </li>
                 <li className="mb-2 d-flex align-items-start">
                   <i
                     className="fa fa-check-circle text-primary me-2"
                     style={{ marginTop: "6px" }}
                   ></i>
-                  <span className="d-inline">Controlling logistics costs remains a significant challenge, necessitating ongoing optimization and strategic cost-saving measures.</span>
+                  <span className="d-inline">
+                    Controlling logistics costs remains a significant challenge,
+                    necessitating ongoing optimization and strategic cost-saving
+                    measures.
+                  </span>
                 </li>
                 <li className="mb-2 d-flex align-items-start">
                   <i
                     className="fa fa-check-circle text-primary me-2"
                     style={{ marginTop: "6px" }}
                   ></i>
-                  <span className="d-inline">Risk management is crucial but challenging, involving strategies to handle disruptions, delays, or damage to goods.</span>
+                  <span className="d-inline">
+                    Risk management is crucial but challenging, involving
+                    strategies to handle disruptions, delays, or damage to
+                    goods.
+                  </span>
                 </li>
                 <li className="mb-2 d-flex align-items-start">
                   <i
                     className="fa fa-check-circle text-primary me-2"
                     style={{ marginTop: "6px" }}
                   ></i>
-                  <span className="d-inline">Ensuring high-quality customer service during peak periods or disruptions can strain resources and affect service consistency.</span>
+                  <span className="d-inline">
+                    Ensuring high-quality customer service during peak periods
+                    or disruptions can strain resources and affect service
+                    consistency.
+                  </span>
                 </li>
                 <li className="mb-2 d-flex align-items-start">
                   <i
                     className="fa fa-check-circle text-primary me-2"
                     style={{ marginTop: "6px" }}
                   ></i>
-                  <span className="d-inline">Compliance with evolving regulations and industry standards demands dedicated attention and resources.</span>
+                  <span className="d-inline">
+                    Compliance with evolving regulations and industry standards
+                    demands dedicated attention and resources.
+                  </span>
                 </li>
-                 
               </ul>
-               
             </div>
           </div>
         </div>
@@ -146,15 +168,17 @@ function Thirdpartylogistic() {
         style={{ marginTop: "5rem" }}
       >
         <div className="container mt-5">
-          
           <div className="row align-items-center">
             {/* Text Section */}
             <div className="col-md-6">
               <h3 className="text-primary fw-bold mb-3">
-              Advancing 3PL Solution: MetroXone Tech
+                Innovative 3PL Strategies: Cloudstry Expertise
               </h3>
               <p>
-              MetroXone Tech is dedicated to addressing the complexities of third-party logistics (3PL) by providing innovative solutions designed to tackle existing challenges and enhance operational efficiency
+                MetroXone Tech is dedicated to addressing the complexities of
+                third-party logistics (3PL) by providing innovative solutions
+                designed to tackle existing challenges and enhance operational
+                efficiency
               </p>
 
               <ul className="list-unstyled mt-4">
@@ -163,41 +187,56 @@ function Thirdpartylogistic() {
                     className="fa fa-check-circle text-primary me-2"
                     style={{ marginTop: "6px" }}
                   ></i>
-                  <span className="d-inline">Leverage extensive 3PL networks to facilitate expansion into new markets with ease and efficiency.</span>
+                  <span className="d-inline">
+                    Leverage extensive 3PL networks to facilitate expansion into
+                    new markets with ease and efficiency.
+                  </span>
                 </li>
                 <li className="mb-2 d-flex align-items-start">
                   <i
                     className="fa fa-check-circle text-primary me-2"
                     style={{ marginTop: "6px" }}
                   ></i>
-                  <span className="d-inline">Allow businesses to redirect focus to key areas such as product development and marketing by outsourcing logistics functions.</span>
+                  <span className="d-inline">
+                    Allow businesses to redirect focus to key areas such as
+                    product development and marketing by outsourcing logistics
+                    functions.
+                  </span>
                 </li>
                 <li className="mb-2 d-flex align-items-start">
                   <i
                     className="fa fa-check-circle text-primary me-2"
                     style={{ marginTop: "6px" }}
                   ></i>
-                  <span className="d-inline">Gain access to sophisticated logistics technologies and industry best practices, ensuring continuous improvement in supply chain management.</span>
+                  <span className="d-inline">
+                    Gain access to sophisticated logistics technologies and
+                    industry best practices, ensuring continuous improvement in
+                    supply chain management.
+                  </span>
                 </li>
                 <li className="mb-2 d-flex align-items-start">
                   <i
                     className="fa fa-check-circle text-primary me-2"
                     style={{ marginTop: "6px" }}
                   ></i>
-                  <span className="d-inline">Adapt logistics services seamlessly to accommodate fluctuating demand, mitigating the burden of fixed operational costs.</span>
+                  <span className="d-inline">
+                    Adapt logistics services seamlessly to accommodate
+                    fluctuating demand, mitigating the burden of fixed
+                    operational costs.
+                  </span>
                 </li>
                 <li className="mb-2 d-flex align-items-start">
                   <i
                     className="fa fa-check-circle text-primary me-2"
                     style={{ marginTop: "6px" }}
                   ></i>
-                  <span className="d-inline">Optimize logistics expenses by leveraging 3PL's ability to negotiate favorable rates with carriers, leading to considerable savings.</span>
+                  <span className="d-inline">
+                    Optimize logistics expenses by leveraging 3PL's ability to
+                    negotiate favorable rates with carriers, leading to
+                    considerable savings.
+                  </span>
                 </li>
-                 
-                 
               </ul>
-               
-               
             </div>
 
             {/* Image Section */}
@@ -217,71 +256,90 @@ function Thirdpartylogistic() {
 
       <div className="container my-5 py-5">
         <div className="half-underline-container">
-            <h3
-              className="text-primary text-danger text-center display-5   half-underline"
-              style={{ marginBottom: "4rem" }}
-            >
-              Government Focus
-            </h3>
-          </div>
+          <h3
+            className="text-primary text-danger text-center display-5   half-underline"
+            style={{ marginBottom: "4rem" }}
+          >
+            Government Focus
+          </h3>
+        </div>
         <div className="row align-items-center justify-content-between   p-4 rounded-3 position-relative">
-
           {/* Text Content */}
-          <div className="col-md-5 mt-4 mb-2">
-             
+          <div className="col-md-6 mt-4 mb-2">
             <h2
               className=" display-7 text-primary "
-              style={{ fontWeight: 'bold' }}
+              style={{ fontWeight: "bold" }}
             >
-             Strengthening Economic Corridors Through Strategic 3PL Initiatives
+              Economic Growth Through Advanced 3PL Strategies
             </h2>
             <p className="text-muted mb-4">
-            The strategic role of Third-Party Logistics (3PL) in driving economic growth and enhancing global competitiveness is becoming increasingly recognized, particularly in the context of the <span className="text-primary fw-bold">India-Middle East economic corridor</span> . As global supply chains grow more complex, governments are actively supporting the development of sophisticated 3PL infrastructures to streamline trade and logistics operations.
+              The pivotal influence of Third-Party Logistics (3PL) on
+              stimulating economic growth and elevating global competitiveness
+              is increasingly acknowledged, especially within the{" "}
+              <span className="text-primary fw-bold">
+                India-Middle East economic corridor
+              </span>
+              . As supply chains become more intricate, the focus on developing
+              advanced 3PL systems to optimize trade and logistics operations is
+              intensifying.
             </p>
             <ul className="list-unstyled mt-4">
-                <li className="mb-2 d-flex align-items-start">
-                  <i
-                    className="fa fa-check text-primary me-2"
-                    style={{ marginTop: "6px" }}
-                  ></i>
-                  <span className="d-inline">Establishing logistics corridors and special economic zones to boost investment and optimize logistics networks.</span>
-                </li>
-                <li className="mb-2 d-flex align-items-start">
-                  <i
-                    className="fa fa-check text-primary me-2"
-                    style={{ marginTop: "6px" }}
-                  ></i>
-                  <span className="d-inline">Implementing tax incentives and regulatory frameworks to enhance transparency, efficiency, and sustainability in the logistics sector.</span>
-                </li>
-                <li className="mb-2 d-flex align-items-start">
-                  <i
-                    className="fa fa-check text-primary me-2"
-                    style={{ marginTop: "6px" }}
-                  ></i>
-                  <span className="d-inline">Promoting public-private partnerships to foster innovation and investment in digital infrastructure and automation.</span>
-                </li>
-                <li className="mb-2 d-flex align-items-start">
-                  <i
-                    className="fa fa-check text-primary me-2"
-                    style={{ marginTop: "6px" }}
-                  ></i>
-                  <span className="d-inline">Reducing logistical bottlenecks and operational costs through advanced technologies and strategic infrastructure investments. </span>
-                </li>
-                <li className="mb-2 d-flex align-items-start">
-                  <i
-                    className="fa fa-check text-primary me-2"
-                    style={{ marginTop: "6px" }}
-                  ></i>
-                  <span className="d-inline">Enhancing the competitiveness of industries by improving the overall efficiency and agility of the supply chain.</span>
-                </li>
-                 
-                 
-                
-              </ul>
-            <Link
-              to='/Government'
-              className="btn btn-danger"
-            >
+              <li className="mb-2 d-flex align-items-start">
+                <i
+                  className="fa fa-check text-primary me-2"
+                  style={{ marginTop: "6px" }}
+                ></i>
+                <span className="d-inline">
+                  Development of logistics corridors and special economic zones
+                  to attract investment and refine logistics networks.
+                </span>
+              </li>
+              <li className="mb-2 d-flex align-items-start">
+                <i
+                  className="fa fa-check text-primary me-2"
+                  style={{ marginTop: "6px" }}
+                ></i>
+                <span className="d-inline">
+                  Introduction of tax incentives and regulatory measures to
+                  enhance transparency, efficiency, and sustainability in the
+                  logistics domain.
+                </span>
+              </li>
+              <li className="mb-2 d-flex align-items-start">
+                <i
+                  className="fa fa-check text-primary me-2"
+                  style={{ marginTop: "6px" }}
+                ></i>
+                <span className="d-inline">
+                  Encouragement of public-private partnerships to drive
+                  innovation and investment in digital technologies and
+                  automation.
+                </span>
+              </li>
+              <li className="mb-2 d-flex align-items-start">
+                <i
+                  className="fa fa-check text-primary me-2"
+                  style={{ marginTop: "6px" }}
+                ></i>
+                <span className="d-inline">
+                  Mitigation of logistical bottlenecks and reduction of
+                  operational costs through cutting-edge technologies and
+                  strategic infrastructure enhancements.
+                </span>
+              </li>
+              <li className="mb-2 d-flex align-items-start">
+                <i
+                  className="fa fa-check text-primary me-2"
+                  style={{ marginTop: "6px" }}
+                ></i>
+                <span className="d-inline">
+                  Boosting industry competitiveness by enhancing overall supply
+                  chain efficiency and agility.
+                </span>
+              </li>
+            </ul>
+
+            <Link to="/Government" className="btn btn-danger">
               Talk to our Experts
             </Link>
           </div>
@@ -297,10 +355,7 @@ function Thirdpartylogistic() {
         </div>
       </div>
 
-      
-
       {/* Content Sections */}
-       
     </div>
   );
 }

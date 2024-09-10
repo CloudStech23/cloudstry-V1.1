@@ -13,31 +13,33 @@ function Petadhar() {
             <a href="#" className="">
               What we Do ?
             </a>{" "}
-           / Product Platform / Pet Aadhar
+            / Product Platform / Pet Aadhar
           </span>
         </div>
 
         {/* Header Content */}
         <div className="container mt-5 text-primary">
-          <h1 className="display-4">Your Title Here</h1>
-          <p className="lead">This is the page information or tagline.</p>
+          <h1 className="display-4">Precise, Efficient Pet Identification.</h1>
+          <p className="lead">
+            Advanced technology driving precision, tracking, and management for
+            pets. Experience the future of identification with Pet Aadhar
+          </p>
         </div>
 
         {/* Curved Bottom Effect */}
-        
       </header>
       <div className="container my-5 py-5">
         <div className="row align-items-center justify-content-between bg-light p-4 rounded-3 position-relative">
           {/* Text Content */}
           <div className="col-md-5 mt-4 mb-2">
             <span className="badge bg-primary rounded-pill px-2 py-2 mb-3">
-              Pashu Aadhar
+              Pet Aadhar
             </span>
             <h2
               className=" display-5 text-primary "
               style={{ fontWeight: 300 }}
             >
-              Transforming Animal Identification in India
+              Pet Aadhar: A New Era in Pet Management
             </h2>
             <p className="text-muted mb-4">
               India's vast livestock industry faces significant challenges in
@@ -48,10 +50,7 @@ function Petadhar() {
               essential for the continued growth and modernization of the
               sector.
             </p>
-            <Link
-               to='/Support'
-              className="btn btn-danger"
-            >
+            <Link to="/Support" className="btn btn-danger">
               Talk to our Experts
             </Link>
           </div>
@@ -87,72 +86,66 @@ function Petadhar() {
                 Rationale Behind Pashu Aadhaar
               </h3>
               <p className="">
-                Pashu Aadhaar is a pivotal advancement in livestock management
-                throughout India. By assigning unique identification numbers to
-                each animal, it optimizes tracking, health monitoring, and data
-                management. This system addresses the limitations of traditional
-                methods, offering a secure, scalable, and dependable solution
-                that enhances efficiency and benefits all stakeholders in the
-                livestock sector.
+                Pashu Aadhaar represents a crucial leap in livestock management
+                across India. With unique identification numbers assigned to
+                each animal, this system enhances tracking, health monitoring,
+                and data management. Overcoming the shortcomings of traditional
+                methods, it provides a secure, scalable, and reliable solution
+                that boosts efficiency and supports all stakeholders in the
+                livestock industry.
               </p>
               <ul className="list-unstyled mb-4">
+                {" "}
                 <li className="mb-4">
-                  <i className="fa fa-check-circle text-primary "></i>
-                  <i className="bi bi-check-circle-fill text-primary me-2"></i>
-                  {/* <span className="" style={{ fontWeight: 700 }}>
-                    Unified Credential Management:
-                  </span>{" "} */}
+                  {" "}
+                  <i className="fa fa-check-circle text-primary"></i>{" "}
+                  <i className="bi bi-check-circle-fill text-primary me-2"></i>{" "}
                   <span className="d-inline">
-                    Enhances the accuracy and reliability of animal
-                    identification.
-                  </span>
-                </li>
+                    {" "}
+                    Precision in animal identification with enhanced accuracy
+                    and reliability.{" "}
+                  </span>{" "}
+                </li>{" "}
                 <li className="mb-4">
-                  <i className="fa fa-check-circle text-primary "></i>
-                  <i className="bi bi-check-circle-fill text-primary me-2"></i>
-                  {/* <span className="" style={{ fontWeight: 700 }}>
-                    Unified Credential Management:
-                  </span>{" "} */}
+                  {" "}
+                  <i className="fa fa-check-circle text-primary"></i>{" "}
+                  <i className="bi bi-check-circle-fill text-primary me-2"></i>{" "}
                   <span className="d-inline">
-                    Improves disease control and vaccination efforts through
-                    precise tracking.
-                  </span>
-                </li>
+                    {" "}
+                    Improved disease control and vaccination through precise
+                    tracking.{" "}
+                  </span>{" "}
+                </li>{" "}
                 <li className="mb-4">
-                  <i className="fa fa-check-circle text-primary "></i>
-                  <i className="bi bi-check-circle-fill text-primary me-2"></i>
-                  {/* <span className="" style={{ fontWeight: 700 }}>
-                    Unified Credential Management:
-                  </span>{" "} */}
+                  {" "}
+                  <i className="fa fa-check-circle text-primary"></i>{" "}
+                  <i className="bi bi-check-circle-fill text-primary me-2"></i>{" "}
                   <span className="d-inline">
-                    Facilitates better management of breeding and ownership
-                    records.
-                  </span>
-                </li>
+                    {" "}
+                    Enhanced management of breeding and ownership records.{" "}
+                  </span>{" "}
+                </li>{" "}
                 <li className="mb-4">
-                  <i className="fa fa-check-circle text-primary "></i>
-                  <i className="bi bi-check-circle-fill text-primary me-2"></i>
-                  {/* <span className="" style={{ fontWeight: 700 }}>
-                    Unified Credential Management:
-                  </span>{" "} */}
+                  {" "}
+                  <i className="fa fa-check-circle text-primary"></i>{" "}
+                  <i className="bi bi-check-circle-fill text-primary me-2"></i>{" "}
                   <span className="d-inline">
-                    Increases operational efficiency by centralizing data
-                    management.
-                  </span>
-                </li>
+                    {" "}
+                    Increased operational efficiency with centralized data
+                    management.{" "}
+                  </span>{" "}
+                </li>{" "}
                 <li className="mb-4">
-                  <i className="fa fa-check-circle text-primary "></i>
-                  <i className="bi bi-check-circle-fill text-primary me-2"></i>
-                  {/* <span className="" style={{ fontWeight: 700 }}>
-                    Unified Credential Management:
-                  </span>{" "} */}
+                  {" "}
+                  <i className="fa fa-check-circle text-primary"></i>{" "}
+                  <i className="bi bi-check-circle-fill text-primary me-2"></i>{" "}
                   <span className="d-inline">
-                    Strengthens overall livestock productivity through informed
-                    decision-making.
-                  </span>
-                </li>
+                    {" "}
+                    Enhanced livestock productivity through informed
+                    decision-making.{" "}
+                  </span>{" "}
+                </li>{" "}
               </ul>
-                
             </div>
           </div>
         </div>
@@ -178,7 +171,7 @@ function Petadhar() {
                     <Carousel.Item>
                       <div className="media feature-card">
                         <h3 className="text-primary fw-normal mb-3">
-                          Enhancing Animal Health Monitoring
+                          Precision in Animal Health Oversight
                         </h3>
                         <div className="media-body ml-3">
                           <div className="blockquote border-0 p-0">
@@ -403,7 +396,7 @@ function Petadhar() {
       </div> */}
 
       {/* Content Sections */}
-      <section className="mb-5" style={{marginTop:'5rem'}}>
+      <section className="mb-5" style={{ marginTop: "5rem" }}>
         <div className="container">
           {/* First Row */}
           <div className="container mb-5">
@@ -422,7 +415,7 @@ function Petadhar() {
               {/* Text Section */}
               <div className="col-md-6 mb-5">
                 <h3 className="text-primary fw-normal mb-3">
-                  MetroXone Tech: Delivering the Pashu Aadhaar Solution
+                Cloudstry: Leading the Way in Pet Aadhaar Technology
                 </h3>
                 <p className="">
                   The Pashu Aadhaar system offers a transformative approach to
@@ -475,8 +468,6 @@ function Petadhar() {
                     </span>
                   </li>
                 </ul>
-                
-                  
               </div>
             </div>
           </div>
@@ -512,7 +503,7 @@ function Petadhar() {
               className="col-lg-6"
             >
               <h3 className="text-primary  font-weight-bold mb-4">
-                Closing Thoughts on Pashu Aadhaar: MetroXone Technologies
+                At the Forefront of Pet Management: Cloudstry Technologies
               </h3>
               <p>
                 Pashu Aadhaar offers a promising solution for managing livestock
@@ -523,8 +514,6 @@ function Petadhar() {
                 MetroXone Tech is actively working on solutions to facilitate
                 the implementation of this initiative
               </p>
-
-               
             </div>
           </section>
         </div>

@@ -26,8 +26,12 @@ function Softwareservices() {
 
         {/* Header Content */}
         <div className="container text-primary mt-5">
-          <h1 className="display-4">Your Title Here</h1>
-          <p className="lead">This is the page information or tagline.</p>
+          <h1 className="display-4">Comprehensive Software Services</h1>
+          <p className="lead">
+            Customized software solutions are essential for businesses
+            navigating today's digital world. They can streamline operations,
+            spark innovation, and align technology with strategic objectives.
+          </p>
         </div>
       </header>
 
@@ -36,8 +40,8 @@ function Softwareservices() {
         <div className="row align-items-center justify-content-between bg-white mt-3 mb-3 shadow px-5 rounded-3 position-relative">
           {/* Text Content */}
           <div className="col-md-6 mb-2">
-            <h2 className="display-5 text-primary" style={{ fontWeight: 300 }}>
-              Software Solutions for Industry-Specific Excellence
+            <h2 className="display-6 text-primary" style={{ fontWeight: 300 }}>
+              Customized Software Solutions for Industry Leadership
             </h2>
             <p className="text-muted mb-4">
               In the current landscape, software services have become
@@ -61,7 +65,7 @@ function Softwareservices() {
               future-proof solutions to complex challenges.
             </p>
             <Link to="/Support" className="btn btn-danger">
-              Connect with us
+              Start With Us
             </Link>
           </div>
 
@@ -170,27 +174,27 @@ function Softwareservices() {
                   />
                 </div>
                 {/* Hover text */}
-                <div className="card-body p-4 ">
+                <div className="card-body p-4">
                   <div className="badge bg-primary bg-gradient rounded-pill mb-2">
-                    Decentralized Networks
+                    Agile Operations
                   </div>
-                  <div className="h4  text-danger mt-2 fw-light">
-                    Blockchain (web3)
+                  <div className="h4 text-danger mt-2 fw-light">
+                    DevOps Excellence
                   </div>
                   <p className="card-text mb-0">
-                    Distributed Ledger Technology (DLT) is transforming the way
-                    transactions are recorded and verified, ensuring
-                    transparency, security, and trust in digital operations. Its
-                    application spans across industries, from finance to supply
-                    chain, enabling decentralized and tamper-proof
-                    recordkeeping.
+                    DevOps is revolutionizing the software development lifecycle
+                    by integrating development and operations to enhance
+                    collaboration, efficiency, and continuous delivery. This
+                    approach streamlines workflows, accelerates deployment, and
+                    ensures high-quality software through automation and
+                    real-time feedback loops.
                   </p>
-                  <p class=" transparent mt-2 ">
+                  <p className="transparent mt-2">
                     <Link to="/" className="text-danger fw-bold">
                       Learn more
                     </Link>
                     <i
-                      class="fa fa-arrow-right text-danger mt-1 mx-1  trans"
+                      className="fa fa-arrow-right text-danger mt-1 mx-1 trans"
                       aria-hidden="true"
                     ></i>
                   </p>
@@ -204,6 +208,80 @@ function Softwareservices() {
       </section>
 
       {/* Issuer Section */}
+      <div className="container">
+        <div className="row mb-5">
+          <div className="col-md-6">
+            <h3
+              className="text-primary display-6 mb-3"
+              style={{ fontWeight: 300 }}
+            >
+              What are the Essential Software Challenges ?
+            </h3>
+            <ul className="list-unstyled mt-4">
+              <li className="mb-2 d-flex align-items-start">
+                <i
+                  className="fa fa-check text-primary me-2"
+                  style={{ marginTop: "6px" }}
+                ></i>
+                <span className="d-inline">
+                  Scalability: Solutions engineered to expand alongside business
+                  growth, adapting to increased demands and changing needs.
+                </span>
+              </li>
+              <li className="mb-2 d-flex align-items-start">
+                <i
+                  className="fa fa-check text-primary me-2"
+                  style={{ marginTop: "6px" }}
+                ></i>
+                <span className="d-inline">
+                  Data Security: Implementation of advanced security protocols
+                  to safeguard sensitive information and ensure adherence to
+                  data protection standards.
+                </span>
+              </li>
+              <li className="mb-2 d-flex align-items-start">
+                <i
+                  className="fa fa-check text-primary me-2"
+                  style={{ marginTop: "6px" }}
+                ></i>
+                <span className="d-inline">
+                  User Experience: Emphasis on designing intuitive and
+                  accessible interfaces to boost usability and user engagement.
+                </span>
+              </li>
+              <li className="mb-2 d-flex align-items-start">
+                <i
+                  className="fa fa-check text-primary me-2"
+                  style={{ marginTop: "6px" }}
+                ></i>
+                <span className="d-inline">
+                  Integration Complexity: Approaches to streamline and simplify
+                  the integration of new software with existing systems.
+                </span>
+              </li>
+              <li className="mb-2 d-flex align-items-start">
+                <i
+                  className="fa fa-check text-primary me-2"
+                  style={{ marginTop: "6px" }}
+                ></i>
+                <span className="d-inline">
+                  Cost Management: Strategic budgeting and cost-control
+                  techniques to optimize software investments and deliver
+                  maximum value.
+                </span>
+              </li>
+            </ul>
+          </div>
+          <div className="col-md-6">
+            <img
+              src="path-to-your-image.jpg"
+              alt="Software Challenges"
+              className="img-fluid"
+            />
+          </div>
+        </div>
+      </div>
+
       <div className="row gx-0 py-5 px-5">
         <div
           className="col-xl-6 col-lg-5 d-flex justify-content-left align-items-center"
@@ -220,33 +298,134 @@ function Softwareservices() {
             className="text-primary display-6 mb-3"
             style={{ fontWeight: 300 }}
           >
-            Exceptional Value of Metroxone Tech Software Solutions
+            Tailored Software Solutions for Diverse Needs
           </h3>
           <p className="h5 mb-2" style={{ fontWeight: 400, color: "#353535" }}>
-            Metroxone Tech's software solutions are designed to empower
-            businesses by providing cutting-edge tools that drive innovation and
-            efficiency. Our approach combines deep industry knowledge with the
-            latest technological advancements to deliver solutions that not only
-            meet but exceed our clients' expectations
+            Cloudstry's software solutions address a range of business
+            requirements with precision and expertise. Our offerings ensure that
+            technology seamlessly integrates with organizational goals and
+            operational needs.
           </p>
 
           <ul className="list-unstyled mt-4">
-            {[
-              "Seamless Integration: We ensure that our software integrates effortlessly with your existing systems, minimizing disruption and maximizing efficiency.",
-              "Enhanced Security: With a focus on robust security measures, we protect your data and operations from potential threats, ensuring your peace of mind.",
-              "Tailored Innovation: Our solutions are customized to meet the specific needs of your business, ensuring that technology enhances your unique value proposition.",
-              "Continuous Support: Our dedicated support team is always on hand to ensure your software operates smoothly, with ongoing maintenance and updates",
-              "Cost Efficiency: We deliver high-quality software solutions that optimize costs without compromising on performance or functionality.",
-            ].map((text, index) => (
-              <li className="mb-2 d-flex align-items-start" key={index}>
+            <li className="mb-2 d-flex align-items-start">
+              <i
+                className="fa fa-check text-primary me-2"
+                style={{ marginTop: "6px" }}
+              ></i>
+              <span className="d-inline">
+                Custom Software Development: Bespoke solutions designed to meet
+                specific business requirements and align with organizational
+                goals.
+              </span>
+            </li>
+            <li className="mb-2 d-flex align-items-start">
+              <i
+                className="fa fa-check text-primary me-2"
+                style={{ marginTop: "6px" }}
+              ></i>
+              <span className="d-inline">
+                Application Integration: Effortless integration of diverse
+                software applications to boost system interoperability and
+                enhance efficiency.
+              </span>
+            </li>
+            <li className="mb-2 d-flex align-items-start">
+              <i
+                className="fa fa-check text-primary me-2"
+                style={{ marginTop: "6px" }}
+              ></i>
+              <span className="d-inline">
+                Maintenance and Support: Ongoing support services including
+                regular updates, bug fixes, and technical assistance to ensure
+                optimal performance and reliability.
+              </span>
+            </li>
+            <li className="mb-2 d-flex align-items-start">
+              <i
+                className="fa fa-check text-primary me-2"
+                style={{ marginTop: "6px" }}
+              ></i>
+              <span className="d-inline">
+                Cloud-Based Solutions: Deployment on cloud platforms to improve
+                scalability, accessibility, and collaborative capabilities.
+              </span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div className="container">
+        <div className="row align-items-center">
+          <div className="col-md-6 mb-5">
+            <h3
+              className="text-primary display-6 mb-3"
+              style={{ fontWeight: 300 }}
+            >
+              Why Choose Our Software Services?
+            </h3>
+            <p
+              className="h5 mb-2"
+              style={{ fontWeight: 400, color: "#353535" }}
+            >
+              Cloudstry stands out with its dedication to delivering exceptional
+              software solutions tailored to diverse business needs. Discover
+              the advantages of choosing our services.
+            </p>
+
+            <ul className="list-unstyled mt-4">
+              <li className="mb-2 d-flex align-items-start">
                 <i
                   className="fa fa-check text-primary me-2"
                   style={{ marginTop: "6px" }}
                 ></i>
-                <span className="d-inline">{text}</span>
+                <span className="d-inline">
+                  Expertise and Experience: Proven track record of delivering
+                  high-quality software solutions across various industries,
+                  supported by a team of skilled professionals.
+                </span>
               </li>
-            ))}
-          </ul>
+              <li className="mb-2 d-flex align-items-start">
+                <i
+                  className="fa fa-check text-primary me-2"
+                  style={{ marginTop: "6px" }}
+                ></i>
+                <span className="d-inline">
+                  Customized Approach: Tailored solutions designed to meet the
+                  unique needs and challenges of each client.
+                </span>
+              </li>
+              <li className="mb-2 d-flex align-items-start">
+                <i
+                  className="fa fa-check text-primary me-2"
+                  style={{ marginTop: "6px" }}
+                ></i>
+                <span className="d-inline">
+                  Advanced Technology: Utilization of the latest technologies
+                  and industry best practices to deliver innovative and
+                  effective software solutions.
+                </span>
+              </li>
+              <li className="mb-2 d-flex align-items-start">
+                <i
+                  className="fa fa-check text-primary me-2"
+                  style={{ marginTop: "6px" }}
+                ></i>
+                <span className="d-inline">
+                  End-to-End Support: Comprehensive support throughout the
+                  software lifecycle, from development and implementation to
+                  ongoing maintenance and updates.
+                </span>
+              </li>
+            </ul>
+          </div>
+          <div className="col-md-6 mb-5">
+            <img
+              src="path/to/your/image.jpg"
+              alt="Software Services"
+              className="img-fluid"
+            />
+          </div>
         </div>
       </div>
 

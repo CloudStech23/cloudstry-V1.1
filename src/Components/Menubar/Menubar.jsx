@@ -89,7 +89,7 @@ function Menubar() {
           >
             <ul className="navbar-nav">
               {/* Menu 1 */}
-              <li className="nav-item dropdown position-static   mx-3">
+              {/* <li className="nav-item dropdown position-static   mx-3">
                 <Link
                   className={`nav-link  ${
                     openDropdown === "dropdown1" ? "active" : ""
@@ -101,7 +101,7 @@ function Menubar() {
                 >
                   Home
                 </Link>
-              </li>
+              </li> */}
 
               {/* Menu 2 */}
               <li className="nav-item dropdown position-static mx-3">
@@ -669,10 +669,98 @@ function Menubar() {
               {/* Menu 4 */}
               {/* Similar structure to Menu 2 and Menu 3 */}
 
-              <li className="nav-item mx-5   ms-auto">
-                <Link className="nav-link" to="/Support">
-                  Contact us
-                </Link>
+              <li className="nav-item dropdown position-static mx-3">
+                <a
+                  className={`nav-link ${
+                    openDropdown === "dropdown4" ? "active" : ""
+                  }`}
+                  id="navbarDropdown2"
+                  role="button"
+                  onClick={() => handleDropdownClick("dropdown4")}
+                >
+                  About Us
+                  <span
+                    className={`dropdown-arrow ${
+                      openDropdown === "dropdown4" ? "open" : ""
+                    }`}
+                  ></span>
+                </a>
+                <div
+                  className={`dropdown-menu mt-0 w-100 shadow border-outline-success ${
+                    openDropdown === "dropdown4" ? "show" : ""
+                  }`}
+                  aria-labelledby="navbarDropdown2"
+                  style={{ height: "320px" }}
+                >
+                  <div className="row mt-3">
+                    <div className="col-lg-3" style={{ marginLeft: "5%" }}>
+                      <div className="mt-3" style={{ marginLeft: "5%" }}>
+                         
+                        
+
+                        
+                        
+                        <Link
+                          className={`dropdown-item text-white h6 ${
+                            hoveredItem === "team" ? "active" : ""
+                          }`}
+                          onMouseEnter={() => handleHover("team")}
+                          to="/Team-Cloudstry"
+                        >
+                          Team Leadership
+                        </Link>
+                        <div
+                          className="dropdown-divider"
+                          style={{ borderTop: "1px solid white" }}
+                        ></div>
+                        <Link
+                          className={`dropdown-item text-white h6 ${
+                            hoveredItem === "contact" ? "active" : ""
+                          }`}
+                          onMouseEnter={() => handleHover("Contact")}
+                          to="/Support"
+                        >
+                          Contact Us
+                        </Link>
+                      </div>
+                    </div>
+                    <div
+                      className="col-lg-6 mt-3"
+                      style={{ marginLeft: "6%", textDecoration: "none" }}
+                    >
+                      {hoveredItem === "team" && (
+                        <div
+                          style={{
+                            display: "flex",
+                            flexDirection: "column",
+                            gap: "2rem",
+                          }}
+                        >
+                          <div>
+                            <h3
+                              className="text-light fw-normal"
+                              style={{ fontSize: "2rem" }}
+                            >
+                              Empowering Your Business with a Robust Product
+                              Platform.
+                            </h3>
+                            <p className="text-light mb-2 lh-lg">
+                              Discover our comprehensive product platform
+                              designed to streamline and enhance your business
+                              operations. From managing logistics to integrating
+                              with various services, our platform provides the
+                              tools you need for success.
+                            </p>
+                          </div>
+
+                           
+                        </div>
+                      )}
+
+                       
+                    </div>
+                  </div>
+                </div>
               </li>
             </ul>
             <div class="d-flex justify-content-start">

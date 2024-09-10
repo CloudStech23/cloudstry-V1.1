@@ -12,22 +12,28 @@ function Digitalcertificate() {
             <a href="#" className="">
               What we Do ?
             </a>{" "}
-           / Product Platform / Digital Certificate
+            / Product Platform / Digital Certificate
           </span>
         </div>
 
         {/* Header Content */}
-        <div className="container mt-5 text-primary">
-          <h1 className="display-4">Your Title Here</h1>
-          <p className="lead">This is the page information or tagline.</p>
-        </div>
+          <div className="container mt-5 text-primary">
+            <h1 className="display-6 px-3">
+            Digital Certificates: Revolutionizing Credential Management
+            </h1>
+            <p className="lead px-3">
+              Unlocking unparalleled security, scalability, and future-ready
+              innovation to revolutionize credential management across diverse
+              industries. Embrace a new era of digital certificates that
+              streamline operations, enhance verification processes, and drive
+              organizational efficiency.
+            </p>
+          </div>
 
         {/* Curved Bottom Effect */}
-        
       </header>
-      
 
-      <div className="container my-2 py-5">
+      <div className="container  py-5">
         <div className="row align-items-center justify-content-between bg-light p-4 rounded-3 position-relative">
           {/* Text Content */}
           <div className="col-md-5 mt-4 mb-2">
@@ -35,10 +41,10 @@ function Digitalcertificate() {
               Digital Certificates
             </span>
             <h2
-              className=" display-5 text-primary "
+              className=" display-6 text-primary "
               style={{ fontWeight: 300 }}
             >
-              Securing Credentials Across Industries
+              Recognize accomplishments with 100% verifiable digital badges
             </h2>
             <p className="text-muted mb-4">
               In an increasingly digital world, the need for secure and
@@ -83,7 +89,7 @@ function Digitalcertificate() {
             {/* Text Section */}
             <div className="col-md-6 mb-5">
               <h3 className="text-primary fw-bold mb-3">
-                Transforming Credential Management with Digital Certificates
+                Why choose Digital Certificate ?
               </h3>
               <p className="">
                 The need for secure, verifiable credentials across sectors
@@ -161,56 +167,49 @@ function Digitalcertificate() {
             {/* Text Section */}
             <div className="col-md-6">
               <h3 className="text-primary fw-bold mb-3">
-                Solving Credential Challenges Across Sectors
+                Credential Solutions Tailored for Every Sector
               </h3>
               <p>
-                Digital certificates offer a secure and efficient way to manage
-                and verify credentials, providing superior security and
-                accessibility over traditional paper certificates.
+                Digital certificates redefine how credentials are managed and
+                verified, offering unparalleled security and efficiency far
+                beyond traditional paper-based methods. Embrace the future of
+                credentialing with advanced, industry-ready solutions.
               </p>
               <ul className="list-unstyled mb-4">
                 <li className="mb-4">
                   <i className="fa fa-check-circle text-primary "></i>
                   <i className="bi bi-check-circle-fill text-primary me-2"></i>
-                  {/* <span className="" style={{ fontWeight: 700 }}>
-                    Unified Credential Management:
-                  </span>{" "} */}
                   <span className="d-inline">
-                    Secured with advanced encryption and digital signatures,
-                    ensuring authenticity and protection against tampering.
+                    Fortified with cutting-edge encryption and digital
+                    signatures, guaranteeing authenticity and safeguarding
+                    against tampering.
                   </span>
                 </li>
                 <li className="mb-4">
                   <i className="fa fa-check-circle text-primary "></i>
                   <i className="bi bi-check-circle-fill text-primary me-2"></i>
-                  {/* <span className="" style={{ fontWeight: 700 }}>
-                    Unified Credential Management:
-                  </span>{" "} */}
                   <span className="d-inline">
-                    Credentials can be quickly verified online, reducing the
-                    time and effort needed for validation.
+                    Instant online verification streamlines credential
+                    validation, slashing processing time and boosting
+                    operational efficiency.
                   </span>
                 </li>
                 <li className="mb-4">
                   <i className="fa fa-check-circle text-primary "></i>
                   <i className="bi bi-check-circle-fill text-primary me-2"></i>
-                  {/* <span className="" style={{ fontWeight: 700 }}>
-                    Unified Credential Management:
-                  </span>{" "} */}
                   <span className="d-inline">
-                    Organizations can tailor certificates to reflect their
-                    branding, including logos and signatures.
+                    Customizable certificates enable organizations to showcase
+                    their branding, complete with logos and authorized
+                    signatures.
                   </span>
                 </li>
                 <li className="mb-4">
                   <i className="fa fa-check-circle text-primary "></i>
                   <i className="bi bi-check-circle-fill text-primary me-2"></i>
-                  {/* <span className="" style={{ fontWeight: 700 }}>
-                    Unified Credential Management:
-                  </span>{" "} */}
                   <span className="d-inline">
-                    Allows credentials to be shared and accessed from anywhere,
-                    facilitating broader recognition and ease of use.
+                    Global accessibility ensures credentials can be shared and
+                    recognized anytime, anywhere—maximizing reach and ease of
+                    use.
                   </span>
                 </li>
               </ul>
@@ -229,6 +228,42 @@ function Digitalcertificate() {
           </div>
         </div>
       </section>
+
+      <div className="" style={{ marginTop: "7rem" }}>
+        <div className="container">
+          <div className="text-center">
+            <h2 className="fw-light display-6 text-danger mb-3">
+              Join Digital Certifcate Community
+            </h2>
+          </div>
+          <div className="row justify-content-center  text-center">
+            <div className="col-xl-4 col-lg-4 col-md-6 col-sm-12 mb-3">
+              <div className="card bg-light py-4 rounded">
+                <div className="card-body text-primary">
+                  <h3 className="fs-1 fw-bold   mb-0">Millions</h3>
+                  <p className="fs-5">of earners</p>
+                </div>
+              </div>
+            </div>
+            <div className="col-xl-4 col-lg-4 col-md-6 col-sm-12 mb-3">
+              <div className="card bg-light py-4 rounded">
+                <div className="card-body text-primary">
+                  <h3 className="fs-1 fw-bold   mb-0">100+</h3>
+                  <p className="fs-5">countries</p>
+                </div>
+              </div>
+            </div>
+            <div className="col-xl-4 col-lg-4 col-md-6 col-sm-12 mb-3">
+              <div className="card bg-light py-4 rounded">
+                <div className="card-body text-primary">
+                  <h3 className="fs-1 fw-bold  mb-0">1M+</h3>
+                  <p className="fs-5">credentials</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
       <div className="container" style={{ marginTop: "6rem" }}>
         <div className="half-underline-container">
