@@ -10,21 +10,57 @@ import { Link } from "react-router-dom";
 function Softwareservices() {
   return (
     <div className="bg-light">
+      <header className="bg-white text-white text-center py-5 position-relative">
+        {/* Navigation Path */}
+        <div
+          className="position-absolute top-0 p-4 start-0 ms-0 mt-0  fs-5 fw-bold"
+          style={{ zIndex: 100 }}
+        >
+          <span className="small text-primary">
+            <a href="/" className="">
+              What we Do ? /
+            </a>{" "}
+            <a href="#">IT Solutions</a> / Software Services
+          </span>
+        </div>
+
+        {/* Header Content */}
+        <div className="container text-primary mt-5">
+          <h1 className="display-4">Your Title Here</h1>
+          <p className="lead">This is the page information or tagline.</p>
+        </div>
+      </header>
+
       {/* Hero Section */}
       <div className="container py-5">
         <div className="row align-items-center justify-content-between bg-white mt-3 mb-3 shadow px-5 rounded-3 position-relative">
           {/* Text Content */}
           <div className="col-md-6 mb-2">
             <h2 className="display-5 text-primary" style={{ fontWeight: 300 }}>
-            Software Solutions for Industry-Specific Excellence
+              Software Solutions for Industry-Specific Excellence
             </h2>
             <p className="text-muted mb-4">
-            In the current landscape, software services have become indispensable, driving innovation and efficiency across industries. The shift towards <span className="fw-bold text-primary">integrated digital ecosystems</span>  is transforming traditional business models, allowing organizations to streamline operations, enhance customer experiences, and unlock new revenue streams. At the industry level, there is a growing demand for <span className="text-primary fw-bold">bespoke software solutions </span>  that cater to specific operational needs, ensuring that businesses not only stay competitive but also lead in their respective markets. As technology evolves, the emphasis on agility, scalability, and security has never been more critical, with companies seeking software services that offer robust, future-proof solutions to complex challenges.
+              In the current landscape, software services have become
+              indispensable, driving innovation and efficiency across
+              industries. The shift towards{" "}
+              <span className="fw-bold text-primary">
+                integrated digital ecosystems
+              </span>{" "}
+              is transforming traditional business models, allowing
+              organizations to streamline operations, enhance customer
+              experiences, and unlock new revenue streams. At the industry
+              level, there is a growing demand for{" "}
+              <span className="text-primary fw-bold">
+                bespoke software solutions{" "}
+              </span>{" "}
+              that cater to specific operational needs, ensuring that businesses
+              not only stay competitive but also lead in their respective
+              markets. As technology evolves, the emphasis on agility,
+              scalability, and security has never been more critical, with
+              companies seeking software services that offer robust,
+              future-proof solutions to complex challenges.
             </p>
-            <Link
-              to='/Support'
-              className="btn btn-danger"
-            >
+            <Link to="/Support" className="btn btn-danger">
               Connect with us
             </Link>
           </div>
@@ -57,22 +93,31 @@ function Softwareservices() {
                     alt="AI"
                     style={{ height: "14rem" }}
                   />
-                   
                 </div>
                 {/* Hover text */}
                 <div className="card-body p-4 ">
                   <div className="badge bg-primary bg-gradient rounded-pill  mb-2">
-                  Machine Intelligence
+                    Machine Intelligence
                   </div>
-                  <div className="h4  text-danger mt-2 fw-light">Artifical Intelligence</div>
+                  <div className="h4  text-danger mt-2 fw-light">
+                    Artifical Intelligence
+                  </div>
                   <p className="card-text mb-0">
-                  Cognitive computing is revolutionizing industries by enabling systems to process and analyze vast amounts of data, making intelligent decisions that mimic human cognition. Its role in automating complex tasks and enhancing decision-making is crucial in today’s data-driven world.
+                    Cognitive computing is revolutionizing industries by
+                    enabling systems to process and analyze vast amounts of
+                    data, making intelligent decisions that mimic human
+                    cognition. Its role in automating complex tasks and
+                    enhancing decision-making is crucial in today’s data-driven
+                    world.
                   </p>
                   <p class=" transparent mt-2 ">
                     <Link to="/" className="text-danger fw-bold">
-                      Learn more 
+                      Learn more
                     </Link>
-                    <i class="fa fa-arrow-right text-danger mt-1 mx-1  trans" aria-hidden="true"></i>
+                    <i
+                      class="fa fa-arrow-right text-danger mt-1 mx-1  trans"
+                      aria-hidden="true"
+                    ></i>
                   </p>
                 </div>
               </div>
@@ -86,22 +131,30 @@ function Softwareservices() {
                     alt="AI"
                     style={{ height: "14rem" }}
                   />
-                   
                 </div>
                 {/* Hover text */}
                 <div className="card-body p-4 ">
                   <div className="badge bg-primary bg-gradient rounded-pill mb-2">
-                  Virtual Infrastructure
+                    Virtual Infrastructure
                   </div>
-                  <div className="h4  text-danger fw-light mt-2">Cloud Services</div>
+                  <div className="h4  text-danger fw-light mt-2">
+                    Cloud Services
+                  </div>
                   <p className="card-text mb-0">
-                  Virtual infrastructure is the backbone of modern IT, offering scalable and flexible computing resources. It allows businesses to efficiently manage operations, reduce costs, and quickly adapt to changing market demands through seamless access to computing power and storage.
+                    Virtual infrastructure is the backbone of modern IT,
+                    offering scalable and flexible computing resources. It
+                    allows businesses to efficiently manage operations, reduce
+                    costs, and quickly adapt to changing market demands through
+                    seamless access to computing power and storage.
                   </p>
                   <p class=" transparent mt-2 ">
                     <Link to="/" className="text-danger fw-bold">
-                      Learn more 
+                      Learn more
                     </Link>
-                    <i class="fa fa-arrow-right text-danger mt-1 mx-1  trans" aria-hidden="true"></i>
+                    <i
+                      class="fa fa-arrow-right text-danger mt-1 mx-1  trans"
+                      aria-hidden="true"
+                    ></i>
                   </p>
                 </div>
               </div>
@@ -115,28 +168,36 @@ function Softwareservices() {
                     alt="AI"
                     style={{ height: "14rem" }}
                   />
-                   
                 </div>
                 {/* Hover text */}
                 <div className="card-body p-4 ">
                   <div className="badge bg-primary bg-gradient rounded-pill mb-2">
-                  Decentralized Networks
+                    Decentralized Networks
                   </div>
-                  <div className="h4  text-danger mt-2 fw-light">Blockchain (web3)</div>
+                  <div className="h4  text-danger mt-2 fw-light">
+                    Blockchain (web3)
+                  </div>
                   <p className="card-text mb-0">
-                  Distributed Ledger Technology (DLT) is transforming the way transactions are recorded and verified, ensuring transparency, security, and trust in digital operations. Its application spans across industries, from finance to supply chain, enabling decentralized and tamper-proof recordkeeping.
+                    Distributed Ledger Technology (DLT) is transforming the way
+                    transactions are recorded and verified, ensuring
+                    transparency, security, and trust in digital operations. Its
+                    application spans across industries, from finance to supply
+                    chain, enabling decentralized and tamper-proof
+                    recordkeeping.
                   </p>
                   <p class=" transparent mt-2 ">
                     <Link to="/" className="text-danger fw-bold">
-                      Learn more 
+                      Learn more
                     </Link>
-                    <i class="fa fa-arrow-right text-danger mt-1 mx-1  trans" aria-hidden="true"></i>
+                    <i
+                      class="fa fa-arrow-right text-danger mt-1 mx-1  trans"
+                      aria-hidden="true"
+                    ></i>
                   </p>
                 </div>
               </div>
             </div>
-             
-             
+
             <hr className="bg-danger" />
           </div>
         </div>
@@ -162,9 +223,13 @@ function Softwareservices() {
             Exceptional Value of Metroxone Tech Software Solutions
           </h3>
           <p className="h5 mb-2" style={{ fontWeight: 400, color: "#353535" }}>
-          Metroxone Tech's software solutions are designed to empower businesses by providing cutting-edge tools that drive innovation and efficiency. Our approach combines deep industry knowledge with the latest technological advancements to deliver solutions that not only meet but exceed our clients' expectations
+            Metroxone Tech's software solutions are designed to empower
+            businesses by providing cutting-edge tools that drive innovation and
+            efficiency. Our approach combines deep industry knowledge with the
+            latest technological advancements to deliver solutions that not only
+            meet but exceed our clients' expectations
           </p>
-           
+
           <ul className="list-unstyled mt-4">
             {[
               "Seamless Integration: We ensure that our software integrates effortlessly with your existing systems, minimizing disruption and maximizing efficiency.",
@@ -182,7 +247,6 @@ function Softwareservices() {
               </li>
             ))}
           </ul>
-           
         </div>
       </div>
 
@@ -206,15 +270,18 @@ function Softwareservices() {
           className="col-lg-6"
         >
           <h3 className="text-primary font-weight-bold mb-4">
-          A Commitment to Excellence You Can Trust
+            A Commitment to Excellence You Can Trust
           </h3>
           <p>
-          At Metroxone Tech, we stand by the quality and reliability of our solutions. Our commitment to innovation and customer satisfaction is at the core of everything we do. We believe in the power of technology to transform businesses, and we’re here to ensure that our clients succeed with confidence. Join us on this journey and experience the difference that true dedication and expertise can make. Your success is our promise.
+            At Metroxone Tech, we stand by the quality and reliability of our
+            solutions. Our commitment to innovation and customer satisfaction is
+            at the core of everything we do. We believe in the power of
+            technology to transform businesses, and we’re here to ensure that
+            our clients succeed with confidence. Join us on this journey and
+            experience the difference that true dedication and expertise can
+            make. Your success is our promise.
           </p>
-          <Link
-            className="btn btn-danger text-white"
-            to='/Support'
-          >
+          <Link className="btn btn-danger text-white" to="/Support">
             Connect with us
           </Link>
         </div>

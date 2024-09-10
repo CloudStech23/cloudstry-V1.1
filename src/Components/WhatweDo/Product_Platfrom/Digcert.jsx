@@ -5,7 +5,29 @@ import { Link } from "react-router-dom";
 function Digitalcertificate() {
   return (
     <div>
-      <div className="container my-5 py-5">
+      <header className="bg-white text-white text-center py-5 position-relative">
+        {/* Navigation Path */}
+        <div className="position-absolute top-0 p-3 start-0 ms-3 mt-2 fs-5 fw-bold">
+          <span className="small text-primary ">
+            <a href="#" className="">
+              What we Do ?
+            </a>{" "}
+           / Product Platform / Digital Certificate
+          </span>
+        </div>
+
+        {/* Header Content */}
+        <div className="container mt-5 text-primary">
+          <h1 className="display-4">Your Title Here</h1>
+          <p className="lead">This is the page information or tagline.</p>
+        </div>
+
+        {/* Curved Bottom Effect */}
+        
+      </header>
+      
+
+      <div className="container my-2 py-5">
         <div className="row align-items-center justify-content-between bg-light p-4 rounded-3 position-relative">
           {/* Text Content */}
           <div className="col-md-5 mt-4 mb-2">
@@ -27,12 +49,9 @@ function Digitalcertificate() {
               manage, posing significant challenges for organizations and
               individuals alike. The demand for a solution that ensures the
               authenticity and accessibility of credentials is more pressing
-              than ever. 
+              than ever.
             </p>
-            <Link
-              to="/Support"
-              className="btn btn-danger"
-            >
+            <Link to="/Support" className="btn btn-danger">
               Talk to our Experts
             </Link>
           </div>
@@ -128,7 +147,6 @@ function Digitalcertificate() {
                   </span>
                 </li>
               </ul>
-               
             </div>
           </div>
         </div>
@@ -196,7 +214,6 @@ function Digitalcertificate() {
                   </span>
                 </li>
               </ul>
-              
             </div>
 
             {/* Image Section */}
@@ -260,7 +277,7 @@ function Digitalcertificate() {
                   style={{ marginTop: "6px" }}
                 ></i>
                 <span className="d-inline">
-                  Ensure complete authenticity and security with fully 
+                  Ensure complete authenticity and security with fully
                   verifiable credentials.
                 </span>
               </li>
@@ -303,10 +320,7 @@ function Digitalcertificate() {
                 </span>
               </li>
             </ul>
-            <Link
-              className="btn btn-danger mt-2"
-              to='/'
-            >
+            <Link className="btn btn-danger mt-2" to="/">
               Learn More
             </Link>
           </div>
@@ -392,10 +406,7 @@ function Digitalcertificate() {
                 </span>
               </li>
             </ul>
-            <Link
-              className="btn btn-danger mt-2"
-              to='/'
-            >
+            <Link className="btn btn-danger mt-2" to="/">
               Learn More
             </Link>
           </div>
@@ -617,7 +628,8 @@ function Digitalcertificate() {
                   New Opportunities, delivered to you.
                 </div>
                 <div class="text-white-50">
-                  Sign up for our newsletter for the latest updates and opportunities.
+                  Sign up for our newsletter for the latest updates and
+                  opportunities.
                 </div>
               </div>
               <div class="ms-xl-4">

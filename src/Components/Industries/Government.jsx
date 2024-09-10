@@ -4,6 +4,26 @@ import { Link } from "react-router-dom";
 function Government() {
   return (
     <div>
+      <header className="bg-white text-white text-center py-5 position-relative">
+        {/* Navigation Path */}
+        <div
+          className="position-absolute top-0 start-0 ms-0 mt-0 p-4 fs-5 fw-bold"
+          style={{ zIndex: 100 }}
+        >
+          <span className="small text-primary">
+            <a href="#" className="">
+              Industries We Serve /
+            </a>{" "}
+            <a href="#">Government</a>
+          </span>
+        </div>
+
+        {/* Header Content */}
+        <div className="container text-primary mt-5">
+          <h1 className="display-4">Your Title Here</h1>
+          <p className="lead">This is the page information or tagline.</p>
+        </div>
+      </header>
       <div className="container my-5 py-5">
         <div className="row align-items-center justify-content-between   p-4 rounded-3 position-relative">
           {/* Text Content */}
@@ -29,7 +49,7 @@ function Government() {
               strengthen public trust and build sustainable, future-ready
               systems for citizens and stakeholders.
             </p>
-            <Link to='/Support' className="btn btn-danger">
+            <Link to="/Support" className="btn btn-danger">
               Connect with Us
             </Link>
           </div>
@@ -111,7 +131,7 @@ function Government() {
                       challenges in animal identification, health monitoring,
                       and data management. Traditional methods are often
                       inconsistent and error-prone, complicating effective
-                      disease control and breeding management. 
+                      disease control and breeding management.
                     </p>
                   </div>
                   <Link to="/Pet-Aadhar" className="btn btn-danger">
@@ -130,7 +150,7 @@ function Government() {
                 <div class="card-body p-4">
                   <Link
                     class="text-decoration-none link-dark stretched-link"
-                    to='/3PL-Solution'
+                    to="/3PL-Solution"
                   >
                     <h5 class="card-title mb-3 text-primary fw-bold">3PL</h5>
                   </Link>
@@ -144,7 +164,7 @@ function Government() {
                   </p>
 
                   <div className="py-2  my-1">
-                    <Link to='/3PL-Solution' className="btn btn-danger">
+                    <Link to="/3PL-Solution" className="btn btn-danger">
                       learn More
                     </Link>
                   </div>

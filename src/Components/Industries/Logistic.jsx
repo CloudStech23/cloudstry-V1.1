@@ -5,6 +5,26 @@ import { Link } from "react-router-dom";
 function Logistic() {
   return (
     <div>
+      <header className="bg-white text-white text-center py-5 position-relative">
+        {/* Navigation Path */}
+        <div
+          className="position-absolute top-0 start-0 ms-0 mt-0 p-4 fs-5 fw-bold"
+          style={{ zIndex: 100 }}
+        >
+          <span className="small text-primary">
+            <a href="#" className="">
+              Industries We Serve /
+            </a>{" "}
+            <a href="#">Logistic</a> 
+          </span>
+        </div>
+
+        {/* Header Content */}
+        <div className="container text-primary mt-5">
+          <h1 className="display-4">Your Title Here</h1>
+          <p className="lead">This is the page information or tagline.</p>
+        </div>
+      </header>
       <div className="container my-5 py-5">
         <div className="row align-items-center justify-content-between bg-light p-4 rounded-3 position-relative">
           {/* Text Content */}

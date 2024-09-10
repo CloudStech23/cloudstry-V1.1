@@ -7,7 +7,7 @@ import Menudrawer from "./Drawer";
 
 function Menubar() {
   const [openDropdown, setOpenDropdown] = useState(null);
-  const [hoveredItem, setHoveredItem] = useState("overview");
+  const [hoveredItem, setHoveredItem] = useState("product");
   const dropdownRef = useRef(null);
   const [open, setOpen] = useState(false);
   const [openSubmenu, setOpenSubmenu] = useState(null);
@@ -53,7 +53,7 @@ function Menubar() {
 
   useEffect(() => {
     setOpenDropdown(null);
-    setHoveredItem("overview");
+    setHoveredItem("product");
     // setHoveredItem("education");
   }, [location]);
 
@@ -130,7 +130,7 @@ function Menubar() {
                   <div className="row mt-3">
                     <div className="col-lg-3" style={{ marginLeft: "5%" }}>
                       <div className="mt-3" style={{ marginLeft: "5%" }}>
-                        <a
+                        {/* <a
                           className={`dropdown-item text-white d-flex h6 align-items-center justify-content-between ${
                             hoveredItem === "overview" ? "active" : ""
                           }`}
@@ -148,7 +148,7 @@ function Menubar() {
                         <div
                           className="dropdown-divider"
                           style={{ borderTop: "1px solid white" }}
-                        ></div>
+                        ></div> */}
                         <a
                           className={`dropdown-item text-white d-flex h6 align-items-center justify-content-between ${
                             hoveredItem === "product" ? "active" : ""
@@ -168,7 +168,23 @@ function Menubar() {
                           className="dropdown-divider"
                           style={{ borderTop: "1px solid white" }}
                         ></div>
-                        <Link
+                        <a
+                          className={`dropdown-item text-white d-flex h6 align-items-center justify-content-between ${
+                            hoveredItem === "solution" ? "active" : ""
+                          }`}
+                          href="#"
+                          onMouseEnter={() => handleHover("solution")}
+                        >
+                          IT-Solutions
+                          <span>
+                            <i
+                              className="fa fa-angle-right "
+                              aria-hidden="true"
+                            ></i>
+                          </span>
+                        </a>
+
+                        {/* <Link
                           className={`dropdown-item text-white h6 ${
                             hoveredItem === "ISC" ? "active" : ""
                           }`}
@@ -176,12 +192,12 @@ function Menubar() {
                           onMouseEnter={() => handleHover("ISC")}
                         >
                           IT Strategy Consultancy
-                        </Link>
+                        </Link> */}
                         <div
                           className="dropdown-divider"
                           style={{ borderTop: "1px solid white" }}
                         ></div>
-                        <Link
+                        {/* <Link
                           className={`dropdown-item text-white h6 ${
                             hoveredItem === "software" ? "active" : ""
                           }`}
@@ -189,11 +205,8 @@ function Menubar() {
                           to="/Software-Services"
                         >
                           Software Services
-                        </Link>
-                        <div
-                          className="dropdown-divider"
-                          style={{ borderTop: "1px solid white" }}
-                        ></div>
+                        </Link> */}
+
                         <Link
                           className={`dropdown-item text-white h6 ${
                             hoveredItem === "staffing" ? "active" : ""
@@ -206,7 +219,7 @@ function Menubar() {
                       </div>
                     </div>
                     <div
-                      className="col-lg-4 mt-3"
+                      className="col-lg-6 mt-3"
                       style={{ marginLeft: "6%", textDecoration: "none" }}
                     >
                       {hoveredItem === "product" && (
@@ -266,7 +279,7 @@ function Menubar() {
                         </div>
                       )}
 
-                      {hoveredItem === "overview" && (
+                      {/* {hoveredItem === "overview" && (
                         <div
                           style={{
                             display: "flex",
@@ -274,8 +287,6 @@ function Menubar() {
                             gap: "4rem",
                           }}
                         >
-                          {/* <div className="container-fluid position-relative pb-5 text-light"> */}
-                          {/* <div className="row"> */}
                           <div className="">
                             <h3
                               className="text-light fw-normal"
@@ -298,48 +309,65 @@ function Menubar() {
                               Learn More
                             </Link>
                           </div>
-                          {/* </div> */}
                         </div>
-                        // </div>
-                      )}
-                      {hoveredItem === "ISC" && (
+                      )} */}
+                      {hoveredItem === "solution" && (
                         <div
                           style={{
                             display: "flex",
-                            flexDirection: "row",
-                            gap: "4rem",
+                            flexDirection: "column",
+                            gap: "2rem",
                           }}
                         >
-                          <div className="container-fluid position-relative pb-5 text-light">
-                            <div className="row">
-                              <div className="col-lg-12 col-md-10 d-flex flex-column justify-content-between position-relative">
-                                <h3
-                                  className="text-light fw-normal"
-                                  style={{ fontSize: "2rem" }}
-                                >
-                                  Crafting Winning IT Strategies for Future
-                                  Growth.
-                                </h3>
-                                <p className="text-light mb-2 lh-lg">
-                                  Our IT Strategy Consultancy helps you develop
-                                  effective strategies tailored to your
-                                  organization's goals. We guide you through
-                                  digital transformation, ensuring your IT
-                                  investments align with your business
-                                  objectives.
-                                </p>
-                              </div>
-                            </div>
-                            <Link
-                              className="btn btn-danger mt-3 mb-2 rounded-pill px-4 py-2"
-                              to="/IT-Strategy-Consultancy"
+                          <div>
+                            <h3
+                              className="text-light fw-normal"
+                              style={{ fontSize: "2rem" }}
                             >
-                              Learn More
+                              IT Solutions for Your Business Success.
+                            </h3>
+                            <p className="text-light mb-2 lh-lg">
+                              Advanced IT infrastructure, cloud services, and
+                              cybersecurity tailored to meet your specific
+                              business needs. Comprehensive software
+                              development, data management, and networking
+                              solutions to ensure seamless operations and
+                              enhanced productivity.
+                            </p>
+                          </div>
+
+                          <div
+                            style={{
+                              display: "flex",
+                              flexDirection: "row",
+                              gap: "2rem",
+                            }}
+                          >
+                            <Link
+                              to="/IT-Strategy-Consultancy"
+                              style={{ padding: "0.5rem" }}
+                              className="nav-link text-dark menulink"
+                            >
+                              IT-Strategy-Conusltancy
                             </Link>
+                            <Link
+                              to="/Software-Services"
+                              style={{ padding: "0.5rem" }}
+                              className="nav-link text-dark menulink"
+                            >
+                              Software Services
+                            </Link>
+                            {/* <Link
+                            to="/3PL-Solution"
+                            style={{ padding: "0.5rem" }}
+                            className="nav-link text-dark menulink"
+                          >
+                            3PL Solution
+                          </Link> */}
                           </div>
                         </div>
                       )}
-                      {hoveredItem === "software" && (
+                      {/* {hoveredItem === "software" && (
                         <div
                           style={{
                             display: "flex",
@@ -373,7 +401,7 @@ function Menubar() {
                             </Link>
                           </div>
                         </div>
-                      )}
+                      )} */}
                       {hoveredItem === "staffing" && (
                         <div
                           style={{
@@ -473,7 +501,7 @@ function Menubar() {
                           to="/Health&Insurance"
                           onMouseEnter={() => handleHover("h&i")}
                         >
-                          Healthcare and Insurance
+                          Healthcare Insurance
                         </Link>
                         <div
                           className="dropdown-divider"
@@ -491,7 +519,7 @@ function Menubar() {
                       </div>
                     </div>
                     <div
-                      className="col-lg-4 mt-3"
+                      className="col-lg-6 mt-3"
                       style={{ marginLeft: "6%", textDecoration: "none" }}
                     >
                       {hoveredItem === "education" && (

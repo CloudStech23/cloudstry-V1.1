@@ -5,6 +5,26 @@ import { Link } from "react-router-dom";
 function Thirdpartylogistic() {
   return (
     <div>
+      <header className="bg-white text-white text-center py-5 position-relative">
+        {/* Navigation Path */}
+        <div className="position-absolute top-0 p-3 start-0 ms-3 mt-2 fs-5 fw-bold">
+          <span className="small text-primary ">
+            <a href="#" className="">
+              What we Do ?
+            </a>{" "}
+           / Product Platform / 3PL Solutions
+          </span>
+        </div>
+
+        {/* Header Content */}
+        <div className="container mt-5 text-primary">
+          <h1 className="display-4">Your Title Here</h1>
+          <p className="lead">This is the page information or tagline.</p>
+        </div>
+
+        {/* Curved Bottom Effect */}
+        
+      </header>
       <div className="container my-5 py-5">
         <div className="row align-items-center justify-content-between bg-light p-4 rounded-3 position-relative">
           {/* Text Content */}

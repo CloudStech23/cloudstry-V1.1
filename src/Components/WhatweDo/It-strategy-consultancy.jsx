@@ -3,35 +3,29 @@ import { Link } from "react-router-dom";
 
 function Consultancy() {
   return (
-    <div className="container  px-3 mx-auto mt-5">
-      <section className="text-center  mb-5">
-        <div className="panel d-flex flex-column justify-content-center text-center">
-          <div
-            className="bg-light p-5 mx-auto  shadow text-center"
-            style={{ border: "1px solid #efefef", borderRadius: "10px" }}
-          >
-            <h1 className="display-5 text-primary fw-light">
-              IT Strategy and Consultancy
-            </h1>
-            <p className="text-dark">
-              IT strategy consultancy is not just about optimizing your current
-              technology stack; it's about aligning your IT investments with
-              your business goals.
-            </p>
-          </div>
-          <div className="position-relative mt-4 mb-4">
-            <div className=" rounded overflow-hidden">
-              <img
-                className="img-fluid object-cover rounded"
-                alt="Consultancy Image"
-                src="https://via.placeholder.com/1200x500.png?text=Dummy+Image"
-              />
-            </div>
-          </div>
+    <div className="mx-4   mt-5">
+      <header className="bg-white text-white text-center py-5 position-relative">
+        {/* Navigation Path */}
+        <div
+          className="position-absolute top-0 start-0 ms-0 mt-0  fs-5 fw-bold"
+          style={{ zIndex: 100 }}
+        >
+          <span className="small text-primary">
+            <a href="/" className="">
+              What we Do ? /
+            </a>{" "}
+            <a href="#">IT Solutions</a> / IT strategy Consultancy
+          </span>
         </div>
-      </section>
 
-      <section className="  p-4 rounded-3 mb-5" style={{ marginTop: "5rem" }}>
+        {/* Header Content */}
+        <div className="container text-primary mt-5">
+          <h1 className="display-4">Your Title Here</h1>
+          <p className="lead">This is the page information or tagline.</p>
+        </div>
+      </header>
+
+      <section className=" rounded-3 mb-5" style={{ marginTop: "5rem" }}>
         <div className="row align-items-center justify-content-between">
           <div className="col-md-5 mb-4">
             <h2 className="display-5 text-primary fw-light">
@@ -49,7 +43,7 @@ function Consultancy() {
               or adopting new technologies, Metroxone Tech guides your
               organization toward sustainable success.
             </p>
-            <Link to='/Support' className="btn btn-danger">
+            <Link to="/Support" className="btn btn-danger">
               Learn more
             </Link>
           </div>
@@ -101,8 +95,9 @@ function Consultancy() {
                     style={{ marginTop: "6px" }}
                   ></i>
                   <span className="d-inline">
-                    <span className="fw-bold"> Innovative Solutions: </span> Pioneering approaches that set your business apart from the competition.
-
+                    <span className="fw-bold"> Innovative Solutions: </span>{" "}
+                    Pioneering approaches that set your business apart from the
+                    competition.
                   </span>
                 </li>
                 <li className="mb-2 d-flex align-items-start">
@@ -111,7 +106,9 @@ function Consultancy() {
                     style={{ marginTop: "6px" }}
                   ></i>
                   <span className="d-inline">
-                    <span className="fw-bold"> Proactive Adaptation: </span> We anticipate and adapt to technological shifts before they impact your business.
+                    <span className="fw-bold"> Proactive Adaptation: </span> We
+                    anticipate and adapt to technological shifts before they
+                    impact your business.
                   </span>
                 </li>
                 <li className="mb-2 d-flex align-items-start">
@@ -120,7 +117,12 @@ function Consultancy() {
                     style={{ marginTop: "6px" }}
                   ></i>
                   <span className="d-inline">
-                    <span className="fw-bold"> Comprehensive Integration: </span>  Seamless integration of IT strategies across all business functions.
+                    <span className="fw-bold">
+                      {" "}
+                      Comprehensive Integration:{" "}
+                    </span>{" "}
+                    Seamless integration of IT strategies across all business
+                    functions.
                   </span>
                 </li>
                 <li className="mb-2 d-flex align-items-start">
@@ -129,7 +131,12 @@ function Consultancy() {
                     style={{ marginTop: "6px" }}
                   ></i>
                   <span className="d-inline">
-                    <span className="fw-bold"> Sustained Competitive Edge: </span>Continuous innovation to maintain your leadership position in the market.
+                    <span className="fw-bold">
+                      {" "}
+                      Sustained Competitive Edge:{" "}
+                    </span>
+                    Continuous innovation to maintain your leadership position
+                    in the market.
                   </span>
                 </li>
               </ul>

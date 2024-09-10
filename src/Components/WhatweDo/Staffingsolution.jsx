@@ -6,67 +6,25 @@ import { Link } from "react-router-dom";
 function Staffingsolution() {
   return (
     <div>
-      <div className=" mt-5 mb-5">
-        <div className="container lg:max-w-xl px-3 mx-auto">
-          <div className="row align-items-center g-4 xl-g-5">
-            <div className="col-lg-6 order-lg-2">
-              <div className="panel text-center">
-                <h1
-                  className="text-primary display-6"
-                  style={{ fontWeight: 300 }}
-                >
-                  Transforming Workforce Management with{" "}
-                  <span
-                    className=" "
-                    style={{
-                      // backgroundImage:
-                      //   'url("https://unistudio.co/html/innovar/assets/images/common/line.svg")',
-                      objectFit: "contain",
-                      backgroundRepeat: "no-repeat",
-                      // backgroundRepeat: "no-repeat",
-                      backgroundPosition: "0 100%", // Aligns the image at the bottom of the text
-                      paddingBottom: ".6rem", // Adds space for the image below the text
-                      backgroundSize: "contain",
-                      height:'1px'
-                    }}
-                  >
-                    Metroxone Tech
-                  </span>
-                </h1>
-                <p className="desc fs-5 lg:fs-3 mt-3">
-                Effective workforce management is crucial for success, but many organizations struggle with complex staffing and resource challenges.
-                </p>
-                <Link
-                  className="btn btn-danger btn-md xl:btn-lg   sm:fs-4 xl:fs-3 mt-2"
-                   to='/'
-                >
-                  Get started
-                </Link>
-              </div>
-            </div>
-            <div className="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
-              <div
-                className="position-relative overflow-hidden h-100"
-                style={{ minHeight: "400px" }}
-              >
-                <img
-                  className="position-absolute rounded w-100 h-100 pt-5 pe-5"
-                  src={img1}
-                  alt=""
-                  style={{ objectFit: "cover", borderRadius: "10px" }}
-                />
-                <img
-                  className="position-absolute rounded top-0 end-0 bg-white ps-2 pb-2"
-                  src={img1}
-                  alt=""
-                  style={{ width: "200px", height: "200px" }}
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <hr />
+      <header className="bg-white text-white text-center py-5 position-relative">
+  {/* Navigation Path */}
+  <div className="position-absolute top-0 start-0 ms-0 mt-0 p-4 fs-5 fw-bold" style={{ zIndex: 100 }}>
+    <span className="small text-primary">
+      <a href="/" className="">
+        What we Do ? /
+      </a>{" "}
+      <a href="#">IT Solutions</a> / Staffing Solution
+    </span>
+  </div>
+
+  {/* Header Content */}
+  <div className="container text-primary mt-5 ">
+    <h1 className="display-4">Your Title Here</h1>
+    <p className="lead">This is the page information or tagline.</p>
+  </div>
+</header>
+
+       
 
       {/* <section class="py-5 bg-whitet text-center">
         <section className="pb-5">
