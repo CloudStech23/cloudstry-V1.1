@@ -175,7 +175,7 @@ function Thirdpartylogistic() {
                 Innovative 3PL Strategies: Cloudstry Expertise
               </h3>
               <p>
-                MetroXone Tech is dedicated to addressing the complexities of
+                Cloudstry Tech is dedicated to addressing the complexities of
                 third-party logistics (3PL) by providing innovative solutions
                 designed to tackle existing challenges and enhance operational
                 efficiency

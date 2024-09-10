@@ -169,7 +169,7 @@ function Staffingsolution() {
               How We Addresses GCC-Specific Challenges ?
             </h3>
             <p className="h5 mb-2 text-muted" style={{ fontWeight: 300 }}>
-              Metroxone delivers targeted solutions to address the unique
+              Cloudstry delivers targeted solutions to address the unique
               challenges faced by Global Captive Centers (GCCs).
             </p>
 
@@ -425,7 +425,7 @@ function Staffingsolution() {
                 </li>
 
                 <p className="text-muted fw-bold">
-                  By choosing MetroXone Tech, you benefit from a strategic
+                  By choosing Cloudstry Tech, you benefit from a strategic
                   partner committed to enhancing your workforce efficiency and
                   driving organizational success.
                 </p>

@@ -299,7 +299,7 @@ function Digitalcertificate() {
               style={{ fontWeight: 400, color: "#353535" }}
             >
               Transition from paper certificates to digital solutions with ease.
-              MetroXone Tech’s digital certificates streamline the creation,
+              Cloudstry Tech’s digital certificates streamline the creation,
               issuance, storage, and sharing of verified credentials. These
               certificates validate achievements, skills, and experiences
               efficiently and securely.
@@ -386,11 +386,11 @@ function Digitalcertificate() {
               style={{ fontWeight: 400, color: "#353535" }}
             >
               Become part of a worldwide network of professionals enhancing
-              their learning and development with MetroXone Tech’s innovative
+              their learning and development with Cloudstry Tech’s innovative
               solutions.
             </p>
             <p className="mt-4 h3 fw-normal text-primary">
-              MetroxOne Tech: Elevate Your Digital Presence
+              Cloudstry Tech: Elevate Your Digital Presence
             </p>
             <ul className="list-unstyled mt-0">
               <li className="mb-2 d-flex align-items-start">
@@ -487,7 +487,7 @@ function Digitalcertificate() {
                 className="h5 mb-2 "
                 style={{ fontWeight: 400, color: "#353535" }}
               >
-                At MetroxOne Tech, recognize student accomplishments, verified
+                At Cloudstry Tech, recognize student accomplishments, verified
                 skills, and involvement in certification programs.
               </p>
 
@@ -589,7 +589,7 @@ function Digitalcertificate() {
                 className="h5 mb-2 "
                 style={{ fontWeight: 400, color: "#353535" }}
               >
-                With MetroxOne Tech, reduce costs, promote your programs, and
+                With Cloudstry Tech, reduce costs, promote your programs, and
                 acknowledge hard-earned achievements through meaningful, secure,
                 and portable digital badges.
               </p>

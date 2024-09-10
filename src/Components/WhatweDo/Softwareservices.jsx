@@ -452,7 +452,7 @@ function Softwareservices() {
             A Commitment to Excellence You Can Trust
           </h3>
           <p>
-            At Metroxone Tech, we stand by the quality and reliability of our
+            At Cloudstry Tech, we stand by the quality and reliability of our
             solutions. Our commitment to innovation and customer satisfaction is
             at the core of everything we do. We believe in the power of
             technology to transform businesses, and we’re here to ensure that

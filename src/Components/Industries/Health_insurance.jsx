@@ -43,13 +43,13 @@ function Healthinsurance() {
               Integrated Solution for Health and Insurance
             </h2>
             <p className="text-muted mb-4">
-              Metroxone Tech addresses these challenges by providing a
+              Cloudstry Tech addresses these challenges by providing a
               comprehensive platform that connects health and insurance services
               with the innovative Pet Aadhaar system. This integrated solution
               enables veterinary clinics, insurance providers, and pet owners to
               manage animal health records, insurance claims, and related
               services in a streamlined manner. By leveraging the unique
-              identification capabilities of Pet Aadhaar, Metroxone Tech ensures
+              identification capabilities of Pet Aadhaar, Cloudstry Tech ensures
               that every animal’s health data is securely stored and easily
               accessible, facilitating timely care and accurate insurance
               processing.

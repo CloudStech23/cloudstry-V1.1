@@ -54,7 +54,7 @@ function Consultancy() {
               strategy consultancy services, crafting tailored solutions that
               address unique challenges, leverage emerging technologies, and
               support long-term objectives. Whether optimizing IT infrastructure
-              or adopting new technologies, Metroxone Tech guides your
+              or adopting new technologies, Cloudstry Tech guides your
               organization toward sustainable success.
             </p>
             <Link to="/Support" className="btn btn-danger">
@@ -89,10 +89,10 @@ function Consultancy() {
             {/* Text Section */}
             <div className="col-md-6 mb-5">
               <h3 className="text-primary fw-bold mb-3">
-                Strategic Dominance of Metroxone Tech's IT Consultancy
+                Strategic Dominance of Cloudstry Tech's IT Consultancy
               </h3>
               <p className="">
-                Metroxone Tech offers expert IT strategy consultancy to help
+                Cloudstry Tech offers expert IT strategy consultancy to help
                 organizations navigate the complex digital landscape. By
                 aligning technology with business goals, we ensure your company
                 is equipped for long-term success.
@@ -171,7 +171,7 @@ function Consultancy() {
                 Addressing IT Challenges Across Industries
               </h3>
               <p>
-                MetroXone Tech is dedicated to addressing the complexities of
+                Cloudstry Tech is dedicated to addressing the complexities of
                 third-party logistics (3PL) by providing innovative solutions
                 designed to tackle existing challenges and enhance operational
                 efficiency

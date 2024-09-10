@@ -412,7 +412,7 @@ function Logistic() {
                 How We Can Support the Logistics Industry ?
               </h3>
               <p className="">
-                MetroXone Tech offers a range of IT solutions tailored to the
+                Cloudstry Tech offers a range of IT solutions tailored to the
                 logistics sector’s needs:
               </p>
               <ul className="list-unstyled">

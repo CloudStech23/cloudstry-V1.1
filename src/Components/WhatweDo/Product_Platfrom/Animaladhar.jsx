@@ -511,7 +511,7 @@ function Petadhar() {
                 improve tracking accuracy, enhance disease control, and
                 streamline record management. The system is designed to boost
                 operational efficiency and support better decision-making.
-                MetroXone Tech is actively working on solutions to facilitate
+                Cloudstry Tech is actively working on solutions to facilitate
                 the implementation of this initiative
               </p>
             </div>

@@ -128,7 +128,7 @@ function Landing() {
             </div>
             <div className="col-md-6">
               <h3 className="fw-light fs-3 text-primary mb-2">
-                Empowering Communities with Metroxone Technologies
+                Empowering Communities with Cloudstry Technologies
               </h3>
               <p className="mb-4 text-muted" style={{ lineHeight: 1.375 }}>
                 Our focus is on delivering exceptional services and long-term
@@ -362,7 +362,7 @@ function Landing() {
           Strategic Solutions for Business Growth
         </h3>
         <p className="mb-4" style={{ lineHeight: 1.375 }}>
-            At Metroxone Technologies, we understand the unique challenges your business faces and offer solutions designed to drive sustainable growth and operational excellence. Our advanced technologies are tailored to meet your specific needs, enabling you to enhance efficiency, improve customer engagement, and secure your place at the forefront of your industry.
+            At Cloudstry Technologies, we understand the unique challenges your business faces and offer solutions designed to drive sustainable growth and operational excellence. Our advanced technologies are tailored to meet your specific needs, enabling you to enhance efficiency, improve customer engagement, and secure your place at the forefront of your industry.
         </p>
         <ul className="list-unstyled mb-4">
           <li className="ps-4 mb-3">

@@ -42,7 +42,7 @@ function Menudrawer(handleOpen) {
             >
               <Drawer.Header className="text-light">
                 <Drawer.Title className="text-light">
-                  MetroXone tech
+                  Cloudstry tech
                 </Drawer.Title>
                 {/* <Drawer.Actions>
             <Button onClick={() => setOpen(false)}>Close</Button>

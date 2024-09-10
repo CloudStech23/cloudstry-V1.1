@@ -42,7 +42,7 @@ export default function Footer() {
             <img
               src={pagelogo}
               className="img-fluid logoimg"
-              style={{ height: "2.7rem" }}
+              style={{ height: "3.5rem" }}
               alt="Logo"
             />
           </Link>
@@ -124,9 +124,9 @@ export default function Footer() {
       </section>
 
       <div className='text-center p-4' style={{ backgroundColor: 'rgba(0, 0, 0, 0.05)' }}>
-        Copyright © 2024 All Rights Reserved | 
-        <Link className='text-reset fw-bold' to='/'>
-          Metroxone technologies Pvt Ltd
+        Copyright © 2024 All Rights Reserved |
+        <Link className='text-reset fw-bold mx-1' to='/'>
+        Cloudstry technologies Pvt Ltd
         </Link>
       </div>
     </MDBFooter>

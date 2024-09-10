@@ -38,7 +38,7 @@ function Government() {
               Strategic Government Partnerships
             </h2>
             <p className="text-muted mb-4">
-              At MetroXone Tech, we recognize the government's crucial role in
+              At Cloudstry Tech, we recognize the government's crucial role in
               societal progress and economic growth. Our partnerships focus on
               innovation, security, and public welfare. Through our 3PL
               solutions, we streamline government supply chains and operations.
@@ -324,11 +324,11 @@ function Government() {
             {/* Text Section */}
             <div className="col-md-6">
               <h3 className="text-primary fw-bold mb-3">
-                How MetroXone Tech Supports the Government Sector: Empowering
+                How Cloudstry Tech Supports the Government Sector: Empowering
                 Public Services
               </h3>
               <p>
-                At MetroXone Tech, we are dedicated to helping government
+                At Cloudstry Tech, we are dedicated to helping government
                 agencies harness the power of technology to improve their
                 operations and serve the public more effectively. Here’s how we
                 can help:
@@ -389,7 +389,7 @@ function Government() {
                 height={365}
                 width={504}
                 src="https://via.placeholder.com/600x400.png?text=Dummy+Image"
-                alt="MetroXone Tech Solutions"
+                alt="Cloudstry Tech Solutions"
               />
             </div>
           </div>
@@ -409,7 +409,7 @@ function Government() {
                 height={365}
                 width={504}
                 src="https://via.placeholder.com/600x400.png?text=Dummy+Image"
-                alt="MetroXone Tech Projects"
+                alt="Cloudstry Tech Projects"
               />
             </div>
 
@@ -419,7 +419,7 @@ function Government() {
                 Our Key Government Projects: Driving Innovation and Impact
               </h3>
               <p>
-                MetroXone Tech is proud to be involved in several key projects
+                Cloudstry Tech is proud to be involved in several key projects
                 that are making a significant impact in the government sector:
               </p>
               <ul className="list-unstyled">

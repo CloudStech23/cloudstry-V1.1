@@ -68,7 +68,7 @@ function Menubar() {
             <img
               src={pagelogo}
               className="img-fluid logoimg"
-              style={{ height: "3.5rem" }}
+              style={{ height: "4rem" }}
               alt="Logo"
             />
           </Link>
@@ -295,7 +295,7 @@ function Menubar() {
                                 whiteSpace: "normal",
                               }}
                             >
-                              Metroxone drives change with innovative technology
+                              Cloudstry drives change with innovative technology
                             </h3>
                             <p className="text-light mb-2  lh-lg">
                               Our commitment lies in delivering solutions that

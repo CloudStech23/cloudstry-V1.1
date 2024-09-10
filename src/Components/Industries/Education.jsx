@@ -42,7 +42,7 @@ function Education() {
               className=" display-5 text-primary "
               style={{ fontWeight: 300 }}
             >
-              Metroxone Tech's Innovative Approach
+              Cloudstry Tech's Innovative Approach
             </h2>
             <p className="text-muted mb-4">
               Education is the cornerstone of personal and professional growth,
@@ -336,18 +336,18 @@ function Education() {
                 height={365}
                 width={504}
                 src="https://via.placeholder.com/600x500.png?text=Dummy+Image"
-                alt="MetroXone Tech Solutions"
+                alt="Cloudstry Tech Solutions"
               />
             </div>
 
             {/* Text Section */}
             <div className="col-md-6 mb-5">
               <h3 className="text-primary fw-bold mb-3">
-                How MetroXone Tech Supports the Education Industry: Your Partner
+                How Cloudstry Tech Supports the Education Industry: Your Partner
                 in Progress
               </h3>
               <p>
-                At MetroXone Tech, we are committed to empowering educational
+                At Cloudstry Tech, we are committed to empowering educational
                 institutions to thrive in the digital age. Here’s how we can
                 help:
               </p>
