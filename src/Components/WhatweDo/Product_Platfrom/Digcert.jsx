@@ -14,33 +14,27 @@ import img9 from './Images/dc.Corporations.png'
 function Digitalcertificate() {
   return (
     <div>
-      <header className="bg-white text-white py-5 position-relative">
+            <header className="bg-white text-white text-center py-5 position-relative">
         {/* Navigation Path */}
-        <div className="position-absolute top-0 p-3  start-0 ms-3 mt-2  fw-bold">
-          <span className=" text-primary">
-            <a href="#" className="">
-              What we Do?
+        <div
+          className="position-absolute top-0 p-4 start-0 ms-0 mt-0  fs-5 fw-bold"
+          style={{ zIndex: 100 }}
+        >
+          <span className="small text-primary">
+            <a href="/" className="">
+              What we Do ? /
             </a>{" "}
-            / Product Platform / Digital Certificate
+            <a href="#">IT Solutions</a> / Software Services
           </span>
         </div>
 
         {/* Header Content */}
-        <div className="container mt-5 text-primary">
-          <div className="row">
-            <div className="col-12 col-md-6">
-              <h1 className="">
-                Digital Certificates: Revolutionizing Credential Management
-              </h1>
-              <p className="lead">
-                Secure, scalable, and future-ready digital certificates for
-                streamlined operations and enhanced verification processes.
-              </p>
-            </div>
-          </div>
+        <div className="container text-primary mt-5">
+          <h1 className="display-6">Digital Certificates: Revolutionizing Credential Management</h1>
+          <p className="lead">
+          Secure, scalable, and future-ready digital certificates for streamlined operations and enhanced verification processes.
+          </p>
         </div>
-
-        {/* Curved Bottom Effect */}
       </header>
 
       <div className="container  py-5">
