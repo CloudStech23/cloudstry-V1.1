@@ -89,7 +89,7 @@ function Menubar() {
           >
             <ul className="navbar-nav">
               {/* Menu 1 */}
-              {/* <li className="nav-item dropdown position-static   mx-3">
+              <li className="nav-item dropdown position-static   mx-3">
                 <Link
                   className={`nav-link  ${
                     openDropdown === "dropdown1" ? "active" : ""
@@ -101,7 +101,7 @@ function Menubar() {
                 >
                   Home
                 </Link>
-              </li> */}
+              </li>
 
               {/* Menu 2 */}
               <li className="nav-item dropdown position-static mx-3">
@@ -219,15 +219,15 @@ function Menubar() {
                       </div>
                     </div>
                     <div
-                      className="col-lg-6 mt-3"
-                      style={{ marginLeft: "6%", textDecoration: "none" }}
+                      className="col-lg-7 mt-3"
+                      style={{ marginLeft: "6%", }}
                     >
                       {hoveredItem === "product" && (
                         <div
                           style={{
                             display: "flex",
                             flexDirection: "column",
-                            gap: "2rem",
+                            // gap: "2rem",
                           }}
                         >
                           <div>
@@ -238,13 +238,7 @@ function Menubar() {
                               Empowering Your Business with a Robust Product
                               Platform.
                             </h3>
-                            <p className="text-light mb-2 lh-lg">
-                              Discover our comprehensive product platform
-                              designed to streamline and enhance your business
-                              operations. From managing logistics to integrating
-                              with various services, our platform provides the
-                              tools you need for success.
-                            </p>
+                            
                           </div>
 
                           <div
@@ -257,21 +251,21 @@ function Menubar() {
                             <Link
                               to="/Digital-Certificate"
                               style={{ padding: "0.5rem" }}
-                              className="nav-link text-dark menulink"
+                              className="nav-link    menulink"
                             >
                               Digital Certificate
                             </Link>
                             <Link
                               to="/Pet-Aadhar"
                               style={{ padding: "0.5rem" }}
-                              className="nav-link text-dark menulink"
+                              className="nav-link   menulink"
                             >
                               Pet Aadhar
                             </Link>
                             <Link
                               to="/3PL-Solution"
                               style={{ padding: "0.5rem" }}
-                              className="nav-link text-dark menulink"
+                              className="nav-link   menulink"
                             >
                               3PL Solution
                             </Link>
@@ -312,11 +306,11 @@ function Menubar() {
                         </div>
                       )} */}
                       {hoveredItem === "solution" && (
-                        <div
+                        <div 
                           style={{
                             display: "flex",
                             flexDirection: "column",
-                            gap: "2rem",
+                            // gap: "2rem",
                           }}
                         >
                           <div>
@@ -326,14 +320,14 @@ function Menubar() {
                             >
                               IT Solutions for Your Business Success.
                             </h3>
-                            <p className="text-light mb-2 lh-lg">
+                            {/* <p className="text-light mb-2 lh-lg">
                               Advanced IT infrastructure, cloud services, and
                               cybersecurity tailored to meet your specific
                               business needs. Comprehensive software
                               development, data management, and networking
                               solutions to ensure seamless operations and
                               enhanced productivity.
-                            </p>
+                            </p> */}
                           </div>
 
                           <div
@@ -535,7 +529,7 @@ function Menubar() {
                               <div className="col-lg-12 col-md-10 d-flex flex-column justify-content-between position-relative">
                                 <h3
                                   className="text-light fw-normal"
-                                  style={{ fontSize: "2rem" }}
+                                  style={{ fontSize: "1.8rem" }}
                                 >
                                   Shaping the Future with Quality Education
                                   Solutions.
@@ -570,7 +564,7 @@ function Menubar() {
                               <div className="col-lg-12 col-md-10 d-flex flex-column justify-content-between position-relative">
                                 <h3
                                   className="text-light fw-normal"
-                                  style={{ fontSize: "2rem" }}
+                                  style={{ fontSize: "1.8rem" }}
                                 >
                                   Partnering with Government for Effective
                                   Solutions.
@@ -605,7 +599,7 @@ function Menubar() {
                               <div className="col-lg-12 col-md-10 d-flex flex-column justify-content-between position-relative">
                                 <h3
                                   className="text-light fw-normal"
-                                  style={{ fontSize: "2rem" }}
+                                  style={{ fontSize: "1.7rem" }}
                                 >
                                   Ensuring Wellness with Healthcare and
                                   Insurance Solutions.
@@ -638,8 +632,8 @@ function Menubar() {
                             <div className="row">
                               <div className="col-lg-12 col-md-10 d-flex flex-column justify-content-between position-relative">
                                 <h3
-                                  className="text-light fw-normal"
-                                  style={{ fontSize: "2rem" }}
+                                  className="text-light fw-normal col-12"
+                                  style={{ fontSize: "1.7rem" }}
                                 >
                                   Streamlining Operations with Advanced
                                   Logistics Solutions.
@@ -669,135 +663,34 @@ function Menubar() {
               {/* Menu 4 */}
               {/* Similar structure to Menu 2 and Menu 3 */}
 
-              <li className="nav-item dropdown position-static mx-3">
-                <a
-                  className={`nav-link ${
+              <li className="nav-item dropdown position-static   mx-3">
+                <Link
+                  className={`nav-link  ${
                     openDropdown === "dropdown4" ? "active" : ""
                   }`}
-                  id="navbarDropdown2"
+                  to="/Team-Cloudstry"
+                  id="navbarDropdown4"
                   role="button"
                   onClick={() => handleDropdownClick("dropdown4")}
                 >
-                  About us
-                  <span
-                    className={`dropdown-arrow ${
-                      openDropdown === "dropdown4" ? "open" : ""
-                    }`}
-                  ></span>
-                </a>
-                <div
-                  className={`dropdown-menu mt-0 w-100 shadow border-outline-success ${
-                    openDropdown === "dropdown4" ? "show" : ""
+                  Meet Leadership
+                </Link>
+              </li>
+              <li className="nav-item dropdown position-static   mx-3">
+                <Link
+                  className={`nav-link  ${
+                    openDropdown === "dropdown5" ? "active" : ""
                   }`}
-                  aria-labelledby="navbarDropdown2"
-                  style={{ height: "320px" }}
+                  to="/Support"
+                  id="navbarDropdown5"
+                  role="button"
+                  onClick={() => handleDropdownClick("dropdown5")}
                 >
-                  <div className="row mt-3">
-                    <div className="col-lg-3" style={{ marginLeft: "5%" }}>
-                      <div className="mt-3" style={{ marginLeft: "5%" }}>
-                        <Link
-                          className={`dropdown-item text-white h6 ${
-                            hoveredItem === "team" ? "active" : ""
-                          }`}
-                          onMouseEnter={() => handleHover("team")}
-                          to="/Team-Cloudstry"
-                        >
-                          Team Leadership
-                        </Link>
-                        <div
-                          className="dropdown-divider"
-                          style={{ borderTop: "1px solid white" }}
-                        ></div>
-                        <Link
-                          className={`dropdown-item text-white h6 ${
-                            hoveredItem === "support" ? "active" : ""
-                          }`}
-                          onMouseEnter={() => handleHover("support")}
-                          to="/Support"
-                        >
-                          Contact Us
-                        </Link>
-                      </div>
-                    </div>
-                    <div
-                      className="col-lg-6 mt-3"
-                      style={{ marginLeft: "6%", textDecoration: "none" }}
-                    >
-                      {hoveredItem === "team" && (
-                        <div
-                          style={{
-                            display: "flex",
-                            flexDirection: "column",
-                            gap: "2rem",
-                          }}
-                        >
-                          <div>
-                            <h3
-                              className="text-light fw-normal"
-                              style={{ fontSize: "2rem" }}
-                            >
-                              Elevating Your Team with Effective Leadership
-                              Strategies.
-                            </h3>
-                            <p className="text-light mb-2 lh-lg">
-                              Explore our innovative leadership approaches
-                              designed to inspire, guide, and empower your team.
-                              Our strategies focus on enhancing collaboration,
-                              driving performance, and achieving exceptional
-                              results.
-                            </p>
-                            <Link
-                              className="btn btn-danger mt-3 mb-2 rounded-pill px-4 py-2"
-                              to="/Education"
-                            >
-                              Learn More
-                            </Link>
-                          </div>
-                        </div>
-                      )}
-                      {hoveredItem === "support" && (
-                        <div
-                          style={{
-                            display: "flex",
-                            flexDirection: "column",
-                            gap: "2rem",
-                          }}
-                        >
-                          <div>
-                            <h3
-                              className="text-light fw-normal"
-                              style={{ fontSize: "2rem" }}
-                            >
-                              Connect with Us for Tailored Solutions and
-                              Support.
-                            </h3>
-                            <p className="text-light mb-2 lh-lg">
-                              Reach out to our team for personalized assistance
-                              and expert guidance. We are here to address your
-                              needs, answer your questions, and provide the
-                              support required to achieve your goals.
-                            </p>
-                          <Link
-                              className="btn btn-danger mt-3 mb-2 rounded-pill px-4 py-2"
-                              to="/Education"
-                            >
-                              Learn More
-                            </Link>
-                          </div>
-                        </div>
-                      )}
-                    </div>
-                  </div>
-                </div>
+                  Contact us
+                </Link>
               </li>
             </ul>
-            <div class="d-flex justify-content-start">
-              <Link className="nav-link p-0" to="/">
-                <span className="me-2" style={{ color: "#e3dedecf" }}>
-                  FAQ's (?)
-                </span>
-              </Link>
-            </div>
+             
           </div>
         </nav>
       </div>

@@ -104,20 +104,18 @@ export default function Footer() {
 
             <MDBCol md='4' lg='3' xl='3' className='mx-auto mb-md-0 mb-4'>
               <h6 className='text-uppercase fw-bold mb-4'>Contact</h6>
-              <p>
-                <MDBIcon color='light' icon='home' className='me-2' />
-                New York, NY 10012, US
+              <p className='align-items-start d-flex mb-2'>
+                <MDBIcon color='light' icon='home' className='me-3 mt-1' />
+                4th floor, Apollo Premier, Vijay Nagar Square, Vijay Nagar, Indore, Madhya Pradesh 452001
               </p>
               <p>
                 <MDBIcon color='light' icon='envelope' className='me-3' />
-                info@example.com
+                hr@cloudstrytech.com
               </p>
               <p>
-                <MDBIcon color='light' icon='phone' className='me-3' /> + 01 234 567 88
+                <MDBIcon color='light' icon='phone' className='me-3' /> +91 7313683823
               </p>
-              <p>
-                <MDBIcon color='light' icon='print' className='me-3' /> + 01 234 567 89
-              </p>
+               
             </MDBCol>
           </MDBRow>
         </MDBContainer>

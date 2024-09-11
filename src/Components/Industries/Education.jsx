@@ -1,9 +1,12 @@
 import React from "react";
-
+import img1 from './Images/ed.first.jpg'
+import img2 from './Images/ed.second.jpg'
+import img3 from './Images/ed.third.jpg'
+import img4 from './Images/ed.fourth.jpg'
 function Education() {
   return (
     <div>
-      <header className="bg-white text-white text-center py-5 position-relative">
+      <header className="bg-white text-white text-center mb-5 py-5 position-relative">
         {/* Navigation Path */}
         <div
           className="position-absolute top-0 start-0 ms-0 mt-0 p-4 fs-5 fw-bold"
@@ -31,9 +34,9 @@ function Education() {
         </div>
       </header>
 
-      <div className="container my-5 py-5">
+      {/* <div className="container my-5 py-5">
         <div className="row align-items-center justify-content-between bg-light p-4 rounded-3 position-relative">
-          {/* Text Content */}
+          
           <div className="col-md-5 mt-4 mb-2">
             <span className="badge bg-primary rounded-pill px-2 py-2 mb-3">
               Education
@@ -57,18 +60,18 @@ function Education() {
             </p>
           </div>
 
-          {/* Video Content */}
+           
           <div className="col-md-5 text-md-end mt-4 mt-md-0 mb-2">
             <img
-              src="https://via.placeholder.com/600x400.png?text=Dummy+Image"
+              src={img1}
               alt="Dummy"
               className="img-fluid rounded"
             />
           </div>
         </div>
-      </div>
-      <section className="image-video-text-interactivity fadeInUp mb-5">
-        <div className="container mb-5">
+      </div> */}
+      <section className="image-video-text-interactivity fadeInUp  " style={{marginTop:'10rem'}}>
+        <div className="container mt-5 mb-5">
           <div className="row align-items-center mb-5">
             {/* Image Section */}
             <div className="col-md-6 mb-5 mb-md-0">
@@ -76,17 +79,18 @@ function Education() {
                 className="img-fluid rounded"
                 height={365}
                 width={504}
-                src="https://via.placeholder.com/600x500.png?text=Dummy+Image"
-                alt="AGENT511 REACH Orchestration"
+                src={img2}
+                alt="Image"
               />
             </div>
 
             {/* Text Section */}
             <div className="col-md-6 mb-5">
-              <h3 className="text-primary fw-bold mb-3">
+              <h3 className="text-primary fw-normal mb-3">
                 Major Challenges in the Education Sector: Navigating the Complex
                 Landscape
               </h3>
+              <p className="text-muted fs-0">The education sector faces a variety of significant challenges that impact institutions, educators, and students alike. Five major issues include:</p>
 
               <ul className="list-unstyled">
                 <li className="mb-2 d-flex align-items-start">
@@ -157,6 +161,7 @@ function Education() {
                   </span>
                 </li>
               </ul>
+              <p className="text-muted">These challenges underscore the need for innovative solutions that can effectively address these pressing issues</p>
             </div>
           </div>
         </div>
@@ -235,10 +240,10 @@ function Education() {
           <div className="row align-items-center">
             {/* Text Section */}
             <div className="col-md-6">
-              <h3 className="text-primary fw-bold mb-3">
+              <h3 className="text-primary fw-normal mb-3">
                 Digitalization in Education: A Catalyst for Positive Change
               </h3>
-              <p>
+              <p className="text-muted">
                 Digitalization is transforming the education sector by offering
                 powerful tools to overcome these challenges. Here’s how
                 technology is making a difference:
@@ -310,6 +315,7 @@ function Education() {
                   </span>
                 </li>
               </ul>
+              <p className="text-muted">Digitalization is not just solving problems; it is revolutionizing the way education is delivered and experienced.</p>
             </div>
 
             {/* Image Section */}
@@ -318,8 +324,8 @@ function Education() {
                 className="img-fluid rounded"
                 height={365}
                 width={504}
-                src="https://via.placeholder.com/600x400.png?text=Dummy+Image"
-                alt="Digital Transformation in Education"
+                src={img3}
+                alt="Image"
               />
             </div>
           </div>
@@ -335,18 +341,18 @@ function Education() {
                 className="img-fluid rounded"
                 height={365}
                 width={504}
-                src="https://via.placeholder.com/600x500.png?text=Dummy+Image"
+                src={img4}
                 alt="Cloudstry Tech Solutions"
               />
             </div>
 
             {/* Text Section */}
             <div className="col-md-6 mb-5">
-              <h3 className="text-primary fw-bold mb-3">
+              <h3 className="text-primary fw-normal mb-3">
                 How Cloudstry Tech Supports the Education Industry: Your Partner
                 in Progress
               </h3>
-              <p>
+              <p className="text-muted">
                 At Cloudstry Tech, we are committed to empowering educational
                 institutions to thrive in the digital age. Here’s how we can
                 help:
@@ -397,6 +403,7 @@ function Education() {
                   </span>
                 </li>
               </ul>
+              <p className="text-muted">By partnering with Cloudstry Tech, educational institutions can overcome challenges, leverage digital opportunities, and provide exceptional educational experiences</p>
             </div>
           </div>
         </div>
@@ -421,6 +428,7 @@ function Education() {
                 <div className="media feature-card">
                   <h3 className="text-primary fw-normal mb-3">
                     Digital Certificate with BadgeCert
+                  <p className="text-muted h6 mt-2">We are proud to spearhead several innovative projects aimed at transforming education</p>
                   </h3>
                   <div className="media-body ml-3">
                     <div className="blockquote border-0 p-0">

@@ -1,4 +1,5 @@
 import React from "react";
+import img1 from "./Images/hi.first.jpg";
 
 function Healthinsurance() {
   return (
@@ -29,9 +30,9 @@ function Healthinsurance() {
           </p>
         </div>
       </header>
-      <div className="container my-5 py-5">
+      {/* <div className="container my-5 py-5">
         <div className="row align-items-center justify-content-between bg-light p-4 rounded-3 position-relative">
-          {/* Text Content */}
+          
           <div className="col-md-5 mt-4 mb-2">
             <span className="badge bg-primary rounded-pill px-2 py-2 mb-3">
               Health Insurance
@@ -56,7 +57,7 @@ function Healthinsurance() {
             </p>
           </div>
 
-          {/* Video Content */}
+       
           <div className="col-md-5 text-md-end mt-4 mt-md-0 mb-2">
             <img
               src="https://via.placeholder.com/600x400.png?text=Dummy+Image"
@@ -65,7 +66,7 @@ function Healthinsurance() {
             />
           </div>
         </div>
-      </div>
+      </div> */}
 
       <section
         className="image-video-text-interactivity fadeInUp mb-5"
@@ -73,14 +74,24 @@ function Healthinsurance() {
       >
         <div className="container mt-5">
           <div className="row align-items-center">
+            {/* Image Section */}
+            <div className="col-md-6 text-md-start mt-4 mt-md-0">
+              <img
+                className="img-fluid rounded"
+                height={365}
+                width={504}
+                src="https://via.placeholder.com/600x400.png?text=Dummy+Image"
+                alt="AGENT511 REACH Orchestration"
+              />
+            </div>
+
             {/* Text Section */}
             <div className="col-md-6">
-              <h3 className="text-primary fw-bold mb-3">
+              <h3 className="text-primary fw-normal mb-3">
                 Major Challenges in the Healthcare Insurance Sector
               </h3>
-              <p>
-                The healthcare insurance industry faces several significant
-                challenges that impact its operations and service delivery:
+              <p className="text-muted">
+              The healthcare insurance industry faces several significant challenges that impact its operations and service delivery
               </p>
 
               <ul className="list-unstyled">
@@ -147,17 +158,7 @@ function Healthinsurance() {
                   </span>
                 </li>
               </ul>
-            </div>
-
-            {/* Image Section */}
-            <div className="col-md-6 text-md-end mt-4 mt-md-0">
-              <img
-                className="img-fluid rounded"
-                height={365}
-                width={504}
-                src="https://via.placeholder.com/600x400.png?text=Dummy+Image"
-                alt="AGENT511 REACH Orchestration"
-              />
+              
             </div>
           </div>
         </div>
@@ -170,25 +171,15 @@ function Healthinsurance() {
         <div className="container mt-5">
           <div className="row align-items-center">
             {/* Image Section */}
-            <div className="col-md-6 text-md-start mt-4 mt-md-0">
-              <img
-                className="img-fluid rounded"
-                height={365}
-                width={504}
-                src="https://via.placeholder.com/600x400.png?text=Dummy+Image"
-                alt="AGENT511 REACH Orchestration"
-              />
-            </div>
+            
 
             {/* Text Section */}
             <div className="col-md-6">
-              <h3 className="text-primary fw-bold mb-3">
+              <h3 className="text-primary fw-normal mb-3">
                 How Digitalization is Solving Healthcare Insurance Challenges
               </h3>
-              <p>
-                Digital transformation is reshaping the insurance sector by
-                providing efficient, secure, and customer-centric solutions to
-                complex challenges:
+              <p  className="text-muted">
+              Digitalization is addressing these challenges through various innovative solutions
               </p>
               <ul className="list-unstyled">
                 <li className="mb-2 d-flex align-items-start">
@@ -259,6 +250,15 @@ function Healthinsurance() {
                 </li>
               </ul>
             </div>
+            <div className="col-md-6 text-md-end mt-4 mt-md-0">
+              <img
+                className="img-fluid rounded"
+                height={365}
+                width={504}
+                src="https://via.placeholder.com/600x400.png?text=Dummy+Image"
+                alt="AGENT511 REACH Orchestration"
+              />
+            </div>
           </div>
         </div>
       </section>
@@ -269,15 +269,24 @@ function Healthinsurance() {
       >
         <div className="container mt-5">
           <div className="row align-items-center">
+            {/* Image Section */}
+            <div className="col-md-6 text-md-start mt-4 mt-md-0">
+              <img
+                className="img-fluid rounded"
+                height={365}
+                width={504}
+                src="https://via.placeholder.com/600x400.png?text=Dummy+Image"
+                alt="AGENT511 REACH Orchestration"
+              />
+            </div>
+
             {/* Text Section */}
             <div className="col-md-6">
-              <h3 className="text-primary fw-bold mb-3">
+              <h3 className="text-primary fw-normal mb-3">
                 How We Can Support the Healthcare Insurance Sector
               </h3>
-              <p>
-                Our cutting-edge solutions address the complexities of managing
-                claims, ensuring compliance, and enhancing customer
-                interactions:
+              <p className="text-muted">
+              Cloudstry Tech provides a range of IT solutions tailored to the healthcare insurance industry’s needs
               </p>
 
               <ul className="list-unstyled">
@@ -341,17 +350,6 @@ function Healthinsurance() {
                 </li>
               </ul>
             </div>
-
-            {/* Image Section */}
-            <div className="col-md-6 text-md-end mt-4 mt-md-0">
-              <img
-                className="img-fluid rounded"
-                height={365}
-                width={504}
-                src="https://via.placeholder.com/600x400.png?text=Dummy+Image"
-                alt="AGENT511 REACH Orchestration"
-              />
-            </div>
           </div>
         </div>
       </section>
@@ -375,6 +373,7 @@ function Healthinsurance() {
                 <div className="media feature-card">
                   <h3 className="text-primary fw-normal mb-3">
                     Digital Claims Management Platform
+                  <p className="text-muted h6 mt-2">Cloudstry Tech is excited to be part of several transformative projects that are significantly impacting the healthcare sector</p>
                   </h3>
                   <div className="media-body ml-3">
                     <div className="blockquote border-0 p-0">
