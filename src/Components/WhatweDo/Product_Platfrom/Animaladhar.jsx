@@ -2,16 +2,19 @@ import React from "react";
 import { Carousel } from "react-bootstrap";
 import "./Common.css";
 import { Link } from "react-router-dom";
+import img1 from './Images/petadhar.main.jpg'
+import img2 from './Images/petadhar.second.jpeg'
+import img3 from './Images/petadhar.third.jpg'
 
 function Petadhar() {
   return (
     <div>
-      <header className="bg-white text-white text-center py-5 position-relative">
         {/* Navigation Path */}
-        <div className="position-absolute top-0 p-3 start-0 ms-3 mt-2 fs-5 fw-bold">
-          <span className="small text-primary ">
+      <header className="bg-white text-white py-3 position-relative">
+        <div className="position-absolute top-0  start-0 ms-3 mt-2 fw-bold">
+          <span className="text-primary">
             <a href="#" className="">
-              What we Do ?
+              What we Do?
             </a>{" "}
             / Product Platform / Pet Aadhar
           </span>
@@ -19,16 +22,22 @@ function Petadhar() {
 
         {/* Header Content */}
         <div className="container mt-5 text-primary">
-          <h1 className="display-6">Precise, Efficient Pet Identification.</h1>
-          <p className="lead">
-            Advanced technology driving precision, tracking, and management for
-            pets. Experience the future of identification with Pet Aadhar
-          </p>
+          <div className="row">
+            <div className="col-12 col-md-6">
+              <h1 className="">
+                Pet Aadhar: Revolutionizing Pet Identification
+              </h1>
+              <p className="lead">
+                Secure, scalable, and future-ready identification for pets.
+                Simplifying pet management and tracking with advanced
+                technology.
+              </p>
+            </div>
+          </div>
         </div>
-
-        {/* Curved Bottom Effect */}
       </header>
-      <div className="container my-5 py-5">
+
+      <div className="container py-5">
         <div className="row align-items-center justify-content-between bg-light p-4 rounded-3 position-relative">
           {/* Text Content */}
           <div className="col-md-5 mt-4 mb-2">
@@ -58,8 +67,8 @@ function Petadhar() {
           {/* Video Content */}
           <div className="col-md-5 text-md-end mt-4 mt-md-0 mb-2">
             <img
-              src="https://via.placeholder.com/600x400.png?text=Dummy+Image"
-              alt="Dummy"
+              src={img1}
+              alt="Cloudstry Technologies"
               className="img-fluid rounded"
             />
           </div>
@@ -75,8 +84,8 @@ function Petadhar() {
                 className="img-fluid rounded"
                 height={365}
                 width={504}
-                src="https://via.placeholder.com/600x400.png?text=Dummy+Image"
-                alt="AGENT511 REACH Orchestration"
+                src={img2}
+                alt="Cloudstry Technologies"
               />
             </div>
 
@@ -407,15 +416,15 @@ function Petadhar() {
                   className="img-fluid rounded"
                   height={365}
                   width={504}
-                  src="https://via.placeholder.com/700x600.png?text=Dummy+Image"
-                  alt="AGENT511 REACH Orchestration"
+                  src={img3}
+                  alt="Cloudstry Technologies"
                 />
               </div>
 
               {/* Text Section */}
               <div className="col-md-6 mb-5">
                 <h3 className="text-primary fw-normal mb-3">
-                Cloudstry: Leading the Way in Pet Aadhaar Technology
+                  Cloudstry: Leading the Way in Pet Aadhaar Technology
                 </h3>
                 <p className="">
                   The Pashu Aadhaar system offers a transformative approach to

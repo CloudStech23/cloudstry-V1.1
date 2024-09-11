@@ -1,7 +1,10 @@
 import React from "react";
-import img1 from "../Images/ai.jpg";
-import { Carousel } from "react-bootstrap";
-import { Link } from "react-router-dom";
+import img1 from "./Images/st.first.jpg";
+import img2 from "./Images/st.second.jpg";
+import img3 from "./Images/st.third.jpg";
+import img4 from "./Images/st.fourth.jpg";
+ 
+
 
 function Staffingsolution() {
   return (
@@ -150,15 +153,16 @@ function Staffingsolution() {
 
       <div className="container " style={{ marginTop: "5rem" }}>
         <div className="half-underline-container"></div>
-        <div className="row gx-0 mt-5">
+        <div className="row gx-4 mt-5">
           <div
             className="col-xl-6 col-lg-5 d-flex justify-content-left align-items-center"
             style={{ marginBottom: "5rem" }}
           >
             <img
               className="img-fluid"
-              src="https://via.placeholder.com/600x400.png?text=Dummy+Image"
+              src={img1}
               alt="Addressing GCC Challenges"
+              style={{width:'39rem'}}
             />
           </div>
           <div className="col-md-6 mb-5">
@@ -301,21 +305,22 @@ function Staffingsolution() {
           >
             <img
               className="img-fluid"
-              src="https://via.placeholder.com/600x400.png?text=Dummy+Image"
+              src={img2}
               alt="GCC Staffing"
             />
           </div>
         </div>
 
-        <div className="row gx-0">
+        <div className="row gx-4">
           <div
             className="col-xl-6 col-lg-5 d-flex justify-content-left align-items-center"
             style={{ marginBottom: "5rem" }}
           >
             <img
               className="img-fluid"
-              src="https://via.placeholder.com/600x400.png?text=Dummy+Image"
+              src={img3}
               alt="Key Benefits"
+              style={{width:'39rem'}}
             />
           </div>
           <div className="col-md-6 mb-5 mt-5">
@@ -434,8 +439,8 @@ function Staffingsolution() {
             <div className="col-md-6 mb-4">
               <img
                 className="img-fluid rounded"
-                src="https://via.placeholder.com/600x400.png?text=Dummy+Image"
-                alt="Rationale Behind Pashu Aadhaar"
+                src={img4}
+                alt="Cloudstry Technologies"
               />
             </div>
           </div>

@@ -5,6 +5,7 @@ import "swiper/css/navigation"; // Import navigation styles
 import { Navigation, Autoplay } from "swiper/modules";
 import { data } from "./swiperdata";
 
+
 const SwiperCarousel = () => {
   const swiperRef = useRef(null);
 

@@ -1,34 +1,44 @@
 import React from "react";
 import "../Product_Platfrom/Common.css";
 import { Link } from "react-router-dom";
+import img1 from './Images/dc.main.png'
+import img2 from './Images/dc.main.jpg'
+import img3 from './Images/dc.second.jpg'
+import img4 from './Images/dc.issue.png'
+import img5 from './Images/dc.earner.png'
+import img6 from './Images/dc.Universities.png'
+import img7 from './Images/dc.Training-providers.png'
+import img8 from './Images/dc.Associations.png'
+import img9 from './Images/dc.Corporations.png'
 
 function Digitalcertificate() {
   return (
     <div>
-      <header className="bg-white text-white text-center py-5 position-relative">
+      <header className="bg-white text-white py-5 position-relative">
         {/* Navigation Path */}
-        <div className="position-absolute top-0 p-3 start-0 ms-3 mt-2 fs-5 fw-bold">
-          <span className="small text-primary ">
+        <div className="position-absolute top-0 p-3  start-0 ms-3 mt-2  fw-bold">
+          <span className=" text-primary">
             <a href="#" className="">
-              What we Do ?
+              What we Do?
             </a>{" "}
             / Product Platform / Digital Certificate
           </span>
         </div>
 
         {/* Header Content */}
-          <div className="container mt-5 text-primary">
-            <h1 className="display-6 px-3">
-            Digital Certificates: Revolutionizing Credential Management
-            </h1>
-            <p className="lead px-3">
-              Unlocking unparalleled security, scalability, and future-ready
-              innovation to revolutionize credential management across diverse
-              industries. Embrace a new era of digital certificates that
-              streamline operations, enhance verification processes, and drive
-              organizational efficiency.
-            </p>
+        <div className="container mt-5 text-primary">
+          <div className="row">
+            <div className="col-12 col-md-6">
+              <h1 className="">
+                Digital Certificates: Revolutionizing Credential Management
+              </h1>
+              <p className="lead">
+                Secure, scalable, and future-ready digital certificates for
+                streamlined operations and enhanced verification processes.
+              </p>
+            </div>
           </div>
+        </div>
 
         {/* Curved Bottom Effect */}
       </header>
@@ -65,7 +75,7 @@ function Digitalcertificate() {
           {/* Video Content */}
           <div className="col-md-5 text-md-end mt-4 mt-md-0 mb-2">
             <img
-              src="https://via.placeholder.com/600x400.png?text=Dummy+Image"
+              src={img1}
               alt="Dummy"
               className="img-fluid rounded"
             />
@@ -81,8 +91,8 @@ function Digitalcertificate() {
                 className="img-fluid rounded"
                 height={365}
                 width={504}
-                src="https://via.placeholder.com/600x500.png?text=Dummy+Image"
-                alt="AGENT511 REACH Orchestration"
+                src={img2}
+                alt="Cloudstry Technologies"
               />
             </div>
 
@@ -221,8 +231,8 @@ function Digitalcertificate() {
                 className="img-fluid rounded"
                 height={365}
                 width={504}
-                src="https://via.placeholder.com/600x400.png?text=Dummy+Image"
-                alt="AGENT511 REACH Orchestration"
+                src={img3}
+                alt="Cloudstry Technologies"
               />
             </div>
           </div>
@@ -248,7 +258,6 @@ function Digitalcertificate() {
             <div className="col-xl-4 col-lg-4 col-md-6 col-sm-12 mb-3">
               <div className="card bg-light py-4 rounded">
                 <div className="card-body text-primary">
-
                   <h3 className="fs-1 fw-bold   mb-0">100+</h3>
                   <p className="fs-5">countries</p>
                 </div>
@@ -283,8 +292,8 @@ function Digitalcertificate() {
           >
             <img
               className="img-fluid"
-              src="https://via.placeholder.com/600x400.png?text=Dummy+Image"
-              alt="Macbook"
+              src={img4}
+              alt="Cloudstry Technologies"
             />
           </div>
           <div className="col-md-6 mb-5">
@@ -370,8 +379,8 @@ function Digitalcertificate() {
           >
             <img
               className="img-fluid"
-              src="https://via.placeholder.com/600x400.png?text=Dummy+Image"
-              alt="Macbook"
+              src={img5}
+              alt="Cloudstry Technologies"
             />
           </div>
           <div className="col-md-6 mb-5">
@@ -472,8 +481,8 @@ function Digitalcertificate() {
             >
               <img
                 className="img-fluid"
-                src="https://via.placeholder.com/600x400.png?text=Dummy+Image"
-                alt="Macbook"
+                src={img6}
+                alt="Cloudstry Technologies"
               />
             </div>
             <div className="col-md-6 mb-5">
@@ -522,8 +531,8 @@ function Digitalcertificate() {
             <div className="col-md-6 mb-4 mb-md-0">
               <img
                 className="img-fluid rounded"
-                src="https://via.placeholder.com/600x400.png?text=Dummy+Image"
-                alt="Industry"
+                src={img7}
+                alt="Cloudstry Technologies"
                 style={{ width: "100%", height: "auto" }}
               />
             </div>
@@ -574,8 +583,8 @@ function Digitalcertificate() {
             >
               <img
                 className="img-fluid"
-                src="https://via.placeholder.com/600x400.png?text=Dummy+Image"
-                alt="Macbook"
+                src={img8}
+                alt="Cloudstry Technologies"
               />
             </div>
             <div className="col-md-6 mb-5">
@@ -658,8 +667,8 @@ function Digitalcertificate() {
             <div className="col-md-6 mb-4 mb-md-0">
               <img
                 className="img-fluid rounded"
-                src="https://via.placeholder.com/600x400.png?text=Dummy+Image"
-                alt="Industry"
+                src={img9}
+                alt="Cloudstry Technologies"
                 style={{ width: "100%", height: "auto" }}
               />
             </div>
@@ -674,7 +683,8 @@ function Digitalcertificate() {
                 className="h5 mb-2 "
                 style={{ fontWeight: 400, color: "#353535" }}
               >
-                Identify and celebrate skills and achievements, and explore your employee network for specific talents and qualifications.
+                Identify and celebrate skills and achievements, and explore your
+                employee network for specific talents and qualifications.
               </p>
 
               <ul className="list-unstyled mt-4">

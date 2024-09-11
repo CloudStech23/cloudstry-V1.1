@@ -1,5 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import img1 from './Images/isc.main.jpg'
+import img2 from './Images/isc.second.jpg'
+import img3 from './Images/isc.third.jpg'
+import img4 from './Images/isc.fourth.jpg'
+import img5 from './Images/isc.fifth.jpg'
 
 function Consultancy() {
   return (
@@ -65,8 +70,8 @@ function Consultancy() {
           {/* Video Content */}
           <div className="col-md-5 text-md-end mt-4 mt-md-0 mb-2">
             <img
-              src="https://via.placeholder.com/600x400.png?text=Dummy+Image"
-              alt="Dummy"
+              src={img1}
+              alt="Cloudstry Technologies"
               className="img-fluid rounded"
             />
           </div>
@@ -81,8 +86,8 @@ function Consultancy() {
                 className="img-fluid rounded"
                 height={365}
                 width={504}
-                src="https://via.placeholder.com/600x500.png?text=Dummy+Image"
-                alt="AGENT511 REACH Orchestration"
+                src={img2}
+                alt="Cloudstry Technologies"
               />
             </div>
 
@@ -256,8 +261,8 @@ function Consultancy() {
                 className="img-fluid rounded"
                 height={365}
                 width={504}
-                src="https://via.placeholder.com/600x400.png?text=Dummy+Image"
-                alt="AGENT511 REACH Orchestration"
+                src={img3}
+                alt="Cloudstry Technologies"
               />
             </div>
           </div>
@@ -273,8 +278,8 @@ function Consultancy() {
                 className="img-fluid rounded"
                 height={365}
                 width={504}
-                src="https://via.placeholder.com/600x500.png?text=Dummy+Image"
-                alt="AGENT511 REACH Orchestration"
+                src={img4}
+                alt="Cloudstry Technologies"
               />
             </div>
 
@@ -377,7 +382,7 @@ function Consultancy() {
         <div
           style={{
             position: "absolute",
-            top: "19%",
+            top: "25%",
             right: "30%",
             transform: "translateX(50%)",
             background: "#efefef",
@@ -402,8 +407,8 @@ function Consultancy() {
         <div style={{ position: "relative", zIndex: 1, width: "100%" }}>
           <img
             className="img-fluid rounded"
-            src='https://via.placeholder.com/600x500.png?text=Dummy+Image'
-            alt="Industry"
+            src={img5}
+            alt="Cloudstry Technologies"
             style={{ width: "800px", height: "500px" }}
           />
         </div>

@@ -1,16 +1,20 @@
 import React from "react";
 import "./Common.css";
 import { Link } from "react-router-dom";
+import img1 from './Images/tpl.First.jpg'
+import img2 from './Images/tpl.challages.jpeg'
+import img3 from './Images/tpl.innovative.jpg'
+import img4 from './Images/tpl.government.jpg'
 
 function Thirdpartylogistic() {
   return (
     <div>
-      <header className="bg-white text-white text-center py-5 position-relative">
+      <header className="bg-white text-white py-5 position-relative">
         {/* Navigation Path */}
-        <div className="position-absolute top-0 p-3 start-0 ms-3 mt-2 fs-5 fw-bold">
-          <span className="small text-primary ">
+        <div className="position-absolute top-0 p-3 start-0 ms-3 mt-2 fw-bold">
+          <span className="text-primary">
             <a href="#" className="">
-              What we Do ?
+              What we Do?
             </a>{" "}
             / Product Platform / 3PL Solutions
           </span>
@@ -18,19 +22,20 @@ function Thirdpartylogistic() {
 
         {/* Header Content */}
         <div className="container mt-5 text-primary">
-          <h1 className="display-6">
-            Streamlined 3PL Solutions for Modern Supply Chains
-          </h1>
-          <p className="lead">
-            3PL solutions are transforming supply chain management. By
-            outsourcing logistics to third-party providers, businesses can
-            streamline operations, cut costs, and deliver better service
-          </p>
+          <div className="row">
+            <div className="col-12 col-md-6">
+              <h1 className="">3PL Solutions for Modern Supply Chains</h1>
+              <p className="lead">
+                Transforming supply chain management by outsourcing logistics to
+                third-party providers for streamlined operations and cost
+                savings.
+              </p>
+            </div>
+          </div>
         </div>
-
-        {/* Curved Bottom Effect */}
       </header>
-      <div className="container my-5 py-5">
+
+      <div className="container py-5">
         <div className="row align-items-center justify-content-between bg-light p-4 rounded-3 position-relative">
           {/* Text Content */}
           <div className="col-md-5 mt-4 mb-2">
@@ -61,8 +66,8 @@ function Thirdpartylogistic() {
           {/* Video Content */}
           <div className="col-md-5 text-md-end mt-4 mt-md-0 mb-2">
             <img
-              src="https://via.placeholder.com/600x400.png?text=Dummy+Image"
-              alt="Dummy"
+              src={img1}
+              alt="Cloudstry Technologies"
               className="img-fluid rounded"
             />
           </div>
@@ -77,8 +82,8 @@ function Thirdpartylogistic() {
                 className="img-fluid rounded"
                 height={365}
                 width={504}
-                src="https://via.placeholder.com/600x500.png?text=Dummy+Image"
-                alt="AGENT511 REACH Orchestration"
+                src={img2}
+                alt="Cloudstry Technologies"
               />
             </div>
 
@@ -245,8 +250,8 @@ function Thirdpartylogistic() {
                 className="img-fluid rounded"
                 height={365}
                 width={504}
-                src="https://via.placeholder.com/600x400.png?text=Dummy+Image"
-                alt="AGENT511 REACH Orchestration"
+                src={img3}
+                alt=" Cloudstry Technologies"
               />
             </div>
           </div>
@@ -347,8 +352,8 @@ function Thirdpartylogistic() {
           {/* Video Content */}
           <div className="col-md-5 text-md-end mt-4 mt-md-0 mb-2">
             <img
-              src="https://via.placeholder.com/600x400.png?text=Dummy+Image"
-              alt="Dummy"
+              src={img4}
+              alt="Cloudstry Technologies"
               className="img-fluid rounded"
             />
           </div>

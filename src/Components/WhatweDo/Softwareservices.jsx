@@ -2,7 +2,11 @@ import React from "react";
 import img1 from "../Images/software ai.png";
 import cloud from "../Images/cloud.jpg";
 import ai from "../Images/ai.jpg";
-import web3 from "../Images/blockchain.jpg";
+import devops from "./Images/ss.devops.jpg"
+import soft1 from "./Images/ss.challange.png"
+import soft2 from "./Images/ss.solution.jpg"
+import soft3 from "./Images/ss.fourth.jpg"
+import soft4 from "./Images/ss.last.jpg"
 import "./Software.css";
 // import '../WhatweDo/Product_Platfrom/Common.css'
 import { Link } from "react-router-dom";
@@ -168,7 +172,7 @@ function Softwareservices() {
                 <div className="blackblur">
                   <img
                     className="card-img-top img-fluid"
-                    src={web3}
+                    src={devops}
                     alt="AI"
                     style={{ height: "14rem" }}
                   />
@@ -274,7 +278,7 @@ function Softwareservices() {
           </div>
           <div className="col-md-6">
             <img
-              src="path-to-your-image.jpg"
+              src={soft1}
               alt="Software Challenges"
               className="img-fluid"
             />
@@ -289,8 +293,9 @@ function Softwareservices() {
         >
           <img
             className="img-fluid"
-            src="https://via.placeholder.com/600x400.png?text=Dummy+Image"
-            alt="Macbook"
+            src={soft2}
+            alt="Cloudstry Technologies"
+            style={{width:'39rem'}}
           />
         </div>
         <div className="col-md-6 mb-5">
@@ -421,7 +426,7 @@ function Softwareservices() {
           </div>
           <div className="col-md-6 mb-5">
             <img
-              src="path/to/your/image.jpg"
+              src={soft3}
               alt="Software Services"
               className="img-fluid"
             />
@@ -468,7 +473,7 @@ function Softwareservices() {
         <div style={{ position: "relative", zIndex: 1, width: "100%" }}>
           <img
             className="img-fluid rounded"
-            src={ai}
+            src={soft4}
             alt="Industry"
             style={{ width: "800px", height: "500px" }}
           />
