@@ -5,10 +5,9 @@ import "../Menubar/Menubar.css";
 import React,{useState} from "react";
 // import { Link, useLocation } from "react-router-dom";
 
-function Menudrawer(handleOpen) {
+function Menudrawer({open,onClose}) {
 
    
-    const [open, setOpen] = useState(false);
     const [openSubmenu, setOpenSubmenu] = useState(null);
     const [openSubsubmenu, setOpenSubsubmenu] = useState(null);
     const placement = 'Right'
@@ -36,7 +35,7 @@ function Menudrawer(handleOpen) {
               size="19.5rem"
               placement={placement}
               open={open}
-              onClose={() => setOpen(false)}
+              onClose={onClose}
               className="bg-dark"
               // style={{ backgroundColor: "#3b82f6" }}
             >

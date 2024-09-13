@@ -22,7 +22,7 @@ function Menubar() {
     setOpenSubsubmenu(openSubsubmenu === submenu ? null : submenu); // Toggle nested submenu
   };
 
-  const drawerClass = open ? "drawer-enter-active" : "drawer-exit-active";
+  // const drawerClass = open ? "drawer-enter-active" : "drawer-exit-active";
 
   const handleOpen = () => {
     setOpen(true);
@@ -80,7 +80,7 @@ function Menubar() {
             <i className="fa fa-bars" aria-hidden="true"></i>
           </button>
 
-          <Menudrawer onClick={handleOpen} />
+          <Menudrawer open={open} onClose={() => setOpen(false)}/>
 
           <div
             className="collapse navbar-collapse"
