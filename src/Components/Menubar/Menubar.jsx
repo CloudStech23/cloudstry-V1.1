@@ -62,7 +62,7 @@ function Menubar() {
       <div className="fluid-container">
         <nav
           className="navbar navbar-expand-lg navbar-dark justify-content-between text-white"
-          style={{ background: "#3b82f6", height: "4.4rem" }}
+          style={{ background: "#1236d0", height: "4.4rem" }}
         >
           <Link className=" navbar-brand mx-3" to="/">
             <img
@@ -124,8 +124,8 @@ function Menubar() {
                   className={`dropdown-menu mt-0 w-100 shadow border-outline-success ${
                     openDropdown === "dropdown2" ? "show" : ""
                   }`}
-                  aria-labelledby="navbarDropdown2"
-                  style={{ height: "320px" }}
+                  aria-labelledby="navbarDropdown2" 
+                  style={{ height: "320px" ,background:'#1236d0' }}
                 >
                   <div className="row mt-3">
                     <div className="col-lg-3" style={{ marginLeft: "5%" }}>
@@ -457,7 +457,7 @@ function Menubar() {
                     openDropdown === "dropdown3" ? "show" : ""
                   }`}
                   aria-labelledby="navbarDropdown3"
-                  style={{ height: "320px" }}
+                  style={{ height: "320px",background:'#1236d0' }}
                 >
                   <div className="row mt-3">
                     <div className="col-lg-3" style={{ marginLeft: "5%" }}>

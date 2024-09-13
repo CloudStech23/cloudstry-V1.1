@@ -216,8 +216,8 @@ function Softwareservices() {
         <div className="row mb-5">
           <div className="col-md-6">
             <h3
-              className="text-primary display-6 mb-3"
-              style={{ fontWeight: 300 }}
+              className="text-primary display-7 fw-normal mb-3"
+               
             >
               What are the Essential Software Challenges ?
             </h3>
@@ -300,12 +300,12 @@ function Softwareservices() {
         </div>
         <div className="col-md-6 mb-5">
           <h3
-            className="text-primary display-6 mb-3"
+            className="text-primary display-7 mb-3"
             style={{ fontWeight: 300 }}
           >
             Tailored Software Solutions for Diverse Needs
           </h3>
-          <p className="h5 mb-2" style={{ fontWeight: 400, color: "#353535" }}>
+          <p className=" mb-2 fw-normal text-muted" style={{ color: "#353535" }}>
             Cloudstry's software solutions address a range of business
             requirements with precision and expertise. Our offerings ensure that
             technology seamlessly integrates with organizational goals and
@@ -364,14 +364,14 @@ function Softwareservices() {
         <div className="row align-items-center">
           <div className="col-md-6 mb-5">
             <h3
-              className="text-primary display-6 mb-3"
-              style={{ fontWeight: 300 }}
+              className="text-primary fw-normal display-7 mb-3"
+              
             >
               Why Choose Our Software Services?
             </h3>
             <p
-              className="h5 mb-2"
-              style={{ fontWeight: 400, color: "#353535" }}
+              className="text-muted mb-2"
+               
             >
               Cloudstry stands out with its dedication to delivering exceptional
               software solutions tailored to diverse business needs. Discover

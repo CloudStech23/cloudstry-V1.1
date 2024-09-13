@@ -1,38 +1,62 @@
 import React from "react";
 import "../Product_Platfrom/Common.css";
 import { Link } from "react-router-dom";
-import img1 from './Images/dc.main.png'
-import img2 from './Images/dc.main.jpg'
-import img3 from './Images/dc.second.jpg'
-import img4 from './Images/dc.issue.png'
-import img5 from './Images/dc.earner.png'
-import img6 from './Images/dc.Universities.png'
-import img7 from './Images/dc.Training-providers.png'
-import img8 from './Images/dc.Associations.png'
-import img9 from './Images/dc.Corporations.png'
+import img1 from "./Images/dc.main.png";
+import img2 from "./Images/dc.main.jpg";
+import img3 from "./Images/dc.second.jpg";
+import img4 from "./Images/dc.issue.png";
+import img5 from "./Images/dc.earner.png";
+import img6 from "./Images/dc.Universities.png";
+import img7 from "./Images/dc.Training-providers.png";
+import img8 from "./Images/dc.Associations.png";
+import img9 from "./Images/dc.Corporations.png";
+import bg from "./../../Images/bg1.jpg"
 
 function Digitalcertificate() {
   return (
     <div>
-            <header className="bg-white text-white text-center py-5 position-relative">
+      <header
+        className="text-white text-center py-5 position-relative"
+        style={{ height: "19rem", overflow: "hidden" }}
+      >
+        {/* Background Image */}
+        <img
+          src={bg}
+          alt="Background"
+          className="position-absolute top-0 start-0 w-100 h-100 object-fit-cover"
+          style={{ zIndex: 1,objectFit:'cover' }}
+        />
+
+        {/* Black Overlay */}
+        <div
+          className="position-absolute top-0 start-0 w-100 h-100"
+          style={{ backgroundColor: "rgb(16 11 11 / 42%)", zIndex: 2 }}
+        ></div>
+
         {/* Navigation Path */}
         <div
-          className="position-absolute top-0 p-4 start-0 ms-0 mt-0  fs-5 fw-bold"
-          style={{ zIndex: 100 }}
+          className="position-absolute top-0 p-4 start-0 ms-0 mt-0 fs-5 fw-bold"
+          style={{ zIndex: 3 }}
         >
-          <span className="small text-primary">
-            <a href="/" className="">
+          <span className="small text-white">
+            <a href="/" className="text-white">
               What we Do ? /
             </a>{" "}
-            <a href="#">IT Solutions</a> / Software Services
+            <a href="#" className="text-white">IT Solutions</a> / Software Services
           </span>
         </div>
 
         {/* Header Content */}
-        <div className="container text-primary mt-5">
-          <h1 className="display-6">Digital Certificates: Revolutionizing Credential Management</h1>
+        <div
+          className="container text-white mt-5"
+          style={{ zIndex: 3, position: "relative" }}
+        >
+          <h1 className="display-6">
+            Digital Certificates: Revolutionizing Credential Management
+          </h1>
           <p className="lead">
-          Secure, scalable, and future-ready digital certificates for streamlined operations and enhanced verification processes.
+            Secure, scalable, and future-ready digital certificates for
+            streamlined operations and enhanced verification processes.
           </p>
         </div>
       </header>
@@ -68,11 +92,7 @@ function Digitalcertificate() {
 
           {/* Video Content */}
           <div className="col-md-5 text-md-end mt-4 mt-md-0 mb-2">
-            <img
-              src={img1}
-              alt="Dummy"
-              className="img-fluid rounded"
-            />
+            <img src={img1} alt="Dummy" className="img-fluid rounded" />
           </div>
         </div>
       </div>
@@ -279,7 +299,7 @@ function Digitalcertificate() {
             How it Functions
           </h3>
         </div>
-        <div className="row gx-0">
+        <div className="row gx-4">
           <div
             className="col-xl-6 col-lg-5 d-flex justify-content-left align-items-center"
             style={{ marginBottom: "5rem" }}
@@ -293,13 +313,12 @@ function Digitalcertificate() {
           <div className="col-md-6 mb-5">
             <h3
               className="text-primary display-6 mb-3"
-              style={{ fontWeight: 300 }}
-            >
+             >
               For Issuers
             </h3>
             <p
-              className="h5 mb-2 "
-              style={{ fontWeight: 400, color: "#353535" }}
+              className="text-muted mb-2 "
+              
             >
               Transition from paper certificates to digital solutions with ease.
               Cloudstry Tech’s digital certificates streamline the creation,
@@ -385,8 +404,8 @@ function Digitalcertificate() {
               For Earners
             </h3>
             <p
-              className="h5 mb-2 "
-              style={{ fontWeight: 400, color: "#353535" }}
+              className="text-muted mb-2 "
+           
             >
               Become part of a worldwide network of professionals enhancing
               their learning and development with Cloudstry Tech’s innovative

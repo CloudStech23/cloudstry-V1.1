@@ -167,9 +167,8 @@ function Staffingsolution() {
           </div>
           <div className="col-md-6 mb-5">
             <h3
-              className="text-primary display-6 mb-3"
-              style={{ fontWeight: 300 }}
-            >
+              className="text-primary fw-light display-7 mb-3"
+             >
               How We Addresses GCC-Specific Challenges ?
             </h3>
             <p className="h5 mb-2 text-muted" style={{ fontWeight: 300 }}>
@@ -241,9 +240,8 @@ function Staffingsolution() {
         <div className="row gx-5 mt-5">
           <div className="col-md-6 mb-5">
             <h3
-              className="text-primary display-6 mb-3"
-              style={{ fontWeight: 300 }}
-            >
+              className="text-primary display-7 fw-light mb-3"
+             >
               Why Choose Us for Your GCC Staffing Needs?
             </h3>
             <p className="h5 mb-2 text-muted" style={{ fontWeight: 300 }}>
@@ -325,8 +323,8 @@ function Staffingsolution() {
           </div>
           <div className="col-md-6 mb-5 mt-5">
             <h3
-              className="text-primary display-6 mb-3"
-              style={{ fontWeight: 300 }}
+              className="text-primary fw-light display-7 mb-3"
+  
             >
               Key Benefits of Our Staffing Solutions
             </h3>
@@ -385,7 +383,7 @@ function Staffingsolution() {
         <div className="container">
           <div className="row align-items-center">
             <div className="col-md-6">
-              <h3 className="text-primary fw-bold mb-3">
+              <h3 className="text-primary fw-light mb-3">
                 Optimizing Talent Management with Precision
               </h3>
 

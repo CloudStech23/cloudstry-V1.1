@@ -6,9 +6,9 @@ import staffingimage from "../Images/staffing sol.jpg";
 import softwareimage from "../Images/software services (2).jpg";
 import strategyimage from "../Images/it strategy.jpg";
 import { Link } from "react-router-dom";
-import government from '../Images/government.jpeg'
-import education from '../Images/Education.jpg'
-import '../Landing/Landing.css'
+import government from "../Images/government.jpeg";
+import education from "../Images/Education.jpg";
+import "../Landing/Landing.css";
 
 function Landing() {
   return (
@@ -38,9 +38,12 @@ function Landing() {
     <div>
       <Slick />
 
-      <section className="" style={{ marginTop: "-2.5rem" }}>
+      <section className="" style={{ marginTop: "5rem" }}>
         <div className="container">
           <div className="row g-4">
+            <h1 className="fw-normal text-danger text-center mb-4 mt-5">
+              Services We Offer{" "}
+            </h1>
             <div className="col-12 col-md-4 service-card  ">
               <div className="position-relative shadow">
                 <img
@@ -56,10 +59,11 @@ function Landing() {
 
                 <div className="card-body bg-light p-4">
                   <h4 className="card-title text-primary mb-3">
-                    Expertly connect top talent with the right opportunities for
-                    your business needs.
+                    Comprehensive Staffing Solutions for Global Captive Centers
                   </h4>
-                  <Link to='/Staffing-Solution' className="btn btn-danger">Read More</Link>
+                  <Link to="/Staffing-Solution" className="btn btn-danger">
+                    Read More
+                  </Link>
                 </div>
               </div>
             </div>
@@ -78,10 +82,11 @@ function Landing() {
 
                 <div className="card-body bg-light p-4">
                   <h4 className="card-title text-primary mb-3">
-                    Deliver tailored digital solutions to streamline and enhance
-                    your operational processes.
+                    End-to-End Software Solutions and Support Services
                   </h4>
-                  <Link to='/Software-Services' className="btn btn-danger">Read More</Link>
+                  <Link to="/Software-Services" className="btn btn-danger">
+                    Read More
+                  </Link>
                 </div>
               </div>
             </div>
@@ -100,10 +105,15 @@ function Landing() {
 
                 <div className="card-body bg-light p-4">
                   <h4 className="card-title text-primary mb-3">
-                    some short Guide your technology investments with strategic
-                    insights for business.
+                    Holistic IT Strategy Consulting for Seamless Digital
+                    Transformation
                   </h4>
-                  <Link to='/IT-Strategy-Consultancy' className="btn btn-danger">Read More</Link>
+                  <Link
+                    to="/IT-Strategy-Consultancy"
+                    className="btn btn-danger"
+                  >
+                    Read More
+                  </Link>
                 </div>
               </div>
             </div>
@@ -112,86 +122,83 @@ function Landing() {
       </section>
 
       <section
-        className="image-video-text-interactivity is-reverse fadeInUp mb-5"
-        style={{ marginTop: "7rem" }}
+        className="image-video-text-interactivity is-reverse fadeInUp "
+        style={{ marginTop: "9rem", marginBottom: "6rem" }}
       >
-        <div className="container px-3 px-md-5">
+        <div className="container px-3 px-md-5 mt-5">
           <div className="row align-items-center">
-            <div className="col-md-6 mb-4 mb-md-0 d-flex justify-content-center">
+            <div className="col-md-6 mb-5 mb-md-0">
               <img
-                className="img-fluid rounded-3"
-                // sizes="(max-width: 768px) 100vw, 768px"
-                src={mapimage}
-                alt="Efficient Solutions"
-                style={{ marginTop: "-3px" }}
+                className="img-fluid rounded"
+                height={365}
+                width={532}
+                src={staffingimage}
+                alt="AGENT511 REACH Orchestration"
               />
             </div>
             <div className="col-md-6">
-              <h3 className="fw-light fs-3 text-primary mb-2">
-                Empowering Communities with Cloudstry Technologies
+              <h3 className="fw-normal fs-3 text-primary mb-4">
+                Why Cloudstry Technologies ?
               </h3>
-              <p className="mb-4 text-muted" style={{ lineHeight: 1.375 }}>
-                Our focus is on delivering exceptional services and long-term
-                business support, ensuring that our solutions not only meet your
-                needs today but also drive success for the future.
+              <p className="mb-4" style={{ lineHeight: 1.375 }}>
+                At Cloudstry Technologies, we recognize your business’s unique
+                challenges and provide tailored solutions for sustainable growth
+                and operational excellence. Our advanced technologies enhance
+                efficiency, improve customer engagement, and position you at the
+                industry’s forefront
               </p>
-              <ul className="list-unstyled">
-                <li className="mb-2 d-flex align-items-start">
+              <ul className="list-unstyled mb-4">
+                <li className="ps-4 mb-3">
                   <i
                     className="fa fa-check-circle text-primary me-2"
                     style={{ marginTop: "6px" }}
                   ></i>
-                  <span className="d-inline">
-                    <span className="fw-bold">Community Engagement:</span>
-                    Building a collaborative network that connects our clients,
-                    partners, and team members.
-                  </span>
+                  Targeted Communication: Deliver precise, timely messages
+                  across multiple channels, ensuring your customers stay
+                  informed and engaged.
                 </li>
-                <li className="mb-2 d-flex align-items-start">
+                <li className="ps-4 mb-3">
                   <i
                     className="fa fa-check-circle text-primary me-2"
                     style={{ marginTop: "6px" }}
                   ></i>
-                  <span className="d-inline ">
-                    <span className="fw-bold">Unparalleled Services:</span>
-                    Offering tailored solutions that address your unique
-                    challenges and opportunities.
-                  </span>
+                  Seamless Integration: Our solutions integrate effortlessly
+                  with your existing systems, maximizing efficiency and
+                  minimizing disruption.
                 </li>
-                <li className="mb-2 d-flex align-items-start">
+                <li className="ps-4 mb-3">
                   <i
                     className="fa fa-check-circle text-primary me-2"
                     style={{ marginTop: "6px" }}
                   ></i>
-                  <span className="d-inline">
-                    <span className="fw-bold">Long-Term Support:</span>
-                    Providing ongoing assistance to help your business grow and
-                    thrive over time.
-                  </span>
+                  Advanced Automation: Streamline operations with intelligent
+                  automation, reducing manual effort and increasing accuracy.
                 </li>
-                <li className="mb-2 d-flex align-items-start">
+                <li className="ps-4 mb-3">
                   <i
                     className="fa fa-check-circle text-primary me-2"
                     style={{ marginTop: "6px" }}
                   ></i>
-                  <span className="d-inline">
-                    <span className="fw-bold">Innovative Solutions:</span>
-                    Leveraging the latest technologies to deliver better, more
-                    efficient outcomes.
-                  </span>
+                  Robust Security: Protect sensitive data with our
+                  state-of-the-art security features, ensuring compliance and
+                  peace of mind.
                 </li>
-                <li className="mb-2 d-flex align-items-start">
+                <li className="ps-4">
                   <i
                     className="fa fa-check-circle text-primary me-2"
                     style={{ marginTop: "6px" }}
                   ></i>
-                  <span className="d-inline">
-                    <span className="fw-bold">Strategic Partnerships:</span>
-                    Creating strong alliances to enhance the value and impact of
-                    our services.
-                  </span>
+                  Scalable Solutions: As your business grows, our solutions grow
+                  with you, adapting to your evolving needs without compromising
+                  performance.
                 </li>
               </ul>
+              <Link
+                className="btn btn-danger text-white rounded-pill"
+                to="/Support"
+              >
+                Connect with us
+              </Link>
             </div>
           </div>
         </div>
@@ -345,73 +352,191 @@ function Landing() {
         </div>
       </div>
 
-      <section className="image-video-text-interactivity is-reverse fadeInUp mb-5">
-  <div className="container px-3 px-md-5">
-    <div className="row align-items-center">
-    <div className="col-md-6 mb-5 mb-md-0">
+      <section
+        className="image-video-text-interactivity is-reverse fadeInUp"
+        style={{ marginBottom: "5rem" }}
+      >
+        <div className="container px-3 px-md-5">
+          <div className="row align-items-center">
+            <div className="col-md-6 mb-4 mb-md-0 d-flex justify-content-center">
+              <img
+                className="img-fluid rounded-3"
+                src={mapimage}
+                alt="Global Presence"
+                style={{ marginTop: "-3px" }}
+              />
+            </div>
+            <div className="col-md-6">
+              <h3 className="fw-light fs-2 text-primary mb-3">
+                Our Global Presence
+              </h3>
+              <p className="mb-4 text-muted" style={{ lineHeight: 1.375 }}>
+                Cloudstry Technologies operates on a global scale, providing
+                exceptional services and solutions that cater to diverse
+                markets. Our international footprint ensures that we deliver
+                impactful results and long-term support across various regions.
+              </p>
+              <ul className="list-unstyled">
+                <li className="mb-2 d-flex align-items-start">
+                  <i
+                    className="fa fa-check-circle text-primary me-2"
+                    style={{ marginTop: "6px" }}
+                  ></i>
+                  <span className="d-inline">
+                    <span className="fw-bold">Global Network:</span>
+                    Connecting clients and partners worldwide through a
+                    collaborative network.
+                  </span>
+                </li>
+                <li className="mb-2 d-flex align-items-start">
+                  <i
+                    className="fa fa-check-circle text-primary me-2"
+                    style={{ marginTop: "6px" }}
+                  ></i>
+                  <span className="d-inline">
+                    <span className="fw-bold">Localized Expertise:</span>
+                    Providing tailored solutions that address specific regional
+                    challenges and opportunities.
+                  </span>
+                </li>
+                <li className="mb-2 d-flex align-items-start">
+                  <i
+                    className="fa fa-check-circle text-primary me-2"
+                    style={{ marginTop: "6px" }}
+                  ></i>
+                  <span className="d-inline">
+                    <span className="fw-bold">Ongoing Global Support:</span>
+                    Ensuring continuous assistance to support international
+                    business growth and success.
+                  </span>
+                </li>
+                <li className="mb-2 d-flex align-items-start">
+                  <i
+                    className="fa fa-check-circle text-primary me-2"
+                    style={{ marginTop: "6px" }}
+                  ></i>
+                  <span className="d-inline">
+                    <span className="fw-bold">
+                      Innovative Global Solutions:
+                    </span>
+                    Utilizing cutting-edge technologies to deliver effective and
+                    efficient outcomes worldwide.
+                  </span>
+                </li>
+                <li className="mb-2 d-flex align-items-start">
+                  <i
+                    className="fa fa-check-circle text-primary me-2"
+                    style={{ marginTop: "6px" }}
+                  ></i>
+                  <span className="d-inline">
+                    <span className="fw-bold">
+                      Strategic International Partnerships:
+                    </span>
+                    Forming alliances to enhance the value and impact of our
+                    global services.
+                  </span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        className="image-video-text-interactivity fadeInUp mb-5"
+        style={{ marginTop: "5rem" }}
+      >
+        <div className="container mt-5">
+          <div className="row align-items-center">
+            {/* Text Section */}
+            <div className="col-md-6">
+              <h3 className="text-primary fw-normal mb-3">
+                Strategic Solutions for Business Growth
+              </h3>
+              <p className="text-muted">
+                At Cloudstry Technologies, we understand the unique challenges
+                your business faces and offer solutions designed to drive
+                sustainable growth and operational excellence. Our advanced
+                technologies are tailored to meet your specific needs, enabling
+                you to enhance efficiency, improve customer engagement, and
+                secure your place at the forefront of your industry.
+              </p>
+              <ul className="list-unstyled">
+                <li className="mb-2 d-flex align-items-start">
+                  <i
+                    className="fa fa-check-circle text-primary me-2"
+                    style={{ marginTop: "6px" }}
+                  ></i>
+                  <span className="d-inline">
+                    <strong>Targeted Communication:</strong> Deliver precise,
+                    timely messages across multiple channels, ensuring your
+                    customers stay informed and engaged.
+                  </span>
+                </li>
+                <li className="mb-2 d-flex align-items-start">
+                  <i
+                    className="fa fa-check-circle text-primary me-2"
+                    style={{ marginTop: "6px" }}
+                  ></i>
+                  <span className="d-inline">
+                    <strong>Seamless Integration:</strong> Our solutions
+                    integrate effortlessly with your existing systems,
+                    maximizing efficiency and minimizing disruption.
+                  </span>
+                </li>
+                <li className="mb-2 d-flex align-items-start">
+                  <i
+                    className="fa fa-check-circle text-primary me-2"
+                    style={{ marginTop: "6px" }}
+                  ></i>
+                  <span className="d-inline">
+                    <strong>Advanced Automation:</strong> Streamline operations
+                    with intelligent automation, reducing manual effort and
+                    increasing accuracy.
+                  </span>
+                </li>
+                <li className="mb-2 d-flex align-items-start">
+                  <i
+                    className="fa fa-check-circle text-primary me-2"
+                    style={{ marginTop: "6px" }}
+                  ></i>
+                  <span className="d-inline">
+                    <strong>Robust Security:</strong> Protect sensitive data
+                    with our state-of-the-art security features, ensuring
+                    compliance and peace of mind.
+                  </span>
+                </li>
+                <li className="mb-2 d-flex align-items-start">
+                  <i
+                    className="fa fa-check-circle text-primary me-2"
+                    style={{ marginTop: "6px" }}
+                  ></i>
+                  <span className="d-inline">
+                    <strong>Scalable Solutions:</strong> As your business grows,
+                    our solutions grow with you, adapting to your evolving needs
+                    without compromising performance.
+                  </span>
+                </li>
+              </ul>
+              <p className="text-muted">
+                Our solutions are designed to help you scale effectively,
+                ensuring you remain competitive and innovative.
+              </p>
+            </div>
+
+            {/* Image Section */}
+            <div className="col-md-6 text-md-end mt-4 mt-md-0">
               <img
                 className="img-fluid rounded"
                 height={365}
-                width={532}
+                width={504}
                 src={staffingimage}
-                alt="AGENT511 REACH Orchestration"
+                alt="Image"
               />
             </div>
-      <div className="col-md-6">
-        <h3 className="fw-semibold fs-3 text-primary mb-4">
-          Strategic Solutions for Business Growth
-        </h3>
-        <p className="mb-4" style={{ lineHeight: 1.375 }}>
-            At Cloudstry Technologies, we understand the unique challenges your business faces and offer solutions designed to drive sustainable growth and operational excellence. Our advanced technologies are tailored to meet your specific needs, enabling you to enhance efficiency, improve customer engagement, and secure your place at the forefront of your industry.
-        </p>
-        <ul className="list-unstyled mb-4">
-          <li className="ps-4 mb-3">
-            <i
-              className="fa fa-check-circle text-primary me-2"
-              style={{ marginTop: "6px" }}
-            ></i>
-            Targeted Communication: Deliver precise, timely messages across multiple channels, ensuring your customers stay informed and engaged.
-          </li>
-          <li className="ps-4 mb-3">
-            <i
-              className="fa fa-check-circle text-primary me-2"
-              style={{ marginTop: "6px" }}
-            ></i>
-            Seamless Integration: Our solutions integrate effortlessly with your existing systems, maximizing efficiency and minimizing disruption.
-          </li>
-          <li className="ps-4 mb-3">
-            <i
-              className="fa fa-check-circle text-primary me-2"
-              style={{ marginTop: "6px" }}
-            ></i>
-            Advanced Automation: Streamline operations with intelligent automation, reducing manual effort and increasing accuracy.
-          </li>
-          <li className="ps-4 mb-3">
-            <i
-              className="fa fa-check-circle text-primary me-2"
-              style={{ marginTop: "6px" }}
-            ></i>
-            Robust Security: Protect sensitive data with our state-of-the-art security features, ensuring compliance and peace of mind.
-          </li>
-          <li className="ps-4">
-            <i
-              className="fa fa-check-circle text-primary me-2"
-              style={{ marginTop: "6px" }}
-            ></i>
-            Scalable Solutions: As your business grows, our solutions grow with you, adapting to your evolving needs without compromising performance.
-          </li>
-        </ul>
-        <Link
-          className="btn btn-danger text-white rounded-pill"
-          to='/Support'
-        >
-          Connect with us
-        </Link>
-      </div>
-    </div>
-  </div>
-</section>
-
+          </div>
+        </div>
+      </section>
     </div>
   );
 }
