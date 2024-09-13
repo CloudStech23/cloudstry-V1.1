@@ -1,6 +1,7 @@
 import React from "react";
 import { Data } from "./Teamdata";
 import { MDBIcon } from "mdb-react-ui-kit";
+ 
 
 function Team() {
   return (
@@ -64,6 +65,7 @@ function Team() {
           </section>
         </div>
       </section>
+      
     </div>
   );
 }
