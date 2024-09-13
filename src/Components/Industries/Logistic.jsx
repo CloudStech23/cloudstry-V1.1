@@ -1,36 +1,55 @@
 import React from "react";
 import "./Common.css";
 import { Link } from "react-router-dom";
+import bg3 from "../Images/bg3.jpg"
+import img1 from "./Images/gov.first.jpg"
+import img2 from "./Images/lg.second.jpg"
+import img3 from "./Images/gov.seven.jpg"
 
 function Logistic() {
   return (
     <div>
-      <header className="bg-white text-white text-center py-5 position-relative">
+      <header
+        className="text-white text-center py-5 position-relative"
+        style={{ height: "19rem", overflow: "hidden" }}
+      >
+        {/* Background Image */}
+        <img
+          src={bg3} // Replace 'bg' with the actual path to your background image
+          alt="Background"
+          className="position-absolute top-0 start-0 w-100 h-100 object-fit-cover"
+          style={{ zIndex: 1, objectFit: "cover" }}
+        />
+
+        {/* Black Overlay */}
+        <div
+          className="position-absolute top-0 start-0 w-100 h-100"
+          style={{ backgroundColor: "rgb(16 11 11 / 42%)", zIndex: 2 }}
+        ></div>
+
         {/* Navigation Path */}
         <div
-          className="position-absolute top-0 start-0 ms-0 mt-0 p-4 fs-5 fw-bold"
-          style={{ zIndex: 100 }}
+          className="position-absolute top-0 p-4 start-0 ms-0 mt-0 fs-5 fw-bold"
+          style={{ zIndex: 3 }}
         >
-          <span className="small text-primary">
-            <a href="#" className="">
+          <span className="small text-white">
+            <a href="/" className="text-white">
               Industries We Serve /
             </a>{" "}
-            <a href="#">Logistic</a>
+            / Logistic
           </span>
         </div>
 
         {/* Header Content */}
-        <div className="container text-primary mt-5">
+        <div
+          className="container text-white mt-5"
+          style={{ zIndex: 3, position: "relative" }}
+        >
           <h1 className="display-6">
-            {" "}
-            Revolutionizing Logistics: Smart Solutions for a Complex Supply
-            Chain
+          Revolutionizing Logistics: Smart Solutions for a Complex Supply Chain
           </h1>
           <p className="lead">
-            Streamline your supply chain with our innovative technology
-            solutions. From real-time tracking to AI-driven optimization,
-            discover how we enhance efficiency, reduce costs, and drive success
-            in the logistics sector
+          Streamline your supply chain with our innovative technology solutions. From real-time tracking to AI-driven optimization, discover how we enhance efficiency, reduce costs, and drive success in the logistics sector
           </p>
         </div>
       </header>
@@ -47,8 +66,8 @@ function Logistic() {
                 className="img-fluid rounded"
                 height={365}
                 width={504}
-                src="https://via.placeholder.com/600x500.png?text=Dummy+Image"
-                alt="AGENT511 REACH Orchestration"
+                src={img1}
+                alt= "Logistic"
               />
             </div>
 
@@ -214,8 +233,8 @@ function Logistic() {
                 className="img-fluid rounded"
                 height={365}
                 width={504}
-                src="https://via.placeholder.com/600x400.png?text=Dummy+Image"
-                alt="AGENT511 REACH Orchestration"
+                src={img2}
+                alt=" "
               />
             </div>
           </div>
@@ -234,8 +253,8 @@ function Logistic() {
                 className="img-fluid rounded"
                 height={365}
                 width={504}
-                src="https://via.placeholder.com/600x500.png?text=Dummy+Image"
-                alt="AGENT511 REACH Orchestration"
+                src={img3}
+                alt=" "
               />
             </div>
 
@@ -339,7 +358,7 @@ function Logistic() {
                   </h3>
                   <div className="media-body ml-3">
                     <div className="blockquote border-0 p-0">
-                      <p className="font-italic lead">
+                      <p className="font-italic text-muted fs-6">
                         Our 3PL (Third-Party Logistics) services offer
                         comprehensive solutions for warehousing, distribution,
                         and fulfillment, optimizing your supply chain and

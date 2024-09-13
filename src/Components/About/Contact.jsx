@@ -13,6 +13,7 @@ import {
 import '../Support/common.css';
 import { Link } from "react-router-dom";
 
+
 function Contact() {
   return (
     <div className="bg-light">
@@ -92,7 +93,7 @@ function Contact() {
           >
             <iframe
               className="img-fluid rounded"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1749.0953774268444!2d75.85336953860701!3d22.71752119484717!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3962fda0a27f50f5%3A0xdd375ab4fdfb3f50!2sRajwada%2C%20Indore%2C%20Madhya%20Pradesh%20452004!5e1!3m2!1sen!2sin!4v1724217605410!5m2!1sen!2sin"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10766.089125020088!2d75.89070371602931!3d22.743313081862663!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3962fd56808efd65%3A0xa677b30c9d4e0f76!2sIncuspaze%20Coworking%20Space%20in%20Indore%20Princes&#39;%20Business%20Skyline!5e0!3m2!1sen!2sin!4v1726254608660!5m2!1sen!2sin"
               alt="map"
               style={{ width: "800px", height: "500px", border: 0 }}
               allowFullScreen
@@ -125,14 +126,14 @@ function Contact() {
                       <i className="bi bi-telephone"></i>
                     </div>
                     <h2 className="h5">Phone</h2>
-                    <p className="mb-0">+123 456 7890</p>
+                    <p className="mb-0">+91 7313683823</p>
                   </div>
                   <div className="col mb-md-0 h-100">
                     <div className="feature bg-primary bg-gradient text-white rounded-3 mb-3">
                       <i className="bi bi-envelope"></i>
                     </div>
                     <h2 className="h5">Email</h2>
-                    <p className="mb-0">support@yourdomain.com</p>
+                    <p className="mb-0">hr@cloudstrytech.com</p>
                   </div>
                   <div className="col h-100">
                     <div className="feature bg-primary bg-gradient text-white rounded-3 mb-3">
@@ -140,8 +141,8 @@ function Contact() {
                     </div>
                     <h2 className="h5">Address</h2>
                     <p className="mb-0">
-                      123 Business Avenue, Suite 100,<br />
-                      City, State, ZIP Code, Country
+                    4th floor, Apollo Premier, Vijay Nagar Square, Vijay Nagar, <br />
+                     Indore, Madhya Pradesh 452001
                     </p>
                   </div>
                   <div className="col h-100">

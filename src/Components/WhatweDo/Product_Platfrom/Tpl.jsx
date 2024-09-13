@@ -2,36 +2,59 @@ import React from "react";
 import "./Common.css";
 import { Link } from "react-router-dom";
 import img1 from './Images/tpl.First.jpg'
-import img2 from './Images/tpl.challages.jpeg'
+import img2 from './Images/tpl.challages.jpg'
 import img3 from './Images/tpl.innovative.jpg'
 import img4 from './Images/tpl.government.jpg'
+import bg from "./../../Images/bg1.jpg";
 
 function Thirdpartylogistic() {
   return (
     <div>
-      <header className="bg-white text-white py-5 position-relative">
+      <header
+        className="text-white text-center py-5 position-relative"
+        style={{ height: "19rem", overflow: "hidden" }}
+      >
+        {/* Background Image */}
+        <img
+          src={bg}
+          alt="Background"
+          className="position-absolute top-0 start-0 w-100 h-100 object-fit-cover"
+          style={{ zIndex: 1, objectFit: "cover" }}
+        />
+
+        {/* Black Overlay */}
+        <div
+          className="position-absolute top-0 start-0 w-100 h-100"
+          style={{ backgroundColor: "rgb(16 11 11 / 42%)", zIndex: 2 }}
+        ></div>
+
         {/* Navigation Path */}
-        <div className="position-absolute top-0 p-3 start-0 ms-3 mt-2 fw-bold">
-          <span className="text-primary">
-            <a href="#" className="">
-              What we Do?
+        <div
+          className="position-absolute top-0 p-4 start-0 ms-0 mt-0 fs-5 fw-bold"
+          style={{ zIndex: 3 }}
+        >
+          <span className="small text-white">
+            <a href="/" className="text-white">
+              What we Do ? /
             </a>{" "}
-            / Product Platform / 3PL Solutions
+            <a href="#" className="text-white">
+            Product Platform
+            </a>{" "}
+            /  3PL Solutions
           </span>
         </div>
 
         {/* Header Content */}
-        <div className="container mt-5 text-primary">
-          <div className="row">
-            <div className="col-12 col-md-6">
-              <h1 className="">3PL Solutions for Modern Supply Chains</h1>
-              <p className="lead">
-                Transforming supply chain management by outsourcing logistics to
-                third-party providers for streamlined operations and cost
-                savings.
-              </p>
-            </div>
-          </div>
+        <div
+          className="container text-white mt-5"
+          style={{ zIndex: 3, position: "relative" }}
+        >
+          <h1 className="display-6">
+          3PL Solutions for Modern Supply Chains
+          </h1>
+          <p className="lead">
+          Transforming supply chain management by outsourcing logistics to third-party providers for streamlined operations and cost savings.
+          </p>
         </div>
       </header>
 

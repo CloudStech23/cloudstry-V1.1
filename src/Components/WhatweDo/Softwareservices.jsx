@@ -2,11 +2,12 @@ import React from "react";
 import img1 from "../Images/software ai.png";
 import cloud from "../Images/cloud.jpg";
 import ai from "../Images/ai.jpg";
-import devops from "./Images/ss.devops.jpg"
-import soft1 from "./Images/ss.challange.png"
-import soft2 from "./Images/ss.solution.jpg"
-import soft3 from "./Images/ss.fourth.jpg"
-import soft4 from "./Images/ss.last.jpg"
+import devops from "./Images/ss.devops.jpg";
+import soft1 from "./Images/ss.challange.png";
+import soft2 from "./Images/ss.solution.jpg";
+import soft3 from "./Images/ss.fourth.jpg";
+import soft4 from "./Images/ss.last.jpg";
+import bg2 from "../Images/bg2.jpg";
 import "./Software.css";
 // import '../WhatweDo/Product_Platfrom/Common.css'
 import { Link } from "react-router-dom";
@@ -14,22 +15,45 @@ import { Link } from "react-router-dom";
 function Softwareservices() {
   return (
     <div className="bg-light">
-      <header className="bg-white text-white text-center py-5 position-relative">
+      <header
+        className="text-white text-center py-5 position-relative"
+        style={{ height: "19rem", overflow: "hidden" }}
+      >
+        {/* Background Image */}
+        <img
+          src={bg2}
+          alt="Background"
+          className="position-absolute top-0 start-0 w-100 h-100 object-fit-cover"
+          style={{ zIndex: 1, objectFit: "cover" }}
+        />
+
+        {/* Black Overlay */}
+        <div
+          className="position-absolute top-0 start-0 w-100 h-100"
+          style={{ backgroundColor: "rgb(16 11 11 / 42%)", zIndex: 2 }}
+        ></div>
+
         {/* Navigation Path */}
         <div
-          className="position-absolute top-0 p-4 start-0 ms-0 mt-0  fs-5 fw-bold"
-          style={{ zIndex: 100 }}
+          className="position-absolute top-0 p-4 start-0 ms-0 mt-0 fs-5 fw-bold"
+          style={{ zIndex: 3 }}
         >
-          <span className="small text-primary">
-            <a href="/" className="">
+          <span className="small text-white">
+            <a href="/" className="text-white">
               What we Do ? /
             </a>{" "}
-            <a href="#">IT Solutions</a> / Software Services
+            <a href="#" className="text-white">
+              IT Solutions
+            </a>{" "}
+            / Software Services
           </span>
         </div>
 
         {/* Header Content */}
-        <div className="container text-primary mt-5">
+        <div
+          className="container text-white mt-5"
+          style={{ zIndex: 3, position: "relative" }}
+        >
           <h1 className="display-6">Comprehensive Software Services</h1>
           <p className="lead">
             Customized software solutions are essential for businesses
@@ -215,10 +239,7 @@ function Softwareservices() {
       <div className="container">
         <div className="row mb-5">
           <div className="col-md-6">
-            <h3
-              className="text-primary display-7 fw-normal mb-3"
-               
-            >
+            <h3 className="text-primary display-7 fw-normal mb-3">
               What are the Essential Software Challenges ?
             </h3>
             <ul className="list-unstyled mt-4">
@@ -277,11 +298,7 @@ function Softwareservices() {
             </ul>
           </div>
           <div className="col-md-6">
-            <img
-              src={soft1}
-              alt="Software Challenges"
-              className="img-fluid"
-            />
+            <img src={soft1} alt="Software Challenges" className="img-fluid" />
           </div>
         </div>
       </div>
@@ -295,7 +312,7 @@ function Softwareservices() {
             className="img-fluid"
             src={soft2}
             alt="Cloudstry Technologies"
-            style={{width:'39rem'}}
+            style={{ width: "39rem" }}
           />
         </div>
         <div className="col-md-6 mb-5">
@@ -305,7 +322,10 @@ function Softwareservices() {
           >
             Tailored Software Solutions for Diverse Needs
           </h3>
-          <p className=" mb-2 fw-normal text-muted" style={{ color: "#353535" }}>
+          <p
+            className=" mb-2 fw-normal text-muted"
+            style={{ color: "#353535" }}
+          >
             Cloudstry's software solutions address a range of business
             requirements with precision and expertise. Our offerings ensure that
             technology seamlessly integrates with organizational goals and
@@ -363,16 +383,10 @@ function Softwareservices() {
       <div className="container">
         <div className="row align-items-center">
           <div className="col-md-6 mb-5">
-            <h3
-              className="text-primary fw-normal display-7 mb-3"
-              
-            >
+            <h3 className="text-primary fw-normal display-7 mb-3">
               Why Choose Our Software Services?
             </h3>
-            <p
-              className="text-muted mb-2"
-               
-            >
+            <p className="text-muted mb-2">
               Cloudstry stands out with its dedication to delivering exceptional
               software solutions tailored to diverse business needs. Discover
               the advantages of choosing our services.
@@ -425,11 +439,7 @@ function Softwareservices() {
             </ul>
           </div>
           <div className="col-md-6 mb-5">
-            <img
-              src={soft3}
-              alt="Software Services"
-              className="img-fluid"
-            />
+            <img src={soft3} alt="Software Services" className="img-fluid" />
           </div>
         </div>
       </div>

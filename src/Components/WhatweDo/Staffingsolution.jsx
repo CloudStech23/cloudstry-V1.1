@@ -3,38 +3,51 @@ import img1 from "./Images/st.first.jpg";
 import img2 from "./Images/st.second.jpg";
 import img3 from "./Images/st.third.jpg";
 import img4 from "./Images/st.fourth.jpg";
- 
-
+import bg from "../Images/bg1.jpg";
 
 function Staffingsolution() {
   return (
     <div>
-      <header className="bg-white text-white text-center py-5 position-relative">
+      <header
+        className="text-white text-center py-5 position-relative"
+        style={{ height: "19rem", overflow: "hidden" }}
+      >
+        {/* Background Image */}
+        <img
+          src={bg} // Replace 'bg' with the actual path to your background image
+          alt="Background"
+          className="position-absolute top-0 start-0 w-100 h-100 object-fit-cover"
+          style={{ zIndex: 1, objectFit: "cover" }}
+        />
+
+        {/* Black Overlay */}
+        <div
+          className="position-absolute top-0 start-0 w-100 h-100"
+          style={{ backgroundColor: "rgb(16 11 11 / 42%)", zIndex: 2 }}
+        ></div>
+
         {/* Navigation Path */}
         <div
-          className="position-absolute top-0 start-0 ms-0 mt-0 p-4 fs-5 fw-bold"
-          style={{ zIndex: 100 }}
+          className="position-absolute top-0 p-4 start-0 ms-0 mt-0 fs-5 fw-bold"
+          style={{ zIndex: 3 }}
         >
-          <span className="small text-primary">
-            <a href="/" className="">
+          <span className="small text-white">
+            <a href="/" className="text-white">
               What we Do ? /
             </a>{" "}
-            Staffing Solution
+            
+            / Staffing Solution
           </span>
         </div>
 
         {/* Header Content */}
-        <div className="container text-primary mt-5 ">
-          <h1 className="display-6">
-            {" "}
-            Comprehensive Staffing Solutions for Global Captive Centers
-          </h1>
+        <div
+          className="container text-white mt-5"
+          style={{ zIndex: 3, position: "relative" }}
+        >
+          <h1 className="display-6">Comprehensive Staffing Solutions for Global Captive Centers</h1>
           <p className="lead">
-            Global Captive Centers (GCCs) are operational units established by
-            multinational corporations in offshore locations to perform critical
-            business functions. These centers often handle back-office
-            processes, IT services, customer support, and other specialized
-            functions.
+          Global Captive Centers (GCCs) are operational units established by multinational corporations in offshore locations to perform critical business functions. These centers often handle back-office processes, IT services, customer support, and other specialized functions.
           </p>
         </div>
       </header>
@@ -162,13 +175,11 @@ function Staffingsolution() {
               className="img-fluid"
               src={img1}
               alt="Addressing GCC Challenges"
-              style={{width:'39rem'}}
+              style={{ width: "39rem" }}
             />
           </div>
           <div className="col-md-6 mb-5">
-            <h3
-              className="text-primary fw-light display-7 mb-3"
-             >
+            <h3 className="text-primary fw-light display-7 mb-3">
               How We Addresses GCC-Specific Challenges ?
             </h3>
             <p className="h5 mb-2 text-muted" style={{ fontWeight: 300 }}>
@@ -239,9 +250,7 @@ function Staffingsolution() {
 
         <div className="row gx-5 mt-5">
           <div className="col-md-6 mb-5">
-            <h3
-              className="text-primary display-7 fw-light mb-3"
-             >
+            <h3 className="text-primary display-7 fw-light mb-3">
               Why Choose Us for Your GCC Staffing Needs?
             </h3>
             <p className="h5 mb-2 text-muted" style={{ fontWeight: 300 }}>
@@ -299,13 +308,9 @@ function Staffingsolution() {
 
           <div
             className="col-xl-6 col-lg-5 d-flex justify-content-right align-items-center"
-            style={{ marginBottom: "5rem" ,  }}
+            style={{ marginBottom: "5rem" }}
           >
-            <img
-              className="img-fluid"
-              src={img2}
-              alt="GCC Staffing"
-            />
+            <img className="img-fluid" src={img2} alt="GCC Staffing" />
           </div>
         </div>
 
@@ -318,14 +323,11 @@ function Staffingsolution() {
               className="img-fluid"
               src={img3}
               alt="Key Benefits"
-              style={{width:'39rem'}}
+              style={{ width: "39rem" }}
             />
           </div>
           <div className="col-md-6 mb-5 mt-5">
-            <h3
-              className="text-primary fw-light display-7 mb-3"
-  
-            >
+            <h3 className="text-primary fw-light display-7 mb-3">
               Key Benefits of Our Staffing Solutions
             </h3>
 

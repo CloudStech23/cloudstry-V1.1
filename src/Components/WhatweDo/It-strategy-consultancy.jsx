@@ -1,27 +1,54 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import img1 from './Images/isc.main.jpg'
-import img2 from './Images/isc.second.jpg'
-import img3 from './Images/isc.third.jpg'
-import img4 from './Images/isc.fourth.jpg'
-import img5 from './Images/isc.fifth.jpg'
+import img1 from "./Images/isc.main.jpg";
+import img2 from "./Images/isc.second.jpg";
+import img3 from "./Images/isc.third.jpg";
+import img4 from "./Images/isc.fourth.jpg";
+import img5 from "./Images/isc.fifth.jpg";
+import bg2 from "../Images/bg2.jpg";
 
 function Consultancy() {
   return (
     <div>
-      <header className="bg-white text-white text-center py-5 position-relative">
+      <header
+        className="text-white text-center py-5 position-relative"
+        style={{ height: "19rem", overflow: "hidden" }}
+      >
+        {/* Background Image */}
+        <img
+          src={bg2}
+          alt="Background"
+          className="position-absolute top-0 start-0 w-100 h-100 object-fit-cover"
+          style={{ zIndex: 1, objectFit: "cover" }}
+        />
+
+        {/* Black Overlay */}
+        <div
+          className="position-absolute top-0 start-0 w-100 h-100"
+          style={{ backgroundColor: "rgb(16 11 11 / 42%)", zIndex: 2 }}
+        ></div>
+
         {/* Navigation Path */}
-        <div className="position-absolute top-0 p-3 start-0 ms-3 mt-2 fs-5 fw-bold">
-          <span className="small text-primary ">
-            <a href="#" className="">
-              What we Do ?
+        <div
+          className="position-absolute top-0 p-4 start-0 ms-0 mt-0 fs-5 fw-bold"
+          style={{ zIndex: 3 }}
+        >
+          <span className="small text-white">
+            <a href="/" className="text-white">
+              What we Do ? /
             </a>{" "}
-            / IT Solutions / IT strategy Consultancy
+            <a href="#" className="text-white">
+              IT Solutions
+            </a>{" "}
+            / IT Strategy Consultancy
           </span>
         </div>
 
         {/* Header Content */}
-        <div className="container mt-5 text-primary">
+        <div
+          className="container text-white mt-5"
+          style={{ zIndex: 3, position: "relative" }}
+        >
           <h1 className="display-6">
             Comprehensive IT Strategy Consultancy for Digital Transformation
           </h1>
@@ -29,12 +56,11 @@ function Consultancy() {
             The digital transformation landscape is ever-evolving, and
             businesses need robust IT strategies to stay competitive. Our IT
             Strategy Consultancy focuses on aligning technology with business
-            objectives to drive growth, efficiency, and innovation
+            objectives to drive growth, efficiency, and innovation.
           </p>
         </div>
-
-        {/* Curved Bottom Effect */}
       </header>
+
       <div className="container my-5 py-5">
         <div className="row align-items-center justify-content-between bg-light p-4 rounded-3 position-relative">
           {/* Text Content */}
@@ -394,10 +420,15 @@ function Consultancy() {
           className="col-lg-6"
         >
           <h3 className="text-primary font-weight-bold mb-4">
-          Why Cloudstry for IT Strategy Consultancy?
+            Why Cloudstry for IT Strategy Consultancy?
           </h3>
           <p>
-          Through partnerships with leading technology providers, we offer access to cutting-edge tools and platforms that drive efficiency. Our commitment to ongoing support and consultation ensures that your IT systems grow with your organization, delivering sustained value. Additionally, we focus on cost-effective, scalable solutions that meet your current needs while preparing you for future expansion
+            Through partnerships with leading technology providers, we offer
+            access to cutting-edge tools and platforms that drive efficiency.
+            Our commitment to ongoing support and consultation ensures that your
+            IT systems grow with your organization, delivering sustained value.
+            Additionally, we focus on cost-effective, scalable solutions that
+            meet your current needs while preparing you for future expansion
           </p>
           <Link className="btn btn-danger text-white" to="/Support">
             Start With Us

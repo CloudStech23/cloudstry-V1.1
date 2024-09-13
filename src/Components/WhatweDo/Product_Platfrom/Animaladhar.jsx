@@ -5,35 +5,57 @@ import { Link } from "react-router-dom";
 import img1 from './Images/petadhar.main.jpg'
 import img2 from './Images/petadhar.second.jpeg'
 import img3 from './Images/petadhar.third.jpg'
+import bg from "./../../Images/bg1.jpg";
 
 function Petadhar() {
   return (
     <div>
         {/* Navigation Path */}
-      <header className="bg-white text-white py-3 position-relative">
-        <div className="position-absolute top-0  start-0 ms-3 mt-2 fw-bold">
-          <span className="text-primary">
-            <a href="#" className="">
-              What we Do?
+        <header
+        className="text-white text-center py-5 position-relative"
+        style={{ height: "19rem", overflow: "hidden" }}
+      >
+        {/* Background Image */}
+        <img
+          src={bg}
+          alt="Background"
+          className="position-absolute top-0 start-0 w-100 h-100 object-fit-cover"
+          style={{ zIndex: 1, objectFit: "cover" }}
+        />
+
+        {/* Black Overlay */}
+        <div
+          className="position-absolute top-0 start-0 w-100 h-100"
+          style={{ backgroundColor: "rgb(16 11 11 / 42%)", zIndex: 2 }}
+        ></div>
+
+        {/* Navigation Path */}
+        <div
+          className="position-absolute top-0 p-4 start-0 ms-0 mt-0 fs-5 fw-bold"
+          style={{ zIndex: 3 }}
+        >
+          <span className="small text-white">
+            <a href="/" className="text-white">
+              What we Do ? /
             </a>{" "}
-            / Product Platform / Pet Aadhar
+            <a href="#" className="text-white">
+            Product Platform 
+            </a>{" "}
+            /Pet Aadhar
           </span>
         </div>
 
         {/* Header Content */}
-        <div className="container mt-5 text-primary">
-          <div className="row">
-            <div className="col-12 col-md-6">
-              <h1 className="">
-                Pet Aadhar: Revolutionizing Pet Identification
-              </h1>
-              <p className="lead">
-                Secure, scalable, and future-ready identification for pets.
-                Simplifying pet management and tracking with advanced
-                technology.
-              </p>
-            </div>
-          </div>
+        <div
+          className="container text-white mt-5"
+          style={{ zIndex: 3, position: "relative" }}
+        >
+          <h1 className="display-6">
+          Pet Aadhar: Revolutionizing Pet Identification
+          </h1>
+          <p className="lead">
+          Secure, scalable, and future-ready identification for pets. Simplifying pet management and tracking with advanced technology.
+          </p>
         </div>
       </header>
 
@@ -174,7 +196,7 @@ function Petadhar() {
               <div className="col-lg-10 col-xl-8 mx-auto">
                 <div
                   className="p-5 bg-white shadow  rounded"
-                  style={{ width: "100%", height: "27rem" }}
+                  style={{ width: "100%", height: "22rem" }}
                 >
                   <Carousel interval={2000} controls={true} indicators={false}>
                     <Carousel.Item>
@@ -184,7 +206,7 @@ function Petadhar() {
                         </h3>
                         <div className="media-body ml-3">
                           <div className="blockquote border-0 p-0">
-                            <p className="font-italic lead">
+                            <p className="font-italic text-muted fs-6">
                               Effective health management is essential for
                               maintaining livestock well-being and preventing
                               disease spread, yet traditional methods often lead
@@ -212,7 +234,7 @@ function Petadhar() {
                         </h3>
                         <div className="media-body ml-3">
                           <div className="blockquote border-0 p-0">
-                            <p className="font-italic lead">
+                            <p className="font-italic text-muted fs-6">
                               The central government is developing a major
                               database related to livestock information across
                               the country. The aim is to enhance farmers' income
@@ -243,7 +265,7 @@ function Petadhar() {
                         </h3>
                         <div className="media-body ml-3">
                           <div className="blockquote border-0 p-0">
-                            <p className="font lead">
+                            <p className="font text-muted fs-6">
                               <br />
                               The Bihar government's Directorate of Dairy
                               Development has introduced the 'Pashu Bima Yojana'

@@ -68,7 +68,7 @@ function Menubar() {
             <img
               src={pagelogo}
               className="img-fluid logoimg"
-              style={{ height: "4rem" }}
+              
               alt="Logo"
             />
           </Link>

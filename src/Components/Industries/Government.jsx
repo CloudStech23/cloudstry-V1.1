@@ -7,34 +7,52 @@ import img4 from "./Images/gov.fourth.jpg";
 import img5 from "./Images/gov.five.jpeg";
 import img6 from "./Images/gov.six.jpg";
 import img7 from "./Images/gov.seven.jpg";
+import digital from './Images/gov.digital.jpg'
+import bg3 from "../Images/bg3.jpg"
 
 function Government() {
   return (
     <div>
-      <header className="bg-white text-white text-center py-5 position-relative">
+     <header
+        className="text-white text-center py-5 position-relative"
+        style={{ height: "19rem", overflow: "hidden" }}
+      >
+        {/* Background Image */}
+        <img
+          src={bg3} // Replace 'bg' with the actual path to your background image
+          alt="Background"
+          className="position-absolute top-0 start-0 w-100 h-100 object-fit-cover"
+          style={{ zIndex: 1, objectFit: "cover" }}
+        />
+
+        {/* Black Overlay */}
+        <div
+          className="position-absolute top-0 start-0 w-100 h-100"
+          style={{ backgroundColor: "rgb(16 11 11 / 42%)", zIndex: 2 }}
+        ></div>
+
         {/* Navigation Path */}
         <div
-          className="position-absolute top-0 start-0 ms-0 mt-0 p-4 fs-5 fw-bold"
-          style={{ zIndex: 100 }}
+          className="position-absolute top-0 p-4 start-0 ms-0 mt-0 fs-5 fw-bold"
+          style={{ zIndex: 3 }}
         >
-          <span className="small text-primary">
-            <a href="#" className="">
-              Industries We Serve /
+          <span className="small text-white">
+            <a href="/" className="text-white">
+            Industries We Serve /
             </a>{" "}
-            <a href="#">Government</a>
+            
+            / Government
           </span>
         </div>
 
         {/* Header Content */}
-        <div className="container text-primary mt-5">
-          <h1 className="display-6">
-            Transforming Governance: Innovation Meets Efficiency
-          </h1>
+        <div
+          className="container text-white mt-5"
+          style={{ zIndex: 3, position: "relative" }}
+        >
+          <h1 className="display-6">Transforming Governance: Innovation Meets Efficiency</h1>
           <p className="lead">
-            Empowering government agencies with cutting-edge technology to
-            overcome challenges, enhance transparency, and deliver exceptional
-            public services. Discover how our solutions drive progress and
-            efficiency in the public sector
+          Empowering government agencies with cutting-edge technology to overcome challenges, enhance transparency, and deliver exceptional public services. Discover how our solutions drive progress and efficiency in the public sector
           </p>
         </div>
       </header>
@@ -342,7 +360,7 @@ function Government() {
                 className="img-fluid rounded"
                 height={365}
                 width={504}
-                src={img6}
+                src={digital}
                 alt="Image"
               />
             </div>
@@ -447,7 +465,7 @@ function Government() {
           <div class="row gx-5">
             <div class="col-lg-4 mb-5">
               <div class="card h-100 shadow border-0">
-                <img class="card-img-top" src={img2} alt="..." />
+                <img class="card-img-top img-fluid" style={{height:'220px'}} src={img2} alt="..." />
                 <div class="card-body p-4">
                   <Link
                     class="text-decoration-none link-dark stretched-link"
@@ -475,7 +493,7 @@ function Government() {
             </div>
             <div class="col-lg-4 mb-5">
               <div class="card h-100 shadow border-0">
-                <img class="card-img-top" src={img3} alt="..." />
+                <img class="card-img-top img-fluid" style={{height:'220px'}} src={img3} alt="..." />
                 <div class="card-body p-4">
                   <Link
                     class="text-decoration-none link-dark stretched-link"
@@ -502,7 +520,7 @@ function Government() {
             </div>
             <div class="col-lg-4 mb-5">
               <div class="card h-100 shadow border-0">
-                <img class="card-img-top" src={img4} alt="..." />
+                <img class="card-img-top img-fluid" style={{height:'220px'}} src={img1} alt="..." />
                 <div class="card-body p-4">
                   <Link
                     class="text-decoration-none link-dark stretched-link"

@@ -191,3 +191,11 @@
   font-weight: 400;
   border-bottom: 2px solid white;
 }
+.logoimg{
+  height: 4.05rem !important;
+}
+@media only screen and (max-width: 600px) {
+  .logoimg{
+    height: 3rem !important;
+  }
+}

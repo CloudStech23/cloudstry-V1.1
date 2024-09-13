@@ -1,25 +1,49 @@
 import React from "react";
 import img1 from "./Images/hi.first.jpg";
+import img2 from "./Images/hi.second.jpg";
+// import img3 from "./Images/hi.third.jpg";
+import img3 from "./Images/hi.fourth.jpg";
+import bg3 from "../Images/bg3.jpg";
 
 function Healthinsurance() {
   return (
     <div>
-      <header className="bg-white text-white text-center py-5 position-relative">
+      <header
+        className="text-white text-center py-5 position-relative"
+        style={{ height: "19rem", overflow: "hidden" }}
+      >
+        {/* Background Image */}
+        <img
+          src={bg3} // Replace 'bg' with the actual path to your background image
+          alt="Background"
+          className="position-absolute top-0 start-0 w-100 h-100 object-fit-cover"
+          style={{ zIndex: 1, objectFit: "cover" }}
+        />
+
+        {/* Black Overlay */}
+        <div
+          className="position-absolute top-0 start-0 w-100 h-100"
+          style={{ backgroundColor: "rgb(16 11 11 / 42%)", zIndex: 2 }}
+        ></div>
+
         {/* Navigation Path */}
         <div
-          className="position-absolute top-0 start-0 ms-0 mt-0 p-4 fs-5 fw-bold"
-          style={{ zIndex: 100 }}
+          className="position-absolute top-0 p-4 start-0 ms-0 mt-0 fs-5 fw-bold"
+          style={{ zIndex: 3 }}
         >
-          <span className="small text-primary">
-            <a href="#" className="">
+          <span className="small text-white">
+            <a href="/" className="text-white">
               Industries We Serve /
             </a>{" "}
-            <a href="#">Health Insurance</a>
+            / Health Insurance
           </span>
         </div>
 
         {/* Header Content */}
-        <div className="container text-primary mt-5">
+        <div
+          className="container text-white mt-5"
+          style={{ zIndex: 3, position: "relative" }}
+        >
           <h1 className="display-6">
             Transforming Healthcare Insurance: Innovation for a Better Tomorrow
           </h1>
@@ -58,7 +82,7 @@ function Healthinsurance() {
           </div>
 
        
-          <div className="col-md-5 text-md-end mt-4 mt-md-0 mb-2">
+          <div className="col-md-5 text-md-end mt-4 mt-md-0 mb-2"> 
             <img
               src="https://via.placeholder.com/600x400.png?text=Dummy+Image"
               alt="Dummy"
@@ -80,8 +104,8 @@ function Healthinsurance() {
                 className="img-fluid rounded"
                 height={365}
                 width={504}
-                src="https://via.placeholder.com/600x400.png?text=Dummy+Image"
-                alt="AGENT511 REACH Orchestration"
+                src={img1}
+                alt="Healthcare"
               />
             </div>
 
@@ -91,7 +115,8 @@ function Healthinsurance() {
                 Major Challenges in the Healthcare Insurance Sector
               </h3>
               <p className="text-muted">
-              The healthcare insurance industry faces several significant challenges that impact its operations and service delivery
+                The healthcare insurance industry faces several significant
+                challenges that impact its operations and service delivery
               </p>
 
               <ul className="list-unstyled">
@@ -158,7 +183,6 @@ function Healthinsurance() {
                   </span>
                 </li>
               </ul>
-              
             </div>
           </div>
         </div>
@@ -171,15 +195,15 @@ function Healthinsurance() {
         <div className="container mt-5">
           <div className="row align-items-center">
             {/* Image Section */}
-            
 
             {/* Text Section */}
             <div className="col-md-6">
               <h3 className="text-primary fw-normal mb-3">
                 How Digitalization is Solving Healthcare Insurance Challenges
               </h3>
-              <p  className="text-muted">
-              Digitalization is addressing these challenges through various innovative solutions
+              <p className="text-muted">
+                Digitalization is addressing these challenges through various
+                innovative solutions
               </p>
               <ul className="list-unstyled">
                 <li className="mb-2 d-flex align-items-start">
@@ -255,8 +279,8 @@ function Healthinsurance() {
                 className="img-fluid rounded"
                 height={365}
                 width={504}
-                src="https://via.placeholder.com/600x400.png?text=Dummy+Image"
-                alt="AGENT511 REACH Orchestration"
+                src={img2}
+                alt="Healthcare "
               />
             </div>
           </div>
@@ -275,7 +299,7 @@ function Healthinsurance() {
                 className="img-fluid rounded"
                 height={365}
                 width={504}
-                src="https://via.placeholder.com/600x400.png?text=Dummy+Image"
+                src={img3}
                 alt="AGENT511 REACH Orchestration"
               />
             </div>
@@ -286,7 +310,8 @@ function Healthinsurance() {
                 How We Can Support the Healthcare Insurance Sector
               </h3>
               <p className="text-muted">
-              Cloudstry Tech provides a range of IT solutions tailored to the healthcare insurance industry’s needs
+                Cloudstry Tech provides a range of IT solutions tailored to the
+                healthcare insurance industry’s needs
               </p>
 
               <ul className="list-unstyled">
@@ -373,11 +398,15 @@ function Healthinsurance() {
                 <div className="media feature-card">
                   <h3 className="text-primary fw-normal mb-3">
                     Digital Claims Management Platform
-                  <p className="text-muted h6 mt-2">Cloudstry Tech is excited to be part of several transformative projects that are significantly impacting the healthcare sector</p>
+                    <p className="text-muted h6 mt-2">
+                      Cloudstry Tech is excited to be part of several
+                      transformative projects that are significantly impacting
+                      the healthcare sector
+                    </p>
                   </h3>
                   <div className="media-body ml-3">
                     <div className="blockquote border-0 p-0">
-                      <p className="font-italic lead">
+                      <p className="font-italic text-muted fs-6">
                         Our flagship product, the Digital Claims Management
                         Platform, revolutionizes how insurance claims are
                         processed. By automating workflows and integrating

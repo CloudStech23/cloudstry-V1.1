@@ -1,13 +1,14 @@
 import React from "react";
 import Slick from "./Slick";
-import mapimage from "../Images/world-map-with-rag-dolls.png";
+import mapimage from "../Images/cloudstry map.png";
 // import '../Landing/Landing.css'
 import staffingimage from "../Images/staffing sol.jpg";
-import softwareimage from "../Images/software services (2).jpg";
+import softwareimage from "../Images/software services.jpg";
 import strategyimage from "../Images/it strategy.jpg";
 import { Link } from "react-router-dom";
 import government from "../Images/government.jpeg";
 import education from "../Images/Education.jpg";
+import whycs from '../Images/why cs.jpg'
 import "../Landing/Landing.css";
 
 function Landing() {
@@ -132,7 +133,7 @@ function Landing() {
                 className="img-fluid rounded"
                 height={365}
                 width={532}
-                src={staffingimage}
+                src={whycs}
                 alt="AGENT511 REACH Orchestration"
               />
             </div>
@@ -383,7 +384,7 @@ function Landing() {
                     style={{ marginTop: "6px" }}
                   ></i>
                   <span className="d-inline">
-                    <span className="fw-bold">Global Network:</span>
+                    <span className="fw-bold">Global Network: </span>
                     Connecting clients and partners worldwide through a
                     collaborative network.
                   </span>
@@ -394,7 +395,7 @@ function Landing() {
                     style={{ marginTop: "6px" }}
                   ></i>
                   <span className="d-inline">
-                    <span className="fw-bold">Localized Expertise:</span>
+                    <span className="fw-bold">Localized Expertise: </span>
                     Providing tailored solutions that address specific regional
                     challenges and opportunities.
                   </span>
@@ -405,7 +406,7 @@ function Landing() {
                     style={{ marginTop: "6px" }}
                   ></i>
                   <span className="d-inline">
-                    <span className="fw-bold">Ongoing Global Support:</span>
+                    <span className="fw-bold">Ongoing Global Support: </span>
                     Ensuring continuous assistance to support international
                     business growth and success.
                   </span>
@@ -417,9 +418,8 @@ function Landing() {
                   ></i>
                   <span className="d-inline">
                     <span className="fw-bold">
-                      Innovative Global Solutions:
-                    </span>
-                    Utilizing cutting-edge technologies to deliver effective and
+                      Innovative Global Solutions: 
+                    </span> Utilizing cutting-edge technologies to deliver effective and
                     efficient outcomes worldwide.
                   </span>
                 </li>
@@ -431,8 +431,7 @@ function Landing() {
                   <span className="d-inline">
                     <span className="fw-bold">
                       Strategic International Partnerships:
-                    </span>
-                    Forming alliances to enhance the value and impact of our
+                    </span> Forming alliances to enhance the value and impact of our
                     global services.
                   </span>
                 </li>
@@ -530,7 +529,7 @@ function Landing() {
                 className="img-fluid rounded"
                 height={365}
                 width={504}
-                src={staffingimage}
+                src={strategyimage}
                 alt="Image"
               />
             </div>

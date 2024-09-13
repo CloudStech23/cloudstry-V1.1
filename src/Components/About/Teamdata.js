@@ -22,12 +22,7 @@ export const Data = [
         linkedin :'https://www.linkedin.com/in/rajnish-jaiswal-55342514?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
         img : 'https://dummyimage.com/150x150/ced4da/6c757d',
     },
-    {
-        Name:'Vikram Chouhan',
-        Desc : 'Occupation',
-        linkedin :'https://www.linkedin.com/in/vikramchouhan?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
-        img :vikram,
-    },
+     
     {
         Name:'Sanjay K. Singh',
         Desc : 'Occupation',
@@ -76,10 +71,10 @@ export const Data = [
         linkedin :'https://www.linkedin.com/in/jyoti-hariyale/',
         img : jyoti,
     },
-    {
-        Name:'Uday Solanki',
-        Desc : 'Occupation',
-        linkedin :'https://www.linkedin.com/in/udaysolankii/',
-        img : uday,
-    },
+    // {
+    //     Name:'Uday Solanki',
+    //     Desc : 'Occupation',
+    //     linkedin :'https://www.linkedin.com/in/udaysolankii/',
+    //     img : uday,
+    // },
 ]

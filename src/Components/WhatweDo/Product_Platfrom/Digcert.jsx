@@ -10,7 +10,7 @@ import img6 from "./Images/dc.Universities.png";
 import img7 from "./Images/dc.Training-providers.png";
 import img8 from "./Images/dc.Associations.png";
 import img9 from "./Images/dc.Corporations.png";
-import bg from "./../../Images/bg1.jpg"
+import bg from "./../../Images/bg1.jpg";
 
 function Digitalcertificate() {
   return (
@@ -24,7 +24,7 @@ function Digitalcertificate() {
           src={bg}
           alt="Background"
           className="position-absolute top-0 start-0 w-100 h-100 object-fit-cover"
-          style={{ zIndex: 1,objectFit:'cover' }}
+          style={{ zIndex: 1, objectFit: "cover" }}
         />
 
         {/* Black Overlay */}
@@ -42,7 +42,10 @@ function Digitalcertificate() {
             <a href="/" className="text-white">
               What we Do ? /
             </a>{" "}
-            <a href="#" className="text-white">IT Solutions</a> / Software Services
+            <a href="#" className="text-white">
+              IT Solutions
+            </a>{" "}
+            / Software Services
           </span>
         </div>
 
@@ -193,7 +196,7 @@ function Digitalcertificate() {
               <h3 className="text-primary fw-bold mb-3">
                 Credential Solutions Tailored for Every Sector
               </h3>
-              <p>
+              <p className="">
                 Digital certificates redefine how credentials are managed and
                 verified, offering unparalleled security and efficiency far
                 beyond traditional paper-based methods. Embrace the future of
@@ -311,15 +314,8 @@ function Digitalcertificate() {
             />
           </div>
           <div className="col-md-6 mb-5">
-            <h3
-              className="text-primary display-6 mb-3"
-             >
-              For Issuers
-            </h3>
-            <p
-              className="text-muted mb-2 "
-              
-            >
+            <h3 className="text-primary display-6 mb-3">For Issuers</h3>
+            <p className="text-muted mb-2 ">
               Transition from paper certificates to digital solutions with ease.
               Cloudstry Tech’s digital certificates streamline the creation,
               issuance, storage, and sharing of verified credentials. These
@@ -403,10 +399,7 @@ function Digitalcertificate() {
             >
               For Earners
             </h3>
-            <p
-              className="text-muted mb-2 "
-           
-            >
+            <p className="text-muted mb-2 ">
               Become part of a worldwide network of professionals enhancing
               their learning and development with Cloudstry Tech’s innovative
               solutions.
@@ -505,10 +498,7 @@ function Digitalcertificate() {
               >
                 Universities
               </h3>
-              <p
-                className="h5 mb-2 "
-                style={{ fontWeight: 400, color: "#353535" }}
-              >
+              <p className="h6 mb-2 text-muted ">
                 At Cloudstry Tech, recognize student accomplishments, verified
                 skills, and involvement in certification programs.
               </p>
@@ -556,10 +546,7 @@ function Digitalcertificate() {
               >
                 Training Providers
               </h3>
-              <p
-                className="h5 mb-2 "
-                style={{ fontWeight: 400, color: "#353535" }}
-              >
+              <p className="h6 mb-2 text-muted ">
                 Enhance program visibility, craft tailored learning paths and
                 micro-credentials, and elevate student engagement.
               </p>
@@ -607,10 +594,7 @@ function Digitalcertificate() {
               >
                 Associations
               </h3>
-              <p
-                className="h5 mb-2 "
-                style={{ fontWeight: 400, color: "#353535" }}
-              >
+              <p className="h6 mb-2 text-muted ">
                 With Cloudstry Tech, reduce costs, promote your programs, and
                 acknowledge hard-earned achievements through meaningful, secure,
                 and portable digital badges.
@@ -692,10 +676,7 @@ function Digitalcertificate() {
               >
                 Corporations
               </h3>
-              <p
-                className="h5 mb-2 "
-                style={{ fontWeight: 400, color: "#353535" }}
-              >
+              <p className="h6 mb-2 text-muted">
                 Identify and celebrate skills and achievements, and explore your
                 employee network for specific talents and qualifications.
               </p>

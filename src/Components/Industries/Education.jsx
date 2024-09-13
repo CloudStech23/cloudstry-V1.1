@@ -1,35 +1,52 @@
 import React from "react";
-import img1 from './Images/ed.first.jpg'
+// import img1 from './Images/ed.first.jpg'
 import img2 from './Images/ed.second.jpg'
 import img3 from './Images/ed.third.jpg'
 import img4 from './Images/ed.fourth.jpg'
+import bg3 from "../Images/bg3.jpg"
 function Education() {
   return (
     <div>
-      <header className="bg-white text-white text-center mb-5 py-5 position-relative">
+      <header
+        className="text-white text-center py-5 position-relative"
+        style={{ height: "19rem", overflow: "hidden" }}
+      >
+        {/* Background Image */}
+        <img
+          src={bg3} // Replace 'bg' with the actual path to your background image
+          alt="Background"
+          className="position-absolute top-0 start-0 w-100 h-100 object-fit-cover"
+          style={{ zIndex: 1, objectFit: "cover" }}
+        />
+
+        {/* Black Overlay */}
+        <div
+          className="position-absolute top-0 start-0 w-100 h-100"
+          style={{ backgroundColor: "rgb(16 11 11 / 42%)", zIndex: 2 }}
+        ></div>
+
         {/* Navigation Path */}
         <div
-          className="position-absolute top-0 start-0 ms-0 mt-0 p-4 fs-5 fw-bold"
-          style={{ zIndex: 100 }}
+          className="position-absolute top-0 p-4 start-0 ms-0 mt-0 fs-5 fw-bold"
+          style={{ zIndex: 3 }}
         >
-          <span className="small text-primary">
-            <a href="#" className="">
+          <span className="small text-white">
+            <a href="/" className="text-white">
               Industries We Serve /
             </a>{" "}
-            <a href="#">Education</a>
+            
+            / Education
           </span>
         </div>
 
         {/* Header Content */}
-        <div className="container text-primary mt-5">
-          <h1 className="display-6">
-            Educational Excellence: Synergy of Innovation and Engagement
-          </h1>
+        <div
+          className="container text-white mt-5"
+          style={{ zIndex: 3, position: "relative" }}
+        >
+          <h1 className="display-6">Educational Excellence: Synergy of Innovation and Engagement</h1>
           <p className="lead">
-            Empowering educational institutions with state-of-the-art solutions
-            to tackle challenges, foster engagement, and achieve excellence.
-            Explore how our technology transforms the learning experience and
-            drives educational success
+          Empowering educational institutions with state-of-the-art solutions to tackle challenges, foster engagement, and achieve excellence. Explore how our technology transforms the learning experience and drives educational success
           </p>
         </div>
       </header>
@@ -432,7 +449,7 @@ function Education() {
                   </h3>
                   <div className="media-body ml-3">
                     <div className="blockquote border-0 p-0">
-                      <p className="font-italic lead">
+                      <p className="font-italic text-muted fs-6">
                         Our flagship project, BadgeCert, offers a revolutionary
                         approach to credentialing by providing digital
                         certificates that are secure, verifiable, and easily
