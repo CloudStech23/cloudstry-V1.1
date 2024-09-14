@@ -35,7 +35,6 @@ function Staffingsolution() {
             <a href="/" className="text-white">
               What we Do ? /
             </a>{" "}
-            
             / Staffing Solution
           </span>
         </div>
@@ -45,9 +44,15 @@ function Staffingsolution() {
           className="container text-white mt-5"
           style={{ zIndex: 3, position: "relative" }}
         >
-          <h1 className="display-6">Comprehensive Staffing Solutions for Global Captive Centers</h1>
+          <h1 className="display-6">
+            Comprehensive Staffing Solutions for Global Captive Centers
+          </h1>
           <p className="lead">
-          Global Captive Centers (GCCs) are operational units established by multinational corporations in offshore locations to perform critical business functions. These centers often handle back-office processes, IT services, customer support, and other specialized functions.
+            Global Captive Centers (GCCs) are operational units established by
+            multinational corporations in offshore locations to perform critical
+            business functions. These centers often handle back-office
+            processes, IT services, customer support, and other specialized
+            functions.
           </p>
         </div>
       </header>
@@ -249,13 +254,13 @@ function Staffingsolution() {
         </div>
 
         <div className="row gx-5 mt-5">
-        <div
+          <div
             className="col-xl-6 col-lg-5 d-flex order-first order-md-last justify-content-right align-items-center"
             style={{ marginBottom: "5rem" }}
           >
             <img className="img-fluid" src={img2} alt="GCC Staffing" />
           </div>
-          <div className="col-md-6 mb-5 order-last order-md-firstd">
+          <div className="col-md-6 mb-5 order-last order-md-first">
             <h3 className="text-primary display-7 fw-light mb-3">
               Why Choose Us for Your GCC Staffing Needs?
             </h3>
@@ -311,13 +316,11 @@ function Staffingsolution() {
               </li>
             </ul>
           </div>
-
-          
         </div>
 
         <div className="row gx-4">
           <div
-            className="col-xl-6 col-lg-5 d-flex justify-content-left align-items-center"
+            className="col-xl-6 col-lg-5 d-flex  justify-content-left align-items-center"
             style={{ marginBottom: "5rem" }}
           >
             <img
@@ -327,7 +330,7 @@ function Staffingsolution() {
               style={{ width: "39rem" }}
             />
           </div>
-          <div className="col-md-6 mb-5 mt-5">
+          <div className="col-md-6 mb-5 mt-5 ">
             <h3 className="text-primary fw-light display-7 mb-3">
               Key Benefits of Our Staffing Solutions
             </h3>
@@ -385,7 +388,7 @@ function Staffingsolution() {
       <section className="mb-5  " style={{ marginTop: "6rem" }}>
         <div className="container">
           <div className="row align-items-center">
-          <div className="col-md-6 mb-4 order-first order-md-last">
+            <div className="col-md-6 mb-4 order-first order-md-last">
               <img
                 className="img-fluid rounded"
                 src={img4}
@@ -444,7 +447,6 @@ function Staffingsolution() {
                 </p>
               </ul>
             </div>
-            
           </div>
         </div>
       </section>

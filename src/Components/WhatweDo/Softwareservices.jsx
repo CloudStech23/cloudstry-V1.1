@@ -386,7 +386,10 @@ function Softwareservices() {
 
       <div className="container">
         <div className="row align-items-center">
-          <div className="col-md-6 mb-5">
+          <div className="col-md-6 mb-5 order-first order-md-last">
+            <img src={soft3} alt="Software Services" className="img-fluid" />
+          </div>
+          <div className="col-md-6 mb-5 order-last order-md-first">
             <h3 className="text-primary fw-normal display-7 mb-3">
               Why Choose Our Software Services?
             </h3>
@@ -442,16 +445,13 @@ function Softwareservices() {
               </li>
             </ul>
           </div>
-          <div className="col-md-6 mb-5">
-            <img src={soft3} alt="Software Services" className="img-fluid" />
-          </div>
         </div>
       </div>
 
       {/* Closing Thoughts Section */}
       <section
         style={{ position: "relative", marginTop: "1rem" }}
-        className="px-5 py-5"
+        className="px-5 py-5 d-xl-block d-none"
       >
         <div
           style={{
@@ -465,7 +465,7 @@ function Softwareservices() {
             maxWidth: "80%",
             zIndex: 2,
           }}
-          className="col-lg-6"
+          className="col-lg-6 d-xl-block d-none"
         >
           <h3 className="text-primary font-weight-bold mb-4">
             A Commitment to Excellence You Can Trust

@@ -10,15 +10,17 @@ import {
   MDBTextArea,
   MDBIcon,
 } from "mdb-react-ui-kit";
-import '../Support/common.css';
+import "../Support/common.css";
 import { Link } from "react-router-dom";
-
+import "./contact.css";
 
 function Contact() {
   return (
     <div className="bg-light">
-      <MDBContainer fluid className="px-5 py-5 container">
-        <h1 className="text-center display-4 text-danger customheading mb-2">Get in Touch with Us</h1>
+      <MDBContainer fluid className="  container">
+        <h1 className="text-center display-4 text-danger customheading mb-2">
+          Get in Touch with Us
+        </h1>
         <MDBRow>
           <MDBCol
             md="6"
@@ -30,7 +32,10 @@ function Contact() {
             </h1>
 
             <p className="px-3" style={{ color: "hsl(217, 10%, 50.8%)" }}>
-              Our dedicated team is here to provide the support you need. Whether you have questions, require assistance, or want to discuss your next project, we're just a message away. Reach out to us today and experience our commitment to excellence.
+              Our dedicated team is here to provide the support you need.
+              Whether you have questions, require assistance, or want to discuss
+              your next project, we're just a message away. Reach out to us
+              today and experience our commitment to excellence.
             </p>
           </MDBCol>
 
@@ -38,7 +43,8 @@ function Contact() {
             <MDBCard className="my-5">
               <MDBCardBody className="p-5">
                 <div className="h5 mb-4">
-                  We'd love to hear from you. Please fill out the form below and we'll get back to you promptly.
+                  We'd love to hear from you. Please fill out the form below and
+                  we'll get back to you promptly.
                 </div>
 
                 <MDBRow>
@@ -92,7 +98,7 @@ function Contact() {
             }}
           >
             <iframe
-              className="img-fluid rounded"
+              className="img-fluid rounded map"
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10766.089125020088!2d75.89070371602931!3d22.743313081862663!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3962fd56808efd65%3A0xa677b30c9d4e0f76!2sIncuspaze%20Coworking%20Space%20in%20Indore%20Princes&#39;%20Business%20Skyline!5e0!3m2!1sen!2sin!4v1726254608660!5m2!1sen!2sin"
               alt="map"
               style={{ width: "800px", height: "500px", border: 0 }}
@@ -113,7 +119,7 @@ function Contact() {
               maxWidth: "80%",
               zIndex: 2,
             }}
-            className="col-lg-6 shadow"
+            className="col-lg-6 shadow contact-card d-xl-block d-none"
           >
             <h3 className="text-primary font-weight-bold mb-4">
               Reach Out to Us
@@ -141,8 +147,9 @@ function Contact() {
                     </div>
                     <h2 className="h5">Address</h2>
                     <p className="mb-0">
-                    4th floor, Apollo Premier, Vijay Nagar Square, Vijay Nagar, <br />
-                     Indore, Madhya Pradesh 452001
+                      4th floor, Apollo Premier, Vijay Nagar Square, Vijay
+                      Nagar, <br />
+                      Indore, Madhya Pradesh 452001
                     </p>
                   </div>
                   <div className="col h-100">

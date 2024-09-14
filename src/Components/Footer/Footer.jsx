@@ -41,8 +41,8 @@ export default function Footer() {
             <Link className=" navbar-brand mx-3" to="/">
             <img
               src={pagelogo}
-              className="img-fluid logoimg"
-              style={{ height: "3.5rem" }}
+              className="img-fluid"
+              // style={{ height: "3.5rem" }}
               alt="Logo"
             />
           </Link>
