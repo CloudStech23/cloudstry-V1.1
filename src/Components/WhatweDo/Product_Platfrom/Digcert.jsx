@@ -67,7 +67,7 @@ function Digitalcertificate() {
       <div className="container  py-5">
         <div className="row align-items-center justify-content-between bg-light p-4 rounded-3 position-relative">
           {/* Text Content */}
-          <div className="col-md-5 mt-4 mb-2">
+          <div className="col-md-5 mt-4 mb-2 order-md-1 order-2">
             <span className="badge bg-primary rounded-pill px-2 py-2 mb-3">
               Digital Certificates
             </span>
@@ -94,7 +94,7 @@ function Digitalcertificate() {
           </div>
 
           {/* Video Content */}
-          <div className="col-md-5 text-md-end mt-4 mt-md-0 mb-2">
+          <div className="col-md-5 text-md-end mt-4 mt-md-0 mb-2 order-md-2 order-1">
             <img src={img1} alt="Dummy" className="img-fluid rounded" />
           </div>
         </div>
@@ -103,7 +103,7 @@ function Digitalcertificate() {
         <div className="container mb-5">
           <div className="row align-items-center mb-5">
             {/* Image Section */}
-            <div className="col-md-6 mb-5 mb-md-0">
+            <div className="col-md-6 mb-5 mb-md-0 ">
               <img
                 className="img-fluid rounded"
                 height={365}
@@ -192,7 +192,7 @@ function Digitalcertificate() {
         <div className="container mt-5">
           <div className="row align-items-center">
             {/* Text Section */}
-            <div className="col-md-6">
+            <div className="col-md-6  order-md-1 order-2">
               <h3 className="text-primary fw-bold mb-3">
                 Credential Solutions Tailored for Every Sector
               </h3>
@@ -243,7 +243,7 @@ function Digitalcertificate() {
             </div>
 
             {/* Image Section */}
-            <div className="col-md-6 text-md-end mt-4 mt-md-0">
+            <div className="col-md-6 text-md-end mt-4 mt-md-0 ">
               <img
                 className="img-fluid rounded"
                 height={365}

@@ -81,7 +81,7 @@ function Menudrawer({ open, onClose }) {
                 </Nav.Item> <br />
 
                 {openSubsubmenu === "product" && (
-                  <Nav className="submenu">
+                  <Nav className="submenu shadow">
                     <Nav.Item as={NavLink} to='/Digital-Certificate' className="nav-item text-white" onClick={handleNavLinkClick}>
                       Digital Certificate
                     </Nav.Item>
@@ -106,7 +106,7 @@ function Menudrawer({ open, onClose }) {
                   ></i>
                 </Nav.Item>
                 {openSubsubmenu === "solution" && (
-                  <Nav className="submenu">
+                  <Nav className="submenu shadow">
                     <Nav.Item as={NavLink} to='/IT-Strategy-Consultancy' className="nav-item text-white" onClick={handleNavLinkClick}>
                       IT Strategy Consultancy
                     </Nav.Item>
@@ -136,7 +136,7 @@ function Menudrawer({ open, onClose }) {
             </Nav.Item>
 
             {openSubmenu === "todays-task" && (
-              <Nav className="submenu">
+              <Nav className="submenu shadow">
                 <Nav.Item as={NavLink} to='/Education' className="nav-item text-white" onClick={handleNavLinkClick}>
                   Education
                 </Nav.Item>
@@ -155,10 +155,10 @@ function Menudrawer({ open, onClose }) {
               </Nav>
             )}
 
-            <Nav.Item className="nav-item text-white" as={NavLink} to='/Team-Cloudstry' onClick={handleNavLinkClick}>
+            <Nav.Item className="nav-item text-white menulink2" as={NavLink} to='/Team-Cloudstry' onClick={handleNavLinkClick}>
               Meet Leadership
-            </Nav.Item> <br />
-            <Nav.Item className="nav-item text-white" as={NavLink} to='/Support' onClick={handleNavLinkClick}>
+            </Nav.Item>
+            <Nav.Item className="nav-item text-white menulink2" as={NavLink} to='/Support' onClick={handleNavLinkClick}>
               Contact us
             </Nav.Item>
           </Nav>

@@ -39,7 +39,7 @@ function Landing() {
     <div>
       <Slick />
 
-      <section className="" style={{ marginTop: "5rem" }}>
+      <section className=" service-section" style={{ marginTop: "5rem" }}>
         <div className="container">
           <div className="row g-4">
             <h1 className="fw-normal text-danger text-center mb-4 mt-5">
@@ -448,7 +448,7 @@ function Landing() {
         <div className="container mt-5">
           <div className="row align-items-center">
             {/* Text Section */}
-            <div className="col-md-6">
+            <div className="col-md-6 order-md-1 order-2">
               <h3 className="text-primary fw-normal mb-3">
                 Strategic Solutions for Business Growth
               </h3>
@@ -524,7 +524,7 @@ function Landing() {
             </div>
 
             {/* Image Section */}
-            <div className="col-md-6 text-md-end mt-4 mt-md-0">
+            <div className="col-md-6 text-md-end mt-4 mt-md-0 order-md-2 order-1">
               <img
                 className="img-fluid rounded"
                 height={365}

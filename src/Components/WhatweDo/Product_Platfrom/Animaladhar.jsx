@@ -62,7 +62,7 @@ function Petadhar() {
       <div className="container py-5">
         <div className="row align-items-center justify-content-between bg-light p-4 rounded-3 position-relative">
           {/* Text Content */}
-          <div className="col-md-5 mt-4 mb-2">
+          <div className="col-md-5 mt-4 mb-2  order-md-1 order-2">
             <span className="badge bg-primary rounded-pill px-2 py-2 mb-3">
               Pet Aadhar
             </span>
@@ -87,7 +87,7 @@ function Petadhar() {
           </div>
 
           {/* Video Content */}
-          <div className="col-md-5 text-md-end mt-4 mt-md-0 mb-2">
+          <div className="col-md-5 text-md-end mt-4 mt-md-0 mb-2  order-md-2 order-1">
             <img
               src={img1}
               alt="Cloudstry Technologies"
@@ -196,7 +196,7 @@ function Petadhar() {
               <div className="col-lg-10 col-xl-8 mx-auto">
                 <div
                   className="p-5 bg-white shadow  rounded"
-                  style={{ width: "100%", height: "22rem" }}
+                  style={{ width: "100%", height: "auto" }}
                 >
                   <Carousel interval={2000} controls={true} indicators={false}>
                     <Carousel.Item>
@@ -512,7 +512,7 @@ function Petadhar() {
               }}
             >
               <img
-                className="img-fluid rounded"
+                className="img-fluid rounded d-xl-block d-none"
                 src="https://images.thequint.com/thequint%2F2018-08%2Fcd1c7bac-00a3-40b5-a270-72f803a98e3a%2F9b378119_4474_4e7b_820f_68bda8a3a0f4.jpg?rect=0%2C0%2C848%2C477"
                 alt="Industry"
                 style={{ width: "800px", height: "500px" }}
@@ -531,12 +531,12 @@ function Petadhar() {
                 maxWidth: "80%", // Ensures the content doesn't overflow the viewport
                 zIndex: 2,
               }}
-              className="col-lg-6"
+              className="col-lg-6 d-xl-block d-none"
             >
-              <h3 className="text-primary  font-weight-bold mb-4">
+              <h3 className="text-primary  font-weight-bold mb-4 ">
                 At the Forefront of Pet Management: Cloudstry Technologies
               </h3>
-              <p>
+              <p className="">
                 Pashu Aadhaar offers a promising solution for managing livestock
                 in India. By providing unique identification numbers, it aims to
                 improve tracking accuracy, enhance disease control, and

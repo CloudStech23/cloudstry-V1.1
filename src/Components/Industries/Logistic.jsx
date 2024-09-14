@@ -1,10 +1,10 @@
 import React from "react";
 import "./Common.css";
 import { Link } from "react-router-dom";
-import bg3 from "../Images/bg3.jpg"
-import img1 from "./Images/gov.first.jpg"
-import img2 from "./Images/lg.second.jpg"
-import img3 from "./Images/gov.seven.jpg"
+import bg3 from "../Images/bg3.jpg";
+import img1 from "./Images/gov.first.jpg";
+import img2 from "./Images/lg.second.jpg";
+import img3 from "./Images/gov.seven.jpg";
 
 function Logistic() {
   return (
@@ -46,10 +46,14 @@ function Logistic() {
           style={{ zIndex: 3, position: "relative" }}
         >
           <h1 className="display-6">
-          Revolutionizing Logistics: Smart Solutions for a Complex Supply Chain
+            Revolutionizing Logistics: Smart Solutions for a Complex Supply
+            Chain
           </h1>
           <p className="lead">
-          Streamline your supply chain with our innovative technology solutions. From real-time tracking to AI-driven optimization, discover how we enhance efficiency, reduce costs, and drive success in the logistics sector
+            Streamline your supply chain with our innovative technology
+            solutions. From real-time tracking to AI-driven optimization,
+            discover how we enhance efficiency, reduce costs, and drive success
+            in the logistics sector
           </p>
         </div>
       </header>
@@ -67,7 +71,7 @@ function Logistic() {
                 height={365}
                 width={504}
                 src={img1}
-                alt= "Logistic"
+                alt="Logistic"
               />
             </div>
 
@@ -77,7 +81,8 @@ function Logistic() {
                 Major Challenges in the Logistics Sector !
               </h3>
               <p className="text-muted">
-              The logistics industry faces several critical challenges that impact efficiency and effectiveness
+                The logistics industry faces several critical challenges that
+                impact efficiency and effectiveness
               </p>
               <ul className="list-unstyled">
                 <li className="mb-2 d-flex align-items-start">
@@ -142,7 +147,7 @@ function Logistic() {
           </div>
           <hr />
         </div>
-      </section> 
+      </section>
 
       <section
         className="image-video-text-interactivity fadeInUp mb-5"
@@ -354,7 +359,11 @@ function Logistic() {
                 <div className="media feature-card">
                   <h3 className="text-primary fw-normal mb-3">
                     Advanced 3PL Logistics Services
-                    <p className="text-muted h6 mt-2">Cloudstry Tech is thrilled to be involved in groundbreaking projects that are revolutionizing the logistics sector:</p>
+                    <p className="text-muted h6 mt-2">
+                      Cloudstry Tech is thrilled to be involved in
+                      groundbreaking projects that are revolutionizing the
+                      logistics sector:
+                    </p>
                   </h3>
                   <div className="media-body ml-3">
                     <div className="blockquote border-0 p-0">

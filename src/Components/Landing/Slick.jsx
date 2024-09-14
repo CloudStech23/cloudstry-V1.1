@@ -4,7 +4,7 @@ import "swiper/css"; // Import Swiper styles
 import "swiper/css/navigation"; // Import navigation styles
 import { Navigation, Autoplay } from "swiper/modules";
 import { data } from "./swiperdata";
-
+import './slick.css';
 
 const SwiperCarousel = () => {
   const swiperRef = useRef(null);
@@ -45,10 +45,19 @@ const SwiperCarousel = () => {
       >
         {data.map((value, index) => (
           <SwiperSlide key={index}>
-            <div className="container py-5 position-relative  ">
-              <div className="row align-items-center  justify-content-between mb-2 p-4 rounded-3"  >
+            <div className="container py-5 position-relative mainslider">
+              <div className="row align-items-center justify-content-between mb-2 p-4 rounded-3">
+                {/* Image Content */}
+                <div className="col-12 col-md-5 text-md-end mt-4 mt-md-0 mb-2 position-relative order-1 order-md-2">
+                  <img
+                    src={value.img || "https://via.placeholder.com/600x400.png?text=Dummy+Image"} // Use value.img if available
+                    alt={value.title || "Dummy"}
+                    className="img-fluid rounded d-none d-xl-block"
+                    style={{height:'23rem'}}
+                  />
+                </div>
                 {/* Text Content */}
-                <div className="col-md-5 mt-4 mb-2">
+                <div className="col-12 col-md-5 mt-4 mb-2 order-2 order-md-1">
                   <h2 className="display-5 text-primary" style={{ fontWeight: 300 }}>
                     {value.title}
                   </h2>
@@ -59,23 +68,11 @@ const SwiperCarousel = () => {
                     Learn more
                   </a>
                 </div>
-                {/* Image Content */}
-                <div className="col-md-5 text-md-end mt-4 mt-md-0 mb-2 position-relative">
-                  <img
-                    src={value.img || "https://via.placeholder.com/600x400.png?text=Dummy+Image"} // Use value.img if available
-                    alt={value.title || "Dummy"}
-                    className="img-fluid rounded"
-                  />
-                  {/* Navigation Arrows */}
-                  
-                </div>
               </div>
             </div>
           </SwiperSlide>
         ))}
       </Swiper>
-      {/* <div className="swiper-button-next" style={{ position: "absolute", bottom: "10px", right: "10px" }}></div>
-                  <div className="swiper-button-prev" style={{ position: "absolute", bottom: "10px", right: "50px" }}></div> */}
     </div>
   );
 };
