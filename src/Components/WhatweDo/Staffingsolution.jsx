@@ -249,7 +249,13 @@ function Staffingsolution() {
         </div>
 
         <div className="row gx-5 mt-5">
-          <div className="col-md-6 mb-5">
+        <div
+            className="col-xl-6 col-lg-5 d-flex order-first order-md-last justify-content-right align-items-center"
+            style={{ marginBottom: "5rem" }}
+          >
+            <img className="img-fluid" src={img2} alt="GCC Staffing" />
+          </div>
+          <div className="col-md-6 mb-5 order-last order-md-firstd">
             <h3 className="text-primary display-7 fw-light mb-3">
               Why Choose Us for Your GCC Staffing Needs?
             </h3>
@@ -306,12 +312,7 @@ function Staffingsolution() {
             </ul>
           </div>
 
-          <div
-            className="col-xl-6 col-lg-5 d-flex justify-content-right align-items-center"
-            style={{ marginBottom: "5rem" }}
-          >
-            <img className="img-fluid" src={img2} alt="GCC Staffing" />
-          </div>
+          
         </div>
 
         <div className="row gx-4">
@@ -384,7 +385,14 @@ function Staffingsolution() {
       <section className="mb-5  " style={{ marginTop: "6rem" }}>
         <div className="container">
           <div className="row align-items-center">
-            <div className="col-md-6">
+          <div className="col-md-6 mb-4 order-first order-md-last">
+              <img
+                className="img-fluid rounded"
+                src={img4}
+                alt="Cloudstry Technologies"
+              />
+            </div>
+            <div className="col-md-6 order-last order-md-first">
               <h3 className="text-primary fw-light mb-3">
                 Optimizing Talent Management with Precision
               </h3>
@@ -436,13 +444,7 @@ function Staffingsolution() {
                 </p>
               </ul>
             </div>
-            <div className="col-md-6 mb-4">
-              <img
-                className="img-fluid rounded"
-                src={img4}
-                alt="Cloudstry Technologies"
-              />
-            </div>
+            
           </div>
         </div>
       </section>
