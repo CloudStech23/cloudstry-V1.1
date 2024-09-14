@@ -9,65 +9,66 @@ import milan from './Team_img/milan.jpeg'
 import shyam from './Team_img/shyam.jpeg'
 import jyoti from './Team_img/jyoti.jpg'
 import uday from './Team_img/uday photo.jpg'
+import rajnish from './Team_img/rajnish jaiswal.png'
 export const Data = [
     {
         Name:'Bhargav Trivedi',
-        Desc : 'Occupation',
+        Desc : 'Senior Director of Software Engineering @ Capital One',
         linkedin :'https://www.linkedin.com/in/bhargav-trivedi-28547215/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
         img : bhargav,
     },
     {
         Name:'Rajnish Jaiswal',
-        Desc : 'Occupation',
+        Desc : 'Philanthropist and Industrialist',
         linkedin :'https://www.linkedin.com/in/rajnish-jaiswal-55342514?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
-        img : 'https://dummyimage.com/150x150/ced4da/6c757d',
+        img : rajnish,
     },
      
     {
         Name:'Sanjay K. Singh',
-        Desc : 'Occupation',
+        Desc : 'Senior Enterprise Architect',
         linkedin :'https://www.linkedin.com/in/sanjay-kumar-singh-42a2523?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
         img : sanjay ,
     },
     {
         Name:'Anil Khatri',
-        Desc : 'Occupation',
+        Desc : 'Engineering Manager and Solution Architect',
         linkedin :'https://www.linkedin.com/in/anil-khatri-4962a82?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
         img : anil,
     },
     {
         Name:'Manoj Behl',
-        Desc : 'Occupation',
+        Desc : 'Senior Solutions Architect at Injazat Data System',
         linkedin :'https://www.linkedin.com/in/manoj-behl-8822038?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
         img :manoj ,
     },
     {
         Name:'Renju Karunakaran',
-        Desc : 'Occupation',
+        Desc : 'Technology Leader and Director of Software Engineering',
         linkedin :'https://www.linkedin.com/in/renju-karunakaran-2a4705126?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
         img : Rejnu,
     },
     {
         Name:'Milan K. Nayak',
-        Desc : 'Occupation',
+        Desc : 'Java Developer',
         linkedin :'https://www.linkedin.com/in/milan-kumar-nayak-317614224/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
         img : milan,
     },
     {
         Name:'Shyam M. Singh',
-        Desc : 'Occupation',
+        Desc : 'Technology Analyst @Cloudstry',
         linkedin :'https://www.linkedin.com/in/shyam-mohan-singh-408676203?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
         img : shyam,
     },
     {
         Name:'Shivendra kadam',
-        Desc : 'Occupation',
+        Desc : 'Java full stack developer at CloudstryTech',
         linkedin :'https://www.linkedin.com/in/shivendra-kadam-0a2390281/',
         img : shivendra,
     },
     {
         Name:'Jyoti Hariyale',
-        Desc : 'Occupation',
+        Desc : 'Technical Analyst at Cloudstry',
         linkedin :'https://www.linkedin.com/in/jyoti-hariyale/',
         img : jyoti,
     },
