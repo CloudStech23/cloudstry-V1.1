@@ -63,15 +63,21 @@ function Consultancy() {
 
       <div className="container my-5 py-5">
         <div className="row align-items-center justify-content-between bg-light p-4 rounded-3 position-relative">
+          {/* Video Content (Image First on Mobile) */}
+          <div className="col-md-5 order-first order-md-last text-md-end mt-4 mt-md-0 mb-2">
+            <img
+              src={img1}
+              alt="Cloudstry Technologies"
+              className="img-fluid rounded"
+            />
+          </div>
+
           {/* Text Content */}
-          <div className="col-md-5 mt-4 mb-2">
+          <div className="col-md-5 order-last order-md-first mt-4 mb-2">
             <span className="badge bg-primary rounded-pill px-2 py-2 mb-3">
               IT Consultancy
             </span>
-            <h2
-              className=" display-5 text-primary "
-              style={{ fontWeight: 300 }}
-            >
+            <h2 className="display-5 text-primary" style={{ fontWeight: 300 }}>
               Consultancy for Future Ready Businesses
             </h2>
             <p className="text-muted mb-4">
@@ -81,7 +87,7 @@ function Consultancy() {
               transformation.
             </p>
             <p className="text-muted mb-4">
-              <strong>Cloudstry Technologies </strong>provides expert IT
+              <strong>Cloudstry Technologies</strong> provides expert IT
               strategy consultancy services, crafting tailored solutions that
               address unique challenges, leverage emerging technologies, and
               support long-term objectives. Whether optimizing IT infrastructure
@@ -92,17 +98,9 @@ function Consultancy() {
               Talk to our Experts
             </Link>
           </div>
-
-          {/* Video Content */}
-          <div className="col-md-5 text-md-end mt-4 mt-md-0 mb-2">
-            <img
-              src={img1}
-              alt="Cloudstry Technologies"
-              className="img-fluid rounded"
-            />
-          </div>
         </div>
       </div>
+
       <section className="image-video-text-interactivity fadeInUp mb-5">
         <div className="container mb-5">
           <div className="row align-items-center mb-5">
@@ -197,7 +195,16 @@ function Consultancy() {
         <div className="container mt-5">
           <div className="row align-items-center">
             {/* Text Section */}
-            <div className="col-md-6">
+            <div className="col-md-6 order-first mb-3 order-md-last text-md-end mt-4 mt-md-0">
+              <img
+                className="img-fluid rounded"
+                height={365}
+                width={504}
+                src={img3}
+                alt="Cloudstry Technologies"
+              />
+            </div>
+            <div className="col-md-6 order-last order-md-first">
               <h3 className="text-primary fw-bold mb-3">
                 Addressing IT Challenges Across Industries
               </h3>
@@ -282,15 +289,7 @@ function Consultancy() {
             </div>
 
             {/* Image Section */}
-            <div className="col-md-6 text-md-end mt-4 mt-md-0">
-              <img
-                className="img-fluid rounded"
-                height={365}
-                width={504}
-                src={img3}
-                alt="Cloudstry Technologies"
-              />
-            </div>
+            
           </div>
         </div>
       </section>
@@ -403,7 +402,7 @@ function Consultancy() {
       </section>
       <section
         style={{ position: "relative", marginTop: "1rem" }}
-        className="px-5 py-5"
+        className="px-5 py-5 d-xl-block d-none"
       >
         <div
           style={{
@@ -415,9 +414,10 @@ function Consultancy() {
             borderRadius: "8px",
             padding: "2rem",
             maxWidth: "80%",
+
             zIndex: 2,
           }}
-          className="col-lg-6"
+          className="col-lg-6 d-xl-block d-none"
         >
           <h3 className="text-primary font-weight-bold mb-4">
             Why Cloudstry for IT Strategy Consultancy?

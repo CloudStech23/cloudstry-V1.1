@@ -67,7 +67,17 @@ function Softwareservices() {
       <div className="container py-5">
         <div className="row align-items-center justify-content-between bg-white mt-3 mb-3 shadow px-5 rounded-3 position-relative">
           {/* Text Content */}
-          <div className="col-md-6 mb-2">
+          <div
+            className="col-md-5 order-first order-md-last text-md-end mt-md-0 mb-2"
+            style={{ marginTop: "-20px" }}
+          >
+            <img
+              src={img1}
+              alt="Software services"
+              className="img-fluid rounded"
+            />
+          </div>
+          <div className="col-md-6 mb-2 order-last order-md-first">
             <h2 className="display-6 text-primary" style={{ fontWeight: 300 }}>
               Customized Software Solutions for Industry Leadership
             </h2>
@@ -98,16 +108,7 @@ function Softwareservices() {
           </div>
 
           {/* Video Content */}
-          <div
-            className="col-md-5 text-md-end mt-md-0 mb-2"
-            style={{ marginTop: "-20px" }}
-          >
-            <img
-              src={img1}
-              alt="Software services"
-              className="img-fluid rounded"
-            />
-          </div>
+          
         </div>
       </div>
 
