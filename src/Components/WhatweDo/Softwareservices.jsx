@@ -108,7 +108,6 @@ function Softwareservices() {
           </div>
 
           {/* Video Content */}
-          
         </div>
       </div>
 
@@ -240,6 +239,13 @@ function Softwareservices() {
       <div className="container">
         <div className="row mb-5">
           <div className="col-md-6">
+            <img
+              src={soft1}
+              alt="Software Challenges"
+              className="img-fluid order-first order-md-last"
+            />
+          </div>
+          <div className="col-md-6 order-last order-md-first ">
             <h3 className="text-primary display-7 fw-normal mb-3">
               What are the Essential Software Challenges ?
             </h3>
@@ -297,9 +303,6 @@ function Softwareservices() {
                 </span>
               </li>
             </ul>
-          </div>
-          <div className="col-md-6">
-            <img src={soft1} alt="Software Challenges" className="img-fluid" />
           </div>
         </div>
       </div>
