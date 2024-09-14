@@ -16,7 +16,7 @@ import "./contact.css";
 
 function Contact() {
   return (
-    <div className="bg-light">
+    <div className="bg-light mt-5">
       <MDBContainer fluid className="  container">
         <h1 className="text-center display-4 text-danger customheading mb-2">
           Get in Touch with Us
