@@ -191,8 +191,17 @@ function Digitalcertificate() {
       >
         <div className="container mt-5">
           <div className="row align-items-center">
+          <div className="col-md-6 text-md-end order-first order-md-last  mt-4 mt-md-0 mb-2">
+              <img
+                className="img-fluid rounded"
+                height={365}
+                width={504}
+                src={img3}
+                alt="Cloudstry Technologies"
+              />
+            </div>
             {/* Text Section */}
-            <div className="col-md-6  order-md-1 order-2">
+            <div className="col-md-6  order-last order-md-first">
               <h3 className="text-primary fw-bold mb-3">
                 Credential Solutions Tailored for Every Sector
               </h3>
@@ -243,15 +252,7 @@ function Digitalcertificate() {
             </div>
 
             {/* Image Section */}
-            <div className="col-md-6 text-md-end mt-4 mt-md-0 mb-2">
-              <img
-                className="img-fluid rounded"
-                height={365}
-                width={504}
-                src={img3}
-                alt="Cloudstry Technologies"
-              />
-            </div>
+           
           </div>
         </div>
       </section>
