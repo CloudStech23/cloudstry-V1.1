@@ -256,7 +256,7 @@ function Education() {
         <div className="container mt-5">
           <div className="row align-items-center">
             {/* Text Section */}
-            <div className="col-md-6">
+            <div className="col-md-6 order-md-1 order-2">
               <h3 className="text-primary fw-normal mb-3">
                 Digitalization in Education: A Catalyst for Positive Change
               </h3>
@@ -336,7 +336,7 @@ function Education() {
             </div>
 
             {/* Image Section */}
-            <div className="col-md-6 text-md-end mt-4 mt-md-0">
+            <div className="col-md-6 text-md-end mt-4 mb-5 mt-md-0 order-md-2 order-1">
               <img
                 className="img-fluid rounded"
                 height={365}

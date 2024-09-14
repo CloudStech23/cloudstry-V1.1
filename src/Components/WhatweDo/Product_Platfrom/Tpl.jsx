@@ -61,7 +61,7 @@ function Thirdpartylogistic() {
       <div className="container py-5">
         <div className="row align-items-center justify-content-between bg-light p-4 rounded-3 position-relative">
           {/* Text Content */}
-          <div className="col-md-5 mt-4 mb-2">
+          <div className="col-md-5 mt-4 mb-2 order-md-1 order-2">
             <span className="badge bg-primary rounded-pill px-2 py-2 mb-3">
               3PL Solution
             </span>
@@ -87,7 +87,7 @@ function Thirdpartylogistic() {
           </div>
 
           {/* Video Content */}
-          <div className="col-md-5 text-md-end mt-4 mt-md-0 mb-2">
+          <div className="col-md-5 text-md-end mt-4 mt-md-0 mb-2 order-md-2 order-1">
             <img
               src={img1}
               alt="Cloudstry Technologies"
@@ -198,7 +198,7 @@ function Thirdpartylogistic() {
         <div className="container mt-5">
           <div className="row align-items-center">
             {/* Text Section */}
-            <div className="col-md-6">
+            <div className="col-md-6 order-md-1 order-2">
               <h3 className="text-primary fw-bold mb-3">
                 Innovative 3PL Strategies: Cloudstry Expertise
               </h3>
@@ -268,7 +268,7 @@ function Thirdpartylogistic() {
             </div>
 
             {/* Image Section */}
-            <div className="col-md-6 text-md-end mt-4 mt-md-0">
+            <div className="col-md-6 text-md-end mt-4 mt-md-0 order-md-2 order-1 mb-2">
               <img
                 className="img-fluid rounded"
                 height={365}
@@ -293,7 +293,7 @@ function Thirdpartylogistic() {
         </div>
         <div className="row align-items-center justify-content-between   p-4 rounded-3 position-relative">
           {/* Text Content */}
-          <div className="col-md-6 mt-4 mb-2">
+          <div className="col-md-6 mt-4 mb-2 order-md-1 order-2">
             <h2
               className=" display-7 text-primary "
               style={{ fontWeight: "bold" }}
@@ -373,7 +373,7 @@ function Thirdpartylogistic() {
           </div>
 
           {/* Video Content */}
-          <div className="col-md-5 text-md-end mt-4 mt-md-0 mb-2">
+          <div className="col-md-5 text-md-end mt-4 mt-md-0 mb-2 order-md-2 order-1">
             <img
               src={img4}
               alt="Cloudstry Technologies"

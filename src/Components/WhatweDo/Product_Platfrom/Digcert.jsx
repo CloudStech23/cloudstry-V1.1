@@ -243,7 +243,7 @@ function Digitalcertificate() {
             </div>
 
             {/* Image Section */}
-            <div className="col-md-6 text-md-end mt-4 mt-md-0 ">
+            <div className="col-md-6 text-md-end mt-4 mt-md-0 mb-2">
               <img
                 className="img-fluid rounded"
                 height={365}
