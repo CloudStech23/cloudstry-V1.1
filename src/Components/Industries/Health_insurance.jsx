@@ -197,7 +197,7 @@ function Healthinsurance() {
             {/* Image Section */}
 
             {/* Text Section */}
-            <div className="col-md-6">
+            <div className="col-md-6 order-md-1 order-2">
               <h3 className="text-primary fw-normal mb-3">
                 How Digitalization is Solving Healthcare Insurance Challenges
               </h3>
@@ -274,7 +274,7 @@ function Healthinsurance() {
                 </li>
               </ul>
             </div>
-            <div className="col-md-6 text-md-end mt-4 mt-md-0">
+            <div className="col-md-6 text-md-end mt-4 mt-md-0 order-md-2 order-1 mb-5">
               <img
                 className="img-fluid rounded"
                 height={365}
@@ -294,7 +294,7 @@ function Healthinsurance() {
         <div className="container mt-5">
           <div className="row align-items-center">
             {/* Image Section */}
-            <div className="col-md-6 text-md-start mt-4 mt-md-0">
+            <div className="col-md-6 text-md-start mt-4 mt-md-0 mb-5">
               <img
                 className="img-fluid rounded"
                 height={365}
