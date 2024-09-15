@@ -9,11 +9,11 @@ function Education() {
     <div>
       <header
         className="text-white text-center py-5 position-relative"
-        style={{ height: "19rem", overflow: "hidden" }}
+        style={{ maxHeight: "100%", overflow: "hidden" }}
       >
         {/* Background Image */}
         <img
-          src={bg3} // Replace 'bg' with the actual path to your background image
+          src={bg3} // Replace 'bg' with the actual path to  background image
           alt="Background"
           className="position-absolute top-0 start-0 w-100 h-100 object-fit-cover"
           style={{ zIndex: 1, objectFit: "cover" }}
@@ -35,7 +35,7 @@ function Education() {
               Industries We Serve /
             </a>{" "}
             
-            / Education
+            Education
           </span>
         </div>
 
@@ -180,6 +180,7 @@ function Education() {
               </ul>
               <p className="text-muted">These challenges underscore the need for innovative solutions that can effectively address these pressing issues</p>
             </div>
+          <hr className="mt-4"/>
           </div>
         </div>
       </section>
@@ -346,6 +347,7 @@ function Education() {
               />
             </div>
           </div>
+          <hr className="mt-4"/>
         </div>
       </section>
 
@@ -364,9 +366,9 @@ function Education() {
             </div>
 
             {/* Text Section */}
-            <div className="col-md-6 mb-5">
+            <div className="col-md-6 mt-5 mb-5">
               <h3 className="text-primary fw-normal mb-3">
-                How Cloudstry Tech Supports the Education Industry: Your Partner
+                How Cloudstry Tech Supports the Education Industry:  Partner
                 in Progress
               </h3>
               <p className="text-muted">
@@ -382,7 +384,7 @@ function Education() {
                   ></i>
                   <span className="d-inline">
                     <strong>Custom IT Solutions:</strong> Tailored solutions for
-                    your institution's needs, from LMS implementation to IT
+                     institution's needs, from LMS implementation to IT
                     infrastructure upgrades.
                   </span>
                 </li>
@@ -423,6 +425,7 @@ function Education() {
               <p className="text-muted">By partnering with Cloudstry Tech, educational institutions can overcome challenges, leverage digital opportunities, and provide exceptional educational experiences</p>
             </div>
           </div>
+        <hr className="mt-4"/>
         </div>
       </section>
 

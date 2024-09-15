@@ -11,11 +11,11 @@ function Logistic() {
     <div>
       <header
         className="text-white text-center py-5 position-relative"
-        style={{ height: "19rem", overflow: "hidden" }}
+        style={{ maxHeight: "100%", overflow: "hidden" }}
       >
         {/* Background Image */}
         <img
-          src={bg3} // Replace 'bg' with the actual path to your background image
+          src={bg3} // Replace 'bg' with the actual path to  background image
           alt="Background"
           className="position-absolute top-0 start-0 w-100 h-100 object-fit-cover"
           style={{ zIndex: 1, objectFit: "cover" }}
@@ -36,7 +36,7 @@ function Logistic() {
             <a href="/" className="text-white">
               Industries We Serve /
             </a>{" "}
-            / Logistic
+            Logistic
           </span>
         </div>
 
@@ -50,7 +50,7 @@ function Logistic() {
             Chain
           </h1>
           <p className="lead">
-            Streamline your supply chain with our innovative technology
+            Streamline  supply chain with our innovative technology
             solutions. From real-time tracking to AI-driven optimization,
             discover how we enhance efficiency, reduce costs, and drive success
             in the logistics sector
@@ -145,7 +145,7 @@ function Logistic() {
               </ul>
             </div>
           </div>
-          <hr />
+           <hr className="mt-4"/>
         </div>
       </section>
 
@@ -243,7 +243,7 @@ function Logistic() {
               />
             </div>
           </div>
-          <hr />
+          <hr className="mt-4"/>
         </div>
       </section>
       <section
@@ -337,7 +337,7 @@ function Logistic() {
               </ul>
             </div>
           </div>
-          <hr />
+           <hr className="mt-4"/>
         </div>
       </section>
       <section className="pb-5 mt-5 mb-4">
@@ -370,12 +370,12 @@ function Logistic() {
                       <p className="font-italic text-muted fs-6">
                         Our 3PL (Third-Party Logistics) services offer
                         comprehensive solutions for warehousing, distribution,
-                        and fulfillment, optimizing your supply chain and
+                        and fulfillment, optimizing  supply chain and
                         reducing operational costs. Our expertise in 3PL
-                        logistics ensures efficient management of your logistics
+                        logistics ensures efficient management of  logistics
                         needs, from inventory handling to delivery, providing
                         you with scalable and flexible solutions tailored to
-                        your business requirements.
+                         business requirements.
                       </p>
                     </div>
                   </div>

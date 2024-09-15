@@ -1,19 +1,33 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Carousel } from "react-bootstrap";
 import "./Common.css";
 import { Link } from "react-router-dom";
-import img1 from './Images/petadhar.main.jpg'
-import img2 from './Images/petadhar.second.jpeg'
-import img3 from './Images/petadhar.third.jpg'
+import img1 from "./Images/petadhar.main.jpg";
+import img2 from "./Images/petadhar.second.jpeg";
+import img3 from "./Images/petadhar.third.jpg";
 import bg from "./../../Images/bg1.jpg";
 
 function Petadhar() {
+  const [isSmallScreen, setIsSmallScreen] = useState(window.innerWidth < 768);
+  useEffect(() => {
+    const handleResize = () => {
+      setIsSmallScreen(window.innerWidth < 768);
+    };
+
+    // Add event listener to monitor window resize
+    window.addEventListener("resize", handleResize);
+
+    // Cleanup listener on component unmount
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
   return (
     <div>
-        {/* Navigation Path */}
-        <header
+      {/* Navigation Path */}
+      <header
         className="text-white text-center py-5 position-relative"
-        style={{ height: "19rem", overflow: "hidden" }}
+        style={{ maxHeight: "100%", overflow: "hidden" }}
       >
         {/* Background Image */}
         <img
@@ -39,7 +53,7 @@ function Petadhar() {
               What we Do ? /
             </a>{" "}
             <a href="#" className="text-white">
-            Product Platform 
+              Product Platform
             </a>{" "}
             /Pet Aadhar
           </span>
@@ -51,10 +65,11 @@ function Petadhar() {
           style={{ zIndex: 3, position: "relative" }}
         >
           <h1 className="display-6">
-          Pet Aadhar: Revolutionizing Pet Identification
+            Pet Aadhar: Revolutionizing Pet Identification
           </h1>
           <p className="lead">
-          Secure, scalable, and future-ready identification for pets. Simplifying pet management and tracking with advanced technology.
+            Secure, scalable, and future-ready identification for pets.
+            Simplifying pet management and tracking with advanced technology.
           </p>
         </div>
       </header>
@@ -113,7 +128,7 @@ function Petadhar() {
 
             {/* Text Section */}
             <div className="col-md-6 mb-5">
-              <h3 className="text-primary fw-bold mb-3">
+              <h3 className="text-primary fw-normal mb-3">
                 Rationale Behind Pashu Aadhaar
               </h3>
               <p className="">
@@ -502,6 +517,25 @@ function Petadhar() {
               </div>
             </div>
           </div>
+
+          {isSmallScreen && (
+            <section>
+              <div className="col-lg-6 mx-2 shadow p-4">
+                <h3 className="text-primary  font-weight-bold mb-4 ">
+                  At the Forefront of Pet Management: Cloudstry Technologies
+                </h3>
+                <p className="">
+                  Pashu Aadhaar offers a promising solution for managing
+                  livestock in India. By providing unique identification
+                  numbers, it aims to improve tracking accuracy, enhance disease
+                  control, and streamline record management. The system is
+                  designed to boost operational efficiency and support better
+                  decision-making. Cloudstry Tech is actively working on
+                  solutions to facilitate the implementation of this initiative
+                </p>
+              </div>
+            </section>
+          )}
 
           <section style={{ position: "relative", marginTop: "7rem" }}>
             <div

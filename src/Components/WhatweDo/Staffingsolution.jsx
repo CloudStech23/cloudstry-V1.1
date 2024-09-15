@@ -10,11 +10,11 @@ function Staffingsolution() {
     <div>
       <header
         className="text-white text-center py-5 position-relative"
-        style={{ height: "19rem", overflow: "hidden" }}
+        style={{ maxHeight: "100%", overflow: "hidden" }}
       >
         {/* Background Image */}
         <img
-          src={bg} // Replace 'bg' with the actual path to your background image
+          src={bg} // Replace 'bg' with the actual path to  background image
           alt="Background"
           className="position-absolute top-0 start-0 w-100 h-100 object-fit-cover"
           style={{ zIndex: 1, objectFit: "cover" }}
@@ -200,8 +200,8 @@ function Staffingsolution() {
                 ></i>
                 <span className="d-inline">
                   <strong>Scalability:</strong> Our solutions are designed to
-                  grow with your GCC, providing the flexibility to accommodate
-                  increasing staffing needs and operational demands as your
+                  grow with  GCC, providing the flexibility to accommodate
+                  increasing staffing needs and operational demands as 
                   center expands.
                 </span>
               </li>
@@ -223,7 +223,7 @@ function Staffingsolution() {
                 ></i>
                 <span className="d-inline">
                   <strong>Cultural Alignment:</strong> Our approach ensures
-                  candidates are a good cultural fit, aligning with your GCC’s
+                  candidates are a good cultural fit, aligning with  GCC’s
                   corporate culture and operational style to enhance team
                   cohesion and productivity.
                 </span>
@@ -262,7 +262,7 @@ function Staffingsolution() {
           </div>
           <div className="col-md-6 mb-5 order-last order-md-first">
             <h3 className="text-primary display-7 fw-light mb-3">
-              Why Choose Us for Your GCC Staffing Needs?
+              Why Choose Us for  GCC Staffing Needs?
             </h3>
             <p className="h5 mb-2 text-muted" style={{ fontWeight: 300 }}>
               See how our expertise and custom solutions enhance GCC staffing.
@@ -310,7 +310,7 @@ function Staffingsolution() {
                 ></i>
                 <span className="d-inline">
                   <strong>Support and Consultation:</strong> Ongoing support and
-                  expert consultation to guarantee the success of your staffing
+                  expert consultation to guarantee the success of  staffing
                   solutions, from initial setup to long-term management.
                 </span>
               </li>
@@ -442,7 +442,7 @@ function Staffingsolution() {
 
                 <p className="text-muted fw-bold">
                   By choosing Cloudstry Tech, you benefit from a strategic
-                  partner committed to enhancing your workforce efficiency and
+                  partner committed to enhancing  workforce efficiency and
                   driving organizational success.
                 </p>
               </ul>

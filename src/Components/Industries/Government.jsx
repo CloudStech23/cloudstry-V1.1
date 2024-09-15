@@ -15,7 +15,7 @@ function Government() {
     <div>
      <header
         className="text-white text-center py-5 position-relative"
-        style={{ height: "19rem", overflow: "hidden" }}
+        style={{ maxHeight: "100%", overflow: "hidden" }}
       >
         {/* Background Image */}
         <img
@@ -41,7 +41,7 @@ function Government() {
             Industries We Serve /
             </a>{" "}
             
-            / Government
+            Government
           </span>
         </div>
 
@@ -209,7 +209,7 @@ function Government() {
 
       <section
         className="image-video-text-interactivity fadeInUp mb-5"
-        style={{ marginTop: "10rem" }}
+        style={{ marginTop: "10em" }}
       >
         <div className="container mb-5">
           <div className="row align-items-center mb-5">
@@ -283,6 +283,7 @@ function Government() {
               </ul>
               <p className="text-muted">The government sector faces a unique set of challenges that impact its ability to serve citizens effectively. Here are five major issues</p>
             </div>
+          <hr className="mt-4"/>
           </div>
         </div>
       </section>
@@ -365,6 +366,7 @@ function Government() {
               />
             </div>
           </div>
+          <hr className="mt-4"/>
         </div>
       </section>
 
@@ -387,7 +389,7 @@ function Government() {
 
             {/* Text Section */}
             <div className="col-md-6">
-              <h3 className="text-primary fw-normal mb-3">
+              <h3 className="text-primary fw-normal mt-4 mb-3">
                 How Cloudstry Tech Supports the Government Sector: Empowering
                 Public Services
               </h3>
@@ -447,6 +449,7 @@ function Government() {
               <p className="text-muted">By partnering with Cloudstry Tech, government agencies can overcome challenges, enhance public services, and build a foundation for future success</p>
             </div>
           </div>
+          <hr className="mt-4"/>
         </div>
       </section>
 

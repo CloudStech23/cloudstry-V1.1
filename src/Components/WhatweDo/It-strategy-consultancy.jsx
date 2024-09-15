@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useEffect,useState} from "react";
 import { Link } from "react-router-dom";
 import img1 from "./Images/isc.main.jpg";
 import img2 from "./Images/isc.second.jpg";
@@ -8,11 +8,27 @@ import img5 from "./Images/isc.fifth.jpg";
 import bg2 from "../Images/bg2.jpg";
 
 function Consultancy() {
+  const [isSmallScreen, setIsSmallScreen] = useState(window.innerWidth < 768);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsSmallScreen(window.innerWidth < 768);
+    };
+
+    // Add event listener to monitor window resize
+    window.addEventListener("resize", handleResize);
+
+    // Cleanup listener on component unmount
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
   return (
     <div>
       <header
         className="text-white text-center py-5 position-relative"
-        style={{ height: "19rem", overflow: "hidden" }}
+        style={{ maxHeight: "100%", overflow: "hidden" }}
       >
         {/* Background Image */}
         <img
@@ -91,7 +107,7 @@ function Consultancy() {
               strategy consultancy services, crafting tailored solutions that
               address unique challenges, leverage emerging technologies, and
               support long-term objectives. Whether optimizing IT infrastructure
-              or adopting new technologies, Cloudstry Tech guides your
+              or adopting new technologies, Cloudstry Tech guides 
               organization toward sustainable success.
             </p>
             <Link to="/Support" className="btn btn-danger">
@@ -117,13 +133,13 @@ function Consultancy() {
 
             {/* Text Section */}
             <div className="col-md-6 mb-5">
-              <h3 className="text-primary fw-bold mb-3">
+              <h3 className="text-primary fw-normal mb-3">
                 Strategic Dominance of Cloudstry Tech's IT Consultancy
               </h3>
               <p className="">
                 Cloudstry Tech offers expert IT strategy consultancy to help
                 organizations navigate the complex digital landscape. By
-                aligning technology with business goals, we ensure your company
+                aligning technology with business goals, we ensure  company
                 is equipped for long-term success.
               </p>
               <ul className="list-unstyled">
@@ -145,7 +161,7 @@ function Consultancy() {
                   ></i>
                   <span className="d-inline">
                     <span className="fw-bold">Innovative Solutions:</span>{" "}
-                    Pioneering approaches that set your business apart from the
+                    Pioneering approaches that set  business apart from the
                     competition.
                   </span>
                 </li>
@@ -157,7 +173,7 @@ function Consultancy() {
                   <span className="d-inline">
                     <span className="fw-bold">Proactive Adaptation:</span> We
                     anticipate and adapt to technological shifts before they
-                    impact your business.
+                    impact  business.
                   </span>
                 </li>
                 <li className="mb-2 d-flex align-items-start">
@@ -178,7 +194,7 @@ function Consultancy() {
                   ></i>
                   <span className="d-inline">
                     <span className="fw-bold">Sustained Competitive Edge:</span>{" "}
-                    Continuous innovation to maintain your leadership position
+                    Continuous innovation to maintain  leadership position
                     in the market.
                   </span>
                 </li>
@@ -205,7 +221,7 @@ function Consultancy() {
               />
             </div>
             <div className="col-md-6 order-last order-md-first">
-              <h3 className="text-primary fw-bold mb-3">
+              <h3 className="text-primary fw-normal mb-3">
                 Addressing IT Challenges Across Industries
               </h3>
               <p>
@@ -289,7 +305,6 @@ function Consultancy() {
             </div>
 
             {/* Image Section */}
-            
           </div>
         </div>
       </section>
@@ -310,7 +325,7 @@ function Consultancy() {
 
             {/* Text Section */}
             <div className="col-md-6 mb-5">
-              <h3 className="text-primary fw-bold mb-3">
+              <h3 className="text-primary fw-normal mb-3">
                 Tailored Solutions for Industry-Specific IT Consultancy Needs
               </h3>
               <p className="">
@@ -400,6 +415,29 @@ function Consultancy() {
           </div>
         </div>
       </section>
+
+      {isSmallScreen && (
+        <section>
+          <div className="col-lg-6 p-3 mx-2 shadow mb-5">
+            <h3 className="text-primary font-weight-normal mb-4">
+              Why Cloudstry for IT Strategy Consultancy?
+            </h3>
+            <p>
+              Through partnerships with leading technology providers, we offer
+              access to cutting-edge tools and platforms that drive efficiency.
+              Our commitment to ongoing support and consultation ensures that
+               IT systems grow with  organization, delivering sustained
+              value. Additionally, we focus on cost-effective, scalable
+              solutions that meet  current needs while preparing you for
+              future expansion.
+            </p>
+            <Link className="btn btn-danger text-white" to="/Support">
+              Start With Us
+            </Link>
+          </div>
+        </section>
+      )}
+
       <section
         style={{ position: "relative", marginTop: "1rem" }}
         className="px-5 py-5 d-xl-block d-none"
@@ -425,10 +463,10 @@ function Consultancy() {
           <p>
             Through partnerships with leading technology providers, we offer
             access to cutting-edge tools and platforms that drive efficiency.
-            Our commitment to ongoing support and consultation ensures that your
-            IT systems grow with your organization, delivering sustained value.
+            Our commitment to ongoing support and consultation ensures that 
+            IT systems grow with  organization, delivering sustained value.
             Additionally, we focus on cost-effective, scalable solutions that
-            meet your current needs while preparing you for future expansion
+            meet  current needs while preparing you for future expansion
           </p>
           <Link className="btn btn-danger text-white" to="/Support">
             Start With Us

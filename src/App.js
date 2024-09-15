@@ -14,10 +14,12 @@ import Logistic from "./Components/Industries/Logistic";
 import Education from "./Components/Industries/Education";
 import Contact from "./Components/About/Contact";
 import Team from "./Components/About/Team";
+import ScrollToTop from "./Components/Menubar/ScrolltoTop";
 
 function App() {
   return (
     <Router>
+      <ScrollToTop/>
       <div className="App" style={{ zIndex: "2" }}>
         <Menubar />
       </div>

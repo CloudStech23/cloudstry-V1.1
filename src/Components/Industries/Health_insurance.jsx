@@ -10,11 +10,11 @@ function Healthinsurance() {
     <div>
       <header
         className="text-white text-center py-5 position-relative"
-        style={{ height: "19rem", overflow: "hidden" }}
+        style={{ maxHeight: "100%", overflow: "hidden" }}
       >
         {/* Background Image */}
         <img
-          src={bg3} // Replace 'bg' with the actual path to your background image
+          src={bg3} // Replace 'bg' with the actual path to  background image
           alt="Background"
           className="position-absolute top-0 start-0 w-100 h-100 object-fit-cover"
           style={{ zIndex: 1, objectFit: "cover" }}
@@ -35,7 +35,7 @@ function Healthinsurance() {
             <a href="/" className="text-white">
               Industries We Serve /
             </a>{" "}
-            / Health Insurance
+            Health Insurance
           </span>
         </div>
 
@@ -99,7 +99,7 @@ function Healthinsurance() {
         <div className="container mt-5">
           <div className="row align-items-center">
             {/* Image Section */}
-            <div className="col-md-6 text-md-start mt-4 mt-md-0">
+            <div className="col-md-6 text-md-start mt-4 mb-3 mt-md-0">
               <img
                 className="img-fluid rounded"
                 height={365}
@@ -185,6 +185,7 @@ function Healthinsurance() {
               </ul>
             </div>
           </div>
+          <hr className="mt-5"/>
         </div>
       </section>
 
@@ -284,6 +285,7 @@ function Healthinsurance() {
               />
             </div>
           </div>
+          <hr className="mt-5"/>
         </div>
       </section>
 
@@ -334,7 +336,7 @@ function Healthinsurance() {
                   <span className="d-inline">
                     <span className="fw-bold">Fraud Detection Solutions:</span>{" "}
                     AI-driven tools that analyze data and detect fraudulent
-                    activities, safeguarding your operations and reducing risk.
+                    activities, safeguarding  operations and reducing risk.
                   </span>
                 </li>
                 <li className="mb-2 d-flex align-items-start">
@@ -376,6 +378,7 @@ function Healthinsurance() {
               </ul>
             </div>
           </div>
+          <hr className="mt-5"/>
         </div>
       </section>
 

@@ -1,5 +1,53 @@
-@media only screen and (max-width: 600px) {
-    .mainslider{
-        z-index: 2;
+/* Custom navigation button styles */
+.custom-prev, .custom-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    font-size: 3rem;
+    color: #007bff;
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+  
+  .custom-prev {
+    left: 10px; /* Adjusted for smaller screens */
+  }
+  
+  .custom-next {
+    right: 10px; /* Adjusted for smaller screens */
+  }
+  
+  .custom-prev:hover, .custom-next:hover {
+    color: #0056b3;
+  }
+  
+  .custom-prev i, .custom-next i {
+    font-size: 3rem;
+    color: inherit;
+  }
+  
+  /* Responsive styling */
+  @media (max-width: 768px) {
+    .swiper-container {
+      height: 22rem; /* Reduce height for mobile */
+    }
+  
+    .custom-prev, .custom-next {
+      font-size: 2rem; /* Smaller icons for mobile */
+      top: 45%;
+    }
+  
+    .responsive-heading {
+      font-size: 1.5rem; /* Smaller heading text */
+    }
+  
+    .responsive-text {
+      font-size: 0.9rem; /* Smaller paragraph text */
+    }
+  
+    img {
+      height: 15rem; /* Make images smaller for mobile */
     }
   }
+  

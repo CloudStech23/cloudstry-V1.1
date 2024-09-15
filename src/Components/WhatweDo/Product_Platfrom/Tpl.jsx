@@ -12,7 +12,7 @@ function Thirdpartylogistic() {
     <div>
       <header
         className="text-white text-center py-5 position-relative"
-        style={{ height: "19rem", overflow: "hidden" }}
+        style={{ maxHeight: "100%", overflow: "hidden" }}
       >
         {/* Background Image */}
         <img
@@ -112,7 +112,7 @@ function Thirdpartylogistic() {
 
             {/* Text Section */}
             <div className="col-md-6 mb-5">
-              <h3 className="text-primary fw-bold mb-3">
+              <h3 className="text-primary fw-normal mb-3">
                 Navigating Core 3PL Challenges
               </h3>
               <p className="">
@@ -199,7 +199,7 @@ function Thirdpartylogistic() {
           <div className="row align-items-center">
             {/* Text Section */}
             <div className="col-md-6 order-md-1 order-2">
-              <h3 className="text-primary fw-bold mb-3">
+              <h3 className="text-primary fw-normal mb-3">
                 Innovative 3PL Strategies: Cloudstry Expertise
               </h3>
               <p>
@@ -296,7 +296,7 @@ function Thirdpartylogistic() {
           <div className="col-md-6 mt-4 mb-2 order-md-1 order-2">
             <h2
               className=" display-7 text-primary "
-              style={{ fontWeight: "bold" }}
+              style={{ fontWeight: "normal" }}
             >
               Economic Growth Through Advanced 3PL Strategies
             </h2>

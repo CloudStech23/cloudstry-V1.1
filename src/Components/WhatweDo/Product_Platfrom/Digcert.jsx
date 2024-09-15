@@ -17,7 +17,7 @@ function Digitalcertificate() {
     <div>
       <header
         className="text-white text-center py-5 position-relative"
-        style={{ height: "19rem", overflow: "hidden" }}
+        style={{ maxHeight: "100%", overflow: "hidden" }}
       >
         {/* Background Image */}
         <img
@@ -43,9 +43,9 @@ function Digitalcertificate() {
               What we Do ? /
             </a>{" "}
             <a href="#" className="text-white">
-              IT Solutions
+              Product Platform
             </a>{" "}
-            / Software Services
+            / Digital Certificate
           </span>
         </div>
 
@@ -54,7 +54,7 @@ function Digitalcertificate() {
           className="container text-white mt-5"
           style={{ zIndex: 3, position: "relative" }}
         >
-          <h1 className="display-6">
+          <h1 className="display-6 ">
             Digital Certificates: Revolutionizing Credential Management
           </h1>
           <p className="lead">
@@ -115,7 +115,7 @@ function Digitalcertificate() {
 
             {/* Text Section */}
             <div className="col-md-6 mb-5">
-              <h3 className="text-primary fw-bold mb-3">
+              <h3 className="text-primary fw-normal mb-3">
                 Why choose Digital Certificate ?
               </h3>
               <p className="">
@@ -202,7 +202,7 @@ function Digitalcertificate() {
             </div>
             {/* Text Section */}
             <div className="col-md-6  order-last order-md-first">
-              <h3 className="text-primary fw-bold mb-3">
+              <h3 className="text-primary fw-normal mb-3">
                 Credential Solutions Tailored for Every Sector
               </h3>
               <p className="">
@@ -406,7 +406,7 @@ function Digitalcertificate() {
               solutions.
             </p>
             <p className="mt-4 h3 fw-normal text-primary">
-              Cloudstry Tech: Elevate Your Digital Presence
+              Cloudstry Tech: Elevate  Digital Presence
             </p>
             <ul className="list-unstyled mt-0">
               <li className="mb-2 d-flex align-items-start">
@@ -415,7 +415,7 @@ function Digitalcertificate() {
                   style={{ marginTop: "6px" }}
                 ></i>
                 <span className="d-inline">
-                  Maintain a detailed digital record of your achievements and
+                  Maintain a detailed digital record of  achievements and
                   professional activities.
                 </span>
               </li>
@@ -425,7 +425,7 @@ function Digitalcertificate() {
                   style={{ marginTop: "6px" }}
                 ></i>
                 <span className="d-inline">
-                  Enjoy 24/7 access to your cloud-based portfolio.
+                  Enjoy 24/7 access to  cloud-based portfolio.
                 </span>
               </li>
               <li className="mb-2 d-flex align-items-start">
@@ -596,7 +596,7 @@ function Digitalcertificate() {
                 Associations
               </h3>
               <p className="h6 mb-2 text-muted ">
-                With Cloudstry Tech, reduce costs, promote your programs, and
+                With Cloudstry Tech, reduce costs, promote  programs, and
                 acknowledge hard-earned achievements through meaningful, secure,
                 and portable digital badges.
               </p>
@@ -678,7 +678,7 @@ function Digitalcertificate() {
                 Corporations
               </h3>
               <p className="h6 mb-2 text-muted">
-                Identify and celebrate skills and achievements, and explore your
+                Identify and celebrate skills and achievements, and explore 
                 employee network for specific talents and qualifications.
               </p>
 
@@ -747,7 +747,7 @@ function Digitalcertificate() {
                   </button>
                 </div>
                 <div class="small text-white-50">
-                  We care about privacy, and will never share your data.
+                  We care about privacy, and will never share  data.
                 </div>
               </div>
             </div>

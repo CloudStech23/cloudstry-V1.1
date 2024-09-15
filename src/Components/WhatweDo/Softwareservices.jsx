@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import img1 from "../Images/software ai.png";
 import cloud from "../Images/cloud.jpg";
 import ai from "../Images/ai.jpg";
@@ -13,11 +13,26 @@ import "./Software.css";
 import { Link } from "react-router-dom";
 
 function Softwareservices() {
+  const [isSmallScreen, setIsSmallScreen] = useState(window.innerWidth < 768);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsSmallScreen(window.innerWidth < 768);
+    };
+
+    // Add event listener to monitor window resize
+    window.addEventListener("resize", handleResize);
+
+    // Cleanup listener on component unmount
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
   return (
     <div className="bg-light">
       <header
         className="text-white text-center py-5 position-relative"
-        style={{ height: "19rem", overflow: "hidden" }}
+        style={{ maxHeight: "100%", overflow: "hidden" }}
       >
         {/* Background Image */}
         <img
@@ -65,7 +80,7 @@ function Softwareservices() {
 
       {/* Hero Section */}
       <div className="container py-5">
-        <div className="row align-items-center justify-content-between bg-white mt-3 mb-3 shadow px-5 rounded-3 position-relative">
+        <div className="row align-items-center justify-content-between bg-white mt-3 mb-3 shadow px-4 rounded-3 position-relative">
           {/* Text Content */}
           <div
             className="col-md-5 order-first order-md-last text-md-end mt-md-0 mb-2"
@@ -113,7 +128,7 @@ function Softwareservices() {
 
       {/* Card Section */}
       <section class="py-5">
-        <div class="container px-5 my-3">
+        <div class="container px-4 my-3">
           {/* <h3 className="text-danger fw-light display-5 text-center .customheading">Transformative Solutions</h3> */}
           <div class="row gx-5">
             <div className="col-lg-4 mb-5">
@@ -156,7 +171,7 @@ function Softwareservices() {
             </div>
             <div className="col-lg-4 mb-5">
               <div className="card h-80 shadow border-0 service-card">
-                <div className="blackblur">
+                <div className="blackblur d">
                   <img
                     className="card-img-top img-fluid"
                     src={cloud}
@@ -238,7 +253,7 @@ function Softwareservices() {
       {/* Issuer Section */}
       <div className="container">
         <div className="row mb-5">
-          <div className="col-md-6">
+          <div className="col-md-6 d-xl-block d-none">
             <img
               src={soft1}
               alt="Software Challenges"
@@ -309,7 +324,7 @@ function Softwareservices() {
 
       <div className="row gx-0 py-5 px-5">
         <div
-          className="col-xl-6 col-lg-5 d-flex justify-content-left align-items-center"
+          className="col-xl-6 col-lg-5 d-flex  justify-content-left align-items-center"
           style={{ marginBottom: "5rem" }}
         >
           <img
@@ -448,7 +463,28 @@ function Softwareservices() {
         </div>
       </div>
 
-      {/* Closing Thoughts Section */}
+      {isSmallScreen && (
+        <section>
+          <div className="col-lg-6 p-4 shadow mx-2">
+            <h3 className="text-primary font-weight-bold mb-4">
+              A Commitment to Excellence You Can Trust
+            </h3>
+            <p>
+              At Cloudstry Tech, we stand by the quality and reliability of our
+              solutions. Our commitment to innovation and customer satisfaction
+              is at the core of everything we do. We believe in the power of
+              technology to transform businesses, and we’re here to ensure that
+              our clients succeed with confidence. Join us on this journey and
+              experience the difference that true dedication and expertise can
+              make. Your success is our promise.
+            </p>
+            <Link className="btn btn-danger text-white" to="/Support">
+              Connect with us
+            </Link>
+          </div>
+        </section>
+      )}
+
       <section
         style={{ position: "relative", marginTop: "1rem" }}
         className="px-5 py-5 d-xl-block d-none"

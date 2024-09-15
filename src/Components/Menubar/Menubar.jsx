@@ -235,7 +235,7 @@ function Menubar() {
                               className="text-light fw-normal"
                               style={{ fontSize: "2rem" }}
                             >
-                              Empowering Your Business with a Robust Product
+                              Empowering  Business with a Robust Product
                               Platform.
                             </h3>
                             
@@ -318,11 +318,11 @@ function Menubar() {
                               className="text-light fw-normal"
                               style={{ fontSize: "2rem" }}
                             >
-                              IT Solutions for Your Business Success.
+                              IT Solutions for  Business Success.
                             </h3>
                             {/* <p className="text-light mb-2 lh-lg">
                               Advanced IT infrastructure, cloud services, and
-                              cybersecurity tailored to meet your specific
+                              cybersecurity tailored to meet  specific
                               business needs. Comprehensive software
                               development, data management, and networking
                               solutions to ensure seamless operations and
@@ -376,7 +376,7 @@ function Menubar() {
                                   className="text-light fw-normal"
                                   style={{ fontSize: "2rem" }}
                                 >
-                                  Innovative Software Services Tailored to Your
+                                  Innovative Software Services Tailored to 
                                   Needs.
                                 </h3>
                                 <p className="text-light mb-2 lh-lg">

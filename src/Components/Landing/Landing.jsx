@@ -142,7 +142,7 @@ function Landing() {
                 Why Cloudstry Technologies ?
               </h3>
               <p className="mb-4" style={{ lineHeight: 1.375 }}>
-                At Cloudstry Technologies, we recognize your business’s unique
+                At Cloudstry Technologies, we recognize  business’s unique
                 challenges and provide tailored solutions for sustainable growth
                 and operational excellence. Our advanced technologies enhance
                 efficiency, improve customer engagement, and position you at the
@@ -155,7 +155,7 @@ function Landing() {
                     style={{ marginTop: "6px" }}
                   ></i>
                   Targeted Communication: Deliver precise, timely messages
-                  across multiple channels, ensuring your customers stay
+                  across multiple channels, ensuring  customers stay
                   informed and engaged.
                 </li>
                 <li className="ps-4 mb-3">
@@ -164,7 +164,7 @@ function Landing() {
                     style={{ marginTop: "6px" }}
                   ></i>
                   Seamless Integration: Our solutions integrate effortlessly
-                  with your existing systems, maximizing efficiency and
+                  with  existing systems, maximizing efficiency and
                   minimizing disruption.
                 </li>
                 <li className="ps-4 mb-3">
@@ -189,8 +189,8 @@ function Landing() {
                     className="fa fa-check-circle text-primary me-2"
                     style={{ marginTop: "6px" }}
                   ></i>
-                  Scalable Solutions: As your business grows, our solutions grow
-                  with you, adapting to your evolving needs without compromising
+                  Scalable Solutions:  business grows, our solutions grow
+                  with you, adapting to  evolving needs without compromising
                   performance.
                 </li>
               </ul>
@@ -454,11 +454,11 @@ function Landing() {
               </h3>
               <p className="text-muted">
                 At Cloudstry Technologies, we understand the unique challenges
-                your business faces and offer solutions designed to drive
+                 business faces and offer solutions designed to drive
                 sustainable growth and operational excellence. Our advanced
-                technologies are tailored to meet your specific needs, enabling
+                technologies are tailored to meet  specific needs, enabling
                 you to enhance efficiency, improve customer engagement, and
-                secure your place at the forefront of your industry.
+                secure  place at the forefront of  industry.
               </p>
               <ul className="list-unstyled">
                 <li className="mb-2 d-flex align-items-start">
@@ -468,7 +468,7 @@ function Landing() {
                   ></i>
                   <span className="d-inline">
                     <strong>Targeted Communication:</strong> Deliver precise,
-                    timely messages across multiple channels, ensuring your
+                    timely messages across multiple channels, ensuring 
                     customers stay informed and engaged.
                   </span>
                 </li>
@@ -479,7 +479,7 @@ function Landing() {
                   ></i>
                   <span className="d-inline">
                     <strong>Seamless Integration:</strong> Our solutions
-                    integrate effortlessly with your existing systems,
+                    integrate effortlessly with  existing systems,
                     maximizing efficiency and minimizing disruption.
                   </span>
                 </li>
@@ -511,8 +511,8 @@ function Landing() {
                     style={{ marginTop: "6px" }}
                   ></i>
                   <span className="d-inline">
-                    <strong>Scalable Solutions:</strong> As your business grows,
-                    our solutions grow with you, adapting to your evolving needs
+                    <strong>Scalable Solutions:</strong> As  business grows,
+                    our solutions grow with you, adapting to  evolving needs
                     without compromising performance.
                   </span>
                 </li>
