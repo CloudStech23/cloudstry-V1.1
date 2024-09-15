@@ -35,7 +35,7 @@ function Staffingsolution() {
             <a href="/" className="text-white">
               What we Do ? /
             </a>{" "}
-            / Staffing Solution
+            Staffing Solution
           </span>
         </div>
 
@@ -174,7 +174,7 @@ function Staffingsolution() {
         <div className="row gx-4 mt-5">
           <div
             className="col-xl-6 col-lg-5 d-flex justify-content-left align-items-center"
-            style={{ marginBottom: "5rem" }}
+            style={{ marginBottom: "2rem" }}
           >
             <img
               className="img-fluid"
@@ -256,7 +256,7 @@ function Staffingsolution() {
         <div className="row gx-5 mt-5">
           <div
             className="col-xl-6 col-lg-5 d-flex order-first order-md-last justify-content-right align-items-center"
-            style={{ marginBottom: "5rem" }}
+            style={{ marginBottom: "2rem" }}
           >
             <img className="img-fluid" src={img2} alt="GCC Staffing" />
           </div>
@@ -321,7 +321,7 @@ function Staffingsolution() {
         <div className="row gx-4">
           <div
             className="col-xl-6 col-lg-5 d-flex  justify-content-left align-items-center"
-            style={{ marginBottom: "5rem" }}
+            style={{ marginBottom: "2rem" }}
           >
             <img
               className="img-fluid"

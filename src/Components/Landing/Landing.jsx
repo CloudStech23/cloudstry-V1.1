@@ -524,7 +524,7 @@ function Landing() {
             </div>
 
             {/* Image Section */}
-            <div className="col-md-6 text-md-end mt-4 mt-md-0 order-md-2 order-1">
+            <div className="col-md-6 text-md-end mb-3 mt-4 mt-md-0 order-md-2 order-1">
               <img
                 className="img-fluid rounded"
                 height={365}

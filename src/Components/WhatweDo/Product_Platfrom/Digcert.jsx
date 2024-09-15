@@ -528,6 +528,7 @@ function Digitalcertificate() {
                 </li>
               </ul>
             </div>
+            <hr className="mb-5"/>
           </div>
 
           {/* Second Row */}
@@ -576,11 +577,12 @@ function Digitalcertificate() {
                 </li>
               </ul>
             </div>
+            <hr className="mt-3" />
           </div>
           <div className="row gx-0 mt-4">
             <div
               className="col-xl-6 col-lg-5 d-flex justify-content-left align-items-center"
-              style={{ marginBottom: "5rem" }}
+              style={{ marginBottom: "2rem" }}
             >
               <img
                 className="img-fluid"
@@ -660,6 +662,7 @@ function Digitalcertificate() {
                 </li>
               </ul>
             </div>
+            <hr />
           </div>
           <div className="row align-items-center mb-5 flex-row-reverse">
             <div className="col-md-6 mb-4 mb-md-0">

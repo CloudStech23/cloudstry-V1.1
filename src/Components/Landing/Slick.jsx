@@ -89,10 +89,10 @@ const SwiperCarousel = () => {
                 </div>
                 {/* Text Content */}
                 <div className="col-12 col-md-5 mt-4 mb-2 order-2 order-md-1 text-center text-md-start">
-                  <h2 className="display-5 text-primary responsive-heading" style={{ fontWeight: 300 }}>
+                  <h2 className="display-5 text-primary responsive-heading" style={{ fontWeight: 300,whiteSpace:"nowrap" }}>
                     {value.title}
                   </h2>
-                  <p className="text-muted text-center mb-4 responsive-text">
+                  <p className="text-muted  mb-4 responsive-text">
                     {value.desc}
                   </p>
                   <a href={value.btnlink} className="btn btn-danger">
