@@ -9,7 +9,7 @@ function Team() {
       {/* Header Section */}
       <header
         className="text-white text-center py-5 position-relative"
-        style={{ height: "19rem", overflow: "hidden" }}
+        style={{ maxHeight: "100%", overflow: "hidden" }}
       >
         {/* Background Image */}
         <img
