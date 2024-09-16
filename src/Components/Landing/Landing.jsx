@@ -8,7 +8,7 @@ import strategyimage from "../Images/it strategy.jpg";
 import { Link } from "react-router-dom";
 import government from "../Images/government.jpeg";
 import education from "../Images/Education.jpg";
-import whycs from '../Images/why cs.jpg'
+import whycs from "../Images/why cs.jpg";
 import "../Landing/Landing.css";
 
 function Landing() {
@@ -42,9 +42,14 @@ function Landing() {
       <section className=" service-section" style={{ marginTop: "5rem" }}>
         <div className="container">
           <div className="row g-4">
-            <h1 className="fw-normal text-danger text-center mb-4 mt-5">
-              Services We Offer{" "}
-            </h1>
+            <div className="half-underline-container mb-3">
+              <h3
+                className="text-danger fw-normal display-6 text-center   half-underline"
+                
+              >
+                Services We Offer
+              </h3>
+            </div>
             <div className="col-12 col-md-4 service-card  ">
               <div className="position-relative shadow">
                 <img
@@ -142,7 +147,7 @@ function Landing() {
                 Why Cloudstry Technologies ?
               </h3>
               <p className="mb-4" style={{ lineHeight: 1.375 }}>
-                At Cloudstry Technologies, we recognize  business’s unique
+                At Cloudstry Technologies, we recognize business’s unique
                 challenges and provide tailored solutions for sustainable growth
                 and operational excellence. Our advanced technologies enhance
                 efficiency, improve customer engagement, and position you at the
@@ -155,8 +160,8 @@ function Landing() {
                     style={{ marginTop: "6px" }}
                   ></i>
                   Targeted Communication: Deliver precise, timely messages
-                  across multiple channels, ensuring  customers stay
-                  informed and engaged.
+                  across multiple channels, ensuring customers stay informed and
+                  engaged.
                 </li>
                 <li className="ps-4 mb-3">
                   <i
@@ -164,8 +169,8 @@ function Landing() {
                     style={{ marginTop: "6px" }}
                   ></i>
                   Seamless Integration: Our solutions integrate effortlessly
-                  with  existing systems, maximizing efficiency and
-                  minimizing disruption.
+                  with existing systems, maximizing efficiency and minimizing
+                  disruption.
                 </li>
                 <li className="ps-4 mb-3">
                   <i
@@ -189,8 +194,8 @@ function Landing() {
                     className="fa fa-check-circle text-primary me-2"
                     style={{ marginTop: "6px" }}
                   ></i>
-                  Scalable Solutions:  business grows, our solutions grow
-                  with you, adapting to  evolving needs without compromising
+                  Scalable Solutions: business grows, our solutions grow with
+                  you, adapting to evolving needs without compromising
                   performance.
                 </li>
               </ul>
@@ -205,7 +210,7 @@ function Landing() {
         </div>
       </section>
 
-      <div className="container py-5">
+      {/* <div className="container py-5">
         <div className="text-center mb-5">
           <p
             className="display-5 text-primary mb-4 text-danger"
@@ -351,7 +356,103 @@ function Landing() {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
+
+      <section
+        className="image-video-text-interactivity fadeInUp mb-5"
+        style={{ marginTop: "5rem" }}
+      >
+        <div className="container mt-5">
+          <div className="row align-items-center">
+            {/* Text Section */}
+            <div className="col-md-6 order-md-1 order-2">
+              <h3 className="text-primary fw-normal mb-3">
+                Strategic Solutions for Business Growth
+              </h3>
+              <p className="text-muted">
+                At Cloudstry Technologies, we understand the unique challenges
+                business faces and offer solutions designed to drive sustainable
+                growth and operational excellence. Our advanced technologies are
+                tailored to meet specific needs, enabling you to enhance
+                efficiency, improve customer engagement, and secure place at the
+                forefront of industry.
+              </p>
+              <ul className="list-unstyled">
+                <li className="mb-2 d-flex align-items-start">
+                  <i
+                    className="fa fa-check-circle text-primary me-2"
+                    style={{ marginTop: "6px" }}
+                  ></i>
+                  <span className="d-inline">
+                    <strong>Targeted Communication:</strong> Deliver precise,
+                    timely messages across multiple channels, ensuring customers
+                    stay informed and engaged.
+                  </span>
+                </li>
+                <li className="mb-2 d-flex align-items-start">
+                  <i
+                    className="fa fa-check-circle text-primary me-2"
+                    style={{ marginTop: "6px" }}
+                  ></i>
+                  <span className="d-inline">
+                    <strong>Seamless Integration:</strong> Our solutions
+                    integrate effortlessly with existing systems, maximizing
+                    efficiency and minimizing disruption.
+                  </span>
+                </li>
+                <li className="mb-2 d-flex align-items-start">
+                  <i
+                    className="fa fa-check-circle text-primary me-2"
+                    style={{ marginTop: "6px" }}
+                  ></i>
+                  <span className="d-inline">
+                    <strong>Advanced Automation:</strong> Streamline operations
+                    with intelligent automation, reducing manual effort and
+                    increasing accuracy.
+                  </span>
+                </li>
+                <li className="mb-2 d-flex align-items-start">
+                  <i
+                    className="fa fa-check-circle text-primary me-2"
+                    style={{ marginTop: "6px" }}
+                  ></i>
+                  <span className="d-inline">
+                    <strong>Robust Security:</strong> Protect sensitive data
+                    with our state-of-the-art security features, ensuring
+                    compliance and peace of mind.
+                  </span>
+                </li>
+                <li className="mb-2 d-flex align-items-start">
+                  <i
+                    className="fa fa-check-circle text-primary me-2"
+                    style={{ marginTop: "6px" }}
+                  ></i>
+                  <span className="d-inline">
+                    <strong>Scalable Solutions:</strong> As business grows, our
+                    solutions grow with you, adapting to evolving needs without
+                    compromising performance.
+                  </span>
+                </li>
+              </ul>
+              <p className="text-muted">
+                Our solutions are designed to help you scale effectively,
+                ensuring you remain competitive and innovative.
+              </p>
+            </div>
+
+            {/* Image Section */}
+            <div className="col-md-6 text-md-end mb-3 mt-4 mt-md-0 order-md-2 order-1">
+              <img
+                className="img-fluid rounded"
+                height={365}
+                width={504}
+                src={strategyimage}
+                alt="Image"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
 
       <section
         className="image-video-text-interactivity is-reverse fadeInUp"
@@ -418,8 +519,9 @@ function Landing() {
                   ></i>
                   <span className="d-inline">
                     <span className="fw-bold">
-                      Innovative Global Solutions: 
-                    </span> Utilizing cutting-edge technologies to deliver effective and
+                      Innovative Global Solutions:
+                    </span>{" "}
+                    Utilizing cutting-edge technologies to deliver effective and
                     efficient outcomes worldwide.
                   </span>
                 </li>
@@ -431,107 +533,12 @@ function Landing() {
                   <span className="d-inline">
                     <span className="fw-bold">
                       Strategic International Partnerships:
-                    </span> Forming alliances to enhance the value and impact of our
+                    </span>{" "}
+                    Forming alliances to enhance the value and impact of our
                     global services.
                   </span>
                 </li>
               </ul>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section
-        className="image-video-text-interactivity fadeInUp mb-5"
-        style={{ marginTop: "5rem" }}
-      >
-        <div className="container mt-5">
-          <div className="row align-items-center">
-            {/* Text Section */}
-            <div className="col-md-6 order-md-1 order-2">
-              <h3 className="text-primary fw-normal mb-3">
-                Strategic Solutions for Business Growth
-              </h3>
-              <p className="text-muted">
-                At Cloudstry Technologies, we understand the unique challenges
-                 business faces and offer solutions designed to drive
-                sustainable growth and operational excellence. Our advanced
-                technologies are tailored to meet  specific needs, enabling
-                you to enhance efficiency, improve customer engagement, and
-                secure  place at the forefront of  industry.
-              </p>
-              <ul className="list-unstyled">
-                <li className="mb-2 d-flex align-items-start">
-                  <i
-                    className="fa fa-check-circle text-primary me-2"
-                    style={{ marginTop: "6px" }}
-                  ></i>
-                  <span className="d-inline">
-                    <strong>Targeted Communication:</strong> Deliver precise,
-                    timely messages across multiple channels, ensuring 
-                    customers stay informed and engaged.
-                  </span>
-                </li>
-                <li className="mb-2 d-flex align-items-start">
-                  <i
-                    className="fa fa-check-circle text-primary me-2"
-                    style={{ marginTop: "6px" }}
-                  ></i>
-                  <span className="d-inline">
-                    <strong>Seamless Integration:</strong> Our solutions
-                    integrate effortlessly with  existing systems,
-                    maximizing efficiency and minimizing disruption.
-                  </span>
-                </li>
-                <li className="mb-2 d-flex align-items-start">
-                  <i
-                    className="fa fa-check-circle text-primary me-2"
-                    style={{ marginTop: "6px" }}
-                  ></i>
-                  <span className="d-inline">
-                    <strong>Advanced Automation:</strong> Streamline operations
-                    with intelligent automation, reducing manual effort and
-                    increasing accuracy.
-                  </span>
-                </li>
-                <li className="mb-2 d-flex align-items-start">
-                  <i
-                    className="fa fa-check-circle text-primary me-2"
-                    style={{ marginTop: "6px" }}
-                  ></i>
-                  <span className="d-inline">
-                    <strong>Robust Security:</strong> Protect sensitive data
-                    with our state-of-the-art security features, ensuring
-                    compliance and peace of mind.
-                  </span>
-                </li>
-                <li className="mb-2 d-flex align-items-start">
-                  <i
-                    className="fa fa-check-circle text-primary me-2"
-                    style={{ marginTop: "6px" }}
-                  ></i>
-                  <span className="d-inline">
-                    <strong>Scalable Solutions:</strong> As  business grows,
-                    our solutions grow with you, adapting to  evolving needs
-                    without compromising performance.
-                  </span>
-                </li>
-              </ul>
-              <p className="text-muted">
-                Our solutions are designed to help you scale effectively,
-                ensuring you remain competitive and innovative.
-              </p>
-            </div>
-
-            {/* Image Section */}
-            <div className="col-md-6 text-md-end mb-3 mt-4 mt-md-0 order-md-2 order-1">
-              <img
-                className="img-fluid rounded"
-                height={365}
-                width={504}
-                src={strategyimage}
-                alt="Image"
-              />
             </div>
           </div>
         </div>

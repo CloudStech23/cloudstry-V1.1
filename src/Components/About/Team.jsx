@@ -78,7 +78,7 @@ function Team() {
                       <h5 className="fw-bolder text-primary">
                         {team.Name}{" "}
                         <span>
-                          <a href={team.linkedin}>
+                          <a target="_blank" href={team.linkedin}>
                             <MDBIcon color="primary" className="fs-4" fab icon="linkedin" />
                           </a>
                         </span>

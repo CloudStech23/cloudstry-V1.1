@@ -4,7 +4,7 @@ import "swiper/css"; // Import Swiper styles
 import "swiper/css/navigation"; // Import navigation styles
 import { Navigation, Autoplay } from "swiper/modules";
 import { data } from "./swiperdata";
-import './slick.css'; // Custom styles for your slider
+import "./slick.css"; // Custom styles for your slider
 
 const SwiperCarousel = () => {
   const swiperRef = useRef(null);
@@ -35,8 +35,8 @@ const SwiperCarousel = () => {
 
   useEffect(() => {
     if (swiperRef.current && swiperRef.current.swiper) {
-      swiperRef.current.swiper.params.navigation.prevEl = '.custom-prev';
-      swiperRef.current.swiper.params.navigation.nextEl = '.custom-next';
+      swiperRef.current.swiper.params.navigation.prevEl = ".custom-prev";
+      swiperRef.current.swiper.params.navigation.nextEl = ".custom-next";
       swiperRef.current.swiper.navigation.init();
       swiperRef.current.swiper.navigation.update();
     }
@@ -59,8 +59,16 @@ const SwiperCarousel = () => {
       className="container-fluid p-0 position-relative"
       onMouseEnter={pauseAutoplay}
       onMouseLeave={resumeAutoplay}
-      style={{ background: '#e1e3e4a8' }}
+      style={{ background: "#e1e3e4a8" }}
     >
+      <div className="half-underline-container mt-4">
+          <h3
+            className="text-danger fw-normal display-6 text-center   half-underline"
+             
+          >
+            Our Product Platform
+          </h3>
+        </div>
       <Swiper
         ref={swiperRef}
         modules={[Autoplay, Navigation]}
@@ -68,8 +76,8 @@ const SwiperCarousel = () => {
         autoplay={{ delay: 2000 }}
         loop={true}
         navigation={{
-          nextEl: '.custom-next',
-          prevEl: '.custom-prev',
+          nextEl: ".custom-next",
+          prevEl: ".custom-prev",
         }}
         className="swiper-container"
         style={{ height: "100vh", maxHeight }} // Dynamically set maxHeight based on screen size
@@ -81,15 +89,25 @@ const SwiperCarousel = () => {
                 {/* Image Content */}
                 <div className="col-12 col-md-5 text-md-end mt-md-0 mb-2 position-relative order-1 order-md-2">
                   <img
-                    src={value.img || "https://via.placeholder.com/600x400.png?text=Dummy+Image"}
+                    src={
+                      value.img ||
+                      "https://via.placeholder.com/600x400.png?text=Dummy+Image"
+                    }
                     alt={value.title || "Dummy"}
                     className="img-fluid rounded"
-                    style={{ height: imgHeight, objectFit: 'cover', width: '100%' }} // Dynamically set img height
+                    style={{
+                      height: imgHeight,
+                      objectFit: "cover",
+                      width: "100%",
+                    }} // Dynamically set img height
                   />
                 </div>
                 {/* Text Content */}
                 <div className="col-12 col-md-5 mt-4 mb-2 order-2 order-md-1 text-center text-md-start">
-                  <h2 className="display-5 text-primary responsive-heading" style={{ fontWeight: 300,whiteSpace:"nowrap" }}>
+                  <h2
+                    className="display-5 text-primary responsive-heading"
+                    style={{ fontWeight: 300, whiteSpace: "nowrap" }}
+                  >
                     {value.title}
                   </h2>
                   <p className="text-muted  mb-4 responsive-text">

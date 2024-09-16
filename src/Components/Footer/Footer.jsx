@@ -107,7 +107,7 @@ export default function Footer() {
               <h6 className='text-uppercase fw-bold mb-4'>Contact</h6>
               <p className='align-items-start d-flex mb-2'>
                 <MDBIcon color='light' icon='home' className='me-3 mt-1' />
-                4th floor, Apollo Premier, Vijay Nagar Square, Vijay Nagar, Indore, Madhya Pradesh 452001
+                Incuspaze, 4th floor, Apollo Premier, Vijay Nagar Square, Vijay Nagar, Indore, Madhya Pradesh 452001
               </p>
               <p>
                 <MDBIcon color='light' icon='envelope' className='me-3' />
