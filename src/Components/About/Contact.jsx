@@ -87,7 +87,7 @@ function Contact() {
             md="6"
             className="text-center  text-md-start d-flex flex-column justify-content-center"
           >
-            <h1 className="my-2 display-3 fw-bold ls-tight d-xl-block d-none px-3">
+            <h1 className="my-2 display-6 text-primary fw-normal ls-tight d-xl-block d-none px-3">
               Connection to <br />
               <span className="text-primary">Exceptional Support</span>
             </h1>
