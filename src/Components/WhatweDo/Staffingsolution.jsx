@@ -4,58 +4,60 @@ import img2 from "./Images/st.second.jpg";
 import img3 from "./Images/st.third.jpg";
 import img4 from "./Images/st.fourth.jpg";
 import bg from "../Images/bg1.jpg";
-
+import FadeOnScroll from "../Animate/Motion";
 function Staffingsolution() {
   return (
     <div>
-      <header
-        className="text-white text-center py-5 position-relative"
-        style={{ maxHeight: "100%", overflow: "hidden" }}
-      >
-        {/* Background Image */}
-        <img
-          src={bg} // Replace 'bg' with the actual path to  background image
-          alt="Background"
-          className="position-absolute top-0 start-0 w-100 h-100 object-fit-cover"
-          style={{ zIndex: 1, objectFit: "cover" }}
-        />
-
-        {/* Black Overlay */}
-        <div
-          className="position-absolute top-0 start-0 w-100 h-100"
-          style={{ backgroundColor: "rgb(16 11 11 / 42%)", zIndex: 2 }}
-        ></div>
-
-        {/* Navigation Path */}
-        <div
-          className="position-absolute top-0 p-4 start-0 ms-0 mt-0 fs-5 fw-bold"
-          style={{ zIndex: 3 }}
+      <FadeOnScroll>
+        <header
+          className="text-white text-center py-5 position-relative"
+          style={{ maxHeight: "100%", overflow: "hidden" }}
         >
-          <span className="small text-white">
-            <a href="/" className="text-white">
-              What we Do ? /
-            </a>{" "}
-            Staffing Solution
-          </span>
-        </div>
+          {/* Background Image */}
+          <img
+            src={bg} // Replace 'bg' with the actual path to  background image
+            alt="Background"
+            className="position-absolute top-0 start-0 w-100 h-100 object-fit-cover"
+            style={{ zIndex: 1, objectFit: "cover" }}
+          />
 
-        {/* Header Content */}
-        <div
-          className="container text-white mt-5"
-          style={{ zIndex: 3, position: "relative" }}
-        >
-          <h1 className="display-6">
-            Comprehensive Staffing Solutions for Global Captive Centers
-          </h1>
-          <p className="lead">
-            Global Captive Centers (GCCs) are operational units established by
-            multinational corporations in offshore locations to perform critical
-            business functions. These centers often handle back-office
-            processes, IT services, customer support, and other specialized
-            functions.
-          </p>
-        </div>
-      </header>
+          {/* Black Overlay */}
+          <div
+            className="position-absolute top-0 start-0 w-100 h-100"
+            style={{ backgroundColor: "rgb(16 11 11 / 42%)", zIndex: 2 }}
+          ></div>
+
+          {/* Navigation Path */}
+          <div
+            className="position-absolute top-0 p-4 start-0 ms-0 mt-0 fs-5 fw-bold"
+            style={{ zIndex: 3 }}
+          >
+            <span className="small text-white">
+              <a href="/" className="text-white">
+                What we Do ? /
+              </a>{" "}
+              Staffing Solution
+            </span>
+          </div>
+
+          {/* Header Content */}
+          <div
+            className="container text-white mt-5"
+            style={{ zIndex: 3, position: "relative" }}
+          >
+            <h1 className="display-6">
+              Comprehensive Staffing Solutions for Global Captive Centers
+            </h1>
+            <p className="lead">
+              Global Captive Centers (GCCs) are operational units established by
+              multinational corporations in offshore locations to perform
+              critical business functions. These centers often handle
+              back-office processes, IT services, customer support, and other
+              specialized functions.
+            </p>
+          </div>
+        </header>
+      </FadeOnScroll>
 
       {/* <section class="py-5 bg-whitet text-center">
         <section className="pb-5">
@@ -170,286 +172,295 @@ function Staffingsolution() {
       </section> */}
 
       <div className="container " style={{ marginTop: "5rem" }}>
-        <div className="half-underline-container"></div>
-        <div className="row gx-4 mt-5">
-          <div
-            className="col-xl-6 col-lg-5 d-flex justify-content-left align-items-center"
-            style={{ marginBottom: "2rem" }}
-          >
-            <img
-              className="img-fluid"
-              src={img1}
-              alt="Addressing GCC Challenges"
-              style={{ width: "39rem" }}
-            />
-          </div>
-          <div className="col-md-6 mb-5">
-            <h3 className="text-primary fw-light display-7 mb-3">
-              How We Addresses GCC-Specific Challenges ?
-            </h3>
-            <p className="h5 mb-2 text-muted" style={{ fontWeight: 300 }}>
-              Cloudstry delivers targeted solutions to address the unique
-              challenges faced by Global Captive Centers (GCCs).
-            </p>
-
-            <ul className="list-unstyled mt-4">
-              <li className="mb-2 d-flex align-items-start">
-                <i
-                  className="fa fa-check text-primary me-2"
-                  style={{ marginTop: "6px" }}
-                ></i>
-                <span className="d-inline">
-                  <strong>Scalability:</strong> Our solutions are designed to
-                  grow with  GCC, providing the flexibility to accommodate
-                  increasing staffing needs and operational demands as 
-                  center expands.
-                </span>
-              </li>
-              <li className="mb-2 d-flex align-items-start">
-                <i
-                  className="fa fa-check text-primary me-2"
-                  style={{ marginTop: "6px" }}
-                ></i>
-                <span className="d-inline">
-                  <strong>Skill Specialization:</strong> We employ targeted
-                  recruitment strategies to find and place candidates with
-                  specialized skills essential for GCC operations.
-                </span>
-              </li>
-              <li className="mb-2 d-flex align-items-start">
-                <i
-                  className="fa fa-check text-primary me-2"
-                  style={{ marginTop: "6px" }}
-                ></i>
-                <span className="d-inline">
-                  <strong>Cultural Alignment:</strong> Our approach ensures
-                  candidates are a good cultural fit, aligning with  GCC’s
-                  corporate culture and operational style to enhance team
-                  cohesion and productivity.
-                </span>
-              </li>
-              <li className="mb-2 d-flex align-items-start">
-                <i
-                  className="fa fa-check text-primary me-2"
-                  style={{ marginTop: "6px" }}
-                ></i>
-                <span className="d-inline">
-                  <strong>Compliance and Regulations:</strong> We handle all
-                  aspects of compliance with local labor laws and international
-                  regulations.
-                </span>
-              </li>
-              <li className="mb-2 d-flex align-items-start">
-                <i
-                  className="fa fa-check text-primary me-2"
-                  style={{ marginTop: "6px" }}
-                ></i>
-                <span className="d-inline">
-                  <strong>Remote and Onsite Staffing:</strong> Our strategies
-                  effectively manage both remote and onsite staffing needs.
-                </span>
-              </li>
-            </ul>
-          </div>
-        </div>
-
-        <div className="row gx-5 mt-5">
-          <div
-            className="col-xl-6 col-lg-5 d-flex order-first order-md-last justify-content-right align-items-center"
-            style={{ marginBottom: "2rem" }}
-          >
-            <img className="img-fluid" src={img2} alt="GCC Staffing" />
-          </div>
-          <div className="col-md-6 mb-5 order-last order-md-first">
-            <h3 className="text-primary display-7 fw-light mb-3">
-              Why Choose Us for  GCC Staffing Needs?
-            </h3>
-            <p className="h5 mb-2 text-muted" style={{ fontWeight: 300 }}>
-              See how our expertise and custom solutions enhance GCC staffing.
-            </p>
-
-            <ul className="list-unstyled mt-4">
-              <li className="mb-3 d-flex align-items-start">
-                <i
-                  className="fa fa-check text-primary me-2"
-                  style={{ marginTop: "6px" }}
-                ></i>
-                <span className="d-inline">
-                  <strong>Expertise in GCC Staffing:</strong> Proven success in
-                  staffing GCCs with impactful results and a deep understanding
-                  of the unique demands and dynamics of Global Captive Centers.
-                </span>
-              </li>
-              <li className="mb-3 d-flex align-items-start">
-                <i
-                  className="fa fa-check text-primary me-2"
-                  style={{ marginTop: "6px" }}
-                ></i>
-                <span className="d-inline">
-                  <strong>Tailored Solutions:</strong> Custom staffing
-                  strategies designed to meet the specific needs and challenges
-                  of GCCs, ensuring a perfect fit for every role.
-                </span>
-              </li>
-              <li className="mb-3 d-flex align-items-start">
-                <i
-                  className="fa fa-check text-primary me-2"
-                  style={{ marginTop: "6px" }}
-                ></i>
-                <span className="d-inline">
-                  <strong>Technology and Tools:</strong> Utilization of advanced
-                  technology and tools to streamline recruitment processes and
-                  enhance workforce management, ensuring efficiency and
-                  accuracy.
-                </span>
-              </li>
-              <li className="mb-3 d-flex align-items-start">
-                <i
-                  className="fa fa-check text-primary me-2"
-                  style={{ marginTop: "6px" }}
-                ></i>
-                <span className="d-inline">
-                  <strong>Support and Consultation:</strong> Ongoing support and
-                  expert consultation to guarantee the success of  staffing
-                  solutions, from initial setup to long-term management.
-                </span>
-              </li>
-            </ul>
-          </div>
-        </div>
-
-        <div className="row gx-4">
-          <div
-            className="col-xl-6 col-lg-5 d-flex  justify-content-left align-items-center"
-            style={{ marginBottom: "2rem" }}
-          >
-            <img
-              className="img-fluid"
-              src={img3}
-              alt="Key Benefits"
-              style={{ width: "39rem" }}
-            />
-          </div>
-          <div className="col-md-6 mb-5 mt-5 ">
-            <h3 className="text-primary fw-light display-7 mb-3">
-              Key Benefits of Our Staffing Solutions
-            </h3>
-
-            <ul className="list-unstyled mt-4">
-              <li className="mb-3 d-flex align-items-start">
-                <i
-                  className="fa fa-check text-primary me-2"
-                  style={{ marginTop: "6px" }}
-                ></i>
-                <span className="d-inline">
-                  <strong>Enhanced Recruitment Efficiency:</strong> Streamlined
-                  recruitment processes that significantly reduce time-to-hire
-                  and enhance overall efficiency.
-                </span>
-              </li>
-              <li className="mb-3 d-flex align-items-start">
-                <i
-                  className="fa fa-check text-primary me-2"
-                  style={{ marginTop: "6px" }}
-                ></i>
-                <span className="d-inline">
-                  <strong>Improved Talent Quality:</strong> Ensuring that
-                  candidates are thoroughly vetted and meet the specific needs
-                  and expectations of GCCs.
-                </span>
-              </li>
-              <li className="mb-3 d-flex align-items-start">
-                <i
-                  className="fa fa-check text-primary me-2"
-                  style={{ marginTop: "6px" }}
-                ></i>
-                <span className="d-inline">
-                  <strong>Greater Flexibility:</strong> Adapting quickly to
-                  changing business and workforce requirements to maintain
-                  operational efficiency.
-                </span>
-              </li>
-              <li className="mb-3 d-flex align-items-start">
-                <i
-                  className="fa fa-check text-primary me-2"
-                  style={{ marginTop: "6px" }}
-                ></i>
-                <span className="d-inline">
-                  <strong>Cost-Effective Solutions:</strong> Offering
-                  competitive pricing that provides significant cost benefits
-                  compared to traditional recruitment methods.
-                </span>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-
-      <section className="mb-5  " style={{ marginTop: "6rem" }}>
-        <div className="container">
-          <div className="row align-items-center">
-            <div className="col-md-6 mb-4 order-first order-md-last">
+        {/* <div className="half-underline-container"></div> */}
+        <FadeOnScroll animation="up">
+          <div className="row gx-4 mt-5">
+            <div
+              className="col-xl-6 col-lg-5 d-flex justify-content-left align-items-center"
+              style={{ marginBottom: "2rem" }}
+            >
               <img
-                className="img-fluid rounded"
-                src={img4}
-                alt="Cloudstry Technologies"
+                className="img-fluid"
+                src={img1}
+                alt="Addressing GCC Challenges"
+                style={{ width: "39rem" }}
               />
             </div>
-            <div className="col-md-6 order-last order-md-first">
-              <h3 className="text-primary fw-light mb-3">
-                Optimizing Talent Management with Precision
+            <div className="col-md-6 mb-5">
+              <h3 className="text-primary fw-light display-7 mb-3">
+                How We Addresses GCC-Specific Challenges ?
               </h3>
+              <p className="h5 mb-2 text-muted" style={{ fontWeight: 300 }}>
+                Cloudstry delivers targeted solutions to address the unique
+                challenges faced by Global Captive Centers (GCCs).
+              </p>
 
-              <ul className="list-unstyled">
+              <ul className="list-unstyled mt-4">
                 <li className="mb-2 d-flex align-items-start">
                   <i
-                    className="fa fa-check-circle text-primary me-2"
+                    className="fa fa-check text-primary me-2"
                     style={{ marginTop: "6px" }}
                   ></i>
                   <span className="d-inline">
-                    <span className="fw-bold">
-                      Tailored Talent Acquisition:{" "}
-                    </span>{" "}
-                    We offer bespoke recruitment strategies to meet the unique
-                    needs of each organization, ensuring the right fit for every
-                    role.
+                    <strong>Scalability:</strong> Our solutions are designed to
+                    grow with GCC, providing the flexibility to accommodate
+                    increasing staffing needs and operational demands as center
+                    expands.
                   </span>
                 </li>
                 <li className="mb-2 d-flex align-items-start">
                   <i
-                    className="fa fa-check-circle text-primary me-2"
+                    className="fa fa-check text-primary me-2"
                     style={{ marginTop: "6px" }}
                   ></i>
                   <span className="d-inline">
-                    <span className="fw-bold"> Streamlined Onboarding: </span>{" "}
-                    Our solutions simplify the onboarding process, enhancing
-                    integration and accelerating productivity.
+                    <strong>Skill Specialization:</strong> We employ targeted
+                    recruitment strategies to find and place candidates with
+                    specialized skills essential for GCC operations.
                   </span>
                 </li>
                 <li className="mb-2 d-flex align-items-start">
                   <i
-                    className="fa fa-check-circle text-primary me-2"
+                    className="fa fa-check text-primary me-2"
                     style={{ marginTop: "6px" }}
                   ></i>
                   <span className="d-inline">
-                    <span className="fw-bold">
-                      Compliance and Risk Management:{" "}
-                    </span>{" "}
-                    Our services ensure adherence to legal and regulatory
-                    requirements, mitigating potential risks.
+                    <strong>Cultural Alignment:</strong> Our approach ensures
+                    candidates are a good cultural fit, aligning with GCC’s
+                    corporate culture and operational style to enhance team
+                    cohesion and productivity.
                   </span>
                 </li>
-
-                <p className="text-muted fw-bold">
-                  By choosing Cloudstry Tech, you benefit from a strategic
-                  partner committed to enhancing  workforce efficiency and
-                  driving organizational success.
-                </p>
+                <li className="mb-2 d-flex align-items-start">
+                  <i
+                    className="fa fa-check text-primary me-2"
+                    style={{ marginTop: "6px" }}
+                  ></i>
+                  <span className="d-inline">
+                    <strong>Compliance and Regulations:</strong> We handle all
+                    aspects of compliance with local labor laws and
+                    international regulations.
+                  </span>
+                </li>
+                <li className="mb-2 d-flex align-items-start">
+                  <i
+                    className="fa fa-check text-primary me-2"
+                    style={{ marginTop: "6px" }}
+                  ></i>
+                  <span className="d-inline">
+                    <strong>Remote and Onsite Staffing:</strong> Our strategies
+                    effectively manage both remote and onsite staffing needs.
+                  </span>
+                </li>
               </ul>
             </div>
           </div>
-        </div>
-      </section>
+        </FadeOnScroll>
+
+        <FadeOnScroll animation="up">
+          <div className="row gx-5 mt-5">
+            <div
+              className="col-xl-6 col-lg-5 d-flex order-first order-md-last justify-content-right align-items-center"
+              style={{ marginBottom: "2rem" }}
+            >
+              <img className="img-fluid" src={img2} alt="GCC Staffing" />
+            </div>
+            <div className="col-md-6 mb-5 order-last order-md-first">
+              <h3 className="text-primary display-7 fw-light mb-3">
+                Why Choose Us for GCC Staffing Needs?
+              </h3>
+              <p className="h5 mb-2 text-muted" style={{ fontWeight: 300 }}>
+                See how our expertise and custom solutions enhance GCC staffing.
+              </p>
+
+              <ul className="list-unstyled mt-4">
+                <li className="mb-3 d-flex align-items-start">
+                  <i
+                    className="fa fa-check text-primary me-2"
+                    style={{ marginTop: "6px" }}
+                  ></i>
+                  <span className="d-inline">
+                    <strong>Expertise in GCC Staffing:</strong> Proven success
+                    in staffing GCCs with impactful results and a deep
+                    understanding of the unique demands and dynamics of Global
+                    Captive Centers.
+                  </span>
+                </li>
+                <li className="mb-3 d-flex align-items-start">
+                  <i
+                    className="fa fa-check text-primary me-2"
+                    style={{ marginTop: "6px" }}
+                  ></i>
+                  <span className="d-inline">
+                    <strong>Tailored Solutions:</strong> Custom staffing
+                    strategies designed to meet the specific needs and
+                    challenges of GCCs, ensuring a perfect fit for every role.
+                  </span>
+                </li>
+                <li className="mb-3 d-flex align-items-start">
+                  <i
+                    className="fa fa-check text-primary me-2"
+                    style={{ marginTop: "6px" }}
+                  ></i>
+                  <span className="d-inline">
+                    <strong>Technology and Tools:</strong> Utilization of
+                    advanced technology and tools to streamline recruitment
+                    processes and enhance workforce management, ensuring
+                    efficiency and accuracy.
+                  </span>
+                </li>
+                <li className="mb-3 d-flex align-items-start">
+                  <i
+                    className="fa fa-check text-primary me-2"
+                    style={{ marginTop: "6px" }}
+                  ></i>
+                  <span className="d-inline">
+                    <strong>Support and Consultation:</strong> Ongoing support
+                    and expert consultation to guarantee the success of staffing
+                    solutions, from initial setup to long-term management.
+                  </span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </FadeOnScroll>
+
+        <FadeOnScroll animation="up">
+          <div className="row gx-4">
+            <div
+              className="col-xl-6 col-lg-5 d-flex  justify-content-left align-items-center"
+              style={{ marginBottom: "2rem" }}
+            >
+              <img
+                className="img-fluid"
+                src={img3}
+                alt="Key Benefits"
+                style={{ width: "39rem" }}
+              />
+            </div>
+            <div className="col-md-6 mb-5 mt-5 ">
+              <h3 className="text-primary fw-light display-7 mb-3">
+                Key Benefits of Our Staffing Solutions
+              </h3>
+
+              <ul className="list-unstyled mt-4">
+                <li className="mb-3 d-flex align-items-start">
+                  <i
+                    className="fa fa-check text-primary me-2"
+                    style={{ marginTop: "6px" }}
+                  ></i>
+                  <span className="d-inline">
+                    <strong>Enhanced Recruitment Efficiency:</strong>{" "}
+                    Streamlined recruitment processes that significantly reduce
+                    time-to-hire and enhance overall efficiency.
+                  </span>
+                </li>
+                <li className="mb-3 d-flex align-items-start">
+                  <i
+                    className="fa fa-check text-primary me-2"
+                    style={{ marginTop: "6px" }}
+                  ></i>
+                  <span className="d-inline">
+                    <strong>Improved Talent Quality:</strong> Ensuring that
+                    candidates are thoroughly vetted and meet the specific needs
+                    and expectations of GCCs.
+                  </span>
+                </li>
+                <li className="mb-3 d-flex align-items-start">
+                  <i
+                    className="fa fa-check text-primary me-2"
+                    style={{ marginTop: "6px" }}
+                  ></i>
+                  <span className="d-inline">
+                    <strong>Greater Flexibility:</strong> Adapting quickly to
+                    changing business and workforce requirements to maintain
+                    operational efficiency.
+                  </span>
+                </li>
+                <li className="mb-3 d-flex align-items-start">
+                  <i
+                    className="fa fa-check text-primary me-2"
+                    style={{ marginTop: "6px" }}
+                  ></i>
+                  <span className="d-inline">
+                    <strong>Cost-Effective Solutions:</strong> Offering
+                    competitive pricing that provides significant cost benefits
+                    compared to traditional recruitment methods.
+                  </span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </FadeOnScroll>
+      </div>
+
+      <FadeOnScroll animation="up">
+        <section className="mb-5  " style={{ marginTop: "6rem" }}>
+          <div className="container">
+            <div className="row align-items-center">
+              <div className="col-md-6 mb-4 order-first order-md-last">
+                <img
+                  className="img-fluid rounded"
+                  src={img4}
+                  alt="Cloudstry Technologies"
+                />
+              </div>
+              <div className="col-md-6 order-last order-md-first">
+                <h3 className="text-primary fw-light mb-3">
+                  Optimizing Talent Management with Precision
+                </h3>
+
+                <ul className="list-unstyled">
+                  <li className="mb-2 d-flex align-items-start">
+                    <i
+                      className="fa fa-check-circle text-primary me-2"
+                      style={{ marginTop: "6px" }}
+                    ></i>
+                    <span className="d-inline">
+                      <span className="fw-bold">
+                        Tailored Talent Acquisition:{" "}
+                      </span>{" "}
+                      We offer bespoke recruitment strategies to meet the unique
+                      needs of each organization, ensuring the right fit for
+                      every role.
+                    </span>
+                  </li>
+                  <li className="mb-2 d-flex align-items-start">
+                    <i
+                      className="fa fa-check-circle text-primary me-2"
+                      style={{ marginTop: "6px" }}
+                    ></i>
+                    <span className="d-inline">
+                      <span className="fw-bold"> Streamlined Onboarding: </span>{" "}
+                      Our solutions simplify the onboarding process, enhancing
+                      integration and accelerating productivity.
+                    </span>
+                  </li>
+                  <li className="mb-2 d-flex align-items-start">
+                    <i
+                      className="fa fa-check-circle text-primary me-2"
+                      style={{ marginTop: "6px" }}
+                    ></i>
+                    <span className="d-inline">
+                      <span className="fw-bold">
+                        Compliance and Risk Management:{" "}
+                      </span>{" "}
+                      Our services ensure adherence to legal and regulatory
+                      requirements, mitigating potential risks.
+                    </span>
+                  </li>
+
+                  <p className="text-muted fw-bold">
+                    By choosing Cloudstry Tech, you benefit from a strategic
+                    partner committed to enhancing workforce efficiency and
+                    driving organizational success.
+                  </p>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+      </FadeOnScroll>
     </div>
   );
 }

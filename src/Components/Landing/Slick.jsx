@@ -62,13 +62,10 @@ const SwiperCarousel = () => {
       style={{ background: "#e1e3e4a8" }}
     >
       <div className="half-underline-container mt-4">
-          <h3
-            className="text-primary fw-normal display-6 text-center   half-blue-underline"
-             
-          >
-            Our Product Platform
-          </h3>
-        </div>
+        <h3 className="text-primary fw-normal display-6 text-center   half-blue-underline">
+          Our Product Platform
+        </h3>
+      </div>
       <Swiper
         ref={swiperRef}
         modules={[Autoplay, Navigation]}

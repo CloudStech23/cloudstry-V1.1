@@ -65,12 +65,7 @@ function Menubar() {
           style={{ background: "#1236d0", height: "4.7rem" }}
         >
           <Link className=" navbar-brand mx-3" to="/">
-            <img
-              src={pagelogo}
-              className="img-fluid logoimg"
-              
-              alt="Logo"
-            />
+            <img src={pagelogo} className="img-fluid logoimg" alt="Logo" />
           </Link>
           <button
             className="mx-2 navbar-toggler"
@@ -80,7 +75,7 @@ function Menubar() {
             <i className="fa fa-bars" aria-hidden="true"></i>
           </button>
 
-          <Menudrawer open={open} onClose={() => setOpen(false)}/>
+          <Menudrawer open={open} onClose={() => setOpen(false)} />
 
           <div
             className="collapse navbar-collapse"
@@ -124,8 +119,8 @@ function Menubar() {
                   className={`dropdown-menu mt-0 w-100 shadow border-outline-success ${
                     openDropdown === "dropdown2" ? "show" : ""
                   }`}
-                  aria-labelledby="navbarDropdown2" 
-                  style={{ height: "320px" ,background:'#1236d0' }}
+                  aria-labelledby="navbarDropdown2"
+                  style={{ height: "320px", background: "#1236d0" }}
                 >
                   <div className="row mt-3">
                     <div className="col-lg-3" style={{ marginLeft: "5%" }}>
@@ -218,10 +213,7 @@ function Menubar() {
                         </Link>
                       </div>
                     </div>
-                    <div
-                      className="col-lg-7 mt-3"
-                      style={{ marginLeft: "6%", }}
-                    >
+                    <div className="col-lg-7 mt-3" style={{ marginLeft: "6%" }}>
                       {hoveredItem === "product" && (
                         <div
                           style={{
@@ -235,10 +227,9 @@ function Menubar() {
                               className="text-light fw-normal"
                               style={{ fontSize: "2rem" }}
                             >
-                              Empowering  Business with a Robust Product
+                              Empowering Business with a Robust Product
                               Platform.
                             </h3>
-                            
                           </div>
 
                           <div
@@ -306,7 +297,7 @@ function Menubar() {
                         </div>
                       )} */}
                       {hoveredItem === "solution" && (
-                        <div 
+                        <div
                           style={{
                             display: "flex",
                             flexDirection: "column",
@@ -318,7 +309,7 @@ function Menubar() {
                               className="text-light fw-normal"
                               style={{ fontSize: "2rem" }}
                             >
-                              IT Solutions for  Business Success.
+                              IT Solutions for Business Success.
                             </h3>
                             {/* <p className="text-light mb-2 lh-lg">
                               Advanced IT infrastructure, cloud services, and
@@ -457,7 +448,7 @@ function Menubar() {
                     openDropdown === "dropdown3" ? "show" : ""
                   }`}
                   aria-labelledby="navbarDropdown3"
-                  style={{ height: "320px",background:'#1236d0' }}
+                  style={{ height: "320px", background: "#1236d0" }}
                 >
                   <div className="row mt-3">
                     <div className="col-lg-3" style={{ marginLeft: "5%" }}>
@@ -469,7 +460,7 @@ function Menubar() {
                           to="/Education"
                           onMouseEnter={() => handleHover("education")}
                         >
-                           Education
+                          Education
                         </Link>
                         <div
                           className="dropdown-divider"
@@ -690,7 +681,6 @@ function Menubar() {
                 </Link>
               </li>
             </ul>
-             
           </div>
         </nav>
       </div>

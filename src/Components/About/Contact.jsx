@@ -37,7 +37,7 @@ function Contact() {
 
   return (
     <div className="bg-light ">
-      {/* <FadeOnScroll> */}
+      <FadeOnScroll>
         <header
           className="text-white text-center py-5 position-relative"
           style={{ maxHeight: "100%", overflow: "hidden" }}
@@ -83,10 +83,10 @@ function Contact() {
             </p>
           </div>
         </header>
-      {/* </FadeOnScroll> */}
+      </FadeOnScroll>
 
       <MDBContainer fluid className="container">
-        {/* <FadeOnScroll animation="up"> */}
+        <FadeOnScroll animation="up">
           <MDBRow className="" style={{ marginTop: "5rem" }}>
             <MDBCol
               md="6"
@@ -173,7 +173,7 @@ function Contact() {
               />
             </MDBCol>
           </MDBRow>
-        {/* </FadeOnScroll> */}
+        </FadeOnScroll>
 
         {/* *********** Show Content-1 if screen is small *********** */}
         {isSmallScreen && (
@@ -236,7 +236,7 @@ function Contact() {
         )}
 
         {/* *********** Content-2 is shown by default *********** */}
-        {/* <FadeOnScroll animation="up"> */}
+        <FadeOnScroll animation="up">
           <MDBRow className="d-flex bg-white justify-content-center align-items-center shadow mt-4">
             <MDBCol md="6" className=" text-md-end mt-4 mt-md-0 mb-2">
               <img src={img1} alt="Dummy" className="img-fluid rounded" />
@@ -291,7 +291,7 @@ function Contact() {
               </MDBCard>
             </MDBCol>
           </MDBRow>
-        {/* </FadeOnScroll> */}
+        </FadeOnScroll>
       </MDBContainer>
     </div>
   );

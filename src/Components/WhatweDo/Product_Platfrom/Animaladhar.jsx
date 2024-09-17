@@ -6,6 +6,7 @@ import img1 from "./Images/petadhar.main.jpg";
 import img2 from "./Images/petadhar.second.jpeg";
 import img3 from "./Images/petadhar.third.jpg";
 import bg from "./../../Images/bg1.jpg";
+import FadeOnScroll from "../../Animate/Motion";
 
 function Petadhar() {
   const [isSmallScreen, setIsSmallScreen] = useState(window.innerWidth < 768);
@@ -25,288 +26,306 @@ function Petadhar() {
   return (
     <div>
       {/* Navigation Path */}
-      <header
-        className="text-white text-center py-5 position-relative"
-        style={{ maxHeight: "100%", overflow: "hidden" }}
-      >
-        {/* Background Image */}
-        <img
-          src={bg}
-          alt="Background"
-          className="position-absolute top-0 start-0 w-100 h-100 object-fit-cover"
-          style={{ zIndex: 1, objectFit: "cover" }}
-        />
-
-        {/* Black Overlay */}
-        <div
-          className="position-absolute top-0 start-0 w-100 h-100"
-          style={{ backgroundColor: "rgb(16 11 11 / 42%)", zIndex: 2 }}
-        ></div>
-
-        {/* Navigation Path */}
-        <div
-          className="position-absolute top-0 p-4 start-0 ms-0 mt-0 fs-5 fw-bold"
-          style={{ zIndex: 3 }}
+      <FadeOnScroll>
+        <header
+          className="text-white text-center py-5 position-relative"
+          style={{ maxHeight: "100%", overflow: "hidden" }}
         >
-          <span className="small text-white">
-            <a href="/" className="text-white">
-              What we Do ? /
-            </a>{" "}
-            <a href="#" className="text-white">
-              Product Platform
-            </a>{" "}
-            /Pet Aadhar
-          </span>
-        </div>
+          {/* Background Image */}
+          <img
+            src={bg}
+            alt="Background"
+            className="position-absolute top-0 start-0 w-100 h-100 object-fit-cover"
+            style={{ zIndex: 1, objectFit: "cover" }}
+          />
 
-        {/* Header Content */}
-        <div
-          className="container text-white mt-5"
-          style={{ zIndex: 3, position: "relative" }}
-        >
-          <h1 className="display-6">
-            Pet Aadhar: Revolutionizing Pet Identification
-          </h1>
-          <p className="lead">
-            Secure, scalable, and future-ready identification for pets.
-            Simplifying pet management and tracking with advanced technology.
-          </p>
-        </div>
-      </header>
+          {/* Black Overlay */}
+          <div
+            className="position-absolute top-0 start-0 w-100 h-100"
+            style={{ backgroundColor: "rgb(16 11 11 / 42%)", zIndex: 2 }}
+          ></div>
 
-      <div className="container py-5">
-        <div className="row align-items-center justify-content-between bg-light p-4 rounded-3 position-relative">
-          {/* Text Content */}
-          <div className="col-md-5 mt-4 mb-2  order-md-1 order-2">
-            <span className="badge bg-primary rounded-pill px-2 py-2 mb-3">
-              Pet Aadhar
+          {/* Navigation Path */}
+          <div
+            className="position-absolute top-0 p-4 start-0 ms-0 mt-0 fs-5 fw-bold"
+            style={{ zIndex: 3 }}
+          >
+            <span className="small text-white">
+              <a href="/" className="text-white">
+                What we Do ? /
+              </a>{" "}
+              <a href="#" className="text-white">
+                Product Platform
+              </a>{" "}
+              /Pet Aadhar
             </span>
-            <h2
-              className=" display-5 text-primary "
-              style={{ fontWeight: 300 }}
-            >
-              Pet Aadhar: A New Era in Pet Management
-            </h2>
-            <p className="text-muted mb-4">
-              India's vast livestock industry faces significant challenges in
-              the areas of animal identification, health monitoring, and data
-              management. Traditional methods are often inconsistent and prone
-              to errors, making effective disease control and breeding
-              management difficult. The need for a reliable, unified solution is
-              essential for the continued growth and modernization of the
-              sector.
-            </p>
-            <Link to="/Support" className="btn btn-danger">
-              Talk to our Experts
-            </Link>
           </div>
 
-          {/* Video Content */}
-          <div className="col-md-5 text-md-end mt-4 mt-md-0 mb-2  order-md-2 order-1">
-            <img
-              src={img1}
-              alt="Cloudstry Technologies"
-              className="img-fluid rounded"
-            />
+          {/* Header Content */}
+          <div
+            className="container text-white mt-5"
+            style={{ zIndex: 3, position: "relative" }}
+          >
+            <h1 className="display-6">
+              Pet Aadhar: Revolutionizing Pet Identification
+            </h1>
+            <p className="lead">
+              Secure, scalable, and future-ready identification for pets.
+              Simplifying pet management and tracking with advanced technology.
+            </p>
           </div>
-        </div>
-      </div>
-      <section className="image-video-text-interactivity fadeInUp mb-5">
-        <div className="container">
-          {/* <h3 className="text-primary fw-bold text-center mb-4">Why pet adhar</h3> */}
-          <div className="row align-items-center">
-            {/* Image Section */}
-            <div className="col-md-6 mb-4 mb-md-0">
+        </header>
+      </FadeOnScroll>
+
+      <FadeOnScroll animation="up">
+        <div className="container py-5">
+          <div className="row align-items-center justify-content-between bg-light p-4 rounded-3 position-relative">
+            {/* Text Content */}
+            <div className="col-md-5 mt-4 mb-2  order-md-1 order-2">
+              <span className="badge bg-primary rounded-pill px-2 py-2 mb-3">
+                Pet Aadhar
+              </span>
+              <h2
+                className=" display-5 text-primary "
+                style={{ fontWeight: 300 }}
+              >
+                Pet Aadhar: A New Era in Pet Management
+              </h2>
+              <p className="text-muted mb-4">
+                India's vast livestock industry faces significant challenges in
+                the areas of animal identification, health monitoring, and data
+                management. Traditional methods are often inconsistent and prone
+                to errors, making effective disease control and breeding
+                management difficult. The need for a reliable, unified solution
+                is essential for the continued growth and modernization of the
+                sector.
+              </p>
+              <Link to="/Support" className="btn btn-danger">
+                Talk to our Experts
+              </Link>
+            </div>
+
+            {/* Video Content */}
+            <div className="col-md-5 text-md-end mt-4 mt-md-0 mb-2  order-md-2 order-1">
               <img
-                className="img-fluid rounded"
-                height={365}
-                width={504}
-                src={img2}
+                src={img1}
                 alt="Cloudstry Technologies"
+                className="img-fluid rounded"
               />
             </div>
-
-            {/* Text Section */}
-            <div className="col-md-6 mb-5">
-              <h3 className="text-primary fw-normal mb-3">
-                Rationale Behind Pashu Aadhaar
-              </h3>
-              <p className="">
-                Pashu Aadhaar represents a crucial leap in livestock management
-                across India. With unique identification numbers assigned to
-                each animal, this system enhances tracking, health monitoring,
-                and data management. Overcoming the shortcomings of traditional
-                methods, it provides a secure, scalable, and reliable solution
-                that boosts efficiency and supports all stakeholders in the
-                livestock industry.
-              </p>
-              <ul className="list-unstyled mb-4">
-                {" "}
-                <li className="mb-4">
-                  {" "}
-                  <i className="fa fa-check-circle text-primary"></i>{" "}
-                  <i className="bi bi-check-circle-fill text-primary me-2"></i>{" "}
-                  <span className="d-inline">
-                    {" "}
-                    Precision in animal identification with enhanced accuracy
-                    and reliability.{" "}
-                  </span>{" "}
-                </li>{" "}
-                <li className="mb-4">
-                  {" "}
-                  <i className="fa fa-check-circle text-primary"></i>{" "}
-                  <i className="bi bi-check-circle-fill text-primary me-2"></i>{" "}
-                  <span className="d-inline">
-                    {" "}
-                    Improved disease control and vaccination through precise
-                    tracking.{" "}
-                  </span>{" "}
-                </li>{" "}
-                <li className="mb-4">
-                  {" "}
-                  <i className="fa fa-check-circle text-primary"></i>{" "}
-                  <i className="bi bi-check-circle-fill text-primary me-2"></i>{" "}
-                  <span className="d-inline">
-                    {" "}
-                    Enhanced management of breeding and ownership records.{" "}
-                  </span>{" "}
-                </li>{" "}
-                <li className="mb-4">
-                  {" "}
-                  <i className="fa fa-check-circle text-primary"></i>{" "}
-                  <i className="bi bi-check-circle-fill text-primary me-2"></i>{" "}
-                  <span className="d-inline">
-                    {" "}
-                    Increased operational efficiency with centralized data
-                    management.{" "}
-                  </span>{" "}
-                </li>{" "}
-                <li className="mb-4">
-                  {" "}
-                  <i className="fa fa-check-circle text-primary"></i>{" "}
-                  <i className="bi bi-check-circle-fill text-primary me-2"></i>{" "}
-                  <span className="d-inline">
-                    {" "}
-                    Enhanced livestock productivity through informed
-                    decision-making.{" "}
-                  </span>{" "}
-                </li>{" "}
-              </ul>
-            </div>
           </div>
         </div>
-      </section>
-      <section class="py-5 bg-whitet text-center">
-        <section className="pb-5">
+      </FadeOnScroll>
+
+      <FadeOnScroll animation="up">
+        <section className="image-video-text-interactivity fadeInUp mb-5">
           <div className="container">
-            <div className="half-underline-container">
-              <h3
-                className="text-primary text-danger text-center display-5   half-underline"
-                style={{ marginBottom: "4rem" }}
-              >
-                Case Studies
-              </h3>
-            </div>
-            <div className="row">
-              <div className="col-lg-10 col-xl-8 mx-auto">
-                <div
-                  className="p-5 bg-white shadow  rounded"
-                  style={{ width: "100%", height: "auto" }}
-                >
-                  <Carousel interval={2000} controls={true} indicators={false}>
-                    <Carousel.Item>
-                      <div className="media feature-card">
-                        <h3 className="text-primary fw-normal mb-3">
-                          Precision in Animal Health Oversight
-                        </h3>
-                        <div className="media-body ml-3">
-                          <div className="blockquote border-0 p-0">
-                            <p className="font-italic text-muted fs-6">
-                              Effective health management is essential for
-                              maintaining livestock well-being and preventing
-                              disease spread, yet traditional methods often lead
-                              to fragmented health records. Pashu Aadhaar
-                              addresses this challenge with a comprehensive
-                              system that assigns unique identification numbers
-                              to animals, enabling precise tracking of
-                              vaccinations, treatments, and health history. This
-                              system ensures accurate records and timely
-                              interventions. Early implementations of Pashu
-                              Aadhaar have demonstrated improved health outcomes
-                              and fewer disease outbreaks in pilot areas, with
-                              centralized data facilitating better health trend
-                              tracking and quicker responses to issues.
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-                    </Carousel.Item>
+            {/* <h3 className="text-primary fw-bold text-center mb-4">Why pet adhar</h3> */}
+            <div className="row align-items-center">
+              {/* Image Section */}
+              <div className="col-md-6 mb-4 mb-md-0">
+                <img
+                  className="img-fluid rounded"
+                  height={365}
+                  width={504}
+                  src={img2}
+                  alt="Cloudstry Technologies"
+                />
+              </div>
 
-                    <Carousel.Item>
-                      <div className="media feature-card">
-                        <h3 className="text-primary fw-normal mb-3">
-                          Government's Initiative for Pashu Aadhaar
-                        </h3>
-                        <div className="media-body ml-3">
-                          <div className="blockquote border-0 p-0">
-                            <p className="font-italic text-muted fs-6">
-                              The central government is developing a major
-                              database related to livestock information across
-                              the country. The aim is to enhance farmers' income
-                              through improved livestock management. According
-                              to the Department of Animal Husbandry, in the next
-                              18 months, over 500 million cattle will be
-                              assigned unique IDs on a digital platform (Animal
-                              UID - Pashu Aadhaar) to track their owners,
-                              breeds, and productivity. Each animal will be
-                              tagged with a 8-gram yellow tag in its ear, which
-                              will display a 12-digit identification number.
-                              When launching the e-Gopala app, Prime Minister
-                              Narendra Modi highlighted the significance of
-                              Pashu Aadhaar. He mentioned that once the app
-                              integrates Pashu Aadhaar, it will provide
-                              comprehensive information about animals, making
-                              buying and selling livestock easier.
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-                    </Carousel.Item>
-
-                    <Carousel.Item>
-                      <div className="media feature-card">
-                        <h3 className="text-primary fw-normal mb-3">
-                          Expanding Livestock Insurance Coverage with Pashu Bima
-                        </h3>
-                        <div className="media-body ml-3">
-                          <div className="blockquote border-0 p-0">
-                            <p className="font text-muted fs-6">
-                              <br />
-                              The Bihar government's Directorate of Dairy
-                              Development has introduced the 'Pashu Bima Yojana'
-                              to offer insurance protection against livestock
-                              deaths and boost the rural economy. This scheme
-                              covers dairy cattle with a maximum insured value
-                              of ₹60,000. The insurance premium is ₹2,100, with
-                              the state government subsidizing 75% (₹1,575) and
-                              farmers contributing the remaining 25% (₹525). The
-                              scheme, managed by District Livestock Development
-                              Officers, aims to protect farmers from financial
-                              losses due to severe diseases, such as lumpy skin
-                              disease, ensuring stability and support for the
-                              rural sector.
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-                    </Carousel.Item>
-                  </Carousel>
-                </div>
+              {/* Text Section */}
+              <div className="col-md-6 mb-5">
+                <h3 className="text-primary fw-normal mb-3">
+                  Rationale Behind Pashu Aadhaar
+                </h3>
+                <p className="">
+                  Pashu Aadhaar represents a crucial leap in livestock
+                  management across India. With unique identification numbers
+                  assigned to each animal, this system enhances tracking, health
+                  monitoring, and data management. Overcoming the shortcomings
+                  of traditional methods, it provides a secure, scalable, and
+                  reliable solution that boosts efficiency and supports all
+                  stakeholders in the livestock industry.
+                </p>
+                <ul className="list-unstyled mb-4">
+                  {" "}
+                  <li className="mb-4">
+                    {" "}
+                    <i className="fa fa-check-circle text-primary"></i>{" "}
+                    <i className="bi bi-check-circle-fill text-primary me-2"></i>{" "}
+                    <span className="d-inline">
+                      {" "}
+                      Precision in animal identification with enhanced accuracy
+                      and reliability.{" "}
+                    </span>{" "}
+                  </li>{" "}
+                  <li className="mb-4">
+                    {" "}
+                    <i className="fa fa-check-circle text-primary"></i>{" "}
+                    <i className="bi bi-check-circle-fill text-primary me-2"></i>{" "}
+                    <span className="d-inline">
+                      {" "}
+                      Improved disease control and vaccination through precise
+                      tracking.{" "}
+                    </span>{" "}
+                  </li>{" "}
+                  <li className="mb-4">
+                    {" "}
+                    <i className="fa fa-check-circle text-primary"></i>{" "}
+                    <i className="bi bi-check-circle-fill text-primary me-2"></i>{" "}
+                    <span className="d-inline">
+                      {" "}
+                      Enhanced management of breeding and ownership records.{" "}
+                    </span>{" "}
+                  </li>{" "}
+                  <li className="mb-4">
+                    {" "}
+                    <i className="fa fa-check-circle text-primary"></i>{" "}
+                    <i className="bi bi-check-circle-fill text-primary me-2"></i>{" "}
+                    <span className="d-inline">
+                      {" "}
+                      Increased operational efficiency with centralized data
+                      management.{" "}
+                    </span>{" "}
+                  </li>{" "}
+                  <li className="mb-4">
+                    {" "}
+                    <i className="fa fa-check-circle text-primary"></i>{" "}
+                    <i className="bi bi-check-circle-fill text-primary me-2"></i>{" "}
+                    <span className="d-inline">
+                      {" "}
+                      Enhanced livestock productivity through informed
+                      decision-making.{" "}
+                    </span>{" "}
+                  </li>{" "}
+                </ul>
               </div>
             </div>
           </div>
         </section>
-      </section>
+      </FadeOnScroll>
+
+      <FadeOnScroll animation="up">
+        <section class="py-5 bg-whitet text-center">
+          <section className="pb-5">
+            <div className="container">
+              <div className="half-underline-container">
+                <h3
+                  className="text-primary text-danger text-center display-5   half-underline"
+                  style={{ marginBottom: "4rem" }}
+                >
+                  Case Studies
+                </h3>
+              </div>
+              <div className="row">
+                <div className="col-lg-10 col-xl-8 mx-auto">
+                  <div
+                    className="p-5 bg-white shadow  rounded"
+                    style={{ width: "100%", height: "auto" }}
+                  >
+                    <Carousel
+                      interval={2000}
+                      controls={true}
+                      indicators={false}
+                    >
+                      <Carousel.Item>
+                        <div className="media feature-card">
+                          <h3 className="text-primary fw-normal mb-3">
+                            Precision in Animal Health Oversight
+                          </h3>
+                          <div className="media-body ml-3">
+                            <div className="blockquote border-0 p-0">
+                              <p className="font-italic text-muted fs-6">
+                                Effective health management is essential for
+                                maintaining livestock well-being and preventing
+                                disease spread, yet traditional methods often
+                                lead to fragmented health records. Pashu Aadhaar
+                                addresses this challenge with a comprehensive
+                                system that assigns unique identification
+                                numbers to animals, enabling precise tracking of
+                                vaccinations, treatments, and health history.
+                                This system ensures accurate records and timely
+                                interventions. Early implementations of Pashu
+                                Aadhaar have demonstrated improved health
+                                outcomes and fewer disease outbreaks in pilot
+                                areas, with centralized data facilitating better
+                                health trend tracking and quicker responses to
+                                issues.
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </Carousel.Item>
+
+                      <Carousel.Item>
+                        <div className="media feature-card">
+                          <h3 className="text-primary fw-normal mb-3">
+                            Government's Initiative for Pashu Aadhaar
+                          </h3>
+                          <div className="media-body ml-3">
+                            <div className="blockquote border-0 p-0">
+                              <p className="font-italic text-muted fs-6">
+                                The central government is developing a major
+                                database related to livestock information across
+                                the country. The aim is to enhance farmers'
+                                income through improved livestock management.
+                                According to the Department of Animal Husbandry,
+                                in the next 18 months, over 500 million cattle
+                                will be assigned unique IDs on a digital
+                                platform (Animal UID - Pashu Aadhaar) to track
+                                their owners, breeds, and productivity. Each
+                                animal will be tagged with a 8-gram yellow tag
+                                in its ear, which will display a 12-digit
+                                identification number. When launching the
+                                e-Gopala app, Prime Minister Narendra Modi
+                                highlighted the significance of Pashu Aadhaar.
+                                He mentioned that once the app integrates Pashu
+                                Aadhaar, it will provide comprehensive
+                                information about animals, making buying and
+                                selling livestock easier.
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </Carousel.Item>
+
+                      <Carousel.Item>
+                        <div className="media feature-card">
+                          <h3 className="text-primary fw-normal mb-3">
+                            Expanding Livestock Insurance Coverage with Pashu
+                            Bima
+                          </h3>
+                          <div className="media-body ml-3">
+                            <div className="blockquote border-0 p-0">
+                              <p className="font text-muted fs-6">
+                                <br />
+                                The Bihar government's Directorate of Dairy
+                                Development has introduced the 'Pashu Bima
+                                Yojana' to offer insurance protection against
+                                livestock deaths and boost the rural economy.
+                                This scheme covers dairy cattle with a maximum
+                                insured value of ₹60,000. The insurance premium
+                                is ₹2,100, with the state government subsidizing
+                                75% (₹1,575) and farmers contributing the
+                                remaining 25% (₹525). The scheme, managed by
+                                District Livestock Development Officers, aims to
+                                protect farmers from financial losses due to
+                                severe diseases, such as lumpy skin disease,
+                                ensuring stability and support for the rural
+                                sector.
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </Carousel.Item>
+                    </Carousel>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </section>
+      </FadeOnScroll>
       {/* <div className="container mt-5">
         <h3 className="text-primary fw-bold text-center mb-4">How it works</h3>
         <div className="row gx-0">
@@ -446,81 +465,133 @@ function Petadhar() {
         <div className="container">
           {/* First Row */}
           <div className="container mb-5">
-            <div className="row align-items-center mb-5">
-              {/* Image Section */}
-              <div className="col-md-6 mb-5 mb-md-0">
-                <img
-                  className="img-fluid rounded"
-                  height={365}
-                  width={504}
-                  src={img3}
-                  alt="Cloudstry Technologies"
-                />
-              </div>
+            <FadeOnScroll animation="up">
+              <div className="row align-items-center mb-5">
+                {/* Image Section */}
+                <div className="col-md-6 mb-5 mb-md-0">
+                  <img
+                    className="img-fluid rounded"
+                    height={365}
+                    width={504}
+                    src={img3}
+                    alt="Cloudstry Technologies"
+                  />
+                </div>
 
-              {/* Text Section */}
-              <div className="col-md-6 mb-5">
-                <h3 className="text-primary fw-normal mb-3">
-                  Cloudstry: Leading the Way in Pet Aadhaar Technology
-                </h3>
-                <p className="">
-                  The Pashu Aadhaar system offers a transformative approach to
-                  managing dairy livestock through its innovative identification
-                  and data management features
-                </p>
-                <ul className="list-unstyled mb-4">
-                  <li className="mb-4">
-                    <i className="fa fa-check-circle text-primary "></i>
-                    <i className="bi bi-check-circle-fill text-primary me-2"></i>
-                    {/* <span className="" style={{ fontWeight: 700 }}>
+                {/* Text Section */}
+                <div className="col-md-6 mb-5">
+                  <h3 className="text-primary fw-normal mb-3">
+                    Cloudstry: Leading the Way in Pet Aadhaar Technology
+                  </h3>
+                  <p className="">
+                    The Pashu Aadhaar system offers a transformative approach to
+                    managing dairy livestock through its innovative
+                    identification and data management features
+                  </p>
+                  <ul className="list-unstyled mb-4">
+                    <li className="mb-4">
+                      <i className="fa fa-check-circle text-primary "></i>
+                      <i className="bi bi-check-circle-fill text-primary me-2"></i>
+                      {/* <span className="" style={{ fontWeight: 700 }}>
                     Unified Credential Management:
                   </span>{" "} */}
-                    <span className="d-inline">
-                      Unique identification numbers for each dairy animal to
-                      ensure accurate tracking.
-                    </span>
-                  </li>
-                  <li className="mb-4">
-                    <i className="fa fa-check-circle text-primary "></i>
-                    <i className="bi bi-check-circle-fill text-primary me-2"></i>
-                    {/* <span className="" style={{ fontWeight: 700 }}>
+                      <span className="d-inline">
+                        Unique identification numbers for each dairy animal to
+                        ensure accurate tracking.
+                      </span>
+                    </li>
+                    <li className="mb-4">
+                      <i className="fa fa-check-circle text-primary "></i>
+                      <i className="bi bi-check-circle-fill text-primary me-2"></i>
+                      {/* <span className="" style={{ fontWeight: 700 }}>
                     Unified Credential Management:
                   </span>{" "} */}
-                    <span className="d-inline">
-                      Comprehensive health and milk production records linked to
-                      the animal's ID.
-                    </span>
-                  </li>
-                  <li className="mb-4">
-                    <i className="fa fa-check-circle text-primary "></i>
-                    <i className="bi bi-check-circle-fill text-primary me-2"></i>
-                    {/* <span className="" style={{ fontWeight: 700 }}>
+                      <span className="d-inline">
+                        Comprehensive health and milk production records linked
+                        to the animal's ID.
+                      </span>
+                    </li>
+                    <li className="mb-4">
+                      <i className="fa fa-check-circle text-primary "></i>
+                      <i className="bi bi-check-circle-fill text-primary me-2"></i>
+                      {/* <span className="" style={{ fontWeight: 700 }}>
                     Unified Credential Management:
                   </span>{" "} */}
-                    <span className="d-inline">
-                      Integration with digital platforms for easy access and
-                      management of dairy data.
-                    </span>
-                  </li>
-                  <li className="mb-4">
-                    <i className="fa fa-check-circle text-primary "></i>
-                    <i className="bi bi-check-circle-fill text-primary me-2"></i>
-                    {/* <span className="" style={{ fontWeight: 700 }}>
+                      <span className="d-inline">
+                        Integration with digital platforms for easy access and
+                        management of dairy data.
+                      </span>
+                    </li>
+                    <li className="mb-4">
+                      <i className="fa fa-check-circle text-primary "></i>
+                      <i className="bi bi-check-circle-fill text-primary me-2"></i>
+                      {/* <span className="" style={{ fontWeight: 700 }}>
                     Unified Credential Management:
                   </span>{" "} */}
-                    <span className="d-inline">
-                      Streamlined processes for breeding, ownership, and disease
-                      management in dairy farming.
-                    </span>
-                  </li>
-                </ul>
+                      <span className="d-inline">
+                        Streamlined processes for breeding, ownership, and
+                        disease management in dairy farming.
+                      </span>
+                    </li>
+                  </ul>
+                </div>
               </div>
-            </div>
+            </FadeOnScroll>
           </div>
 
-          {isSmallScreen && (
-            <section>
-              <div className="col-lg-6 mx-2 shadow p-4">
+          <FadeOnScroll animation="up">
+            {isSmallScreen && (
+              <section>
+                <div className="col-lg-6 mx-2 shadow p-4">
+                  <h3 className="text-primary  font-weight-bold mb-4 ">
+                    At the Forefront of Pet Management: Cloudstry Technologies
+                  </h3>
+                  <p className="">
+                    Pashu Aadhaar offers a promising solution for managing
+                    livestock in India. By providing unique identification
+                    numbers, it aims to improve tracking accuracy, enhance
+                    disease control, and streamline record management. The
+                    system is designed to boost operational efficiency and
+                    support better decision-making. Cloudstry Tech is actively
+                    working on solutions to facilitate the implementation of
+                    this initiative
+                  </p>
+                </div>
+              </section>
+            )}
+          </FadeOnScroll>
+
+          <FadeOnScroll animation="up">
+            <section style={{ position: "relative", marginTop: "7rem" }}>
+              <div
+                style={{
+                  position: "relative",
+                  zIndex: 1,
+                  width: "100%",
+                }}
+              >
+                <img
+                  className="img-fluid rounded d-xl-block d-none"
+                  src="https://images.thequint.com/thequint%2F2018-08%2Fcd1c7bac-00a3-40b5-a270-72f803a98e3a%2F9b378119_4474_4e7b_820f_68bda8a3a0f4.jpg?rect=0%2C0%2C848%2C477"
+                  alt="Industry"
+                  style={{ width: "800px", height: "500px" }}
+                />
+              </div>
+              <div
+                style={{
+                  position: "absolute",
+                  top: "19%",
+                  right: "30%",
+                  transform: "translateX(50%)", // Adjust this to control horizontal overlap
+                  background: "#efefef",
+                  //   border: "1px solid black",
+                  borderRadius: "8px",
+                  padding: "2rem",
+                  maxWidth: "80%", // Ensures the content doesn't overflow the viewport
+                  zIndex: 2,
+                }}
+                className="col-lg-6 d-xl-block d-none"
+              >
                 <h3 className="text-primary  font-weight-bold mb-4 ">
                   At the Forefront of Pet Management: Cloudstry Technologies
                 </h3>
@@ -535,52 +606,7 @@ function Petadhar() {
                 </p>
               </div>
             </section>
-          )}
-
-          <section style={{ position: "relative", marginTop: "7rem" }}>
-            <div
-              style={{
-                position: "relative",
-                zIndex: 1,
-                width: "100%",
-              }}
-            >
-              <img
-                className="img-fluid rounded d-xl-block d-none"
-                src="https://images.thequint.com/thequint%2F2018-08%2Fcd1c7bac-00a3-40b5-a270-72f803a98e3a%2F9b378119_4474_4e7b_820f_68bda8a3a0f4.jpg?rect=0%2C0%2C848%2C477"
-                alt="Industry"
-                style={{ width: "800px", height: "500px" }}
-              />
-            </div>
-            <div
-              style={{
-                position: "absolute",
-                top: "19%",
-                right: "30%",
-                transform: "translateX(50%)", // Adjust this to control horizontal overlap
-                background: "#efefef",
-                //   border: "1px solid black",
-                borderRadius: "8px",
-                padding: "2rem",
-                maxWidth: "80%", // Ensures the content doesn't overflow the viewport
-                zIndex: 2,
-              }}
-              className="col-lg-6 d-xl-block d-none"
-            >
-              <h3 className="text-primary  font-weight-bold mb-4 ">
-                At the Forefront of Pet Management: Cloudstry Technologies
-              </h3>
-              <p className="">
-                Pashu Aadhaar offers a promising solution for managing livestock
-                in India. By providing unique identification numbers, it aims to
-                improve tracking accuracy, enhance disease control, and
-                streamline record management. The system is designed to boost
-                operational efficiency and support better decision-making.
-                Cloudstry Tech is actively working on solutions to facilitate
-                the implementation of this initiative
-              </p>
-            </div>
-          </section>
+          </FadeOnScroll>
         </div>
       </section>
     </div>

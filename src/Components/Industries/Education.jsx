@@ -4,56 +4,59 @@ import img2 from "./Images/ed.second.jpg";
 import img3 from "./Images/ed.third.jpg";
 import img4 from "./Images/ed.fourth.jpg";
 import bg3 from "../Images/bg3.jpg";
+import FadeOnScroll from "../Animate/Motion";
 function Education() {
   return (
     <div>
-      <header
-        className="text-white text-center py-5 position-relative"
-        style={{ maxHeight: "100%", overflow: "hidden" }}
-      >
-        {/* Background Image */}
-        <img
-          src={bg3} // Replace 'bg' with the actual path to  background image
-          alt="Background"
-          className="position-absolute top-0 start-0 w-100 h-100 object-fit-cover"
-          style={{ zIndex: 1, objectFit: "cover" }}
-        />
-
-        {/* Black Overlay */}
-        <div
-          className="position-absolute top-0 start-0 w-100 h-100"
-          style={{ backgroundColor: "rgb(16 11 11 / 42%)", zIndex: 2 }}
-        ></div>
-
-        {/* Navigation Path */}
-        <div
-          className="position-absolute top-0 p-4 start-0 ms-0 mt-0 fs-5 fw-bold"
-          style={{ zIndex: 3 }}
+      <FadeOnScroll>
+        <header
+          className="text-white text-center py-5 position-relative"
+          style={{ maxHeight: "100%", overflow: "hidden" }}
         >
-          <span className="small text-white">
-            <a href="/" className="text-white">
-              Industries We Serve /
-            </a>{" "}
-            Education
-          </span>
-        </div>
+          {/* Background Image */}
+          <img
+            src={bg3} // Replace 'bg' with the actual path to  background image
+            alt="Background"
+            className="position-absolute top-0 start-0 w-100 h-100 object-fit-cover"
+            style={{ zIndex: 1, objectFit: "cover" }}
+          />
 
-        {/* Header Content */}
-        <div
-          className="container text-white mt-5"
-          style={{ zIndex: 3, position: "relative" }}
-        >
-          <h1 className="display-6">
-            Educational Excellence: Synergy of Innovation and Engagement
-          </h1>
-          <p className="lead">
-            Empowering educational institutions with state-of-the-art solutions
-            to tackle challenges, foster engagement, and achieve excellence.
-            Explore how our technology transforms the learning experience and
-            drives educational success
-          </p>
-        </div>
-      </header>
+          {/* Black Overlay */}
+          <div
+            className="position-absolute top-0 start-0 w-100 h-100"
+            style={{ backgroundColor: "rgb(16 11 11 / 42%)", zIndex: 2 }}
+          ></div>
+
+          {/* Navigation Path */}
+          <div
+            className="position-absolute top-0 p-4 start-0 ms-0 mt-0 fs-5 fw-bold"
+            style={{ zIndex: 3 }}
+          >
+            <span className="small text-white">
+              <a href="/" className="text-white">
+                Industries We Serve /
+              </a>{" "}
+              Education
+            </span>
+          </div>
+
+          {/* Header Content */}
+          <div
+            className="container text-white mt-5"
+            style={{ zIndex: 3, position: "relative" }}
+          >
+            <h1 className="display-6">
+              Educational Excellence: Synergy of Innovation and Engagement
+            </h1>
+            <p className="lead">
+              Empowering educational institutions with state-of-the-art
+              solutions to tackle challenges, foster engagement, and achieve
+              excellence. Explore how our technology transforms the learning
+              experience and drives educational success
+            </p>
+          </div>
+        </header>
+      </FadeOnScroll>
 
       {/* <div className="container my-5 py-5">
         <div className="row align-items-center justify-content-between bg-light p-4 rounded-3 position-relative">
@@ -91,113 +94,116 @@ function Education() {
           </div>
         </div>
       </div> */}
-      <section
-        className="image-video-text-interactivity fadeInUp  "
-        style={{ marginTop: "10rem" }}
-      >
-        <div className="container mt-5 mb-5">
-          <div className="row align-items-center mb-5">
-            {/* Image Section */}
-            <div className="col-md-6 mb-5 mb-md-0">
-              <img
-                className="img-fluid rounded"
-                height={365}
-                width={504}
-                src={img2}
-                alt="Image"
-              />
-            </div>
+      <FadeOnScroll animation="up">
+        <section
+          className="image-video-text-interactivity fadeInUp  "
+          style={{ marginTop: "10rem" }}
+        >
+          <div className="container mt-5 mb-5">
+            <div className="row align-items-center mb-5">
+              {/* Image Section */}
+              <div className="col-md-6 mb-5 mb-md-0">
+                <img
+                  className="img-fluid rounded"
+                  height={365}
+                  width={504}
+                  src={img2}
+                  alt="Image"
+                />
+              </div>
 
-            {/* Text Section */}
-            <div className="col-md-6 mb-5">
-              <h3 className="text-primary fw-normal mb-3">
-                Major Challenges in the Education Sector: Navigating the Complex
-                Landscape
-              </h3>
-              <p className="text-muted fs-0">
-                The education sector faces a variety of significant challenges
-                that impact institutions, educators, and students alike. Five
-                major issues include:
-              </p>
+              {/* Text Section */}
+              <div className="col-md-6 mb-5">
+                <h3 className="text-primary fw-normal mb-3">
+                  Major Challenges in the Education Sector: Navigating the
+                  Complex Landscape
+                </h3>
+                <p className="text-muted fs-0">
+                  The education sector faces a variety of significant challenges
+                  that impact institutions, educators, and students alike. Five
+                  major issues include:
+                </p>
 
-              <ul className="list-unstyled">
-                <li className="mb-2 d-flex align-items-start">
-                  <i
-                    className="fa fa-check-circle text-primary me-2"
-                    style={{ marginTop: "6px" }}
-                  ></i>
-                  <span className="d-inline">
-                    <span className="fw-bold">
-                      Access to Quality Education:
+                <ul className="list-unstyled">
+                  <li className="mb-2 d-flex align-items-start">
+                    <i
+                      className="fa fa-check-circle text-primary me-2"
+                      style={{ marginTop: "6px" }}
+                    ></i>
+                    <span className="d-inline">
+                      <span className="fw-bold">
+                        Access to Quality Education:
+                      </span>
+                      Many students, particularly in remote areas, struggle to
+                      access quality educational resources, limiting their
+                      learning opportunities.
                     </span>
-                    Many students, particularly in remote areas, struggle to
-                    access quality educational resources, limiting their
-                    learning opportunities.
-                  </span>
-                </li>
-                <li className="mb-2 d-flex align-items-start">
-                  <i
-                    className="fa fa-check-circle text-primary me-2"
-                    style={{ marginTop: "6px" }}
-                  ></i>
-                  <span className="d-inline">
-                    <span className="fw-bold">
-                      Administrative Inefficiencies:
+                  </li>
+                  <li className="mb-2 d-flex align-items-start">
+                    <i
+                      className="fa fa-check-circle text-primary me-2"
+                      style={{ marginTop: "6px" }}
+                    ></i>
+                    <span className="d-inline">
+                      <span className="fw-bold">
+                        Administrative Inefficiencies:
+                      </span>
+                      Educational institutions often face cumbersome
+                      administrative processes that drain resources and time,
+                      affecting overall productivity.
                     </span>
-                    Educational institutions often face cumbersome
-                    administrative processes that drain resources and time,
-                    affecting overall productivity.
-                  </span>
-                </li>
-                <li className="mb-2 d-flex align-items-start">
-                  <i
-                    className="fa fa-check-circle text-primary me-2"
-                    style={{ marginTop: "6px" }}
-                  ></i>
-                  <span className="d-inline">
-                    <span className="fw-bold">Engagement and Retention:</span>
-                    Keeping students engaged and motivated in both physical and
-                    virtual classrooms is a persistent challenge, leading to
-                    higher dropout rates.
-                  </span>
-                </li>
-                <li className="mb-2 d-flex align-items-start">
-                  <i
-                    className="fa fa-check-circle text-primary me-2"
-                    style={{ marginTop: "6px" }}
-                  ></i>
-                  <span className="d-inline">
-                    <span className="fw-bold">
-                      Data Management and Security:
+                  </li>
+                  <li className="mb-2 d-flex align-items-start">
+                    <i
+                      className="fa fa-check-circle text-primary me-2"
+                      style={{ marginTop: "6px" }}
+                    ></i>
+                    <span className="d-inline">
+                      <span className="fw-bold">Engagement and Retention:</span>
+                      Keeping students engaged and motivated in both physical
+                      and virtual classrooms is a persistent challenge, leading
+                      to higher dropout rates.
                     </span>
-                    Managing vast amounts of student data while ensuring its
-                    security is a complex task, especially with increasing cyber
-                    threats.
-                  </span>
-                </li>
-                <li className="mb-2 d-flex align-items-start">
-                  <i
-                    className="fa fa-check-circle text-primary me-2"
-                    style={{ marginTop: "6px" }}
-                  ></i>
-                  <span className="d-inline">
-                    <span className="fw-bold">
-                      Adapting to Technological Change:
+                  </li>
+                  <li className="mb-2 d-flex align-items-start">
+                    <i
+                      className="fa fa-check-circle text-primary me-2"
+                      style={{ marginTop: "6px" }}
+                    ></i>
+                    <span className="d-inline">
+                      <span className="fw-bold">
+                        Data Management and Security:
+                      </span>
+                      Managing vast amounts of student data while ensuring its
+                      security is a complex task, especially with increasing
+                      cyber threats.
                     </span>
-                    Rapid technological advancements require institutions to
-                    continually adapt, often with limited budgets and expertise.
-                  </span>
-                </li>
-              </ul>
-              <p className="text-muted">
-                These challenges underscore the need for innovative solutions
-                that can effectively address these pressing issues
-              </p>
+                  </li>
+                  <li className="mb-2 d-flex align-items-start">
+                    <i
+                      className="fa fa-check-circle text-primary me-2"
+                      style={{ marginTop: "6px" }}
+                    ></i>
+                    <span className="d-inline">
+                      <span className="fw-bold">
+                        Adapting to Technological Change:
+                      </span>
+                      Rapid technological advancements require institutions to
+                      continually adapt, often with limited budgets and
+                      expertise.
+                    </span>
+                  </li>
+                </ul>
+                <p className="text-muted">
+                  These challenges underscore the need for innovative solutions
+                  that can effectively address these pressing issues
+                </p>
+              </div>
+              <hr className="mt-4" />
             </div>
-            <hr className="mt-4" />
           </div>
-        </div>
-      </section>
+        </section>
+      </FadeOnScroll>
 
       {/* <section class="py-5" id="features">
         <div class="container px-5 my-5">
@@ -264,235 +270,242 @@ function Education() {
         </div>
       </section> */}
 
-      <section
-        className="image-video-text-interactivity fadeInUp mb-5"
-        style={{ marginTop: "5rem" }}
-      >
-        <div className="container mt-5">
-          <div className="row align-items-center">
-            {/* Text Section */}
-            <div className="col-md-6 order-md-1 order-2">
-              <h3 className="text-primary fw-normal mb-3">
-                Digitalization in Education: A Catalyst for Positive Change
-              </h3>
-              <p className="text-muted">
-                Digitalization is transforming the education sector by offering
-                powerful tools to overcome these challenges. Here’s how
-                technology is making a difference:
-              </p>
-              <ul className="list-unstyled">
-                <li className="mb-2 d-flex align-items-start">
-                  <i
-                    className="fa fa-check-circle text-primary me-2"
-                    style={{ marginTop: "6px" }}
-                  ></i>
-                  <span className="d-inline">
-                    <strong>Expanding Access to Education:</strong> Digital
-                    platforms enable remote learning, bringing quality education
-                    to students regardless of their geographic location. Online
-                    courses, virtual classrooms, and e-learning modules make
-                    education more inclusive.
-                  </span>
-                </li>
-                <li className="mb-2 d-flex align-items-start">
-                  <i
-                    className="fa fa-check-circle text-primary me-2"
-                    style={{ marginTop: "6px" }}
-                  ></i>
-                  <span className="d-inline">
-                    <strong>Streamlining Administrative Processes:</strong>{" "}
-                    Automation tools and management systems reduce the burden of
-                    administrative tasks, allowing institutions to operate more
-                    efficiently. This leads to better resource allocation and
-                    improved productivity.
-                  </span>
-                </li>
-                <li className="mb-2 d-flex align-items-start">
-                  <i
-                    className="fa fa-check-circle text-primary me-2"
-                    style={{ marginTop: "6px" }}
-                  ></i>
-                  <span className="d-inline">
-                    <strong>Enhancing Student Engagement:</strong> Interactive
-                    digital tools, gamified learning experiences, and AI-driven
-                    personalized learning paths keep students engaged and
-                    motivated, helping to reduce dropout rates and improve
-                    outcomes.
-                  </span>
-                </li>
-                <li className="mb-2 d-flex align-items-start">
-                  <i
-                    className="fa fa-check-circle text-primary me-2"
-                    style={{ marginTop: "6px" }}
-                  ></i>
-                  <span className="d-inline">
-                    <strong>Improving Data Management and Security:</strong>{" "}
-                    Advanced data management systems ensure that student
-                    information is organized, easily accessible, and secure from
-                    cyber threats. This protects institutions from data breaches
-                    and ensures compliance with privacy regulations.
-                  </span>
-                </li>
-                <li className="mb-2 d-flex align-items-start">
-                  <i
-                    className="fa fa-check-circle text-primary me-2"
-                    style={{ marginTop: "6px" }}
-                  ></i>
-                  <span className="d-inline">
-                    <strong>Facilitating Technological Adaptation:</strong>{" "}
-                    Digitalization supports continuous learning and adaptation,
-                    enabling institutions to stay current with technological
-                    trends and integrate new tools seamlessly into their
-                    existing frameworks.
-                  </span>
-                </li>
-              </ul>
-              <p className="text-muted">
-                Digitalization is not just solving problems; it is
-                revolutionizing the way education is delivered and experienced.
-              </p>
-            </div>
+      <FadeOnScroll animation="up">
+        <section
+          className="image-video-text-interactivity fadeInUp mb-5"
+          style={{ marginTop: "5rem" }}
+        >
+          <div className="container mt-5">
+            <div className="row align-items-center">
+              {/* Text Section */}
+              <div className="col-md-6 order-md-1 order-2">
+                <h3 className="text-primary fw-normal mb-3">
+                  Digitalization in Education: A Catalyst for Positive Change
+                </h3>
+                <p className="text-muted">
+                  Digitalization is transforming the education sector by
+                  offering powerful tools to overcome these challenges. Here’s
+                  how technology is making a difference:
+                </p>
+                <ul className="list-unstyled">
+                  <li className="mb-2 d-flex align-items-start">
+                    <i
+                      className="fa fa-check-circle text-primary me-2"
+                      style={{ marginTop: "6px" }}
+                    ></i>
+                    <span className="d-inline">
+                      <strong>Expanding Access to Education:</strong> Digital
+                      platforms enable remote learning, bringing quality
+                      education to students regardless of their geographic
+                      location. Online courses, virtual classrooms, and
+                      e-learning modules make education more inclusive.
+                    </span>
+                  </li>
+                  <li className="mb-2 d-flex align-items-start">
+                    <i
+                      className="fa fa-check-circle text-primary me-2"
+                      style={{ marginTop: "6px" }}
+                    ></i>
+                    <span className="d-inline">
+                      <strong>Streamlining Administrative Processes:</strong>{" "}
+                      Automation tools and management systems reduce the burden
+                      of administrative tasks, allowing institutions to operate
+                      more efficiently. This leads to better resource allocation
+                      and improved productivity.
+                    </span>
+                  </li>
+                  <li className="mb-2 d-flex align-items-start">
+                    <i
+                      className="fa fa-check-circle text-primary me-2"
+                      style={{ marginTop: "6px" }}
+                    ></i>
+                    <span className="d-inline">
+                      <strong>Enhancing Student Engagement:</strong> Interactive
+                      digital tools, gamified learning experiences, and
+                      AI-driven personalized learning paths keep students
+                      engaged and motivated, helping to reduce dropout rates and
+                      improve outcomes.
+                    </span>
+                  </li>
+                  <li className="mb-2 d-flex align-items-start">
+                    <i
+                      className="fa fa-check-circle text-primary me-2"
+                      style={{ marginTop: "6px" }}
+                    ></i>
+                    <span className="d-inline">
+                      <strong>Improving Data Management and Security:</strong>{" "}
+                      Advanced data management systems ensure that student
+                      information is organized, easily accessible, and secure
+                      from cyber threats. This protects institutions from data
+                      breaches and ensures compliance with privacy regulations.
+                    </span>
+                  </li>
+                  <li className="mb-2 d-flex align-items-start">
+                    <i
+                      className="fa fa-check-circle text-primary me-2"
+                      style={{ marginTop: "6px" }}
+                    ></i>
+                    <span className="d-inline">
+                      <strong>Facilitating Technological Adaptation:</strong>{" "}
+                      Digitalization supports continuous learning and
+                      adaptation, enabling institutions to stay current with
+                      technological trends and integrate new tools seamlessly
+                      into their existing frameworks.
+                    </span>
+                  </li>
+                </ul>
+                <p className="text-muted">
+                  Digitalization is not just solving problems; it is
+                  revolutionizing the way education is delivered and
+                  experienced.
+                </p>
+              </div>
 
-            {/* Image Section */}
-            <div className="col-md-6 text-md-end mt-4 mb-5 mt-md-0 order-md-2 order-1">
-              <img
-                className="img-fluid rounded"
-                height={365}
-                width={504}
-                src={img3}
-                alt="Image"
-              />
+              {/* Image Section */}
+              <div className="col-md-6 text-md-end mt-4 mb-5 mt-md-0 order-md-2 order-1">
+                <img
+                  className="img-fluid rounded"
+                  height={365}
+                  width={504}
+                  src={img3}
+                  alt="Image"
+                />
+              </div>
             </div>
+            <hr className="mt-4" />
           </div>
-          <hr className="mt-4" />
-        </div>
-      </section>
+        </section>
+      </FadeOnScroll>
 
-      <section className="image-video-text-interactivity fadeInUp mb-5">
-        <div className="container mb-5">
-          <div className="row align-items-center mb-5">
-            {/* Image Section */}
-            <div className="col-md-6 mb-5 mb-md-0">
-              <img
-                className="img-fluid rounded"
-                height={365}
-                width={504}
-                src={img4}
-                alt="Cloudstry Tech Solutions"
-              />
+      <FadeOnScroll animation="up">
+        <section className="image-video-text-interactivity fadeInUp mb-5">
+          <div className="container mb-5">
+            <div className="row align-items-center mb-5">
+              {/* Image Section */}
+              <div className="col-md-6 mb-5 mb-md-0">
+                <img
+                  className="img-fluid rounded"
+                  height={365}
+                  width={504}
+                  src={img4}
+                  alt="Cloudstry Tech Solutions"
+                />
+              </div>
+
+              {/* Text Section */}
+              <div className="col-md-6 mt-5 mb-5">
+                <h3 className="text-primary fw-normal mb-3">
+                  How Cloudstry Tech Supports the Education Industry: Partner in
+                  Progress
+                </h3>
+                <p className="text-muted">
+                  At Cloudstry Tech, we are committed to empowering educational
+                  institutions to thrive in the digital age. Here’s how we can
+                  help:
+                </p>
+                <ul className="list-unstyled">
+                  <li className="mb-2 d-flex align-items-start">
+                    <i
+                      className="fa fa-check-circle text-primary me-2"
+                      style={{ marginTop: "6px" }}
+                    ></i>
+                    <span className="d-inline">
+                      <strong>Custom IT Solutions:</strong> Tailored solutions
+                      for institution's needs, from LMS implementation to IT
+                      infrastructure upgrades.
+                    </span>
+                  </li>
+                  <li className="mb-2 d-flex align-items-start">
+                    <i
+                      className="fa fa-check-circle text-primary me-2"
+                      style={{ marginTop: "6px" }}
+                    ></i>
+                    <span className="d-inline">
+                      <strong>Digital Transformation Services:</strong>{" "}
+                      Expertise in integrating advanced technologies to support
+                      teaching and administrative functions.
+                    </span>
+                  </li>
+                  <li className="mb-2 d-flex align-items-start">
+                    <i
+                      className="fa fa-check-circle text-primary me-2"
+                      style={{ marginTop: "6px" }}
+                    ></i>
+                    <span className="d-inline">
+                      <strong>Innovative Learning Tools:</strong> Development of
+                      AI-powered analytics, cloud-based platforms, and
+                      interactive tools to enhance engagement.
+                    </span>
+                  </li>
+                  <li className="mb-2 d-flex align-items-start">
+                    <i
+                      className="fa fa-check-circle text-primary me-2"
+                      style={{ marginTop: "6px" }}
+                    ></i>
+                    <span className="d-inline">
+                      <strong>Consultation and Support:</strong> Ongoing support
+                      to adapt to tech changes, optimize processes, and stay
+                      competitive.
+                    </span>
+                  </li>
+                </ul>
+                <p className="text-muted">
+                  By partnering with Cloudstry Tech, educational institutions
+                  can overcome challenges, leverage digital opportunities, and
+                  provide exceptional educational experiences
+                </p>
+              </div>
             </div>
-
-            {/* Text Section */}
-            <div className="col-md-6 mt-5 mb-5">
-              <h3 className="text-primary fw-normal mb-3">
-                How Cloudstry Tech Supports the Education Industry: Partner in
-                Progress
-              </h3>
-              <p className="text-muted">
-                At Cloudstry Tech, we are committed to empowering educational
-                institutions to thrive in the digital age. Here’s how we can
-                help:
-              </p>
-              <ul className="list-unstyled">
-                <li className="mb-2 d-flex align-items-start">
-                  <i
-                    className="fa fa-check-circle text-primary me-2"
-                    style={{ marginTop: "6px" }}
-                  ></i>
-                  <span className="d-inline">
-                    <strong>Custom IT Solutions:</strong> Tailored solutions for
-                    institution's needs, from LMS implementation to IT
-                    infrastructure upgrades.
-                  </span>
-                </li>
-                <li className="mb-2 d-flex align-items-start">
-                  <i
-                    className="fa fa-check-circle text-primary me-2"
-                    style={{ marginTop: "6px" }}
-                  ></i>
-                  <span className="d-inline">
-                    <strong>Digital Transformation Services:</strong> Expertise
-                    in integrating advanced technologies to support teaching and
-                    administrative functions.
-                  </span>
-                </li>
-                <li className="mb-2 d-flex align-items-start">
-                  <i
-                    className="fa fa-check-circle text-primary me-2"
-                    style={{ marginTop: "6px" }}
-                  ></i>
-                  <span className="d-inline">
-                    <strong>Innovative Learning Tools:</strong> Development of
-                    AI-powered analytics, cloud-based platforms, and interactive
-                    tools to enhance engagement.
-                  </span>
-                </li>
-                <li className="mb-2 d-flex align-items-start">
-                  <i
-                    className="fa fa-check-circle text-primary me-2"
-                    style={{ marginTop: "6px" }}
-                  ></i>
-                  <span className="d-inline">
-                    <strong>Consultation and Support:</strong> Ongoing support
-                    to adapt to tech changes, optimize processes, and stay
-                    competitive.
-                  </span>
-                </li>
-              </ul>
-              <p className="text-muted">
-                By partnering with Cloudstry Tech, educational institutions can
-                overcome challenges, leverage digital opportunities, and provide
-                exceptional educational experiences
-              </p>
-            </div>
+            <hr className="mt-4" />
           </div>
-          <hr className="mt-4" />
-        </div>
-      </section>
+        </section>
+      </FadeOnScroll>
 
-      <section className="pb-5 mt-5 mb-4">
-        <div className="container">
-          <div className="half-underline-container">
-            <h3
-              className="text-primary text-danger text-center display-6  mt-5  half-underline"
-              style={{ marginBottom: "2rem" }}
-            >
-              Key Projects For Education Sector
-            </h3>
-          </div>
-          <div className="row">
-            <div className="col-lg-10 col-xl-8 mx-auto">
-              <div
-                className="p-5 bg-white shadow  rounded"
-                style={{ width: "100%", height: "auto" }}
+      <FadeOnScroll animation="up">
+        <section className="pb-5 mt-5 mb-4">
+          <div className="container">
+            <div className="half-underline-container">
+              <h3
+                className="text-primary text-danger text-center display-6  mt-5  half-underline"
+                style={{ marginBottom: "2rem" }}
               >
-                <div className="media feature-card">
-                  <h3 className="text-primary fw-normal mb-3">
-                    Authentic Digital Certification
-                    <p className="text-muted h6 mt-2">
-                      We are proud to spearhead several innovative projects
-                      aimed at transforming education
-                    </p>
-                  </h3>
-                  <div className="media-body ml-3">
-                    <div className="blockquote border-0 p-0">
-                      <p className="font-italic text-muted fs-6">
-                        Our flagship project, offers a revolutionary
-                        approach to credentialing by providing digital
-                        certificates that are secure, verifiable, and easily
-                        shareable. This solution helps institutions streamline
-                        certification processes, enhance the credibility of
-                        academic achievements, and offer students a modern way
-                        to showcase their skills and qualifications.
+                Key Projects For Education Sector
+              </h3>
+            </div>
+            <div className="row">
+              <div className="col-lg-10 col-xl-8 mx-auto">
+                <div
+                  className="p-5 bg-white shadow  rounded"
+                  style={{ width: "100%", height: "auto" }}
+                >
+                  <div className="media feature-card">
+                    <h3 className="text-primary fw-normal mb-3">
+                      Authentic Digital Certification
+                      <p className="text-muted h6 mt-2">
+                        We are proud to spearhead several innovative projects
+                        aimed at transforming education
                       </p>
+                    </h3>
+                    <div className="media-body ml-3">
+                      <div className="blockquote border-0 p-0">
+                        <p className="font-italic text-muted fs-6">
+                          Our flagship project, offers a revolutionary approach
+                          to credentialing by providing digital certificates
+                          that are secure, verifiable, and easily shareable.
+                          This solution helps institutions streamline
+                          certification processes, enhance the credibility of
+                          academic achievements, and offer students a modern way
+                          to showcase their skills and qualifications.
+                        </p>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
+      </FadeOnScroll>
     </div>
   );
 }

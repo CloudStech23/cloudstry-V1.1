@@ -8,7 +8,7 @@ function Team() {
   return (
     <div className="">
       {/* Header Section */}
-      {/* <FadeOnScroll animation="top"> */}
+      <FadeOnScroll animation="top">
         <header
           className="text-white text-center py-5 position-relative"
           style={{ maxHeight: "100%", overflow: "hidden" }}
@@ -55,7 +55,7 @@ function Team() {
             </p>
           </div>
         </header>
-      {/* </FadeOnScroll> */}
+      </FadeOnScroll>
 
       {/* Team Section */}
       <section className="">
@@ -72,7 +72,7 @@ function Team() {
               <div className="row gx-5 row-cols-1 row-cols-sm-2 row-cols-xl-4 justify-content-center">
                 {Data.map((team, index) => (
                   <div className="col mb-5 mt-5 mb-xl-0" key={index}>
-                    {/* <FadeOnScroll animation="up"> */}
+                    <FadeOnScroll animation="up">
                       <div className="text-center bg-light rounded-3 p-4">
                         <img
                           className="img-fluid rounded-circle mb-2 px-4"
@@ -94,7 +94,7 @@ function Team() {
                         </h5>
                         <div className="text-primary">{team.Desc}</div>
                       </div>
-                    {/* </FadeOnScroll> */}
+                    </FadeOnScroll>
                   </div>
                 ))}
               </div>
