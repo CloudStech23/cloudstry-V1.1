@@ -62,7 +62,7 @@ function Menubar() {
       <div className="fluid-container">
         <nav
           className="navbar navbar-expand-lg navbar-dark justify-content-between text-white"
-          style={{ background: "#1236d0", height: "4.4rem" }}
+          style={{ background: "#1236d0", height: "4.7rem" }}
         >
           <Link className=" navbar-brand mx-3" to="/">
             <img
