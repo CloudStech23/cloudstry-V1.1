@@ -6,10 +6,10 @@ import img2 from "./Images/dc.main.jpg";
 import img3 from "./Images/dc.second.jpg";
 import img4 from "./Images/dc.issue.png";
 import img5 from "./Images/dc.earner.png";
-import img6 from "./Images/dc.Universities.png";
-import img7 from "./Images/dc.Training-providers.png";
-import img8 from "./Images/dc.Associations.png";
-import img9 from "./Images/dc.Corporations.png";
+import img6 from "./Images/dc.universities.jpg";
+import img7 from "./Images/dc.training.jpg";
+import img8 from "./Images/dc.association.jpg";
+import img9 from "./Images/dc.corporation.jpg";
 import bg from "./../../Images/bg1.jpg";
 
 function Digitalcertificate() {
@@ -481,7 +481,7 @@ function Digitalcertificate() {
         </section>
         <div className="container">
           {/* First Row */}
-          <div className="row gx-0 mt-4">
+          <div className="row gx-5 mt-4">
             <div
               className="col-xl-6 col-lg-5 d-flex justify-content-left align-items-center"
               style={{ marginBottom: "5rem" }}
@@ -579,7 +579,7 @@ function Digitalcertificate() {
             </div>
             <hr className="mt-3" />
           </div>
-          <div className="row gx-0 mt-4">
+          <div className="row gx-5 mt-4">
             <div
               className="col-xl-6 col-lg-5 d-flex justify-content-left align-items-center"
               style={{ marginBottom: "2rem" }}

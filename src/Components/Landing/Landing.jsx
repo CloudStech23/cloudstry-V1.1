@@ -44,7 +44,7 @@ function Landing() {
           <div className="row g-4">
             <div className="half-underline-container mb-3">
               <h3
-                className="text-danger fw-normal display-6 text-center   half-underline"
+                className="text-primary fw-normal display-6 text-center   half-blue-underline"
                 
               >
                 Services We Offer

@@ -30,12 +30,12 @@ export const Data = [
         linkedin :'https://www.linkedin.com/in/sanjay-kumar-singh-42a2523?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
         img : sanjay ,
     },
-    {
-        Name:'Anil Khatri',
-        Desc : 'Engineering Manager and Solution Architect',
-        linkedin :'https://www.linkedin.com/in/anil-khatri-4962a82?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
-        img : anil,
-    },
+    // {
+    //     Name:'Anil Khatri',
+    //     Desc : 'Engineering Manager and Solution Architect',
+    //     linkedin :'https://www.linkedin.com/in/anil-khatri-4962a82?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
+    //     img : anil,
+    // },
     {
         Name:'Manoj Behl',
         Desc : 'Senior Solutions Architect',

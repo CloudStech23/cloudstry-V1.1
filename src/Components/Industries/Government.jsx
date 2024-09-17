@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import img1 from "./Images/gov.first.jpg";
-import img2 from "./Images/gov.second.png";
+import img2 from "../WhatweDo/Product_Platfrom/Images/dc.issue.png";
 import img3 from "./Images/gov.third.jpg";
 import img4 from "./Images/gov.fourth.jpg";
 import img5 from "./Images/gov.five.jpeg";

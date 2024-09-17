@@ -20,4 +20,21 @@
     transform: translateX(50%); /* Center the underline under the text */
     transition: width 0.3s ease;
   }
+  .half-blue-underline {
+    position: relative;
+    display: inline-block; /* Adjusts to the width of the content */
+    text-align: center; /* Centers the text inside the element */
+  }
+  
+  .half-blue-underline::after {
+    content: '';
+    position: absolute;
+    bottom: -5px; /* Adjust this value to position the line below the text */
+    left: 0;
+    width: 50%; /* Adjust this percentage as needed */
+    height: 2px; /* Thickness of the underline */
+    background-color: #0e70ba; /* Primary color */
+    transform: translateX(50%); /* Center the underline under the text */
+    transition: width 0.3s ease;
+  }
   
