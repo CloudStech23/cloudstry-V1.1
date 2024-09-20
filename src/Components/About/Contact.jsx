@@ -16,9 +16,17 @@ import "./contact.css";
 import bg4 from "../Images/bg5.jpg";
 import img1 from "../Images/contact-img.jpg";
 import FadeOnScroll from "../Animate/Motion";
+import axios from "axios";
 
 function Contact() {
   const [isSmallScreen, setIsSmallScreen] = useState(window.innerWidth < 768);
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    subject: "",
+    message: "",
+  });
+  const [isSubmitted, setIsSubmitted] = useState(false);
 
   // Function to handle window resize
   const handleResize = () => {
@@ -34,6 +42,39 @@ function Contact() {
       window.removeEventListener("resize", handleResize);
     };
   }, []);
+
+  const handleChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    const googleScriptURL =
+      "https://script.google.com/macros/s/AKfycbz0UUnxVSAQRoUSG6ydVLUTCyDxAOLJLdDHaRcQ-Etsm6BumO4fTP1DznSphbLQ5zc/exec"; // Replace with your Google Script Web App URL
+
+    const formParams = new URLSearchParams();
+    formParams.append("name", formData.name);
+    formParams.append("email", formData.email);
+    formParams.append("subject", formData.subject);
+    formParams.append("message", formData.message);
+
+    try {
+      await axios.post(googleScriptURL, formParams);
+      // alert("Message sent successfully!");
+
+      setFormData({
+        name: "",
+        email: "",
+        subject: "",
+        message: "",
+      });
+      setIsSubmitted(true);
+    } catch (error) {
+      console.error("Error sending message", error);
+      // alert("There was an issue submitting your message.");
+    }
+  };
 
   return (
     <div className="bg-light ">
@@ -238,55 +279,82 @@ function Contact() {
         {/* *********** Content-2 is shown by default *********** */}
         <FadeOnScroll animation="up">
           <MDBRow className="d-flex bg-white justify-content-center align-items-center shadow mt-4">
-            <MDBCol md="6" className=" text-md-end mt-4 mt-md-0 mb-2">
+            <MDBCol md="6" className="text-md-end mt-4 mt-md-0 mb-2">
               <img src={img1} alt="Dummy" className="img-fluid rounded" />
             </MDBCol>
 
-            <MDBCol md="6" className=" ">
+            <MDBCol md="6">
               <MDBCard className="my-5">
                 <MDBCardBody className="p-5">
-                  <div className="h5 mb-4">
-                    We'd love to hear from you. Please fill out the form below
-                    and we'll get back to you promptly.
-                  </div>
+                  {/* Conditional Rendering: Show form or confirmation message */}
+                  {!isSubmitted ? (
+                    <>
+                      <div className="h5 mb-4">
+                        We'd love to hear from you. Please fill out the form
+                        below and we'll get back to you promptly.
+                      </div>
 
-                  <MDBRow>
-                    <MDBCol col="6">
-                      <MDBInput
-                        wrapperClass="mb-4"
-                        label="Full Name"
-                        id="form1"
-                        type="text"
-                      />
-                    </MDBCol>
+                      <form onSubmit={handleSubmit}>
+                        <MDBRow>
+                          <MDBCol col="6">
+                            <MDBInput
+                              wrapperClass="mb-4"
+                              label="Full Name"
+                              id="name"
+                              type="text"
+                              name="name"
+                              value={formData.name}
+                              onChange={handleChange}
+                            />
+                          </MDBCol>
 
-                    <MDBCol col="6">
-                      <MDBInput
-                        wrapperClass="mb-4"
-                        label="Email"
-                        id="form1"
-                        type="email"
-                      />
-                    </MDBCol>
-                  </MDBRow>
+                          <MDBCol col="6">
+                            <MDBInput
+                              wrapperClass="mb-4"
+                              label="Email"
+                              id="email"
+                              type="email"
+                              name="email"
+                              value={formData.email}
+                              onChange={handleChange}
+                            />
+                          </MDBCol>
+                        </MDBRow>
 
-                  <MDBInput
-                    wrapperClass="mb-4"
-                    label="Subject"
-                    id="form1"
-                    type="text"
-                  />
-                  <MDBTextArea
-                    wrapperClass="mb-4"
-                    rows={4}
-                    label="Message"
-                    id="form1"
-                    type="text"
-                  />
+                        <MDBInput
+                          wrapperClass="mb-4"
+                          label="Subject"
+                          id="subject"
+                          type="text"
+                          name="subject"
+                          value={formData.subject}
+                          onChange={handleChange}
+                        />
+                        <MDBTextArea
+                          wrapperClass="mb-4"
+                          rows={4}
+                          label="Message"
+                          id="message"
+                          name="message"
+                          value={formData.message}
+                          onChange={handleChange}
+                        />
 
-                  <MDBBtn className="w-100 mb-4 rounded-3 bg-danger" size="md">
-                    Send Message
-                  </MDBBtn>
+                        <MDBBtn
+                          type="submit"
+                          className="w-100 mb-4 rounded-3 bg-danger"
+                          size="md"
+                        >
+                          Send Message
+                        </MDBBtn>
+                      </form>
+                    </>
+                  ) : (
+                    <div className="fs-2 mb-4 text-center text-primary fw-normal">
+                      Thank you! Your message has been sent successfully. We
+                      will get back to you soon. <i class="fa fa-envelope" aria-hidden="true"></i>
+                    </div>
+                  )}
                 </MDBCardBody>
               </MDBCard>
             </MDBCol>
