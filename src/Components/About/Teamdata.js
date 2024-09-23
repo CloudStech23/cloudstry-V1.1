@@ -42,40 +42,5 @@ export const Data = [
         linkedin :'https://www.linkedin.com/in/manoj-behl-8822038?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
         img :manoj ,
     },
-    {
-        Name:'Renju Karunakaran',
-        Desc : 'Director of Software Engineering at Cloudstry',
-        linkedin :'https://www.linkedin.com/in/renju-karunakaran-2a4705126?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
-        img : Rejnu,
-    },
-    {
-        Name:'Milan K. Nayak',
-        Desc : 'Technology Analyst at Cloudstry',
-        linkedin :'https://www.linkedin.com/in/milan-kumar-nayak-317614224/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
-        img : milan,
-    },
-    {
-        Name:'Shyam M. Singh',
-        Desc : 'Technology Analyst at Cloudstry',
-        linkedin :'https://www.linkedin.com/in/shyam-mohan-singh-408676203?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
-        img : shyam,
-    },
-    {
-        Name:'Shivendra kadam',
-        Desc : 'Technology Analyst at Cloudstry',
-        linkedin :'https://www.linkedin.com/in/shivendra-kadam-0a2390281/',
-        img : shivendra,
-    },
-    {
-        Name:'Jyoti Hariyale',
-        Desc : 'Technology Analyst at Cloudstry',
-        linkedin :'https://www.linkedin.com/in/jyoti-hariyale/',
-        img : jyoti,
-    },
-    {
-        Name:'Uday Solanki',
-        Desc : 'Technology Analyst - Intern at Cloudstry',
-        linkedin :'https://www.linkedin.com/in/udaysolankii/',
-        img : uday,
-    },
+     
 ]
