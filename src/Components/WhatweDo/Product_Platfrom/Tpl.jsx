@@ -380,7 +380,7 @@ function Thirdpartylogistic() {
                 </li>
               </ul>
 
-              <Link to="/Government" className="btn btn-danger">
+              <Link to="/Industries/Government" className="btn btn-danger">
                 Talk to our Experts
               </Link>
             </div>

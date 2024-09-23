@@ -207,7 +207,7 @@ function Menubar() {
                             hoveredItem === "staffing" ? "active" : ""
                           }`}
                           onMouseEnter={() => handleHover("staffing")}
-                          to="/Staffing-Solution"
+                          to="/WhatweDo/Staffing-Solution"
                         >
                           Staffing Solution
                         </Link>
@@ -240,21 +240,21 @@ function Menubar() {
                             }}
                           >
                             <Link
-                              to="/Digital-Certificate"
+                              to="/WhatweDo/Product-Platform/Digital-Certificate"
                               style={{ padding: "0.5rem" }}
                               className="nav-link    menulink"
                             >
                               Digital Certificate
                             </Link>
                             <Link
-                              to="/Pet-Aadhar"
+                              to="/WhatweDo/Product-Platform/Pet-Aadhar"
                               style={{ padding: "0.5rem" }}
                               className="nav-link   menulink"
                             >
                               Pet Aadhar
                             </Link>
                             <Link
-                              to="/3PL-Solution"
+                              to="/WhatweDo/Product-Platform/3PL-Solution"
                               style={{ padding: "0.5rem" }}
                               className="nav-link   menulink"
                             >
@@ -329,14 +329,14 @@ function Menubar() {
                             }}
                           >
                             <Link
-                              to="/IT-Strategy-Consultancy"
+                              to="/WhatweDo/IT-Solutions/IT-Strategy-Consultancy"
                               style={{ padding: "0.5rem" }}
                               className="nav-link text-dark menulink"
                             >
                               IT-Strategy-Conusltancy
                             </Link>
                             <Link
-                              to="/Software-Services"
+                              to="/WhatweDo/IT-Solutions/Software-Services"
                               style={{ padding: "0.5rem" }}
                               className="nav-link text-dark menulink"
                             >
@@ -414,7 +414,7 @@ function Menubar() {
                             </div>
                             <Link
                               className="btn btn-danger mt-3 mb-2 rounded-pill px-4 py-2"
-                              to="/Staffing-Solution"
+                              to="/WhatweDo/Staffing-Solution"
                             >
                               Learn More
                             </Link>
@@ -457,7 +457,7 @@ function Menubar() {
                           className={`dropdown-item text-white h6 ${
                             hoveredItem === "education" ? "active" : ""
                           }`}
-                          to="/Education"
+                          to="/Industries/Education"
                           onMouseEnter={() => handleHover("education")}
                         >
                           Education
@@ -470,7 +470,7 @@ function Menubar() {
                           className={`dropdown-item text-white h6 ${
                             hoveredItem === "govt" ? "active" : ""
                           }`}
-                          to="/Government"
+                          to="/Industries/Government"
                           onMouseEnter={() => handleHover("govt")}
                         >
                           Government
@@ -483,7 +483,7 @@ function Menubar() {
                           className={`dropdown-item text-white h6 ${
                             hoveredItem === "h&i" ? "active" : ""
                           }`}
-                          to="/Health&Insurance"
+                          to="/Industries/Health-Insurance"
                           onMouseEnter={() => handleHover("h&i")}
                         >
                           Healthcare Insurance
@@ -496,7 +496,7 @@ function Menubar() {
                           className={`dropdown-item text-white h6 ${
                             hoveredItem === "logistic" ? "active" : ""
                           }`}
-                          to="/Logistic"
+                          to="/Industries/Logistic"
                           onMouseEnter={() => handleHover("logistic")}
                         >
                           Logistic
@@ -535,7 +535,7 @@ function Menubar() {
                             </div>
                             <Link
                               className="btn btn-danger mt-3 mb-2 rounded-pill px-4 py-2"
-                              to="/Education"
+                              to="/Industries/Education"
                             >
                               Learn More
                             </Link>
@@ -570,7 +570,7 @@ function Menubar() {
                             </div>
                             <Link
                               className="btn btn-danger mt-3 mb-2 rounded-pill px-4 py-2"
-                              to="/Government"
+                              to="/Industries/Government"
                             >
                               Learn More
                             </Link>
@@ -604,7 +604,7 @@ function Menubar() {
                             </div>
                             <Link
                               className="btn btn-danger mt-3 mb-2 rounded-pill px-4 py-2"
-                              to="Health&Insurance"
+                              to="/Industries/Health-Insurance"
                             >
                               Learn More
                             </Link>
@@ -639,7 +639,7 @@ function Menubar() {
                             </div>
                             <Link
                               className="btn btn-danger mt-3 mb-2 rounded-pill px-4 py-2"
-                              to="Logistic"
+                              to="/Industries/Logistic"
                             >
                               Learn More
                             </Link>

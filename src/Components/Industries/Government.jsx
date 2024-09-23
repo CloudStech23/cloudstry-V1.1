@@ -515,7 +515,7 @@ function Government() {
                   <div class="card-body p-4">
                     <Link
                       class="text-decoration-none link-dark stretched-link"
-                      to="/Digital-Certificate"
+                      to="/WhatweDo/Product-Platform/Digital-Certificate"
                     >
                       <h5 class="card-title mb-3 text-primary fw-bold">
                         Digital Certificate
@@ -531,7 +531,7 @@ function Government() {
                     </p>
                     <div className="py-2  my-1">
                       <Link
-                        to="/Digital-Certificate"
+                        to="/WhatweDo/Product-Platform/Digital-Certificate"
                         className="btn btn-danger"
                       >
                         Leran More
@@ -551,7 +551,7 @@ function Government() {
                   <div class="card-body p-4">
                     <Link
                       class="text-decoration-none link-dark stretched-link"
-                      to="/Pet-Aadhar"
+                      to="/WhatweDo/Product-Platform/Pet-Aadhar"
                     >
                       <h5 class="card-title text-primary fw-bold mb-3">
                         Animal Aadhar
@@ -566,7 +566,7 @@ function Government() {
                         disease control and breeding management.
                       </p>
                     </div>
-                    <Link to="/Pet-Aadhar" className="btn btn-danger">
+                    <Link to="/WhatweDo/Product-Platform/Pet-Aadhar" className="btn btn-danger">
                       Learn more
                     </Link>
                   </div>
@@ -583,7 +583,7 @@ function Government() {
                   <div class="card-body p-4">
                     <Link
                       class="text-decoration-none link-dark stretched-link"
-                      to="/3PL-Solution"
+                      to="/WhatweDo/Product-Platform/3PL-Solution"
                     >
                       <h5 class="card-title mb-3 text-primary fw-bold">3PL</h5>
                     </Link>
@@ -597,7 +597,7 @@ function Government() {
                     </p>
 
                     <div className="py-2  my-1">
-                      <Link to="/3PL-Solution" className="btn btn-danger">
+                      <Link to="/WhatweDo/Product-Platform/3PL-Solution" className="btn btn-danger">
                         learn More
                       </Link>
                     </div>

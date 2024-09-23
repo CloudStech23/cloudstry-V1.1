@@ -7,7 +7,7 @@ import {
   MDBIcon,
 } from "mdb-react-ui-kit";
 import { Link } from "react-router-dom";
-import "../Footer/Footer.css";
+import "../Footer/Footer.css"; 
 import pagelogo from "../Images/cloudslogo.png";
 import FadeOnScroll from "../Animate/Motion";
 
@@ -80,22 +80,22 @@ export default function Footer() {
               <h6 className="text-uppercase fw-bold mb-4">Solutions</h6>
 
               <p>
-                <Link to="/Digital-Certificate" className="text-reset nav-link">
+                <Link to="/WhatweDo/Product-Platform/Digital-Certificate" className="text-reset nav-link">
                   Digital Certificate
                 </Link>
               </p>
               <p>
-                <Link to="/3PL-Solution" className="text-reset nav-link">
+                <Link to="/WhatweDo/Product-Platform/3PL-Solution" className="text-reset nav-link">
                   3PL (3-Party Logistic)
                 </Link>
               </p>
               <p>
-                <Link to="/Pet-Aadhar" className="text-reset nav-link">
+                <Link to="/WhatweDo/Product-Platform/Pet-Aadhar" className="text-reset nav-link">
                   Pet Adhar
                 </Link>
               </p>
               <p>
-                <Link to="/Government" className="text-reset nav-link">
+                <Link to="/Industries/Government" className="text-reset nav-link">
                   Government
                 </Link>
               </p>
@@ -105,24 +105,24 @@ export default function Footer() {
               <h6 className="text-uppercase fw-bold mb-4">Industries</h6>
               <p>
                 <Link
-                  to="/IT-Strategy-Consultancy"
+                  to="/WhatweDo/IT-Solutions/IT-Strategy-Consultancy"
                   className="text-reset nav-link"
                 >
                   It Strategy Consultancy
                 </Link>
               </p>
               <p>
-                <Link to="/Education" className="text-reset nav-link">
+                <Link to="/Industries/Education" className="text-reset nav-link">
                   Education
                 </Link>
               </p>
               <p>
-                <Link to="/Logistic" className="text-reset nav-link">
+                <Link to="/Industries/Logistic" className="text-reset nav-link">
                   Logistic
                 </Link>
               </p>
               <p>
-                <Link to="/Staffing-Solution" className="text-reset nav-link">
+                <Link to="/WhatweDo/Staffing-Solution" className="text-reset nav-link">
                   Staffing Solution
                 </Link>
               </p>

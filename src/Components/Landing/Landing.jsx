@@ -69,7 +69,7 @@ function Landing() {
                       Comprehensive Staffing Solutions for Global Captive
                       Centers
                     </h4>
-                    <Link to="/Staffing-Solution" className="btn btn-danger">
+                    <Link to="/WhatweDo/Staffing-Solution" className="btn btn-danger">
                       Read More
                     </Link>
                   </div>
@@ -92,7 +92,7 @@ function Landing() {
                     <h4 className="card-title text-primary mb-3">
                       End-to-End Software Solutions and Support Services
                     </h4>
-                    <Link to="/Software-Services" className="btn btn-danger">
+                    <Link to="/WhatweDo/IT-Solutions/Software-Services" className="btn btn-danger">
                       Read More
                     </Link>
                   </div>
@@ -117,7 +117,7 @@ function Landing() {
                       Transformation
                     </h4>
                     <Link
-                      to="/IT-Strategy-Consultancy"
+                      to="/WhatweDo/IT-Solutions/IT-Strategy-Consultancy"
                       className="btn btn-danger"
                     >
                       Read More

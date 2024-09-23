@@ -25,16 +25,16 @@ function App() {
       </div>
       <Routes>
         <Route exact path="/" element={<Landing />} />
-        <Route exact path="/Digital-Certificate" element={<Digitalcertificate />} />
-        <Route exact path="/Pet-Aadhar" element={<Petadhar/>} />
-        <Route exact path="/3PL-Solution" element={<Thirdpartylogistic/>} />
-        <Route exact path="/IT-Strategy-Consultancy" element={<Consultancy/>} />
-        <Route exact path="/Software-Services" element={<Softwareservices/>} />
-        <Route exact path="/Staffing-Solution" element={<Staffingsolution/>} />
-        <Route exact path="/Health&Insurance" element={<Healthinsurance/>} />
-        <Route exact path="/Government" element={<Government/>} />
-        <Route exact path="/Logistic" element={<Logistic/>} />
-        <Route exact path="/Education" element={<Education/>} />
+        <Route exact path="/WhatweDo/Product-Platform/Digital-Certificate" element={<Digitalcertificate />} />
+        <Route exact path="/WhatweDo/Product-Platform/Pet-Aadhar" element={<Petadhar/>} />
+        <Route exact path="/WhatweDo/Product-Platform/3PL-Solution" element={<Thirdpartylogistic/>} />
+        <Route exact path="/WhatweDo/IT-Solutions/IT-Strategy-Consultancy" element={<Consultancy/>} />
+        <Route exact path="/WhatweDo/IT-Solutions/Software-Services" element={<Softwareservices/>} />
+        <Route exact path="/WhatweDo/Staffing-Solution" element={<Staffingsolution/>} />
+        <Route exact path="/Industries/Health-Insurance" element={<Healthinsurance/>} />
+        <Route exact path="/Industries/Government" element={<Government/>} />
+        <Route exact path="/Industries/Logistic" element={<Logistic/>} />
+        <Route exact path="/Industries/Education" element={<Education/>} />
         <Route exact path="/Support" element={<Contact/>} />
         <Route exact path="/Team-Cloudstry" element={<Team/>} />
       </Routes>

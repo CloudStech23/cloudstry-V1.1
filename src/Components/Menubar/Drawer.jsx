@@ -94,7 +94,7 @@ function Menudrawer({ open, onClose }) {
                   <Nav className="submenu shadow">
                     <Nav.Item
                       as={NavLink}
-                      to="/Digital-Certificate"
+                      to="/WhatweDo/Product-Platform/Digital-Certificate"
                       className="nav-item text-white"
                       onClick={handleNavLinkClick}
                     >
@@ -103,7 +103,7 @@ function Menudrawer({ open, onClose }) {
                     <br />
                     <Nav.Item
                       as={NavLink}
-                      to="/Pet-Aadhar"
+                      to="/WhatweDo/Product-Platform/Pet-Aadhar"
                       className="nav-item text-white"
                       onClick={handleNavLinkClick}
                     >
@@ -112,7 +112,7 @@ function Menudrawer({ open, onClose }) {
                     <br />
                     <Nav.Item
                       as={NavLink}
-                      to="/3PL-Solution"
+                      to="/WhatweDo/Product-Platform/3PL-Solution"
                       className="nav-item text-white"
                       onClick={handleNavLinkClick}
                     >
@@ -138,7 +138,7 @@ function Menudrawer({ open, onClose }) {
                   <Nav className="submenu shadow">
                     <Nav.Item
                       as={NavLink}
-                      to="/IT-Strategy-Consultancy"
+                      to="/WhatweDo/IT-Solutions/IT-Strategy-Consultancy"
                       className="nav-item text-white"
                       onClick={handleNavLinkClick}
                     >
@@ -147,7 +147,7 @@ function Menudrawer({ open, onClose }) {
                     <br />
                     <Nav.Item
                       as={NavLink}
-                      to="/Software-Services"
+                      to="/WhatweDo/IT-Solutions/Software-Services"
                       className="nav-item text-white"
                       onClick={handleNavLinkClick}
                     >
@@ -159,7 +159,7 @@ function Menudrawer({ open, onClose }) {
                 <br />
                 <Nav.Item
                   as={NavLink}
-                  to="/Staffing-Solution"
+                  to="/WhatweDo/Staffing-Solution"
                   className="nav-item text-white"
                   onClick={handleNavLinkClick}
                 >
@@ -187,7 +187,7 @@ function Menudrawer({ open, onClose }) {
               <Nav className="submenu shadow">
                 <Nav.Item
                   as={NavLink}
-                  to="/Education"
+                  to="/Industries/Education"
                   className="nav-item text-white"
                   onClick={handleNavLinkClick}
                 >
@@ -196,7 +196,7 @@ function Menudrawer({ open, onClose }) {
                 <br />
                 <Nav.Item
                   as={NavLink}
-                  to="/Government"
+                  to="/Industries/Government"
                   className="nav-item text-white"
                   onClick={handleNavLinkClick}
                 >
@@ -205,7 +205,7 @@ function Menudrawer({ open, onClose }) {
                 <br />
                 <Nav.Item
                   as={NavLink}
-                  to="/Health&Insurance"
+                  to="/Industries/Health-Insurance"
                   className="nav-item text-white"
                   onClick={handleNavLinkClick}
                 >
@@ -214,7 +214,7 @@ function Menudrawer({ open, onClose }) {
                 <br />
                 <Nav.Item
                   as={NavLink}
-                  to="/Logistic"
+                  to="/Industries/Logistic"
                   className="nav-item text-white"
                   onClick={handleNavLinkClick}
                 >
