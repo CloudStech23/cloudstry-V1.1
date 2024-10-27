@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import { MDBContainer, MDBBtn } from "mdb-react-ui-kit";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { EffectCards, Autoplay } from "swiper/modules";
-import SwiperCore from "swiper"
+import SwiperCore from "swiper";
 import "swiper/css";
 import "swiper/css/effect-cards";
 import "../Landing/slick.css";
@@ -15,7 +15,7 @@ import { TbSettingsCode } from "react-icons/tb";
 import { RiTeamFill } from "react-icons/ri";
 import { AiOutlineLineChart } from "react-icons/ai";
 
-SwiperCore.use([Autoplay,EffectCards]);
+SwiperCore.use([Autoplay, EffectCards]);
 
 export default function SwiperCarousel() {
   useEffect(() => {
@@ -32,11 +32,11 @@ export default function SwiperCarousel() {
     infinite: true,
     autoplay: true,
     autoplaySpeed: 2500,
-    speed: 500,
+    speed: 1500,
     slidesToShow: 1,
     slidesToScroll: 1,
     arrows: false,
-    fade:true,
+    fade: true,
     pauseOnHover: true,
   };
 
@@ -44,27 +44,27 @@ export default function SwiperCarousel() {
     {
       Logo: <FaHandshake />,
       Title: "Strategic Partnerships",
-      Desc: "Cultivating strong alliances to fuel innovation and deliver bespoke IT solutions tailored to unique client requirements. Uday here, keen to assist with solutions.",
+      Desc: "Building robust partnerships to drive mutual innovation, enabling tailored IT solutions that address specific client goals and elevate market positioning. Our alliances power sustainable success.",
     },
     {
       Logo: <TbSettingsCode />,
-      Title: "Innovative Development",
-      Desc: "Crafting state-of-the-art software to equip businesses with cutting-edge technology and streamlined workflows.",
+      Title: "Innovative Software Development",
+      Desc: "Designing and implementing advanced software solutions to empower businesses with the latest technologies, fostering efficient workflows, scalability, and competitive edge in their industry.",
     },
     {
       Logo: <RiTeamFill />,
-      Title: "Comprehensive Staffing Solutions",
-      Desc: "Supplying experienced professionals to fulfill IT needs and drive your company's expansion in a rapidly changing environment.",
+      Title: "Comprehensive IT Staffing",
+      Desc: "Providing experienced IT professionals to meet diverse technical needs, ensuring your team has the talent required to adapt and thrive in a fast-evolving tech landscape.",
     },
     {
       Logo: <AiOutlineLineChart />,
-      Title: "Business Growth Enablement",
-      Desc: "Promoting business advancement through strategic technology that boosts efficiency, security, and scalability.",
+      Title: "Technology-Driven Business Growth",
+      Desc: "Empowering business expansion through strategic tech solutions that enhance productivity, strengthen security, and support scalable operations for sustainable, long-term growth.",
     },
     {
       Logo: <TbSettingsCode />,
-      Title: "Innovative Development",
-      Desc: "Crafting state-of-the-art software to equip businesses with cutting-edge technology and streamlined workflows.",
+      Title: "Innovative Software Development",
+      Desc: "Developing cutting-edge software with a focus on maximizing operational efficiency, integrating the latest tech advancements, and enhancing user experiences to drive business value.",
     },
   ];
 
@@ -75,7 +75,7 @@ export default function SwiperCarousel() {
         padding: "50px 0px 100px",
         background: "linear-gradient(rgb(14, 50, 206), rgb(110, 137, 255))",
         position: "relative",
-        minHeight: "620px",
+        minHeight: "655px",
         overflow: "hidden",
       }}
     >
@@ -110,7 +110,9 @@ export default function SwiperCarousel() {
                     <p>
                       Building resilient partnerships to fuel growth and deliver
                       tailored IT solutions for your unique needs.{" "}
-                      <span className="redirect-arrow text-white"><i className="fa fa-arrow-right"/></span>
+                      <span className="redirect-arrow text-white">
+                        <i className="fa fa-arrow-right" />
+                      </span>
                     </p>
                   </div>
                   <div
@@ -121,7 +123,9 @@ export default function SwiperCarousel() {
                     <p>
                       Offering cutting-edge solutions designed to empower
                       businesses with streamlined workflows.{" "}
-                      <span className="redirect-arrow text-white"><i className="fa fa-arrow-right"/></span>
+                      <span className="redirect-arrow text-white">
+                        <i className="fa fa-arrow-right" />
+                      </span>
                     </p>
                   </div>
                   <div
@@ -134,7 +138,9 @@ export default function SwiperCarousel() {
                     <p>
                       Supplying skilled professionals to support your IT needs
                       and foster company growth.{" "}
-                      <span className="redirect-arrow text-white"><i className="fa fa-arrow-right"/></span>
+                      <span className="redirect-arrow text-white">
+                        <i className="fa fa-arrow-right" />
+                      </span>
                     </p>
                   </div>
                 </Slider>

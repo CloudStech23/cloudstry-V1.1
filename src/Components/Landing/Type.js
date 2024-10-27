@@ -4,19 +4,19 @@ import Typewriter from "typewriter-effect";
 function Type() {
   return (
     <Typewriter
-      options={{
-        strings: [
-          "Communicate Engage. Alert.",
-          "We Are Team!",
-          "We Are Business!",
-        ],
-        autoStart: true,
-        loop: true,
-        deleteSpeed: 20,
-        delay:60,
-        html: true, // This enables HTML parsing in the typewriter
-      }}
-    />
+    options={{
+      strings: [
+        "Innovate. Integrate. Elevate.",
+        "Premier Tech Ally.",
+        "Digital Evolution.",
+      ],
+      autoStart: true,
+      loop: true,
+      deleteSpeed: 20,
+      delay: 60,
+      html: true,
+    }}
+  />
   );
 }
 

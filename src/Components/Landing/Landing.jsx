@@ -11,8 +11,42 @@ import education from "../Images/Education.jpg";
 import whycs from "../Images/why cs.jpg";
 import "../Landing/Landing.css";
 import FadeOnScroll from "../Animate/Motion";
+import { Container, Row, Col, Card } from "react-bootstrap";
+import { FaBullseye, FaLayerGroup, FaRobot, FaShieldAlt, FaChartLine, FaCogs } from "react-icons/fa";
 
 function Landing() {
+  const features = [
+    {
+      icon: <FaBullseye />,
+      title: "Targeted Communication",
+      description: "Deliver precise, timely messages across multiple channels, ensuring customers stay informed and engaged.",
+    },
+    {
+      icon: <FaLayerGroup />,
+      title: "Seamless Integration",
+      description: "Deliver precise, timely messages across multiple channels, ensuring customers stay informed and engaged.",
+    },
+    {
+      icon: <FaRobot />,
+      title: "Advanced Automation",
+      description: "Deliver precise, timely messages across multiple channels, ensuring customers stay informed and engaged.",
+    },
+    {
+      icon: <FaShieldAlt />,
+      title: "Robust Security",
+      description: "Deliver precise, timely messages across multiple channels, ensuring customers stay informed and engaged.",
+    },
+    {
+      icon: <FaChartLine />,
+      title: "Scalable Solutions",
+      description: "Deliver precise, timely messages across multiple channels, ensuring customers stay informed and engaged.",
+    },
+    {
+      icon: <FaCogs />,
+      title: "Flexible Customization",
+      description: "Deliver precise, timely messages across multiple channels, ensuring customers stay informed and engaged.",
+    },
+  ];
   return (
     // <div className="container-fluid d-flex justify-content-center align-items-center min-vh-100">
     //   <div className="text-center py-5 px-5">
@@ -40,6 +74,32 @@ function Landing() {
     <div>
       <FadeOnScroll>
         <Slick />
+      </FadeOnScroll>
+      <FadeOnScroll>
+        <Container className="my-5">
+          <Row className="g-4">
+            {features.map((feature, index) => (
+              <Col md={4} key={index}>
+                <Card className="h-100 text-center shadow-sm">
+                  <Card.Body>
+                    <div
+                      className="mb-3"
+                      style={{ fontSize: "2rem", color: "#0056b3" }}
+                    >
+                      {feature.icon}
+                    </div>
+                    <Card.Title className="text-primary">
+                      {feature.title}
+                    </Card.Title>
+                    <Card.Text className="text-muted">
+                      {feature.description}
+                    </Card.Text>
+                  </Card.Body>
+                </Card>
+              </Col>
+            ))}
+          </Row>
+        </Container>
       </FadeOnScroll>
 
       <FadeOnScroll animation="up">
@@ -69,7 +129,10 @@ function Landing() {
                       Comprehensive Staffing Solutions for Global Captive
                       Centers
                     </h4>
-                    <Link to="/WhatweDo/Staffing-Solution" className="btn btn-danger">
+                    <Link
+                      to="/WhatweDo/Staffing-Solution"
+                      className="btn btn-danger"
+                    >
                       Read More
                     </Link>
                   </div>
@@ -92,7 +155,10 @@ function Landing() {
                     <h4 className="card-title text-primary mb-3">
                       End-to-End Software Solutions and Support Services
                     </h4>
-                    <Link to="/WhatweDo/IT-Solutions/Software-Services" className="btn btn-danger">
+                    <Link
+                      to="/WhatweDo/IT-Solutions/Software-Services"
+                      className="btn btn-danger"
+                    >
                       Read More
                     </Link>
                   </div>
