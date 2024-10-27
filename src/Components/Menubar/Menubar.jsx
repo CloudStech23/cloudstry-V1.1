@@ -62,7 +62,7 @@ function Menubar() {
       <div className="fluid-container">
         <nav
           className="navbar navbar-expand-lg navbar-dark justify-content-between text-white"
-          style={{ background: "#1236d0", height: "4.7rem" }}
+          style={{ background: "#1236d0", height: "4.7rem" ,   }}
         >
           <Link className=" navbar-brand mx-3" to="/">
             <img src={pagelogo} className="img-fluid logoimg" alt="Logo" />
@@ -71,7 +71,7 @@ function Menubar() {
             className="mx-2 navbar-toggler"
             aria-expanded="false"
             onClick={handleOpen}
-          >
+          > 
             <i className="fa fa-bars" aria-hidden="true"></i>
           </button>
 
@@ -120,7 +120,7 @@ function Menubar() {
                     openDropdown === "dropdown2" ? "show" : ""
                   }`}
                   aria-labelledby="navbarDropdown2"
-                  style={{ height: "320px", background: "#1236d0" }}
+                  style={{ height: "300px", background: "#1236d0" ,border:'1px solid #1236d0' }}
                 >
                   <div className="row mt-3">
                     <div className="col-lg-3" style={{ marginLeft: "5%" }}>
@@ -448,7 +448,7 @@ function Menubar() {
                     openDropdown === "dropdown3" ? "show" : ""
                   }`}
                   aria-labelledby="navbarDropdown3"
-                  style={{ height: "320px", background: "#1236d0" }}
+                  style={{ height: "300px", background: "#1236d0" ,border:'1px solid #1236d0' }}
                 >
                   <div className="row mt-3">
                     <div className="col-lg-3" style={{ marginLeft: "5%" }}>

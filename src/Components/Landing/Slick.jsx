@@ -1,134 +1,251 @@
-import React, { useRef, useEffect, useState } from "react";
+import React, { useEffect } from "react";
+import { MDBContainer, MDBBtn } from "mdb-react-ui-kit";
 import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/css"; // Import Swiper styles
-import "swiper/css/navigation"; // Import navigation styles
-import { Navigation, Autoplay } from "swiper/modules";
-import { data } from "./swiperdata";
-import "./slick.css"; // Custom styles for your slider
+import { EffectCards, Autoplay } from "swiper/modules";
+import SwiperCore from "swiper"
+import "swiper/css";
+import "swiper/css/effect-cards";
+import "../Landing/slick.css";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import Slider from "react-slick";
+import Type from "./Type";
+import { FaHandshake } from "react-icons/fa";
+import { TbSettingsCode } from "react-icons/tb";
+import { RiTeamFill } from "react-icons/ri";
+import { AiOutlineLineChart } from "react-icons/ai";
 
-const SwiperCarousel = () => {
-  const swiperRef = useRef(null);
-  const [maxHeight, setMaxHeight] = useState("30rem"); // Default maxHeight
-  const [imgHeight, setImgHeight] = useState("23rem"); // Default image height
+SwiperCore.use([Autoplay,EffectCards]);
 
+export default function SwiperCarousel() {
   useEffect(() => {
-    // Function to handle screen size changes
-    const handleResize = () => {
-      if (window.innerWidth <= 576) {
-        setMaxHeight("39rem"); // Set to 39rem for smaller screens
-        setImgHeight("12rem"); // Set image height to 12rem for smaller screens
-      } else {
-        setMaxHeight("30rem"); // Set to 30rem for larger screens
-        setImgHeight("23rem"); // Set image height to 23rem for larger screens
-      }
+    // Allow scroll from the start
+    document.body.style.overflow = "auto";
+
+    return () => {
+      // Cleanup if needed
     };
-
-    // Add event listener for window resize
-    window.addEventListener("resize", handleResize);
-
-    // Call handleResize once to set the initial values
-    handleResize();
-
-    // Cleanup the event listener on component unmount
-    return () => window.removeEventListener("resize", handleResize);
   }, []);
 
-  useEffect(() => {
-    if (swiperRef.current && swiperRef.current.swiper) {
-      swiperRef.current.swiper.params.navigation.prevEl = ".custom-prev";
-      swiperRef.current.swiper.params.navigation.nextEl = ".custom-next";
-      swiperRef.current.swiper.navigation.init();
-      swiperRef.current.swiper.navigation.update();
-    }
-  }, []);
-
-  const pauseAutoplay = () => {
-    if (swiperRef.current && swiperRef.current.swiper.autoplay) {
-      swiperRef.current.swiper.autoplay.stop();
-    }
+  const settings = {
+    // dots: true,
+    infinite: true,
+    autoplay: true,
+    autoplaySpeed: 2500,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+    fade:true,
+    pauseOnHover: true,
   };
 
-  const resumeAutoplay = () => {
-    if (swiperRef.current && swiperRef.current.swiper.autoplay) {
-      swiperRef.current.swiper.autoplay.start();
-    }
-  };
+  const CaroData = [
+    {
+      Logo: <FaHandshake />,
+      Title: "Strategic Partnerships",
+      Desc: "Cultivating strong alliances to fuel innovation and deliver bespoke IT solutions tailored to unique client requirements. Uday here, keen to assist with solutions.",
+    },
+    {
+      Logo: <TbSettingsCode />,
+      Title: "Innovative Development",
+      Desc: "Crafting state-of-the-art software to equip businesses with cutting-edge technology and streamlined workflows.",
+    },
+    {
+      Logo: <RiTeamFill />,
+      Title: "Comprehensive Staffing Solutions",
+      Desc: "Supplying experienced professionals to fulfill IT needs and drive your company's expansion in a rapidly changing environment.",
+    },
+    {
+      Logo: <AiOutlineLineChart />,
+      Title: "Business Growth Enablement",
+      Desc: "Promoting business advancement through strategic technology that boosts efficiency, security, and scalability.",
+    },
+    {
+      Logo: <TbSettingsCode />,
+      Title: "Innovative Development",
+      Desc: "Crafting state-of-the-art software to equip businesses with cutting-edge technology and streamlined workflows.",
+    },
+  ];
 
   return (
-    <div
-      className="container-fluid p-0 position-relative"
-      onMouseEnter={pauseAutoplay}
-      onMouseLeave={resumeAutoplay}
-      style={{ background: "#e1e3e4a8" }}
+    <section
+      className="home-wrapper-top d-flex align-items-center"
+      style={{
+        padding: "50px 0px 100px",
+        background: "linear-gradient(rgb(14, 50, 206), rgb(110, 137, 255))",
+        position: "relative",
+        minHeight: "620px",
+        overflow: "hidden",
+      }}
     >
-      <div className="half-underline-container mt-4">
-        <h3 className="text-primary fw-normal display-6 text-center   half-blue-underline">
-          Our Product Platform
-        </h3>
-      </div>
-      <Swiper
-        ref={swiperRef}
-        modules={[Autoplay, Navigation]}
-        spaceBetween={0}
-        autoplay={{ delay: 2000 }}
-        loop={true}
-        navigation={{
-          nextEl: ".custom-next",
-          prevEl: ".custom-prev",
-        }}
-        className="swiper-container"
-        style={{ height: "100vh", maxHeight }} // Dynamically set maxHeight based on screen size
-      >
-        {data.map((value, index) => (
-          <SwiperSlide key={index}>
-            <div className="container py-5 position-relative mainslider">
-              <div className="row align-items-center justify-content-between p-4 rounded-3">
-                {/* Image Content */}
-                <div className="col-12 col-md-5 text-md-end mt-md-0 mb-2 position-relative order-1 order-md-2">
-                  <img
-                    src={
-                      value.img ||
-                      "https://via.placeholder.com/600x400.png?text=Dummy+Image"
-                    }
-                    alt={value.title || "Dummy"}
-                    className="img-fluid rounded"
-                    style={{
-                      height: imgHeight,
-                      objectFit: "cover",
-                      width: "100%",
-                    }} // Dynamically set img height
-                  />
-                </div>
-                {/* Text Content */}
-                <div className="col-12 col-md-5 mt-4 mb-2 order-2 order-md-1 text-center text-md-start">
-                  <h2
-                    className="display-5 text-primary responsive-heading"
-                    style={{ fontWeight: 300, whiteSpace: "nowrap" }}
+      <MDBContainer fluid className="position-relative px-4 px-md-5">
+        <div className="row">
+          {/* Left side: Text Content */}
+          <div className="col-md-7 d-flex flex-column justify-content-center">
+            <div className="text-animated">
+              <h1 className="display-4   text-white fw-light mb-4">
+                <Type />
+              </h1>
+              <p className="text-white mb-4 col-9">
+                AGENT511 software platforms support your digital transformation
+                by expanding your reach and eliminating gaps in the customer
+                journey. Lorem ipsum dolor sit amet consectetur, adipisicing
+                elit. Reprehenderit mollitia nemo aut incidunt doloremque saepe.
+              </p>
+              <p className="mb-4 col-9" style={{ color: "#e3e3e3e8" }}>
+                For over a decade, our technologies have been trusted to deliver
+                relevant, seamless experiences for public sector and enterprise
+                mission-critical services.
+              </p>
+
+              {/* Highlighted Card Carousel */}
+              <div className="col-6">
+                <Slider {...settings}>
+                  <div
+                    className="highlight-card p-4"
+                    onClick={() => (window.location.href = "/partnerships")}
                   >
-                    {value.title}
-                  </h2>
-                  <p className="text-muted  mb-4 responsive-text">
-                    {value.desc}
-                  </p>
-                  <a href={value.btnlink} className="btn btn-danger">
-                    Learn more
-                  </a>
-                </div>
+                    <h5 className="card-title mb-2">Strategic Partnerships</h5>
+                    <p>
+                      Building resilient partnerships to fuel growth and deliver
+                      tailored IT solutions for your unique needs.{" "}
+                      <span className="redirect-arrow text-white"><i className="fa fa-arrow-right"/></span>
+                    </p>
+                  </div>
+                  <div
+                    className="highlight-card p-4"
+                    onClick={() => (window.location.href = "/development")}
+                  >
+                    <h5 className="card-title mb-2">Innovative Development</h5>
+                    <p>
+                      Offering cutting-edge solutions designed to empower
+                      businesses with streamlined workflows.{" "}
+                      <span className="redirect-arrow text-white"><i className="fa fa-arrow-right"/></span>
+                    </p>
+                  </div>
+                  <div
+                    className="highlight-card p-4"
+                    onClick={() => (window.location.href = "/staffing")}
+                  >
+                    <h5 className="card-title mb-2">
+                      Comprehensive Staffing Solutions
+                    </h5>
+                    <p>
+                      Supplying skilled professionals to support your IT needs
+                      and foster company growth.{" "}
+                      <span className="redirect-arrow text-white"><i className="fa fa-arrow-right"/></span>
+                    </p>
+                  </div>
+                </Slider>
               </div>
+
+              <MDBBtn
+                href="https://agent511.com/contact-us/"
+                target="_blank"
+                color="danger"
+                className="px-4  py-2 mt-4"
+              >
+                Let's Talk
+              </MDBBtn>
             </div>
-          </SwiperSlide>
-        ))}
+          </div>
 
-        {/* Custom Navigation Buttons */}
-        <div className="swiper-button-prev d-xl-block d-none custom-prev">
-          <i className="bi bi-arrow-left-circle"></i>
+          {/* Right side: Main Swiper Carousel */}
+          <div
+            className="col-md-4 d-flex justify-content-center  align-items-center d-xl-block d-none"
+            style={{
+              background: "#1d1dd045",
+              // padding: "10px 23px",
+              borderRadius: "10%",
+              height: "30rem",
+
+              paddingTop: " 23px",
+            }}
+          >
+            <Swiper
+              effect={"cards"}
+              grabCursor={true}
+              modules={[EffectCards, Autoplay]}
+              autoplay={{
+                delay: 2000,
+                disableOnInteraction: false,
+              }}
+              on={{
+                mouseEnter: () => SwiperCore.autoplay.stop(), // Stops autoplay on hover
+                mouseLeave: () => SwiperCore.autoplay.start(), // Resumes autoplay when hover ends
+              }}
+              className="mySwiper"
+            >
+              {CaroData.map((item, index) => (
+                <SwiperSlide key={index}>
+                  <div
+                    className="card p-4 text-center text-light mt-3  mb-3"
+                    style={{
+                      maxWidth: "90%",
+                      margin: "0 auto",
+                      borderRadius: "10px",
+                      background: "rgb(49 91 196) !important",
+                    }}
+                  >
+                    {/* Logo Section */}
+                    <div
+                      className=" d-flex justify-content-center align-items-center"
+                      style={{
+                        width: "100%",
+                        height: "100%",
+                        background: "#2150c8 !important",
+                      }}
+                    >
+                      <div
+                        className="circle-icon-wrapper mb-3 d-flex justify-content-center align-items-center"
+                        style={{
+                          width: "80px", // Adjust size for the circle
+                          height: "80px",
+                          borderRadius: "50%",
+                          backgroundColor: "#e0f7ff",
+                        }}
+                      >
+                        <div
+                          className="logo fw-bold"
+                          style={{ fontSize: "48px", color: "#2150c8" }}
+                        >
+                          {item.Logo}
+                        </div>
+                      </div>
+                    </div>
+
+                    {/* Title Section */}
+                    <h5
+                      className="title mb-3 fw-normal text-primary"
+                      style={{
+                        fontSize: "1.25rem",
+                        fontWeight: "",
+                      }}
+                    >
+                      {item.Title}
+                    </h5>
+
+                    {/* Description Section */}
+                    <p
+                      className="description fw-light text-left text-primary"
+                      style={{
+                        fontSize: "1rem",
+                        lineHeight: "1.5",
+                        maxWidth: "80%",
+                        margin: "0 auto",
+                        textAlign: "justify",
+                      }}
+                    >
+                      {item.Desc}
+                    </p>
+                  </div>
+                </SwiperSlide>
+              ))}
+            </Swiper>
+          </div>
         </div>
-        <div className="swiper-button-next d-xl-block d-none custom-next">
-          <i className="bi bi-arrow-right-circle"></i>
-        </div>
-      </Swiper>
-    </div>
+      </MDBContainer>
+    </section>
   );
-};
-
-export default SwiperCarousel;
+}
