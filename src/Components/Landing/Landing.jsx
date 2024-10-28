@@ -12,39 +12,52 @@ import whycs from "../Images/why cs.jpg";
 import "../Landing/Landing.css";
 import FadeOnScroll from "../Animate/Motion";
 import { Container, Row, Col, Card } from "react-bootstrap";
-import { FaBullseye, FaLayerGroup, FaRobot, FaShieldAlt, FaChartLine, FaCogs } from "react-icons/fa";
+import {
+  FaBullseye,
+  FaLayerGroup,
+  FaRobot,
+  FaShieldAlt,
+  FaChartLine,
+  FaCogs,
+} from "react-icons/fa";
 
 function Landing() {
   const features = [
     {
       icon: <FaBullseye />,
       title: "Targeted Communication",
-      description: "Deliver precise, timely messages across multiple channels, ensuring customers stay informed and engaged.",
+      description:
+        "Deliver precise, timely messages across multiple channels, ensuring customers stay informed and engaged.",
     },
     {
       icon: <FaLayerGroup />,
       title: "Seamless Integration",
-      description: "Deliver precise, timely messages across multiple channels, ensuring customers stay informed and engaged.",
+      description:
+        "Deliver precise, timely messages across multiple channels, ensuring customers stay informed and engaged.",
     },
     {
       icon: <FaRobot />,
       title: "Advanced Automation",
-      description: "Deliver precise, timely messages across multiple channels, ensuring customers stay informed and engaged.",
+      description:
+        "Deliver precise, timely messages across multiple channels, ensuring customers stay informed and engaged.",
     },
     {
       icon: <FaShieldAlt />,
       title: "Robust Security",
-      description: "Deliver precise, timely messages across multiple channels, ensuring customers stay informed and engaged.",
+      description:
+        "Deliver precise, timely messages across multiple channels, ensuring customers stay informed and engaged.",
     },
     {
       icon: <FaChartLine />,
       title: "Scalable Solutions",
-      description: "Deliver precise, timely messages across multiple channels, ensuring customers stay informed and engaged.",
+      description:
+        "Deliver precise, timely messages across multiple channels, ensuring customers stay informed and engaged.",
     },
     {
       icon: <FaCogs />,
       title: "Flexible Customization",
-      description: "Deliver precise, timely messages across multiple channels, ensuring customers stay informed and engaged.",
+      description:
+        "Deliver precise, timely messages across multiple channels, ensuring customers stay informed and engaged.",
     },
   ];
   return (
@@ -77,26 +90,26 @@ function Landing() {
       </FadeOnScroll>
       <FadeOnScroll>
         <Container className="my-5">
-          <Row className="g-4">
+          <Row className="g-5">
             {features.map((feature, index) => (
               <Col md={4} key={index}>
-                <Card className="h-100 text-center shadow-sm">
-                  <Card.Body>
-                    <div
-                      className="mb-3"
-                      style={{ fontSize: "2rem", color: "#0056b3" }}
-                    >
+              <Card className="h-100 text-center shadow-sm">
+                <Card.Body>
+                  <div className="d-flex align-items-center justify-content-center mb-3">
+                    <div className="me-2" style={{ fontSize: "2rem", color: "#0056b3" }}>
                       {feature.icon}
                     </div>
-                    <Card.Title className="text-primary">
+                    <Card.Title className="text-primary m-0">
                       {feature.title}
                     </Card.Title>
-                    <Card.Text className="text-muted">
-                      {feature.description}
-                    </Card.Text>
-                  </Card.Body>
-                </Card>
-              </Col>
+                  </div>
+                  <Card.Text className="text-muted">
+                    {feature.description}
+                  </Card.Text>
+                </Card.Body>
+              </Card>
+            </Col>
+            
             ))}
           </Row>
         </Container>
