@@ -62,7 +62,7 @@ function Menubar() {
       <div className="fluid-container">
         <nav
           className="navbar navbar-expand-lg navbar-dark justify-content-between text-white"
-          style={{ background: "#1236d0", height: "4.7rem" ,   }}
+          style={{ background: "#1236d0", height: "4.7rem" }}
         >
           <Link className=" navbar-brand mx-3" to="/">
             <img src={pagelogo} className="img-fluid logoimg" alt="Logo" />
@@ -71,7 +71,7 @@ function Menubar() {
             className="mx-2 navbar-toggler"
             aria-expanded="false"
             onClick={handleOpen}
-          > 
+          >
             <i className="fa fa-bars" aria-hidden="true"></i>
           </button>
 
@@ -84,7 +84,14 @@ function Menubar() {
           >
             <ul className="navbar-nav">
               {/* Menu 1 */}
-              <li className="nav-item dropdown position-static   mx-3">
+              <li
+                className="nav-item dropdown position-static     mx-3"
+                style={{
+                  background: "rgb(165 157 157 / 25%)",
+                  borderRadius: "25px",
+                  padding: "0px 10px",
+                }}
+              >
                 <Link
                   className={`nav-link  ${
                     openDropdown === "dropdown1" ? "active" : ""
@@ -99,7 +106,14 @@ function Menubar() {
               </li>
 
               {/* Menu 2 */}
-              <li className="nav-item dropdown position-static mx-3">
+              <li
+                className="nav-item dropdown position-static mx-3"
+                style={{
+                  background: "#bab2b242",
+                  borderRadius: "25px",
+                  padding: "0px 10px",
+                }}
+              >
                 <a
                   className={`nav-link ${
                     openDropdown === "dropdown2" ? "active" : ""
@@ -120,7 +134,11 @@ function Menubar() {
                     openDropdown === "dropdown2" ? "show" : ""
                   }`}
                   aria-labelledby="navbarDropdown2"
-                  style={{ height: "300px", background: "#1236d0" ,border:'1px solid #1236d0' }}
+                  style={{
+                    height: "300px",
+                    background: "#1236d0",
+                    border: "1px solid #1236d0",
+                  }}
                 >
                   <div className="row mt-3">
                     <div className="col-lg-3" style={{ marginLeft: "5%" }}>
@@ -427,7 +445,14 @@ function Menubar() {
               </li>
 
               {/* Menu 3 */}
-              <li className="nav-item dropdown position-static  mx-3">
+              <li
+                className="nav-item dropdown position-static  mx-3"
+                style={{
+                  background: "rgb(165 157 157 / 25%)",
+                  borderRadius: "25px",
+                  padding: "0px 10px",
+                }}
+              >
                 <a
                   className={`nav-link ${
                     openDropdown === "dropdown3" ? "active" : ""
@@ -448,7 +473,11 @@ function Menubar() {
                     openDropdown === "dropdown3" ? "show" : ""
                   }`}
                   aria-labelledby="navbarDropdown3"
-                  style={{ height: "300px", background: "#1236d0" ,border:'1px solid #1236d0' }}
+                  style={{
+                    height: "300px",
+                    background: "#1236d0",
+                    border: "1px solid #1236d0",
+                  }}
                 >
                   <div className="row mt-3">
                     <div className="col-lg-3" style={{ marginLeft: "5%" }}>
@@ -654,7 +683,14 @@ function Menubar() {
               {/* Menu 4 */}
               {/* Similar structure to Menu 2 and Menu 3 */}
 
-              <li className="nav-item dropdown position-static   mx-3">
+              <li
+                className="nav-item dropdown position-static   mx-3"
+                style={{
+                  background: "rgb(165 157 157 / 25%)",
+                  borderRadius: "25px",
+                  padding: "0px 10px",
+                }}
+              >
                 <Link
                   className={`nav-link  ${
                     openDropdown === "dropdown4" ? "active" : ""
@@ -667,7 +703,14 @@ function Menubar() {
                   Meet Leadership
                 </Link>
               </li>
-              <li className="nav-item dropdown position-static   mx-3">
+              <li
+                className="nav-item dropdown position-static   mx-3"
+                style={{
+                  background: "rgb(165 157 157 / 25%)",
+                  borderRadius: "25px",
+                  padding: "0px 10px",
+                }}
+              >
                 <Link
                   className={`nav-link  ${
                     openDropdown === "dropdown5" ? "active" : ""
