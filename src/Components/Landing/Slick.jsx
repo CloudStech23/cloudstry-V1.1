@@ -88,14 +88,15 @@ export default function SwiperCarousel() {
                 <Type />
               </h1>
               <p className="text-white mb-4 col-9">
-                AGENT511 software platforms support your digital transformation
-                by expanding your reach and eliminating gaps in the customer
-                journey. Lorem ipsum dolor sit amet consectetur, adipisicing
-                elit. Reprehenderit mollitia nemo aut incidunt doloremque saepe.
+                Cloudstry Technologies powers your digital journey, bridging
+                critical gaps in industry operations. Our IT solutions, product
+                platforms, and staffing services ensure seamless operations,
+                keeping your business a step ahead in today’s fast-paced
+                environment.
               </p>
-              <p className="mb-4 col-9" style={{ color: "#e3e3e3e8" }}>
-                For over a decade, our technologies have been trusted to deliver
-                relevant, seamless experiences for public sector and enterprise
+              <p className="mb-4 col-9 text-white">
+                With trusted expertise, Cloudstry Technologies partners with
+                industry leaders to deliver robust, innovative solutions for
                 mission-critical services.
               </p>
 

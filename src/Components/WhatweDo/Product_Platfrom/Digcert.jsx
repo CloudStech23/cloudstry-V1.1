@@ -16,7 +16,7 @@ import FadeOnScroll from "../../Animate/Motion";
 function Digitalcertificate() {
   return (
     <div>
-      <FadeOnScroll>
+      <FadeOnScroll >
         <header
           className="text-white text-center py-5 position-relative"
           style={{
@@ -63,12 +63,11 @@ function Digitalcertificate() {
             style={{ position: "relative", zIndex: 1 }}
           >
             <h2 className="display-4 mb-3 fw-bold" style={{ color: "#1236d0" }}>
-              Insurance Industry Use Cases
+            Digital Certificate Solutions
             </h2>
 
             <div className="lead mb-4 text-center" style={{ color: "#1236d0" }}>
-              Fastest growing industry Lorem, ipsum dolor sit amet consectetur
-              adipisicing elit. Blanditiis.
+            Streamlined digital certification for secure, verified interactions, Empowering industries with enhanced compliance.
             </div>
           </div>
         </header>

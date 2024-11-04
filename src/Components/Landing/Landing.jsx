@@ -90,26 +90,33 @@ function Landing() {
       </FadeOnScroll>
       <FadeOnScroll>
         <Container className="my-5">
+          {/* <div className="half-underline-container mb-3">
+            <h3 className="text-primary fw-normal display-6 text-center   half-blue-underline">
+            Core Offering
+            </h3>
+          </div> */}
           <Row className="g-5">
             {features.map((feature, index) => (
               <Col md={4} key={index}>
-              <Card className="h-100 text-center shadow-sm">
-                <Card.Body>
-                  <div className="d-flex align-items-center justify-content-center mb-3">
-                    <div className="me-2" style={{ fontSize: "2rem", color: "#0056b3" }}>
-                      {feature.icon}
+                <Card className="h-100 text-center shadow-sm">
+                  <Card.Body>
+                    <div className="d-flex align-items-center justify-content-center mb-3">
+                      <div
+                        className="me-2"
+                        style={{ fontSize: "2rem", color: "#0056b3" }}
+                      >
+                        {feature.icon}
+                      </div>
+                      <Card.Title className="text-primary m-0">
+                        {feature.title}
+                      </Card.Title>
                     </div>
-                    <Card.Title className="text-primary m-0">
-                      {feature.title}
-                    </Card.Title>
-                  </div>
-                  <Card.Text className="text-muted">
-                    {feature.description}
-                  </Card.Text>
-                </Card.Body>
-              </Card>
-            </Col>
-            
+                    <Card.Text className="text-muted">
+                      {feature.description}
+                    </Card.Text>
+                  </Card.Body>
+                </Card>
+              </Col>
             ))}
           </Row>
         </Container>
