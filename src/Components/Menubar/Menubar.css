@@ -21,7 +21,7 @@
 
 /* Underline effect on hover */
 .navbar-nav .nav-link:hover {
-  color: #d1d5db; /* Slightly lighter color on hover for better visibility */
+  color: #d1d5db; 
 }
 
 /* Dropdown menu styling */
@@ -38,7 +38,7 @@
   z-index: 1000;
   opacity: 0;
   max-height: 0;
-  overflow: hidden;
+  overflow: hidden; 
   transition: opacity 0.3s ease-out, max-height 0.3s ease-out; /* Include max-height transition */
   animation: none; /* Ensure no animation by default */
 }
@@ -114,7 +114,7 @@
   height: 0;
   border-left: 0.3rem solid transparent;
   border-right: 0.3rem solid transparent;
-  border-top: 0.3rem solid #fff; /* Arrow color */
+  border-top: 0.3rem solid #fff;  
   transition: transform 0.3s ease;
 }
 
@@ -151,7 +151,7 @@
   bottom: 0;
   height: 2px; /* Adjust thickness of underline */
   width: 100%;
-  background-color: #fff; /* Adjust color as needed */
+  background-color: #fff;  
   transform: scaleX(0);
   transform-origin: bottom right;
   transition: transform 0.3s ease-out;

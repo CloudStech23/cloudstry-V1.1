@@ -8,3 +8,12 @@
 .img-hover:hover {
   transform: scale(1.1);
 }
+/* Remove box shadow from Swiper slides */
+.swiper-slide {
+  box-shadow: none !important;
+  background-color: white !important;
+  padding: auto !important;
+  padding-top: 0.2rem !important;
+  padding-left: 0.2rem;
+}
+

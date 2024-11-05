@@ -11,7 +11,14 @@ import education from "../Images/Education.jpg";
 import whycs from "../Images/why cs.jpg";
 import "../Landing/Landing.css";
 import FadeOnScroll from "../Animate/Motion";
+import ZoomOnScroll from "../Animate/Zoom";
 import { Container, Row, Col, Card } from "react-bootstrap";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
+
+import { Navigation, Pagination } from "swiper/modules";
 import {
   FaBullseye,
   FaLayerGroup,
@@ -60,6 +67,28 @@ function Landing() {
         "Deliver precise, timely messages across multiple channels, ensuring customers stay informed and engaged.",
     },
   ];
+  const ServicesData = [
+    {
+      id: 1,
+      title: "Comprehensive Staffing Solutions for Global Captive Centers",
+      image: staffingimage,
+      link: "/WhatweDo/Staffing-Solution",
+    },
+    {
+      id: 2,
+      title: "End-to-End Software Solutions and Support Services",
+      image: softwareimage,
+      link: "/WhatweDo/IT-Solutions/Software-Services",
+    },
+    {
+      id: 3,
+      title:
+        "Holistic IT Strategy Consulting for Seamless Digital Transformation",
+      image: strategyimage,
+      link: "/WhatweDo/IT-Solutions/IT-Strategy-Consultancy",
+    },
+  ];
+
   return (
     // <div className="container-fluid d-flex justify-content-center align-items-center min-vh-100">
     //   <div className="text-center py-5 px-5">
@@ -123,16 +152,17 @@ function Landing() {
       </FadeOnScroll>
 
       <FadeOnScroll animation="up">
-        <section className=" service-section" style={{ marginTop: "5rem" }}>
+        <section className="service-section" style={{ marginTop: "5rem" }}>
           <div className="container">
             <div className="row g-4">
               <div className="half-underline-container mb-3">
-                <h3 className="text-primary fw-normal display-6 text-center   half-blue-underline">
+                <h3 className="text-primary fw-normal display-6 text-center half-blue-underline">
                   Services We Offer
                 </h3>
               </div>
               <div className="col-12 col-md-4 service-card  ">
                 <div className="position-relative shadow">
+                  <FadeOnScroll animation="zoom-in-up">
                   <img
                     src={staffingimage}
                     alt="Native Plant Garden"
@@ -143,6 +173,7 @@ function Landing() {
                       width: "100%",
                     }}
                   />
+                  </FadeOnScroll>
 
                   <div className="card-body bg-light p-4">
                     <h4 className="card-title text-primary mb-3">
@@ -211,6 +242,50 @@ function Landing() {
                   </div>
                 </div>
               </div>
+
+              {/* <Swiper
+              modules={[Navigation, Pagination]}
+              spaceBetween={30}
+              slidesPerView={1}
+              loop={true}
+              navigation
+              pagination={{ clickable: true }}
+              speed={600}
+              // style={{ border: "1px solid red", width: "100%" }}
+              className="p-4 align-items-center"
+            >
+              {ServicesData.map((item) => (
+                <SwiperSlide key={item.id}>
+                  <div className="row">
+       
+                    <div className="col-12 col-md-6">
+                      <img
+                        src={item.image}
+                        alt={item.title}
+                        className="card-img-top rounded-3"
+                        style={{
+                
+                          objectFit: "cover",
+                          width: "100%",
+                        }}
+                      />
+                    </div>
+
+              
+                    <div className="col-12 col-md-6 d-flex mt-4  ">
+                      <div className="  p-3">
+                        <h4 className="card-title text-primary mb-3">
+                          {item.title}
+                        </h4>
+                        <Link to={item.link} className="btn btn-danger">
+                          Read More
+                        </Link>
+                      </div>
+                    </div>
+                  </div>
+                </SwiperSlide>
+              ))}
+            </Swiper> */}
             </div>
           </div>
         </section>
@@ -223,7 +298,7 @@ function Landing() {
         <div className="container px-3 px-md-5 mt-5">
           <div className="row align-items-center">
             <div className="col-md-6 mb-5 mb-md-0">
-              <FadeOnScroll animation="right">
+              <ZoomOnScroll animation="in-up">
                 <img
                   className="img-fluid rounded"
                   height={365}
@@ -231,7 +306,7 @@ function Landing() {
                   src={whycs}
                   alt="Cloudstry technologies"
                 />
-              </FadeOnScroll>
+              </ZoomOnScroll>
             </div>
             <div className="col-md-6">
               <FadeOnScroll animation="left">

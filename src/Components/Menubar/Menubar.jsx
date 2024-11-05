@@ -95,7 +95,7 @@ function Menubar() {
                 <Link
                   className={`nav-link  ${
                     openDropdown === "dropdown1" ? "active" : ""
-                  }`}
+                  }`} 
                   to="/"
                   id="navbarDropdown1"
                   role="button"
