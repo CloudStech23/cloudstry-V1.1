@@ -1,1 +1,8 @@
- 
+.text-justify{
+    text-align: justify;
+}
+.view90{
+    width: 90%;
+    margin: 0 auto;
+
+}

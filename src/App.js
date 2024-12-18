@@ -15,6 +15,7 @@ import Education from "./Components/Industries/Education";
 import Contact from "./Components/About/Contact";
 import Team from "./Components/About/Team";
 import ScrollToTop from "./Components/Menubar/ScrolltoTop";
+import '../src/App.css'
 
 function App() {
   return (

@@ -114,11 +114,11 @@ function Landing() {
     //   `}</style>
     // </div>
     <div>
-      <FadeOnScroll>
-        <Slick />
+      <FadeOnScroll >
+        <Slick  />
       </FadeOnScroll>
       <FadeOnScroll>
-        <Container className="my-5">
+        <Container className="my-5 px-5" >
           {/* <div className="half-underline-container mb-3">
             <h3 className="text-primary fw-normal display-6 text-center   half-blue-underline">
             Core Offering
@@ -151,9 +151,9 @@ function Landing() {
         </Container>
       </FadeOnScroll>
 
-      <FadeOnScroll animation="up">
-        <section className="service-section" style={{ marginTop: "5rem" }}>
-          <div className="container">
+      <FadeOnScroll animation="up" >
+        <section className="service-section" style={{ marginTop: "5rem" ,}}>
+          <div className="container px-5">
             <div className="row g-4">
               <div className="half-underline-container mb-3">
                 <h3 className="text-primary fw-normal display-6 text-center half-blue-underline">
@@ -176,7 +176,7 @@ function Landing() {
                   </FadeOnScroll>
 
                   <div className="card-body bg-light p-4">
-                    <h4 className="card-title text-primary mb-3">
+                    <h4 className="card-title text-primary mb-3" style={{fontSize:'1.35rem'}}>
                       Comprehensive Staffing Solutions for Global Captive
                       Centers
                     </h4>
@@ -203,7 +203,7 @@ function Landing() {
                   />
 
                   <div className="card-body bg-light p-4">
-                    <h4 className="card-title text-primary mb-3">
+                    <h4 className="card-title text-primary mb-3" style={{fontSize:'1.35rem'}}>
                       End-to-End Software Solutions and Support Services
                     </h4>
                     <Link
@@ -229,7 +229,7 @@ function Landing() {
                   />
 
                   <div className="card-body bg-light p-4">
-                    <h4 className="card-title text-primary mb-3">
+                    <h4 className="card-text text-primary mb-3" style={{fontSize:'1.35rem'}}>
                       Holistic IT Strategy Consulting for Seamless Digital
                       Transformation
                     </h4>
@@ -313,7 +313,7 @@ function Landing() {
                 <h3 className="fw-normal fs-3 text-primary mb-4">
                   Why Cloudstry Technologies ?
                 </h3>
-                <p className="mb-4" style={{ lineHeight: 1.375 }}>
+                <p className="mb-4" style={{ lineHeight: 1.375, textAlign:'justify' }}>
                   At Cloudstry Technologies, we recognize business’s unique
                   challenges and provide tailored solutions for sustainable
                   growth and operational excellence. Our advanced technologies
@@ -530,7 +530,7 @@ function Landing() {
         className="image-video-text-interactivity fadeInUp mb-5"
         style={{ marginTop: "5rem" }}
       >
-        <div className="container mt-5">
+        <div className="container mt-5 px-5">
           <div className="row align-items-center">
             {/* Text Section */}
             <div className="col-md-6 order-md-1 order-2">

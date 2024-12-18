@@ -23,6 +23,7 @@ function Digitalcertificate() {
             // backgroundColor: "rgb(233, 239, 241)",
             backgroundColor:"white",
             minHeight: "12rem",
+            // height:'100%',
             overflow: "hidden",
             boxShadow: "rgb(235 231 231) 1px -16px 20px 0px inset",
           }}
@@ -59,7 +60,7 @@ function Digitalcertificate() {
 
           {/* Header Content */}
           <div
-            className="text-center py-5 text-dark"
+            className="text-center py-5 text-dark "
             style={{ position: "relative", zIndex: 1 }}
           >
             <h2 className="display-4 mb-3 fw-bold" style={{ color: "#1236d0" }}>
@@ -74,7 +75,7 @@ function Digitalcertificate() {
       </FadeOnScroll>
 
       <FadeOnScroll animation="up">
-        <div className="container  py-5">
+        <div className="container mb-5  py-5 px-5">
           <div className="row align-items-center justify-content-between bg-light p-4 rounded-3 position-relative">
             {/* Text Content */}
             <div className="col-md-5 mt-4 mb-2 order-md-1 order-2">
@@ -82,8 +83,8 @@ function Digitalcertificate() {
                 Digital Certificates
               </span>
               <h2
-                className=" display-6 text-primary "
-                style={{ fontWeight: 300 }}
+                className=" display-7 text-primary "
+                style={{ fontWeight: 250 }}
               >
                 Recognize accomplishments with 100% verifiable digital badges
               </h2>
@@ -113,7 +114,7 @@ function Digitalcertificate() {
 
       <FadeOnScroll animation="up">
         <section className="image-video-text-interactivity fadeInUp mb-5">
-          <div className="container mb-5">
+          <div className="container mb-5 px-5">
             <div className="row align-items-center mb-5">
               {/* Image Section */}
               <div className="col-md-6 mb-5 mb-md-0 ">
@@ -128,7 +129,7 @@ function Digitalcertificate() {
 
               {/* Text Section */}
               <div className="col-md-6 mb-5">
-                <h3 className="text-primary fw-normal mb-3">
+                <h3 className="text-primary fw-light mb-3">
                   Why choose Digital Certificate ?
                 </h3>
                 <p className="">
@@ -204,7 +205,7 @@ function Digitalcertificate() {
           className="image-video-text-interactivity fadeInUp mb-5"
           style={{ marginTop: "5rem" }}
         >
-          <div className="container mt-5">
+          <div className="container mt-5 px-5">
             <div className="row align-items-center">
               <div className="col-md-6 text-md-end order-first order-md-last  mt-4 mt-md-0 mb-2">
                 <img
@@ -217,7 +218,7 @@ function Digitalcertificate() {
               </div>
               {/* Text Section */}
               <div className="col-md-6  order-last order-md-first">
-                <h3 className="text-primary fw-normal mb-3">
+                <h3 className="text-primary fw-light mb-3">
                   Credential Solutions Tailored for Every Sector
                 </h3>
                 <p className="">
@@ -274,9 +275,9 @@ function Digitalcertificate() {
 
       <FadeOnScroll animation="up">
         <div className="" style={{ marginTop: "7rem" }}>
-          <div className="container">
+          <div className="container px-5">
             <div className="text-center">
-              <h2 className="fw-light display-6 text-danger mb-3">
+              <h2 className="fw-light display-6 text-danger mb-5">
                 Join Digital Certifcate Community
               </h2>
             </div>
@@ -321,7 +322,7 @@ function Digitalcertificate() {
           </h3>
         </div>
         <FadeOnScroll animation="up">
-          <div className="row gx-4">
+          <div className="row gx-4 px-5">
             <div
               className="col-xl-6 col-lg-5 d-flex justify-content-left align-items-center"
               style={{ marginBottom: "5rem" }}
@@ -403,7 +404,7 @@ function Digitalcertificate() {
         </FadeOnScroll>
 
         <FadeOnScroll animation="up">
-          <div className="row gx-0 mt-5">
+          <div className="row gx-0 mt-5 px-5">
             <div
               className="col-xl-6 col-lg-5 d-flex justify-content-left align-items-center"
               style={{ marginBottom: "5rem" }}
@@ -490,7 +491,7 @@ function Digitalcertificate() {
       <hr />
 
       {/* Content Sections */}
-      <section className="mb-5 gx-0">
+      <section className="mb-5 gx-0 ">
         <section className="py-5 text-center">
           <div className="half-underline-container">
             <h3
@@ -501,7 +502,7 @@ function Digitalcertificate() {
             </h3>
           </div>
         </section>
-        <div className="container">
+        <div className="container px-5">
           {/* First Row */}
           <FadeOnScroll animation="up">
             <div className="row gx-5 mt-4">

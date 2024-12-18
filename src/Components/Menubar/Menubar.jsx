@@ -68,7 +68,7 @@ function Menubar() {
             <img src={pagelogo} className="img-fluid logoimg" alt="Logo" />
           </Link>
           <button
-            className="mx-2 navbar-toggler"
+            className="mx-2 navbar-toggler" 
             aria-expanded="false"
             onClick={handleOpen}
           >
@@ -86,11 +86,11 @@ function Menubar() {
               {/* Menu 1 */}
               <li
                 className="nav-item dropdown position-static     mx-3"
-                style={{
-                  background: "rgb(165 157 157 / 25%)",
-                  borderRadius: "25px",
-                  padding: "0px 10px",
-                }}
+                // style={{
+                //   background: "rgb(165 157 157 / 25%)",
+                //   borderRadius: "25px",
+                //   padding: "0px 10px",
+                // }}
               >
                 <Link
                   className={`nav-link  ${
@@ -103,16 +103,16 @@ function Menubar() {
                 >
                   Home
                 </Link>
-              </li>
+              </li> 
 
               {/* Menu 2 */}
               <li
                 className="nav-item dropdown position-static mx-3"
-                style={{
-                  background: "#bab2b242",
-                  borderRadius: "25px",
-                  padding: "0px 10px",
-                }}
+                // style={{
+                //   background: "#bab2b242",
+                //   borderRadius: "25px",
+                //   padding: "0px 10px",
+                // }}
               >
                 <a
                   className={`nav-link ${
@@ -447,11 +447,11 @@ function Menubar() {
               {/* Menu 3 */}
               <li
                 className="nav-item dropdown position-static  mx-3"
-                style={{
-                  background: "rgb(165 157 157 / 25%)",
-                  borderRadius: "25px",
-                  padding: "0px 10px",
-                }}
+                // style={{
+                //   background: "rgb(165 157 157 / 25%)",
+                //   borderRadius: "25px",
+                //   padding: "0px 10px",
+                // }}
               >
                 <a
                   className={`nav-link ${
@@ -685,11 +685,11 @@ function Menubar() {
 
               <li
                 className="nav-item dropdown position-static   mx-3"
-                style={{
-                  background: "rgb(165 157 157 / 25%)",
-                  borderRadius: "25px",
-                  padding: "0px 10px",
-                }}
+                // style={{
+                //   background: "rgb(165 157 157 / 25%)",
+                //   borderRadius: "25px",
+                //   padding: "0px 10px",
+                // }}
               >
                 <Link
                   className={`nav-link  ${
@@ -705,11 +705,11 @@ function Menubar() {
               </li>
               <li
                 className="nav-item dropdown position-static   mx-3"
-                style={{
-                  background: "rgb(165 157 157 / 25%)",
-                  borderRadius: "25px",
-                  padding: "0px 10px",
-                }}
+                // style={{
+                //   background: "rgb(165 157 157 / 25%)",
+                //   borderRadius: "25px",
+                //   padding: "0px 10px",
+                // }}
               >
                 <Link
                   className={`nav-link  ${

@@ -38,6 +38,10 @@ export default function SwiperCarousel() {
     arrows: false,
     fade: true,
     pauseOnHover: true,
+    autoplay: {
+      disableOnInteraction: false,
+      pauseOnMouseEnter: true,
+    },
   };
 
   const CaroData = [
@@ -179,8 +183,8 @@ export default function SwiperCarousel() {
                 disableOnInteraction: false,
               }}
               on={{
-                mouseEnter: () => SwiperCore.autoplay.stop(), // Stops autoplay on hover
-                mouseLeave: () => SwiperCore.autoplay.start(), // Resumes autoplay when hover ends
+                mouseEnter: () => SwiperCore.autoplay.stop(),
+                mouseLeave: () => SwiperCore.autoplay.start(),
               }}
               className="mySwiper"
             >
