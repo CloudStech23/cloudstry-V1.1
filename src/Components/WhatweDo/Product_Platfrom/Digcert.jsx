@@ -67,7 +67,7 @@ function Digitalcertificate() {
             Digital Certificate Solutions
             </h2>
 
-            <div className="lead mb-4 text-center" style={{ color: "#1236d0" }}>
+            <div className="lead mb-4 mx-auto text-center px-3 col-10" style={{ color: "#1236d0" }}>
             Streamlined digital certification for secure, verified interactions, Empowering industries with enhanced compliance.
             </div>
           </div>

@@ -109,7 +109,7 @@ export default function SwiperCarousel() {
                 <Slider {...settings}>
                   <div
                     className="highlight-card p-4"
-                    onClick={() => (window.location.href = "/partnerships")}
+                    // onClick={() => (window.location.href = "/partnerships")}
                   >
                     <h5 className="card-title mb-2">Strategic Partnerships</h5>
                     <p>
@@ -122,7 +122,7 @@ export default function SwiperCarousel() {
                   </div>
                   <div
                     className="highlight-card p-4"
-                    onClick={() => (window.location.href = "/development")}
+                    // onClick={() => (window.location.href = "/development")}
                   >
                     <h5 className="card-title mb-2">Innovative Development</h5>
                     <p>
@@ -135,7 +135,7 @@ export default function SwiperCarousel() {
                   </div>
                   <div
                     className="highlight-card p-4"
-                    onClick={() => (window.location.href = "/staffing")}
+                    // onClick={() => (window.location.href = "/staffing")}
                   >
                     <h5 className="card-title mb-2">
                       Comprehensive Staffing Solutions
@@ -173,19 +173,25 @@ export default function SwiperCarousel() {
 
               paddingTop: " 23px",
             }}
+            on={{
+              mouseEnter: () => SwiperCore.autoplay.stop(),
+              mouseLeave: () => SwiperCore.autoplay.start(),
+            }}
           >
             <Swiper
               effect={"cards"}
               grabCursor={true}
-              modules={[EffectCards, Autoplay]}
+              modules={[EffectCards]}
               autoplay={{
                 delay: 2000,
                 disableOnInteraction: false,
+                pauseOnMouseEnter: true,
               }}
               on={{
                 mouseEnter: () => SwiperCore.autoplay.stop(),
                 mouseLeave: () => SwiperCore.autoplay.start(),
               }}
+              // loop={true}
               className="mySwiper"
             >
               {CaroData.map((item, index) => (

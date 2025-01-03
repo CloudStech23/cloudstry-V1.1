@@ -3,58 +3,64 @@ import img1 from "./Images/st.first.jpg";
 import img2 from "./Images/st.second.jpg";
 import img3 from "./Images/st.third.jpg";
 import img4 from "./Images/st.fourth.jpg";
-import bg from "../Images/bg1.jpg";
+import bg from "../Images/header-bg.png";
 import FadeOnScroll from "../Animate/Motion";
 function Staffingsolution() {
   return (
     <div>
       <FadeOnScroll>
-        <header
+      <header
           className="text-white text-center py-5 position-relative"
-          style={{ maxHeight: "100%", overflow: "hidden" }}
+          style={{
+            // backgroundColor: "rgb(233, 239, 241)",
+            backgroundColor:"white",
+            minHeight: "12rem",
+            // height:'100%',
+            overflow: "hidden",
+            boxShadow: "rgb(235 231 231) 1px -16px 20px 0px inset",
+          }}
         >
-          {/* Background Image */}
+          {/* Left-Aligned Image */}
           <img
-            src={bg} // Replace 'bg' with the actual path to  background image
-            alt="Background"
-            className="position-absolute top-0 start-0 w-100 h-100 object-fit-cover"
-            style={{ zIndex: 1, objectFit: "cover" }}
+            src={bg} // Adjust the path to your image
+            alt="Decorative background"
+            className="position-absolute"
+            style={{
+              left: 940,  
+              top: 0, // Position at the top
+              height: "100%", // Fill the height of the header
+              width: "auto", // Maintain aspect ratio; set a specific width if needed
+              zIndex: 0, // Position it behind the header content
+            }}
           />
 
-          {/* Black Overlay */}
+          {/* Bottom Left Content */}
           <div
-            className="position-absolute top-0 start-0 w-100 h-100"
-            style={{ backgroundColor: "rgb(16 11 11 / 42%)", zIndex: 2 }}
-          ></div>
-
-          {/* Navigation Path */}
-          <div
-            className="position-absolute top-0 p-4 start-0 ms-0 mt-0 fs-5 fw-bold"
-            style={{ zIndex: 3 }}
+            className="position-absolute bottom-0 start-0 p-4 fs-5 fw-normal"
+            style={{ zIndex: 1 }} // Ensure this is on top of the image
           >
-            <span className="small text-white">
-              <a href="/" className="text-white">
-                What we Do ? /
+            <span className="small" style={{ color: "#1236d0" }}>
+              <a href="/" style={{ color: "#1236d0" }}>
+                What we Do ?
               </a>{" "}
-              Staffing Solution
+              <a href="#" style={{ color: "#1236d0" }}>
+               / Staffing Solutions
+              </a>
             </span>
           </div>
 
           {/* Header Content */}
           <div
-            className="container text-white mt-5"
-            style={{ zIndex: 3, position: "relative" }}
+            className="text-center py-5 text-dark "
+            style={{ position: "relative", zIndex: 1 }}
           >
-            <h1 className="display-6">
-              Comprehensive Staffing Solutions for Global Captive Centers
-            </h1>
-            <p className="lead">
-              Global Captive Centers (GCCs) are operational units established by
-              multinational corporations in offshore locations to perform
-              critical business functions. These centers often handle
-              back-office processes, IT services, customer support, and other
-              specialized functions.
-            </p>
+            <h2 className="display-4 mb-3 fw-bold" style={{ color: "#1236d0" }}>
+            Captive Workforce Solutions
+            </h2>
+
+            <div className="lead mb-4 mx-auto text-center px-3 col-10" style={{ color: "#1236d0" }}>
+            Global Captive Centers (GCCs) are operational units established by multinational corporations in offshore locations to perform critical business functions. These centers often handle back-office processes, IT services, customer support, and other specialized functions.
+            </div>
           </div>
         </header>
       </FadeOnScroll>
@@ -174,9 +180,9 @@ function Staffingsolution() {
       <div className="container " style={{ marginTop: "5rem" }}>
         {/* <div className="half-underline-container"></div> */}
         <FadeOnScroll animation="up">
-          <div className="row gx-4 mt-5">
+          <div className="row gx-5 mt-5 px-5">
             <div
-              className="col-xl-6 col-lg-5 d-flex justify-content-left align-items-center"
+              className="col-xl-6 col-lg-5 d-flex justify-content-center align-items-center"
               style={{ marginBottom: "2rem" }}
             >
               <img
@@ -258,9 +264,9 @@ function Staffingsolution() {
         </FadeOnScroll>
 
         <FadeOnScroll animation="up">
-          <div className="row gx-5 mt-5">
+          <div className="row gx-5 mt-5 px-5  ">
             <div
-              className="col-xl-6 col-lg-5 d-flex order-first order-md-last justify-content-right align-items-center"
+              className="col-xl-6 col-lg-5 d-flex order-first order-md-last justify-content-center align-items-center"
               style={{ marginBottom: "2rem" }}
             >
               <img className="img-fluid" src={img2} alt="GCC Staffing" />
@@ -326,9 +332,9 @@ function Staffingsolution() {
         </FadeOnScroll>
 
         <FadeOnScroll animation="up">
-          <div className="row gx-4">
+          <div className="row gx-5 px-5 mt-5">
             <div
-              className="col-xl-6 col-lg-5 d-flex  justify-content-left align-items-center"
+              className="col-xl-6 col-lg-5 d-flex  justify-content-center align-items-center"
               style={{ marginBottom: "2rem" }}
             >
               <img
@@ -396,11 +402,11 @@ function Staffingsolution() {
 
       <FadeOnScroll animation="up">
         <section className="mb-5  " style={{ marginTop: "6rem" }}>
-          <div className="container">
+          <div className="container px-5">
             <div className="row align-items-center">
               <div className="col-md-6 mb-4 order-first order-md-last">
                 <img
-                  className="img-fluid rounded"
+                  className="img-fluid "
                   src={img4}
                   alt="Cloudstry Technologies"
                 />

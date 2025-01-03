@@ -8,58 +8,66 @@ import img5 from "./Images/gov.five.jpeg";
 import img6 from "./Images/gov.six.jpg";
 import img7 from "./Images/gov.seven.jpg";
 import digital from "./Images/gov.digital.jpg";
-import bg3 from "../Images/bg3.jpg";
+import bg from "../Images/header-bg.png";
 import FadeOnScroll from "../Animate/Motion";
 
 function Government() {
   return (
     <div>
       <FadeOnScroll>
-        <header
+      <header
           className="text-white text-center py-5 position-relative"
-          style={{ maxHeight: "100%", overflow: "hidden" }}
+          style={{
+            // backgroundColor: "rgb(233, 239, 241)",
+            backgroundColor:"white",
+            minHeight: "12rem",
+            // height:'100%',
+            overflow: "hidden",
+            boxShadow: "rgb(235 231 231) 1px -16px 20px 0px inset",
+          }}
         >
-          {/* Background Image */}
+          {/* Left-Aligned Image */}
           <img
-            src={bg3} // Replace 'bg' with the actual path to your background image
-            alt="Background"
-            className="position-absolute top-0 start-0 w-100 h-100 object-fit-cover"
-            style={{ zIndex: 1, objectFit: "cover" }}
+            src={bg} // Adjust the path to your image
+            alt="Decorative background"
+            className="position-absolute"
+            style={{
+              left: 940,  
+              top: 0, // Position at the top
+              height: "100%", // Fill the height of the header
+              width: "auto", // Maintain aspect ratio; set a specific width if needed
+              zIndex: 0, // Position it behind the header content
+            }}
           />
 
-          {/* Black Overlay */}
+          {/* Bottom Left Content */}
           <div
-            className="position-absolute top-0 start-0 w-100 h-100"
-            style={{ backgroundColor: "rgb(16 11 11 / 42%)", zIndex: 2 }}
-          ></div>
-
-          {/* Navigation Path */}
-          <div
-            className="position-absolute top-0 p-4 start-0 ms-0 mt-0 fs-5 fw-bold"
-            style={{ zIndex: 3 }}
+            className="position-absolute bottom-0 start-0 p-4 fs-5 fw-normal"
+            style={{ zIndex: 1 }} // Ensure this is on top of the image
           >
-            <span className="small text-white">
-              <a href="/" className="text-white">
+            <span className="small" style={{ color: "#1236d0" }}>
+              <a href="/" style={{ color: "#1236d0" }}>
                 Industries We Serve /
               </a>{" "}
-              Government
+              <a href="#" style={{ color: "#1236d0" }}>
+                Government
+              </a>{" "}
+               
             </span>
           </div>
 
           {/* Header Content */}
           <div
-            className="container text-white mt-5"
-            style={{ zIndex: 3, position: "relative" }}
+            className="text-center py-5 text-dark "
+            style={{ position: "relative", zIndex: 1 }}
           >
-            <h1 className="display-6">
-              Transforming Governance: Innovation Meets Efficiency
-            </h1>
-            <p className="lead">
-              Empowering government agencies with cutting-edge technology to
-              overcome challenges, enhance transparency, and deliver exceptional
-              public services. Discover how our solutions drive progress and
-              efficiency in the public sector
-            </p>
+            <h2 className="display-4 mb-3 fw-bold" style={{ color: "#1236d0" }}>
+            Government
+            </h2>
+
+            <div className="lead mb-4 mx-auto text-center px-5 col-10" style={{ color: "#1236d0" }}>
+            Empowering government agencies with cutting-edge technology to overcome challenges, enhance transparency, and deliver exceptional public services. Discover how our solutions drive progress and efficiency in the public sector
+            </div>
           </div>
         </header>
       </FadeOnScroll>
@@ -219,7 +227,7 @@ function Government() {
           className="image-video-text-interactivity fadeInUp mb-5"
           style={{ marginTop: "10em" }}
         >
-          <div className="container mb-5">
+          <div className="container mb-5 px-5">
             <div className="row align-items-center mb-5">
               {/* Image Section */}
               <div className="col-md-6 mb-5 mb-md-0">
@@ -234,7 +242,7 @@ function Government() {
 
               {/* Text Section */}
               <div className="col-md-6 mb-5">
-                <h3 className="text-primary fw-normal mb-3">
+                <h3 className="text-primary fw-light mb-3">
                   Major Challenges in the Government Sector: Overcoming Complex
                   Barriers
                 </h3>
@@ -310,11 +318,11 @@ function Government() {
           className="image-video-text-interactivity fadeInUp mb-5"
           style={{ marginTop: "5rem" }}
         >
-          <div className="container mt-5">
+          <div className="container mt-5 px-5">
             <div className="row align-items-center">
               {/* Text Section */}
               <div className="col-md-6 order-md-1 order-2">
-                <h3 className="text-primary fw-normal mb-3">
+                <h3 className="text-primary fw-light mb-3">
                   Digitalization in Government: A Pathway to Efficient
                   Governance
                 </h3>
@@ -386,8 +394,8 @@ function Government() {
               <div className="col-md-6 text-md-end mt-4 mt-md-0 order-md-2 order-1 mb-5">
                 <img
                   className="img-fluid rounded"
-                  height={365}
-                  width={504}
+                  // height={365}
+                  width={520}
                   src={digital}
                   alt="Image"
                 />
@@ -403,7 +411,7 @@ function Government() {
           className="image-video-text-interactivity fadeInUp mb-5"
           style={{ marginTop: "5rem" }}
         >
-          <div className="container mt-5">
+          <div className="container mt-5 px-5">
             <div className="row align-items-center">
               {/* Image Section */}
               <div className="col-md-6 text-md-start mt-4 mt-md-0 mb-5">
@@ -418,7 +426,7 @@ function Government() {
 
               {/* Text Section */}
               <div className="col-md-6">
-                <h3 className="text-primary fw-normal mt-4 mb-3">
+                <h3 className="text-primary fw-light mt-4 mb-3">
                   How Cloudstry Tech Supports the Government Sector: Empowering
                   Public Services
                 </h3>

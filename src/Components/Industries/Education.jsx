@@ -3,57 +3,65 @@ import React from "react";
 import img2 from "./Images/ed.second.jpg";
 import img3 from "./Images/ed.third.jpg";
 import img4 from "./Images/ed.fourth.jpg";
-import bg3 from "../Images/bg3.jpg";
+import bg from "../Images/header-bg.png";
 import FadeOnScroll from "../Animate/Motion";
 function Education() {
   return (
     <div>
       <FadeOnScroll>
-        <header
+      <header
           className="text-white text-center py-5 position-relative"
-          style={{ maxHeight: "100%", overflow: "hidden" }}
+          style={{
+            // backgroundColor: "rgb(233, 239, 241)",
+            backgroundColor:"white",
+            minHeight: "12rem",
+            // height:'100%',
+            overflow: "hidden",
+            boxShadow: "rgb(235 231 231) 1px -16px 20px 0px inset",
+          }}
         >
-          {/* Background Image */}
+          {/* Left-Aligned Image */}
           <img
-            src={bg3} // Replace 'bg' with the actual path to  background image
-            alt="Background"
-            className="position-absolute top-0 start-0 w-100 h-100 object-fit-cover"
-            style={{ zIndex: 1, objectFit: "cover" }}
+            src={bg} // Adjust the path to your image
+            alt="Decorative background"
+            className="position-absolute"
+            style={{
+              left: 940,  
+              top: 0, // Position at the top
+              height: "100%", // Fill the height of the header
+              width: "auto", // Maintain aspect ratio; set a specific width if needed
+              zIndex: 0, // Position it behind the header content
+            }}
           />
 
-          {/* Black Overlay */}
+          {/* Bottom Left Content */}
           <div
-            className="position-absolute top-0 start-0 w-100 h-100"
-            style={{ backgroundColor: "rgb(16 11 11 / 42%)", zIndex: 2 }}
-          ></div>
-
-          {/* Navigation Path */}
-          <div
-            className="position-absolute top-0 p-4 start-0 ms-0 mt-0 fs-5 fw-bold"
-            style={{ zIndex: 3 }}
+            className="position-absolute bottom-0 start-0 p-4 fs-5 fw-normal"
+            style={{ zIndex: 1 }} // Ensure this is on top of the image
           >
-            <span className="small text-white">
-              <a href="/" className="text-white">
+            <span className="small" style={{ color: "#1236d0" }}>
+              <a href="/" style={{ color: "#1236d0" }}>
                 Industries We Serve /
               </a>{" "}
-              Education
+              <a href="#" style={{ color: "#1236d0" }}>
+                Educations
+              </a>{" "}
+               
             </span>
           </div>
 
           {/* Header Content */}
           <div
-            className="container text-white mt-5"
-            style={{ zIndex: 3, position: "relative" }}
+            className="text-center py-5 text-dark "
+            style={{ position: "relative", zIndex: 1 }}
           >
-            <h1 className="display-6">
-              Educational Excellence: Synergy of Innovation and Engagement
-            </h1>
-            <p className="lead">
-              Empowering educational institutions with state-of-the-art
-              solutions to tackle challenges, foster engagement, and achieve
-              excellence. Explore how our technology transforms the learning
-              experience and drives educational success
-            </p>
+            <h2 className="display-4 mb-3 fw-bold" style={{ color: "#1236d0" }}>
+            Innovative Education
+            </h2>
+
+            <div className="lead mb-4 mx-auto text-center px-5 col-10" style={{ color: "#1236d0" }}>
+            Empowering educational institutions with state-of-the-art solutions to tackle challenges, foster engagement, and achieve excellence. Explore how our technology transforms the learning experience and drives educational success
+            </div>
           </div>
         </header>
       </FadeOnScroll>
@@ -99,22 +107,22 @@ function Education() {
           className="image-video-text-interactivity fadeInUp  "
           style={{ marginTop: "10rem" }}
         >
-          <div className="container mt-5 mb-5">
+          <div className="container mt-5 mb-5 px-5">
             <div className="row align-items-center mb-5">
               {/* Image Section */}
-              <div className="col-md-6 mb-5 mb-md-0">
+              <div className="col-md-5 mb-5 mb-md-0 ">
                 <img
-                  className="img-fluid rounded"
-                  height={365}
-                  width={504}
+                  className="img-fluid"
+                  // height={365}
+                  // width={504}
                   src={img2}
                   alt="Image"
                 />
               </div>
 
               {/* Text Section */}
-              <div className="col-md-6 mb-5">
-                <h3 className="text-primary fw-normal mb-3">
+              <div className="col-md-7 px-5 mb-5">
+                <h3 className="text-primary fw-light mb-3">
                   Major Challenges in the Education Sector: Navigating the
                   Complex Landscape
                 </h3>
@@ -179,20 +187,7 @@ function Education() {
                       cyber threats.
                     </span>
                   </li>
-                  <li className="mb-2 d-flex align-items-start">
-                    <i
-                      className="fa fa-check-circle text-primary me-2"
-                      style={{ marginTop: "6px" }}
-                    ></i>
-                    <span className="d-inline">
-                      <span className="fw-bold">
-                        Adapting to Technological Change:
-                      </span>
-                      Rapid technological advancements require institutions to
-                      continually adapt, often with limited budgets and
-                      expertise.
-                    </span>
-                  </li>
+                   
                 </ul>
                 <p className="text-muted">
                   These challenges underscore the need for innovative solutions
@@ -275,11 +270,11 @@ function Education() {
           className="image-video-text-interactivity fadeInUp mb-5"
           style={{ marginTop: "5rem" }}
         >
-          <div className="container mt-5">
+          <div className="container mt-5 px-5">
             <div className="row align-items-center">
               {/* Text Section */}
               <div className="col-md-6 order-md-1 order-2">
-                <h3 className="text-primary fw-normal mb-3">
+                <h3 className="text-primary fw-light mb-3">
                   Digitalization in Education: A Catalyst for Positive Change
                 </h3>
                 <p className="text-muted">
@@ -340,19 +335,7 @@ function Education() {
                       breaches and ensures compliance with privacy regulations.
                     </span>
                   </li>
-                  <li className="mb-2 d-flex align-items-start">
-                    <i
-                      className="fa fa-check-circle text-primary me-2"
-                      style={{ marginTop: "6px" }}
-                    ></i>
-                    <span className="d-inline">
-                      <strong>Facilitating Technological Adaptation:</strong>{" "}
-                      Digitalization supports continuous learning and
-                      adaptation, enabling institutions to stay current with
-                      technological trends and integrate new tools seamlessly
-                      into their existing frameworks.
-                    </span>
-                  </li>
+                   
                 </ul>
                 <p className="text-muted">
                   Digitalization is not just solving problems; it is
@@ -379,7 +362,7 @@ function Education() {
 
       <FadeOnScroll animation="up">
         <section className="image-video-text-interactivity fadeInUp mb-5">
-          <div className="container mb-5">
+          <div className="container mb-5 px-5">
             <div className="row align-items-center mb-5">
               {/* Image Section */}
               <div className="col-md-6 mb-5 mb-md-0">
@@ -394,7 +377,7 @@ function Education() {
 
               {/* Text Section */}
               <div className="col-md-6 mt-5 mb-5">
-                <h3 className="text-primary fw-normal mb-3">
+                <h3 className="text-primary fw-light mb-3">
                   How Cloudstry Tech Supports the Education Industry: Partner in
                   Progress
                 </h3>
@@ -463,7 +446,7 @@ function Education() {
 
       <FadeOnScroll animation="up">
         <section className="pb-5 mt-5 mb-4">
-          <div className="container">
+          <div className="container px-5">
             <div className="half-underline-container">
               <h3
                 className="text-primary text-danger text-center display-6  mt-5  half-underline"
@@ -479,7 +462,7 @@ function Education() {
                   style={{ width: "100%", height: "auto" }}
                 >
                   <div className="media feature-card">
-                    <h3 className="text-primary fw-normal mb-3">
+                    <h3 className="text-primary fw-light mb-3">
                       Authentic Digital Certification
                       <p className="text-muted h6 mt-2">
                         We are proud to spearhead several innovative projects

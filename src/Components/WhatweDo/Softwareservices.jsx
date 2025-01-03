@@ -7,7 +7,7 @@ import soft1 from "./Images/ss.challange.png";
 import soft2 from "./Images/ss.solution.jpg";
 import soft3 from "./Images/ss.fourth.jpg";
 import soft4 from "./Images/ss.last.jpg";
-import bg2 from "../Images/bg2.jpg";
+import bg from "../Images/header-bg.png";
 import "./Software.css";
 // import '../WhatweDo/Product_Platfrom/Common.css'
 import { Link } from "react-router-dom";
@@ -32,34 +32,41 @@ function Softwareservices() {
   return (
     <div className="bg-light">
       <FadeOnScroll>
-        <header
+      <header
           className="text-white text-center py-5 position-relative"
-          style={{ maxHeight: "100%", overflow: "hidden" }}
+          style={{
+            // backgroundColor: "rgb(233, 239, 241)",
+            backgroundColor:"white",
+            minHeight: "12rem",
+            // height:'100%',
+            overflow: "hidden",
+            boxShadow: "rgb(235 231 231) 1px -16px 20px 0px inset",
+          }}
         >
-          {/* Background Image */}
+          {/* Left-Aligned Image */}
           <img
-            src={bg2}
-            alt="Background"
-            className="position-absolute top-0 start-0 w-100 h-100 object-fit-cover"
-            style={{ zIndex: 1, objectFit: "cover" }}
+            src={bg} // Adjust the path to your image
+            alt="Decorative background"
+            className="position-absolute"
+            style={{
+              left: 940,  
+              top: 0, // Position at the top
+              height: "100%", // Fill the height of the header
+              width: "auto", // Maintain aspect ratio; set a specific width if needed
+              zIndex: 0, // Position it behind the header content
+            }}
           />
 
-          {/* Black Overlay */}
+          {/* Bottom Left Content */}
           <div
-            className="position-absolute top-0 start-0 w-100 h-100"
-            style={{ backgroundColor: "rgb(16 11 11 / 42%)", zIndex: 2 }}
-          ></div>
-
-          {/* Navigation Path */}
-          <div
-            className="position-absolute top-0 p-4 start-0 ms-0 mt-0 fs-5 fw-bold"
-            style={{ zIndex: 3 }}
+            className="position-absolute bottom-0 start-0 p-4 fs-5 fw-normal"
+            style={{ zIndex: 1 }} // Ensure this is on top of the image
           >
-            <span className="small text-white">
-              <a href="/" className="text-white">
+            <span className="small" style={{ color: "#1236d0" }}>
+              <a href="/" style={{ color: "#1236d0" }}>
                 What we Do ? /
               </a>{" "}
-              <a href="#" className="text-white">
+              <a href="#" style={{ color: "#1236d0" }}>
                 IT Solutions
               </a>{" "}
               / Software Services
@@ -68,15 +75,16 @@ function Softwareservices() {
 
           {/* Header Content */}
           <div
-            className="container text-white mt-5"
-            style={{ zIndex: 3, position: "relative" }}
+            className="text-center py-5 text-dark "
+            style={{ position: "relative", zIndex: 1 }}
           >
-            <h1 className="display-6">Comprehensive Software Services</h1>
-            <p className="lead">
-              Customized software solutions are essential for businesses
-              navigating today's digital world. They can streamline operations,
-              spark innovation, and align technology with strategic objectives.
-            </p>
+            <h2 className="display-4 mb-3 fw-bold" style={{ color: "#1236d0" }}>
+            Innovative Software Solutions
+            </h2>
+
+            <div className="lead mb-4 mx-auto text-center px-3 col-10" style={{ color: "#1236d0" }}>
+            Customized software solutions are essential for businesses navigating today's digital world. They can streamline operations, spark innovation, and align technology with strategic objectives.
+            </div>
           </div>
         </header>
       </FadeOnScroll>
@@ -84,7 +92,7 @@ function Softwareservices() {
       {/* Hero Section */}
 
       <FadeOnScroll animation="up">
-        <div className="container py-5">
+        <div className="container px-5 py-5">
           <div className="row align-items-center justify-content-between bg-white mt-3 mb-3 shadow px-4 rounded-3 position-relative">
             {/* Text Content */}
             <div
@@ -100,7 +108,7 @@ function Softwareservices() {
             <div className="col-md-6 mb-2 order-last order-md-first">
               <h2
                 className="display-6 text-primary"
-                style={{ fontWeight: 300 }}
+                style={{ fontWeight: 300,fontSize:"32px" }}
               >
                 Customized Software Solutions for Industry Leadership
               </h2>
@@ -137,10 +145,10 @@ function Softwareservices() {
 
       {/* Card Section */}
       <FadeOnScroll animation="up">
-        <section class="py-5">
+        <section class="py-5 px-5">
           <div class="container px-4 my-3">
             {/* <h3 className="text-danger fw-light display-5 text-center .customheading">Transformative Solutions</h3> */}
-            <div class="row gx-5">
+            <div class="row gx-5 px-4">
               <div className="col-lg-4 mb-5">
                 <div className="card h-80 shadow border-0 service-card">
                   <div className="blackblur">
@@ -263,7 +271,7 @@ function Softwareservices() {
 
       {/* Issuer Section */}
       <FadeOnScroll animation="up">
-        <div className="container">
+        <div className="container px-5">
           <div className="row mb-5">
             <div className="col-md-6 d-xl-block d-none">
               <img
@@ -273,7 +281,7 @@ function Softwareservices() {
               />
             </div>
             <div className="col-md-6 order-last order-md-first ">
-              <h3 className="text-primary display-7 fw-normal mb-3">
+              <h3 className="text-primary display-7 fw-light mb-3">
                 What are the Essential Software Challenges ?
               </h3>
               <ul className="list-unstyled mt-4">
@@ -339,19 +347,18 @@ function Softwareservices() {
       </FadeOnScroll>
 
       <FadeOnScroll animation="up">
-        <div className="row gx-0 py-5 px-5">
+        <div className="row gx-0 px-5 py-5 " >
           <div
-            className="col-xl-6 col-lg-5 d-flex  justify-content-left align-items-center"
-            style={{ marginBottom: "5rem" }}
-          >
+            className="col-xl-6 col-lg-4 d-flex  justify-content-center align-items-center"
+           >
             <img
               className="img-fluid"
               src={soft2}
               alt="Cloudstry Technologies"
-              style={{ width: "39rem" }}
+              style={{ width: "36rem" }}
             />
           </div>
-          <div className="col-md-6 mb-5">
+          <div className="col-md-5 mb-5">
             <h3
               className="text-primary display-7 mb-3"
               style={{ fontWeight: 300 }}
@@ -419,13 +426,13 @@ function Softwareservices() {
       </FadeOnScroll>
 
       <FadeOnScroll animation="up">
-        <div className="container">
+        <div className="container px-5">
           <div className="row align-items-center">
             <div className="col-md-6 mb-5 order-first order-md-last">
               <img src={soft3} alt="Software Services" className="img-fluid" />
             </div>
             <div className="col-md-6 mb-5 order-last order-md-first">
-              <h3 className="text-primary fw-normal display-7 mb-3">
+              <h3 className="text-primary fw-light display-7 mb-3">
                 Why Choose Our Software Services?
               </h3>
               <p className="text-muted mb-2">
@@ -511,13 +518,13 @@ function Softwareservices() {
       <FadeOnScroll>
         <section
           style={{ position: "relative", marginTop: "1rem" }}
-          className="px-5 py-5 d-xl-block d-none"
+          className="px-5 py-5 d-xl-block d-none mb-4"
         >
           <div
             style={{
               position: "absolute",
               top: "19%",
-              right: "30%",
+              right: "33%",
               transform: "translateX(50%)",
               background: "#efefef",
               borderRadius: "8px",
@@ -544,7 +551,7 @@ function Softwareservices() {
             </Link>
           </div>
 
-          <div style={{ position: "relative", zIndex: 1, width: "100%" }}>
+          <div style={{ position: "relative", zIndex: 1, width: "100%" }} className="px-5">
             <img
               className="img-fluid rounded"
               src={soft4}

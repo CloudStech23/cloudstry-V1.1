@@ -5,7 +5,7 @@ import img2 from "./Images/isc.second.jpg";
 import img3 from "./Images/isc.third.jpg";
 import img4 from "./Images/isc.fourth.jpg";
 import img5 from "./Images/isc.fifth.jpg";
-import bg2 from "../Images/bg2.jpg";
+import bg from "../Images/header-bg.png";
 import FadeOnScroll from "../Animate/Motion";
 
 function Consultancy() {
@@ -30,32 +30,39 @@ function Consultancy() {
       <FadeOnScroll>
         <header
           className="text-white text-center py-5 position-relative"
-          style={{ maxHeight: "100%", overflow: "hidden" }}
+          style={{
+            // backgroundColor: "rgb(233, 239, 241)",
+            backgroundColor: "white",
+            minHeight: "12rem",
+            // height:'100%',
+            overflow: "hidden",
+            boxShadow: "rgb(235 231 231) 1px -16px 20px 0px inset",
+          }}
         >
-          {/* Background Image */}
+          {/* Left-Aligned Image */}
           <img
-            src={bg2}
-            alt="Background"
-            className="position-absolute top-0 start-0 w-100 h-100 object-fit-cover"
-            style={{ zIndex: 1, objectFit: "cover" }}
+            src={bg} // Adjust the path to your image
+            alt="Decorative background"
+            className="position-absolute"
+            style={{
+              left: 940,
+              top: 0, // Position at the top
+              height: "100%", // Fill the height of the header
+              width: "auto", // Maintain aspect ratio; set a specific width if needed
+              zIndex: 0, // Position it behind the header content
+            }}
           />
 
-          {/* Black Overlay */}
+          {/* Bottom Left Content */}
           <div
-            className="position-absolute top-0 start-0 w-100 h-100"
-            style={{ backgroundColor: "rgb(16 11 11 / 42%)", zIndex: 2 }}
-          ></div>
-
-          {/* Navigation Path */}
-          <div
-            className="position-absolute top-0 p-4 start-0 ms-0 mt-0 fs-5 fw-bold"
-            style={{ zIndex: 3 }}
+            className="position-absolute bottom-0 start-0 p-4 fs-5 fw-normal"
+            style={{ zIndex: 1 }} // Ensure this is on top of the image
           >
-            <span className="small text-white">
-              <a href="/" className="text-white">
+            <span className="small" style={{ color: "#1236d0" }}>
+              <a href="/" style={{ color: "#1236d0" }}>
                 What we Do ? /
               </a>{" "}
-              <a href="#" className="text-white">
+              <a href="#" style={{ color: "#1236d0" }}>
                 IT Solutions
               </a>{" "}
               / IT Strategy Consultancy
@@ -64,24 +71,25 @@ function Consultancy() {
 
           {/* Header Content */}
           <div
-            className="container text-white mt-5"
-            style={{ zIndex: 3, position: "relative" }}
+            className="text-center py-5 text-dark "
+            style={{ position: "relative", zIndex: 1 }}
           >
-            <h1 className="display-6">
-              Comprehensive IT Strategy Consultancy for Digital Transformation
-            </h1>
-            <p className="lead">
+            <h2 className="display-4 mb-3 fw-bold" style={{ color: "#1236d0" }}>
+              Modern IT Strategy
+            </h2>
+
+            <div className="lead mb-4 mx-auto text-center px-3 col-10" style={{ color: "#1236d0" }}>
               The digital transformation landscape is ever-evolving, and
               businesses need robust IT strategies to stay competitive. Our IT
               Strategy Consultancy focuses on aligning technology with business
               objectives to drive growth, efficiency, and innovation.
-            </p>
+            </div>
           </div>
         </header>
       </FadeOnScroll>
 
       <FadeOnScroll animation="up">
-        <div className="container my-5 py-5">
+        <div className="container my-5 py-5 px-5">
           <div className="row align-items-center justify-content-between bg-light p-4 rounded-3 position-relative">
             {/* Video Content (Image First on Mobile) */}
             <div className="col-md-5 order-first order-md-last text-md-end mt-4 mt-md-0 mb-2">
@@ -98,8 +106,8 @@ function Consultancy() {
                 IT Consultancy
               </span>
               <h2
-                className="display-5 text-primary"
-                style={{ fontWeight: 300 }}
+                className="display-6 text-primary"
+                style={{ fontWeight: 300, fontSize: "32px" }}
               >
                 Consultancy for Future Ready Businesses
               </h2>
@@ -127,7 +135,7 @@ function Consultancy() {
 
       <FadeOnScroll animation="up">
         <section className="image-video-text-interactivity fadeInUp mb-5">
-          <div className="container mb-5">
+          <div className="container mb-5 px-5">
             <div className="row align-items-center mb-5">
               {/* Image Section */}
               <div className="col-md-6 mb-5 mb-md-0">
@@ -142,7 +150,7 @@ function Consultancy() {
 
               {/* Text Section */}
               <div className="col-md-6 mb-5">
-                <h3 className="text-primary fw-normal mb-3">
+                <h3 className="text-primary fw-light mb-3">
                   Strategic Dominance of Cloudstry Tech's IT Consultancy
                 </h3>
                 <p className="">
@@ -223,7 +231,7 @@ function Consultancy() {
           className="image-video-text-interactivity fadeInUp mb-5"
           style={{ marginTop: "5rem" }}
         >
-          <div className="container mt-5">
+          <div className="container mt-5 px-5">
             <div className="row align-items-center">
               {/* Text Section */}
               <div className="col-md-6 order-first mb-3 order-md-last text-md-end mt-4 mt-md-0">
@@ -236,7 +244,7 @@ function Consultancy() {
                 />
               </div>
               <div className="col-md-6 order-last order-md-first">
-                <h3 className="text-primary fw-normal mb-3">
+                <h3 className="text-primary fw-light mb-3">
                   Addressing IT Challenges Across Industries
                 </h3>
                 <p>
@@ -327,7 +335,7 @@ function Consultancy() {
 
       <FadeOnScroll animation="up">
         <section className="image-video-text-interactivity fadeInUp mb-5">
-          <div className="container mb-5">
+          <div className="container mb-5 px-5">
             <div className="row align-items-center mb-5">
               {/* Image Section */}
               <div className="col-md-6 mb-5 mb-md-0">
@@ -342,7 +350,7 @@ function Consultancy() {
 
               {/* Text Section */}
               <div className="col-md-6 mb-5">
-                <h3 className="text-primary fw-normal mb-3">
+                <h3 className="text-primary fw-light mb-3">
                   Tailored Solutions for Industry-Specific IT Consultancy Needs
                 </h3>
                 <p className="">
@@ -470,7 +478,7 @@ function Consultancy() {
             style={{
               position: "absolute",
               top: "25%",
-              right: "30%",
+              right: "32%",
               transform: "translateX(50%)",
               background: "#efefef",
               borderRadius: "8px",
@@ -479,9 +487,9 @@ function Consultancy() {
 
               zIndex: 2,
             }}
-            className="col-lg-6 d-xl-block d-none"
+            className="col-lg-6 d-xl-block d-none px-5"
           >
-            <h3 className="text-primary font-weight-bold mb-4">
+            <h3 className="text-primary fw-normal mb-4">
               Why Cloudstry for IT Strategy Consultancy?
             </h3>
             <p>
@@ -497,7 +505,10 @@ function Consultancy() {
             </Link>
           </div>
 
-          <div style={{ position: "relative", zIndex: 1, width: "100%" }}>
+          <div
+            style={{ position: "relative", zIndex: 1, width: "100%" }}
+            className="px-5"
+          >
             <img
               className="img-fluid rounded"
               src={img5}

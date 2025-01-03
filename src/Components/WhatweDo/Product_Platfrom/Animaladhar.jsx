@@ -5,8 +5,8 @@ import { Link } from "react-router-dom";
 import img1 from "./Images/petadhar.main.jpg";
 import img2 from "./Images/petadhar.second.jpeg";
 import img3 from "./Images/petadhar.third.jpg";
-import bg from "./../../Images/bg1.jpg";
 import FadeOnScroll from "../../Animate/Motion";
+import bg from "./../../Images/header-bg.png";
 
 function Petadhar() {
   const [isSmallScreen, setIsSmallScreen] = useState(window.innerWidth < 768);
@@ -27,58 +27,65 @@ function Petadhar() {
     <div>
       {/* Navigation Path */}
       <FadeOnScroll>
-        <header
+      <header
           className="text-white text-center py-5 position-relative"
-          style={{ maxHeight: "100%", overflow: "hidden" }}
+          style={{
+            // backgroundColor: "rgb(233, 239, 241)",
+            backgroundColor:"white",
+            minHeight: "12rem",
+            // height:'100%',
+            overflow: "hidden",
+            boxShadow: "rgb(235 231 231) 1px -16px 20px 0px inset",
+          }}
         >
-          {/* Background Image */}
+          {/* Left-Aligned Image */}
           <img
-            src={bg}
-            alt="Background"
-            className="position-absolute top-0 start-0 w-100 h-100 object-fit-cover"
-            style={{ zIndex: 1, objectFit: "cover" }}
+            src={bg} // Adjust the path to your image
+            alt="Decorative background"
+            className="position-absolute"
+            style={{
+              left: 940,  
+              top: 0, // Position at the top
+              height: "100%", // Fill the height of the header
+              width: "auto", // Maintain aspect ratio; set a specific width if needed
+              zIndex: 0, // Position it behind the header content
+            }}
           />
 
-          {/* Black Overlay */}
+          {/* Bottom Left Content */}
           <div
-            className="position-absolute top-0 start-0 w-100 h-100"
-            style={{ backgroundColor: "rgb(16 11 11 / 42%)", zIndex: 2 }}
-          ></div>
-
-          {/* Navigation Path */}
-          <div
-            className="position-absolute top-0 p-4 start-0 ms-0 mt-0 fs-5 fw-bold"
-            style={{ zIndex: 3 }}
+            className="position-absolute bottom-0 start-0 p-4 fs-5 fw-normal"
+            style={{ zIndex: 1 }} // Ensure this is on top of the image
           >
-            <span className="small text-white">
-              <a href="/" className="text-white">
+            <span className="small" style={{ color: "#1236d0" }}>
+              <a href="/" style={{ color: "#1236d0" }}>
                 What we Do ? /
               </a>{" "}
-              <a href="#" className="text-white">
+              <a href="#" style={{ color: "#1236d0" }}>
                 Product Platform
               </a>{" "}
-              /Pet Aadhar
+              / Pet Aadhar
             </span>
           </div>
 
           {/* Header Content */}
           <div
-            className="container text-white mt-5"
-            style={{ zIndex: 3, position: "relative" }}
+            className="text-center py-5 text-dark "
+            style={{ position: "relative", zIndex: 1 }}
           >
-            <h1 className="display-6">
-              Pet Aadhar: Revolutionizing Pet Identification
-            </h1>
-            <p className="lead">
-              Secure, scalable, and future-ready identification for pets.
-              Simplifying pet management and tracking with advanced technology.
-            </p>
+            <h2 className="display-4 mb-3 fw-bold" style={{ color: "#1236d0" }}>
+            Livestock Digital Identification
+            </h2>
+
+            <div className="lead mb-4 mx-auto text-center px-3 col-10" style={{ color: "#1236d0" }}>
+            Secure, scalable, and future-ready identification for pets. Simplifying pet management and tracking with advanced technology..
+            </div>
           </div>
         </header>
       </FadeOnScroll>
 
       <FadeOnScroll animation="up">
-        <div className="container py-5">
+        <div className="container py-5 px-5">
           <div className="row align-items-center justify-content-between bg-light p-4 rounded-3 position-relative">
             {/* Text Content */}
             <div className="col-md-5 mt-4 mb-2  order-md-1 order-2">
@@ -86,8 +93,8 @@ function Petadhar() {
                 Pet Aadhar
               </span>
               <h2
-                className=" display-5 text-primary "
-                style={{ fontWeight: 300 }}
+                className=" display-6 text-primary "
+                style={{ fontWeight: 300,fontSize:'35px' }}
               >
                 Pet Aadhar: A New Era in Pet Management
               </h2>
@@ -119,7 +126,7 @@ function Petadhar() {
 
       <FadeOnScroll animation="up">
         <section className="image-video-text-interactivity fadeInUp mb-5">
-          <div className="container">
+          <div className="container px-5">
             {/* <h3 className="text-primary fw-bold text-center mb-4">Why pet adhar</h3> */}
             <div className="row align-items-center">
               {/* Image Section */}
@@ -135,7 +142,7 @@ function Petadhar() {
 
               {/* Text Section */}
               <div className="col-md-6 mb-5">
-                <h3 className="text-primary fw-normal mb-3">
+                <h3 className="text-primary fw-light mb-3">
                   Rationale Behind Pashu Aadhaar
                 </h3>
                 <p className="">
@@ -208,7 +215,7 @@ function Petadhar() {
       <FadeOnScroll animation="up">
         <section class="py-5 bg-whitet text-center">
           <section className="pb-5">
-            <div className="container">
+            <div className="container px-5">
               <div className="half-underline-container">
                 <h3
                   className="text-primary text-danger text-center display-5   half-underline"
@@ -462,7 +469,7 @@ function Petadhar() {
 
       {/* Content Sections */}
       <section className="mb-5" style={{ marginTop: "5rem" }}>
-        <div className="container">
+        <div className="container px-5">
           {/* First Row */}
           <div className="container mb-5">
             <FadeOnScroll animation="up">
@@ -475,12 +482,12 @@ function Petadhar() {
                     width={504}
                     src={img3}
                     alt="Cloudstry Technologies"
-                  />
+                   />
                 </div>
 
                 {/* Text Section */}
                 <div className="col-md-6 mb-5">
-                  <h3 className="text-primary fw-normal mb-3">
+                  <h3 className="text-primary fw-light mb-3">
                     Cloudstry: Leading the Way in Pet Aadhaar Technology
                   </h3>
                   <p className="">
@@ -543,7 +550,7 @@ function Petadhar() {
             {isSmallScreen && (
               <section>
                 <div className="col-lg-6 mx-2 shadow p-4">
-                  <h3 className="text-primary  font-weight-bold mb-4 ">
+                  <h3 className="text-primary  mb-4 ">
                     At the Forefront of Pet Management: Cloudstry Technologies
                   </h3>
                   <p className="">

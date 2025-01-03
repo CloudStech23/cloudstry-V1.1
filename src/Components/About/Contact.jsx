@@ -13,7 +13,7 @@ import {
 import { Link } from "react-router-dom";
 import "../Support/common.css";
 import "./contact.css";
-import bg4 from "../Images/bg5.jpg";
+import bg from "../Images/header-bg.png";
 import img1 from "../Images/contact-img.jpg";
 import FadeOnScroll from "../Animate/Motion";
 import axios from "axios";
@@ -79,49 +79,59 @@ function Contact() {
   return (
     <div className="bg-light ">
       <FadeOnScroll>
-        <header
+      <header
           className="text-white text-center py-5 position-relative"
-          style={{ maxHeight: "100%", overflow: "hidden" }}
+          style={{
+            // backgroundColor: "rgb(233, 239, 241)",
+            backgroundColor:"white",
+            minHeight: "12rem",
+            // height:'100%',
+            overflow: "hidden",
+            boxShadow: "rgb(235 231 231) 1px -16px 20px 0px inset",
+          }}
         >
-          {/* Background Image */}
+          {/* Left-Aligned Image */}
           <img
-            src={bg4} // Replace 'bg' with the actual path to your background image
-            alt="Background"
-            className="position-absolute top-0 start-0 w-100 h-100 object-fit-cover"
-            style={{ zIndex: 1, objectFit: "cover" }}
+            src={bg} // Adjust the path to your image
+            alt="Decorative background"
+            className="position-absolute"
+            style={{
+              left: 940,  
+              top: 0, // Position at the top
+              height: "100%", // Fill the height of the header
+              width: "auto", // Maintain aspect ratio; set a specific width if needed
+              zIndex: 0, // Position it behind the header content
+            }}
           />
 
-          {/* Black Overlay */}
+          {/* Bottom Left Content */}
           <div
-            className="position-absolute top-0 start-0 w-100 h-100"
-            style={{ backgroundColor: "rgba(16, 11, 11, 0.42)", zIndex: 2 }}
-          ></div>
-
-          {/* Navigation Path */}
-          <div
-            className="position-absolute top-0 p-4 start-0 ms-0 mt-0 fs-5 fw-bold"
-            style={{ zIndex: 3 }}
+            className="position-absolute bottom-0 start-0 p-4 fs-5 fw-normal"
+            style={{ zIndex: 1 }} // Ensure this is on top of the image
           >
-            <span className="small text-white">
-              <a href="/" className="text-white">
-                /
+            <span className="small" style={{ color: "#1236d0" }}>
+              <a href="/" style={{ color: "#1236d0" }}>
+              /Contact Us
               </a>{" "}
-              Contact Us
+              <a href="#" style={{ color: "#1236d0" }}>
+                
+              </a>{" "}
+               
             </span>
           </div>
 
           {/* Header Content */}
           <div
-            className="container mt-3 text-white"
-            style={{ zIndex: 3, position: "relative" }}
+            className="text-center py-5 text-dark "
+            style={{ position: "relative", zIndex: 1 }}
           >
-            <h1 className="display-6">Get in Touch with Us</h1>
-            <p className="lead">
-              Our dedicated team is here to provide the support you need.
-              Whether you have questions, require assistance, or want to discuss
-              next project, we're just a message away. Reach out to us today and
-              experience our commitment to excellence.
-            </p>
+            <h2 className="display-4 mb-3 fw-bold" style={{ color: "#1236d0" }}>
+            Get in Touch With Us
+            </h2>
+
+            <div className="lead mb-4 mx-auto text-center px-5 col-10" style={{ color: "#1236d0" }}>
+            Our dedicated team is here to provide the support you need. Whether you have questions, require assistance, or want to discuss next project, we're just a message away. Reach out to us today and experience our commitment to excellence
+            </div>
           </div>
         </header>
       </FadeOnScroll>

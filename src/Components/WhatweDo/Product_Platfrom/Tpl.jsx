@@ -5,65 +5,72 @@ import img1 from "./Images/tpl.First.jpg";
 import img2 from "./Images/tpl.challages.jpg";
 import img3 from "./Images/tpl.innovative.jpg";
 import img4 from "./Images/tpl.government.jpg";
-import bg from "./../../Images/bg1.jpg";
+import bg from "./../../Images/header-bg.png";
 import FadeOnScroll from "../../Animate/Motion";
 
 function Thirdpartylogistic() {
   return (
     <div>
-      <FadeOnScroll>
+       <FadeOnScroll >
         <header
           className="text-white text-center py-5 position-relative"
-          style={{ maxHeight: "100%", overflow: "hidden" }}
+          style={{
+            // backgroundColor: "rgb(233, 239, 241)",
+            backgroundColor:"white",
+            minHeight: "12rem",
+            // height:'100%',
+            overflow: "hidden",
+            boxShadow: "rgb(235 231 231) 1px -16px 20px 0px inset",
+          }}
         >
-          {/* Background Image */}
+          {/* Left-Aligned Image */}
           <img
-            src={bg}
-            alt="Background"
-            className="position-absolute top-0 start-0 w-100 h-100 object-fit-cover"
-            style={{ zIndex: 1, objectFit: "cover" }}
+            src={bg} // Adjust the path to your image
+            alt="Decorative background"
+            className="position-absolute"
+            style={{
+              left: 940,  
+              top: 0, // Position at the top
+              height: "100%", // Fill the height of the header
+              width: "auto", // Maintain aspect ratio; set a specific width if needed
+              zIndex: 0, // Position it behind the header content
+            }}
           />
 
-          {/* Black Overlay */}
+          {/* Bottom Left Content */}
           <div
-            className="position-absolute top-0 start-0 w-100 h-100"
-            style={{ backgroundColor: "rgb(16 11 11 / 42%)", zIndex: 2 }}
-          ></div>
-
-          {/* Navigation Path */}
-          <div
-            className="position-absolute top-0 p-4 start-0 ms-0 mt-0 fs-5 fw-bold"
-            style={{ zIndex: 3 }}
+            className="position-absolute bottom-0 start-0 p-4 fs-5 fw-normal"
+            style={{ zIndex: 1 }} // Ensure this is on top of the image
           >
-            <span className="small text-white">
-              <a href="/" className="text-white">
+            <span className="small" style={{ color: "#1236d0" }}>
+              <a href="/" style={{ color: "#1236d0" }}>
                 What we Do ? /
               </a>{" "}
-              <a href="#" className="text-white">
+              <a href="#" style={{ color: "#1236d0" }}>
                 Product Platform
               </a>{" "}
-              / 3PL Solutions
+              / 3PL Solution
             </span>
           </div>
 
           {/* Header Content */}
           <div
-            className="container text-white mt-5"
-            style={{ zIndex: 3, position: "relative" }}
+            className="text-center py-5 text-dark "
+            style={{ position: "relative", zIndex: 1 }}
           >
-            <h1 className="display-6">
-              3PL Solutions for Modern Supply Chains
-            </h1>
-            <p className="lead">
-              Transforming supply chain management by outsourcing logistics to
-              third-party providers for streamlined operations and cost savings.
-            </p>
+            <h2 className="display-4 mb-3 fw-bold" style={{ color: "#1236d0" }}>
+            Logistics Solutions
+            </h2>
+
+            <div className="lead mb-4 mx-auto text-center px-3 col-10" style={{ color: "#1236d0" }}>
+            Transforming supply chain management by outsourcing logistics to third-party providers for streamlined operations and cost savings.
+            </div>
           </div>
         </header>
       </FadeOnScroll>
 
       <FadeOnScroll animation="up">
-        <div className="container py-5">
+        <div className="container py-5 px-5">
           <div className="row align-items-center justify-content-between bg-light p-4 rounded-3 position-relative">
             {/* Text Content */}
             <div className="col-md-5 mt-4 mb-2 order-md-1 order-2">
@@ -71,8 +78,8 @@ function Thirdpartylogistic() {
                 3PL Solution
               </span>
               <h2
-                className=" display-5 text-primary "
-                style={{ fontWeight: 300 }}
+                className=" display-6 text-primary "
+                style={{ fontWeight: 300,fontSize:'32px' }}
               >
                 3PL: Foundation of Contemporary Supply Chains
               </h2>
@@ -105,7 +112,7 @@ function Thirdpartylogistic() {
 
       <FadeOnScroll animation="up">
         <section className="image-video-text-interactivity fadeInUp mb-5">
-          <div className="container mb-5">
+          <div className="container mt-5 mb-5 px-5">
             <div className="row align-items-center mb-5">
               {/* Image Section */}
               <div className="col-md-6 mb-5 mb-md-0">
@@ -120,7 +127,7 @@ function Thirdpartylogistic() {
 
               {/* Text Section */}
               <div className="col-md-6 mb-5">
-                <h3 className="text-primary fw-normal mb-3">
+                <h3 className="text-primary fw-light mb-3">
                   Navigating Core 3PL Challenges
                 </h3>
                 <p className="">
@@ -206,11 +213,11 @@ function Thirdpartylogistic() {
           className="image-video-text-interactivity fadeInUp mb-5"
           style={{ marginTop: "5rem" }}
         >
-          <div className="container mt-5">
+          <div className="container mt-5 px-5">
             <div className="row align-items-center">
               {/* Text Section */}
               <div className="col-md-6 order-md-1 order-2">
-                <h3 className="text-primary fw-normal mb-3">
+                <h3 className="text-primary fw-light mb-3">
                   Innovative 3PL Strategies: Cloudstry Expertise
                 </h3>
                 <p>
@@ -295,7 +302,7 @@ function Thirdpartylogistic() {
       <hr />
 
       <FadeOnScroll animation="up">
-        <div className="container my-5 py-5">
+        <div className="container my-5 py-5 px-5">
           <div className="half-underline-container">
             <h3
               className="text-primary text-danger text-center display-5   half-underline"
@@ -308,12 +315,12 @@ function Thirdpartylogistic() {
             {/* Text Content */}
             <div className="col-md-6 mt-4 mb-2 order-md-1 order-2">
               <h2
-                className=" display-7 text-primary "
-                style={{ fontWeight: "normal" }}
+                className=" display-6 text-primary "
+                style={{fontSize:'32px'}}
               >
                 Economic Growth Through Advanced 3PL Strategies
               </h2>
-              <p className="text-muted mb-4">
+              <p className="text-muted mb-4" style={{fontSize:'15.7px'}}>
                 The pivotal influence of Third-Party Logistics (3PL) on
                 stimulating economic growth and elevating global competitiveness
                 is increasingly acknowledged, especially within the{" "}

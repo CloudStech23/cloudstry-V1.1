@@ -1,7 +1,7 @@
 import React from "react";
 import "./Common.css";
 import { Link } from "react-router-dom";
-import bg3 from "../Images/bg3.jpg";
+import bg from "../Images/header-bg.png";
 import img1 from "./Images/gov.first.jpg";
 import img2 from "./Images/lg.second.jpg";
 import img3 from "./Images/gov.seven.jpg";
@@ -13,50 +13,62 @@ function Logistic() {
       <FadeOnScroll>
         <header
           className="text-white text-center py-5 position-relative"
-          style={{ maxHeight: "100%", overflow: "hidden" }}
+          style={{
+            // backgroundColor: "rgb(233, 239, 241)",
+            backgroundColor: "white",
+            minHeight: "12rem",
+            // height:'100%',
+            overflow: "hidden",
+            boxShadow: "rgb(235 231 231) 1px -16px 20px 0px inset",
+          }}
         >
-          {/* Background Image */}
+          {/* Left-Aligned Image */}
           <img
-            src={bg3} // Replace 'bg' with the actual path to  background image
-            alt="Background"
-            className="position-absolute top-0 start-0 w-100 h-100 object-fit-cover"
-            style={{ zIndex: 1, objectFit: "cover" }}
+            src={bg} // Adjust the path to your image
+            alt="Decorative background"
+            className="position-absolute"
+            style={{
+              left: 940,
+              top: 0, // Position at the top
+              height: "100%", // Fill the height of the header
+              width: "auto", // Maintain aspect ratio; set a specific width if needed
+              zIndex: 0, // Position it behind the header content
+            }}
           />
 
-          {/* Black Overlay */}
+          {/* Bottom Left Content */}
           <div
-            className="position-absolute top-0 start-0 w-100 h-100"
-            style={{ backgroundColor: "rgb(16 11 11 / 42%)", zIndex: 2 }}
-          ></div>
-
-          {/* Navigation Path */}
-          <div
-            className="position-absolute top-0 p-4 start-0 ms-0 mt-0 fs-5 fw-bold"
-            style={{ zIndex: 3 }}
+            className="position-absolute bottom-0 start-0 p-4 fs-5 fw-normal"
+            style={{ zIndex: 1 }} // Ensure this is on top of the image
           >
-            <span className="small text-white">
-              <a href="/" className="text-white">
+            <span className="small" style={{ color: "#1236d0" }}>
+              <a href="/" style={{ color: "#1236d0" }}>
                 Industries We Serve /
               </a>{" "}
-              Logistic
+              <a href="#" style={{ color: "#1236d0" }}>
+                Logistic
+              </a>{" "}
             </span>
           </div>
 
           {/* Header Content */}
           <div
-            className="container text-white mt-5"
-            style={{ zIndex: 3, position: "relative" }}
+            className="text-center py-5 text-dark "
+            style={{ position: "relative", zIndex: 1 }}
           >
-            <h1 className="display-6">
-              Revolutionizing Logistics: Smart Solutions for a Complex Supply
-              Chain
-            </h1>
-            <p className="lead">
+            <h2 className="display-4 mb-3 fw-bold" style={{ color: "#1236d0" }}>
+              Revolutionizing Logistics
+            </h2>
+
+            <div
+              className="lead mb-4 mx-auto text-center px-5 col-10"
+              style={{ color: "#1236d0" }}
+            >
               Streamline supply chain with our innovative technology solutions.
               From real-time tracking to AI-driven optimization, discover how we
               enhance efficiency, reduce costs, and drive success in the
               logistics sector
-            </p>
+            </div>
           </div>
         </header>
 
@@ -64,12 +76,12 @@ function Logistic() {
           className="image-video-text-interactivity fadeInUp mb-5"
           style={{ marginTop: "10rem" }}
         >
-          <div className="container mb-5">
+          <div className="container mb-5 px-5">
             <div className="row align-items-center mb-5">
               {/* Image Section */}
               <div className="col-md-6 mb-5 mb-md-0">
                 <img
-                  className="img-fluid rounded"
+                  className="img-fluid  "
                   height={365}
                   width={504}
                   src={img1}
@@ -79,7 +91,7 @@ function Logistic() {
 
               {/* Text Section */}
               <div className="col-md-6 ">
-                <h3 className="text-primary fw-normal mb-3">
+                <h3 className="text-primary fw-light mb-3">
                   Major Challenges in the Logistics Sector !
                 </h3>
                 <p className="text-muted">
@@ -157,11 +169,11 @@ function Logistic() {
           className="image-video-text-interactivity fadeInUp mb-5"
           style={{ marginTop: "5rem" }}
         >
-          <div className="container mt-5">
+          <div className="container mt-5 px-5">
             <div className="row align-items-center">
               {/* Text Section */}
               <div className="col-md-6 order-md-1 order-2">
-                <h3 className="text-primary fw-normal mb-3">
+                <h3 className="text-primary fw-light mb-3">
                   How Digitalization Solving Logistics Challenges ?
                 </h3>
                 <p>
@@ -241,7 +253,7 @@ function Logistic() {
               {/* Image Section */}
               <div className="col-md-6 text-md-end mt-4 mt-md-0 order-md-2 order-1 mb-5">
                 <img
-                  className="img-fluid rounded"
+                  className="img-fluid  "
                   height={365}
                   width={504}
                   src={img2}
@@ -259,12 +271,12 @@ function Logistic() {
           className="image-video-text-interactivity fadeInUp mb-5"
           style={{ marginTop: "6rem" }}
         >
-          <div className="container mb-5">
+          <div className="container mb-5 px-5">
             <div className="row align-items-center mb-5">
               {/* Image Section */}
               <div className="col-md-6 mb-5 mb-md-0">
                 <img
-                  className="img-fluid rounded"
+                  className="img-fluid"
                   height={365}
                   width={504}
                   src={img3}
@@ -274,7 +286,7 @@ function Logistic() {
 
               {/* Text Section */}
               <div className="col-md-6 ">
-                <h3 className="text-primary fw-normal mb-3">
+                <h3 className="text-primary fw-light mb-3">
                   How We Can Support the Logistics Industry ?
                 </h3>
                 <p className="text-muted">
@@ -358,7 +370,7 @@ function Logistic() {
 
       <FadeOnScroll animation="up">
         <section className="pb-5 mt-5 mb-4">
-          <div className="container">
+          <div className="container px-5">
             <div className="half-underline-container">
               <h3
                 className="text-primary text-danger text-center display-6  mt-5  half-underline"

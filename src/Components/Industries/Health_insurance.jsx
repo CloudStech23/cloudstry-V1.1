@@ -3,58 +3,67 @@ import img1 from "./Images/hi.first.jpg";
 import img2 from "./Images/hi.second.jpg";
 // import img3 from "./Images/hi.third.jpg";
 import img3 from "./Images/hi.fourth.jpg";
-import bg3 from "../Images/bg3.jpg";
+import bg from "../Images/header-bg.png";
+
 import FadeOnScroll from "../Animate/Motion";
 
 function Healthinsurance() {
   return (
     <div>
       <FadeOnScroll>
-        <header
+      <header
           className="text-white text-center py-5 position-relative"
-          style={{ maxHeight: "100%", overflow: "hidden" }}
+          style={{
+            // backgroundColor: "rgb(233, 239, 241)",
+            backgroundColor:"white",
+            minHeight: "12rem",
+            // height:'100%',
+            overflow: "hidden",
+            boxShadow: "rgb(235 231 231) 1px -16px 20px 0px inset",
+          }}
         >
-          {/* Background Image */}
+          {/* Left-Aligned Image */}
           <img
-            src={bg3} // Replace 'bg' with the actual path to  background image
-            alt="Background"
-            className="position-absolute top-0 start-0 w-100 h-100 object-fit-cover"
-            style={{ zIndex: 1, objectFit: "cover" }}
+            src={bg} // Adjust the path to your image
+            alt="Decorative background"
+            className="position-absolute"
+            style={{
+              left: 940,  
+              top: 0, // Position at the top
+              height: "100%", // Fill the height of the header
+              width: "auto", // Maintain aspect ratio; set a specific width if needed
+              zIndex: 0, // Position it behind the header content
+            }}
           />
 
-          {/* Black Overlay */}
+          {/* Bottom Left Content */}
           <div
-            className="position-absolute top-0 start-0 w-100 h-100"
-            style={{ backgroundColor: "rgb(16 11 11 / 42%)", zIndex: 2 }}
-          ></div>
-
-          {/* Navigation Path */}
-          <div
-            className="position-absolute top-0 p-4 start-0 ms-0 mt-0 fs-5 fw-bold"
-            style={{ zIndex: 3 }}
+            className="position-absolute bottom-0 start-0 p-4 fs-5 fw-normal"
+            style={{ zIndex: 1 }} // Ensure this is on top of the image
           >
-            <span className="small text-white">
-              <a href="/" className="text-white">
+            <span className="small" style={{ color: "#1236d0" }}>
+              <a href="/" style={{ color: "#1236d0" }}>
                 Industries We Serve /
               </a>{" "}
-              Health Insurance
+              <a href="#" style={{ color: "#1236d0" }}>
+                HealthCare Insurance
+              </a>{" "}
+               
             </span>
           </div>
 
           {/* Header Content */}
           <div
-            className="container text-white mt-5"
-            style={{ zIndex: 3, position: "relative" }}
+            className="text-center py-5 text-dark "
+            style={{ position: "relative", zIndex: 1 }}
           >
-            <h1 className="display-6">
-              Transforming Healthcare Insurance: Innovation for a Better
-              Tomorrow
-            </h1>
-            <p className="lead">
-              Enhance efficiency and accuracy in healthcare insurance with our
-              state-of-the-art technology solutions. Discover how we streamline
-              processes, improve patient care, and drive industry progress
-            </p>
+            <h2 className="display-4 mb-3 fw-bold" style={{ color: "#1236d0" }}>
+            Smart Health Insurance
+            </h2>
+
+            <div className="lead mb-4 mx-auto text-center px-5 col-10" style={{ color: "#1236d0" }}>
+            Enhance efficiency and accuracy in healthcare insurance with our state-of-the-art technology solutions. Discover how we streamline processes, improve patient care, and drive industry progress
+            </div>
           </div>
         </header>
       </FadeOnScroll>
@@ -101,12 +110,12 @@ function Healthinsurance() {
           className="image-video-text-interactivity fadeInUp mb-5"
           style={{ marginTop: "5rem" }}
         >
-          <div className="container mt-5">
+          <div className="container mt-5 px-5">
             <div className="row align-items-center">
               {/* Image Section */}
               <div className="col-md-6 text-md-start mt-4 mb-3 mt-md-0">
                 <img
-                  className="img-fluid rounded"
+                  className="img-fluid"
                   height={365}
                   width={504}
                   src={img1}
@@ -116,7 +125,7 @@ function Healthinsurance() {
 
               {/* Text Section */}
               <div className="col-md-6">
-                <h3 className="text-primary fw-normal mb-3">
+                <h3 className="text-primary fw-light mb-3">
                   Major Challenges in the Healthcare Insurance Sector
                 </h3>
                 <p className="text-muted">
@@ -204,13 +213,13 @@ function Healthinsurance() {
           className="image-video-text-interactivity fadeInUp mb-5"
           style={{ marginTop: "5rem" }}
         >
-          <div className="container mt-5">
+          <div className="container mt-5 px-5">
             <div className="row align-items-center">
               {/* Image Section */}
 
               {/* Text Section */}
               <div className="col-md-6 order-md-1 order-2">
-                <h3 className="text-primary fw-normal mb-3">
+                <h3 className="text-primary fw-light mb-3">
                   How Digitalization is Solving Healthcare Insurance Challenges
                 </h3>
                 <p className="text-muted">
@@ -290,7 +299,7 @@ function Healthinsurance() {
               </div>
               <div className="col-md-6 text-md-end mt-4 mt-md-0 order-md-2 order-1 mb-5">
                 <img
-                  className="img-fluid rounded"
+                  className="img-fluid"
                   height={365}
                   width={504}
                   src={img2}
@@ -308,7 +317,7 @@ function Healthinsurance() {
           className="image-video-text-interactivity fadeInUp mb-5"
           style={{ marginTop: "5rem" }}
         >
-          <div className="container mt-5">
+          <div className="container mt-5 px-5">
             <div className="row align-items-center">
               {/* Image Section */}
               <div className="col-md-6 text-md-start mt-4 mt-md-0 mb-5">
@@ -323,7 +332,7 @@ function Healthinsurance() {
 
               {/* Text Section */}
               <div className="col-md-6">
-                <h3 className="text-primary fw-normal mb-3">
+                <h3 className="text-primary fw-light mb-3">
                   How We Can Support the Healthcare Insurance Sector
                 </h3>
                 <p className="text-muted">
@@ -416,14 +425,14 @@ function Healthinsurance() {
                 Our Key Product for Healthcare Insurance
               </h3>
             </div>
-            <div className="row">
+            <div className="row px-5">
               <div className="col-lg-10 col-xl-8 mx-auto">
                 <div
                   className="p-5 bg-white shadow  rounded"
                   style={{ width: "100%", height: "auto" }}
                 >
                   <div className="media feature-card">
-                    <h3 className="text-primary fw-normal mb-3">
+                    <h3 className="text-primary fw-light mb-3">
                       Digital Claims Management Platform
                       <p className="text-muted h6 mt-2">
                         Cloudstry Tech is excited to be part of several
