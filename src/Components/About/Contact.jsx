@@ -77,60 +77,40 @@ function Contact() {
   };
 
   return (
-    <div className="bg-light ">
+    <div className="bg-light">
       <FadeOnScroll>
-      <header
+        <header
           className="text-white text-center py-5 position-relative"
           style={{
-            // backgroundColor: "rgb(233, 239, 241)",
-            backgroundColor:"white",
+            backgroundColor: "white",
             minHeight: "12rem",
-            // height:'100%',
             overflow: "hidden",
             boxShadow: "rgb(235 231 231) 1px -16px 20px 0px inset",
           }}
         >
-          {/* Left-Aligned Image */}
           <img
-            src={bg} // Adjust the path to your image
+            src={bg}
             alt="Decorative background"
             className="position-absolute"
             style={{
-              left: 940,  
-              top: 0, // Position at the top
-              height: "100%", // Fill the height of the header
-              width: "auto", // Maintain aspect ratio; set a specific width if needed
-              zIndex: 0, // Position it behind the header content
+              right: 0,  // Changed from left: 940 to be more responsive
+              top: 0,
+              height: "100%",
+              width: "auto",
+              zIndex: 0,
             }}
           />
 
-          {/* Bottom Left Content */}
-          <div
-            className="position-absolute bottom-0 start-0 p-4 fs-5 fw-normal"
-            style={{ zIndex: 1 }} // Ensure this is on top of the image
-          >
-            <span className="small" style={{ color: "#1236d0" }}>
-              <a href="/" style={{ color: "#1236d0" }}>
-              /Contact Us
-              </a>{" "}
-              <a href="#" style={{ color: "#1236d0" }}>
-                
-              </a>{" "}
-               
-            </span>
-          </div>
+          <nav className="position-absolute bottom-0 start-0 p-4 fs-5 fw-normal" style={{ zIndex: 1 }}>
+            <a href="/" className="text-primary text-decoration-none">/Contact Us</a>
+          </nav>
 
-          {/* Header Content */}
-          <div
-            className="text-center py-5 text-dark "
-            style={{ position: "relative", zIndex: 1 }}
-          >
-            <h2 className="display-4 mb-3 fw-bold" style={{ color: "#1236d0" }}>
-            Get in Touch With Us
-            </h2>
-
-            <div className="lead mb-4 mx-auto text-center px-5 col-10" style={{ color: "#1236d0" }}>
-            Our dedicated team is here to provide the support you need. Whether you have questions, require assistance, or want to discuss next project, we're just a message away. Reach out to us today and experience our commitment to excellence
+          <div className="position-relative z-1 text-center py-5">
+            <h1 className="display-4 mb-3 fw-bold text-primary">Get in Touch With Us</h1>
+            <div className="lead mb-4 mx-auto text-center px-5 col-10 text-primary">
+              Our dedicated team is here to provide the support you need. Whether you have questions, 
+              require assistance, or want to discuss next project, we're just a message away. 
+              Reach out to us today and experience our commitment to excellence
             </div>
           </div>
         </header>
@@ -148,12 +128,12 @@ function Contact() {
                 <span className="text-primary">Exceptional Support</span>
               </h1>
 
-              {/* <p className="px-3" style={{ color: "hsl(217, 10%, 50.8%)" }}>
+              {/* <div className="px-3" style={{ color: "hsl(217, 10%, 50.8%)" }}>L
               Our dedicated team is here to provide the support you need.
               Whether you have questions, require assistance, or want to discuss
                next project, we're just a message away. Reach out to us
               today and experience our commitment to excellence.
-            </p> */}
+            </div> */}
               <div className="col-12 shadow px-5 py-3 mt-4 contact-card d-xl-block d-none">
                 <h3 className="text-primary font-weight-bold mb-4">
                   Reach Out to Us
@@ -166,31 +146,31 @@ function Contact() {
                           <i className="bi bi-telephone"></i>
                         </div>
                         <h2 className="h5">Phone</h2>
-                        <p className="mb-0">+91 7313683823</p>
+                        <div className="mb-0">+91 7313683823</div>
                       </div>
                       <div className="col mb-md-0 h-100">
                         <div className="feature bg-primary bg-gradient text-white rounded-3 mb-3">
                           <i className="bi bi-envelope"></i>
                         </div>
                         <h2 className="h5">Email</h2>
-                        <p className="mb-0">hr@cloudstrytech.com</p>
+                        <div className="mb-0">hr@cloudstrytech.com</div>
                       </div>
                       <div className="col h-100">
                         <div className="feature bg-primary bg-gradient text-white rounded-3 mb-3">
                           <i className="bi bi-geo-alt"></i>
                         </div>
                         <h2 className="h5">Address</h2>
-                        <p className="mb-0">
+                        <div className="mb-0">
                           Incuspaze, 4th floor, Apollo Premier, Vijay Nagar
                           Square, Vijay Nagar, Indore, Madhya Pradesh 452001
-                        </p>
+                        </div>
                       </div>
                       <div className="col h-100">
                         <div className="feature bg-primary bg-gradient text-white rounded-3 mb-3">
                           <i className="bi bi-share"></i>
                         </div>
                         <h2 className="h5">Social</h2>
-                        <p className="mb-0">
+                        <div className="mb-0">
                           <div>
                             <Link to="/" className="me-4 text-reset">
                               <MDBIcon color="dark" fab icon="twitter" />
@@ -202,7 +182,7 @@ function Contact() {
                               <MDBIcon color="dark" fab icon="linkedin" />
                             </Link>
                           </div>
-                        </p>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -241,31 +221,31 @@ function Contact() {
                         <i className="bi bi-telephone"></i>
                       </div>
                       <h2 className="h5">Phone</h2>
-                      <p className="mb-0">+91 7313683823</p>
+                      <div className="mb-0">+91 7313683823</div>
                     </div>
                     <div className="col mb-md-0 h-100">
                       <div className="feature bg-primary bg-gradient text-white rounded-3 mb-3">
                         <i className="bi bi-envelope"></i>
                       </div>
                       <h2 className="h5">Email</h2>
-                      <p className="mb-0">hr@cloudstrytech.com</p>
+                      <div className="mb-0">hr@cloudstrytech.com</div>
                     </div>
                     <div className="col h-100">
                       <div className="feature bg-primary bg-gradient text-white rounded-3 mb-3">
                         <i className="bi bi-geo-alt"></i>
                       </div>
                       <h2 className="h5">Address</h2>
-                      <p className="mb-0">
+                      <div className="mb-0">
                         Incuspaze, 4th floor, Apollo Premier, Vijay Nagar
                         Square, Vijay Nagar, Indore, Madhya Pradesh 452001
-                      </p>
+                      </div>
                     </div>
                     <div className="col h-100">
                       <div className="feature bg-primary bg-gradient text-white rounded-3 mb-3">
                         <i className="bi bi-share"></i>
                       </div>
                       <h2 className="h5">Social</h2>
-                      <p className="mb-0">
+                      <div className="mb-0">
                         <div>
                           <Link to="/" className="me-4 text-reset">
                             <MDBIcon color="dark" fab icon="twitter" />
@@ -277,7 +257,7 @@ function Contact() {
                             <MDBIcon color="dark" fab icon="linkedin" />
                           </Link>
                         </div>
-                      </p>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -362,7 +342,7 @@ function Contact() {
                   ) : (
                     <div className="fs-2 mb-4 text-center text-primary fw-normal">
                       Thank you! Your message has been sent successfully. We
-                      will get back to you soon. <i class="fa fa-envelope" aria-hidden="true"></i>
+                      will get back to you soon. <i className="fa fa-envelope" aria-hidden="true"></i>
                     </div>
                   )}
                 </MDBCardBody>

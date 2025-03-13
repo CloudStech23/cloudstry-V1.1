@@ -213,7 +213,7 @@ function Petadhar() {
       </FadeOnScroll>
 
       <FadeOnScroll animation="up">
-        <section class="py-5 bg-whitet text-center">
+        <section  className="py-5 bg-whitet text-center">
           <section className="pb-5">
             <div className="container px-5">
               <div className="half-underline-container">

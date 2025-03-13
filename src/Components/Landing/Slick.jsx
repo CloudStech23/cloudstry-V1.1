@@ -12,8 +12,10 @@ import Slider from "react-slick";
 import Type from "./Type";
 import { FaHandshake } from "react-icons/fa";
 import { TbSettingsCode } from "react-icons/tb";
-import { RiTeamFill } from "react-icons/ri";
+import { FaLightbulb } from "react-icons/fa";
 import { AiOutlineLineChart } from "react-icons/ai";
+import { LuBrainCircuit } from "react-icons/lu";
+import { Link } from "react-router-dom";
 
 SwiperCore.use([Autoplay, EffectCards]);
 
@@ -48,27 +50,56 @@ export default function SwiperCarousel() {
     {
       Logo: <FaHandshake />,
       Title: "Strategic Partnerships",
-      Desc: "Building robust partnerships to drive mutual innovation, enabling tailored IT solutions that address specific client goals and elevate market positioning. Our alliances power sustainable success.",
+      Desc: "Driving collaborative innovation through AI-powered solutions and industry alliances. Our partnerships enable tailored digital products that enhance efficiency, scalability, and market leadership.",
     },
     {
-      Logo: <TbSettingsCode />,
-      Title: "Innovative Software Development",
-      Desc: "Designing and implementing advanced software solutions to empower businesses with the latest technologies, fostering efficient workflows, scalability, and competitive edge in their industry.",
-    },
-    {
-      Logo: <RiTeamFill />,
-      Title: "Comprehensive IT Staffing",
-      Desc: "Providing experienced IT professionals to meet diverse technical needs, ensuring your team has the talent required to adapt and thrive in a fast-evolving tech landscape.",
+      Logo: <LuBrainCircuit />,
+      Title: "AI-Driven Software Solutions",
+      Desc: "Engineering intelligent that automates workflows, enhances decision-making, and accelerates digital transformation with cutting-edge AI and cloud technologies.",
     },
     {
       Logo: <AiOutlineLineChart />,
-      Title: "Technology-Driven Business Growth",
-      Desc: "Empowering business expansion through strategic tech solutions that enhance productivity, strengthen security, and support scalable operations for sustainable, long-term growth.",
+      Title: "Technology-Driven Business Acceleration",
+      Desc: "Leveraging advanced digital solutions to optimize performance, strengthen cybersecurity, and drive sustainable growth through scalable, AI-powered innovations.",
     },
     {
       Logo: <TbSettingsCode />,
-      Title: "Innovative Software Development",
-      Desc: "Developing cutting-edge software with a focus on maximizing operational efficiency, integrating the latest tech advancements, and enhancing user experiences to drive business value.",
+      Title: "Agile IT Talent Solutions",
+      Desc: "Empowering businesses with highly skilled IT professionals through AI-driven talent matching. Our strategic staffing solutions ensure agility, scalability, and innovation in a rapidly evolving tech landscape.",
+    },
+    {
+      Logo: <FaLightbulb />,
+      Title: "Strategic Business Consultancy",
+      Desc: "Empowering enterprises through expert-driven digital strategies and comprehensive transformation roadmaps. Our consultancy services enable organizations to navigate complexity and uncover new growth opportunities",
+    },
+  ];
+
+  const productCarouselData = [
+    {
+      title: "Digital Credential Solutions",
+      desc: "Secure and verifiable digital certificates for seamless authentication and credential management.",
+      link: "/WhatweDo/Product-Platform/Digital-Certificate"
+    },
+    {
+      title: "Cattle Management Platform",
+      desc: "AI-powered cattle identification and tracking for optimized livestock management.",
+      link:"/WhatweDo/Product-Platform/Pet-Aadhar"
+    },
+    {
+      title: "GCC-Driven Staffing Solutions",
+      desc: "Providing specialized talent for Global Captive Centers to drive operational excellence.",
+      link:"/WhatweDo/Staffing-Solution"
+    },
+    {
+      title: "IT Strategy & Consultancy",
+      desc: "Expert-driven IT roadmaps, digital transformation, and scalable tech solutions.",
+      link:"/WhatweDo/IT-Solutions/IT-Strategy-Consultancy"
+
+    },
+    {
+      title: "AI-Powered Software Solutions",
+      desc: "Smart, scalable software designed to automate processes and enhance efficiency.",
+      link:"/WhatweDo/IT-Solutions/Software-Services"
     },
   ];
 
@@ -92,62 +123,35 @@ export default function SwiperCarousel() {
                 <Type />
               </h1>
               <p className="text-white mb-4 col-9">
-                Cloudstry Technologies powers your digital journey, bridging
-                critical gaps in industry operations. Our IT solutions, product
-                platforms, and staffing services ensure seamless operations,
-                keeping your business a step ahead in today’s fast-paced
-                environment.
+                Cloudstry Technologies drives your digital transformation with
+                cutting-edge product solutions, bridging critical industry gaps.
+                Our scalable platforms and AI-powered tools streamline
+                operations, ensuring efficiency, agility, and a competitive edge
+                in today’s fast-paced landscape.
               </p>
               <p className="mb-4 col-9 text-white">
-                With trusted expertise, Cloudstry Technologies partners with
-                industry leaders to deliver robust, innovative solutions for
-                mission-critical services.
+                With deep expertise and innovation at the core, Cloudstry Technologies
+                empowers industry leaders with robust, mission-critical
+                solutions designed for seamless growth and operational
+                excellence.
               </p>
 
               {/* Highlighted Card Carousel */}
               <div className="col-6">
                 <Slider {...settings}>
-                  <div
-                    className="highlight-card p-4"
-                    // onClick={() => (window.location.href = "/partnerships")}
-                  >
-                    <h5 className="card-title mb-2">Strategic Partnerships</h5>
-                    <p>
-                      Building resilient partnerships to fuel growth and deliver
-                      tailored IT solutions for your unique needs.{" "}
-                      <span className="redirect-arrow text-white">
-                        <i className="fa fa-arrow-right" />
-                      </span>
-                    </p>
-                  </div>
-                  <div
-                    className="highlight-card p-4"
-                    // onClick={() => (window.location.href = "/development")}
-                  >
-                    <h5 className="card-title mb-2">Innovative Development</h5>
-                    <p>
-                      Offering cutting-edge solutions designed to empower
-                      businesses with streamlined workflows.{" "}
-                      <span className="redirect-arrow text-white">
-                        <i className="fa fa-arrow-right" />
-                      </span>
-                    </p>
-                  </div>
-                  <div
-                    className="highlight-card p-4"
-                    // onClick={() => (window.location.href = "/staffing")}
-                  >
-                    <h5 className="card-title mb-2">
-                      Comprehensive Staffing Solutions
-                    </h5>
-                    <p>
-                      Supplying skilled professionals to support your IT needs
-                      and foster company growth.{" "}
-                      <span className="redirect-arrow text-white">
-                        <i className="fa fa-arrow-right" />
-                      </span>
-                    </p>
-                  </div>
+                  {productCarouselData.map((data, index) => (
+                  <Link to={data.link}> 
+                    <div className="highlight-card p-4" key={index}>
+                      <h5 className="card-title mb-2">{data.title}</h5>
+                      <p>
+                        {data.desc}
+                        <span className="redirect-arrow text-white">
+                          <i className="fa fa-arrow-right" />
+                        </span>
+                      </p>
+                    </div>
+                    </Link>
+                  ))}
                 </Slider>
               </div>
 
@@ -203,6 +207,7 @@ export default function SwiperCarousel() {
                       margin: "0 auto",
                       borderRadius: "10px",
                       background: "rgb(49 91 196) !important",
+                      // maxHeight: "90%",
                     }}
                   >
                     {/* Logo Section */}
@@ -245,13 +250,15 @@ export default function SwiperCarousel() {
 
                     {/* Description Section */}
                     <p
-                      className="description fw-light text-left text-primary"
+                      className="description fw-light text-primary"
                       style={{
                         fontSize: "1rem",
-                        lineHeight: "1.5",
-                        maxWidth: "80%",
+                        lineHeight: "1.6", // Increased for better readability
+                        maxWidth: "90%",
                         margin: "0 auto",
                         textAlign: "justify",
+                        textJustify: "inter-word", // Ensures even spacing
+                        wordSpacing: " ", // Adds slight spacing between words
                       }}
                     >
                       {item.Desc}

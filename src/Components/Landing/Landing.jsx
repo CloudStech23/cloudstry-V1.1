@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Slick from "./Slick";
 import mapimage from "../Images/cloudstry map.png";
 // import '../Landing/Landing.css'
@@ -12,6 +12,7 @@ import whycs from "../Images/why cs.jpg";
 import "../Landing/Landing.css";
 import FadeOnScroll from "../Animate/Motion";
 import ZoomOnScroll from "../Animate/Zoom";
+import SlideFromLeft from "../Animate/SlideLeft";
 import { Container, Row, Col, Card } from "react-bootstrap";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
@@ -67,6 +68,7 @@ function Landing() {
         "Deliver precise, timely messages across multiple channels, ensuring customers stay informed and engaged.",
     },
   ];
+
   const ServicesData = [
     {
       id: 1,
@@ -88,6 +90,8 @@ function Landing() {
       link: "/WhatweDo/IT-Solutions/IT-Strategy-Consultancy",
     },
   ];
+
+  const [isSticky, setIsSticky] = useState(true); // Track sticky state
 
   return (
     // <div className="container-fluid d-flex justify-content-center align-items-center min-vh-100">
@@ -114,45 +118,44 @@ function Landing() {
     //   `}</style>
     // </div>
     <div>
-      <FadeOnScroll >
-        <Slick  />
-      </FadeOnScroll>
       <FadeOnScroll>
-        <Container className="my-5 px-5" >
-          {/* <div className="half-underline-container mb-3">
-            <h3 className="text-primary fw-normal display-6 text-center   half-blue-underline">
-            Core Offering
-            </h3>
-          </div> */}
+        <Slick />
+      </FadeOnScroll>
+      {/* <FadeOnScroll>
+        <Container className="my-5 px-5">
           <Row className="g-5">
             {features.map((feature, index) => (
               <Col md={4} key={index}>
-                <Card className="h-100 text-center shadow-sm">
-                  <Card.Body>
-                    <div className="d-flex align-items-center justify-content-center mb-3">
-                      <div
-                        className="me-2"
-                        style={{ fontSize: "2rem", color: "#0056b3" }}
-                      >
-                        {feature.icon}
+                <SlideFromLeft delay={index * 200}>
+                  <Card className="h-100 text-center shadow-sm">
+                    {" "}
+                  
+                    <Card.Body>
+                      <div className="d-flex align-items-center justify-content-center mb-3">
+                        <div
+                          className="me-2"
+                          style={{ fontSize: "2rem", color: "#0056b3" }}
+                        >
+                          {feature.icon}
+                        </div>
+                        <Card.Title className="text-primary m-0">
+                          {feature.title}
+                        </Card.Title>
                       </div>
-                      <Card.Title className="text-primary m-0">
-                        {feature.title}
-                      </Card.Title>
-                    </div>
-                    <Card.Text className="text-muted">
-                      {feature.description}
-                    </Card.Text>
-                  </Card.Body>
-                </Card>
+                      <Card.Text className="text-muted">
+                        {feature.description}
+                      </Card.Text>
+                    </Card.Body>
+                  </Card>
+                </SlideFromLeft>
               </Col>
             ))}
           </Row>
         </Container>
-      </FadeOnScroll>
+      </FadeOnScroll> */}
 
-      <FadeOnScroll animation="up" >
-        <section className="service-section" style={{ marginTop: "5rem" ,}}>
+      <FadeOnScroll animation=" ">
+        <section className="service-section" style={{ marginTop: "5rem" }}>
           <div className="container px-5">
             <div className="row g-4">
               <div className="half-underline-container mb-3">
@@ -160,88 +163,41 @@ function Landing() {
                   Services We Offer
                 </h3>
               </div>
-              <div className="col-12 col-md-4 service-card  ">
-                <div className="position-relative shadow">
-                  <FadeOnScroll animation="zoom-in-up">
-                  <img
-                    src={staffingimage}
-                    alt="Native Plant Garden"
-                    className="card-img-top rounded-3"
-                    style={{
-                      height: "200px",
-                      objectFit: "cover",
-                      width: "100%",
-                    }}
-                  />
-                  </FadeOnScroll>
 
-                  <div className="card-body bg-light p-4">
-                    <h4 className="card-title text-primary mb-3" style={{fontSize:'1.35rem'}}>
-                      Comprehensive Staffing Solutions for Global Captive
-                      Centers
-                    </h4>
-                    <Link
-                      to="/WhatweDo/Staffing-Solution"
-                      className="btn btn-danger"
-                    >
-                      Read More
-                    </Link>
-                  </div>
-                </div>
-              </div>
-              <div className="col-12 col-md-4 service-card">
-                <div className="position-relative shadow">
-                  <img
-                    src={softwareimage}
-                    alt="Native Plant Garden"
-                    className="card-img-top rounded-3"
-                    style={{
-                      height: "200px",
-                      objectFit: "cover",
-                      width: "100%",
-                    }}
-                  />
+              {ServicesData.map((data, index) => (
+                <div key={index} className="col-12 col-md-4 service-card">
+                  <SlideFromLeft delay={index * 200}>
+                    {" "}
+                    {/* Add staggered effect */}
+                    <div className="position-relative shadow">
+                      <FadeOnScroll animation="">
+                        <img
+                          src={data.image}
+                          alt={data.title}
+                          className="card-img-top rounded-3"
+                          style={{
+                            height: "200px",
+                            objectFit: "cover",
+                            width: "100%",
+                          }}
+                        />
+                      </FadeOnScroll>
 
-                  <div className="card-body bg-light p-4">
-                    <h4 className="card-title text-primary mb-3" style={{fontSize:'1.35rem'}}>
-                      End-to-End Software Solutions and Support Services
-                    </h4>
-                    <Link
-                      to="/WhatweDo/IT-Solutions/Software-Services"
-                      className="btn btn-danger"
-                    >
-                      Read More
-                    </Link>
-                  </div>
+                      <div className="card-body bg-light p-4">
+                        <h4
+                          className="card-title text-primary mb-3"
+                          style={{ fontSize: "1.35rem" }}
+                        >
+                          {data.title}
+                        </h4>
+                        <Link to={data.link} className="btn btn-danger">
+                          Read More
+                        </Link>
+                      </div>
+                    </div>
+                  </SlideFromLeft>
                 </div>
-              </div>
-              <div className="col-12 col-md-4 service-card">
-                <div className="position-relative shadow">
-                  <img
-                    src={strategyimage}
-                    alt="Native Plant Garden"
-                    className="card-img-top rounded-3"
-                    style={{
-                      height: "200px",
-                      objectFit: "cover",
-                      width: "100%",
-                    }}
-                  />
-
-                  <div className="card-body bg-light p-4">
-                    <h4 className="card-text text-primary mb-3" style={{fontSize:'1.35rem'}}>
-                      Holistic IT Strategy Consulting for Seamless Digital
-                      Transformation
-                    </h4>
-                    <Link
-                      to="/WhatweDo/IT-Solutions/IT-Strategy-Consultancy"
-                      className="btn btn-danger"
-                    >
-                      Read More
-                    </Link>
-                  </div>
-                </div>
-              </div>
+              ))}
 
               {/* <Swiper
               modules={[Navigation, Pagination]}
@@ -313,7 +269,10 @@ function Landing() {
                 <h3 className="fw-normal fs-3 text-primary mb-4">
                   Why Cloudstry Technologies ?
                 </h3>
-                <p className="mb-4" style={{ lineHeight: 1.375, textAlign:'justify' }}>
+                <p
+                  className="mb-4"
+                  style={{ lineHeight: 1.375, textAlign: "justify" }}
+                >
                   At Cloudstry Technologies, we recognize business’s unique
                   challenges and provide tailored solutions for sustainable
                   growth and operational excellence. Our advanced technologies

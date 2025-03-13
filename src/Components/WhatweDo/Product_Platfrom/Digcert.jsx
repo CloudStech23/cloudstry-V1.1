@@ -300,7 +300,7 @@ function Digitalcertificate() {
               </div>
               <div className="col-xl-4 col-lg-4 col-md-6 col-sm-12 mb-3">
                 <div className="card bg-light py-4 rounded">
-                  <i class="fa fa-id-card-o" aria-hidden="true"></i>
+                  <i  className="fa fa-id-card-o" aria-hidden="true"></i>
                   <div className="card-body text-primary">
                     <h3 className="fs-1 fw-bold  mb-0">1M+</h3>
                     <p className="fs-5">credentials</p>

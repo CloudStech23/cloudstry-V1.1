@@ -112,8 +112,8 @@ function Government() {
         </div>
       </div> */}
 
-      {/* <section class="py-5">
-        <div class="container px-5 my-2">
+      {/* <section className="py-5">
+        <div className="container px-5 my-2">
           <div className="half-underline-container">
             <h3
               className="text-primary text-danger text-center display-5   half-underline"
@@ -123,24 +123,24 @@ function Government() {
             </h3>
           </div>
 
-          <div class="row gx-5">
-            <div class="col-lg-4 mb-5">
-              <div class="card h-100 shadow border-0">
+          <div className="row gx-5">
+            <div className="col-lg-4 mb-5">
+              <div className="card h-100 shadow border-0">
                 <img
-                  class="card-img-top"
+                  className="card-img-top"
                   src={img2}
                   alt="..."
                 />
-                <div class="card-body p-4">
+                <div className="card-body p-4">
                   <Link
-                    class="text-decoration-none link-dark stretched-link"
+                    className="text-decoration-none link-dark stretched-link"
                     to="/Digital-Certificate"
                   >
-                    <h5 class="card-title mb-3 text-primary fw-bold">
+                    <h5 className="card-title mb-3 text-primary fw-bold">
                       Digital Certificate
                     </h5>
                   </Link>
-                  <p class="card-text mb-0">
+                  <p className="card-text mb-0">
                     In today's digital age, secure and verifiable credentials
                     are essential across various sectors. Traditional paper
                     certificates are prone to forgery and difficult to manage,
@@ -156,24 +156,24 @@ function Government() {
                 </div>
               </div>
             </div>
-            <div class="col-lg-4 mb-5">
-              <div class="card h-100 shadow border-0">
+            <div className="col-lg-4 mb-5">
+              <div className="card h-100 shadow border-0">
                 <img
-                  class="card-img-top"
+                  className="card-img-top"
                   src={img3}
                   alt="..."
                 />
-                <div class="card-body p-4">
+                <div className="card-body p-4">
                   <Link
-                    class="text-decoration-none link-dark stretched-link"
+                    className="text-decoration-none link-dark stretched-link"
                     to="/Pet-Aadhar"
                   >
-                    <h5 class="card-title text-primary fw-bold mb-3">
+                    <h5 className="card-title text-primary fw-bold mb-3">
                       Animal Aadhar
                     </h5>
                   </Link>
                   <div className="py-2  my-1">
-                    <p class="card-text mb-0">
+                    <p className="card-text mb-0">
                       India’s extensive livestock industry encounters major
                       challenges in animal identification, health monitoring,
                       and data management. Traditional methods are often
@@ -187,21 +187,21 @@ function Government() {
                 </div>
               </div>
             </div>
-            <div class="col-lg-4 mb-5">
-              <div class="card h-100 shadow border-0">
+            <div className="col-lg-4 mb-5">
+              <div className="card h-100 shadow border-0">
                 <img
-                  class="card-img-top"
+                  className="card-img-top"
                   src={img4}
                   alt="..."
                 />
-                <div class="card-body p-4">
+                <div className="card-body p-4">
                   <Link
-                    class="text-decoration-none link-dark stretched-link"
+                    className="text-decoration-none link-dark stretched-link"
                     to="/3PL-Solution"
                   >
-                    <h5 class="card-title mb-3 text-primary fw-bold">3PL</h5>
+                    <h5 className="card-title mb-3 text-primary fw-bold">3PL</h5>
                   </Link>
-                  <p class="card-text mb-0">
+                  <p className="card-text mb-0">
                     Third-Party Logistics (3PL) involves outsourcing logistics
                     and supply chain functions to specialized providers. These
                     partners manage key operations such as warehousing,
@@ -496,8 +496,8 @@ function Government() {
       </FadeOnScroll>
 
       <FadeOnScroll animation="up">
-        <section class="py-5">
-          <div class="container px-5 my-2">
+        <section className="py-5">
+          <div className="container px-5 my-2">
             <div className="half-underline-container">
               <h3
                 className="text-primary text-danger text-center display-5   half-underline"
@@ -511,25 +511,25 @@ function Government() {
               that are making a significant impact in the government sector:{" "}
             </p>
 
-            <div class="row gx-5">
-              <div class="col-lg-4 mb-5">
-                <div class="card h-100 shadow border-0">
+            <div className="row gx-5">
+              <div className="col-lg-4 mb-5">
+                <div className="card h-100 shadow border-0">
                   <img
-                    class="card-img-top img-fluid"
+                    className="card-img-top img-fluid"
                     style={{ height: "220px" }}
                     src={img2}
                     alt="..."
                   />
-                  <div class="card-body p-4">
+                  <div className="card-body p-4">
                     <Link
-                      class="text-decoration-none link-dark stretched-link"
+                      className="text-decoration-none link-dark stretched-link"
                       to="/WhatweDo/Product-Platform/Digital-Certificate"
                     >
-                      <h5 class="card-title mb-3 text-primary fw-bold">
+                      <h5 className="card-title mb-3 text-primary fw-bold">
                         Digital Certificate
                       </h5>
                     </Link>
-                    <p class="card-text mb-0">
+                    <p className="card-text mb-0">
                       In today's digital age, secure and verifiable credentials
                       are essential across various sectors. Traditional paper
                       certificates are prone to forgery and difficult to manage,
@@ -548,25 +548,25 @@ function Government() {
                   </div>
                 </div>
               </div>
-              <div class="col-lg-4 mb-5">
-                <div class="card h-100 shadow border-0">
+              <div className="col-lg-4 mb-5">
+                <div className="card h-100 shadow border-0">
                   <img
-                    class="card-img-top img-fluid"
+                    className="card-img-top img-fluid"
                     style={{ height: "220px" }}
                     src={img3}
                     alt="..."
                   />
-                  <div class="card-body p-4">
+                  <div className="card-body p-4">
                     <Link
-                      class="text-decoration-none link-dark stretched-link"
+                      className="text-decoration-none link-dark stretched-link"
                       to="/WhatweDo/Product-Platform/Pet-Aadhar"
                     >
-                      <h5 class="card-title text-primary fw-bold mb-3">
+                      <h5 className="card-title text-primary fw-bold mb-3">
                         Animal Aadhar
                       </h5>
                     </Link>
                     <div className="py-2  my-1">
-                      <p class="card-text mb-0">
+                      <p className="card-text mb-0">
                         India’s extensive livestock industry encounters major
                         challenges in animal identification, health monitoring,
                         and data management. Traditional methods are often
@@ -580,22 +580,22 @@ function Government() {
                   </div>
                 </div>
               </div>
-              <div class="col-lg-4 mb-5">
-                <div class="card h-100 shadow border-0">
+              <div className="col-lg-4 mb-5">
+                <div className="card h-100 shadow border-0">
                   <img
-                    class="card-img-top img-fluid"
+                    className="card-img-top img-fluid"
                     style={{ height: "220px" }}
                     src={img1}
                     alt="..."
                   />
-                  <div class="card-body p-4">
+                  <div className="card-body p-4">
                     <Link
-                      class="text-decoration-none link-dark stretched-link"
+                      className="text-decoration-none link-dark stretched-link"
                       to="/WhatweDo/Product-Platform/3PL-Solution"
                     >
-                      <h5 class="card-title mb-3 text-primary fw-bold">3PL</h5>
+                      <h5 className="card-title mb-3 text-primary fw-bold">3PL</h5>
                     </Link>
-                    <p class="card-text mb-0">
+                    <p className="card-text mb-0">
                       Third-Party Logistics (3PL) involves outsourcing logistics
                       and supply chain functions to specialized providers. These
                       partners manage key operations such as warehousing,

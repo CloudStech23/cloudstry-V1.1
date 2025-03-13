@@ -145,10 +145,10 @@ function Softwareservices() {
 
       {/* Card Section */}
       <FadeOnScroll animation="up">
-        <section class="py-5 px-5">
-          <div class="container px-4 my-3">
+        <section  className="py-5 px-5">
+          <div  className="container px-4 my-3">
             {/* <h3 className="text-danger fw-light display-5 text-center .customheading">Transformative Solutions</h3> */}
-            <div class="row gx-5 px-4">
+            <div  className="row gx-5 px-4">
               <div className="col-lg-4 mb-5">
                 <div className="card h-80 shadow border-0 service-card">
                   <div className="blackblur">
@@ -175,12 +175,12 @@ function Softwareservices() {
                       enhancing decision-making is crucial in today’s
                       data-driven world.
                     </p>
-                    <p class=" transparent mt-2 ">
+                    <p  className=" transparent mt-2 ">
                       <Link to="/" className="text-danger fw-bold">
                         Learn more
                       </Link>
                       <i
-                        class="fa fa-arrow-right text-danger mt-1 mx-1  trans"
+                         className="fa fa-arrow-right text-danger mt-1 mx-1  trans"
                         aria-hidden="true"
                       ></i>
                     </p>
@@ -212,12 +212,12 @@ function Softwareservices() {
                       costs, and quickly adapt to changing market demands
                       through seamless access to computing power and storage.
                     </p>
-                    <p class=" transparent mt-2 ">
+                    <p  className=" transparent mt-2 ">
                       <Link to="/" className="text-danger fw-bold">
                         Learn more
                       </Link>
                       <i
-                        class="fa fa-arrow-right text-danger mt-1 mx-1  trans"
+                         className="fa fa-arrow-right text-danger mt-1 mx-1  trans"
                         aria-hidden="true"
                       ></i>
                     </p>
