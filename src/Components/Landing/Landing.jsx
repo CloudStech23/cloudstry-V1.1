@@ -253,7 +253,7 @@ function Landing() {
       >
         <div className="container px-3 px-md-5 mt-5">
           <div className="row align-items-center">
-            <div className="col-md-6 mb-5 mb-md-0">
+            <div className="col-md-6 mb-3 mb-md-0">
               <ZoomOnScroll animation="in-up">
                 <img
                   className="img-fluid rounded"
@@ -575,7 +575,7 @@ function Landing() {
                 <img
                   className="img-fluid rounded"
                   height={365}
-                  width={504}
+                  width={532}
                   src={strategyimage}
                   alt="Image"
                 />

@@ -11,11 +11,11 @@ function Healthinsurance() {
   return (
     <div>
       <FadeOnScroll>
-      <header
+        <header
           className="text-white text-center py-5 position-relative"
           style={{
             // backgroundColor: "rgb(233, 239, 241)",
-            backgroundColor:"white",
+            backgroundColor: "white",
             minHeight: "12rem",
             // height:'100%',
             overflow: "hidden",
@@ -28,7 +28,7 @@ function Healthinsurance() {
             alt="Decorative background"
             className="position-absolute"
             style={{
-              left: 940,  
+              left: 940,
               top: 0, // Position at the top
               height: "100%", // Fill the height of the header
               width: "auto", // Maintain aspect ratio; set a specific width if needed
@@ -48,7 +48,6 @@ function Healthinsurance() {
               <a href="#" style={{ color: "#1236d0" }}>
                 HealthCare Insurance
               </a>{" "}
-               
             </span>
           </div>
 
@@ -58,11 +57,16 @@ function Healthinsurance() {
             style={{ position: "relative", zIndex: 1 }}
           >
             <h2 className="display-4 mb-3 fw-bold" style={{ color: "#1236d0" }}>
-            Smart Health Insurance
+              Smart Health & Insurance
             </h2>
 
-            <div className="lead mb-4 mx-auto text-center px-5 col-10" style={{ color: "#1236d0" }}>
-            Enhance efficiency and accuracy in healthcare insurance with our state-of-the-art technology solutions. Discover how we streamline processes, improve patient care, and drive industry progress
+            <div
+              className="lead mb-4 mx-auto text-center px-5 col-10"
+              style={{ color: "#1236d0" }}
+            >
+              Enhance efficiency and accuracy in healthcare insurance with our
+              state-of-the-art technology solutions. Discover how we streamline
+              processes, improve patient care, and drive industry progress
             </div>
           </div>
         </header>

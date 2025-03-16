@@ -93,7 +93,7 @@ function Contact() {
             alt="Decorative background"
             className="position-absolute"
             style={{
-              right: 0,  // Changed from left: 940 to be more responsive
+              left: 940, // Changed from left: 940 to be more responsive
               top: 0,
               height: "100%",
               width: "auto",
@@ -101,16 +101,27 @@ function Contact() {
             }}
           />
 
-          <nav className="position-absolute bottom-0 start-0 p-4 fs-5 fw-normal" style={{ zIndex: 1 }}>
-            <a href="/" className="text-primary text-decoration-none">/Contact Us</a>
+          <nav
+            className="position-absolute bottom-0 start-0 p-4 fs-5 fw-normal"
+            style={{ zIndex: 1 }}
+          >
+            <a href="/" className="text-primary text-decoration-none">
+              /Contact Us
+            </a>
           </nav>
 
-          <div className="position-relative z-1 text-center py-5">
-            <h1 className="display-4 mb-3 fw-bold text-primary">Get in Touch With Us</h1>
-            <div className="lead mb-4 mx-auto text-center px-5 col-10 text-primary">
-              Our dedicated team is here to provide the support you need. Whether you have questions, 
-              require assistance, or want to discuss next project, we're just a message away. 
-              Reach out to us today and experience our commitment to excellence
+          <div
+            className="position-relative text-center py-5"
+            style={{ zIndex: 1 }}
+          >
+            <h2 className="display-4 mb-3 fw-bold" style={{ color: "#1236d0" }}>
+              Get In Touch With Us
+            </h2>
+            <div className="lead mb-4 mx-auto text-center px-2 col-10 text-primary">
+              Our dedicated team is here to provide the support you need.
+              Whether you have questions, require assistance, or want to discuss
+              next project, we're just a message away. Reach out to us today and
+              experience our commitment to excellence
             </div>
           </div>
         </header>
@@ -342,7 +353,8 @@ function Contact() {
                   ) : (
                     <div className="fs-2 mb-4 text-center text-primary fw-normal">
                       Thank you! Your message has been sent successfully. We
-                      will get back to you soon. <i className="fa fa-envelope" aria-hidden="true"></i>
+                      will get back to you soon.{" "}
+                      <i className="fa fa-envelope" aria-hidden="true"></i>
                     </div>
                   )}
                 </MDBCardBody>

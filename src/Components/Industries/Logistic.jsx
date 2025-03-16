@@ -56,12 +56,15 @@ function Logistic() {
             className="text-center py-5 text-dark "
             style={{ position: "relative", zIndex: 1 }}
           >
-            <h2 className="display-4 mb-3 fw-bold" style={{ color: "#1236d0" }}>
+            <h2
+              className="display-4 px-1 mb-3 fw-bold"
+              style={{ color: "#1236d0" }}
+            >
               Revolutionizing Logistics
             </h2>
 
             <div
-              className="lead mb-4 mx-auto text-center px-5 col-10"
+              className="lead mb-4 mx-auto text-center px-4 col-10"
               style={{ color: "#1236d0" }}
             >
               Streamline supply chain with our innovative technology solutions.

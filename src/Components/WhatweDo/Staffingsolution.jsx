@@ -9,11 +9,11 @@ function Staffingsolution() {
   return (
     <div>
       <FadeOnScroll>
-      <header
+        <header
           className="text-white text-center py-5 position-relative"
           style={{
             // backgroundColor: "rgb(233, 239, 241)",
-            backgroundColor:"white",
+            backgroundColor: "white",
             minHeight: "12rem",
             // height:'100%',
             overflow: "hidden",
@@ -26,7 +26,7 @@ function Staffingsolution() {
             alt="Decorative background"
             className="position-absolute"
             style={{
-              left: 940,  
+              left: 940,
               top: 0, // Position at the top
               height: "100%", // Fill the height of the header
               width: "auto", // Maintain aspect ratio; set a specific width if needed
@@ -44,7 +44,7 @@ function Staffingsolution() {
                 What we Do ?
               </a>{" "}
               <a href="#" style={{ color: "#1236d0" }}>
-               / Staffing Solutions
+                / Staffing Solutions
               </a>
             </span>
           </div>
@@ -55,11 +55,18 @@ function Staffingsolution() {
             style={{ position: "relative", zIndex: 1 }}
           >
             <h2 className="display-4 mb-3 fw-bold" style={{ color: "#1236d0" }}>
-            Captive Workforce Solutions
+              Captive Workforce Solutions
             </h2>
 
-            <div className="lead mb-4 mx-auto text-center px-3 col-10" style={{ color: "#1236d0" }}>
-            Global Captive Centers (GCCs) are operational units established by multinational corporations in offshore locations to perform critical business functions. These centers often handle back-office processes, IT services, customer support, and other specialized functions.
+            <div
+              className="lead mb-4 mx-auto text-center px-3 col-10"
+              style={{ color: "#1236d0" }}
+            >
+              Global Captive Centers (GCCs) are operational units established by
+              multinational corporations in offshore locations to perform
+              critical business functions. These centers often handle
+              back-office processes, IT services, customer support, and other
+              specialized functions.
             </div>
           </div>
         </header>
@@ -180,91 +187,69 @@ function Staffingsolution() {
       <div className="container " style={{ marginTop: "5rem" }}>
         {/* <div className="half-underline-container"></div> */}
         <FadeOnScroll animation="up">
-          <div className="row gx-5 mt-5 px-5">
-            <div
-              className="col-xl-6 col-lg-5 d-flex justify-content-center align-items-center"
-              style={{ marginBottom: "2rem" }}
-            >
+          <div className="row gy-5 align-items-center px-md-3">
+            {/* Image Section */}
+            <div className="col-lg-6 col-md-6 text-center mb-4 mb-md-0">
               <img
                 className="img-fluid"
                 src={img1}
                 alt="Addressing GCC Challenges"
-                style={{ width: "39rem" }}
+                style={{ maxWidth: "100%", height: "auto" }}
               />
             </div>
-            <div className="col-md-6 mb-5">
+
+            {/* Content Section */}
+            <div className="col-lg-6 col-md-6">
               <h3 className="text-primary fw-light display-7 mb-3">
-                How We Addresses GCC-Specific Challenges ?
+                How We Address GCC-Specific Challenges?
               </h3>
-              <p className="h5 mb-2 text-muted" style={{ fontWeight: 300 }}>
+              <p className="h5 text-muted fw-light">
                 Cloudstry delivers targeted solutions to address the unique
                 challenges faced by Global Captive Centers (GCCs).
               </p>
 
               <ul className="list-unstyled mt-4">
-                <li className="mb-2 d-flex align-items-start">
-                  <i
-                    className="fa fa-check text-primary me-2"
-                    style={{ marginTop: "6px" }}
-                  ></i>
-                  <span className="d-inline">
-                    <strong>Scalability:</strong> Our solutions are designed to
-                    grow with GCC, providing the flexibility to accommodate
-                    increasing staffing needs and operational demands as center
-                    expands.
-                  </span>
-                </li>
-                <li className="mb-2 d-flex align-items-start">
-                  <i
-                    className="fa fa-check text-primary me-2"
-                    style={{ marginTop: "6px" }}
-                  ></i>
-                  <span className="d-inline">
-                    <strong>Skill Specialization:</strong> We employ targeted
-                    recruitment strategies to find and place candidates with
-                    specialized skills essential for GCC operations.
-                  </span>
-                </li>
-                <li className="mb-2 d-flex align-items-start">
-                  <i
-                    className="fa fa-check text-primary me-2"
-                    style={{ marginTop: "6px" }}
-                  ></i>
-                  <span className="d-inline">
-                    <strong>Cultural Alignment:</strong> Our approach ensures
-                    candidates are a good cultural fit, aligning with GCC’s
-                    corporate culture and operational style to enhance team
-                    cohesion and productivity.
-                  </span>
-                </li>
-                <li className="mb-2 d-flex align-items-start">
-                  <i
-                    className="fa fa-check text-primary me-2"
-                    style={{ marginTop: "6px" }}
-                  ></i>
-                  <span className="d-inline">
-                    <strong>Compliance and Regulations:</strong> We handle all
-                    aspects of compliance with local labor laws and
-                    international regulations.
-                  </span>
-                </li>
-                <li className="mb-2 d-flex align-items-start">
-                  <i
-                    className="fa fa-check text-primary me-2"
-                    style={{ marginTop: "6px" }}
-                  ></i>
-                  <span className="d-inline">
-                    <strong>Remote and Onsite Staffing:</strong> Our strategies
-                    effectively manage both remote and onsite staffing needs.
-                  </span>
-                </li>
+                {[
+                  {
+                    title: "Scalability",
+                    description:
+                      "Our solutions grow with GCC, providing flexibility to meet expanding staffing and operational needs.",
+                  },
+                  {
+                    title: "Skill Specialization",
+                    description:
+                      "We employ targeted recruitment strategies to find and place candidates with specialized skills essential for GCC operations.",
+                  },
+                  {
+                    title: "Cultural Alignment",
+                    description:
+                      "Ensuring candidates align with GCC’s corporate culture and operational style to enhance team cohesion and productivity.",
+                  },
+                  {
+                    title: "Compliance and Regulations",
+                    description:
+                      "Handling all aspects of compliance with local labor laws and international regulations.",
+                  },
+                  {
+                    title: "Remote and Onsite Staffing",
+                    description:
+                      "Managing both remote and onsite staffing needs effectively.",
+                  },
+                ].map((item, index) => (
+                  <li key={index} className="mb-2 d-flex align-items-start">
+                    <i className="fa fa-check text-primary me-2 mt-1"></i>
+                    <span>
+                      <strong>{item.title}:</strong> {item.description}
+                    </span>
+                  </li>
+                ))}
               </ul>
             </div>
           </div>
         </FadeOnScroll>
 
         <FadeOnScroll animation="up">
-          <div className="row gx-5 mt-5 px-5  ">
+          <div className="row gy-5 mt-5 px-3">
             <div
               className="col-xl-6 col-lg-5 d-flex order-first order-md-last justify-content-center align-items-center"
               style={{ marginBottom: "2rem" }}
@@ -275,7 +260,7 @@ function Staffingsolution() {
               <h3 className="text-primary display-7 fw-light mb-3">
                 Why Choose Us for GCC Staffing Needs?
               </h3>
-              <p className="h5 mb-2 text-muted" style={{ fontWeight: 300 }}>
+              <p className="h-5 mb-2 text-muted " style={{ fontWeight: 300 }}>
                 See how our expertise and custom solutions enhance GCC staffing.
               </p>
 
@@ -332,7 +317,7 @@ function Staffingsolution() {
         </FadeOnScroll>
 
         <FadeOnScroll animation="up">
-          <div className="row gx-5 px-5 mt-5">
+          <div className="row gy-5 px-3 mt-5">
             <div
               className="col-xl-6 col-lg-5 d-flex  justify-content-center align-items-center"
               style={{ marginBottom: "2rem" }}
@@ -402,8 +387,8 @@ function Staffingsolution() {
 
       <FadeOnScroll animation="up">
         <section className="mb-5  " style={{ marginTop: "6rem" }}>
-          <div className="container px-5">
-            <div className="row align-items-center">
+          <div className="container px-3">
+            <div className="row gy-5 align-items-center">
               <div className="col-md-6 mb-4 order-first order-md-last">
                 <img
                   className="img-fluid "
