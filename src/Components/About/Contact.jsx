@@ -12,7 +12,7 @@ import {
 } from "mdb-react-ui-kit";
 import { Link } from "react-router-dom";
 import "../Support/common.css";
-import "./contact.css";
+
 import bg from "../Images/header-bg.png";
 import img1 from "../Images/contact-img.jpg";
 import FadeOnScroll from "../Animate/Motion";
