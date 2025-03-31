@@ -29,45 +29,37 @@ function App() {
         <Route exact path="/" element={<Landing />} />
         <Route
           exact
-          path="/WhatweDo/Product-Platform/Digital-Certificate"
+          path="/product/digital-certificate"
           element={<Digitalcertificate />}
         />
+        <Route exact path="/product/pet-aadhar" element={<Petadhar />} />
         <Route
           exact
-          path="/WhatweDo/Product-Platform/Pet-Aadhar"
-          element={<Petadhar />}
-        />
-        <Route
-          exact
-          path="/WhatweDo/Product-Platform/3PL-Solution"
+          path="/product/3pl-solution"
           element={<Thirdpartylogistic />}
         />
         <Route
           exact
-          path="/WhatweDo/IT-Solutions/IT-Strategy-Consultancy"
+          path="/solutions/IT-strategy-consultancy"
           element={<Consultancy />}
         />
         <Route
           exact
-          path="/WhatweDo/IT-Solutions/Software-Services"
+          path="/solutions/software-services"
           element={<Softwareservices />}
         />
+        <Route exact path="/staffing-solution" element={<Staffingsolution />} />
         <Route
           exact
-          path="/WhatweDo/Staffing-Solution"
-          element={<Staffingsolution />}
-        />
-        <Route
-          exact
-          path="/Industries/Health-Insurance"
+          path="/industries/health_and_insurance"
           element={<Healthinsurance />}
         />
-        <Route exact path="/Industries/Government" element={<Government />} />
-        <Route exact path="/Industries/Logistic" element={<Logistic />} />
-        <Route exact path="/Industries/Education" element={<Education />} />
-        <Route exact path="/Support" element={<Contact />} />
+        <Route exact path="/industries/government" element={<Government />} />
+        <Route exact path="/industries/logistic" element={<Logistic />} />
+        <Route exact path="/industries/education" element={<Education />} />
+        <Route exact path="/support" element={<Contact />} />
         <Route exact path="/demo" element={<DemoAnimation />} />
-        <Route exact path="/Team-Cloudstry" element={<Team />} />
+        <Route exact path="/team" element={<Team />} />
       </Routes>
       <Footer />
     </Router>

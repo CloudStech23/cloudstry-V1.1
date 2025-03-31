@@ -15,11 +15,11 @@ function Government() {
   return (
     <div>
       <FadeOnScroll>
-      <header
+        <header
           className="text-white text-center py-5 position-relative"
           style={{
             // backgroundColor: "rgb(233, 239, 241)",
-            backgroundColor:"white",
+            backgroundColor: "white",
             minHeight: "12rem",
             // height:'100%',
             overflow: "hidden",
@@ -32,7 +32,7 @@ function Government() {
             alt="Decorative background"
             className="position-absolute"
             style={{
-              left: 940,  
+              left: 940,
               top: 0, // Position at the top
               height: "100%", // Fill the height of the header
               width: "auto", // Maintain aspect ratio; set a specific width if needed
@@ -52,7 +52,6 @@ function Government() {
               <a href="#" style={{ color: "#1236d0" }}>
                 Government
               </a>{" "}
-               
             </span>
           </div>
 
@@ -62,11 +61,17 @@ function Government() {
             style={{ position: "relative", zIndex: 1 }}
           >
             <h2 className="display-4 mb-3 fw-bold" style={{ color: "#1236d0" }}>
-            Government
+              Government
             </h2>
 
-            <div className="lead mb-4 mx-auto text-center px-5 col-10" style={{ color: "#1236d0" }}>
-            Empowering government agencies with cutting-edge technology to overcome challenges, enhance transparency, and deliver exceptional public services. Discover how our solutions drive progress and efficiency in the public sector
+            <div
+              className="lead mb-4 mx-auto text-center px-5 col-10"
+              style={{ color: "#1236d0" }}
+            >
+              Empowering government agencies with cutting-edge technology to
+              overcome challenges, enhance transparency, and deliver exceptional
+              public services. Discover how our solutions drive progress and
+              efficiency in the public sector
             </div>
           </div>
         </header>
@@ -523,7 +528,7 @@ function Government() {
                   <div className="card-body p-4">
                     <Link
                       className="text-decoration-none link-dark stretched-link"
-                      to="/WhatweDo/Product-Platform/Digital-Certificate"
+                      to="/product/digital-certificate"
                     >
                       <h5 className="card-title mb-3 text-primary fw-bold">
                         Digital Certificate
@@ -539,7 +544,7 @@ function Government() {
                     </p>
                     <div className="py-2  my-1">
                       <Link
-                        to="/WhatweDo/Product-Platform/Digital-Certificate"
+                        to="/product/digital-certificate"
                         className="btn btn-danger"
                       >
                         Leran More
@@ -559,7 +564,7 @@ function Government() {
                   <div className="card-body p-4">
                     <Link
                       className="text-decoration-none link-dark stretched-link"
-                      to="/WhatweDo/Product-Platform/Pet-Aadhar"
+                      to="/product/pet-aadhar"
                     >
                       <h5 className="card-title text-primary fw-bold mb-3">
                         Animal Aadhar
@@ -574,7 +579,7 @@ function Government() {
                         disease control and breeding management.
                       </p>
                     </div>
-                    <Link to="/WhatweDo/Product-Platform/Pet-Aadhar" className="btn btn-danger">
+                    <Link to="/product/pet-aadhar" className="btn btn-danger">
                       Learn more
                     </Link>
                   </div>
@@ -591,9 +596,11 @@ function Government() {
                   <div className="card-body p-4">
                     <Link
                       className="text-decoration-none link-dark stretched-link"
-                      to="/WhatweDo/Product-Platform/3PL-Solution"
+                      to="/product/3pl-solution"
                     >
-                      <h5 className="card-title mb-3 text-primary fw-bold">3PL</h5>
+                      <h5 className="card-title mb-3 text-primary fw-bold">
+                        3PL
+                      </h5>
                     </Link>
                     <p className="card-text mb-0">
                       Third-Party Logistics (3PL) involves outsourcing logistics
@@ -605,7 +612,10 @@ function Government() {
                     </p>
 
                     <div className="py-2  my-1">
-                      <Link to="/WhatweDo/Product-Platform/3PL-Solution" className="btn btn-danger">
+                      <Link
+                        to="/product/3pl-solution"
+                        className="btn btn-danger"
+                      >
                         learn More
                       </Link>
                     </div>

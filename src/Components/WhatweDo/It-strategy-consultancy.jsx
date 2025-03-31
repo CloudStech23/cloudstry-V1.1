@@ -78,7 +78,10 @@ function Consultancy() {
               Modern IT Strategy
             </h2>
 
-            <div className="lead mb-4 mx-auto text-center px-3 col-10" style={{ color: "#1236d0" }}>
+            <div
+              className="lead mb-4 mx-auto text-center px-3 col-10"
+              style={{ color: "#1236d0" }}
+            >
               The digital transformation landscape is ever-evolving, and
               businesses need robust IT strategies to stay competitive. Our IT
               Strategy Consultancy focuses on aligning technology with business
@@ -125,7 +128,7 @@ function Consultancy() {
                 infrastructure or adopting new technologies, Cloudstry Tech
                 guides organization toward sustainable success.
               </p>
-              <Link to="/Support" className="btn btn-danger">
+              <Link to="/support" className="btn btn-danger">
                 Talk to our Experts
               </Link>
             </div>
@@ -461,7 +464,7 @@ function Consultancy() {
                 scalable solutions that meet current needs while preparing you
                 for future expansion.
               </p>
-              <Link className="btn btn-danger text-white" to="/Support">
+              <Link className="btn btn-danger text-white" to="/support">
                 Start With Us
               </Link>
             </div>
@@ -500,7 +503,7 @@ function Consultancy() {
               Additionally, we focus on cost-effective, scalable solutions that
               meet current needs while preparing you for future expansion
             </p>
-            <Link className="btn btn-danger text-white" to="/Support">
+            <Link className="btn btn-danger text-white" to="/support">
               Start With Us
             </Link>
           </div>

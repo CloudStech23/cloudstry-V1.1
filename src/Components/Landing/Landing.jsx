@@ -74,20 +74,20 @@ function Landing() {
       id: 1,
       title: "Comprehensive Staffing Solutions for Global Captive Centers",
       image: staffingimage,
-      link: "/WhatweDo/Staffing-Solution",
+      link: "/staffing-solution",
     },
     {
       id: 2,
       title: "End-to-End Software Solutions and Support Services",
       image: softwareimage,
-      link: "/WhatweDo/IT-Solutions/Software-Services",
+      link: "/solutions/software-services",
     },
     {
       id: 3,
       title:
         "Holistic IT Strategy Consulting for Seamless Digital Transformation",
       image: strategyimage,
-      link: "/WhatweDo/IT-Solutions/IT-Strategy-Consultancy",
+      link: "/solutions/IT-strategy-consultancy",
     },
   ];
 
@@ -327,7 +327,7 @@ function Landing() {
                 </ul>
                 <Link
                   className="btn btn-danger text-white rounded-pill"
-                  to="/Support"
+                  to="/support"
                 >
                   Connect with us
                 </Link>

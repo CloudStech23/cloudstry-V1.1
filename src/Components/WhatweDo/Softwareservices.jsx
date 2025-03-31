@@ -32,11 +32,11 @@ function Softwareservices() {
   return (
     <div className="bg-light">
       <FadeOnScroll>
-      <header
+        <header
           className="text-white text-center py-5 position-relative"
           style={{
             // backgroundColor: "rgb(233, 239, 241)",
-            backgroundColor:"white",
+            backgroundColor: "white",
             minHeight: "12rem",
             // height:'100%',
             overflow: "hidden",
@@ -49,7 +49,7 @@ function Softwareservices() {
             alt="Decorative background"
             className="position-absolute"
             style={{
-              left: 940,  
+              left: 940,
               top: 0, // Position at the top
               height: "100%", // Fill the height of the header
               width: "auto", // Maintain aspect ratio; set a specific width if needed
@@ -79,11 +79,16 @@ function Softwareservices() {
             style={{ position: "relative", zIndex: 1 }}
           >
             <h2 className="display-4 mb-3 fw-bold" style={{ color: "#1236d0" }}>
-            Innovative Software Solutions
+              Innovative Software Solutions
             </h2>
 
-            <div className="lead mb-4 mx-auto text-center px-3 col-10" style={{ color: "#1236d0" }}>
-            Customized software solutions are essential for businesses navigating today's digital world. They can streamline operations, spark innovation, and align technology with strategic objectives.
+            <div
+              className="lead mb-4 mx-auto text-center px-3 col-10"
+              style={{ color: "#1236d0" }}
+            >
+              Customized software solutions are essential for businesses
+              navigating today's digital world. They can streamline operations,
+              spark innovation, and align technology with strategic objectives.
             </div>
           </div>
         </header>
@@ -108,7 +113,7 @@ function Softwareservices() {
             <div className="col-md-6 mb-2 order-last order-md-first">
               <h2
                 className="display-6 text-primary"
-                style={{ fontWeight: 300,fontSize:"32px" }}
+                style={{ fontWeight: 300, fontSize: "32px" }}
               >
                 Customized Software Solutions for Industry Leadership
               </h2>
@@ -133,7 +138,7 @@ function Softwareservices() {
                 with companies seeking software services that offer robust,
                 future-proof solutions to complex challenges.
               </p>
-              <Link to="/Support" className="btn btn-danger">
+              <Link to="/support" className="btn btn-danger">
                 Start With Us
               </Link>
             </div>
@@ -145,10 +150,10 @@ function Softwareservices() {
 
       {/* Card Section */}
       <FadeOnScroll animation="up">
-        <section  className="py-5 px-5">
-          <div  className="container px-4 my-3">
+        <section className="py-5 px-5">
+          <div className="container px-4 my-3">
             {/* <h3 className="text-danger fw-light display-5 text-center .customheading">Transformative Solutions</h3> */}
-            <div  className="row gx-5 px-4">
+            <div className="row gx-5 px-4">
               <div className="col-lg-4 mb-5">
                 <div className="card h-80 shadow border-0 service-card">
                   <div className="blackblur">
@@ -175,12 +180,12 @@ function Softwareservices() {
                       enhancing decision-making is crucial in today’s
                       data-driven world.
                     </p>
-                    <p  className=" transparent mt-2 ">
+                    <p className=" transparent mt-2 ">
                       <Link to="/" className="text-danger fw-bold">
                         Learn more
                       </Link>
                       <i
-                         className="fa fa-arrow-right text-danger mt-1 mx-1  trans"
+                        className="fa fa-arrow-right text-danger mt-1 mx-1  trans"
                         aria-hidden="true"
                       ></i>
                     </p>
@@ -212,12 +217,12 @@ function Softwareservices() {
                       costs, and quickly adapt to changing market demands
                       through seamless access to computing power and storage.
                     </p>
-                    <p  className=" transparent mt-2 ">
+                    <p className=" transparent mt-2 ">
                       <Link to="/" className="text-danger fw-bold">
                         Learn more
                       </Link>
                       <i
-                         className="fa fa-arrow-right text-danger mt-1 mx-1  trans"
+                        className="fa fa-arrow-right text-danger mt-1 mx-1  trans"
                         aria-hidden="true"
                       ></i>
                     </p>
@@ -347,10 +352,8 @@ function Softwareservices() {
       </FadeOnScroll>
 
       <FadeOnScroll animation="up">
-        <div className="row gx-0 px-5 py-5 " >
-          <div
-            className="col-xl-6 col-lg-4 d-flex  justify-content-center align-items-center"
-           >
+        <div className="row gx-0 px-5 py-5 ">
+          <div className="col-xl-6 col-lg-4 d-flex  justify-content-center align-items-center">
             <img
               className="img-fluid"
               src={soft2}
@@ -507,7 +510,7 @@ function Softwareservices() {
                 this journey and experience the difference that true dedication
                 and expertise can make. Your success is our promise.
               </p>
-              <Link className="btn btn-danger text-white" to="/Support">
+              <Link className="btn btn-danger text-white" to="/support">
                 Connect with us
               </Link>
             </div>
@@ -546,12 +549,15 @@ function Softwareservices() {
               experience the difference that true dedication and expertise can
               make. Your success is our promise.
             </p>
-            <Link className="btn btn-danger text-white" to="/Support">
+            <Link className="btn btn-danger text-white" to="/support">
               Connect with us
             </Link>
           </div>
 
-          <div style={{ position: "relative", zIndex: 1, width: "100%" }} className="px-5">
+          <div
+            style={{ position: "relative", zIndex: 1, width: "100%" }}
+            className="px-5"
+          >
             <img
               className="img-fluid rounded"
               src={soft4}

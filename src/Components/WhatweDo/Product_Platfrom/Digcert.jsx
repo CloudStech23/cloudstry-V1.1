@@ -16,12 +16,12 @@ import FadeOnScroll from "../../Animate/Motion";
 function Digitalcertificate() {
   return (
     <div>
-      <FadeOnScroll >
+      <FadeOnScroll>
         <header
           className="text-white text-center py-5 position-relative"
           style={{
             // backgroundColor: "rgb(233, 239, 241)",
-            backgroundColor:"white",
+            backgroundColor: "white",
             minHeight: "12rem",
             // height:'100%',
             overflow: "hidden",
@@ -34,7 +34,7 @@ function Digitalcertificate() {
             alt="Decorative background"
             className="position-absolute"
             style={{
-              left: 940,  
+              left: 940,
               top: 0, // Position at the top
               height: "100%", // Fill the height of the header
               width: "auto", // Maintain aspect ratio; set a specific width if needed
@@ -64,11 +64,15 @@ function Digitalcertificate() {
             style={{ position: "relative", zIndex: 1 }}
           >
             <h2 className="display-4 mb-3 fw-bold" style={{ color: "#1236d0" }}>
-            Digital Certificate Solutions
+              Digital Certificate Solutions
             </h2>
 
-            <div className="lead mb-4 mx-auto text-center px-3 col-10" style={{ color: "#1236d0" }}>
-            Streamlined digital certification for secure, verified interactions, Empowering industries with enhanced compliance.
+            <div
+              className="lead mb-4 mx-auto text-center px-3 col-10"
+              style={{ color: "#1236d0" }}
+            >
+              Streamlined digital certification for secure, verified
+              interactions, Empowering industries with enhanced compliance.
             </div>
           </div>
         </header>
@@ -99,7 +103,7 @@ function Digitalcertificate() {
                 authenticity and accessibility of credentials is more pressing
                 than ever.
               </p>
-              <Link to="/Support" className="btn btn-danger">
+              <Link to="/support" className="btn btn-danger">
                 Talk to our Experts
               </Link>
             </div>
@@ -300,7 +304,7 @@ function Digitalcertificate() {
               </div>
               <div className="col-xl-4 col-lg-4 col-md-6 col-sm-12 mb-3">
                 <div className="card bg-light py-4 rounded">
-                  <i  className="fa fa-id-card-o" aria-hidden="true"></i>
+                  <i className="fa fa-id-card-o" aria-hidden="true"></i>
                   <div className="card-body text-primary">
                     <h3 className="fs-1 fw-bold  mb-0">1M+</h3>
                     <p className="fs-5">credentials</p>

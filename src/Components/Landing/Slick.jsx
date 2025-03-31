@@ -88,27 +88,27 @@ export default function SwiperCarousel() {
     {
       title: "Digital Credential Solutions",
       desc: "Secure and verifiable digital certificates for seamless authentication and credential management.",
-      link: "/WhatweDo/Product-Platform/Digital-Certificate",
+      link: "/product/digital-certificate",
     },
     {
       title: "Cattle Management Platform",
       desc: "AI-powered cattle identification and tracking for optimized livestock management.",
-      link: "/WhatweDo/Product-Platform/Pet-Aadhar",
+      link: "/product/pet-aadhar",
     },
     {
       title: "GCC-Driven Staffing Solutions",
       desc: "Providing specialized talent for Global Captive Centers to drive operational excellence.",
-      link: "/WhatweDo/Staffing-Solution",
+      link: "/staffing-solution",
     },
     {
       title: "IT Strategy & Consultancy",
       desc: "Expert-driven IT roadmaps, digital transformation, and scalable tech solutions.",
-      link: "/WhatweDo/IT-Solutions/IT-Strategy-Consultancy",
+      link: "/solutions/IT-strategy-consultancy",
     },
     {
       title: "AI-Powered Software Solutions",
       desc: "Smart, scalable software designed to automate processes and enhance efficiency.",
-      link: "/WhatweDo/IT-Solutions/Software-Services",
+      link: "/solutions/software-services",
     },
   ];
 

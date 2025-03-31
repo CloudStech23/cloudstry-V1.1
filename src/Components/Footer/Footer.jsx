@@ -81,7 +81,7 @@ export default function Footer() {
                 >
                   <MDBDropdownItem>
                     <Link
-                      to="/WhatweDo/Product-Platform/Digital-Certificate"
+                      to="/product/digital-certificate"
                       className="text-reset nav-link "
                     >
                       Digital Certificate
@@ -89,7 +89,7 @@ export default function Footer() {
                   </MDBDropdownItem>
                   <MDBDropdownItem>
                     <Link
-                      to="/WhatweDo/Product-Platform/3PL-Solution"
+                      to="/product/3pl-solution"
                       className="text-reset nav-link"
                     >
                       3PL (3-Party Logistic)
@@ -97,7 +97,7 @@ export default function Footer() {
                   </MDBDropdownItem>
                   <MDBDropdownItem>
                     <Link
-                      to="/WhatweDo/Product-Platform/Pet-Aadhar"
+                      to="/product/pet-aadhar"
                       className="text-reset nav-link"
                     >
                       Pet Adhar
@@ -105,7 +105,7 @@ export default function Footer() {
                   </MDBDropdownItem>
                   <MDBDropdownItem>
                     <Link
-                      to="/Industries/Government"
+                      to="/induistries/government"
                       className="text-reset nav-link"
                     >
                       Government
@@ -119,7 +119,7 @@ export default function Footer() {
 
                 <p>
                   <Link
-                    to="/WhatweDo/Product-Platform/Digital-Certificate"
+                    to="/product/digital-certificate"
                     className="text-reset nav-link"
                   >
                     Digital Certificate
@@ -127,7 +127,7 @@ export default function Footer() {
                 </p>
                 <p>
                   <Link
-                    to="/WhatweDo/Product-Platform/3PL-Solution"
+                    to="/product/3pl-solution"
                     className="text-reset nav-link"
                   >
                     3PL (3-Party Logistic)
@@ -135,7 +135,7 @@ export default function Footer() {
                 </p>
                 <p>
                   <Link
-                    to="/WhatweDo/Product-Platform/Pet-Aadhar"
+                    to="/product/pet-aadhar"
                     className="text-reset nav-link"
                   >
                     Pet Adhar
@@ -143,7 +143,7 @@ export default function Footer() {
                 </p>
                 <p>
                   <Link
-                    to="/Industries/Government"
+                    to="/industries/government"
                     className="text-reset nav-link"
                   >
                     Government
@@ -172,7 +172,7 @@ export default function Footer() {
                 >
                   <MDBDropdownItem>
                     <Link
-                      to="/WhatweDo/IT-Solutions/IT-Strategy-Consultancy"
+                      to="/solutions/IT-strategy-consultancy"
                       className="text-reset nav-link"
                     >
                       It Strategy Consultancy
@@ -180,7 +180,7 @@ export default function Footer() {
                   </MDBDropdownItem>
                   <MDBDropdownItem>
                     <Link
-                      to="/Industries/Education"
+                      to="/industries/education"
                       className="text-reset nav-link"
                     >
                       Education
@@ -188,7 +188,7 @@ export default function Footer() {
                   </MDBDropdownItem>
                   <MDBDropdownItem>
                     <Link
-                      to="/Industries/Logistic"
+                      to="/industries/logistic"
                       className="text-reset nav-link"
                     >
                       Logistic
@@ -196,7 +196,7 @@ export default function Footer() {
                   </MDBDropdownItem>
                   <MDBDropdownItem>
                     <Link
-                      to="/WhatweDo/Staffing-Solution"
+                      to="/staffing-solution"
                       className="text-reset nav-link"
                     >
                       Staffing Solution
@@ -209,7 +209,7 @@ export default function Footer() {
                 <h6 className="text-uppercase fw-bold mb-4">Industries</h6>
                 <p>
                   <Link
-                    to="/WhatweDo/IT-Solutions/IT-Strategy-Consultancy"
+                    to="/solutions/IT-strategy-consultancy"
                     className="text-reset nav-link"
                   >
                     It Strategy Consultancy
@@ -217,7 +217,7 @@ export default function Footer() {
                 </p>
                 <p>
                   <Link
-                    to="/Industries/Education"
+                    to="/industries/education"
                     className="text-reset nav-link"
                   >
                     Education
@@ -225,22 +225,19 @@ export default function Footer() {
                 </p>
                 <p>
                   <Link
-                    to="/Industries/Logistic"
+                    to="/industries/logistic"
                     className="text-reset nav-link"
                   >
                     Logistic
                   </Link>
                 </p>
                 <p>
-                  <Link
-                    to="/WhatweDo/Staffing-Solution"
-                    className="text-reset nav-link"
-                  >
+                  <Link to="/staffing-solution" className="text-reset nav-link">
                     Staffing Solution
                   </Link>
                 </p>
                 <p>
-                  <Link to="/Support" className="text-reset nav-link">
+                  <Link to="/support" className="text-reset nav-link">
                     Contact Us
                   </Link>
                 </p>

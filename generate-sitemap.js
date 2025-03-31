@@ -4,23 +4,23 @@ const path = require("path");
 
 const links = [
   {
-    url: "/WhatweDo/Product-Platform/Digital-Certificate",
+    url: "/product/digital-certificate",
     changefreq: "weekly",
     priority: 0.9,
   },
   {
-    url: "/WhatweDo/Product-Platform/Pet-Aadhar",
+    url: "/product/pet-aadhar",
     changefreq: "weekly",
     priority: 0.8,
   },
   {
-    url: "/WhatweDo/IT-Solutions/Software-Services",
+    url: "/solutions/software-services",
     changefreq: "weekly",
     priority: 0.8,
   },
-  { url: "/WhatweDo/Staffing-Solution", changefreq: "weekly", priority: 0.8 },
-  { url: "/Team-Cloudstry", changefreq: "weekly", priority: 0.8 },
-  { url: "/Support", changefreq: "weekly", priority: 0.8 },
+  { url: "/staffing-solution", changefreq: "weekly", priority: 0.8 },
+  { url: "/team", changefreq: "weekly", priority: 0.8 },
+  { url: "/support", changefreq: "weekly", priority: 0.8 },
 ];
 
 async function generateSitemap() {

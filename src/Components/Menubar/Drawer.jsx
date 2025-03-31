@@ -94,7 +94,7 @@ function Menudrawer({ open, onClose }) {
                   <Nav className="submenu shadow">
                     <Nav.Item
                       as={NavLink}
-                      to="/WhatweDo/Product-Platform/Digital-Certificate"
+                      to="/product/digital-certificate"
                       className="nav-item text-white"
                       onClick={handleNavLinkClick}
                     >
@@ -103,7 +103,7 @@ function Menudrawer({ open, onClose }) {
                     <br />
                     <Nav.Item
                       as={NavLink}
-                      to="/WhatweDo/Product-Platform/Pet-Aadhar"
+                      to="/product/pet-aadhar"
                       className="nav-item text-white"
                       onClick={handleNavLinkClick}
                     >
@@ -112,7 +112,7 @@ function Menudrawer({ open, onClose }) {
                     <br />
                     <Nav.Item
                       as={NavLink}
-                      to="/WhatweDo/Product-Platform/3PL-Solution"
+                      to="/product/3pl-solution"
                       className="nav-item text-white"
                       onClick={handleNavLinkClick}
                     >
@@ -138,7 +138,7 @@ function Menudrawer({ open, onClose }) {
                   <Nav className="submenu shadow">
                     <Nav.Item
                       as={NavLink}
-                      to="/WhatweDo/IT-Solutions/IT-Strategy-Consultancy"
+                      to="/solutions/IT-strategy-consultancy"
                       className="nav-item text-white"
                       onClick={handleNavLinkClick}
                     >
@@ -147,7 +147,7 @@ function Menudrawer({ open, onClose }) {
                     <br />
                     <Nav.Item
                       as={NavLink}
-                      to="/WhatweDo/IT-Solutions/Software-Services"
+                      to="/solutions/software-services"
                       className="nav-item text-white"
                       onClick={handleNavLinkClick}
                     >
@@ -159,7 +159,7 @@ function Menudrawer({ open, onClose }) {
                 <br />
                 <Nav.Item
                   as={NavLink}
-                  to="/WhatweDo/Staffing-Solution"
+                  to="/staffing-solution"
                   className="nav-item text-white"
                   onClick={handleNavLinkClick}
                 >
@@ -187,7 +187,7 @@ function Menudrawer({ open, onClose }) {
               <Nav className="submenu shadow">
                 <Nav.Item
                   as={NavLink}
-                  to="/Industries/Education"
+                  to="/industries/education"
                   className="nav-item text-white"
                   onClick={handleNavLinkClick}
                 >
@@ -196,7 +196,7 @@ function Menudrawer({ open, onClose }) {
                 <br />
                 <Nav.Item
                   as={NavLink}
-                  to="/Industries/Government"
+                  to="/industries/government"
                   className="nav-item text-white"
                   onClick={handleNavLinkClick}
                 >
@@ -205,7 +205,7 @@ function Menudrawer({ open, onClose }) {
                 <br />
                 <Nav.Item
                   as={NavLink}
-                  to="/Industries/Health-Insurance"
+                  to="/industries/health_and_insurance"
                   className="nav-item text-white"
                   onClick={handleNavLinkClick}
                 >
@@ -214,7 +214,7 @@ function Menudrawer({ open, onClose }) {
                 <br />
                 <Nav.Item
                   as={NavLink}
-                  to="/Industries/Logistic"
+                  to="/industries/logistic"
                   className="nav-item text-white"
                   onClick={handleNavLinkClick}
                 >
@@ -226,7 +226,7 @@ function Menudrawer({ open, onClose }) {
             <Nav.Item
               className="nav-item text-white menulink2"
               as={NavLink}
-              to="/Team-Cloudstry"
+              to="/team"
               onClick={handleNavLinkClick}
             >
               Meet Leadership
@@ -234,7 +234,7 @@ function Menudrawer({ open, onClose }) {
             <Nav.Item
               className="nav-item text-white menulink2"
               as={NavLink}
-              to="/Support"
+              to="/support"
               onClick={handleNavLinkClick}
             >
               Contact us

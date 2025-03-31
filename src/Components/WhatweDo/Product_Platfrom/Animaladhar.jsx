@@ -27,11 +27,11 @@ function Petadhar() {
     <div>
       {/* Navigation Path */}
       <FadeOnScroll>
-      <header
+        <header
           className="text-white text-center py-5 position-relative"
           style={{
             // backgroundColor: "rgb(233, 239, 241)",
-            backgroundColor:"white",
+            backgroundColor: "white",
             minHeight: "12rem",
             // height:'100%',
             overflow: "hidden",
@@ -44,7 +44,7 @@ function Petadhar() {
             alt="Decorative background"
             className="position-absolute"
             style={{
-              left: 940,  
+              left: 940,
               top: 0, // Position at the top
               height: "100%", // Fill the height of the header
               width: "auto", // Maintain aspect ratio; set a specific width if needed
@@ -74,11 +74,15 @@ function Petadhar() {
             style={{ position: "relative", zIndex: 1 }}
           >
             <h2 className="display-4 mb-3 fw-bold" style={{ color: "#1236d0" }}>
-            Livestock Digital Identification
+              Livestock Digital Identification
             </h2>
 
-            <div className="lead mb-4 mx-auto text-center px-3 col-10" style={{ color: "#1236d0" }}>
-            Secure, scalable, and future-ready identification for pets. Simplifying pet management and tracking with advanced technology..
+            <div
+              className="lead mb-4 mx-auto text-center px-3 col-10"
+              style={{ color: "#1236d0" }}
+            >
+              Secure, scalable, and future-ready identification for pets.
+              Simplifying pet management and tracking with advanced technology..
             </div>
           </div>
         </header>
@@ -94,7 +98,7 @@ function Petadhar() {
               </span>
               <h2
                 className=" display-6 text-primary "
-                style={{ fontWeight: 300,fontSize:'35px' }}
+                style={{ fontWeight: 300, fontSize: "35px" }}
               >
                 Pet Aadhar: A New Era in Pet Management
               </h2>
@@ -107,7 +111,7 @@ function Petadhar() {
                 is essential for the continued growth and modernization of the
                 sector.
               </p>
-              <Link to="/Support" className="btn btn-danger">
+              <Link to="/support" className="btn btn-danger">
                 Talk to our Experts
               </Link>
             </div>
@@ -213,7 +217,7 @@ function Petadhar() {
       </FadeOnScroll>
 
       <FadeOnScroll animation="up">
-        <section  className="py-5 bg-whitet text-center">
+        <section className="py-5 bg-whitet text-center">
           <section className="pb-5">
             <div className="container px-5">
               <div className="half-underline-container">
@@ -482,7 +486,7 @@ function Petadhar() {
                     width={504}
                     src={img3}
                     alt="Cloudstry Technologies"
-                   />
+                  />
                 </div>
 
                 {/* Text Section */}
