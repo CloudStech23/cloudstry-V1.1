@@ -3,17 +3,37 @@ import { Data } from "./Teamdata";
 import { MDBIcon } from "mdb-react-ui-kit";
 import bg from "../Images/header-bg.png";
 import FadeOnScroll from "../Animate/Motion";
+import { Helmet } from "react-helmet-async";
 
 function Team() {
   return (
     <div className="">
+      <Helmet>
+        <title>Team | CloudstryTech</title>
+        <meta
+          name="description"
+          content="Meet the leaders shaping our future with transformative vision and expertise"
+        />
+        <meta name="keywords" content="Team cloudstry,  CloudstryTech team" />
+        <meta name="robots" content="index, follow" />
+
+        <link rel="canonical" href="https://www.cloudstrytech.com/team" />
+
+        <meta property="og:title" content="Team | CloudstryTech" />
+        <meta
+          property="og:description"
+          content="Meet the leaders shaping our future with transformative vision and expertise"
+        />
+        <meta property="og:url" content="https://www.cloudstrytech.com/team" />
+        <meta property="og:type" content="website" />
+      </Helmet>
       {/* Header Section */}
       <FadeOnScroll animation="top">
-      <header
+        <header
           className="text-white text-center py-5 position-relative"
           style={{
             // backgroundColor: "rgb(233, 239, 241)",
-            backgroundColor:"white",
+            backgroundColor: "white",
             minHeight: "12rem",
             // height:'100%',
             overflow: "hidden",
@@ -26,7 +46,7 @@ function Team() {
             alt="Decorative background"
             className="position-absolute"
             style={{
-              left: 940,  
+              left: 940,
               top: 0, // Position at the top
               height: "100%", // Fill the height of the header
               width: "auto", // Maintain aspect ratio; set a specific width if needed
@@ -43,10 +63,7 @@ function Team() {
               <a href="/" style={{ color: "#1236d0" }}>
                 /Meet Leadership
               </a>{" "}
-              <a href="#" style={{ color: "#1236d0" }}>
-                 
-              </a>{" "}
-               
+              <a href="#" style={{ color: "#1236d0" }}></a>{" "}
             </span>
           </div>
 
@@ -56,11 +73,16 @@ function Team() {
             style={{ position: "relative", zIndex: 1 }}
           >
             <h2 className="display-4 mb-3 fw-bold" style={{ color: "#1236d0" }}>
-            Visionary Leadership
+              Visionary Leadership
             </h2>
 
-            <div className="lead mb-4 mx-auto text-center px-5 col-10" style={{ color: "#1236d0" }}>
-            Uniting strategic insights and forward-thinking solutions to guide our company toward excellence. Meet the leaders shaping our future with transformative vision and expertise.
+            <div
+              className="lead mb-4 mx-auto text-center px-5 col-10"
+              style={{ color: "#1236d0" }}
+            >
+              Uniting strategic insights and forward-thinking solutions to guide
+              our company toward excellence. Meet the leaders shaping our future
+              with transformative vision and expertise.
             </div>
           </div>
         </header>

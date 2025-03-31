@@ -12,6 +12,7 @@ import "./Software.css";
 // import '../WhatweDo/Product_Platfrom/Common.css'
 import { Link } from "react-router-dom";
 import FadeOnScroll from "../Animate/Motion";
+import { Helmet } from "react-helmet-async";
 
 function Softwareservices() {
   const [isSmallScreen, setIsSmallScreen] = useState(window.innerWidth < 768);
@@ -31,6 +32,28 @@ function Softwareservices() {
   }, []);
   return (
     <div className="bg-light">
+      <Helmet>
+        <title> Software Solutions | CloudstryTech</title>
+        <meta name="description" content=" " />
+        <meta name="keywords" content="CloudstryTech" />
+        <meta name="robots" content="index, follow" />
+
+        <link
+          rel="canonical"
+          href="https://www.cloudstrytech.com/solutions/software-services "
+        />
+
+        <meta
+          property="og:title"
+          content="Software Solutions | CloudstryTech"
+        />
+        <meta property="og:description" content=" " />
+        <meta
+          property="og:url"
+          content="https://www.cloudstrytech.com/solutions/software-services"
+        />
+        <meta property="og:type" content="website" />
+      </Helmet>
       <FadeOnScroll>
         <header
           className="text-white text-center py-5 position-relative"

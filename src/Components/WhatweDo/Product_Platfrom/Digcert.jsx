@@ -12,10 +12,32 @@ import img8 from "./Images/dc.association.jpg";
 import img9 from "./Images/dc.corporation.jpg";
 import bg from "./../../Images/header-bg.png";
 import FadeOnScroll from "../../Animate/Motion";
-
+import { Helmet } from "react-helmet-async";
 function Digitalcertificate() {
   return (
     <div>
+      <Helmet>
+        <title> Digital Certificate | CloudstryTech</title>
+        <meta name="description" content=" " />
+        <meta name="keywords" content="CloudstryTech" />
+        <meta name="robots" content="index, follow" />
+
+        <link
+          rel="canonical"
+          href="https://www.cloudstrytech.com/product/digital-certificate"
+        />
+
+        <meta
+          property="og:title"
+          content=" Digital Certificate | CloudstryTech"
+        />
+        <meta property="og:description" content=" " />
+        <meta
+          property="og:url"
+          content="https://www.cloudstrytech.com/product/digital-certificate"
+        />
+        <meta property="og:type" content="website" />
+      </Helmet>
       <FadeOnScroll>
         <header
           className="text-white text-center py-5 position-relative"

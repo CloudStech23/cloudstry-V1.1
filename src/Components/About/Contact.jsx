@@ -17,6 +17,7 @@ import bg from "../Images/header-bg.png";
 import img1 from "../Images/contact-img.jpg";
 import FadeOnScroll from "../Animate/Motion";
 import axios from "axios";
+import { Helmet } from "react-helmet-async";
 
 function Contact() {
   const [isSmallScreen, setIsSmallScreen] = useState(window.innerWidth < 768);
@@ -78,6 +79,28 @@ function Contact() {
 
   return (
     <div className="bg-light">
+      <Helmet>
+        <title>Contact Us | CloudstryTech</title>
+        <meta
+          name="description"
+          content="Get in touch with CloudstryTech for IT consulting, cloud solutions, and digital transformation services. Reach out today!"
+        />
+        <meta name="keywords" content="Contact Us CloudstryTech" />
+        <meta name="robots" content="index, follow" />
+
+        <link rel="canonical" href="https://www.cloudstrytech.com/support" />
+
+        <meta property="og:title" content="Contact Us | CloudstryTech" />
+        <meta
+          property="og:description"
+          content="Get in touch with CloudstryTech for IT consulting, cloud solutions, and digital transformation services. Reach out today!"
+        />
+        <meta
+          property="og:url"
+          content="https://www.cloudstrytech.com/support"
+        />
+        <meta property="og:type" content="website" />
+      </Helmet>
       <FadeOnScroll>
         <header
           className="text-white text-center py-5 position-relative"

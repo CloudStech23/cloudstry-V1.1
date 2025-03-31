@@ -5,9 +5,32 @@ import img3 from "./Images/st.third.jpg";
 import img4 from "./Images/st.fourth.jpg";
 import bg from "../Images/header-bg.png";
 import FadeOnScroll from "../Animate/Motion";
+import { Helmet } from "react-helmet-async";
 function Staffingsolution() {
   return (
     <div>
+      <Helmet>
+        <title> Staffing Solution | CloudstryTech</title>
+        <meta name="description" content=" " />
+        <meta name="keywords" content="CloudstryTech" />
+        <meta name="robots" content="index, follow" />
+
+        <link
+          rel="canonical"
+          href="https://www.cloudstrytech.com/staffing-solution"
+        />
+
+        <meta
+          property="og:title"
+          content=" Staffing Solution | CloudstryTech"
+        />
+        <meta property="og:description" content=" " />
+        <meta
+          property="og:url"
+          content="https://www.cloudstrytech.com/staffing-solution"
+        />
+        <meta property="og:type" content="website" />
+      </Helmet>
       <FadeOnScroll>
         <header
           className="text-white text-center py-5 position-relative"

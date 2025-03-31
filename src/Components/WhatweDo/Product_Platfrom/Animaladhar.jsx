@@ -7,6 +7,7 @@ import img2 from "./Images/petadhar.second.jpeg";
 import img3 from "./Images/petadhar.third.jpg";
 import FadeOnScroll from "../../Animate/Motion";
 import bg from "./../../Images/header-bg.png";
+import { Helmet } from "react-helmet-async";
 
 function Petadhar() {
   const [isSmallScreen, setIsSmallScreen] = useState(window.innerWidth < 768);
@@ -25,6 +26,25 @@ function Petadhar() {
   }, []);
   return (
     <div>
+      <Helmet>
+        <title> Pet-Aadhar | CloudstryTech</title>
+        <meta name="description" content=" " />
+        <meta name="keywords" content="CloudstryTech" />
+        <meta name="robots" content="index, follow" />
+
+        <link
+          rel="canonical"
+          href="https://www.cloudstrytech.com/product/pet-aadhar "
+        />
+
+        <meta property="og:title" content="Pet-Aadhar | CloudstryTech" />
+        <meta property="og:description" content=" " />
+        <meta
+          property="og:url"
+          content="https://www.cloudstrytech.com/product/pet-aadhar"
+        />
+        <meta property="og:type" content="website" />
+      </Helmet>
       {/* Navigation Path */}
       <FadeOnScroll>
         <header

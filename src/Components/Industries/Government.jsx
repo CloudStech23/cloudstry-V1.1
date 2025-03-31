@@ -10,10 +10,36 @@ import img7 from "./Images/gov.seven.jpg";
 import digital from "./Images/gov.digital.jpg";
 import bg from "../Images/header-bg.png";
 import FadeOnScroll from "../Animate/Motion";
+import { Helmet } from "react-helmet-async";
 
 function Government() {
   return (
     <div>
+      <Helmet>
+        <title> Government | CloudstryTech</title>
+        <meta
+          name="description"
+          content="Driving innovation in the public sector with secure, scalable IT solutions that enhance governance, transparency, and citizen services"
+        />
+        <meta name="keywords" content="Government cloudstry,  CloudstryTech" />
+        <meta name="robots" content="index, follow" />
+
+        <link
+          rel="canonical"
+          href="https://www.cloudstrytech.com/industries/government"
+        />
+
+        <meta property="og:title" content="Government | CloudstryTech" />
+        <meta
+          property="og:description"
+          content=" Driving innovation in the public sector with secure, scalable IT solutions that enhance governance, transparency, and citizen services"
+        />
+        <meta
+          property="og:url"
+          content="https://www.cloudstrytech.com/industries/government"
+        />
+        <meta property="og:type" content="website" />
+      </Helmet>
       <FadeOnScroll>
         <header
           className="text-white text-center py-5 position-relative"

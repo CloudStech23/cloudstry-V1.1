@@ -5,15 +5,44 @@ import img3 from "./Images/ed.third.jpg";
 import img4 from "./Images/ed.fourth.jpg";
 import bg from "../Images/header-bg.png";
 import FadeOnScroll from "../Animate/Motion";
+import { Helmet } from "react-helmet-async";
 function Education() {
   return (
     <div>
+      <Helmet>
+        <title> Education | CloudstryTech</title>
+        <meta
+          name="description"
+          content="Empowering education with digital transformation, cloud solutions, and IT strategy to enhance learning experiences and operational efficiency"
+        />
+        <meta
+          name="keywords"
+          content="Education industry cloudstry,  CloudstryTech education industries"
+        />
+        <meta name="robots" content="index, follow" />
+
+        <link
+          rel="canonical"
+          href="https://www.cloudstrytech.com/industries/education"
+        />
+
+        <meta property="og:title" content=" Education | CloudstryTech" />
+        <meta
+          property="og:description"
+          content="Empowering education with digital transformation, cloud solutions, and IT strategy to enhance learning experiences and operational efficiency"
+        />
+        <meta
+          property="og:url"
+          content="https://www.cloudstrytech.com/industries/education"
+        />
+        <meta property="og:type" content="website" />
+      </Helmet>
       <FadeOnScroll>
-      <header
+        <header
           className="text-white text-center py-5 position-relative"
           style={{
             // backgroundColor: "rgb(233, 239, 241)",
-            backgroundColor:"white",
+            backgroundColor: "white",
             minHeight: "12rem",
             // height:'100%',
             overflow: "hidden",
@@ -26,7 +55,7 @@ function Education() {
             alt="Decorative background"
             className="position-absolute"
             style={{
-              left: 940,  
+              left: 940,
               top: 0, // Position at the top
               height: "100%", // Fill the height of the header
               width: "auto", // Maintain aspect ratio; set a specific width if needed
@@ -46,7 +75,6 @@ function Education() {
               <a href="#" style={{ color: "#1236d0" }}>
                 Educations
               </a>{" "}
-               
             </span>
           </div>
 
@@ -56,11 +84,17 @@ function Education() {
             style={{ position: "relative", zIndex: 1 }}
           >
             <h2 className="display-4 mb-3 fw-bold" style={{ color: "#1236d0" }}>
-            Innovative Education
+              Innovative Education
             </h2>
 
-            <div className="lead mb-4 mx-auto text-center px-5 col-10" style={{ color: "#1236d0" }}>
-            Empowering educational institutions with state-of-the-art solutions to tackle challenges, foster engagement, and achieve excellence. Explore how our technology transforms the learning experience and drives educational success
+            <div
+              className="lead mb-4 mx-auto text-center px-5 col-10"
+              style={{ color: "#1236d0" }}
+            >
+              Empowering educational institutions with state-of-the-art
+              solutions to tackle challenges, foster engagement, and achieve
+              excellence. Explore how our technology transforms the learning
+              experience and drives educational success
             </div>
           </div>
         </header>
@@ -187,7 +221,6 @@ function Education() {
                       cyber threats.
                     </span>
                   </li>
-                   
                 </ul>
                 <p className="text-muted">
                   These challenges underscore the need for innovative solutions
@@ -335,7 +368,6 @@ function Education() {
                       breaches and ensures compliance with privacy regulations.
                     </span>
                   </li>
-                   
                 </ul>
                 <p className="text-muted">
                   Digitalization is not just solving problems; it is

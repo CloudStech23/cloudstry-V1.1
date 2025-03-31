@@ -6,10 +6,39 @@ import img3 from "./Images/hi.fourth.jpg";
 import bg from "../Images/header-bg.png";
 
 import FadeOnScroll from "../Animate/Motion";
+import { Helmet } from "react-helmet-async";
 
 function Healthinsurance() {
   return (
     <div>
+      <Helmet>
+        <title> Health and Insurance | CloudstryTech</title>
+        <meta
+          name="description"
+          content="Revolutionizing the insurance sector with digital solutions that enhance customer engagement, risk management, and operational efficiency "
+        />
+        <meta name="keywords" content="CloudstryTech" />
+        <meta name="robots" content="index, follow" />
+
+        <link
+          rel="canonical"
+          href="https://www.cloudstrytech.com/industries/health_and_insurance "
+        />
+
+        <meta
+          property="og:title"
+          content="Health and Insurance | CloudstryTech"
+        />
+        <meta
+          property="og:description"
+          content="Revolutionizing the insurance sector with digital solutions that enhance customer engagement, risk management, and operational efficiency"
+        />
+        <meta
+          property="og:url"
+          content="https://www.cloudstrytech.com/industries/health_and_insurance"
+        />
+        <meta property="og:type" content="website" />
+      </Helmet>
       <FadeOnScroll>
         <header
           className="text-white text-center py-5 position-relative"

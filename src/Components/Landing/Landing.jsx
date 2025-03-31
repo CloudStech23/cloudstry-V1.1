@@ -18,6 +18,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
+import { Helmet } from "react-helmet-async";
 
 import { Navigation, Pagination } from "swiper/modules";
 import {
@@ -94,65 +95,26 @@ function Landing() {
   const [isSticky, setIsSticky] = useState(true); // Track sticky state
 
   return (
-    // <div className="container-fluid d-flex justify-content-center align-items-center min-vh-100">
-    //   <div className="text-center py-5 px-5">
-    //     <div className="text-primary fw-light display-5">
-    //       Home page is work in progess..
-    //       <span>
-    //         <i className="fa fa-spinner spinning" aria-hidden="true"></i>
-    //       </span>
-
-    //     </div>
-    //   </div>
-    //   <style jsx>{`
-    //     .spinning {
-    //       font-size: 3rem; /* Adjust size if needed */
-    //       display: inline-block;
-    //       animation: spin 2s linear infinite;
-    //     }
-
-    //     @keyframes spin {
-    //       0% { transform: rotate(0deg); }
-    //       100% { transform: rotate(360deg); }
-    //     }
-    //   `}</style>
-    // </div>
     <div>
+      <Helmet>
+        <title>
+          {" "}
+          Leading the Way in Business Tech Innovation | CloudstryTech
+        </title>
+        <meta name="description" content="" />
+        <meta name="keywords" content="CloudstryTech" />
+        <meta name="robots" content="index, follow" />
+
+        <link rel="canonical" href="https://www.cloudstrytech.com/ " />
+
+        <meta property="og:title" content="Home | CloudstryTech" />
+        <meta property="og:description" content=" " />
+        <meta property="og:url" content="https://www.cloudstrytech.com/" />
+        <meta property="og:type" content="website" />
+      </Helmet>
       <FadeOnScroll>
         <Slick />
       </FadeOnScroll>
-      {/* <FadeOnScroll>
-        <Container className="my-5 px-5">
-          <Row className="g-5">
-            {features.map((feature, index) => (
-              <Col md={4} key={index}>
-                <SlideFromLeft delay={index * 200}>
-                  <Card className="h-100 text-center shadow-sm">
-                    {" "}
-                  
-                    <Card.Body>
-                      <div className="d-flex align-items-center justify-content-center mb-3">
-                        <div
-                          className="me-2"
-                          style={{ fontSize: "2rem", color: "#0056b3" }}
-                        >
-                          {feature.icon}
-                        </div>
-                        <Card.Title className="text-primary m-0">
-                          {feature.title}
-                        </Card.Title>
-                      </div>
-                      <Card.Text className="text-muted">
-                        {feature.description}
-                      </Card.Text>
-                    </Card.Body>
-                  </Card>
-                </SlideFromLeft>
-              </Col>
-            ))}
-          </Row>
-        </Container>
-      </FadeOnScroll> */}
 
       <FadeOnScroll animation=" ">
         <section className="service-section" style={{ marginTop: "5rem" }}>

@@ -7,10 +7,33 @@ import img3 from "./Images/tpl.innovative.jpg";
 import img4 from "./Images/tpl.government.jpg";
 import bg from "./../../Images/header-bg.png";
 import FadeOnScroll from "../../Animate/Motion";
+import { Helmet } from "react-helmet-async";
 
 function Thirdpartylogistic() {
   return (
     <div>
+      <Helmet>
+        <title> 3PL | CloudstryTech</title>
+        <meta name="description" content=" " />
+        <meta name="keywords" content="CloudstryTech" />
+        <meta name="robots" content="index, follow" />
+
+        <link
+          rel="canonical"
+          href="https://www.cloudstrytech.com/product/3pl-solution "
+        />
+
+        <meta
+          property="og:title"
+          content="Third Party Logistics | CloudstryTech"
+        />
+        <meta property="og:description" content=" " />
+        <meta
+          property="og:url"
+          content="https://www.cloudstrytech.com/product/3pl-solution"
+        />
+        <meta property="og:type" content="website" />
+      </Helmet>
       <FadeOnScroll>
         <header
           className="text-white text-center py-5 position-relative"

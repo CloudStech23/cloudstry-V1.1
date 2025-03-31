@@ -6,10 +6,36 @@ import img1 from "./Images/gov.first.jpg";
 import img2 from "./Images/lg.second.jpg";
 import img3 from "./Images/gov.seven.jpg";
 import FadeOnScroll from "../Animate/Motion";
+import { Helmet } from "react-helmet-async";
 
 function Logistic() {
   return (
     <div>
+      <Helmet>
+        <title> Logistic | CloudstryTech</title>
+        <meta
+          name="description"
+          content="Optimizing logistics and supply chain management with advanced IT solutions, ensuring efficiency, automation, and real-time tracking "
+        />
+        <meta name="keywords" content="CloudstryTech" />
+        <meta name="robots" content="index, follow" />
+
+        <link
+          rel="canonical"
+          href="https://www.cloudstrytech.com/industries/logistic "
+        />
+
+        <meta property="og:title" content=" Logistic | CloudstryTech" />
+        <meta
+          property="og:description"
+          content="Optimizing logistics and supply chain management with advanced IT solutions, ensuring efficiency, automation, and real-time tracking"
+        />
+        <meta
+          property="og:url"
+          content="https://www.cloudstrytech.com/industries/logistic"
+        />
+        <meta property="og:type" content="website" />
+      </Helmet>
       <FadeOnScroll>
         <header
           className="text-white text-center py-5 position-relative"

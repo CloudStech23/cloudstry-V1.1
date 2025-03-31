@@ -7,6 +7,7 @@ import img4 from "./Images/isc.fourth.jpg";
 import img5 from "./Images/isc.fifth.jpg";
 import bg from "../Images/header-bg.png";
 import FadeOnScroll from "../Animate/Motion";
+import { Helmet } from "react-helmet-async";
 
 function Consultancy() {
   const [isSmallScreen, setIsSmallScreen] = useState(window.innerWidth < 768);
@@ -27,6 +28,28 @@ function Consultancy() {
 
   return (
     <div>
+      <Helmet>
+        <title> IT-Strategy-Consultancy | CloudstryTech</title>
+        <meta name="description" content=" " />
+        <meta name="keywords" content="CloudstryTech" />
+        <meta name="robots" content="index, follow" />
+
+        <link
+          rel="canonical"
+          href="https://www.cloudstrytech.com/solutions/IT-strategy-consultancy "
+        />
+
+        <meta
+          property="og:title"
+          content="IT-Strategy-Consultancy | CloudstryTech"
+        />
+        <meta property="og:description" content=" " />
+        <meta
+          property="og:url"
+          content="https://www.cloudstrytech.com/solutions/IT-strategy-consultancy"
+        />
+        <meta property="og:type" content="website" />
+      </Helmet>
       <FadeOnScroll>
         <header
           className="text-white text-center py-5 position-relative"
