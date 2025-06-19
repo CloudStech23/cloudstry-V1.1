@@ -35,7 +35,10 @@ function Softwareservices() {
       <Helmet>
         <title> Software Solutions | CloudstryTech</title>
         <meta name="description" content=" " />
-        <meta name="keywords" content="CloudstryTech" />
+        <meta
+          name="keywords"
+          content="Cloudstry Technologies,Cloudstry Technologies Software Solutions"
+        />
         <meta name="robots" content="index, follow" />
 
         <link
@@ -45,7 +48,7 @@ function Softwareservices() {
 
         <meta
           property="og:title"
-          content="Software Solutions | CloudstryTech"
+          content="Software Solutions | Cloudstry Technologies"
         />
         <meta property="og:description" content=" " />
         <meta

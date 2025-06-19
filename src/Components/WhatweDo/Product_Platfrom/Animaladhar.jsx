@@ -29,7 +29,7 @@ function Petadhar() {
       <Helmet>
         <title> Pet-Aadhar | CloudstryTech</title>
         <meta name="description" content=" " />
-        <meta name="keywords" content="CloudstryTech" />
+        <meta name="keywords" content="Cloudstry Technologies" />
         <meta name="robots" content="index, follow" />
 
         <link
@@ -37,7 +37,10 @@ function Petadhar() {
           href="https://www.cloudstrytech.com/product/pet-aadhar "
         />
 
-        <meta property="og:title" content="Pet-Aadhar | CloudstryTech" />
+        <meta
+          property="og:title"
+          content="Pet-Aadhar | Cloudstry Technologies"
+        />
         <meta property="og:description" content=" " />
         <meta
           property="og:url"
@@ -583,9 +586,9 @@ function Petadhar() {
                     numbers, it aims to improve tracking accuracy, enhance
                     disease control, and streamline record management. The
                     system is designed to boost operational efficiency and
-                    support better decision-making. Cloudstry Tech is actively
-                    working on solutions to facilitate the implementation of
-                    this initiative
+                    support better decision-making. Cloudstry Technologies is
+                    actively working on solutions to facilitate the
+                    implementation of this initiative
                   </p>
                 </div>
               </section>
@@ -632,7 +635,7 @@ function Petadhar() {
                   numbers, it aims to improve tracking accuracy, enhance disease
                   control, and streamline record management. The system is
                   designed to boost operational efficiency and support better
-                  decision-making. Cloudstry Tech is actively working on
+                  decision-making. Cloudstry Technologies is actively working on
                   solutions to facilitate the implementation of this initiative
                 </p>
               </div>

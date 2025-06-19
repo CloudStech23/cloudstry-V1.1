@@ -31,7 +31,10 @@ function Consultancy() {
       <Helmet>
         <title> IT-Strategy-Consultancy | CloudstryTech</title>
         <meta name="description" content=" " />
-        <meta name="keywords" content="CloudstryTech" />
+        <meta
+          name="keywords"
+          content="Cloudstry Technologies, IT Strategy Consultancy, Cloudstry Technologies"
+        />
         <meta name="robots" content="index, follow" />
 
         <link
@@ -41,7 +44,7 @@ function Consultancy() {
 
         <meta
           property="og:title"
-          content="IT-Strategy-Consultancy | CloudstryTech"
+          content="IT-Strategy-Consultancy | Cloudstry Technologies"
         />
         <meta property="og:description" content=" " />
         <meta

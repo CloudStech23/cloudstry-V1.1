@@ -102,12 +102,12 @@ function Landing() {
           Leading the Way in Business Tech Innovation | CloudstryTech
         </title>
         <meta name="description" content="" />
-        <meta name="keywords" content="CloudstryTech" />
+        <meta name="keywords" content="Cloudstry Technologies" />
         <meta name="robots" content="index, follow" />
 
         <link rel="canonical" href="https://www.cloudstrytech.com/ " />
 
-        <meta property="og:title" content="Home | CloudstryTech" />
+        <meta property="og:title" content="Home | Cloudstry Technologies" />
         <meta property="og:description" content=" " />
         <meta property="og:url" content="https://www.cloudstrytech.com/" />
         <meta property="og:type" content="website" />

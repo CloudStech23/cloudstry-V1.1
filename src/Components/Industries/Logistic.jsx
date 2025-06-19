@@ -17,7 +17,7 @@ function Logistic() {
           name="description"
           content="Optimizing logistics and supply chain management with advanced IT solutions, ensuring efficiency, automation, and real-time tracking "
         />
-        <meta name="keywords" content="CloudstryTech" />
+        <meta name="keywords" content="Cloudstry Technologies" />
         <meta name="robots" content="index, follow" />
 
         <link
@@ -25,7 +25,10 @@ function Logistic() {
           href="https://www.cloudstrytech.com/industries/logistic "
         />
 
-        <meta property="og:title" content=" Logistic | CloudstryTech" />
+        <meta
+          property="og:title"
+          content=" Logistic | Cloudstry Technologies"
+        />
         <meta
           property="og:description"
           content="Optimizing logistics and supply chain management with advanced IT solutions, ensuring efficiency, automation, and real-time tracking"
@@ -319,8 +322,8 @@ function Logistic() {
                   How We Can Support the Logistics Industry ?
                 </h3>
                 <p className="text-muted">
-                  Cloudstry Tech offers a range of IT solutions tailored to the
-                  logistics sector’s needs:
+                  Cloudstry Technologies offers a range of IT solutions tailored
+                  to the logistics sector’s needs:
                 </p>
                 <ul className="list-unstyled">
                   <li className="mb-2 d-flex align-items-start">
@@ -418,7 +421,7 @@ function Logistic() {
                     <h3 className="text-primary fw-normal mb-3">
                       Advanced 3PL Logistics Services
                       <p className="text-muted h6 mt-2">
-                        Cloudstry Tech is thrilled to be involved in
+                        Cloudstry Technologies is thrilled to be involved in
                         groundbreaking projects that are revolutionizing the
                         logistics sector:
                       </p>

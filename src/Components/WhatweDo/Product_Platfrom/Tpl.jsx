@@ -15,7 +15,10 @@ function Thirdpartylogistic() {
       <Helmet>
         <title> 3PL | CloudstryTech</title>
         <meta name="description" content=" " />
-        <meta name="keywords" content="CloudstryTech" />
+        <meta
+          name="keywords"
+          content="Cloudstry Technologies, Third Party Logistics cloudstry technologies"
+        />
         <meta name="robots" content="index, follow" />
 
         <link
@@ -25,7 +28,7 @@ function Thirdpartylogistic() {
 
         <meta
           property="og:title"
-          content="Third Party Logistics | CloudstryTech"
+          content="Third Party Logistics | Cloudstry Technologies"
         />
         <meta property="og:description" content=" " />
         <meta

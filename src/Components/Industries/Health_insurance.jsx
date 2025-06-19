@@ -17,7 +17,7 @@ function Healthinsurance() {
           name="description"
           content="Revolutionizing the insurance sector with digital solutions that enhance customer engagement, risk management, and operational efficiency "
         />
-        <meta name="keywords" content="CloudstryTech" />
+        <meta name="keywords" content="Cloudstry Technologes" />
         <meta name="robots" content="index, follow" />
 
         <link
@@ -27,7 +27,7 @@ function Healthinsurance() {
 
         <meta
           property="og:title"
-          content="Health and Insurance | CloudstryTech"
+          content="Health and Insurance | Cloudstry Technologies"
         />
         <meta
           property="og:description"
@@ -369,8 +369,8 @@ function Healthinsurance() {
                   How We Can Support the Healthcare Insurance Sector
                 </h3>
                 <p className="text-muted">
-                  Cloudstry Tech provides a range of IT solutions tailored to
-                  the healthcare insurance industry’s needs
+                  Cloudstry Technologies provides a range of IT solutions
+                  tailored to the healthcare insurance industry’s needs
                 </p>
 
                 <ul className="list-unstyled">
@@ -468,7 +468,7 @@ function Healthinsurance() {
                     <h3 className="text-primary fw-light mb-3">
                       Digital Claims Management Platform
                       <p className="text-muted h6 mt-2">
-                        Cloudstry Tech is excited to be part of several
+                        Cloudstry Technologies is excited to be part of several
                         transformative projects that are significantly impacting
                         the healthcare sector
                       </p>

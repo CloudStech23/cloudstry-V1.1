@@ -12,7 +12,7 @@ function Staffingsolution() {
       <Helmet>
         <title> Staffing Solution | CloudstryTech</title>
         <meta name="description" content=" " />
-        <meta name="keywords" content="CloudstryTech" />
+        <meta name="keywords" content="Cloudstry Technologies" />
         <meta name="robots" content="index, follow" />
 
         <link
@@ -22,7 +22,7 @@ function Staffingsolution() {
 
         <meta
           property="og:title"
-          content=" Staffing Solution | CloudstryTech"
+          content=" Staffing Solution | Cloudstry Technologies"
         />
         <meta property="og:description" content=" " />
         <meta

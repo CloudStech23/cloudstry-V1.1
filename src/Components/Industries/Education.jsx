@@ -26,7 +26,10 @@ function Education() {
           href="https://www.cloudstrytech.com/industries/education"
         />
 
-        <meta property="og:title" content=" Education | CloudstryTech" />
+        <meta
+          property="og:title"
+          content=" Education | Cloudstry Technologies"
+        />
         <meta
           property="og:description"
           content="Empowering education with digital transformation, cloud solutions, and IT strategy to enhance learning experiences and operational efficiency"
@@ -403,15 +406,15 @@ function Education() {
                   height={365}
                   width={504}
                   src={img4}
-                  alt="Cloudstry Tech Solutions"
+                  alt="Cloudstry Technologies Solutions"
                 />
               </div>
 
               {/* Text Section */}
               <div className="col-md-6 mt-5 mb-5">
                 <h3 className="text-primary fw-light mb-3">
-                  How Cloudstry Tech Supports the Education Industry: Partner in
-                  Progress
+                  How Cloudstry Technologies Supports the Education Industry:
+                  Partner in Progress
                 </h3>
                 <p className="text-muted">
                   At Cloudstry Tech, we are committed to empowering educational

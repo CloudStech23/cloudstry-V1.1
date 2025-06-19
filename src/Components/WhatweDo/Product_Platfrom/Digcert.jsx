@@ -19,7 +19,7 @@ function Digitalcertificate() {
       <Helmet>
         <title> Digital Certificate | CloudstryTech</title>
         <meta name="description" content=" " />
-        <meta name="keywords" content="CloudstryTech" />
+        <meta name="keywords" content="Cloudstry Technologies" />
         <meta name="robots" content="index, follow" />
 
         <link
@@ -29,7 +29,7 @@ function Digitalcertificate() {
 
         <meta
           property="og:title"
-          content=" Digital Certificate | CloudstryTech"
+          content=" Digital Certificate | Cloudstry Technologies"
         />
         <meta property="og:description" content=" " />
         <meta

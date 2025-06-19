@@ -21,7 +21,10 @@ function Government() {
           name="description"
           content="Driving innovation in the public sector with secure, scalable IT solutions that enhance governance, transparency, and citizen services"
         />
-        <meta name="keywords" content="Government cloudstry,  CloudstryTech" />
+        <meta
+          name="keywords"
+          content="Government cloudstry,  Cloudstry Technologies"
+        />
         <meta name="robots" content="index, follow" />
 
         <link
@@ -29,7 +32,10 @@ function Government() {
           href="https://www.cloudstrytech.com/industries/government"
         />
 
-        <meta property="og:title" content="Government | CloudstryTech" />
+        <meta
+          property="og:title"
+          content="Government | Cloudstry Technologies"
+        />
         <meta
           property="og:description"
           content=" Driving innovation in the public sector with secure, scalable IT solutions that enhance governance, transparency, and citizen services"
@@ -458,8 +464,8 @@ function Government() {
               {/* Text Section */}
               <div className="col-md-6">
                 <h3 className="text-primary fw-light mt-4 mb-3">
-                  How Cloudstry Tech Supports the Government Sector: Empowering
-                  Public Services
+                  How Cloudstry Technologies Supports the Government Sector:
+                  Empowering Public Services
                 </h3>
                 <p className="text-muted">
                   At Cloudstry Tech, we are dedicated to helping government
@@ -538,8 +544,9 @@ function Government() {
               </h3>
             </div>
             <p className="text-muted fs-6 mb-4 mx-3">
-              Cloudstry Tech is proud to be involved in several key projects
-              that are making a significant impact in the government sector:{" "}
+              Cloudstry Technologies is proud to be involved in several key
+              projects that are making a significant impact in the government
+              sector:{" "}
             </p>
 
             <div className="row gx-5">
